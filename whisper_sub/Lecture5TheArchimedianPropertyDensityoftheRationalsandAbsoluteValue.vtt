@@ -1,0 +1,953 @@
+WEBVTT
+
+00:00:13.120 --> 00:00:17.500
+Last time, so we're talking about a set of real numbers.
+
+00:00:18.060 --> 00:00:23.260
+And last time I stated the following theorem about the
+
+00:00:23.260 --> 00:00:26.960
+existence and properties of r that make it special.
+
+00:00:26.960 --> 00:00:51.100
+So the theorem is there exists a unique ordered field with the least
+
+00:00:51.100 --> 00:01:02.840
+upper bound property containing the rational number.
+
+00:01:03.060 --> 00:01:11.280
+So remember, a field was a set that had operations plus in multiplication.
+
+00:01:12.180 --> 00:01:26.100
+An ordered field also, this set has an order on it and this order interacts with the operations of addition of multiplication in natural ways.
+
+00:01:26.800 --> 00:01:37.020
+And the least upper bound property means every non-empty subset which is bounded above has a supremum in the set.
+
+00:01:43.760 --> 00:01:52.140
+So the least upper bound property meaning the supremum belongs in r, not necessarily in the non-empty set which is bounded above.
+
+00:01:54.620 --> 00:02:04.820
+And we saw last time that q, the rational numbers does not have this property by looking at that set, q positive rational, q squared less than 2.
+
+00:02:05.680 --> 00:02:14.060
+That set was bounded above but didn't have a supremum in the rational numbers because the square root of 2 essentially is not a rational number.
+
+00:02:14.980 --> 00:02:16.700
+And the square root of 2 would be the supremum.
+
+00:02:18.260 --> 00:02:32.360
+Okay, so just based on this theorem which characterizes and constructs r, the set of real numbers, we're now going to prove facts about real numbers and soon turn to limits.
+
+00:02:32.360 --> 00:02:43.180
+So as I said in the beginning, limits are the central object of study in analysis. That's what analysis is, the study of limits.
+
+00:02:43.800 --> 00:02:50.080
+The real analysis part, the real and that is that we're doing this within the setting of the real numbers.
+
+00:02:52.180 --> 00:02:52.380
+Okay.
+
+00:02:57.820 --> 00:03:01.720
+So now let me just point out something kind of simple about the real numbers.
+
+00:03:04.200 --> 00:03:13.620
+So, I mean, an extremely simple fact about the real numbers is it's not discrete like the integers are.
+
+00:03:13.620 --> 00:03:20.380
+So for the integers, if I take one integer and another, it's not necessarily the case that there's an integer strictly in between them.
+
+00:03:20.500 --> 00:03:22.260
+There's not an integer between 0 and 1.
+
+00:03:26.240 --> 00:03:31.220
+But r does satisfy this property essentially because it's a field.
+
+00:03:31.940 --> 00:03:48.300
+And it's an ordered field. So what's the simple fact? If x, y are real numbers and x is less than y, then there exists a real number r, little r.
+
+00:03:49.200 --> 00:04:03.080
+So that x is less than r is less than y. And I can give you r explicitly r is equal to x plus y over 2.
+
+00:04:03.880 --> 00:04:07.040
+Okay. All right. That's not so surprising.
+
+00:04:08.600 --> 00:04:15.120
+Now, this statement here is also true if I replace r with rational numbers.
+
+00:04:15.340 --> 00:04:25.180
+Namely, if I had two rational numbers, one less than the other, then there exists a rational number in between that's between x and y.
+
+00:04:25.820 --> 00:04:27.440
+Right? I just again define r in this way.
+
+00:04:27.440 --> 00:04:50.820
+Now, a natural question is the following is that if x and y are in r and x is less than y, then does there output a question mark over that?
+
+00:04:50.820 --> 00:04:58.720
+Does there exist an r and q such that x is less than r is less than y?
+
+00:04:59.700 --> 00:05:07.620
+I can't necessarily define r by this formula here and guarantee that r will be rational.
+
+00:05:07.620 --> 00:05:32.780
+So, for example, if x equals root 2 and say y equals 2 root 2, then x plus y over 2 equals 3 halves root 2, which is not a rational number.
+
+00:05:32.780 --> 00:05:38.840
+Because if it were a rational number, then I can multiply through by 2 thirds and say square root of 2 is a rational number.
+
+00:05:39.360 --> 00:05:52.260
+So, all of that to say that simply by doing this trick of just taking the average does not necessarily mean that if I take two real numbers, one less than the other, then there exists a rational in between them.
+
+00:05:53.240 --> 00:05:54.980
+That's not so clear to see.
+
+00:05:57.160 --> 00:06:04.960
+But this is one of the basic facts about r. Is that the answer to this question is yes.
+
+00:06:06.760 --> 00:06:13.920
+And that the, in some sense, the rational numbers are dense in the real numbers. For any two real numbers, I can find a rational in between them.
+
+00:06:13.920 --> 00:06:31.360
+Okay? It's the first main property of the real numbers will prove. And it will be a consequence of a second property will prove, which is called the Archimedean property.
+
+00:06:31.360 --> 00:06:49.980
+So, theorem says two parts. This first is called Archimedean property of r. And the statement of this is x and y, r and r.
+
+00:06:53.140 --> 00:07:07.580
+And x is positive. Then there exists a natural number n such that nx is bigger than y.
+
+00:07:16.260 --> 00:07:24.300
+Okay? And then the second part of the theorem is the statement that the rationals are dense. That the answer to this question is yes.
+
+00:07:24.300 --> 00:07:53.180
+So, this usually goes by the name of the density of the rationals. So, it states that if x and y are in r, and x is less than y, then there exists rational number little r, such that x is less than r is less than y.
+
+00:07:54.920 --> 00:08:15.300
+Okay. So, let's prove the first theorem, the first part of this theorem, the Archimedean property. So, what do we have to use to prove this theorem just what we know about the real numbers, the fact that it's an ordered field with the least upper bound property.
+
+00:08:15.300 --> 00:08:23.620
+You'll see how this least upper bound property plays a major role in all of these elementary things we prove about r.
+
+00:08:26.320 --> 00:08:42.120
+Okay. So, let's restate our hypothesis. So, suppose x and y are in r and x is less than x is bigger than zero.
+
+00:08:47.080 --> 00:09:12.100
+So, we wish to show, so just restating this inequality here, we wish to show the word show you, you should read as synonymous with proof that there exists a natural number n such that n is less than x.
+
+00:09:12.100 --> 00:09:26.480
+So, we wish to show the word show that n is less than x, bigger than y over x. Okay. Let's just restating that. So, we're going to prove this by contradiction. So, the proof will go by contradiction.
+
+00:09:27.600 --> 00:09:40.100
+Alright. So, this is again, this is our hypothesis which we will assume throughout the proof. The thing we're trying to prove is this statement here, the second sentence.
+
+00:09:40.740 --> 00:09:48.800
+So, this is the thing that we will negate. We will not negate the hypothesis. We're negating what we want to prove in the end.
+
+00:09:48.800 --> 00:10:04.340
+And then arriving at a false statement, therefore showing our conclusion is true. So, okay. So, we assume that the second statement is false. Again, we're assuming the first statement.
+
+00:10:11.800 --> 00:10:31.540
+So, suppose not i.e. We're all in a natural number. And it's less than or equal to y over x. Right? That's the negation of the fact of there exists an integer that's bigger than y over x.
+
+00:10:38.580 --> 00:10:53.960
+Okay. So, then that means then the natural numbers as a subset of the real numbers is bounded above.
+
+00:11:02.580 --> 00:11:09.420
+Now, the set of natural numbers is a non-empty subset of r which is bounded above. Therefore, it has a supremum.
+
+00:11:10.420 --> 00:11:33.160
+So, by the least upper bound property of r, n has a supremum called it a in r.
+
+00:11:34.160 --> 00:11:55.900
+Okay. So, since a is the supremum of n, anything smaller than a cannot be an upper bound for the natural numbers.
+
+00:11:55.900 --> 00:12:06.700
+Okay. Because remember, a is supposed to be the least upper bound. Anything smaller than that cannot be an upper bound for the natural numbers.
+
+00:12:08.640 --> 00:12:29.880
+Is not an upper bound for n. But what does that mean? So, if a minus 1 is not an upper bound for n, that means there must exist some integer in n which is strictly bigger than a minus 1.
+
+00:12:31.880 --> 00:12:58.320
+It exists a natural number called it m such that a minus 1 is less than m. But then this implies that a is less than m plus 1, which implies that a is not an upper bound for n.
+
+00:13:01.580 --> 00:13:10.820
+For the natural numbers, because m plus 1 is an integer, a natural number. So, m plus 1 is a natural number. And I've just found a natural number bigger than a.
+
+00:13:11.460 --> 00:13:22.460
+That means a can't be an upper bound for the natural numbers. But, and therefore, a does not equal the soup of n. And this is a contradiction.
+
+00:13:22.460 --> 00:13:28.560
+Because we, because a is defined as the soup of n.
+
+00:13:30.220 --> 00:13:47.180
+All right. So, from the assumption, just to recap, just from the assumption that for all natural numbers n and is less than or equal to y over x, we concluded that it has a supremum. That's not its supremum.
+
+00:13:47.740 --> 00:14:04.320
+So, that's a false statement. And therefore, our initial assumption that for all natural numbers n, n is less than or equal to y over x, that must be false. And therefore, there exists an n which is bigger than y over x, which is what we wanted to prove.
+
+00:14:05.220 --> 00:14:19.060
+Okay. All right. So, for the second, proof of the second theorem, the density of rational numbers. We'll do, so we have three cases to consider.
+
+00:14:19.060 --> 00:14:42.160
+So, so, suppose x and y are real numbers. X is less than y. There are three cases.
+
+00:14:47.340 --> 00:15:01.980
+X is less than zero is less than y. The zero is bigger than or equal to x is less than y. And see, x is less than y is less than or equal to zero.
+
+00:15:03.140 --> 00:15:13.740
+So, we want to find a rational number between x and y. So, for this case, this is pretty simple. We just take r to b zero. So, I'm not going to say anything about case a.
+
+00:15:14.720 --> 00:15:17.340
+All right. I'm just going to move on to case b.
+
+00:15:19.620 --> 00:15:42.380
+Okay. Okay. So, case b. So, suppose x is bigger than or equal to zero and less than y.
+
+00:15:45.740 --> 00:15:58.020
+Then, by ap, I'll refer to. So, that'll be a short-hand notation for the Archimedean property. So, part one, which we've already proven is true.
+
+00:15:59.020 --> 00:16:12.600
+By the Archimedean property, there exists a natural number in such that n times y minus x is bigger than one.
+
+00:16:12.600 --> 00:16:25.700
+Okay. Okay. Now, we're going to use the Archimedean property again.
+
+00:16:32.940 --> 00:16:44.640
+There exists an integer L in the natural number L such that L is bigger than n times x.
+
+00:16:47.280 --> 00:17:06.620
+Okay. Thus, the set of all integer of natural numbers k such that k is bigger than n x is non-empty.
+
+00:17:07.640 --> 00:17:21.940
+Okay. So, this is a subset of the natural numbers. So, it has a least element by the well-ordering property of the natural numbers.
+
+00:17:26.640 --> 00:17:31.280
+So, this is the least element of the n.
+
+00:17:35.500 --> 00:17:48.980
+Now, what does this mean? What does m have to satisfy? What we're going to show is that m over n is in fact a rational number that is between x and y.
+
+00:17:48.980 --> 00:17:57.100
+Okay. So, the goal is, I guess, so let me just make a comment here.
+
+00:17:58.620 --> 00:18:08.700
+So, once we've found this natural number little n so that n times y minus x is bigger than one, what does this mean?
+
+00:18:08.700 --> 00:18:14.060
+This means n times y is bigger than n x plus one.
+
+00:18:15.720 --> 00:18:26.380
+So, our goal is then to find, so this stuff in brackets, you should not consider as part of the proof.
+
+00:18:26.500 --> 00:18:36.380
+This is me trying to explain to you, you know, where from here we would like to go to conclude the proof that there exists a rational number between y and x.
+
+00:18:36.380 --> 00:18:42.300
+So, we have this inequality. Our comedian property tells us there's a natural number that satisfies this.
+
+00:18:42.980 --> 00:18:53.720
+So, what we would like to do is find another natural number and I'm foreshadowing what's to come.
+
+00:18:53.720 --> 00:19:01.820
+Now, a natural number m, well let's not, I don't want you to give you any false hopes. I mean they're not false, it will happen in a minute.
+
+00:19:01.960 --> 00:19:07.740
+But let's call this j. So, that two things happen.
+
+00:19:07.740 --> 00:19:25.280
+n times x is less than j and j is less than or equal to n x plus one.
+
+00:19:25.280 --> 00:19:50.780
+So, for able to find such an integer j satisfying this, these two inequalities, then from this inequality we would get that n y is bigger than n x plus one, which is bigger than or equal to j, which is bigger than n x i e.
+
+00:19:51.580 --> 00:20:06.140
+So, let me just rewrite this n x is less than j is less than n times y or in other words x is less than j over n is less than y and here's our rational number, which we would choose.
+
+00:20:13.120 --> 00:20:24.700
+So, that's the game plan, which maybe I should have said right after I came up with this integer little n, you may be asking why come up with this integer little n.
+
+00:20:24.700 --> 00:20:34.380
+So, we have to start somewhere and the our committee and property gives us this and this somehow gives us the scale to at least scale one over n to kind of work on.
+
+00:20:35.640 --> 00:20:49.740
+But anyway, so going back to the proof, so we have by the well ordering property of the natural numbers is set s, which is a set of all natural numbers so that k is bigger than n x has a least element little m.
+
+00:20:54.640 --> 00:21:16.780
+Now, m, so s has a least element m, means m is n s. So, since m is n s, this means simply by the definition of what s is n x is less than m.
+
+00:21:17.240 --> 00:21:23.300
+That's very good. That's one of the properties we wanted, I wrote it as j, but we wanted the integer to satisfy.
+
+00:21:26.700 --> 00:21:44.680
+Since m is the least element of s, m minus 1 is not n s.
+
+00:21:48.200 --> 00:21:59.900
+So, that implies that m minus 1 not n x means n s means m minus 1 is less than or equal to n times x, i.e.
+
+00:22:02.820 --> 00:22:06.300
+n is less than or equal to n times x plus 1.
+
+00:22:07.280 --> 00:22:21.940
+Now, we'll combine these two inequalities along with the first one involving n times y minus x. So, I'm just basically rewriting what I told your goal was here in this bracket.
+
+00:22:27.940 --> 00:22:44.580
+Then n times x is less than m, and this is less than or equal to n times x plus 1, which by our definition of n, and the first inequality we have up there involving y is less than n times y.
+
+00:22:44.580 --> 00:22:54.760
+So, we have n x is less than m, is less than n y. So, that means x is less than m over n, is less than y.
+
+00:22:56.960 --> 00:23:20.280
+So, r equals m over n, which is a proportion of natural numbers, is our choice. That's an awkward way to finish the sentence, but my mind won't blank.
+
+00:23:20.980 --> 00:23:27.440
+So, that handles the case B, right? That x is bigger than or equal to z.
+
+00:23:30.120 --> 00:23:51.220
+So, one small thing that I, just a very minor comment, if you've got all this and you understand it, that's fine. But you may be asking, since I never actually said it out loud, where did I use the fact that x is bigger than or equal to zero?
+
+00:23:51.220 --> 00:23:56.920
+So,
+
+00:23:56.920 --> 00:24:13.580
+so,
+
+00:24:27.980 --> 00:24:32.400
+so, where I use that, so let's just assume x is bigger than zero.
+
+00:24:32.400 --> 00:24:57.860
+So, where did I use, is really right in this place here. So, I don't want to spend too much time on that, but by being able to claim that n minus 1 is not an s.
+
+00:24:57.860 --> 00:25:02.040
+Okay.
+
+00:25:11.160 --> 00:25:13.700
+So, what about case C?
+
+00:25:13.700 --> 00:25:20.280
+So, case C will just reduce to case B.
+
+00:25:20.280 --> 00:25:42.120
+Okay. Suppose x is less than y, which is less than or equal to zero. Then, zero is bigger than or equal to minus y, which is bigger than minus x.
+
+00:25:42.120 --> 00:26:04.200
+So, by case B, there exists rational number, R tilde, such that minus y is less than R tilde is less than minus x.
+
+00:26:05.620 --> 00:26:24.200
+Okay. Then, this implies that x is less than minus R tilde is less than y.
+
+00:26:24.200 --> 00:26:35.900
+So, R equal to minus R tilde does the job. So, that proves the theorem.
+
+00:26:45.160 --> 00:26:54.180
+So, we'll use this in just a minute to prove a simple statement about soups, about soups and hymns.
+
+00:26:58.020 --> 00:27:20.480
+But, before I use it, let me go on. And, what I'd like to do is state a different way to verify that a number is a soup of a set or the imp of a set.
+
+00:27:20.480 --> 00:27:32.400
+So, I'm just going to state it for soups and there's an analogous statement for imps. So, the theorem is this and this will actually be on the assignment.
+
+00:27:32.400 --> 00:27:53.400
+So, sum s is the subset of R, because it's an empty and bounded above. So, s has a supremum.
+
+00:27:53.400 --> 00:28:09.600
+So, I'm going to tell you what the supremum satisfies and it's an if and only if statement. Then, some number x equals a soup of s if and only if.
+
+00:28:09.600 --> 00:28:29.080
+So, either I'll do a double arrow or I'll write if and only if if if. Two conditions are satisfied. The first is that x is an upper bound for s.
+
+00:28:32.820 --> 00:28:56.760
+So, at one point, very in the very near future, we're going to be seeing epsilons and delta's. So, I'll state it this way. So, you should start seeing them now. For every epsilon positive, there exists an element y in s such that x minus epsilon is less than y.
+
+00:28:56.760 --> 00:29:21.020
+So, y is less than or equal to x. So, y is this. You know, y, y, why should this be the case? Well, if s is all over here to the left of x, then if I take something smaller, so I'm actually kind of giving you a picture proof of one direction.
+
+00:29:24.460 --> 00:29:39.360
+And so, if I take something smaller x minus epsilon, then this cannot be an upper bound for s. So, therefore, there must exist some y in s bigger than x minus epsilon and it's less than or equal to x because x is an upper bound for s.
+
+00:29:39.360 --> 00:30:02.440
+So, in fact, this picture is a proof of this direction, namely if x is the supremum of s, then these two conditions are satisfied. And then on the assignment, I'll have you prove the other direction, basically, that these two conditions imply that a real number is the supremum of s.
+
+00:30:04.340 --> 00:30:23.780
+Okay. All right, so, let's use the sterum, an Archimedean property to prove a simple statement about the soup of a simple set. So, I should. So, let me also write here.
+
+00:30:29.260 --> 00:30:36.720
+I'm not going to state it as a theorem, but I'll just, this is a remark, meaning I'm being a little bit loose with what I'm writing down, but it's true.
+
+00:30:39.500 --> 00:31:06.560
+So, for x equals m of s, so for s, a non-empty subset, which is bounded below, there's an analogous characterization as x is a lower bound for s and for all epsilon positive, there exists a y in s so that x is less than or equal to y is less than x plus epsilon.
+
+00:31:07.160 --> 00:31:36.360
+Okay, so this is the analogous statement for the m for something to be the m. So, okay, so this is a, I guess you could call it a theorem, it's not a very spectacular theorem, but if I look at the set 1 minus 1 over n in a natural number and I take it soup, this is equal to 1.
+
+00:31:37.100 --> 00:31:57.700
+Okay, so this shouldn't surprise you too much because what is this set? This is the set 0, 1 half, 2 thirds, 3 fourths, 4 fifths, and so on.
+
+00:31:57.700 --> 00:32:18.160
+So, you see, 1 is always bigger than or equal to everything in here, so it's certainly an upper bound and everything is kind of progressively getting closer to 1, so it should satisfy the second property, namely if I go a little bit to the left of 1, then I'll be able to find something less than or equal to 1 and bigger than that thing to the left of 1.
+
+00:32:18.160 --> 00:32:22.920
+And that'll be how we prove this theorem.
+
+00:32:25.420 --> 00:32:47.320
+So, first off, since 1 minus 1 over n is less than 1, for all natural numbers n, this implies 1 is an upper bound for this set.
+
+00:32:54.740 --> 00:33:09.620
+Now we're going to verify that 1 satisfies that second property of the theorem, that for every epsilon positive, I can find a natural number, little n, so that 1 minus 1 over n is bigger than 1 minus epsilon.
+
+00:33:11.060 --> 00:33:13.220
+Okay, and we'll use our comedian property for that.
+
+00:33:17.920 --> 00:33:42.600
+Okay, so if you're ever supposed to show something for every epsilon positive, then every proof should start off with, but epsilon be positive, in fact, I'll give you a couple of points on the exam if there's epsilon delta m's, whatever proofs.
+
+00:33:43.820 --> 00:33:56.940
+Which means you should prove something for all epsilon. I'll give you a couple of points on the exam if you just at least state let epsilon be positive, so let epsilon be positive.
+
+00:33:56.940 --> 00:34:21.800
+Okay, so then there exists, so by the Archimedean property, there exists a natural number n such that 1 over epsilon is less than n.
+
+00:34:22.400 --> 00:34:34.320
+Okay, this is taking, for example, in the statement of the Archimedean property, if you like, it's taking x to be 1 and y to be 1 over epsilon.
+
+00:34:34.320 --> 00:34:47.400
+Okay, then 1 minus 1 over n.
+
+00:34:47.400 --> 00:34:54.140
+Okay, so this way.
+
+00:34:56.680 --> 00:35:09.760
+1 minus epsilon is, so since epsilon is less than 1 over epsilon is less than n, this is equivalent to saying 1 over n is less than epsilon.
+
+00:35:11.440 --> 00:35:16.360
+And therefore, minus epsilon is less than minus 1 over n.
+
+00:35:18.100 --> 00:35:27.760
+So then 1 minus epsilon is less than 1 minus 1 over n, which is, as we have up here, is less than 1.
+
+00:35:29.000 --> 00:35:42.260
+That's to exist in a natural number n, so that.
+
+00:35:45.140 --> 00:35:50.700
+Okay, that went kind of quick, so what I did was I found a natural number n, which is bigger than 1 over epsilon.
+
+00:35:50.940 --> 00:35:59.700
+And from now on, typically, I won't state it like this, I'll state it more like this, which, you know, this follows from this.
+
+00:36:00.660 --> 00:36:11.280
+So when I make a statement like choose a natural number, so that 1 over n is less than epsilon, that follows from the Archimedean property just by taking 1 over this inequality.
+
+00:36:14.360 --> 00:36:21.120
+Okay, and so from there, we concluded that 1 minus epsilon is less than 1 minus 1 over n, which is still less than 1.
+
+00:36:21.120 --> 00:36:32.560
+And therefore, we have proven the second number 2 property of 1, and thus, by the theorem, 1 is equal to the supremum of this set.
+
+00:36:33.560 --> 00:36:39.240
+Okay.
+
+00:36:42.080 --> 00:36:43.960
+Okay.
+
+00:36:50.460 --> 00:37:12.360
+So let's get a little more familiarity with using this, using soups and amps, and in particular using that theorem, which I stated right there, about this characterization of the soup as being an upper bound and satisfying the second property that for every epsilon positive, you can find something in the set, which is bigger than x minus epsilon.
+
+00:37:14.600 --> 00:37:42.480
+So to do that, let's look at a couple of different sets, types of subsets of real numbers. So for x, a real number, and a subset, we define 2 sets, x plus a, this is just the shift of a by x.
+
+00:37:42.480 --> 00:38:02.200
+So this is the set of all elements of the form, x plus little a, or little a's in capital A, and x times a, this is the set of all elements of the form, x times a, or a's in capital A.
+
+00:38:02.200 --> 00:38:11.580
+So from now on, basically towards the end, until almost the end of the course, we're working as in subsets of the real numbers. Okay. So these things are meaningful plus and multiplication.
+
+00:38:16.800 --> 00:38:40.540
+So we have the following theorem. So let's, let's, let me state the assumptions and then we'll probably guess the conclusions. If x is a real number, and a is bounded above, then the conclusion is,
+
+00:38:40.540 --> 00:38:58.280
+x plus a is bounded above, and the supremum of this set, x plus a is equal to x plus the supremum of a.
+
+00:38:58.280 --> 00:39:24.380
+We should be able to kind of guess this because let's assume, you know, a's this interval here, that would make the sup a, let's say right end point of this interval, then when I shift everything by x, then this point, sup a shifts to x plus sup a,
+
+00:39:25.800 --> 00:39:48.580
+which should be the supremum of x plus a. Okay. So this is not too surprising. You know, there are surprising theorems in analysis. We already saw one, at least I thought it was surprising. Hopefully you found it surprising about the cardinality of the power set compared to the cardinality of the original set.
+
+00:39:50.000 --> 00:40:12.720
+You come up with a strange looking, or the proof of that, remember, you came up with a strange looking set, which you kind of had to, which in the end basically referenced itself in its definition, which led to, you know, the conclusion we wanted.
+
+00:40:12.720 --> 00:40:23.460
+Okay, but this one is not so scary. This, this one you should be able, this theorem you should be able to believe. And maybe even prove without me telling you how to, if not, that's fine too.
+
+00:40:24.580 --> 00:40:49.200
+The other statement is that if x is positive, and a is bounded above, then x plus a, or x times a, sorry, is bounded above.
+
+00:40:53.160 --> 00:41:09.820
+And sup of x times a equals x times the sup of a. Okay. And again, so if I were to draw a picture, and let's say a is kind of symmetric with respect to zero.
+
+00:41:09.820 --> 00:41:20.880
+So here's a, there's sup of a, and I multiply it by x, then this kind of either fattens the interval or makes it smaller.
+
+00:41:23.100 --> 00:41:34.240
+So let's say I made it smaller, now to x times a, then x times sup of a would be the supremum of this set.
+
+00:41:36.960 --> 00:41:45.020
+Why x positive? Well, the reason is because if I multiply by x negative, this not only shrinks it, but it flips things.
+
+00:41:45.620 --> 00:41:54.520
+So in fact, there's a statement in the book about if x is negative, then here you would need to assume a is bounded below.
+
+00:41:54.520 --> 00:42:09.200
+So this corresponding statement for x negative is if x is less than zero, and a is bounded below, then x times a is bounded above, because multiplying by something negative flips inequalities.
+
+00:42:09.200 --> 00:42:16.100
+So let's say I made it smaller, and this is the case, and the sup of x times a is equal to minus x times the imp of a.
+
+00:42:17.780 --> 00:42:26.660
+Okay. Or there's no minus, it should be sup of x times a is equal to x times the imp of a. Okay.
+
+00:42:28.440 --> 00:42:52.760
+All right. So let's prove these two theorems using this previous theorem that I stated without proof, but you'll prove in the assignment about how to characterize sup of sets as upper bounds and satisfying this epsilon property.
+
+00:42:53.980 --> 00:43:15.420
+Okay. So let me just restate our assumptions. So suppose x is all just in r, and a is bounded above.
+
+00:43:22.440 --> 00:43:35.560
+Then number sup a, exist in r, because r has the least upper bound property, a is a nonempty subset.
+
+00:43:36.560 --> 00:43:44.000
+So I should have said that in the, so all of this is for a nonempty subset of a, so that I'm talking about something.
+
+00:43:45.880 --> 00:43:52.420
+So I have a nonempty subset which is bounded above by the least upper bound property, the supremum of a exists in r.
+
+00:43:56.440 --> 00:44:17.980
+So now I'm going to show that x times the sup of a satisfies, it's an upper bound for x times a. Then for all, a and a, since sup a is an upper bound for a capital a, little a is less than or equal to sup a, which implies that,
+
+00:44:20.860 --> 00:44:47.960
+if I multiply through by x, I mean if I add x to both sides, x plus, little a is less than or equal to x plus sup of a, which implies that x plus sup of a is an upper bound for the set.
+
+00:44:52.180 --> 00:45:03.880
+So that's the first property we wanted to prove of x plus sup a, and now we'll prove the second property, this epsilon property, let epsilon be positive.
+
+00:45:10.940 --> 00:45:28.120
+Then by the previous theorem, there exists a y and a such that, sup minus a is less than epsilon is less than y is less than or equal to sup a.
+
+00:45:29.580 --> 00:45:48.300
+This is just from the fact that the supremum of a satisfies those two conditions up there. Now I just add x through all of these inequalities, implies there exists a y and a such that
+
+00:45:52.400 --> 00:46:05.140
+x plus sup a minus epsilon is less than x plus y, which is less than or equal to x plus sup of a.
+
+00:46:09.320 --> 00:46:17.200
+And that proves the second property, because what have I done, I found for every epsilon positive an element of the set x plus a.
+
+00:46:17.200 --> 00:46:28.360
+So I'll even restate this, which implies there exists an element z in the set x plus capital a, namely x plus y.
+
+00:46:37.040 --> 00:46:53.160
+So that x plus sup a minus epsilon is less than z is less than or equal to x plus sup a.
+
+00:46:54.700 --> 00:46:59.080
+And that's the second property, which we wanted to prove, this epsilon property.
+
+00:47:00.020 --> 00:47:05.100
+Now we've proven it for x plus sup a for the set x plus a.
+
+00:47:07.040 --> 00:47:15.660
+This, sup of x plus a equals x plus sup a.
+
+00:47:21.680 --> 00:47:32.840
+So we proved that x plus sup a is the supremum of x plus a by showing it was an upper bound and it satisfied this epsilon property.
+
+00:47:32.840 --> 00:47:57.460
+I mean, it's essentially the same proof for x times capital a.
+
+00:48:12.900 --> 00:48:17.800
+So I'm running a little short on time.
+
+00:48:17.800 --> 00:48:33.140
+I guess a little slow moving today. So I will not go through, actually write the proof of the second part simply because the same logic works.
+
+00:48:34.360 --> 00:48:42.520
+Only now I replace everything by, or application by x instead of addition by x. Well, almost.
+
+00:48:46.820 --> 00:48:52.780
+Okay, why not? Let's go through the proof real quick. I just won't spend as much time explaining stuff.
+
+00:48:53.020 --> 00:49:00.460
+So now we want to do, we want to show x times sup a is the supremum of x times a.
+
+00:49:00.460 --> 00:49:06.140
+So suppose x is positive.
+
+00:49:10.020 --> 00:49:21.920
+Then a is bounded above. Then a sup a again exists in R because a is bounded above.
+
+00:49:22.800 --> 00:49:40.300
+And because sup a is an upper bound for capital a. Then for all a in capital a is less than or equal to sup a, which implies that for all a in capital a,
+
+00:49:41.080 --> 00:50:01.160
+x times little a is less than or equal to x times sup a, which implies that x times sup a is an upper bound for x times a.
+
+00:50:01.160 --> 00:50:16.120
+Okay, so we've proven that x times sup a is an upper bound for the set x times a. We now want to verify this epsilon property for x times sup a with respect to that set x times a.
+
+00:50:16.120 --> 00:50:27.240
+Okay, so the epsilon be positive. And I'm going to put in brackets again what we want to do what we want to define.
+
+00:50:28.240 --> 00:50:43.620
+We want to show there exists a z in x times a. So that x times sup a minus epsilon is less than z.
+
+00:50:43.620 --> 00:50:54.000
+So z is always less than or equal to x times sup a since we've proven x times sup a is an upper bound for this set. So I'm not going to keep writing the second inequality.
+
+00:50:55.400 --> 00:51:18.080
+Okay, so this is what we want to prove. We haven't proven it yet. So let epsilon be positive. Then just as we did in the plus case, then there exists an element y in a such that sup a minus.
+
+00:51:18.080 --> 00:51:45.440
+Now here we're going to choose why not exactly for epsilon here. Remember the statement for number two holds for sup a for every epsilon in particular I can choose anything I want here and find a y in between sup a minus whatever I want here, which is positive and sup a.
+
+00:51:45.440 --> 00:51:57.080
+So instead of putting epsilon here like I did before, I'm going to put epsilon over x, which I can do because x is positive, which means epsilon over x is some positive number.
+
+00:51:59.760 --> 00:52:26.700
+Now, why did I choose epsilon over x? Because magic happens. Then that means there exists a y in a such that if I multiply through by x, I get x times sup a minus epsilon is less than x times y is less than.
+
+00:52:26.700 --> 00:52:54.360
+So I'm going to stop writing this inequality because this is always true because x times sup a is bigger than or equal to x times y, which implies there exists a z in x times a, namely z equals x times y, where y is from here, such that x times sup a minus epsilon is less than z.
+
+00:52:55.560 --> 00:53:05.200
+And therefore x times sup a satisfies the second epsilon property with respect to s given by x times a.
+
+00:53:16.300 --> 00:53:33.200
+And that's the end. So you see that I wanted this in the end, so I chose y to give me this slightly different thing for epsilon over x because in the end I would multiply through by x and I wanted this.
+
+00:53:34.700 --> 00:53:54.480
+We do proofs for limits. You'll see we're always trying to make something less than epsilon, so quite often we'll have to choose something to be less than epsilon over 5 or epsilon over some number for everything to work out in the end, just like we did here.
+
+00:53:54.480 --> 00:53:56.240
+So that's kind of a preview of things to come.
+
+00:54:00.820 --> 00:54:14.860
+Okay. And one last, and a simple theorem about soups and imps, this really doesn't use that theorem, but just basically what the definition of soups and imps are.
+
+00:54:16.520 --> 00:54:44.840
+Namely that if a and b are subsets of r and for all, let's say, with a down to the above, b down to the bottom.
+
+00:54:47.780 --> 00:55:01.180
+And for all x, y, for all x and a, and for all y and b, x is less than or equal to y.
+
+00:55:07.600 --> 00:55:22.880
+Then, soup of a is less than or equal to the amp of b. Okay. So picture wise, here's a, everything here sits below everything in b.
+
+00:55:22.880 --> 00:55:32.840
+So b has to be over here. And therefore the soup of a, which is there, has to be less than or equal to the amp of b, which is there. That's the picture that goes along with this.
+
+00:55:34.040 --> 00:55:44.340
+All right. But how do we actually prove this? I mean, we have to use the definitions. Pictures do not suffice. Although the informa state, they don't suffice.
+
+00:55:44.340 --> 00:55:55.700
+So this is quite simple. So I'm not going to rewrite the hypothesis now because it take a little bit.
+
+00:55:55.700 --> 00:56:18.200
+But so. So if all x and let me basically what we're going to do is we're going to take a soup and then an amp.
+
+00:56:18.200 --> 00:56:35.100
+All right. So. That y b and b. Then. For all x and a. X is less than or equal to y, which implies y.
+
+00:56:44.800 --> 00:56:53.960
+And therefore the soup, the soup, the supreme of a, which is the least upper bound has to be smaller than or equal to y.
+
+00:56:58.400 --> 00:57:03.580
+This we proven for all y and b.
+
+00:57:06.380 --> 00:57:29.060
+So the soup is less than or equal to y, which implies that soup is a lower bound for b. And by that same logic of minute ago. So remember the infimum of b is the greatest lower bound.
+
+00:57:29.060 --> 00:57:42.200
+So if I take any lower bound of b, it has to be less than or equal to the inf of b. So which implies soup a is less than or equal to m of b.
+
+00:57:42.200 --> 00:58:05.500
+Okay.
+
+00:58:15.340 --> 00:58:24.520
+So we're starting to close out here our discussion of or at least our discussion of the elementary properties of the real numbers.
+
+00:58:24.520 --> 00:58:28.000
+So let me say just a couple of things about the absolute value.
+
+00:58:32.240 --> 00:58:43.800
+Okay. And let me recall how this is defined. At least this is how it should have been defined from your calculus class.
+
+00:58:44.860 --> 00:58:57.340
+If x is in r, we define the absolute value of x. This is either x. If x is bigger than or equal to zero or minus x.
+
+00:58:57.340 --> 00:59:09.560
+x is less than or equal to zero. Note that these two things agree when x is zero. So that I'm not defining the absolute value of x to be two different things when x equals zero.
+
+00:59:16.120 --> 00:59:39.440
+So, and what is this really kind of meant to be, it's supposed to be kind of, it's supposed to measure the distance from or it's supposed to represent, I shouldn't say, you know, is the distance because I haven't told you what a distance means.
+
+00:59:40.360 --> 00:59:55.420
+But what is it supposed to represent? It's supposed to represent the distance from x to zero, which is, you know, y is always non-negative.
+
+00:59:55.420 --> 01:00:06.160
+I mean, if I have x was over here and this distance is meant to be absolute value of x, that y.
+
+01:00:11.420 --> 01:00:23.800
+So, in fact, that's the first thing that I'm just going to prove some very simple properties of the absolute value. Again, these properties should not be surprising to you. You should know all of them.
+
+01:00:25.480 --> 01:00:40.800
+But we're trying to get familiar, that's a tough word to say. Familiar arities, or familiar arity with proofs. So, I'm going to do as many proofs as I can for you.
+
+01:00:40.800 --> 01:00:58.640
+So, the first statement is for all x and r, absolute value of x is bigger than zero. Bigger than or equal to zero. And the absolute value equals zero if and only if x equals zero.
+
+01:01:01.840 --> 01:01:16.860
+The second property is that for all x and r, absolute value of x equals the absolute value of minus x, for all x, y and r.
+
+01:01:17.580 --> 01:01:25.060
+If I take the absolute value of the product, this is equal to the product of the absolute values.
+
+01:01:31.440 --> 01:01:40.740
+For all x and r, the absolute value of x squared equals absolute value of x squared.
+
+01:01:50.120 --> 01:02:06.880
+The fifth property is if x and y is in r, then x is less than or equal to y, if and only if minus y is less than or equal to x is less than or equal to y.
+
+01:02:08.000 --> 01:02:23.620
+And the sixth property that will prove is that for all x and r, x is less than or equal to its absolute value.
+
+01:02:28.520 --> 01:02:36.760
+So, again, these are not too surprising, but we'll go through the proofs. Because that's the point of this class.
+
+01:02:39.800 --> 01:02:45.800
+Later on in life, you'll come across some more interesting theorems than definitely this one.
+
+01:02:51.240 --> 01:02:57.260
+So, if we're going to prove this first statement that if x is in r, the absolute value of x is bigger than or equal to zero.
+
+01:02:59.120 --> 01:03:10.560
+So, if x is bigger than or equal to zero, then the absolute value of x is by definition equal to x, which is bigger than or equal to zero.
+
+01:03:13.160 --> 01:03:22.360
+So, x is less than or equal to zero, then the absolute then minus x is bigger than or equal to zero.
+
+01:03:23.840 --> 01:03:31.920
+And by the definition of the absolute value, the absolute value of x is equal to minus x, which is bigger than or equal to zero.
+
+01:03:31.920 --> 01:03:35.960
+So, that's proven that the absolute value of x is always bigger than or equal to zero.
+
+01:03:38.580 --> 01:03:43.060
+So, now let's prove this statement, absolute value of x equals zero if and only if x equals zero.
+
+01:03:43.960 --> 01:03:58.100
+So, when you see an if and only if or two arrows here, that means there's two statements you need to prove that this implies this and this implies this.
+
+01:03:58.700 --> 01:04:06.200
+So, let's start with this direction. Usually, if and only if there's an easy direction.
+
+01:04:06.200 --> 01:04:18.080
+If x equals zero, then this is clear simply from the definition. Then absolute value of x equals x equals zero.
+
+01:04:20.360 --> 01:04:31.200
+Let's go with the other direction. So, suppose the absolute value of x equals zero.
+
+01:04:33.400 --> 01:04:40.900
+And if x is bigger than or equal to zero, we get that x is equal to its absolute value of x is equal to zero.
+
+01:04:44.260 --> 01:04:58.600
+If x is less than or equal to zero, then minus x is equal to its absolute value of x, which equals to zero or x equals zero.
+
+01:04:58.840 --> 01:05:04.160
+So, assuming the absolute value of x is zero, we've proven that x equals zero in both cases.
+
+01:05:09.680 --> 01:05:12.040
+Alright, so that proves the first property.
+
+01:05:34.160 --> 01:06:04.140
+So, let's go with x equals zero.
+
+01:06:07.140 --> 01:06:10.500
+Okay, so now we're on to proving number two.
+
+01:06:18.960 --> 01:06:23.880
+Number two, for all x and r, the absolute value of x equals minus x.
+
+01:06:24.580 --> 01:06:31.200
+So, we'll do that by again. We have to consider two cases. x is non-negative or x is non-positive.
+
+01:06:31.200 --> 01:06:53.900
+So, the x is bigger than or equal to zero, then minus x is less than or equal to zero, which implies that the absolute value of minus x equals minus x, which equals x, which equals the absolute value of x.
+
+01:06:53.900 --> 01:06:55.720
+So, since we're in the case that x is not negative.
+
+01:07:00.140 --> 01:07:15.340
+If x is less than or equal to zero, then minus x is bigger than or equal to zero, which implies that the absolute value of minus x is equal to minus x, which is since x is less than or equal to zero.
+
+01:07:15.340 --> 01:07:21.460
+And by the definition of the absolute value equal to absolute value of x. So, that proves two.
+
+01:07:29.520 --> 01:07:42.120
+Okay, so for all x, y, real number, the absolute value of x times y is equal to the absolute value of x times absolute value of y.
+
+01:07:42.680 --> 01:07:58.320
+So, we need to consider two cases. One of them is both of them are non-negative, both of them are non-positive, and both of them are, or one of them is positive, one of them is non-negative.
+
+01:07:58.940 --> 01:08:01.980
+One of them is non-negative, one of them is non-positive.
+
+01:08:04.520 --> 01:08:15.660
+So, if x is bigger than or equal to zero, and y is bigger than or equal to zero, then x times y is bigger than or equal to zero, which implies x.
+
+01:08:16.260 --> 01:08:27.680
+The absolute value of x times y is equal to x times y, and since x is non-negative, that's equal to its absolute value, since y is non-negative, that's equal to its absolute value.
+
+01:08:27.680 --> 01:08:57.660
+Okay, if x is bigger than or equal to zero, y is less than or equal to zero, then minus x times y is bigger than or equal to zero, which implies that the absolute value of x times y is equal to zero.
+
+01:08:57.660 --> 01:09:21.740
+So, I should say, let's write it this way. This is equal to minus x, y, which is equal to x times minus y, and since y is negative, minus y is equal to its absolute value, and since x is non-negative, x is equal to its absolute value, so this is equal to that.
+
+01:09:21.740 --> 01:09:26.440
+Okay, another piece of chalk.
+
+01:09:41.040 --> 01:09:56.060
+Now, the case that, so you might be thinking about what about x negative and y, non-negatives, so y, y, bigger than or equal to zero, x less than or equal to zero, it's the same proof, just exchange x and y.
+
+01:09:56.060 --> 01:10:25.560
+So, I'm not going to do that case. And if x is less than or equal to zero, y is less than or equal to zero, then this implies that minus x is bigger than or equal to zero, and minus y is bigger than or equal to zero, which by this first case, which we've proven, now applied to minus x and minus y, I get that the absolute value of minus x times minus y.
+
+01:10:26.380 --> 01:10:46.740
+Which is equal to x times y, so minus x times minus y is equal to x times y, this is equal to the absolute value of minus x times the absolute value of minus y, and by number two, which we've already proven, which is at the absolute value of minus the number is equal to the absolute value of the number again.
+
+01:10:46.740 --> 01:11:07.840
+And we get that, okay? So that's three. And for four, this is just a special case of three. Take y equals x and three.
+
+01:11:11.260 --> 01:11:26.480
+Now, for number five, it's an if and only if so we need to prove two directions, namely we'll assume this and then prove this and then assume this and then prove that.
+
+01:11:28.000 --> 01:11:38.680
+So suppose, so this is the this direction, meaning suppose our assumptions going to be suppose the absolute value of x is less than or equal to y.
+
+01:11:41.240 --> 01:11:55.400
+So then x is bigger than or equal to zero, then this means that so if the absolute value of x is less than or equal to y, that automatically tells you y is not negative.
+
+01:11:56.380 --> 01:12:08.100
+So therefore, minus y is less than or equal to zero, which is less than or equal to x, which equals the absolute value of x, which is less than or equal to y, i.e.
+
+01:12:10.940 --> 01:12:26.120
+minus y is less than or equal to x is less than or equal to y. So in the other case that x is less than or equal to zero, I can apply basically this part, which I've already proven,
+
+01:12:26.120 --> 01:12:53.560
+and minus x is bigger than or equal to zero, and the absolute value of minus x, which is equal to the absolute value of x, is less than or equal to y, which implies by this first case I've proven applied now to minus x here, that minus y is less than or equal to minus x is less than or equal to y.
+
+01:12:55.720 --> 01:13:08.520
+And multiplying through by minus 1 flips all the inequalities, and also flips a sign, which basically means it leaves this inequality unchanged if I replace this by x.
+
+01:13:08.900 --> 01:13:17.340
+So multiply through by minus 1 flips the inequalities and proves what we want to do.
+
+01:13:18.660 --> 01:13:29.740
+So in either case, so for the first case we actually wrote down a proof, and we reduced the second case, x negative, to the first case that we've already proven.
+
+01:13:30.420 --> 01:13:40.460
+So we've proven that this inequality, the absolute value of x less than or equal to y, implies that this.
+
+01:13:41.440 --> 01:13:44.540
+So now we need to prove the converse direction.
+
+01:13:52.860 --> 01:13:54.620
+So the converse direction.
+
+01:14:07.080 --> 01:14:16.220
+Okay, so, suppose minus y is less than or equal to x is less than or equal to y.
+
+01:14:16.220 --> 01:14:23.840
+Now I want to prove the absolute value of x is less than or equal to y.
+
+01:14:30.280 --> 01:14:40.680
+So if x is bigger than or equal to zero, then the absolute value of x is equal to x, which by this inequality is less than or equal to y.
+
+01:14:43.240 --> 01:14:54.360
+If x is less than or equal to zero, then minus y is less than or equal to x, implies that minus x is less than or equal to y.
+
+01:14:55.180 --> 01:15:01.580
+And because x is negative, minus x is equal to its absolute value.
+
+01:15:04.760 --> 01:15:08.040
+And therefore we've proven the absolute value of x is less than or equal to y.
+
+01:15:09.460 --> 01:15:15.540
+Okay, so we've proven number five and number six.
+
+01:15:20.260 --> 01:15:22.860
+So, for number six, what do we do?
+
+01:15:23.040 --> 01:15:25.340
+We just take y equals the absolute value of x.
+
+01:15:32.560 --> 01:15:37.660
+Five to conclude that x is less than or equal to the absolute value of x.
+
+01:15:41.120 --> 01:15:43.740
+And bigger than or equal to minus the absolute value of x.
+
+01:15:43.740 --> 01:15:47.960
+Okay, that's the proof.
+
+01:15:54.940 --> 01:16:00.080
+Okay, now I'm going to prove one last theorem.
+
+01:16:00.480 --> 01:16:06.000
+So this one is actually very important about the absolute value.
+
+01:16:08.620 --> 01:16:15.380
+So this inequality is one of the most important tools in all of analysis.
+
+01:16:15.600 --> 01:16:18.220
+And you get to see it right here in your first analysis class.
+
+01:16:19.460 --> 01:16:28.700
+There's two, basically two other things will prove at one point, which I don't know.
+
+01:16:30.040 --> 01:16:33.100
+But the two other most important things in analysis.
+
+01:16:33.720 --> 01:16:35.160
+This is the triangle inequality.
+
+01:16:36.240 --> 01:16:40.860
+And the other two are integration by parts and change a variable.
+
+01:16:41.060 --> 01:16:47.100
+So, three things, fuel the analysis machine.
+
+01:16:47.700 --> 01:16:50.200
+So, this theorem, so this is the triangle inequality.
+
+01:17:00.320 --> 01:17:13.640
+And it states for all x, y, and r, the absolute value of x plus y is less than or equal to the absolute value of x plus the absolute value of y.
+
+01:17:13.640 --> 01:17:15.600
+Why is it called the triangle inequality?
+
+01:17:16.220 --> 01:17:18.300
+Well, let's try to think.
+
+01:17:18.860 --> 01:17:30.600
+So, although x and y are elements of the real number line, let's instead try and think of these as two vectors instead.
+
+01:17:40.060 --> 01:17:42.480
+So, here's a vector x.
+
+01:17:43.020 --> 01:17:54.120
+And then, let's say, I'm running out of time.
+
+01:17:55.260 --> 01:17:58.760
+Okay, so I think we'll stop here.
+

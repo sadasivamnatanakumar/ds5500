@@ -1,0 +1,908 @@
+WEBVTT
+
+00:00:13.300 --> 00:00:24.640
+So last time we proved the following theorem that if I have a convergent series,
+
+00:00:30.060 --> 00:00:37.720
+then this implies that the limit as n goes to infinity of x of n equals 0.
+
+00:00:41.600 --> 00:00:47.200
+So a natural question is, you know, as a beginning,
+
+00:00:47.200 --> 00:00:50.700
+the first thing that's math class does the converse hold.
+
+00:00:50.880 --> 00:00:53.240
+Is this a two-way street or a one-way street?
+
+00:00:53.680 --> 00:01:09.320
+So if the individual terms in this series converges to 0, does this imply that the series converges?
+
+00:01:15.820 --> 00:01:21.800
+And I'm sure you answered this question in some form in a previous calculus class,
+
+00:01:22.060 --> 00:01:24.820
+and the answer to this question is no.
+
+00:01:29.880 --> 00:01:31.820
+So what's the counter example?
+
+00:01:32.000 --> 00:01:37.320
+It's a so-called harmonic series, which corresponds to kind of our favorite sequence,
+
+00:01:37.320 --> 00:01:39.440
+which converges to 0.
+
+00:01:41.440 --> 00:01:43.120
+So we'll state this as a theorem.
+
+00:01:48.320 --> 00:02:01.520
+The series sum from n equals 1 to infinity of 1 over n does not converge.
+
+00:02:05.720 --> 00:02:14.880
+So how are we going to prove this theorem by showing a sequence of partial sums?
+
+00:02:14.980 --> 00:02:18.140
+A subsequence of partial sums for this guy does not converge.
+
+00:02:18.720 --> 00:02:24.200
+So if it were to converge, then the sequence of partial sums converges,
+
+00:02:24.540 --> 00:02:27.340
+and therefore every subsequence of partial sums converge.
+
+00:02:29.180 --> 00:02:34.180
+So what's the strategy?
+
+00:02:34.560 --> 00:02:56.840
+We're going to show that there exists a subsequence of partial sums here.
+
+00:03:00.520 --> 00:03:03.000
+Let's make this mk.
+
+00:03:04.040 --> 00:03:11.160
+So remember the partial sums are simply summing up the first, so the index here is m sub k.
+
+00:03:11.340 --> 00:03:20.980
+So the first m sub k terms when we're in diverges.
+
+00:03:20.980 --> 00:03:24.800
+So this is enough to show that the full series doesn't converge again.
+
+00:03:25.340 --> 00:03:31.120
+Because if it did converge, the partial sums, the sequence of partial sums converges,
+
+00:03:31.240 --> 00:03:33.820
+and therefore every subsequence of partial sums converges.
+
+00:03:34.480 --> 00:03:39.180
+So if we're able to show there exists a subsequence which diverges, then we're done.
+
+00:03:39.320 --> 00:03:41.660
+In fact, what we're going to do is something a little bit stronger.
+
+00:03:41.660 --> 00:03:46.220
+We're going to show that there exists a subsequence of partial sums,
+
+00:03:46.220 --> 00:03:50.400
+which not only diverges, but is unbounded.
+
+00:03:50.500 --> 00:03:53.420
+And therefore the entire sequence of partial sums is unbounded.
+
+00:04:03.620 --> 00:04:07.140
+So if we're able to show there exists a subsequence which is unbounded,
+
+00:04:07.240 --> 00:04:11.180
+then the entire sequence of partial sums is unbounded, so it can't converge.
+
+00:04:11.180 --> 00:04:17.200
+Because remember, convergent sequences imply bounded sequences.
+
+00:04:21.020 --> 00:04:25.820
+So we're going to look at when m sub k is dietic.
+
+00:04:35.980 --> 00:04:40.940
+So for some reason I switched indices from k to l in my note.
+
+00:04:41.160 --> 00:04:46.500
+So instead we're going to go from m sub l.
+
+00:04:49.600 --> 00:05:02.560
+So let l be a natural number, and we'll consider the partial sum corresponding
+
+00:05:02.560 --> 00:05:05.080
+to adding up the first two to the l terms.
+
+00:05:12.040 --> 00:05:15.160
+Now you may ask why two to the l, why not three to the l?
+
+00:05:15.980 --> 00:05:18.160
+Well, four to the l will be a subsequence of that.
+
+00:05:19.560 --> 00:05:24.080
+But two to the l is you could do three to the l, you could do five to the l.
+
+00:05:24.240 --> 00:05:28.060
+But two to the l seems is this sufficient for our purposes.
+
+00:05:32.480 --> 00:05:41.980
+So what we're going to do is we're going to take this partial sum and bound it from below by something which is quite large.
+
+00:05:42.160 --> 00:05:47.060
+So first off, all of these partial sums are bounded from below by zero, right?
+
+00:05:47.240 --> 00:05:49.020
+There are some of non-negative terms.
+
+00:05:49.020 --> 00:06:01.060
+So we write as two to the l, this is equal to one plus a half plus.
+
+00:06:01.900 --> 00:06:15.300
+And I'm going to put parentheses around that plus a third plus a fourth plus a fifth plus a sixth plus a seventh plus an eighth.
+
+00:06:15.300 --> 00:06:28.080
+So how I'm grouping these terms is I'm grouping them according to whether the denominator falls between a power of two and the next power of two.
+
+00:06:30.100 --> 00:06:32.280
+And then plus.
+
+00:06:38.580 --> 00:06:46.020
+To the l minus one plus one plus one over two to the l.
+
+00:06:51.440 --> 00:06:53.880
+Now I can write this partial sum.
+
+00:06:54.640 --> 00:07:00.900
+So I've grouped terms this way. What is this in terms of precise symbols?
+
+00:07:00.940 --> 00:07:05.680
+This is one plus sum from lambda equals one to l.
+
+00:07:07.000 --> 00:07:18.520
+Sum from n equals two to the lambda minus one plus one to the lambda one over n.
+
+00:07:19.720 --> 00:07:25.820
+So these lambdas are now parameterizing whether what power of two on that.
+
+00:07:25.820 --> 00:07:28.420
+So when lambda equals one, I'm at this block.
+
+00:07:30.320 --> 00:07:32.520
+One lambda equals two. I'm at this block.
+
+00:07:35.620 --> 00:07:43.220
+And then I'm summing up the terms that have denominator between that power and the next of two.
+
+00:07:47.800 --> 00:07:49.800
+So I have this.
+
+00:07:51.820 --> 00:07:56.720
+And now I bound that sum from below.
+
+00:07:58.000 --> 00:08:05.320
+Because again, I'm trying to show that this sequence of partial sums is unbounded.
+
+00:08:05.320 --> 00:08:07.380
+So I bound it from below.
+
+00:08:10.320 --> 00:08:15.340
+I sum from lambda equals one to l.
+
+00:08:16.340 --> 00:08:26.020
+Sum from n equals two to the lambda minus one plus one to the lambda.
+
+00:08:26.020 --> 00:08:33.020
+And now for each of these, n is between two to the lambda.
+
+00:08:36.740 --> 00:08:47.060
+Now for n between these two numbers, n is one over n is always bigger than or equal to when I plug in the biggest bound here, two to the lambda.
+
+00:08:52.900 --> 00:08:53.380
+Okay.
+
+00:08:56.280 --> 00:08:58.480
+And now I just have a sum.
+
+00:08:58.980 --> 00:09:01.560
+So over n, but there's no n in this term.
+
+00:09:01.680 --> 00:09:09.340
+So I just add up all the number of terms in a given block.
+
+00:09:09.420 --> 00:09:13.960
+And this is equal to, so first I have one over two to the lambda coming from here.
+
+00:09:13.960 --> 00:09:22.020
+And then sum from n equals two to the lambda minus one plus one to the lambda times one.
+
+00:09:22.340 --> 00:09:24.580
+So again, I'm kind of going a little slow here.
+
+00:09:26.920 --> 00:09:41.960
+And this is just equal to l one over two to the lambda times the number of terms I have here, which is two to the lambda minus one.
+
+00:09:41.960 --> 00:09:44.980
+Two to the lambda minus one plus one.
+
+00:09:46.480 --> 00:09:49.280
+So this minus this plus one.
+
+00:09:56.960 --> 00:10:04.280
+So this is equal to one plus lambda equals one to l one over two lambda.
+
+00:10:04.280 --> 00:10:07.040
+And then, so this one cancels with this one.
+
+00:10:07.480 --> 00:10:11.080
+And then I have two to the lambda minus one, which I can bring out.
+
+00:10:15.320 --> 00:10:16.580
+So this is just one.
+
+00:10:18.460 --> 00:10:24.920
+Okay. And I get one plus sum from lambda equals one to l.
+
+00:10:25.440 --> 00:10:28.300
+And this two to the lambda cancels with this two to the lambda.
+
+00:10:28.420 --> 00:10:29.820
+And I'm left with just a half.
+
+00:10:32.420 --> 00:10:32.980
+Okay.
+
+00:10:35.480 --> 00:10:36.540
+And this is big.
+
+00:10:36.780 --> 00:10:41.380
+And this is equal to, now remember, there's no sum here in lambda.
+
+00:10:42.160 --> 00:10:48.720
+So this is just one plus l over two.
+
+00:10:51.180 --> 00:10:51.520
+Okay.
+
+00:10:53.720 --> 00:10:55.040
+So what did we do?
+
+00:10:55.200 --> 00:11:00.700
+We basically showed that each of these blocks is bounded from below by a half.
+
+00:11:01.280 --> 00:11:04.360
+That's this term that we get right here in the end.
+
+00:11:05.120 --> 00:11:09.860
+Yeah. And we can see this if we just kind of go through the first three terms, which I have written here.
+
+00:11:11.220 --> 00:11:14.180
+So one half is clearly bounded below by a half.
+
+00:11:14.600 --> 00:11:20.160
+One third plus a fourth is bounded below by a fourth plus a fourth, because a third is bigger than that.
+
+00:11:20.160 --> 00:11:21.940
+So a fourth plus a fourth is a half.
+
+00:11:23.440 --> 00:11:30.000
+If I look at this next block, that's one over five is bigger than or equal to one over eight.
+
+00:11:30.700 --> 00:11:32.920
+So is one over six. So is one over seven.
+
+00:11:33.160 --> 00:11:38.800
+So this sum is bigger than or equal to one eighth plus one eighth plus one eighth plus one eighth,
+
+00:11:38.920 --> 00:11:41.200
+which equals a half plus and then so on.
+
+00:11:43.120 --> 00:11:44.780
+So maybe I should have said that before.
+
+00:11:45.000 --> 00:11:46.420
+I went into the actual computation.
+
+00:11:46.420 --> 00:11:51.540
+But in the end, we get that this sub sequence of partial sums as to the 2L.
+
+00:11:54.760 --> 00:11:56.820
+So let me just summarize.
+
+00:11:57.980 --> 00:12:03.780
+This is bigger than or equal to l plus two over two.
+
+00:12:04.860 --> 00:12:04.980
+Okay.
+
+00:12:06.760 --> 00:12:11.200
+And as l goes, as l gets very large, this thing gets very large.
+
+00:12:11.200 --> 00:12:15.180
+So this implies s to the 2L.
+
+00:12:16.200 --> 00:12:39.680
+This sub sequence, l equals one to infinity, is unbounded, which implies that the full sub sequence or the full sequence of partial sums is unbounded.
+
+00:12:39.680 --> 00:12:45.260
+And therefore the sequence is not the sequence of partial sums is not converged.
+
+00:12:45.700 --> 00:12:47.380
+And therefore that series does not converge.
+
+00:12:50.600 --> 00:12:50.740
+Okay.
+
+00:12:56.920 --> 00:13:10.560
+All right. So we see that the converse is not hold for that question or for that theorem.
+
+00:13:11.640 --> 00:13:23.380
+I will just make a very passing mention to the fact that there are fields for which that does hold.
+
+00:13:23.800 --> 00:13:29.220
+So not ordered fields because again, ordered fields with the least upper bound property have to be have to be r.
+
+00:13:29.940 --> 00:13:36.660
+And therefore we've just shown that the converse of that theorem does not hold.
+
+00:13:36.660 --> 00:13:51.960
+But in fact, if you look at the so-called periodic numbers, they do have this property that if the sequence of terms converges to zero, then the series converges.
+
+00:13:52.120 --> 00:13:53.680
+But we will never see periodic numbers.
+
+00:13:53.800 --> 00:14:03.620
+I just wanted to do a little lip service to that fact that there are at least fields of numbers that do have this property.
+
+00:14:05.880 --> 00:14:16.320
+Okay. So we had a theorem about limits of sequences and how they interact with algebraic operations.
+
+00:14:16.320 --> 00:14:20.400
+This naturally implies a theorem about series.
+
+00:14:20.400 --> 00:14:27.520
+So let alpha be an r.
+
+00:14:33.740 --> 00:14:39.860
+And let's suppose we have two convergent series.
+
+00:14:52.280 --> 00:14:59.600
+Then if I look at the series alpha xn plus yn.
+
+00:14:59.600 --> 00:15:05.960
+So the new terms, so the terms of my new series are alpha times x of n plus y sub n. This is a convergent series.
+
+00:15:17.980 --> 00:15:30.240
+And the sum of this series is equal to kind of what you expect.
+
+00:15:31.840 --> 00:15:38.680
+So the sum of the series alpha xn plus yn is equal to alpha times the sum of xn plus the sum of yn.
+
+00:15:42.900 --> 00:15:49.440
+So this theorem follows essentially, or kind of immediately, from what we did for sequences.
+
+00:15:58.560 --> 00:16:02.500
+So this is partial sum satisfy.
+
+00:16:03.120 --> 00:16:19.580
+If I look at some stopping at m alpha xn plus yn, now just by the linearity of just adding up, finally many terms, I'm not going to put something down below because I really don't need to.
+
+00:16:19.580 --> 00:16:31.920
+So this is equal to alpha times the partial sum of x sub n plus the partial sum corresponding to y sub n.
+
+00:16:34.820 --> 00:16:42.880
+And so we're assuming this sequence of partial sums converges and this sequence of partial sums converges.
+
+00:16:43.440 --> 00:16:49.480
+So therefore this term on the right hand side converges, which implies the left side converges.
+
+00:16:57.640 --> 00:17:13.940
+So by the linear properties of limits, namely that the limit of the sum is the sum of the limits.
+
+00:17:15.600 --> 00:17:27.120
+And multiplication just by fixed real numbers, commutes with taking limits, we get that limit as m goes to infinity.
+
+00:17:27.120 --> 00:17:55.860
+So the partial sum corresponding to the new series equals alpha plus xn plus yn.
+
+00:17:57.200 --> 00:17:58.320
+And that's the end.
+
+00:18:12.600 --> 00:18:27.900
+Alright, so now remember we had certain sequences, which we could tell whether they converge.
+
+00:18:36.240 --> 00:18:55.540
+So we could tell them that they converge kind of a little bit easier than just an arbitrary sequence.
+
+00:18:59.500 --> 00:19:02.480
+So we could tell them that they converge.
+
+00:19:02.480 --> 00:19:06.320
+So this is a non-negative terms that I'm adding up.
+
+00:19:07.120 --> 00:19:16.800
+Because the partial sums corresponding to a series that has non-negative terms form a monotone increasing sequence.
+
+00:19:17.000 --> 00:19:19.300
+And that's not too hard to show.
+
+00:19:19.300 --> 00:19:26.400
+So this is the following theorem.
+
+00:19:28.240 --> 00:19:37.360
+So this is about, now we're going to discuss a little bit about sequences which, or look at sequences which have non-negative terms.
+
+00:20:00.000 --> 00:20:03.140
+So the theorem is the following.
+
+00:20:03.140 --> 00:20:18.740
+The sequence of partial sums, S sub n, so let's actually, is bounded.
+
+00:20:23.720 --> 00:20:32.440
+And again, I mean the way we see this is just that when these terms are non-negative, the sequence of partial sums is monotone.
+
+00:20:37.740 --> 00:20:40.280
+So here's the proof. It's quite easy.
+
+00:20:40.280 --> 00:20:51.680
+So we have for all n, natural number, make that m.
+
+00:20:51.680 --> 00:21:12.000
+So if I look at S sub n plus 1, this is equal to, so this is the m plus 1 partial sum, sum from n equals 1 to m plus 1, x sub n, this is equal to sum from n equals m, x n plus x m plus 1.
+
+00:21:13.040 --> 00:21:18.660
+And now the x m plus 1 term is non-negative, right? We're assuming all the terms are non-negative.
+
+00:21:18.820 --> 00:21:29.380
+So this right-hand side, so this is certainly bigger than or equal to sum from n equals 1 to m of x n and that equals sm.
+
+00:21:32.620 --> 00:21:41.440
+So just summarizing for all natural numbers m, this m plus 1 is bigger than or equal to sm.
+
+00:21:41.440 --> 00:21:45.660
+Yeah, if I just keep adding non-negative things, the partial sums are getting bigger.
+
+00:21:45.660 --> 00:22:05.260
+So partial sums is a monotone.
+
+00:22:09.420 --> 00:22:18.940
+So maybe I should have stated this slightly differently just so that you don't think this is part of one of the if and only if, I mean this is the assumption that we have for this whole statement.
+
+00:22:18.940 --> 00:22:31.280
+Suppose this, so the conclusion is that this converges if and only if the sequence of partial sums is bounded.
+
+00:22:34.140 --> 00:22:41.540
+So based on the assumption that all the terms are non-negative, we see that the sequence of partial sums is monotone increasing.
+
+00:22:48.680 --> 00:22:54.740
+That's by what we prove for sequences, every monotone increasing sequence converges if and only if it's bounded.
+
+00:23:13.960 --> 00:23:15.180
+Okay, and that's it.
+
+00:23:22.400 --> 00:23:40.180
+Okay, so now not every series we look at does have non-negative terms, but we can always form a certain series from those terms to make a new non-negative,
+
+00:23:40.180 --> 00:23:53.560
+a new series with non-negative terms which gives us information about the original series. What am I going on about and look at the convergence properties of that new series.
+
+00:23:53.560 --> 00:24:14.100
+So we have the following definition that a series converges absolutely.
+
+00:24:14.100 --> 00:24:18.260
+We say we have absolute convergence.
+
+00:24:25.100 --> 00:24:36.520
+If the series formed by taking the absolute values of these terms, if this series converges.
+
+00:24:36.520 --> 00:24:51.560
+Okay, so what I was trying to get at before I stated this definition is that absolute convergence implies usual convergence.
+
+00:25:00.960 --> 00:25:12.700
+If I had this series converging absolutely, then the original series converges.
+
+00:25:17.600 --> 00:25:24.060
+Okay, now before I prove this theorem, let me prove a little small theorem. I can't remember if I gave it for an assignment or not.
+
+00:25:26.720 --> 00:25:32.060
+But it's essentially a triangle inequality for however many terms you like.
+
+00:25:36.460 --> 00:26:00.220
+So we'll prove this theorem in just a minute, but first let me prove the following theorem that if m is bigger than or equal to 2 and x1 up to xm, r and r, then sum from n equals 1 to m,
+
+00:26:01.520 --> 00:26:10.360
+xn, take the absolute value of this sum, this is less than or equal to sum from n equals 1 to m of the absolute value.
+
+00:26:10.360 --> 00:26:16.980
+Okay, when m equals 2, this is just the usual form of the triangle inequality.
+
+00:26:18.180 --> 00:26:30.380
+So m equals 2, this is just saying x1 plus x2 is always less than or equal to x1 plus x2, which is just the triangle inequality.
+
+00:26:31.060 --> 00:26:48.500
+Okay, but typically how life works, at least in analysis, if you can do it for two things, then you can do it for n things or m things in this case by induction.
+
+00:26:48.500 --> 00:27:01.200
+And so that's how we're going to prove this. So we'll first prove this triangle inequality by induction. So prove now.
+
+00:27:02.100 --> 00:27:09.380
+And the induction proofs we've done so far in, little n is our thing that we're inducting on.
+
+00:27:09.380 --> 00:27:20.480
+So one in this statement m is the thing, induction on m. Okay, so let's look at the base case, which is m equals 2.
+
+00:27:20.480 --> 00:27:40.360
+So then this is just the triangle inequality for two real numbers that we've already proved before.
+
+00:27:40.360 --> 00:27:46.880
+Okay, x1 plus x2 and absolute value is always less than or equal to sum of x1 plus the sum of x2.
+
+00:27:47.120 --> 00:27:51.940
+I mean sum of absolute value of x1 plus n to x, the absolute value of x2.
+
+00:27:55.140 --> 00:28:01.500
+So the base case is fine. So now we do the inductive step.
+
+00:28:05.120 --> 00:28:13.840
+So I'll assume the statement that I want to prove, usually I used m, but now I'll go to the next letter l going in reverse alphabetical order.
+
+00:28:13.840 --> 00:28:26.820
+Suppose if x1, xl, and r.
+
+00:28:30.600 --> 00:28:42.840
+So let's actually instead of just restating all that, just call the statement star.
+
+00:28:42.840 --> 00:28:57.040
+So suppose star holds 4m equals l. And now we want to prove that star holds for m equals l plus 1.
+
+00:28:58.660 --> 00:29:11.200
+Now we want to show star holds for m equals l plus 1.
+
+00:29:21.500 --> 00:29:29.080
+Okay, so let x1 up to xl plus 1 be in r.
+
+00:29:33.580 --> 00:29:41.520
+Then if I look at the sum, sum from n equals 1 to l plus 1 xn.
+
+00:29:42.480 --> 00:29:53.340
+This is equal to sum from n equals 1 to l xn plus xl plus 1, an absolute value.
+
+00:29:55.340 --> 00:30:19.120
+By the usual triangle inequality for two terms, this is less than or equal to sum from n equals 1 to l of xn and absolute value of xl plus 1 by usual triangle inequality.
+
+00:30:20.360 --> 00:30:25.880
+And now this term, since I'm assuming m equals l holds.
+
+00:30:27.680 --> 00:30:40.060
+So the m equals l case says this is less than or equal to sum from n equals 1 to l of xn plus xl plus 1, an absolute value.
+
+00:30:40.060 --> 00:30:59.740
+So this is by inductive hypothesis. And this is just equal to sum from n equals 1 to l plus 1 xn.
+
+00:31:00.460 --> 00:31:04.780
+So we've proven the case for now m equals l plus 1.
+
+00:31:16.680 --> 00:31:26.420
+And that concludes the proof of this generalized triangle inequality with arbitrary number of terms.
+
+00:31:30.380 --> 00:31:38.140
+So let's get back to proving the theorem that absolute convergence implies convergence.
+
+00:31:38.140 --> 00:31:43.440
+So we'll do that by proving that absolute convergence implies that the series is koshi.
+
+00:31:47.920 --> 00:32:05.960
+So proof, and this is of the theorem just before the theorem we proved that absolute convergence implies usual convergence.
+
+00:32:07.740 --> 00:32:29.060
+So we will prove that in fact this series is koshi assuming that assuming absolute convergence.
+
+00:32:35.160 --> 00:32:47.820
+And from last time we had proved the statement or at least has followed from statement for sequences that a koshi series converges.
+
+00:32:47.820 --> 00:33:15.780
+So we have to prove that the series is koshi. Remember this means for all epsilon positive there exists a natural number m such that for all l bigger than m bigger than or equal to m.
+
+00:33:19.660 --> 00:33:27.540
+If I look at the sum from n equals m plus 1 to l of xn, this is less than epsilon.
+
+00:33:27.540 --> 00:33:32.620
+So let epsilon be positive.
+
+00:33:36.440 --> 00:33:54.760
+So since we're assuming that the series is absolutely convergent, this implies that the series with absolute values here is also koshi.
+
+00:33:56.960 --> 00:34:12.340
+So that means that there exists a natural number m sub zero such that for all l bigger than m bigger than or equal to m sub zero.
+
+00:34:12.340 --> 00:34:31.080
+So if I look at the sum of absolute values from n plus 1 to l, this is less than epsilon. Now this should have an absolute value on the outside, but this is a sum of non-negative terms so the absolute value can be removed.
+
+00:34:38.560 --> 00:34:51.320
+I mean you can essentially see where we're going based on what's written on the board, what we want to prove and what we know and this triangle inequality.
+
+00:34:59.200 --> 00:35:02.740
+So choose m to be m sub zero.
+
+00:35:06.040 --> 00:35:21.560
+Then if l is bigger than m is bigger than or equal to m, then absolute value of the sum from n plus 1 to l, sub n.
+
+00:35:21.560 --> 00:35:35.780
+This is less than or equal to the sum from n equals m plus 1 to l of the absolute values of x sub n by the theorem we proved just a minute ago.
+
+00:35:37.540 --> 00:35:46.440
+And this is less than epsilon by our choice of m. m is equal to m zero and for m zero we have this inequality right here.
+
+00:35:54.040 --> 00:35:58.180
+This series is Koshy which implies it converges.
+
+00:36:15.600 --> 00:36:27.540
+So basically the only test you know for determining when a series is convergent is in one of two possibilities.
+
+00:36:27.540 --> 00:36:35.480
+Either a it has a very simple form and it's not so all the terms are not non-negative but the terms have a very simple form.
+
+00:36:36.280 --> 00:36:44.220
+That's the alternating series test which will discuss in a little bit possibly the next lecture.
+
+00:36:46.060 --> 00:36:50.400
+And then when a series converges absolutely we have a lot of tests for that.
+
+00:36:54.100 --> 00:37:12.960
+We'll see that series which converge absolutely somehow are not fickle meaning I can rearrange the terms and the rearrange series will still converge absolutely in converged to the same thing that the original series converged to.
+
+00:37:19.400 --> 00:37:34.600
+So let me just make a brief comment after this theorem we proved that absolute convergence implies usual convergence and tie in a little bit to what I just said there.
+
+00:37:34.600 --> 00:37:56.560
+So we'll show that the series sum from one to infinity of minus one to the n one over n this converges.
+
+00:37:59.480 --> 00:38:13.280
+But note that this series does not converge absolutely.
+
+00:38:20.840 --> 00:38:30.620
+Right because when I take absolute values I just get some of one over n which is the harmonic series which we just showed a few minutes ago is divergent.
+
+00:38:40.280 --> 00:38:44.220
+Now we're going to move on to some convergence tests.
+
+00:38:56.660 --> 00:39:11.320
+Now when it comes to convergence tests what these all follow from is basically what we know about geometric series and the following comparison tests.
+
+00:39:11.320 --> 00:39:19.280
+Although when I do the proofs of the other convergence tests I won't actually state that I'm using the comparison test but that's kind of what's really getting used.
+
+00:39:19.280 --> 00:39:36.180
+So the first test we have is the comparison test and the statement is the following.
+
+00:39:38.100 --> 00:39:47.940
+Suppose we're all in a natural number we're looking at non-negative terms with one smaller than the other.
+
+00:39:52.520 --> 00:40:06.460
+Then the conclusion is if the bigger one converges this implies that the smaller one converges
+
+00:40:11.860 --> 00:40:25.780
+and if the smaller one diverges this implies that the bigger one diverges.
+
+00:40:39.300 --> 00:40:49.980
+So how we're going to prove this is we're dealing with terms that are non-negative so we'll use this theorem about a series of non-negative terms.
+
+00:40:52.480 --> 00:41:02.320
+So we use that theorem we proved that a series of non-negative terms converges if and only if the sequence of partial sums is bounded.
+
+00:41:07.600 --> 00:41:32.300
+So if this series converges this implies that the sequence of partial sums is bounded which implies that means that the sequence of partial sums is bounded.
+
+00:41:32.300 --> 00:41:49.520
+So that means that there exists something non-negative number such that for all natural numbers m some from n equals 1 to m of y sub n is less than or equal to b.
+
+00:41:56.520 --> 00:42:19.260
+So this immediately implies that since all the x n's are less than or equal to the y n's we get that the mth partial sum corresponding to the x n's which is less than or equal to the mth partial sum for the y n's.
+
+00:42:19.260 --> 00:42:22.120
+So this is also less than or equal to b for all m.
+
+00:42:31.060 --> 00:42:47.200
+So the sequence of partial sums corresponding to the x n's is bounded and therefore by the theorem we proved which I think I have erased already.
+
+00:42:47.200 --> 00:42:55.040
+So the series converges.
+
+00:43:03.460 --> 00:43:20.900
+Now proving to is essentially it's kind of the same thing except the inequalities go the other way and the x n's are getting bigger which implies the y n's are also getting or the partial sums corresponding to the x n's is getting bigger.
+
+00:43:20.900 --> 00:43:25.080
+So we are implying that the partial sums corresponding to the y n's are also getting bigger.
+
+00:43:25.080 --> 00:43:50.360
+So now two if some if the series diverges then this implies that partial sums is unbounded.
+
+00:43:53.600 --> 00:44:00.760
+We will now prove that this implies that the partial sums corresponding to the y n's are unbounded.
+
+00:44:13.460 --> 00:44:24.860
+Now remember what it means for a sequence to be bounded is that there exists a non-negative number b such that for all m I have that bound.
+
+00:44:24.860 --> 00:44:33.860
+So to say it's unbounded it means that for all b there exists a little m bigger than or equal to capital n such that that inequality is reversed.
+
+00:44:36.100 --> 00:44:55.720
+So when we put here in a box what this actually means again this means that for all b bigger than or equal to zero there exists a m natural numbers so that the y n equals 1 to m is bigger than or equal to b.
+
+00:44:57.560 --> 00:45:08.320
+That's what this means. So this is for all statements so I have to be able to prove it for every b b bigger than or equal to zero.
+
+00:45:09.180 --> 00:45:36.820
+Now since we know that the partial sums corresponding to the x n's is unbounded this implies that there exists an m natural number such that sum from n equals 1 to m of x n is bigger than or equal to b.
+
+00:45:39.900 --> 00:45:53.440
+Now let me say again just to show it's unbounded I should really have so for a sequence to be unbounded I should have an absolute value here is bigger than or equal to b but all of these terms is non-negative.
+
+00:45:53.440 --> 00:46:02.360
+All of these terms are non-negative and therefore I can remove the absolute values and the same thing here.
+
+00:46:02.980 --> 00:46:21.260
+So there exists a natural number m so that I have this and so let me put a little m zero there because we have to somehow show there exists a little m choose m to be this m zero.
+
+00:46:21.260 --> 00:46:39.120
+So now if we look at the partial sums for the y n's this is bigger than or equal to because m equals m zero it's this term which is bigger than or equal to b.
+
+00:46:41.940 --> 00:47:01.060
+Thus this proves partial sums corresponding to the y n is unbounded and therefore this series diverges.
+
+00:47:09.200 --> 00:47:25.020
+So let's use the comparison theorem to consider series like 1 over n p series and prove when they do converge.
+
+00:47:28.660 --> 00:47:37.460
+So theorem or p a real number.
+
+00:47:45.980 --> 00:47:59.820
+Some n equals 1 to infinity 1 over n to the p converges if and only if p is bigger than 1.
+
+00:48:13.920 --> 00:48:25.720
+So for the proof now why does the series converging imply p has to be bigger than 1.
+
+00:48:25.720 --> 00:48:39.240
+So we'll do this by contradiction so suppose 1 over n to the p equals 1 to infinity converges.
+
+00:48:42.840 --> 00:49:03.660
+So we'll do the proof by contradiction that p has to be bigger than 1. Suppose p is less than or equal to 1 then 1 over n to the p when p is less than or equal to 1 this is bigger than or equal to 1 over n.
+
+00:49:09.540 --> 00:49:22.660
+And this implies since 1 over n since the series corresponding to 1 over n diverges implies that the series corresponding to 1 over n to the p diverges by the comparison test.
+
+00:49:38.220 --> 00:49:45.280
+This is a direct contradiction to what we're assuming that the series converges.
+
+00:49:45.280 --> 00:49:56.140
+So this must be false and p must be bigger than 1. So we've shown that if this series converges then p has to be bigger than 1.
+
+00:49:56.140 --> 00:50:13.160
+So now let's prove the other direction and suppose p is bigger than 1 and prove that the p series 1 over n to the p converges.
+
+00:50:22.380 --> 00:50:33.780
+So the way we're going to do this is kind of how we showed that the harmonic series is divergent.
+
+00:50:37.020 --> 00:50:44.660
+So what we're going to do is first we're going to show that there is a sub sequence of partial sums corresponding to this guy that is bounded.
+
+00:50:44.660 --> 00:50:54.260
+So remember to prove that this converges if and only if the sequence of partial sums is bounded.
+
+00:50:54.760 --> 00:51:01.960
+And what we're going to first do kind of towards that is prove that there is a sub sequence of partial sums which is bounded.
+
+00:51:10.400 --> 00:51:28.840
+So we make a first claim that the sequence of partial sums so s 2 to the k.
+
+00:51:30.720 --> 00:51:40.860
+So this is sum from n goes 1 to 2 to the k of 1 over n to the p. So all k and natural number.
+
+00:51:40.860 --> 00:51:56.080
+So this partial sum is bounded by a fixed number depending on p 1 plus 1 minus 2 to the minus p minus 1.
+
+00:51:57.120 --> 00:52:06.560
+In other words there's this sub sequence of partial sums corresponding to s 2 to the k is bounded.
+
+00:52:09.180 --> 00:52:25.520
+So again we do this by grouping these terms according to which power of 2 the denominator is between and then estimate from above now rather than from below like we did for the harmonic series.
+
+00:52:25.520 --> 00:52:43.440
+So we have s 2 to the k equals 1. So again we're grouping these terms according to whether they're where they fall.
+
+00:52:44.040 --> 00:53:09.460
+So this is just write this out one more time. This is equal to 1 plus 1 half to the p plus 1 over 3 to the p plus 1 over 4 to the p plus 1 over 5 to the p plus 1 over 8 to the p plus.
+
+00:53:09.460 --> 00:53:12.860
+And then up until the last term.
+
+00:53:21.720 --> 00:53:27.240
+Now I can write this as 1 plus the sum from l equals 1 to k.
+
+00:53:27.240 --> 00:53:44.500
+So the number of blocks I have here. And then now the terms that come in each of these blocks 1 over n to the p.
+
+00:53:50.100 --> 00:54:02.100
+And so now I estimate 1 over n not from below by this guy but from above by putting in the smallest n that n is in this block.
+
+00:54:02.840 --> 00:54:08.660
+So this is less than or equal to 1 plus sum from l equals 1 to k.
+
+00:54:09.520 --> 00:54:23.460
+So I'm from n equals 2 to the l minus 1 plus 1 to the l 1 over 2 to the l minus 1 plus 1 raised to the pth power.
+
+00:54:29.820 --> 00:54:38.660
+Now this plus 1 is just making things bigger on the bottom. So if I remove it I've made things bigger overall for this fraction.
+
+00:54:38.660 --> 00:54:55.840
+So this is less than or equal to sum from 1 equals l equals 1 to k. Some n equals 2 to the l minus 1 to the l times 1 over 2 to the p times l minus 1.
+
+00:54:57.620 --> 00:55:07.120
+And now this thing here, if we do the same algebra we did a minute ago this is equal to 1 l equals 1 to k.
+
+00:55:08.160 --> 00:55:16.780
+Now I have this term coming out. And then the number of terms I have here just like I did for the harmonic series.
+
+00:55:16.780 --> 00:55:24.560
+This is equal to 2 to the l minus 1 plus 1 plus 1.
+
+00:55:29.700 --> 00:55:40.160
+And now this is equal to 1 plus sum from l equals 1 to k.
+
+00:55:42.180 --> 00:55:56.260
+And so this whole thing here is equal to 2 to the l minus 1. So I get 2 to the minus p minus 1 l minus 1.
+
+00:55:59.160 --> 00:56:04.120
+Now I can shift this index. Actually this.
+
+00:56:08.820 --> 00:56:17.640
+So I guess I could have made that sharper but it doesn't matter. I could shift this index l by no. Okay. So l starts at 1 and goes to k.
+
+00:56:17.640 --> 00:56:33.660
+And here I have the sum l minus 1 so I can shift this index to go from now l equals 0 to k minus 1 to the minus p minus 1 l.
+
+00:56:36.140 --> 00:56:45.120
+Okay. So I should have, this is like making a change of variables l prime equals l minus 1. And so let me put l prime instead of l.
+
+00:56:49.140 --> 00:57:08.560
+Now this, so p is bigger than 1. Okay. So this is corresponds to a geometric series now. So let me actually rewrite this as 1 over 2 to the p minus 1 to the l prime.
+
+00:57:09.320 --> 00:57:24.720
+Okay. When p is bigger than 1, then 1 over 2 to the p minus 1 is less than 1. So this thing is a k minus 1 partial sum for the series, geometric series with this as r. Right.
+
+00:57:24.720 --> 00:57:34.900
+So this is always bounded above by. If I add up all the terms.
+
+00:57:37.440 --> 00:57:46.920
+This equals that thing that I have up there 1 over 1 minus 2 to the minus p minus 1. Okay.
+
+00:57:55.840 --> 00:58:05.660
+So that proves that along this subsequence, these partial sums are bounded by this fixed number.
+
+00:58:06.320 --> 00:58:19.220
+And now I claim that this proves that the whole sequence of partial sums is bounded. Okay. In fact, by the same number.
+
+00:58:23.600 --> 00:58:26.000
+For all, nm natural number.
+
+00:58:29.040 --> 00:58:38.280
+nm is less than or equal to this number again. 1 minus 2 to the minus p minus 1. Okay.
+
+00:58:41.720 --> 00:58:52.880
+So let m be a natural number. So we're trying to prove this bound. What do we do? We find a dietic number of number of the form 2 to the k bigger than m.
+
+00:58:55.260 --> 00:59:01.540
+And since 2 to the m is bigger than m, I think that's maybe one of the first things we did by induction.
+
+00:59:05.520 --> 00:59:18.680
+So we get that s to the m or s of m, which is the nth partial sum of non-negative terms. This is going to be less than or equal to since this is a monotone increasing guy.
+
+00:59:18.680 --> 00:59:31.540
+This is going to be less than or equal to s to the 2m, which is less than or equal to 1 plus 1 minus 2 to the minus p minus 1. Okay.
+
+00:59:31.540 --> 00:59:51.580
+Okay. That's the sequence of partial sums is bounded, which implies the series converges.
+
+00:59:53.260 --> 00:59:55.580
+And that's the end of the proof. And I think we'll stop there.
+

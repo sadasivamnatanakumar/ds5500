@@ -1,0 +1,1034 @@
+WEBVTT
+
+00:00:12.760 --> 00:00:18.800
+Okay, so let's continue with our discussion about continuous functions.
+
+00:00:21.800 --> 00:00:23.720
+Let's first let me recall a few facts.
+
+00:00:29.420 --> 00:00:33.020
+Well, this is not a definition, but this was a theorem we proved last time.
+
+00:00:33.260 --> 00:00:37.280
+So I won't recall the definition of continuity, but we proved this theorem
+
+00:00:37.280 --> 00:00:49.620
+characterizing continuity. And if we have a subset of r, an element in s, and a function,
+
+00:00:49.620 --> 00:01:08.280
+s going from s to r, then f is continuous at c, if and only if for every sequence,
+
+00:01:08.280 --> 00:01:27.300
+x sub n, of elements of s, such that x n converges to c, we have limit as n goes to infinity,
+
+00:01:31.160 --> 00:01:38.180
+f of c, so this was a theorem we proved last time. And let me recall an older theorem,
+
+00:01:38.440 --> 00:01:46.480
+which I said was very powerful, but never really gave you any sort of powerful application,
+
+00:01:47.440 --> 00:01:52.880
+which will start giving some powerful applications now, but this was the Balsano
+
+00:01:54.160 --> 00:02:13.900
+Virostross theorem, which states that every bounded sequence of real numbers has a convergent sub sequence.
+
+00:02:26.460 --> 00:02:32.040
+And we're going to use these two theorems today, and in the next lecture,
+
+00:02:32.040 --> 00:02:40.820
+to prove that a continuous function on a closed and bounded interval is very well behaved.
+
+00:02:40.820 --> 00:02:54.540
+So what we're going to show, let's call it the theme, is that
+
+00:03:13.160 --> 00:03:19.500
+f from a closed and bounded interval is continuous, meaning it's continuous at every point.
+
+00:03:24.340 --> 00:03:37.860
+And then it is well behaved. And for example, the first thing that we're going to prove,
+
+00:03:37.860 --> 00:03:56.200
+which will be a combination of two theorems, is that the image of a closed and bounded interval by a continuous function is another closed and bounded interval.
+
+00:03:58.140 --> 00:04:04.800
+And e could equal d, so this could just be a single point, for example, if f is a constant function, then the image would just be a single point.
+
+00:04:06.940 --> 00:04:12.000
+So this is a theme of this lecture and the next lecture.
+
+00:04:17.580 --> 00:04:31.620
+And so let's start, basically, we're going to prove two theorems, one is called the min max theorem, and the other is called Balsano's intermediate value theorem.
+
+00:04:31.620 --> 00:04:40.020
+The min max theorem will tell you that f of an interval is always contained in an interval of this type.
+
+00:04:41.580 --> 00:04:48.820
+And then the intermediate value theorem will tell you everything in between two certain bounds is attained by f.
+
+00:04:48.820 --> 00:04:58.900
+So let's start off with showing that f of a closed and bounded interval is a bounded set.
+
+00:04:59.200 --> 00:05:01.620
+So let me just recall what it means for a function to be bounded.
+
+00:05:03.280 --> 00:05:10.580
+We say that a function from a subset s to r is bounded, so here s is a subset of r.
+
+00:05:10.580 --> 00:05:28.200
+It is bounded if there exists a non-negative b such that for all x and s, f of x is bigger than or equal to b.
+
+00:05:29.040 --> 00:05:51.280
+So for example, if I take f of x to be 3x plus 1 and here s is the closed and bounded interval 0, 1, then f is bounded.
+
+00:05:58.520 --> 00:06:05.920
+So pictorially, what does this mean? Well, f of x equals 3x plus 1, so at 1 it's going to be 4.
+
+00:06:08.760 --> 00:06:14.980
+And pictorially, a function is bounded if the graph is always bounded between two real numbers.
+
+00:06:16.900 --> 00:06:22.800
+And for us, for f of x it's always bounded between 0 and 4 in terms of this absolute value.
+
+00:06:25.900 --> 00:06:36.280
+So f of x equals 3x plus 1. This is less than or equal to by the triangle inequality three times the absolute value of x plus 1.
+
+00:06:36.280 --> 00:06:40.680
+x is between 0 and 1, so it's absolute values bounded by 1.
+
+00:06:44.780 --> 00:06:46.840
+So this function is bounded.
+
+00:06:52.280 --> 00:06:58.260
+And so how about a function which is not bounded? What does that mean?
+
+00:06:59.200 --> 00:07:05.160
+Remember whenever we see definition, we should try to negate it to understand it better.
+
+00:07:05.160 --> 00:07:19.940
+So f is unbounded if we're all b bigger than or equal to 0.
+
+00:07:20.860 --> 00:07:32.600
+There exists some bad x such that f of x an absolute value is bigger than or equal to b.
+
+00:07:37.100 --> 00:07:51.160
+So if a bounded function is supposed to have a graph bounded between two real numbers, an unbounded one is one in which at least part of the graph is going off to plus infinity or minus infinity.
+
+00:07:51.160 --> 00:08:14.840
+So kind of most basic example we could think of is let's say if we wanted to go from 0, 1 to r again we could take f of x to be 0 at x equals 0, 1 over x if x is not equal to 0.
+
+00:08:16.420 --> 00:08:34.840
+So this function looks like 1, 1, and goes up to infinity as you approach x equals 0.
+
+00:08:34.840 --> 00:08:38.420
+So why is this unbounded? We have to verify the negation of the definition.
+
+00:08:39.260 --> 00:08:44.720
+So I claim f is unbounded.
+
+00:08:47.060 --> 00:08:55.480
+Let b be bigger than or equal to 0. We now have to find an x in 0, 1 so that 1 over x or so that f of x is bigger than b.
+
+00:08:55.480 --> 00:09:16.460
+And this is pretty easy. So let x be in r such that 1 over x is bigger than b.
+
+00:09:24.460 --> 00:09:30.740
+So if b is equal to 0, we take x to be anything in 0, 1 that's fair enough.
+
+00:09:34.940 --> 00:09:42.060
+So if x is 1 over b, so if we like we could make this explicit.
+
+00:09:43.880 --> 00:09:45.420
+So I'll just keep it here.
+
+00:09:54.380 --> 00:10:01.240
+And so now if we take x here and look at the graph it's going to be bigger than b.
+
+00:10:01.240 --> 00:10:14.320
+And that's it.
+
+00:10:22.980 --> 00:10:23.600
+OK.
+
+00:10:23.600 --> 00:10:37.360
+OK, so several of these proofs will have the same flavor.
+
+00:10:38.080 --> 00:10:41.920
+I hope what we're going to try and prove.
+
+00:10:47.300 --> 00:10:50.780
+And this one is a nice one to start off with and necessary.
+
+00:10:51.280 --> 00:10:58.860
+So my first theorem that I want to prove about continuous functions on a bounded interval,
+
+00:10:59.860 --> 00:11:02.280
+closed and bounded interval is that they're bounded.
+
+00:11:09.180 --> 00:11:20.640
+So if I have a function from a b to r is continuous, meaning it's continuous at every point in a b,
+
+00:11:24.840 --> 00:11:26.900
+then f is bounded.
+
+00:11:34.080 --> 00:11:43.000
+So the proof of this theorem and several of these theorems will be by contradiction.
+
+00:11:46.760 --> 00:11:53.460
+And the fact that we're on a closed and bounded interval is, or that we're in the setting,
+
+00:11:53.740 --> 00:11:55.880
+is what allows us to use balls on a wire straw.
+
+00:11:56.080 --> 00:11:57.280
+This is this powerful too.
+
+00:11:58.280 --> 00:12:03.520
+So this is so assume.
+
+00:12:10.900 --> 00:12:24.140
+And so like I said, this proof is by contradiction that the conclusion is false.
+
+00:12:34.620 --> 00:12:36.720
+Which the precise meaning is right here.
+
+00:12:37.780 --> 00:12:40.680
+For all b there exists an x and s such that that.
+
+00:12:41.300 --> 00:12:47.200
+So for every b I can find an x and s so that the absolute value of f of x is bigger than or equal to b.
+
+00:12:48.420 --> 00:12:57.000
+So I could take b to be n, for example, where n is a natural number.
+
+00:13:00.580 --> 00:13:03.300
+Then we're all in a natural number.
+
+00:13:03.300 --> 00:13:18.780
+So I'm taking b to be n. There exists x sub n in a b such that f of x sub n and absolute value is bigger than or equal to n.
+
+00:13:21.200 --> 00:13:27.800
+So now I have this sequence which is bounded because it's in this closed and bounded interval.
+
+00:13:34.700 --> 00:13:43.320
+So x is bounded because it's in this closed and bounded interval a b.
+
+00:13:43.320 --> 00:14:13.300
+So by balls on a wire straws, there exists a sub sequence x in sub k of the sequence x sub n and x in r such that limit as k goes to infinity of x of n sub k.
+
+00:14:20.740 --> 00:14:24.580
+Now I claim that this x is actually in the interval a b.
+
+00:14:28.720 --> 00:14:35.980
+Since x sub n sub k is a sub sequence of x sub n which are in a sub b or a comma b.
+
+00:14:41.120 --> 00:14:47.200
+So I have for all k x sub n sub k is between a and b.
+
+00:14:47.600 --> 00:14:52.260
+This implies by what we know about limits that limits respect inequalities.
+
+00:14:53.760 --> 00:15:05.760
+Therefore a less than or equal to limit s k goes to infinity of x of n sub k which is less than or equal to b.
+
+00:15:07.080 --> 00:15:14.680
+This is x. So i.e. x is between a and b.
+
+00:15:20.620 --> 00:15:30.680
+Another way, instead of going through this, is, I believe we did in the assignment that an interval of this form is closed.
+
+00:15:33.720 --> 00:15:48.680
+You prove that for a closed set, so when I say an interval of this form is closed, I mean it's a closed set and you proved on the assignment that for a closed set, if I have a convergent sequence, then the limit of that sequence has to belong to the set.
+
+00:15:48.680 --> 00:15:57.000
+So this is really a consequence of the fact that this interval is a closed set.
+
+00:15:58.480 --> 00:16:01.100
+So I have this sub sequence.
+
+00:16:11.180 --> 00:16:15.080
+X of n sub k is converging to x which is in a b.
+
+00:16:20.280 --> 00:16:23.680
+So let's look at f of x.
+
+00:16:30.200 --> 00:16:52.980
+Since f is continuous and the x sub n sub k is converged to x, as k goes to infinity, I know by the theorem of top over there.
+
+00:16:52.980 --> 00:17:01.040
+That f of x equals the limit of f of x sub x sub n sub k.
+
+00:17:02.000 --> 00:17:12.020
+And therefore, f of value of x is equal to the limit as k goes to infinity of the f of values.
+
+00:17:16.420 --> 00:17:21.220
+But now, f of x sub n is always bigger than or equal to n.
+
+00:17:21.560 --> 00:17:31.980
+That's how the x sub n's were chosen. We assume that f is unbounded and therefore all of these x sub n's and a b were chosen so that f of x sub n is bigger than or equal to n.
+
+00:17:31.980 --> 00:17:34.300
+So this is bigger than or equal to.
+
+00:17:48.040 --> 00:17:56.020
+So each of these is bigger than or equal to n sub k.
+
+00:18:02.180 --> 00:18:03.600
+Let's see how to write this without.
+
+00:18:12.800 --> 00:18:19.580
+I don't want to write the limit of something equals infinity because we haven't said what it means for the limit of something to equal infinity.
+
+00:18:23.560 --> 00:18:40.580
+So then the limit as k goes to infinity of f of x sub n sub k exists, which implies that the sequence is bounded.
+
+00:18:42.040 --> 00:18:44.320
+A convergent sequence is always bounded.
+
+00:18:48.800 --> 00:18:54.440
+And since n sub k is always less than or equal to f of x sub k.
+
+00:18:55.140 --> 00:19:05.160
+And this is a bounded sequence. This tells me that the sequence n sub k is bounded.
+
+00:19:05.160 --> 00:19:14.860
+But this is impossible. Remember, the form of sub sequence, the n sub k's are increasing integers, which is a contradiction.
+
+00:19:15.220 --> 00:19:20.820
+And this is always because n sub 1 is always less than n sub 2 is less than 3 and so on.
+
+00:19:21.300 --> 00:19:23.120
+So these are always getting bigger without bound.
+
+00:19:26.860 --> 00:19:29.860
+And therefore, we have our contradiction.
+
+00:19:32.000 --> 00:19:33.740
+So again, here's the structure of the proof.
+
+00:19:34.540 --> 00:19:38.780
+We have, we want to assume some property of f.
+
+00:19:41.060 --> 00:19:46.640
+So we assume not, we get this kind of bad sequence of numbers in this interval.
+
+00:19:48.520 --> 00:19:52.820
+And using boson of iraustross, we get to pass to some sort of limit x.
+
+00:19:53.580 --> 00:20:02.380
+And the continuity of f at x essentially breaks the badness of the sequence x sub n.
+
+00:20:03.680 --> 00:20:08.860
+Okay, well, we'll see another argument where it's kind of the same flavor.
+
+00:20:19.000 --> 00:20:24.820
+So, we'll assume state that f always achieves kind of a maximum value and minimum value.
+
+00:20:24.820 --> 00:20:27.380
+So let me first on the close and bounded intervals.
+
+00:20:27.580 --> 00:20:32.400
+So let me precisely define what these absolute min's and absolute maxes are.
+
+00:20:33.920 --> 00:20:39.840
+So let f be a function from s to r, s is a non-empty subset of r.
+
+00:20:40.840 --> 00:20:53.280
+We say f achieves, f achieves an absolute max.
+
+00:20:59.440 --> 00:21:01.680
+Let me write it this way.
+
+00:21:02.820 --> 00:21:12.460
+An absolute min at c and s if f of c sits below f of x for all x and s.
+
+00:21:15.100 --> 00:21:21.900
+If we're all x and s, f of c is less than or equal to f of x.
+
+00:21:22.900 --> 00:21:46.520
+Okay, so this is an absolute min f achieves absolute max at d and s.
+
+00:21:47.380 --> 00:21:53.460
+If f of d sits above everything, every x he's sticking to f.
+
+00:21:53.620 --> 00:22:01.240
+If for all x and s, f of x is less than or equal to f of d.
+
+00:22:08.640 --> 00:22:12.000
+So, for example, so what's the picture that goes with this?
+
+00:22:15.600 --> 00:22:18.400
+Let's imagine we're on a close and bounded interval.
+
+00:22:36.640 --> 00:22:38.200
+Then, d.
+
+00:22:38.200 --> 00:22:41.120
+So, f achieves absolute max at d.
+
+00:22:41.780 --> 00:22:54.920
+The graph of f sits below the value f of d and sits above the value f of c.
+
+00:22:56.660 --> 00:23:08.180
+Now, absolute max and min's at points are so that the function is always sitting above f evaluated at that point.
+
+00:23:09.200 --> 00:23:12.640
+Just a quick warning.
+
+00:23:15.200 --> 00:23:25.620
+Let's say we're looking at, all right, so this is not to scale, but let's say our function looks like this.
+
+00:23:38.200 --> 00:23:42.500
+So, this is 1, 2, 3 halves.
+
+00:23:44.220 --> 00:23:46.760
+Then this function does not have an absolute max.
+
+00:23:47.240 --> 00:23:53.600
+It does not achieve an absolute max or achieve an absolute min on the set 1, 2.
+
+00:23:56.080 --> 00:24:02.100
+What you would like to say is that 1, that f achieves an absolute min at 1.
+
+00:24:02.100 --> 00:24:07.960
+But the graph does not sit above f evaluated at 1.
+
+00:24:09.640 --> 00:24:14.720
+Just like over here, the graph of f does not sit below f evaluated at 2.
+
+00:24:17.100 --> 00:24:24.460
+Absolute f achieves an absolute min at a point if the whole graph sits above f evaluated at that point.
+
+00:24:24.600 --> 00:24:28.400
+Not necessarily some number sits below the whole graph.
+
+00:24:28.540 --> 00:24:29.760
+That's what boundedness means.
+
+00:24:33.180 --> 00:24:43.180
+So, I just want to clarify that distinction between the graph of a function being bounded below by a number and f achieving a min at a certain point.
+
+00:24:43.480 --> 00:24:52.900
+So, for example, the graph of this function is bounded below by 1, but f does not achieve an absolute min at c equals 1.
+
+00:25:13.800 --> 00:25:24.560
+So, our next theorem is the min max theorem for continuous functions, which is the following.
+
+00:25:29.880 --> 00:25:50.560
+The f b function from a b to r, if f is continuous, meaning it's continuous at every point in a b, then f achieves.
+
+00:25:54.560 --> 00:26:05.420
+Absolute min and absolute max on a b.
+
+00:26:06.960 --> 00:26:33.900
+So, another way of stating this, so let's just make this a mark, says that there exists c, d, and a b such that f of a b is contained in f of c, f of d.
+
+00:26:45.000 --> 00:26:55.300
+So, we'll do the proof of an absolute max and the proof of the absolute min I'll leave to you.
+
+00:26:56.420 --> 00:27:02.660
+It's a simple kind of change in the argument that's not too difficult.
+
+00:27:06.100 --> 00:27:16.740
+And again, we're going to use this powerful tool, bosono-virus truss, that allows us to go from kind of an arbitrary sequence in a b to a convergent subsequence.
+
+00:27:16.740 --> 00:27:37.860
+So, let me write it this way, if this function is continuous, then by what we've proven where?
+
+00:27:37.860 --> 00:28:02.620
+Over there, this implies f is bounded, then the set e given by the range of f, so f of x, where x is in a b.
+
+00:28:09.080 --> 00:28:19.840
+This set is bounded above, right? If the absolute value of f of x is always less than or equal to some b, then f of x is always bounded above by b for all x and a b, so this set is bounded above.
+
+00:28:28.080 --> 00:28:37.060
+Now, let l be the supremum of e, which exists because the real numbers have the least upper bound property.
+
+00:28:37.340 --> 00:28:42.700
+Whenever we have a non-empty subset which is bounded above, we can always find a supremum.
+
+00:28:43.800 --> 00:28:50.240
+Now, since l is a supremum of this set, we did this, I think, in an assignment.
+
+00:28:52.340 --> 00:29:05.080
+Yes, I definitely did an assignment. Then, there exists a sequence of elements of this set e converging to l.
+
+00:29:07.120 --> 00:29:18.480
+And to express that, that means there exists some sequence of elements, so there exists a sequence of the form f of x sub n, such that,
+
+00:29:23.360 --> 00:29:27.200
+limit as n goes to infinity of f of x sub n equals l.
+
+00:29:31.460 --> 00:29:37.780
+Now, we would like to show that l is equal to f of d for some number d.
+
+00:29:41.260 --> 00:29:52.220
+And how we are going to do that is, well, this is the x of n's, or just some sequence in a b, so we can pass to a sub sequence, which converges to some number, call it d.
+
+00:29:53.220 --> 00:29:58.000
+And then, we need to show that f of d equals l, and that's where we use continuity. And then, that's the whole proof.
+
+00:30:00.180 --> 00:30:11.060
+Which, you know, we saw a little bit over here. We passed to a sub sequence, and then we get to say that the limit of this sub sequence has kind of the same property as the original sequence.
+
+00:30:13.600 --> 00:30:32.580
+So, by Pozano-Vierstras, there exists a sub sequence x sub n sub k, so this is a sub sequence of the sequence x sub n,
+
+00:30:39.620 --> 00:30:51.880
+and as before, the same argument, you know, and limit d, but as before d will be in the set a b.
+
+00:31:00.400 --> 00:31:07.540
+Such that limit as k goes to infinity of x of n sub k equals d.
+
+00:31:09.780 --> 00:31:25.380
+So, we use Pozano-Vierstras, pass to a sub sequence of the x of n's, and a convergent sub sequence, and so all of these x of n sub k's are between a and b, so their limit d will be between a and b.
+
+00:31:30.360 --> 00:31:46.560
+But now, since f is continuous at d, it's continuous at every point in a b, so it's certainly continuous at d, f of d.
+
+00:31:46.560 --> 00:31:56.480
+This is equal to the limit as k goes to infinity of f of x of n sub k, since the x of n sub k's are converging to d.
+
+00:31:58.280 --> 00:32:11.320
+And now, f of x of n sub k, this is also a sub sequence of the sequence f of x of n, and f of x of n is a convergent sequence, so any sub sequence has to converge to the same thing.
+
+00:32:18.160 --> 00:32:37.440
+Since f of x of n converges to l, and f of n sub k is a sub sequence of f of x of n.
+
+00:32:42.240 --> 00:32:45.020
+And remember, what was l? l was the super v.
+
+00:32:55.320 --> 00:33:12.020
+And therefore, for all x and a b, f of x is less than or equal to f of d, which means f achieves an absolute max at d.
+
+00:33:15.020 --> 00:33:16.540
+And absolute min is similar.
+
+00:33:22.080 --> 00:33:26.860
+And I'll leave it to you.
+
+00:33:37.860 --> 00:33:39.860
+So just re-running through the proof.
+
+00:33:41.120 --> 00:33:50.700
+We did use the fact that a continuous function is bounded, and we extracted the soup, if you like, of the range of f.
+
+00:33:52.740 --> 00:34:01.940
+And so, which is by this exercise we did in one of the assignments, means that this supremum is equal to the limit of f of x of n's.
+
+00:34:02.520 --> 00:34:14.960
+We would like to show l is equal to f of d for some d. So we passed a sub sequence of the x of n's that does converge to something in the interval a b, and we can show using the continuity of f.
+
+00:34:15.960 --> 00:34:26.360
+And how this original sequence was chosen, that f at that point is actually equal to the supremum of that set.
+
+00:34:27.080 --> 00:34:29.940
+And therefore, f achieves an absolute max at that set.
+
+00:34:31.260 --> 00:34:53.140
+As beginning students of math, one of the things we should be curious about is, you know, what hypotheses are needed and what are not in the statements of theorems.
+
+00:34:53.140 --> 00:35:07.060
+So our main hypothesis, so we had two hypotheses really in the theorem that f is going from this closed and bounded interval to r, and that f is continuous.
+
+00:35:07.360 --> 00:35:14.460
+So what happens if we drop one of those hypotheses is the conclusion still true that f achieves an absolute max and absolute min.
+
+00:35:15.000 --> 00:35:26.000
+So this example that I drew right here shows that we need to have the function be continuous in order for it to achieve an absolute max and absolute min on the closed and bounded interval.
+
+00:35:35.360 --> 00:35:38.880
+But it also needs to be on a closed and bounded interval.
+
+00:35:57.260 --> 00:36:12.220
+So we have some continuous function from s to r. Can we drop the assumption that s is equal to this closed and bounded interval, meaning could it be say an open interval does the same conclusion whole.
+
+00:36:53.840 --> 00:36:54.640
+And the answer is no.
+
+00:36:58.640 --> 00:37:02.120
+So what does this guy look like?
+
+00:37:24.900 --> 00:37:28.000
+Here's zero.
+
+00:37:29.460 --> 00:37:30.500
+There's one half.
+
+00:37:35.540 --> 00:37:49.440
+Okay, so this function does not achieve a absolute min or absolute max. But it is continuous on this interval. But because the intervals not closed and bounded, this function does not achieve an absolute min or absolute max.
+
+00:37:49.440 --> 00:37:58.840
+So what I'm trying to say is that the assumptions that two, so there's two assumptions here that we're working on a closed and bounded interval and that f is continuous.
+
+00:37:59.220 --> 00:38:01.880
+These two assumptions are necessary for the theorem to be true.
+
+00:38:03.280 --> 00:38:16.640
+Now they are not the most precise way of stating this theorem. You could replace a closed and bounded interval with what's called a compact set, which maybe I'll put in the assignment or on the midterm.
+
+00:38:18.440 --> 00:38:34.360
+Depending on where there's room. But just in the setting of intervals, the interval has to be closed and bounded and the function has to be continuous for this theorem to hold true.
+
+00:38:35.020 --> 00:38:41.360
+So that's what I wanted to get at.
+
+00:38:54.280 --> 00:39:07.700
+So what we've proven, as I said in this remark here, is that there exists two numbers C and D and a B.
+
+00:39:07.700 --> 00:39:18.760
+So that f of A, B is contained in F of C, F of D. C would be where F achieves an absolute min. D would be where F of A achieves an absolute max.
+
+00:39:25.700 --> 00:39:30.520
+And this is absolute max.
+
+00:39:30.520 --> 00:39:41.880
+So now the question becomes, do I hit everything in between? Does this inclusion become equality?
+
+00:39:42.940 --> 00:39:49.880
+And I gave the game away at the beginning of the lecture by saying yes it will, but that's actually a theorem.
+
+00:39:52.940 --> 00:40:00.720
+So this was the min max theorem, which I didn't call it that. I should have, it's actually called that in the notes.
+
+00:40:01.500 --> 00:40:09.320
+But now we're going to move on to the intermediate value theorem. And first we're going to do what looks like a special case.
+
+00:40:10.320 --> 00:40:14.420
+And then we'll prove the general case.
+
+00:40:17.920 --> 00:40:27.220
+So this theorem, which I'm actually, it's not called this.
+
+00:40:31.340 --> 00:40:38.400
+In the textbook, but I'm going to call it this, which I'll call the bisection method, is the following.
+
+00:40:39.980 --> 00:40:55.960
+Let f be function from A, B to R. If f of A is less than zero.
+
+00:40:57.100 --> 00:41:00.160
+And so, one more.
+
+00:41:04.800 --> 00:41:12.260
+Be continuous. So we're always in the continuous setting for this section.
+
+00:41:14.080 --> 00:41:38.580
+So if f of A is less than zero, and f of B is bigger than zero, then there exists C in the interval A, B, such that f of C equals zero.
+
+00:41:40.080 --> 00:41:50.840
+Okay, so the picture that goes along with this is here's A, B, here's f of A, f of B is positive.
+
+00:41:51.960 --> 00:42:01.920
+And therefore, if it's continuous and you believe the definition of continuity is the fact that is that I don't have to pick up my piece of chalk.
+
+00:42:01.920 --> 00:42:16.880
+It pains me to say this, but that's again not the official definition, but when you keep in your head, since somebody probably told you that at some point, if I don't have to pick up my piece of chalk, then eventually I have to cross the x-axis.
+
+00:42:17.180 --> 00:42:20.860
+And therefore, at this point, C, f of C will be zero.
+
+00:42:22.160 --> 00:42:25.900
+Okay, now why do I call this theorem the bisection method?
+
+00:42:26.480 --> 00:42:35.080
+As we'll see, the way you determine this C is by what in calculus books call the bisection method.
+
+00:42:35.080 --> 00:42:36.020
+All right?
+
+00:42:46.840 --> 00:42:50.300
+Okay, so for the proof,
+
+00:42:57.980 --> 00:43:03.360
+we're going to define a sequence of numbers A and B in with special properties.
+
+00:43:03.600 --> 00:43:05.880
+So I'm first going to tell you what A1 and B1 are.
+
+00:43:06.380 --> 00:43:10.540
+A1 is just going to be A. B1 is going to be B.
+
+00:43:11.220 --> 00:43:11.720
+Okay?
+
+00:43:14.600 --> 00:43:21.860
+And so now I'm going to tell you how to choose the next element in the sequence, knowing the element in the sequence before.
+
+00:43:22.940 --> 00:43:25.560
+Okay, so we're going to...
+
+00:43:37.400 --> 00:43:43.460
+First to find two sequences, A, N, and B.
+
+00:43:44.320 --> 00:43:45.780
+So let me tell you how to do that.
+
+00:43:46.440 --> 00:43:53.580
+And the way we're going to choose this is so that f of A sub n is always less than zero, and f of B sub n is always bigger than or equal to zero.
+
+00:43:55.420 --> 00:44:03.780
+And they're obtained from the previous two guys by taking the midpoint, so bisecting the ones before.
+
+00:44:04.000 --> 00:44:11.580
+So to get this started, A1 will be just A. B1 will be B.
+
+00:44:12.860 --> 00:44:13.200
+Okay?
+
+00:44:15.400 --> 00:44:20.260
+Now for in a natural number, we're going to define...
+
+00:44:20.260 --> 00:44:26.180
+So we know A1, so now I'm going to tell you how to define A2 based on now, you know, A1.
+
+00:44:26.420 --> 00:44:32.140
+But what I'm about to write down will also tell you how to define A3 since you now know how to do A2.
+
+00:44:32.140 --> 00:44:33.380
+So I'm going to write it this way.
+
+00:44:33.800 --> 00:44:52.740
+For in a natural number, knowing A sub n, B sub n, we define A sub n plus 1, and B sub n plus 1 as follows.
+
+00:45:01.960 --> 00:45:21.800
+So if f of A sub n plus B sub n, so the midpoint between the two guys that I already know, so if you like, take in to be 1 for when you first read how to define A sub 2, say.
+
+00:45:21.800 --> 00:45:24.980
+But what I'm writing down applies to every n.
+
+00:45:30.900 --> 00:45:43.340
+So we take f of A sub n plus B sub n over 2 to be, if this is bigger than or equal to 0, then we define A sub n plus 1 to be A sub n.
+
+00:45:47.260 --> 00:45:52.300
+And B sub n plus 1 to be the midpoint.
+
+00:45:58.740 --> 00:46:10.240
+And if of the midpoint is less than 0, then A sub n plus 1 is going to be the midpoint.
+
+00:46:14.900 --> 00:46:18.180
+And B sub n plus 1 will be the previous point.
+
+00:46:19.340 --> 00:46:24.960
+So let me, in fact, so this is how you define the sequence in general.
+
+00:46:25.160 --> 00:46:27.940
+Let's walk through what this means just for n equals 2.
+
+00:46:30.080 --> 00:46:34.140
+So that you see, you get the idea. Maybe I should have done this first.
+
+00:46:36.800 --> 00:46:43.040
+So let's draw a picture to go back.
+
+00:46:43.180 --> 00:46:52.360
+I don't need this axis. I'll just be so and this is A sub 1.
+
+00:46:53.160 --> 00:46:54.220
+This is B sub 1.
+
+00:46:54.800 --> 00:46:56.900
+And then we look at the midpoint.
+
+00:47:03.120 --> 00:47:09.060
+So we know that F of A sub 1 is less than 0.
+
+00:47:09.840 --> 00:47:17.300
+F of B sub 1 is bigger than 0, which is certainly bigger than or equal to 0 if it's bigger than 0.
+
+00:47:17.300 --> 00:47:27.740
+Now we look at the midpoint. And based on the sign of this guy, we'll be how we define A 2 and B 2.
+
+00:47:27.880 --> 00:47:36.920
+So for the sake of me going through this, let's suppose that F of this thing is less than 0.
+
+00:47:40.240 --> 00:47:51.500
+Then I take A 2 will be A 1 plus B 1 over 2. And B 2 will be B 1.
+
+00:47:52.100 --> 00:47:54.400
+And now I look at the midpoint of these two guys.
+
+00:47:54.600 --> 00:47:59.580
+So now I'm at this stage. F of A 2 is less than 0.
+
+00:48:00.740 --> 00:48:02.860
+F of B 2 is bigger than 0.
+
+00:48:02.860 --> 00:48:08.120
+So I'm in the picture before except now I'm at half the distance between the two endpoints.
+
+00:48:09.040 --> 00:48:12.020
+And so I look at this point now.
+
+00:48:13.560 --> 00:48:16.880
+A 2 plus B 2 over 2.
+
+00:48:18.620 --> 00:48:23.780
+And I look at the sign of that. And let's suppose F of this thing is bigger than or equal to 0.
+
+00:48:26.780 --> 00:48:35.500
+Then I will take this point to be A 3. And this point will now be B 3.
+
+00:48:36.500 --> 00:48:44.680
+And what I have is F of A 3 is less than 0. F of B 3 is bigger than or equal to 0.
+
+00:48:48.540 --> 00:48:53.440
+So the point is that the left end point is always negative when I stick it into F.
+
+00:48:53.920 --> 00:48:57.180
+The right end point is always non-negative when I stick it into F.
+
+00:48:58.760 --> 00:49:04.700
+And that the distance between the two midpoints is always getting cut in half by the previous distance before.
+
+00:49:07.860 --> 00:49:13.720
+But we're always in the picture kind of in the setting we were in the step before.
+
+00:49:21.500 --> 00:49:32.960
+Okay. Now we have three properties of the sequence of A ends and B ends.
+
+00:49:32.960 --> 00:49:40.960
+Okay. So for all end, they're always bounded between the original two endpoints.
+
+00:49:42.080 --> 00:49:47.820
+Not only that, the A sub ends are always moving to the right.
+
+00:49:47.980 --> 00:49:57.780
+Remember, A sub n is always getting replaced by the midpoint between A and A sub n and B sub n.
+
+00:49:58.680 --> 00:50:00.460
+Okay. Possibly. Or it's staying the same.
+
+00:50:01.000 --> 00:50:04.800
+So A sub n is always less than or equal to A sub n plus 1.
+
+00:50:11.540 --> 00:50:15.620
+Okay. So in fact, let me write it this way.
+
+00:50:18.620 --> 00:50:21.560
+We always have A sub n is less than or equal to B sub n.
+
+00:50:21.560 --> 00:50:31.620
+We always have A is less than or equal to A in plus 1, which is less than or equal to A in.
+
+00:50:34.700 --> 00:50:44.360
+And then we also have, so for all end, B.
+
+00:50:45.940 --> 00:50:48.360
+All right. I'm making a mess of what I'm writing down.
+
+00:50:48.360 --> 00:50:52.360
+So let's start this over. So the first property I want to write.
+
+00:50:53.540 --> 00:51:01.960
+For all end and natural numbers, we have B.
+
+00:51:06.600 --> 00:51:11.140
+A sub n is always less than or equal to A sub n plus 1.
+
+00:51:12.340 --> 00:51:17.780
+Right. And B sub n plus 1, remember,
+
+00:51:17.960 --> 00:51:27.320
+we're whenever, if we're going to change B, it's always to change it to the midpoint between the previous guy and the A from the previous step.
+
+00:51:27.320 --> 00:51:29.500
+So this is always less than or equal to B sub n.
+
+00:51:35.020 --> 00:51:48.180
+Okay. And now two. If I look at the difference,
+
+00:51:51.500 --> 00:51:56.680
+this is always equal to half of the previous distance, right.
+
+00:51:57.760 --> 00:52:02.040
+Because either one of these are getting changed to the midpoint.
+
+00:52:02.320 --> 00:52:11.840
+So if it's A sub n plus 1, then B sub n plus 1 minus A sub n plus 1 is B sub n minus A sub n plus B sub n over 2, which gives me this.
+
+00:52:12.440 --> 00:52:16.240
+Okay. Three.
+
+00:52:20.400 --> 00:52:27.700
+We're all in a natural number. And this is just based on how we are choosing.
+
+00:52:28.180 --> 00:52:32.420
+We are doing this construction. F of A sub n is less than 0.
+
+00:52:33.680 --> 00:52:38.460
+And F of B sub n is bigger than or equal to 0.
+
+00:52:39.400 --> 00:52:42.380
+Okay. So I hope this is clear.
+
+00:52:45.240 --> 00:52:48.820
+You know, all of these, if you like, you could prove by induction.
+
+00:52:49.440 --> 00:52:51.600
+All right. For n equals 1, this is certainly true.
+
+00:52:54.180 --> 00:53:00.220
+Assume it holds for n equals m and then prove all of these statements here for n equals n plus 1.
+
+00:53:00.900 --> 00:53:07.980
+Okay. But I'm just stating it as clear from the construction.
+
+00:53:08.200 --> 00:53:11.600
+And hopefully it is. Okay.
+
+00:53:12.140 --> 00:53:28.620
+So what does this give us? Well, by 1, the sequence is A sub n and B sub n are
+
+00:53:30.140 --> 00:53:32.800
+bounded because they're always bounded between A and B.
+
+00:53:38.620 --> 00:53:45.760
+Monotone sequences. Right. A sub n is increasing. B sub n is decreasing.
+
+00:53:48.760 --> 00:53:57.180
+All right. Thus, there exists limits.
+
+00:53:59.220 --> 00:54:03.580
+So I'm going to call them C and D, but it has nothing to do with the C and D from over here.
+
+00:54:03.580 --> 00:54:30.860
+Thus, there exists a sub n equals C.
+
+00:54:30.860 --> 00:54:37.440
+So B, again, the A sub n's and B sub n's are between A and B, so their limits will also be between A and B.
+
+00:54:41.680 --> 00:54:46.400
+B sub n equals D. Okay.
+
+00:54:55.060 --> 00:55:02.060
+Now, I claim C equals D. Why should this not come as a surprise? Well, the A and B's are getting very close.
+
+00:55:02.180 --> 00:55:06.880
+They're always, you know, the distance between any two of them is always getting halfed. Right.
+
+00:55:11.660 --> 00:55:30.040
+Now, A sub n minus B sub n, this equals A sub n minus 1 minus B sub n minus 2 over 2, which equals 1 over 2 squared, A sub n minus 2 minus B sub n minus 2,
+
+00:55:31.280 --> 00:55:47.480
+dot, dot, dot. And therefore, this equals 1 over 2 in minus 1, B sub 1 minus A sub 1 equals 1 over 2 to the n minus 1, B minus A.
+
+00:55:47.480 --> 00:56:14.100
+Okay. And therefore, C minus D, which is equal to the limit as n goes to infinity of A sub n minus B sub n equals the limit as n goes to infinity of 1 over 2 to the n minus 1, B minus A.
+
+00:56:14.100 --> 00:56:25.900
+1 over 2 to the n minus 1 is converging to 0 times this fixed number, B minus A equals 0. And therefore, these two numbers, these two limits, C and D, equal each other.
+
+00:56:29.260 --> 00:56:53.600
+Okay. So, this step here is by the second property here. And now we're essentially done using the third property by 3 and continuity.
+
+00:56:58.160 --> 00:57:14.660
+I look at F of C since the A sub n's are converging to C. This is equal to, and F of A sub n is always less than 0. So, its limit is less than or equal to 0.
+
+00:57:18.920 --> 00:57:33.820
+And now remember, C is also equal to the limit of the B sub n's. And therefore, by continuity, F of C is equal to F of B sub n. And the F of B sub n's are always not negative.
+
+00:57:33.820 --> 00:57:48.020
+So, their limit is also bigger than or equal to 0. So, I've shown that this number, F of C is less than or equal to 0. And then it's also bigger than or equal to 0. And therefore, F of C equals 0.
+
+00:57:50.760 --> 00:58:14.120
+Okay. So, we use the, why I put the bisection method here is because we used the bisection method to prove this theorem, which looks like a kind of a special case of,
+
+00:58:18.320 --> 00:58:36.580
+of a certain intermediate value property meaning that I can always find something that if I have that I can always find something in the interval that achieves something in between F of A and F of B. In this case, it's just 0. But I can in fact upgrade this.
+
+00:58:38.960 --> 00:58:49.620
+This is the following theorem to, to, to, to, bolzano. So, a, bolzano's intermediate value theorem.
+
+00:58:57.640 --> 00:59:02.300
+Let F from A to B are B continuous.
+
+00:59:14.380 --> 00:59:28.640
+If, if, why is between F of B. So, meaning let's say, so we're in one of two cases. Let's say F of A is less than F of B. If Y is between F of A and F of B.
+
+00:59:36.140 --> 00:59:58.040
+Then, there exists a C and A B such that F of C equals Y. If F of A is say bigger than F of B and we take something in between, the same conclusion holds.
+
+01:00:06.960 --> 01:00:20.240
+So, in short, if I take anything between the value of the function at evaluated at the two end points A and B. Then the function achieves that value at some point.
+
+01:00:32.100 --> 01:00:47.320
+So, if I take any Y between here, F has to cross this, a horizontal line and it's achieved at some point C.
+
+01:00:51.400 --> 01:01:05.960
+And we'll deduce this from, so this, you know, looks like a special case of this intermediate value theorem if F of A is less than 0, F of B is bigger than 0 and Y is equal to 0.
+
+01:01:05.960 --> 01:01:28.780
+But, in fact, you can reduce this general statement to that special case just by a simple trick. So, proof, suppose F of A is less than F of B. So, we're in this first case and Y is in F of A, F of B.
+
+01:01:33.140 --> 01:01:46.780
+Let's G of X be F of X minus Y. This is not a function of X and Y. Y is a fixed number between F of A and F of B.
+
+01:01:49.280 --> 01:02:06.700
+And this is a function going from A to B to R and which is continuous. So, sum of two continuous functions is continuous, F is a continuous function by assumption.
+
+01:02:07.420 --> 01:02:10.980
+This is just a constant minus Y, so there's some is also continuous.
+
+01:02:14.600 --> 01:02:29.160
+But now, if we look at G of A, this is equal to F of A minus Y. Now, Y is bigger than F of A since Y is an F of A, F of B. So, this is less than 0.
+
+01:02:30.880 --> 01:02:59.140
+And G of B is equal to F of B minus Y is bigger than 0. And therefore, by the previous theorem, there exists a C and A of B such that G of C equals 0, which means I of C equals 0.
+
+01:03:04.140 --> 01:03:16.220
+And the proof assuming F of A is bigger than F of B is similar, you just now put Y here minus F of X. Now, you define G of X to be Y minus F of X.
+
+01:03:17.720 --> 01:03:29.920
+So, let me just make a remark about that. It is similar.
+
+01:03:35.080 --> 01:03:45.500
+Look at G of X equals Y minus F of X.
+
+01:03:52.400 --> 01:04:15.180
+So, Volzano's intermediate value theorem tells us that if I take any value between the function evaluated at the two endpoints, then that value is achieved by something.
+
+01:04:26.760 --> 01:04:30.320
+So, this is a simple theorem from this.
+
+01:04:37.980 --> 01:04:44.380
+Let's continue this.
+
+01:04:46.260 --> 01:05:11.880
+If F local min and C, not local, absolute min and absolute max.
+
+01:05:14.760 --> 01:05:32.400
+So, if F is equal to F of D, then the image by F of A is equal to F of C, F of D.
+
+01:05:32.400 --> 01:05:53.000
+And what's the proof? Well, apply Volzano's intermediate value theorem to F now going from the possibly smaller interval C, D.
+
+01:05:53.000 --> 01:06:06.900
+So, if F is equal to C, it could be D C or C D, depending on if the thing that I have to stick into F to get the min and the thing I have to stick into F to get the max is smaller than the other.
+
+01:06:09.940 --> 01:06:20.640
+So, apply the Volzano's intermediate value theorem to this function now just restricted to this smaller closed interval.
+
+01:06:20.820 --> 01:06:24.540
+It's still continuous. And that's the proof.
+
+01:06:39.120 --> 01:06:41.160
+So, maybe I was a little too fast with that.
+
+01:06:41.160 --> 01:06:47.640
+So, let me just say a couple of more words about this.
+
+01:06:55.580 --> 01:07:11.780
+So, this tells me that everything between the two values, F of C, and F of D is achieved by F on this interval.
+
+01:07:14.060 --> 01:07:31.660
+But this is a possibly smaller interval than A B. So, this is contained in the range of F now of this larger interval.
+
+01:07:34.100 --> 01:07:54.900
+And since we already know that F of A B is contained in F of C, F of D, and now we've proven the reverse inclusion, this implies that F of C, F of D equals F of A B, and that's the proof.
+
+01:07:57.420 --> 01:08:11.520
+Okay. So, I think we'll stop there. Next time, we'll finish with a few remarks about kind of an application of the intermediate value theorem.
+
+01:08:13.100 --> 01:08:15.520
+And then we'll move on to uniform continuity.
+

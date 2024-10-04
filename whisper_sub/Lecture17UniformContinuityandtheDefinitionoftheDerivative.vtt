@@ -1,0 +1,1094 @@
+WEBVTT
+
+00:00:11.880 --> 00:00:18.580
+So last time, we finished by proving bosanos intermediate value theorem.
+
+00:00:30.580 --> 00:00:37.820
+Which states that it continues function achieves all values in between the function evaluated
+
+00:00:37.820 --> 00:01:03.600
+at the end point. So if I have a continuous function, I take a value y between f of a and f of b.
+
+00:01:03.600 --> 00:01:13.940
+So either f of a is less than f of b and y is bigger than f of a and less than f of b or f of a is bigger than f of b.
+
+00:01:14.460 --> 00:01:31.280
+But y is still in between them. Then there exists c in the interval a, b so that f of c equals y.
+
+00:01:31.280 --> 00:01:37.380
+So every value in between f, evaluated at the end points, is achieved.
+
+00:01:38.040 --> 00:01:51.680
+I drew the picture along with this a, b, f of a, f of b.
+
+00:01:51.680 --> 00:02:12.820
+And that could be the function and if we take anything in between, then there has to be some c so that f of c equals y.
+
+00:02:12.820 --> 00:02:16.960
+At least in the picture I've drawn there's three different guys but there's always at least one.
+
+00:02:18.660 --> 00:02:37.020
+And then the last thing we talked about at the end of last lecture was that the image of a bounded, closed and bounded interval by a continuous function is again a closed and bounded interval.
+
+00:02:47.160 --> 00:03:05.060
+Where e corresponds to the absolute max of f and f corresponds, so that I shouldn't call this f since we already have f being used, and g corresponds to, let's make it d, corresponds to the absolute min of f.
+
+00:03:05.060 --> 00:03:29.280
+So this is what we proved last time is that f of f is continuous then.
+
+00:03:31.200 --> 00:03:45.580
+There exists e, d, and r such that the range of this closed and bounded interval is again closed and bounded interval.
+
+00:03:45.580 --> 00:03:56.860
+So f is very well behaved on closed and bounded intervals and we'll see another way in which continuous functions are well behaved on a closed and bounded interval in just a second.
+
+00:03:56.860 --> 00:04:11.860
+Now, a simple application of the Balsano intermediate value theorem is the following.
+
+00:04:13.280 --> 00:04:39.340
+It's an application of that theorem that I labeled a bisection method but let's chalk that up to the Balsano intermediate value theorem which is the following that if f of x is any odd polynomial, then,
+
+00:04:39.340 --> 00:04:49.440
+f has at least one real root.
+
+00:04:56.460 --> 00:04:59.440
+So any odd polynomial has at least one real root.
+
+00:04:59.620 --> 00:05:10.180
+So by the fundamental theorem of algebra, every polynomial has exactly in roots in corresponding to the degree of the polynomial, but these roots can be complex value.
+
+00:05:12.400 --> 00:05:19.220
+But for odd polynomials, there must be at least one real root and this is a consequence of the Balsano intermediate value theorem.
+
+00:05:19.540 --> 00:05:24.920
+But instead of proving this theorem in its full generality, let me just give you kind of a representative example.
+
+00:05:24.920 --> 00:05:50.100
+So let's take f of x equals x to the 20, 21 minus x to the 20 plus, I don't know, what's today?
+
+00:05:50.100 --> 00:06:01.320
+I think the 25th or 24th, I don't know, 1025x minus 300.
+
+00:06:03.840 --> 00:06:05.600
+So what's the point?
+
+00:06:09.640 --> 00:06:19.980
+As long as I plug in a big enough x, I will, this will swamp everything here.
+
+00:06:22.540 --> 00:06:35.740
+So for example, if I stick in f of 100,000, I leave it to you to check that this is positive, right?
+
+00:06:35.840 --> 00:06:43.940
+Because this will be 100,000 to the 20, 20 minus 100,000 to the 20, 21.
+
+00:06:43.940 --> 00:06:48.620
+And then plus this, which will be positive minus 300, this doesn't matter.
+
+00:06:48.800 --> 00:07:02.140
+So what really matters is this big guy, or this guy with the largest power, will swamp all the other ones and eventually be positive, if I stick in a large enough positive value.
+
+00:07:03.580 --> 00:07:18.840
+And likewise, in fact, for this guy, if I stick in a negative value, then I get something very big.
+
+00:07:18.960 --> 00:07:22.600
+But now with a minus sign, which will again swamp all these earlier guys.
+
+00:07:22.760 --> 00:07:28.740
+In fact, I don't have to choose minus 100,000. If I just stick in zero, I will get minus 300, which will be negative.
+
+00:07:28.740 --> 00:07:34.840
+But you can check that if I stick in minus 100,000, this will still be negative.
+
+00:07:39.100 --> 00:07:53.000
+Thus by the intermediate value theorem, there exists a C in 100,000, 100,000.
+
+00:07:55.060 --> 00:08:04.800
+So that, F of C equals zero, right? Because zero is something in between F evaluated at these two endpoints.
+
+00:08:06.780 --> 00:08:23.800
+But again, you can prove this, and the idea is the same as long as you go far enough out and positive, then the polynomial will be positive if the coefficient out in front is positive.
+
+00:08:23.800 --> 00:08:33.120
+And if you go far enough out negative, then you'll get something that's negative.
+
+00:08:33.420 --> 00:08:37.980
+And then you apply the intermediate value theorem to be able to find a root.
+
+00:08:41.520 --> 00:08:58.080
+Now of course, one other thing we did with the statement of the midmax theorem was, can we drop any of the assumptions on this theorem.
+
+00:08:59.460 --> 00:09:16.380
+And you can see that the example is no. So the question is if F from a closed and bounded interval is not continuous.
+
+00:09:20.180 --> 00:09:25.340
+And let's say, F of zero is less than zero, F of A.
+
+00:09:29.900 --> 00:09:42.440
+F of B is bigger than zero than does there exist C, A, B such that F of C equals zero.
+
+00:09:43.160 --> 00:10:03.340
+Okay? Let me put that question mark at the end. All right? And it's easy to come up with an example of a function that is not continuous, that satisfies these conclusions, and there does not exist a point in between so that F of C equals zero.
+
+00:10:03.340 --> 00:10:16.480
+So, simplest being, I'll just draw a picture. Let's go from minus one, one, two. Okay.
+
+00:10:16.480 --> 00:10:41.440
+So then the function is F of X equals X minus one. And this is for X not equal to one. And let's make it a half there.
+
+00:10:44.420 --> 00:10:58.140
+So this function looks like half there. Okay, so there is no value. There is no C in between.
+
+00:11:04.640 --> 00:11:16.600
+So X is between zero and two. So you see F of zero is equal to minus one. That's negative. F of two is equal to one. It's positive. But there exists no C in between.
+
+00:11:17.760 --> 00:11:32.640
+So that F of C equals zero. Okay? So what's the point I'm making? We really do need this hypothesis that the function is continuous for this theorem to be true.
+
+00:11:33.260 --> 00:11:38.700
+Okay? If you drop that hypothesis, then the theorem is no longer true. Okay?
+
+00:11:38.700 --> 00:12:01.700
+Okay.
+
+00:12:01.700 --> 00:12:21.980
+Okay. So now we're going to move on to a new concept called uniform continuity. And before I do this, I'm going to bring up, or I'm going to rewrite the definition of continuity.
+
+00:12:48.380 --> 00:12:59.500
+So this is an old definition, but I want to highlight a specific aspect of it. So this is me writing the definition of a continuous function again.
+
+00:13:04.340 --> 00:13:28.680
+So a function F from a set S to R is continuous. So we said that means it's continuous at every point, meaning if we're all C in S, it's continuous at C,
+
+00:13:28.680 --> 00:13:56.020
+which means for all epsilon positive, there exists a delta. Now this delta, and we saw this in examples that we did proving continuity, this usually depends on epsilon and C, the point where I'm looking at such that
+
+00:13:56.020 --> 00:14:10.340
+for all X and S, X minus C, less than delta, implies that F of X minus F of C is less than epsilon. Okay?
+
+00:14:13.600 --> 00:14:39.320
+So just to, so this is again a bit of review, but I just want to show you that in general, you know, when we verify that a function is continuous on a set, we have to show it's continuous at every point in the set. And that means for every epsilon, there exists a delta, but this delta can depend on, usually depends on epsilon, but it can also depend on the point C, which is where we're checking continuity at.
+
+00:14:39.320 --> 00:15:06.300
+Okay? So for a simple example, let's take F of X equals 1 over X on the interval 0, 1, open interval 0, 1. Okay? So I claim F of X equals 1 over X is continuous.
+
+00:15:06.300 --> 00:15:24.880
+So proof, we have to show that for every C in 0, 1 for all epsilon, there exists that. So let's see B in 0, 1, but epsilon be positive.
+
+00:15:29.000 --> 00:15:51.620
+Now choose, again, I mean, I'm not, since this is kind of review, I'm not going to go through the process of really the thinking behind choosing this, this delta, I mean, there's, you know, calculations you do off to the side to try and get this delta, but let's choose delta to be the minimum of C over 2.
+
+00:15:51.620 --> 00:16:06.680
+And C squared over 2 times epsilon. So what you notice, what I want to, again, emphasize is this delta depends on C, the point we're looking at, and epsilon.
+
+00:16:06.680 --> 00:16:24.360
+Okay? So I claim this delta works. Suppose X is in 0, 1, and X minus C is less than delta. Okay?
+
+00:16:31.940 --> 00:16:43.720
+Then absolute value of X, this is equal to the app, this is by the triangle inequality. Let me write it this way.
+
+00:16:48.480 --> 00:17:08.320
+C, absolute value, is equal to C minus X plus X, which is less than or equal to C minus X plus X, which is less than delta, which is less than or equal to the minimum of these two.
+
+00:17:08.320 --> 00:17:22.180
+So it's certainly less than or equal to C over 2 plus X, and now, you know, C and X, these are in 0, 1, so they're all positive.
+
+00:17:23.980 --> 00:17:31.540
+And therefore, I get that, let's go to the next board.
+
+00:17:37.600 --> 00:17:53.520
+So if I subtract the C over to the other side, I get that, C over 2 is less than X. All right? So this is as long as X is in 0, 1, and X minus C is less than delta.
+
+00:17:53.520 --> 00:18:07.980
+Okay? This should not be a shock. All right? Here's 0, 1, C, C over 2, 3, C over 2. Okay?
+
+00:18:09.500 --> 00:18:29.860
+And so if X is in this interval, it certainly bounded away, I see over 2. Okay? Or if X is in here, then X is certainly bigger than C over 2. All right? And now we look at F of X minus F of C.
+
+00:18:30.640 --> 00:18:46.320
+This is equal to 1 over X minus 1 over C equals C minus X over X times C, which is less than delta over X times C.
+
+00:18:50.420 --> 00:19:07.980
+And because this is a... Okay? And now X is less than X is bigger than C over 2. So if I take 1 over that, I get 1 over X is less than 2 over C.
+
+00:19:07.980 --> 00:19:25.620
+So this is less than or equal to 2 delta over C squared. And delta is the minimum of now C over 2 and C squared over 2 times epsilon. So this is less than or equal to 2 over C squared times C squared over 2, epsilon equals epsilon.
+
+00:19:25.620 --> 00:19:55.400
+Okay? So I just went through the proof of continuity for 1 over X, which, you know, using better machinery we could have proven. But I did this to highlight this point that showing continuity of 1 over X on 0, 1, that in showing that, you know, this delta that you are choosing depends kind of on the point you're looking at.
+
+00:19:55.400 --> 00:20:15.500
+Alright? So now I want to make a... So, you know, what the definition of continuity says is for all C, for all epsilon, you can find a delta depending on epsilon and C.
+
+00:20:15.500 --> 00:20:31.140
+Now, uniform continuity removes that necessity of delta depending on C. Okay? And I'm going to make a possibly bad analogy in just a minute. But first let me write down the definition of uniform continuity.
+
+00:20:36.900 --> 00:20:58.660
+Let S be subset of R, F going from S to R. We say F is uniformally continuous.
+
+00:20:58.660 --> 00:21:21.440
+So this on S, if we're all epsilon positive, there exists a delta depending only on epsilon such that we're all X, C, and S with X minus C less than delta.
+
+00:21:22.100 --> 00:21:40.420
+So, we get that F of X minus F of C is less than epsilon. Okay? So, you know, a function being continuous means that for all epsilon, you can find a delta depending on one of these points, depending on C.
+
+00:21:40.420 --> 00:21:49.880
+So that if I had this, then I had this. Uniform continuity says you can find a delta that works across the board. Okay?
+
+00:21:58.540 --> 00:22:13.380
+So I'm going to make a try and make an analogy that hopefully I don't have to cut out of this lecture. But it's a bit like this. Let's take a trip down memory lane and imagine being at a party.
+
+00:22:15.740 --> 00:22:30.320
+So, you know, everybody's in a party and let's say that everybody can hear their ears work just about the same. And the goal is, you know, to try and understand each other's conversation, trying to hear each other's conversations.
+
+00:22:32.160 --> 00:22:48.000
+Now, in order for, you know, me to hear this person's conversation, depending on how loud they talk, I have to be close enough to be able to hear them. You know, in this changes from person to person in the room.
+
+00:22:48.000 --> 00:23:04.120
+Maybe I have to, I can stand a foot away from this person over here. Maybe this person over here is a low talker and I have to be almost up in their face to be able to hear them. Maybe that person just whispers and I have to be almost nose to nose to be able to hear them.
+
+00:23:04.120 --> 00:23:19.640
+You know, that's a bit like a function being continuous. Okay. You know, the threshold of hearing what they're saying is the epsilon and I have to change my delta depending on what point I'm at so that I can hear them.
+
+00:23:19.640 --> 00:23:41.860
+Now, uniform continuity is kind of like everybody's more or less speaking around the same level, speaking at the same loudness. All right. So I just can be within, say, one foot of everybody and be able to understand them.
+
+00:23:41.860 --> 00:23:59.920
+I go to this person if I'm within one foot, I can hear them well. If I go to this person, I hear and within one foot, I can hear them well and so on. All right. So that's kind of the difference between, you know, or at least a loose analogy of the difference between continuity and uniform continuity.
+
+00:23:59.920 --> 00:24:13.700
+All right. So this is a, you know, reasonably interesting definition. So we should see examples and negate it.
+
+00:24:16.680 --> 00:24:29.900
+First off, you know, you should be able to convince yourself that a function that's uniformly continuous is actually continuous. I'm not going to write that the proof of that down. It follows essentially straight from the definition.
+
+00:24:32.180 --> 00:24:54.420
+But let's look at a function which is uniformly continuous. So the function f of x equals x squared on the interval zero one.
+
+00:25:04.120 --> 00:25:15.620
+So what's the proof? I want you to notice I'm going to use kind of in a very essential way that we're on this closed and bounded interval.
+
+00:25:18.400 --> 00:25:31.260
+So we need to show that for every epsilon there exists a delta so that no matter what two points. So if you like, here's a picture that goes along with this.
+
+00:25:31.260 --> 00:25:52.580
+So that if I look at need two points that are close to each other less than delta there functions value is within epsilon.
+
+00:25:53.560 --> 00:26:02.420
+So let's say I'm on interval a b. But not just this point I could go over here to two other points that are within delta of each other.
+
+00:26:13.820 --> 00:26:31.520
+So I can move through the party and as long as I'm close enough within a uniform distance to somebody I can hear them just fine.
+
+00:26:36.160 --> 00:26:40.120
+So what a nice trip down memory lane when we can be around other people.
+
+00:26:41.380 --> 00:26:54.500
+So let's show this function is uniformly continuous let epsilon be positive. Choose delta to be epsilon over two.
+
+00:26:54.500 --> 00:26:59.620
+Now you see this delta just depends on epsilon.
+
+00:27:02.500 --> 00:27:24.540
+Then if x and c are in zero one and x minus c is less than delta then if I compute the difference x squared minus c squared this is I can write as x plus c times x minus c.
+
+00:27:26.420 --> 00:27:39.300
+And now I use the triangle inequality this is less than or equal to x minus c. Now these guys are in zero one so they're absolute values always bounded by one.
+
+00:27:40.260 --> 00:27:54.040
+So this is less than or equal to one plus one. And then x minus c is bounded by delta which equals two times delta and delta is chosen to be epsilon over two so I get epsilon.
+
+00:27:55.260 --> 00:28:14.960
+Now again how would you choose delta? So it looks like I just chose this delta out of nowhere in practice how do you choose delta this is the computation you do you take x squared minus c squared split it you have this you can estimate with what you know above by two here times delta.
+
+00:28:14.960 --> 00:28:23.680
+So how do you choose delta so that two times delta is say equal to epsilon you choose delta to be epsilon over two.
+
+00:28:34.540 --> 00:28:53.660
+So let's negate this definition and then look at one over x once again and check to see if it's uniformly continuous we'll show it's not so the negation f from s to r is not uniform.
+
+00:29:08.680 --> 00:29:23.640
+So I saw a little bit of the new borat movie that came out so I almost wanted to say f is uniformly continuous not but I saw a little bit of the new borat movie that came out.
+
+00:29:23.640 --> 00:29:42.080
+I didn't it's not uniformly continuous if and now you negate the rest of the definition if there exists some bad epsilon such that no matter what delta you choose there exists some bad x and c
+
+00:29:46.740 --> 00:30:00.440
+s such that they're close to each other but the values are not bigger than or equal to.
+
+00:30:10.000 --> 00:30:30.420
+So let's revisit one over x this is not uniformly continuous on the open interval zero one.
+
+00:30:30.420 --> 00:30:34.680
+So you see that this function is continuous but it's not uniformly continuous.
+
+00:30:37.080 --> 00:30:48.480
+So we just proved that a minute ago that it's continuous so let me now give you the proof that this function is not uniformly continuous and what's the idea behind this.
+
+00:30:49.420 --> 00:31:05.860
+Here's one. This is not to scale but there's one as well and one over x shoots up to plus infinity as x approaches zero.
+
+00:31:09.120 --> 00:31:18.200
+So what uniform continuity says is that if I take any two points in the interval that are close to each other then the outputs have to be close to each other.
+
+00:31:20.780 --> 00:31:28.140
+Continuity remember says if I fix a point then as long as I'm close to that point the outputs will be close to each other.
+
+00:31:28.440 --> 00:31:36.780
+Uniform says no matter what two points you choose as long as they're close together the outputs will be close together in a controlled way.
+
+00:31:36.780 --> 00:32:06.720
+Now if I take two points very close to each other here very close to zero they can be you know pretty close to each other but their differences I mean their values can be quite large even though the difference between the arguments are small.
+
+00:32:06.720 --> 00:32:17.320
+The values can be quite large just because one over x shoots up so let's quantify this I have to tell you what the bad epsilon not is.
+
+00:32:21.100 --> 00:32:40.640
+Choose epsilon not equals to now any epsilon not the work just fine let delta be positive so now we have to find x and c in s within distance delta to each other.
+
+00:32:47.960 --> 00:33:06.520
+That whose values different differ very by at least two so let's choose c to be the minimum of delta and a half.
+
+00:33:07.080 --> 00:33:10.340
+I'm going to choose x to be c over two.
+
+00:33:14.540 --> 00:33:29.300
+So just ignoring this half for a minute c is equal to delta x is equal to delta over two and then one over c minus one over x is going to be two over delta and if delta is very small that's certainly bigger than or equal to two.
+
+00:33:29.300 --> 00:33:35.260
+But I had to throw in this one half here because I chose epsilon not to be two. And delta is arbitrary.
+
+00:33:40.260 --> 00:33:54.460
+So then we see that x minus c is equal to c over two which is certainly less than or equal to since c is the minimum of delta and one over half is less than delta over two which is less than delta.
+
+00:33:58.180 --> 00:34:06.500
+And if we compute one over x minus one over c this is a.
+
+00:34:12.880 --> 00:34:20.300
+Remember x is c over two so this one over x is two over c so one over c.
+
+00:34:23.520 --> 00:34:32.760
+And now from c being less than or equal to one over half I get that one over c is going to be bigger than or equal to two.
+
+00:34:49.520 --> 00:34:52.440
+Alright. And that's the end of the proof.
+
+00:34:52.440 --> 00:35:07.180
+Alright. So we see that even though these two arguments are very close to each other the outputs are in fact separated by some fixed distance at least two.
+
+00:35:08.820 --> 00:35:13.540
+But we could actually make it you know bigger than three bigger than four whatever you like.
+
+00:35:13.540 --> 00:35:13.860
+Alright.
+
+00:35:27.180 --> 00:35:29.100
+And I'm not going to go over this example.
+
+00:35:31.620 --> 00:35:48.520
+But in fact I'll leave it to you or maybe I'll put it on the assignment f of x equals x squared is not uniformly continuous on R.
+
+00:35:48.520 --> 00:35:57.580
+So we saw that it's uniformly continuous on the closed interval zero one but it's not uniformly continuous on all of R.
+
+00:35:58.920 --> 00:36:13.280
+The reason being again kind of because you know x squared is starting to get big so I can take two things close to each other stick it into x squared and their outputs could be you know very different from each other.
+
+00:36:16.560 --> 00:36:26.640
+I didn't write out the proof of this one so we're going to go a little bit by a little bit by the seat of our pants.
+
+00:36:32.320 --> 00:36:44.980
+So we want to show this is not uniformly continuous so I think epsilon zero equals one is going to work just fine.
+
+00:36:49.980 --> 00:37:14.860
+That delta be positive and the idea is we want to choose x to be some number let's call it a plus well c will be some number and c equals some number.
+
+00:37:19.880 --> 00:37:36.160
+So this is kind of scratch work off to the side and let's see if we can somehow choose c so that so first off you know x minus c will be c over two will be delta over two which is less than delta.
+
+00:37:36.160 --> 00:37:51.040
+And now let's see if we can choose c so that x squared minus c squared is bigger than or equal to one.
+
+00:37:58.960 --> 00:38:10.660
+So c is kind of the thing that we get to play with here. I mean this is how it actually goes if you're want to you know figure out the proof before you write it down you know the scratch work to the side.
+
+00:38:12.140 --> 00:38:25.580
+Alright so choose c so that this now let's start off with the thing that we're trying to bound from below and start computing some stuff this is equal to x plus c and c will be positive.
+
+00:38:25.580 --> 00:38:54.440
+So this will be c and x will be positive so x plus c times x minus c now x plus c will be two c plus delta over two x minus c will be delta over two.
+
+00:38:57.580 --> 00:39:24.460
+So so far all of these things are equality and we get this is equal to two c plus delta two c plus delta squared over two and here we're going to choose c positive alright so we're trying to show it's not uniformly continuous on r so we just need to find a value of c and a value of x.
+
+00:39:27.080 --> 00:39:48.400
+So that there within delta distance to each other but their outputs are bigger than or equal to one so so far if c is just something positive x is c plus delta over two then they're close their difference however is going to be just by this computation equal to two c plus delta over two times delta over two squared.
+
+00:39:49.800 --> 00:40:08.160
+Now delta squared over two is always non-negative so it's certainly bigger than or equal to delta times c and now remember we wanted this thing to be bigger than or equal to one right now we have it's bigger than or equal to delta c so let's choose c to be one over delta.
+
+00:40:12.440 --> 00:40:37.420
+And let's see that that works choose c to be one over delta x to be one over delta so c plus delta over two then these two values are close x minus c equals delta over two is less than delta.
+
+00:40:39.280 --> 00:41:04.580
+And x squared minus c squared equals x plus c times x minus c x plus c as we did a minute ago is going to be two over delta plus delta over two that's x plus c x minus c is equal to delta over two.
+
+00:41:04.580 --> 00:41:13.680
+So, this is a number of times x equals one plus delta squared over four which is bigger than or equal to one are bad epsilon.
+
+00:41:14.300 --> 00:41:23.580
+So, f of x equals x squared is not uniformly continuous on r even though it is uniformly continuous on this closed and bounded interval.
+
+00:41:28.260 --> 00:41:41.380
+So, uniform continuity is really a relationship between a function and the domain on which it's defined.
+
+00:41:44.040 --> 00:41:54.100
+But, okay, so this is kind of to wrap up our theme of continuous functions and how they're behaved and closed and bounded intervals.
+
+00:41:54.820 --> 00:42:01.420
+And we see here that uniform continuity is a much stronger notion than continuity as I've said.
+
+00:42:01.420 --> 00:42:09.000
+I mean, you can easily prove from the definition that if a function is uniformly continuous on s then it's continuous on s.
+
+00:42:09.720 --> 00:42:19.160
+All right. Now, and we've seen that in general the reverse inclusion does not hold.
+
+00:42:19.160 --> 00:42:22.800
+So, let me just write this up as a remark.
+
+00:42:27.700 --> 00:42:46.020
+In general, f uniformly continuous implies that f is continuous.
+
+00:42:46.020 --> 00:42:49.380
+So, this just follows from the definition. This is not difficult to show.
+
+00:42:56.900 --> 00:42:59.220
+But, the converse does not hold.
+
+00:43:10.680 --> 00:43:14.280
+Okay. As we've just seen, right. We have two examples here.
+
+00:43:14.660 --> 00:43:21.180
+f of x equals one over x on the open interval zero one which is continuous but it's not uniformly continuous.
+
+00:43:21.180 --> 00:43:33.480
+And then we have the function f of x equals x squared which is not uniformly continuous on r but in fact it is uniformly continuous on this closed and bounded intervals zero one.
+
+00:43:34.260 --> 00:43:49.440
+This example here though is in fact the rule that if I'm looking at a continuous function or a function on a closed and bounded interval then in fact these two notions are equivalent.
+
+00:43:49.440 --> 00:43:59.700
+So, that's the following theorem. Let f be a function from a to b to r.
+
+00:44:00.620 --> 00:44:15.400
+So, a closed and bounded interval now. Now, just an arbitrary set. Then f is continuous on a b meaning it's continuous at every point.
+
+00:44:15.400 --> 00:44:27.040
+So, if and only if f is uniformly continuous on a b.
+
+00:44:27.980 --> 00:44:35.140
+And the necessity of working on a closed and bounded interval is seen again by these examples.
+
+00:44:35.140 --> 00:44:41.860
+By this example we had here of f of x equals one over x and f of x equals x squared on r and zero one.
+
+00:44:43.920 --> 00:44:50.620
+But, as long as we're looking on a closed and bounded interval continuous is equivalent to uniform continuity.
+
+00:44:51.420 --> 00:45:18.260
+Now, this is also not the sharpest thing you can say in fact what you can say is that if I replace this with what's called a compact set which I may put in the assignment I may not then the statement is still true and that's in some sense the sharpest statement but I think this is interesting enough to just work on a closed and bounded interval.
+
+00:45:20.200 --> 00:45:22.620
+So, let's prove this.
+
+00:45:30.500 --> 00:45:46.360
+So, again this direction should say I leave this to you as an exercise uniform continuity implying continuity.
+
+00:45:46.360 --> 00:46:10.940
+I'll leave it to you. And I will do more difficult one and we'll use use kind of a you know philosophy like we did in the previous lecture where we used the definition of continuity or this theorem about continuity in terms of sequences and also the ballzano virus.
+
+00:46:17.820 --> 00:46:25.580
+Okay, good we still have the negation of the definition of uniform continuity and that's what we'll need.
+
+00:46:28.360 --> 00:46:36.720
+Alright, so we're going to prove F continuous implies uniformly continuous and we're going to do this by contradiction.
+
+00:46:36.720 --> 00:46:45.100
+So, suppose F is continuous on AB but not uniformly continuous.
+
+00:46:52.920 --> 00:47:06.440
+Alright, and then we're going to break the universe some way.
+
+00:47:06.440 --> 00:47:15.940
+Alright, which shows that our assumption that F is not uniformly continuous does not hold.
+
+00:47:20.920 --> 00:47:31.620
+Okay, so we use this negation of the definition of uniform continuity which says that there exists a delta zero so let me write this out.
+
+00:47:38.720 --> 00:47:56.580
+I'm just going to rewrite this here then there exists a delta zero such that for all delta positive there exists X, C, and AB which depend on delta such that X minus C is less than delta.
+
+00:47:56.580 --> 00:48:08.800
+So, F is equal to delta and F of X minus F of C is greater than or equal to epsilon not.
+
+00:48:11.820 --> 00:48:25.020
+Okay, now this holds for every delta you can find the X and C so that X minus C is less than delta so F of X minus and F of X minus F of C is greater than or equal to epsilon not.
+
+00:48:25.020 --> 00:48:46.640
+So, let's choose delta to be 1 over n for each natural number n and for all natural numbers n there exists X, C, and AB such that.
+
+00:48:46.640 --> 00:49:06.760
+So, this is a statement now with delta equals 1 over n X, N minus C, N is less than 1 over N and F of X sub N minus F of C sub N is bigger than or equal to epsilon zero.
+
+00:49:07.840 --> 00:49:34.300
+Okay, now I have two sequences here and they're bounded because they're in this closed and bounded interval so I can pass to a subsequent sequence of one of them to start by the boson of virus truss theorem, not BZ, boson of virus truss.
+
+00:49:34.300 --> 00:49:42.300
+I think that's probably somewhere else in the lecture or the previous I wrote BZ but I meant BW by bosono virus truss.
+
+00:49:45.300 --> 00:50:12.280
+So, this is X sub sequence X, N sub K of X sub N and X in AB such that limit as K goes to infinity of X sub N sub K equals X sub N sub K of X sub N and X sub N sub K of X sub N sub N sub K of X sub N sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub K of X sub N sub
+
+00:50:12.280 --> 00:50:30.540
+Sou, cos'-by-bolzonebirstros from any bounded sequence we can find a convergent sub sequence and because this sub sequence is always between A and B the limit X will be between A and B. No, if I look at
+
+00:50:30.540 --> 00:50:52.480
+And since the subsequence C in sub k is bounded between a and b.
+
+00:50:53.120 --> 00:50:59.720
+So I have a subsequence of x of n's, and I then obtain a subsequence of the c sub n's
+
+00:50:59.720 --> 00:51:01.720
+just picking these integers to be the same.
+
+00:51:04.680 --> 00:51:11.240
+And so now that subsequence is of the c sub n is still, you know,
+
+00:51:11.520 --> 00:51:14.020
+they're all coming from a b, so that's bounded by a b.
+
+00:51:14.760 --> 00:51:15.660
+So it's bounded.
+
+00:51:15.980 --> 00:51:23.160
+So by Volzano-Vierstras applied now to this subsequence,
+
+00:51:23.160 --> 00:51:38.600
+there exists a subsequence C sub n sub k sub j of C sub n sub k,
+
+00:51:43.460 --> 00:51:59.400
+and an element C in a b, such that the limit as j goes to infinity of c sub n sub k sub j equals c.
+
+00:51:59.400 --> 00:52:10.200
+So, you know, I found a subsequence of the x of n's, and now I look at kind of a corresponding
+
+00:52:10.200 --> 00:52:18.740
+subsequence of the c sub n's where now the subsequence the n sub k's are coming from the n sub k's chosen for this subsequence.
+
+00:52:19.440 --> 00:52:21.220
+That's still a bounded sequence.
+
+00:52:21.220 --> 00:52:29.080
+So by Volzano-Vierstras, I can take a subsequence of that and an element C so that I have convergence.
+
+00:52:30.800 --> 00:52:30.880
+Okay?
+
+00:52:32.840 --> 00:52:34.280
+All right.
+
+00:52:35.820 --> 00:52:39.160
+So now let me just summarize.
+
+00:52:39.160 --> 00:52:55.960
+In summary, let's call these, so in summary,
+
+00:53:11.240 --> 00:53:15.340
+the sequence is x sub n sub k sub j.
+
+00:53:16.020 --> 00:53:22.280
+So now this is even a subsequence of x sub n sub k and C sub n sub k sub j.
+
+00:53:26.480 --> 00:53:40.340
+These are subsequences of the original sequences x sub n and C sub n,
+
+00:53:50.120 --> 00:54:03.860
+and there exists x and c in a b such that the limit as j goes to infinity of x of n sub j equals x,
+
+00:54:03.860 --> 00:54:18.820
+and limit as j goes to infinity of c sub n sub k j j equals c.
+
+00:54:24.980 --> 00:54:27.000
+Now, I claim x equals c.
+
+00:54:41.700 --> 00:54:48.800
+Now, C row is certainly bigger than or equal to x of n sub k sub j minus c sub n sub k sub n sub k sub j.
+
+00:54:48.800 --> 00:54:54.680
+So j, which is less than or equal to by how we define these sequences,
+
+00:54:55.400 --> 00:54:59.440
+is less than or equal to 1 over n sub k sub j.
+
+00:55:04.060 --> 00:55:11.980
+And as j goes to infinity, so first off by the definition of subsequences,
+
+00:55:12.960 --> 00:55:18.580
+j is always bigger than or equal to n sub k sub j is always bigger than or equal to j.
+
+00:55:19.200 --> 00:55:21.580
+So this is always less than or equal to 1 over j.
+
+00:55:22.540 --> 00:55:25.700
+This is just a consequence of how subsequences are defined.
+
+00:55:26.300 --> 00:55:34.120
+You always have to move to the right after you've made a choice of entry in the sequence that you're going to take as an element of your subsequence.
+
+00:55:35.000 --> 00:55:44.740
+So 0 is bounded, bounds this from below, and is bounded above by 1 over j, which converges to 0.
+
+00:55:44.740 --> 00:55:50.080
+So the middle thing has to converge to 0 by the squeeze theorem.
+
+00:56:04.860 --> 00:56:09.100
+But these two things, that converges to x, this converges to c.
+
+00:56:10.880 --> 00:56:17.680
+And so the absolute value of x minus c equals 0, and therefore x equals c.
+
+00:56:29.220 --> 00:56:30.920
+Now we're almost home free.
+
+00:56:39.640 --> 00:56:58.740
+The limit is j goes to infinity of x sub in sub k sub j equals c, and limit is j goes to infinity c sub in sub k sub j equals c.
+
+00:57:09.840 --> 00:57:13.480
+Now where's the kicker?
+
+00:57:17.500 --> 00:57:17.980
+This.
+
+00:57:19.160 --> 00:57:22.580
+So these are subsequences of x sub n and c sub n.
+
+00:57:27.500 --> 00:57:31.560
+But each of those sequences is converging to a number c.
+
+00:57:31.560 --> 00:57:52.980
+So by the theorem about continuity, since f is continuous at c, this implies that 0 equals the limit as j goes to infinity of x sub in sub.
+
+00:57:52.980 --> 00:58:21.140
+So this way f of c minus f of c equals limit j goes to infinity of f of n sub c sub in sub k sub j, which is bigger than or equal to epsilon 0.
+
+00:58:21.700 --> 00:58:26.240
+All of these are supposed to be bigger than or equal to some fixed epsilon 0, which is positive.
+
+00:58:28.600 --> 00:58:31.040
+And, but we've just shown it's equal to zero.
+
+00:58:34.360 --> 00:58:35.560
+That's the contradiction.
+
+00:58:42.380 --> 00:58:49.780
+Plus, f is uniformly continuous on a b.
+
+00:58:51.640 --> 00:58:52.120
+Okay.
+
+00:58:54.860 --> 00:58:55.440
+All right.
+
+00:58:55.600 --> 00:58:59.520
+So that concludes, you know, what we'll say about continuity.
+
+00:59:00.740 --> 00:59:05.040
+And as you'll note kind of going forward, we're going to cover topics faster.
+
+00:59:05.200 --> 00:59:07.960
+That's just because we have more machinery to work with.
+
+00:59:08.440 --> 00:59:11.640
+You know, at the start it was very slow going just because one,
+
+00:59:14.580 --> 00:59:16.900
+it's the start of your first proof-based class.
+
+00:59:16.900 --> 00:59:18.020
+So I'm going to go slow.
+
+00:59:18.020 --> 00:59:20.660
+And two, we didn't have much to work with.
+
+00:59:20.820 --> 00:59:26.040
+We just had the real numbers are in order to field with the least upper bound property.
+
+00:59:26.340 --> 00:59:30.740
+But now we've covered sequences, continuity, we know more.
+
+00:59:31.420 --> 00:59:34.980
+And it'll be easier to prove new things.
+
+00:59:35.580 --> 00:59:46.560
+And also, you know, hopefully familiarity with proof is getting better so that my arguments can be a little bit shorter.
+
+00:59:46.560 --> 00:59:50.100
+And not so involved.
+
+00:59:51.520 --> 00:59:53.740
+So we're moving on to something now.
+
+00:59:55.280 --> 00:59:57.640
+This is supposed to be about calculus.
+
+00:59:58.080 --> 01:00:01.160
+We've covered limits, continuity.
+
+01:00:01.960 --> 01:00:07.600
+The next big topic has to be differentiability.
+
+01:00:07.600 --> 01:00:19.100
+So this is a new chapter about the derivative.
+
+01:00:21.740 --> 01:00:28.820
+So let me first give you the precise definition.
+
+01:00:28.820 --> 01:00:35.100
+So first off, I'll be saying,
+
+01:00:39.340 --> 01:00:45.180
+okay, let I be an interval,
+
+01:00:47.640 --> 01:00:53.640
+F goes from I to R, and see an element of I.
+
+01:00:54.060 --> 01:00:57.600
+Now when I say an interval, I don't mean it has to be closed and bounded.
+
+01:00:57.880 --> 01:01:01.000
+Like, once we've been working on, I don't mean it has to be open.
+
+01:01:01.600 --> 01:01:03.880
+You know, it doesn't have to be a bounded interval.
+
+01:01:04.120 --> 01:01:06.460
+Like from 0 to 1, it could be 0 to infinity.
+
+01:01:07.180 --> 01:01:09.660
+It can include the endpoints except, of course, infinity.
+
+01:01:10.720 --> 01:01:11.960
+But I think you know what I mean.
+
+01:01:12.040 --> 01:01:15.040
+And I don't have to write all this out for what exactly an interval is.
+
+01:01:15.620 --> 01:01:18.440
+So let I be an interval and F be a function from I to R.
+
+01:01:19.420 --> 01:01:20.880
+And see a point of I.
+
+01:01:24.880 --> 01:01:29.820
+So first off, you know, convince yourselves of this,
+
+01:01:29.940 --> 01:01:31.760
+but I think this should be pretty clear.
+
+01:01:40.720 --> 01:01:46.120
+For an interval, every point in the interval is a cluster point of the interval.
+
+01:01:46.600 --> 01:01:51.340
+Okay? This is not, you know, too difficult to prove.
+
+01:01:53.420 --> 01:01:55.480
+But I will not require you to prove it.
+
+01:01:55.580 --> 01:01:58.260
+But I'm just saying this because I'm about to define a limit at C.
+
+01:01:58.500 --> 01:02:08.240
+So it had better be a cluster point of, you know, a set containing of a set
+
+01:02:09.340 --> 01:02:10.980
+that this limit is defined using.
+
+01:02:10.980 --> 01:02:16.920
+So of I take away C.
+
+01:02:20.560 --> 01:02:25.800
+And if you don't like this statement, just forget I even wrote it and will continue on.
+
+01:02:29.220 --> 01:02:38.660
+You say F is differentiable at C.
+
+01:02:38.660 --> 01:02:43.240
+So this is the new bit of terminology.
+
+01:02:45.760 --> 01:02:46.700
+If the limit.
+
+01:02:51.880 --> 01:02:53.140
+X goes to C.
+
+01:02:53.820 --> 01:02:54.760
+F of X minus.
+
+01:02:56.080 --> 01:02:58.420
+F of C over X minus C.
+
+01:03:01.360 --> 01:03:01.880
+Exist.
+
+01:03:03.260 --> 01:03:06.300
+Okay? If this limit exists, we say the function is differentiable at C.
+
+01:03:06.300 --> 01:03:14.260
+And we write, we use a notation.
+
+01:03:14.920 --> 01:03:19.400
+F prime F, posture Fc for this limit.
+
+01:03:28.240 --> 01:03:28.920
+Okay?
+
+01:03:39.060 --> 01:03:48.500
+F is differentiable at every point of the interval I.
+
+01:03:48.500 --> 01:03:49.680
+We get a new function.
+
+01:03:50.740 --> 01:03:55.000
+This function F prime of C, which we denote by.
+
+01:04:06.460 --> 01:04:18.320
+We denote the function that's a derivative of F as F prime or DFDX.
+
+01:04:19.140 --> 01:04:19.620
+Okay?
+
+01:04:23.700 --> 01:04:27.960
+Okay. So the simplest guys that are differentiable are, of course, polynomials.
+
+01:04:28.080 --> 01:04:30.420
+I think this is one of the first things you learn back in calculus.
+
+01:04:33.840 --> 01:04:38.660
+And, you know, I'm not going to go through what this is supposed to represent.
+
+01:04:38.980 --> 01:04:40.020
+You know this from calculus.
+
+01:04:40.640 --> 01:04:46.960
+The best way to say what this number represents is the instantaneous rate of change of the function F at this point.
+
+01:04:46.960 --> 01:04:54.020
+How is F changing at that point in the sense of increasing, decreasing, and so on?
+
+01:04:57.200 --> 01:05:06.160
+Or if you like, you interpret this as being the slope of the line that is perfectly tangent to the curve to the graph of the function F.
+
+01:05:06.820 --> 01:05:12.560
+But, you know, what does that mean to be tangent to the graph of the function?
+
+01:05:12.560 --> 01:05:15.240
+You know, so that takes a bit of explaining.
+
+01:05:15.980 --> 01:05:22.440
+So I'm not going to get into what the actual interpretation of this number is.
+
+01:05:22.940 --> 01:05:25.060
+I think you have a pretty good idea of what that is.
+
+01:05:25.180 --> 01:05:28.360
+We're just going to start proving some properties of it.
+
+01:05:30.460 --> 01:05:38.980
+So the simplest example of a function which is differentiable is that of a monomial.
+
+01:05:40.560 --> 01:05:48.340
+So, F of x equals x to the n.
+
+01:05:50.180 --> 01:05:52.360
+Let's put even a number in there.
+
+01:05:54.720 --> 01:05:56.200
+So let's write it this way.
+
+01:05:56.200 --> 01:06:00.840
+I put alpha b in R in the natural number.
+
+01:06:01.780 --> 01:06:02.560
+Zero.
+
+01:06:08.560 --> 01:06:17.080
+Then, function F of x equals alpha times x to the n is differentiable.
+
+01:06:21.840 --> 01:06:27.020
+So I should have said here as well if a function is differentiable at every point where it's defined.
+
+01:06:28.700 --> 01:06:34.160
+Or if a function is differentiable at every point in its domain i, then we just say the function is differentiable.
+
+01:06:34.160 --> 01:06:37.920
+So then this function, this monomial is differentiable.
+
+01:06:44.120 --> 01:06:51.620
+For all c, F prime of c equals n times alpha x to the n minus 1.
+
+01:07:00.660 --> 01:07:03.880
+So let's give a proof of that.
+
+01:07:06.880 --> 01:07:11.020
+We'll use this simple formula.
+
+01:07:14.760 --> 01:07:35.500
+So let's take a look at x minus c times this kind of weird looking sum to the x n minus 1 minus j c to the j.
+
+01:07:38.560 --> 01:07:42.760
+So this is equal to multiply the x through.
+
+01:07:42.900 --> 01:07:52.960
+I get sum from the equals 0 to n minus 1 x to the n minus j c to the j minus.
+
+01:07:54.040 --> 01:07:58.540
+And I'm not going to use j again in the sum when I carry this c through.
+
+01:07:58.780 --> 01:08:15.300
+I'm going to use l sum from l equals 0 to n minus 1 x to the n minus, I'll put it this way, j plus 1 c to the j plus 1.
+
+01:08:15.300 --> 01:08:16.300
+l.
+
+01:08:21.080 --> 01:08:25.000
+Now I'm going to make a change of variables in the second sum.
+
+01:08:26.060 --> 01:08:28.200
+Let j equals l plus 1.
+
+01:08:31.780 --> 01:08:40.940
+So in that case, when l equals 0, j starts at 1, when l hits n minus 1, j equals n.
+
+01:08:41.160 --> 01:08:53.600
+So this equals the sum from j equals 0 and minus 1 x n minus j c to the j minus sum, j equals 1 to n.
+
+01:08:55.460 --> 01:08:58.160
+x n minus j c to the j.
+
+01:08:59.600 --> 01:09:05.000
+So it's the same terms in the sum except starting at different places.
+
+01:09:05.580 --> 01:09:09.400
+So what doesn't get killed here is the j equals 0 term.
+
+01:09:10.620 --> 01:09:13.760
+Because this one starts at j equals 1. This one ends at n.
+
+01:09:14.320 --> 01:09:16.140
+And so it kills the n minus 1 term.
+
+01:09:16.140 --> 01:09:19.440
+So the only thing that survives from this sum is the j equals 0 term.
+
+01:09:20.140 --> 01:09:23.980
+x to the n minus 0 c to the 0 minus.
+
+01:09:27.180 --> 01:09:32.300
+And now from here, everything gets killed except the n term.
+
+01:09:32.520 --> 01:09:38.480
+So x to the n minus n c to the n equals x to the n minus c to the n.
+
+01:09:38.480 --> 01:09:46.180
+So this is therefore equal to this.
+
+01:09:49.600 --> 01:09:51.640
+So we use this to compute this limit.
+
+01:09:52.480 --> 01:10:06.000
+So then f prime of c is equal to the limit as x goes to c of x to the n alpha times x to the n times alpha times c to the n.
+
+01:10:06.000 --> 01:10:09.540
+Where x minus c, now alpha is just a number.
+
+01:10:09.700 --> 01:10:17.900
+It can pop out x to the n minus c to the n divided by x minus c is this thing divided by x minus c.
+
+01:10:18.080 --> 01:10:31.000
+So this is equal to alpha times the limit as x goes to c of sum from j equals 0 to n minus 1 x to the n minus 1 minus j.
+
+01:10:32.340 --> 01:10:33.460
+c to the j.
+
+01:10:35.200 --> 01:10:37.560
+Now this is just a polynomial in x.
+
+01:10:38.500 --> 01:10:40.500
+Okay? Polynomials are continuous functions.
+
+01:10:40.860 --> 01:10:44.860
+So the limit as x goes to c is just you plug in c to x.
+
+01:10:45.000 --> 01:10:56.360
+So this equals alpha times sum from j equals 0 to n minus 1 c to the n minus 1 minus j times j equals.
+
+01:10:56.360 --> 01:11:01.560
+So c to the n minus 1 minus j times c to the j gives me c to the n minus 1.
+
+01:11:02.060 --> 01:11:03.200
+I'm summing in j.
+
+01:11:03.740 --> 01:11:15.060
+There's no j here. So that just pops out times the sum j equals 0 n minus 1.
+
+01:11:16.460 --> 01:11:19.360
+And that's just there's n of the times 1.
+
+01:11:19.360 --> 01:11:20.560
+So this is just n.
+
+01:11:23.960 --> 01:11:24.840
+And that's the proof.
+
+01:11:27.060 --> 01:11:29.500
+Okay. So I'm sure you saw that at some point.
+
+01:11:31.720 --> 01:11:36.940
+Next time we'll continue with, we'll give an example of a function which is not differentiable out of a point.
+
+01:11:37.280 --> 01:11:39.940
+Of course, I think you probably already know this.
+
+01:11:40.060 --> 01:11:42.360
+f of x equals the absolute value of x.
+
+01:11:42.360 --> 01:11:52.360
+If there's time at some point, I'll go over an example of a function which was very surprising to people at one point.
+
+01:11:52.820 --> 01:12:04.660
+So now that we have differentability and continuity on the board, for a long time, some long since dead people believed that if you have a continuous function,
+
+01:12:07.860 --> 01:12:10.780
+then there has to be at least one point where it's differentiable.
+
+01:12:11.480 --> 01:12:15.060
+Okay. It must be at least one point where it's differentiable.
+
+01:12:16.360 --> 01:12:20.060
+And people tried to prove that for a long time and they couldn't because it's false.
+
+01:12:21.000 --> 01:12:30.460
+Vierstras, who is again kind of the godfather of everything we're doing, came up with a whole class of examples of functions that are continuous,
+
+01:12:31.240 --> 01:12:33.320
+but are differentiable nowhere.
+
+01:12:34.160 --> 01:12:36.000
+Okay. They're not differentiable at a single point.
+
+01:12:39.140 --> 01:12:44.020
+And perhaps, depending on time, we'll go over this example.
+
+01:12:45.140 --> 01:12:46.640
+And I think I'll stop there.
+

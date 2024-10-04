@@ -1,0 +1,1211 @@
+WEBVTT
+
+00:00:13.420 --> 00:00:20.760
+So, last time we spoke about the covered sets and induction, this time I want to ask
+
+00:00:20.760 --> 00:00:28.700
+a question about sets, which turns out is actually quite a deep question.
+
+00:00:28.700 --> 00:00:30.900
+I mean, I didn't come up with it myself.
+
+00:00:31.120 --> 00:00:36.140
+This question is at least 150 years old probably.
+
+00:00:38.500 --> 00:00:49.640
+So, the question that I want to ask is, if A and B are sets,
+
+00:00:58.100 --> 00:01:09.000
+or let's phrase it this way, at least a little more efficiently, when do two sets,
+
+00:01:09.000 --> 00:01:19.740
+A and B have the same size.
+
+00:01:25.460 --> 00:01:32.300
+Now, this is especially interesting if these two sets are not finite, meaning there's not
+
+00:01:32.300 --> 00:01:34.060
+five of them, there's not eight of them.
+
+00:01:34.760 --> 00:01:40.880
+But there's infinitely many members, whatever that means, and I'll actually define what that means.
+
+00:01:41.520 --> 00:01:47.580
+For example, do the natural numbers and the integers have the same size, do the natural numbers,
+
+00:01:47.940 --> 00:01:50.140
+and the rational numbers have the same size.
+
+00:01:50.800 --> 00:01:55.040
+What about the rational numbers and the real numbers, even though we haven't defined that yet,
+
+00:01:55.040 --> 00:02:03.440
+you can still keep in mind your notion of the real numbers from calculus.
+
+00:02:05.860 --> 00:02:10.860
+And so, this question is, why is it deep?
+
+00:02:12.180 --> 00:02:22.660
+Because it depends on this word here, size, and what exactly that means.
+
+00:02:22.660 --> 00:02:29.780
+So, I'm not going to...
+
+00:02:32.100 --> 00:02:36.000
+So, kind of an answer, this is due to George Cantor.
+
+00:02:38.160 --> 00:02:43.820
+He said that two sets, so not an answer, but a way of defining size or a way of saying
+
+00:02:43.820 --> 00:02:45.740
+the two sets have the same size.
+
+00:02:46.240 --> 00:02:50.040
+He said, two sets have the same size when...
+
+00:02:54.980 --> 00:02:55.700
+The...
+
+00:03:00.780 --> 00:03:16.020
+Of the two sets, the elements of the two sets can be paired off.
+
+00:03:18.240 --> 00:03:26.260
+Meaning, and I will make this much more precise in a minute or so, what does he mean?
+
+00:03:26.780 --> 00:03:27.620
+What do I mean?
+
+00:03:28.040 --> 00:03:33.540
+For example, the set A, B, and C, and the set 1, 2, and 3.
+
+00:03:35.280 --> 00:03:38.840
+So, this set consists of three letters, A, B, and C.
+
+00:03:38.960 --> 00:03:41.660
+This set consists of three integers, 1, 2, and 3.
+
+00:03:41.660 --> 00:03:45.700
+They have the same size because I can essentially pair them off.
+
+00:03:47.320 --> 00:03:56.320
+So, A and 1 go together, B and 2 go together, and C and 3 go together.
+
+00:03:56.480 --> 00:03:58.320
+Meaning, each one of...
+
+00:03:58.320 --> 00:04:09.360
+Each member of this set gets paired off with an element of this set, and every element of this set gets paired off with a unique element from this set.
+
+00:04:17.080 --> 00:04:19.560
+Now, to make...
+
+00:04:19.560 --> 00:04:23.100
+And so, this is...
+
+00:04:24.400 --> 00:04:32.100
+Goes under the name of the theory of cardinality or...
+
+00:04:32.100 --> 00:04:37.900
+Cardinal numbers, if you'd like, but we won't go too deeply into it.
+
+00:04:37.900 --> 00:04:40.400
+So, the way you make...
+
+00:04:40.400 --> 00:04:53.140
+Or the way one makes this pairing off business more precise is using the language of functions, and you've been dealing with functions since you've been doing calculus.
+
+00:04:53.460 --> 00:05:06.900
+So, I'm just going to quickly reintroduce or review some terminology that goes along with functions that, you know, will be the precise...
+
+00:05:06.900 --> 00:05:10.640
+Nice meaning of this pairing off business that I'm writing here.
+
+00:05:11.580 --> 00:05:17.800
+But, just with an eye towards the future, this is why I'm reviewing some of these...
+
+00:05:17.800 --> 00:05:19.940
+Some of this terminology related to functions.
+
+00:05:20.360 --> 00:05:28.440
+So, a brief review of some terminology for functions.
+
+00:05:28.440 --> 00:05:31.360
+So, let me just recall that...
+
+00:05:35.880 --> 00:05:43.460
+If a and b are sets, then...
+
+00:05:43.460 --> 00:05:51.800
+Function, f, a, b. So, a function is usually written as f, colon, a, arrow to b.
+
+00:05:52.340 --> 00:05:55.740
+Meaning it takes elements from a into elements from b.
+
+00:05:55.740 --> 00:06:07.240
+This is a mapping that...
+
+00:06:09.080 --> 00:06:12.980
+Or, if you like, an assignment...
+
+00:06:15.740 --> 00:06:20.080
+It assigns to each x in a...
+
+00:06:21.720 --> 00:06:23.980
+A unique element...
+
+00:06:25.780 --> 00:06:30.020
+Which we denote f of x in b.
+
+00:06:30.420 --> 00:06:34.560
+So, one single input x gives me a single output.
+
+00:06:36.080 --> 00:06:38.160
+An input does not give me three outputs.
+
+00:06:38.160 --> 00:06:43.040
+Now, this is what one would call a naive definition, probably.
+
+00:06:43.240 --> 00:06:47.700
+Not necessarily completely unambiguous, but for us, this suffices.
+
+00:06:48.420 --> 00:06:58.660
+In the textbook, you can look up a function is unambiguously defined or as a subset of the Cartesian product of a and b,
+
+00:06:59.840 --> 00:07:03.580
+which you would recognize as essentially describing the graph of the function.
+
+00:07:03.580 --> 00:07:09.440
+But then you never use that definition of again, and you essentially use this definition
+
+00:07:10.220 --> 00:07:14.060
+when you think about functions, and when you prove properties of functions.
+
+00:07:14.420 --> 00:07:21.500
+So, this we will just take as our definition, and it will be unambiguous enough for us.
+
+00:07:21.500 --> 00:07:32.220
+So, let f be a function from a to b.
+
+00:07:36.720 --> 00:07:46.140
+If c is a subset of a, we define a set.
+
+00:07:46.140 --> 00:07:50.660
+So, this is f of capital C. So, c is not an element of a, it's a subset of a.
+
+00:07:51.340 --> 00:07:55.620
+This is a subset of b. This is...
+
+00:07:58.160 --> 00:08:01.160
+Let me write it slightly differently here.
+
+00:08:01.560 --> 00:08:11.560
+This is a set of all y and b, such that there exists an x and c, such that y equals to f of x.
+
+00:08:12.600 --> 00:08:20.920
+And I could write this a little more efficiently as this is the set of all elements, f of x, as x,
+
+00:08:21.880 --> 00:08:27.220
+ranges over the elements of this subset c.
+
+00:08:31.920 --> 00:08:43.280
+And if d is a subset of b, we define the subset, the set f inverse of d.
+
+00:08:44.200 --> 00:08:48.040
+This is a set of guys that get mapped into d.
+
+00:08:48.040 --> 00:08:56.940
+So, I should say this is the inverse image of d, not the inverse of this function f.
+
+00:08:58.100 --> 00:09:04.580
+So, the inverse, whatever that means for now, does not necessarily always exist.
+
+00:09:04.960 --> 00:09:08.300
+So, this inverse image of the set d always exists.
+
+00:09:08.300 --> 00:09:17.640
+This is the set of all elements in a, such that f of x is in d.
+
+00:09:17.640 --> 00:09:32.700
+Okay? So, for example, let me...
+
+00:09:38.340 --> 00:09:47.580
+So, 1, 2, 3, 4, and a, b, c, d.
+
+00:09:48.000 --> 00:09:57.520
+And let's suppose one goes to a, two goes to a, three goes to c, four goes to d.
+
+00:09:58.880 --> 00:10:09.520
+Okay? Then, f of the set 1, 2, this is where, what is the set that gets...
+
+00:10:10.180 --> 00:10:12.420
+So, this is the subset of...
+
+00:10:12.420 --> 00:10:19.060
+So, this should be, you should think of as b, a, b, and c, and d.
+
+00:10:19.420 --> 00:10:21.840
+And then, 1, 2, and 3, this is a.
+
+00:10:23.240 --> 00:10:30.780
+So, f of the set of 1, 2, so 1 gets mapped to a, 2 gets mapped to a.
+
+00:10:31.100 --> 00:10:33.480
+So, this is just the set 2.
+
+00:10:34.480 --> 00:10:43.040
+f of the set, let's go with 1 and 3, 1 gets mapped to a.
+
+00:10:43.880 --> 00:10:46.480
+So, this should be a.
+
+00:10:47.340 --> 00:10:52.440
+1 gets mapped to a, and 3 gets mapped to c.
+
+00:10:54.220 --> 00:10:58.220
+Okay? And so, a couple of inverse images.
+
+00:10:59.100 --> 00:11:07.440
+If I look at the inverse image of a, this is equal to the set of all guys that mapped to a.
+
+00:11:07.940 --> 00:11:11.860
+This is, well, 1 maps to a, and 2 maps to a.
+
+00:11:11.860 --> 00:11:13.820
+So, this is 1, 2.
+
+00:11:16.560 --> 00:11:22.940
+Now, if I look at the inverse image of a, c, d,
+
+00:11:24.560 --> 00:11:29.740
+what elements get mapped to a, c, and d? Well, 1 and 2 get mapped to a.
+
+00:11:30.560 --> 00:11:33.180
+3 gets mapped to c, 4 gets mapped to d.
+
+00:11:33.440 --> 00:11:36.000
+So, everything maps into a, c, and d.
+
+00:11:36.000 --> 00:11:42.480
+So, this is just the original set, or the set a, 1, 2, 3, 4.
+
+00:11:43.620 --> 00:11:43.720
+Okay?
+
+00:11:48.800 --> 00:12:00.080
+All right. So, it's more terminology, and this is what we will mean by when two sets can be paired off.
+
+00:12:00.080 --> 00:12:02.680
+Or this makes that more precise.
+
+00:12:07.000 --> 00:12:09.200
+Let f be a function from a to b.
+
+00:12:11.680 --> 00:12:21.240
+We say that f is injective, or I'll write 1 to 1,
+
+00:12:21.500 --> 00:12:28.680
+should be red 1 to 1, if f satisfies the following property.
+
+00:12:30.660 --> 00:12:37.920
+f of x1 equals f of x2 implies x1 equals x2.
+
+00:12:38.700 --> 00:12:44.980
+Okay? So, injective or 1 to 1 means if I take two different inputs,
+
+00:12:45.020 --> 00:12:46.460
+I get two different outputs.
+
+00:12:47.680 --> 00:12:50.920
+Okay? That's essentially what this means.
+
+00:12:50.920 --> 00:12:57.920
+I mean taking the equivalent, so equivalently,
+
+00:13:00.980 --> 00:13:05.440
+from a logical standpoint, this statement,
+
+00:13:05.520 --> 00:13:08.460
+implying this statement is equivalent to the negation of this statement,
+
+00:13:08.620 --> 00:13:10.580
+implying the negation of this statement.
+
+00:13:11.140 --> 00:13:16.160
+So, equivalently, this means x not equal to x2 implies f of x1,
+
+00:13:17.380 --> 00:13:19.360
+not equal to f of x2.
+
+00:13:19.360 --> 00:13:25.700
+So, maybe this is clear if I were to define f as injective if it satisfies this property.
+
+00:13:26.620 --> 00:13:33.160
+Maybe that would have been clear that f takes two different elements to two different elements.
+
+00:13:36.320 --> 00:13:40.240
+But this condition here is typically easier to verify,
+
+00:13:40.520 --> 00:13:42.720
+or at least simpler to state, and verify.
+
+00:13:42.720 --> 00:13:47.480
+So, f is surjective,
+
+00:13:54.720 --> 00:14:05.380
+or onto if the image of a is b.
+
+00:14:06.460 --> 00:14:06.480
+Okay?
+
+00:14:07.660 --> 00:14:11.800
+So, let me write that statement out a little bit more.
+
+00:14:11.980 --> 00:14:16.620
+Everything in the set b gets mapped to by something from a.
+
+00:14:17.500 --> 00:14:30.100
+So, equivalently, this says that for all y and b,
+
+00:14:30.100 --> 00:14:37.500
+there exists an x and a, so that f of x equals y.
+
+00:14:39.360 --> 00:14:39.460
+Okay?
+
+00:14:45.920 --> 00:14:50.340
+f is bijective,
+
+00:14:52.040 --> 00:14:56.060
+if f is one to one and onto.
+
+00:14:56.380 --> 00:15:01.640
+So, it's f is bijective, if it's both injective and surjective.
+
+00:15:07.980 --> 00:15:15.440
+So, for example, this map that we just drew over here that sends one to a, two to b,
+
+00:15:16.240 --> 00:15:22.520
+I mean two to a, three to c, four to d, this is neither injective nor surjective.
+
+00:15:22.580 --> 00:15:29.140
+It's not injective because it takes two different elements to the image in b, namely a.
+
+00:15:29.140 --> 00:15:30.620
+So, it takes one and two to a.
+
+00:15:31.120 --> 00:15:38.220
+It's not surjective because nothing gets mapped to the element b here.
+
+00:15:38.700 --> 00:15:56.500
+So, we've seen that's not surjective.
+
+00:15:56.500 --> 00:16:03.940
+Of course, this map, if I take, again, imagine this is one, two, three, a, b, c, d,
+
+00:16:04.820 --> 00:16:11.160
+this map here, this function here that takes one to a, two to b, three to c,
+
+00:16:11.620 --> 00:16:15.860
+this is actually injective but not surjective.
+
+00:16:24.000 --> 00:16:27.240
+And then, of course, we could change this slightly.
+
+00:16:33.640 --> 00:16:38.420
+And one goes to a, two goes to b, and three goes to b.
+
+00:16:38.420 --> 00:16:47.240
+Then this is surjective but not injective.
+
+00:16:51.840 --> 00:17:05.700
+Now, the map that sends, let's switch sides here, a, b, and c, one, two, three,
+
+00:17:05.700 --> 00:17:16.880
+a to one, b to two, c to three, this is a bijection, bijective.
+
+00:17:17.240 --> 00:17:23.500
+So, if I say something's an injection or surjection or bijection, that just means it's a map that is injective,
+
+00:17:23.500 --> 00:17:30.500
+surjective or bijective respectively.
+
+00:17:30.500 --> 00:17:49.420
+Okay.
+
+00:17:53.840 --> 00:18:16.900
+And now, definition, so this is really, there's not much to this definition but just defining a couple of related functions that are related to a given function.
+
+00:18:18.000 --> 00:18:25.180
+If f goes from a to b, g goes from b to c.
+
+00:18:26.620 --> 00:18:47.920
+The composition, g of f, is the function which goes from a to c, is defined by g of f of x equals g of f of x.
+
+00:18:50.280 --> 00:18:56.800
+And two, if f is bijective.
+
+00:18:59.940 --> 00:19:06.780
+So, this is the composition of two functions. I didn't write the word composition but this is g of f means the composition.
+
+00:19:06.780 --> 00:19:24.220
+Or as referred to as a composition. If f is bijective, then we define the inverse function to f, b to a by the following.
+
+00:19:27.060 --> 00:19:48.320
+If y is in b, then f inverse of y and a is the unique element in a such that,
+
+00:19:50.460 --> 00:19:54.120
+if I take this element, stick it into f, I get back y.
+
+00:19:56.460 --> 00:20:02.200
+So, inverse, the inverse of a function only exists for bijective functions.
+
+00:20:03.020 --> 00:20:06.160
+Or at least it's only defined for bijective functions.
+
+00:20:07.520 --> 00:20:12.560
+Keep that in mind, don't confuse that with the inverse image of sets.
+
+00:20:13.320 --> 00:20:19.900
+Although those two notations look the same, you have an inverse f to the minus one.
+
+00:20:22.240 --> 00:20:27.980
+F to the minus one, if it's a function, that is the inverse function.
+
+00:20:28.380 --> 00:20:35.480
+However, if I'm taking f to the minus one of a set, that means the inverse image of that set, as defined over there.
+
+00:20:41.780 --> 00:20:49.720
+So, bijections, meaning bijective functions, will be what we mean when we say two sets can be paired off.
+
+00:20:51.020 --> 00:21:04.220
+It's what we mean when we, or at least what cantors answer to that original question was, when the two sets have the same size.
+
+00:21:04.220 --> 00:21:11.580
+So, this is the notion of cardinality that I alluded to.
+
+00:21:18.640 --> 00:21:32.700
+So, two sets, we say two sets, a and b, have the same size.
+
+00:21:40.360 --> 00:21:54.600
+Cardinality, if there exists a bijection, or a bijective function, f from a to b.
+
+00:21:58.240 --> 00:21:59.420
+Okay.
+
+00:22:02.940 --> 00:22:13.760
+So, let me just make some notation here.
+
+00:22:13.760 --> 00:22:20.320
+So, this is not really new objects I'm defining or operations. This is just some notation.
+
+00:22:20.960 --> 00:22:24.840
+So, when two sets have the same cardinality, we write.
+
+00:22:40.280 --> 00:22:46.220
+So, this is just a shorthand way of writing that two functions have the same cardinality.
+
+00:22:46.220 --> 00:22:50.960
+You should not necessarily think this means taking the absolute value of a set.
+
+00:22:51.360 --> 00:22:52.840
+Okay. That doesn't mean anything.
+
+00:22:53.480 --> 00:22:57.540
+All right. This is just shorthand notation for saying two sets have the same cardinality.
+
+00:23:02.240 --> 00:23:18.820
+If a has the same cardinality as the set one, two, three, up to n, we write a equals n.
+
+00:23:19.440 --> 00:23:27.640
+Okay. That's just shorthand for saying that set has the same cardinality as the natural numbers up to n.
+
+00:23:36.360 --> 00:23:51.900
+Write a. So, if there exists an injective function, or I will often say either function or map,
+
+00:23:52.720 --> 00:24:03.700
+you know, you should take those as synonymous. There exists an injective function, f, if there exists an injective function, f from a to b.
+
+00:24:06.340 --> 00:24:15.900
+We write this thing. Again, do not read this as taking the absolute value of some set.
+
+00:24:15.900 --> 00:24:21.600
+And that absolute value is less than or equal to the absolute value of the other set, because that's meaningless.
+
+00:24:21.920 --> 00:24:31.040
+We haven't said what that means, even. This is just shorthand notation.
+
+00:24:44.180 --> 00:24:54.460
+And if there exists an injection from a to b, but they don't have the same cardinality,
+
+00:24:58.200 --> 00:25:13.580
+we write this. Okay. So, even though this notation of these absolute value, things being on the outside of the set,
+
+00:25:13.580 --> 00:25:30.160
+it makes you think absolute value, or shouldn't be interpreted as absolute value. It's okay to kind of think as, you know, a certain ordering being there as one, as sort of a having smaller size than b.
+
+00:25:30.740 --> 00:25:42.800
+Okay. We write this because there being an injection from one set to the other, kind of means I can pair off elements of a with some elements of b.
+
+00:25:43.580 --> 00:25:50.400
+Okay. Maybe I don't get all of the elements of b, but I can pair off some of the elements of a with some of the elements of b.
+
+00:25:50.400 --> 00:25:57.080
+For example, that first map we wrote up there. Yeah. That says that to set one, two, three.
+
+00:25:58.280 --> 00:26:07.620
+In size is less than or equal to the size of a, b, c, d, because we found an injection, an injective map from the first set to the second set.
+
+00:26:10.060 --> 00:26:20.980
+This third map would say that the size of the set a, b, c is equal to three written here, or shorthand written here.
+
+00:26:22.180 --> 00:26:36.380
+Okay. And in fact, that first map that we wrote up there again is, so from first map, this says that the set of one, two, three.
+
+00:26:37.400 --> 00:26:45.060
+In our shorthand notation, absolute value, as is less than the size of a, b, c, d. Okay.
+
+00:26:45.500 --> 00:26:52.700
+So don't think of these as saying the absolute value, it's best to maybe think of this as saying the size of. Okay.
+
+00:26:52.700 --> 00:27:05.580
+Alright. So if there exists an injective map from, or function from one set to another, then the size of a is less than or equal to the size of b.
+
+00:27:06.400 --> 00:27:14.840
+If the size of a is less than or equal to size of b, but the size of a and b are not the same, we write the size of a is less than the size of b. Okay.
+
+00:27:15.840 --> 00:27:27.680
+So best to think of those, this absolute value looking thing as being shorthand for saying the words size of. Okay.
+
+00:27:31.940 --> 00:27:53.440
+Now I'm not going to prove this, it goes a little bit beyond the scope of this class, but let me just say that this ordering, this inequality, these symbols that we're writing, does bear some sort of semblance to the ordering of real numbers.
+
+00:27:53.440 --> 00:28:04.000
+If I have two real numbers, one is less than or equal to the other, and vice versa, so a is less than or equal to b, and b is less than or equal to a, then a must equal b.
+
+00:28:04.680 --> 00:28:09.480
+That is in fact true also for this elementary notion of size of sets.
+
+00:28:10.480 --> 00:28:21.580
+And this is, I mean, you should, it shouldn't surprise you for, you know, finite sets, necessarily.
+
+00:28:21.580 --> 00:28:35.960
+If I have a pairing of a, if a is no bigger than, n, and n is no bigger than the size of a, then a should have n elements.
+
+00:28:36.560 --> 00:28:58.200
+But it takes a little bit more to prove for sets which are not finite, so I forgot to write this down. We also say that a, if the size of a is equal to the size of this finite set one through n, we say a is finite.
+
+00:29:01.860 --> 00:29:28.180
+So this theorem that I'm stating here is the Cantor-Schroeder Bernstein theorem, which states that if the size of a is less than or equal to the size of b, and the size of a is finite, then a should have n elements.
+
+00:29:28.180 --> 00:29:38.620
+So if the size of b is less than or equal to the size of a, then size of a equals the size of b.
+
+00:29:38.920 --> 00:29:52.500
+So again, if you're thinking of these in the context of real numbers, one being less than or equal to the other, and vice versa, of course that implies that those two real numbers are equal to each other.
+
+00:29:52.500 --> 00:30:12.180
+But we're not talking about real numbers. Again, this is just short-hand notation for saying there exists a bijective map from a to b. This means there exists a bijective map from a to the set. This means there exists an injective map from a to this set.
+
+00:30:13.960 --> 00:30:19.360
+So this is not a statement about real numbers. This is a statement about cardinality.
+
+00:30:32.680 --> 00:30:39.680
+So finite sets are sets that you can count if you had n fingers.
+
+00:30:40.660 --> 00:31:08.000
+Now, you know, we would like to be able to define what it means to be able to count a set. So what I mean by count a set, meaning if I had infinite time, I could go through the set, counting them 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and so on.
+
+00:31:08.000 --> 00:31:25.640
+I don't need to go anymore. But what does that process of counting mean? That means for each element of the set that I'm trying to count, I can pair it off with a natural number, 1, 2, 3, and so on.
+
+00:31:25.640 --> 00:31:55.080
+So this is how we define countable sets. If a has the same size as the natural numbers, meaning there exists a bijection from a to the natural numbers, then we say a is countably infinite.
+
+00:32:01.820 --> 00:32:23.400
+If a is finite, or countably, I also use a lot of shorthand, so it's not clever shorthand, so you should just be able to sound what, like if you just sound that out, you'll get what word I mean, countably infinite.
+
+00:32:29.600 --> 00:32:53.380
+We say a is countable. So countably infinite means I need all the natural numbers to be able to count off the elements of the set, a, countable means maybe I stop after some point, and I've counted all them, so a is finite, or it's countably infinite.
+
+00:32:55.040 --> 00:32:58.520
+Otherwise, if a set is not countable, we say it's uncountable.
+
+00:33:23.560 --> 00:33:28.500
+So let's take a look at a couple of countable sets that maybe I'm going to have to count all the natural numbers.
+
+00:33:28.500 --> 00:33:32.160
+So I don't come off as being countable.
+
+00:33:32.160 --> 00:33:51.940
+So a set of, actually that's a homework problem. The set of even integers is countable.
+
+00:33:54.560 --> 00:34:09.340
+The set of odd, so I said integers a minute ago, maybe I should just say natural numbers, the set of odd natural numbers is countable.
+
+00:34:11.240 --> 00:34:16.880
+So in fact, so this is just a side.
+
+00:34:22.940 --> 00:34:31.260
+So these are two disjoint subsets that make up the natural numbers, even in odd natural numbers.
+
+00:34:31.260 --> 00:34:45.680
+And they both have the same size as the set that they make up. So it's almost like saying the cardinality of the natural numbers is twice the cardinality of the natural numbers.
+
+00:34:45.680 --> 00:34:54.440
+So you would think that the size of n should be the size of this set plus the size of this set since they're disjoint and they make up the set.
+
+00:34:57.060 --> 00:35:06.160
+But that's not how a cardinality works. You don't just add cardinalities to get the cardinalities.
+
+00:35:06.160 --> 00:35:20.160
+So this is kind of a subtle, interesting thing about cardinalities and so Richard Feynman, who won the Nobel Prize in the 60s,
+
+00:35:20.160 --> 00:35:44.180
+for his work on QED, described this as saying there are twice as many numbers as numbers.
+
+00:35:48.500 --> 00:36:06.140
+Okay, so let's prove this. So what does this mean? This means we have to be able to find a bijective function from this set to this set.
+
+00:36:06.140 --> 00:36:25.060
+Okay, or from this set to this set, one or the other. And so in fact, maybe I should, well I'll say something about that in a minute.
+
+00:36:28.140 --> 00:36:40.120
+Well, let me pause this just for a minute. And let me make a few comments called cardinality, which maybe I should have.
+
+00:36:47.860 --> 00:37:02.120
+So, let's see if you can think of as a little theorem. If I have two sets, A has the same size as B, then B has the same size as A.
+
+00:37:02.120 --> 00:37:16.980
+So remember, what I just said in English is not exactly what those symbols mean. Remember, this means there exists a bijection from A to B. This means there exists a bijection from B to A.
+
+00:37:16.980 --> 00:37:44.280
+So what is the proof of this statement? So let's start off with the hypothesis. Suppose there exists bijective map, bijection, bijective function,
+
+00:37:45.860 --> 00:38:04.300
+F from A to B. Now if I have a bijection from A to B, then what would be a bijection going from B to A? That would just be the inverse.
+
+00:38:08.300 --> 00:38:15.460
+So this is not the inverse image of sets like we describe it the actual inverse which we defined over there.
+
+00:38:37.160 --> 00:38:39.520
+So B has the same size as A.
+
+00:38:39.520 --> 00:38:44.700
+Okay.
+
+00:38:44.700 --> 00:39:01.700
+Okay.
+
+00:39:01.700 --> 00:39:22.620
+So, if A and B have the same size and B and C have the same size. So again, A, B and C are sets. I should have written that at the beginning, but from this context you should understand that A, B and C are sets.
+
+00:39:22.620 --> 00:39:27.900
+So, if A and C have the same size.
+
+00:39:37.800 --> 00:39:47.600
+Okay. So let's do a proof of that. So, let's start with the hypothesis meaning A has the same size as B and B has the same size as C.
+
+00:39:56.300 --> 00:40:06.240
+So, what do these two statements mean in terms of the definition? That means there exists bijection from A to B and a bijection from B to C.
+
+00:40:06.240 --> 00:40:16.240
+Okay.
+
+00:40:35.350 --> 00:40:48.750
+So, perhaps I should have said a few more words about why this is true. So, but I'm going to leave this as the exercise just to kind of pause the lecture and do it yourself.
+
+00:40:48.750 --> 00:40:59.710
+And what I'll write shortly for this case, I'll actually prove that the thing I'm going to define is a bijection that should help you.
+
+00:40:59.710 --> 00:41:26.330
+So, let me draw over here off to the side. We have, you know, again, 1, 2, 3, A, B, C. So, think of this as F. This is my set A. This is my set B. And then I have alpha, beta, gamma.
+
+00:41:26.330 --> 00:41:41.590
+And A gets mapped to alpha, B gets mapped to beta, C gets mapped to gamma. So, what would be the map going from A down to the set C? Well, perhaps the composition.
+
+00:41:41.590 --> 00:42:00.550
+1 gets mapped to A, which gets mapped to alpha. So, 1 gets mapped to alpha. 2 gets mapped to beta. 3 gets mapped to gamma. How do I build this function out of the things that I know, namely this F in G? Well, this function going from A to C is just a composition of these two functions.
+
+00:42:01.690 --> 00:42:26.750
+So, this is often the side. This is not a part of the proof. Let H go from A to C, D the function, G of F of X.
+
+00:42:29.870 --> 00:42:50.450
+So, I claim that this function is a bijection. So, we want to prove that it's 1 to 1 and on 2.
+
+00:42:51.790 --> 00:43:09.230
+So, let's do 1 to 1 first. Suppose this is the part where I'm going to put this in parentheses, meaning what we're doing now. So, we're going to prove that H is 1 to 1.
+
+00:43:09.230 --> 00:43:25.170
+So, that means we have to verify the definition that I've erased. So, remember the definition. So, let's write it all out.
+
+00:43:29.050 --> 00:43:55.150
+We first show H is 1 to 1. And what this means, according to the definition that I'm now writing over, if H of X1 equals H of X2, then X1 equals X2.
+
+00:43:56.930 --> 00:44:25.130
+So, this is what we want to prove. This is the definition of H being 1 to 1. So, let's start. If H of X1 equals H of X2, then in terms of how we've defined H, which is G of F of X, so the composition, then this means G of F of X1.
+
+00:44:28.150 --> 00:44:45.790
+This means G of F of X2. That's just what H is. Now, this statement here, now G we know is a bijection. We know G is 1 to 1.
+
+00:44:45.790 --> 00:45:04.570
+And since G of something equals G of something else, and G is 1 to 1, this implies that F of X1 equals F of X2. This is since G is 1 to 1.
+
+00:45:08.450 --> 00:45:19.010
+So, starting with this, in the definition of H being the composition, we conclude that F of X1 has to equal F of X2 because G is 1 to 1.
+
+00:45:19.010 --> 00:45:36.190
+Now, since F is also 1 to 1, we are assuming that F and G are bijections. Since F is 1 to 1, this implies X1 equals X2, since F is 1 to 1.
+
+00:45:41.550 --> 00:45:50.730
+And this is what we wanted to prove. We wanted to start with assuming H of X1 equals H of X2 and prove X1 equals X2, which is what we've done.
+
+00:45:50.730 --> 00:46:00.930
+So thus, we've proven that H is 1 to 1. Now, we have to show that it's surjective, that it's on to.
+
+00:46:12.150 --> 00:46:30.910
+H of A equals C. And again, I'll write out what this means. This means for all Y and C, or let me call it Z, there exists an X and A such that H of X1 equals C.
+
+00:46:37.010 --> 00:46:51.790
+Now, we use the fact that F and G were injective to conclude that the composition is injective. So, it stands to the reason that we're going to use the fact that they're both surjective to prove that H is surjective.
+
+00:46:54.710 --> 00:47:11.790
+So, we need to prove that for all Z and C, there exists an X and A such that H of X equals Z. So, let Z be in C. Now, we need to find some X and A that gets mapped to Z. We'll use that G and F are both surjective.
+
+00:47:11.790 --> 00:47:32.510
+So, and what's the picture that kind of goes along with this? Here's the set C, B and A. We have some element of Z.
+
+00:47:32.510 --> 00:47:54.310
+And we know that since G is surjective, there's some element in B that gets mapped to Z by G. But now since F going from A to B is surjective, there exists some X which maps to Y.
+
+00:47:56.610 --> 00:48:08.650
+And then that's the whole argument. That's it. I drew this picture, but now I just need to turn it into English using the properties and assumptions that I have.
+
+00:48:13.150 --> 00:48:25.950
+Since G is surjective, there exists a Y and B such that G of Y equals Z.
+
+00:48:37.070 --> 00:48:51.450
+Since F is surjective, there exists an X and A so that F of X equals Y.
+
+00:48:54.390 --> 00:49:15.190
+But then, if I look at H of X, this is equal to G of F of X which is equal to G of Y which is equal to Z by how we've defined Y, remember G of Y equals Z, how we found Y, and how we found X, remember F of X equals this Y.
+
+00:49:17.750 --> 00:49:42.410
+And therefore, this map H is on to and therefore H is a bijection proving this theorem. So that should help you in your many exercise to prove that the inverse of a bijection is a bijection.
+
+00:49:52.090 --> 00:49:55.550
+So back to what we're doing to begin with.
+
+00:49:57.070 --> 00:50:08.550
+We want to show the set of even natural numbers has the same size as the natural numbers, has the same cardinality as the natural numbers and the same for the odd ones.
+
+00:50:08.550 --> 00:50:22.590
+So I'm just going to do the odd ones. Again, this will be a small exercise for you to prove number two the statement for the odd ones. So I'm going to do the even one and you can do the odd ones.
+
+00:50:23.870 --> 00:50:49.550
+You should, if you plan on studying more math, get used to the instructor, professor, research paper writer, textbook author, giving out little exercises to make sure that you're following along and that you can do some minor task at some point during the discussion.
+
+00:50:51.950 --> 00:50:54.610
+Okay, so we're going to find.
+
+00:50:56.250 --> 00:51:19.690
+And so we want to show that the natural numbers has the same size as the even natural numbers, which is the same as this statement by that first theorem I wrote up there.
+
+00:51:21.970 --> 00:51:37.470
+Now, that means we need to find a bijection from the natural numbers to the set of even natural numbers. This should be not too bad.
+
+00:51:39.170 --> 00:51:44.550
+So again, this is off to the side. This is not part of the proof.
+
+00:52:01.730 --> 00:52:13.110
+So, what would be the map going from these guys to these guys? Well, I mean, there's several you could choose, but maybe the simplest is one gets mapped to two.
+
+00:52:13.110 --> 00:52:21.510
+Two gets mapped to four, three gets mapped to six, four gets mapped to eight, five to ten, six to twelve, and so on and so on.
+
+00:52:22.310 --> 00:52:29.570
+Okay, now what is that map? And now I'll re, I'll continue the proof.
+
+00:52:34.210 --> 00:52:54.270
+Let F be the function into the even natural numbers defined by F of N equals two times N.
+
+00:52:54.270 --> 00:53:06.810
+And so we're in a natural number. Okay, so this is just formally writing the function that takes one to two, two to four, three to six, four to eight, and so on and so on.
+
+00:53:06.810 --> 00:53:16.270
+So, I claim F is bijection, so I have to show that F is one to one and onto.
+
+00:53:22.650 --> 00:53:38.730
+So, we first show F is one to one. So that means that I have to assume F of N1 equals F of N2 and conclude that N1 equals N2.
+
+00:53:38.730 --> 00:53:55.790
+So, let me actually write out what this means again for you to say that F is one to one, is one to one IE, if F of N1 equals F of N2, then N1 equals N2.
+
+00:53:55.790 --> 00:54:08.970
+But this is easy to verify for this function that we've written down because if F of N1 equals F of N2, so remember this is what we want to show.
+
+00:54:08.970 --> 00:54:17.590
+So, to show it, I start with my assumption and I need to conclude N1 equals N2.
+
+00:54:21.110 --> 00:54:28.430
+So, suppose F of N1 equals F of N2, my assumption, my hypothesis, I need to conclude N1 equals N2.
+
+00:54:30.370 --> 00:54:43.270
+Then this implies by the definition of F, two times N1 equals two times N2, which by algebra of just eliminating the two, N1 equals N2, which is the conclusion that I want.
+
+00:54:44.430 --> 00:54:52.030
+So, I've proven the statement that if F of N1 equals F of N2, then N1 equals N2. Therefore, F is one to one.
+
+00:54:56.130 --> 00:55:09.870
+So, thus, F is one to one. So, now we want to show F is onto surjective.
+
+00:55:10.970 --> 00:55:33.630
+Now, write this out again, IE, for all elements that are N that are an even number, there is an N such that F of N equals M.
+
+00:55:43.390 --> 00:55:51.390
+Now, let M be an even integer. And so, not to confuse this, let me write two times K.
+
+00:55:52.190 --> 00:55:59.610
+This is the same set, just using a different dummy variable instead of N in my description of the even natural numbers.
+
+00:56:05.010 --> 00:56:07.110
+Then, and let's do that here as well.
+
+00:56:15.130 --> 00:56:22.190
+Again, this is not changing anything, this is just changing the letter I'm using to describe this set, which is inconsequential.
+
+00:56:23.190 --> 00:56:30.830
+But I don't want you to get the false impression that somehow I'm not doing anything at all.
+
+00:56:34.130 --> 00:56:50.570
+Okay, so suppose I have an even integer, then there exists simply by the definition of this set, there exists an N, natural number, so that M equals two times N.
+
+00:56:53.230 --> 00:56:59.010
+Then, F of this natural number, which is two times N equals M.
+
+00:56:59.370 --> 00:57:02.870
+And therefore, I get something that maps to M.
+
+00:57:12.170 --> 00:57:19.550
+Therefore, F is on to, therefore, F is a bijection, and the two sets have the same cardinality.
+
+00:57:20.550 --> 00:57:21.030
+Okay?
+
+00:57:23.250 --> 00:57:29.470
+All right.
+
+00:57:40.950 --> 00:57:43.630
+So, let's where we at, where should I write?
+
+00:57:44.170 --> 00:57:45.030
+That's right here.
+
+00:57:50.970 --> 00:57:53.770
+Maybe I'll leave that up, because I don't want to...
+
+00:58:10.530 --> 00:58:21.390
+Now, using this, and I'll probably put this in the homework, I mean, one can also show.
+
+00:58:22.910 --> 00:58:36.350
+So, I should say using this, but one can also show that the integers have the same size as the natural numbers.
+
+00:58:39.390 --> 00:58:44.750
+Which again is a little bit surprising, since the natural numbers are a strict subset of Z.
+
+00:58:48.330 --> 00:58:49.370
+So, what's the proof?
+
+00:58:50.450 --> 00:59:03.730
+So, I'm going to draw a picture, then I'm going to write down the function, and then I'm going to leave it as, actually, I'm going to put it in the homework that, for you to verify that this function is one to one and onto.
+
+00:59:03.730 --> 00:59:10.270
+So, let's say...
+
+00:59:19.310 --> 00:59:23.810
+There's as many natural numbers as I want to write.
+
+00:59:35.790 --> 00:59:38.250
+And as many integers as I want to write.
+
+00:59:39.870 --> 00:59:52.350
+Okay? So, what would be a way of mapping the integers in a one to one and onto fashion onto the natural numbers?
+
+00:59:56.050 --> 01:00:03.490
+Well, what we could do, first off, let's send zero to one, just to get zero out of the way.
+
+01:00:05.610 --> 01:00:15.070
+And from then on, now we just need to find a way to map the positive integers and the negative integers onto the natural numbers bigger than two.
+
+01:00:16.610 --> 01:00:29.510
+And in some way, mentally, we should feel like we can do this, because we kind of did it over there, but not explicitly.
+
+01:00:29.510 --> 01:00:42.610
+So, how about we take one to two, two to four, three to six, four would then go to eight.
+
+01:00:44.290 --> 01:00:54.930
+And we'll take one to three minus two to five, again, crossed.
+
+01:00:56.450 --> 01:01:01.550
+And then minus three would get sent to seven.
+
+01:01:01.550 --> 01:01:16.470
+So, you see that the positive integers get mapped to the even natural numbers, and the negative integers get mapped to the odd natural numbers bigger than one.
+
+01:01:19.530 --> 01:01:25.910
+Okay? So, I'm not even going to write the proof. This will be part of the homework.
+
+01:01:30.390 --> 01:01:46.350
+Now, you know, it is a bit surprising that there are twice as many numbers as numbers, not too surprising since, you know, kind of these subsets, if you picture them as I've been doing as subsets of the real line, you know, they're kind of discrete.
+
+01:01:46.350 --> 01:02:03.470
+So, you should be able to count them. What is more surprising is whether or not you can count subsets that, in some sense, are not discrete, for example, what about the rational numbers?
+
+01:02:04.470 --> 01:02:27.870
+So, this is a theorem that, and let me just look at those positive rational numbers. In fact, I could take all rational numbers, but for the statement of this theorem, if I look at those rational numbers with which are positive,
+
+01:02:31.710 --> 01:02:55.830
+then this has the same size as the natural numbers. You can count the positive rational numbers, which is just, you know, a bit crazy to me, because, you know, here, at least for, let's say, the integers, once I'm at an integer, I can move to a next biggest one and count that one in some way.
+
+01:02:55.830 --> 01:03:11.090
+Right? And so, that kind of makes it believable that I can count the integers. The integers have the same size as the natural numbers, even though at first glance, it looks like there's twice as many.
+
+01:03:13.130 --> 01:03:24.530
+But for rational numbers, you know, between any two rational numbers, there's another rational number in between them. Right? You just take the average of those two rational numbers.
+
+01:03:25.590 --> 01:03:40.290
+So, it's not, so now this idea of being at a rational number and then sort of moving to the next big one, that you can't do that now. So, now it's, it's a little bit up in the air at least, whether or not you can count the rational numbers.
+
+01:03:41.550 --> 01:03:50.430
+And what I'm saying is that, indeed, you can, and this will be part of the homework. I will at least,
+
+01:03:54.550 --> 01:04:01.630
+give you an idea of how the proof will go. What, we will actually be able to write down a map based on a simple fact.
+
+01:04:03.430 --> 01:04:10.090
+So, let me not write down proof, but let me write down, remark.
+
+01:04:12.190 --> 01:04:24.210
+So, we'll actually, actually be able to write down a map based on one simple fact, which is this fundamental theorem of arithmetic, which says that, so this is just discussion now.
+
+01:04:24.530 --> 01:04:38.930
+You know, more stuff will be written in the homework about this, but so just try to follow along. So, the fundamental theorem of arithmetic says that, if you have a positive natural number, you can write it in a unique way as a product of prime numbers.
+
+01:04:39.850 --> 01:05:07.350
+Now, for rational numbers, using that, that means you can write every rational number uniquely as a product of prime numbers divided by another product of prime numbers, where no two prime numbers, where the prime numbers up top and the prime numbers at the bottom, none are in common, meaning you've simplified as much as possible.
+
+01:05:07.350 --> 01:05:18.150
+So, instead of, you know, 15 over 3, it's not good, let's say, 15 over 30, you have 1 half, okay.
+
+01:05:19.310 --> 01:05:45.810
+So, the map that I would take, so what I'm saying here is that every rational number can be written as some product.
+
+01:05:45.810 --> 01:06:14.910
+So, let me not use that notation, but some product P, R1, Pn, Rn, Q1, S1, Qm, SN, where P1, P2, and Pn, these are all primes, Q1, up to Qm, they're all primes, R1, Rn, these are all exponents, positive natural numbers.
+
+01:06:14.910 --> 01:06:35.650
+So, Rj, Sk, these are natural numbers, P1, Pn, Q1, Qm, or primes, and for all jk, Qj does not equal pk.
+
+01:06:35.650 --> 01:06:42.610
+So, there's no prime that appears both up here and down here, we've already simplified that away, okay.
+
+01:06:44.470 --> 01:07:04.870
+So, then the map, so this, so just so, you know, I don't think I'm fooling you, you know, 9 halves, which is a positive rational number,
+
+01:07:04.870 --> 01:07:14.670
+this is 3 squared over 2, yeah. You know, 20, I'm not going to do anymore, that's it.
+
+01:07:16.130 --> 01:07:33.170
+You should. So, the map that we will take from this rational number to a natural number will be this gets mapped to the natural number,
+
+01:07:33.170 --> 01:07:53.530
+P1, 2R1, Pn, 2Rn, times now Q1 to 2S1 minus 1, Qm to SN minus 1.
+
+01:07:53.530 --> 01:08:07.450
+So, basically, I map it to the integer that has this expansion in terms of prime numbers, where now the exponents of these prime numbers is even depending on these exponents on top,
+
+01:08:07.710 --> 01:08:14.710
+and the exponents of this one are odd, depending on this exponent on top, okay.
+
+01:08:14.710 --> 01:08:26.750
+So, for example, 3 squared over 2, this would get mapped to 3 to the 4 times 2.
+
+01:08:36.090 --> 01:08:41.150
+Okay. So, what we'll do in the homework is show that this map is in fact a bijection.
+
+01:08:41.150 --> 01:09:06.670
+So, okay. So, those two terms, you will prove in the homework that won't be too bad, I will leave enough hints.
+
+01:09:06.670 --> 01:09:13.250
+So, dealt with Z, dealt with Q essentially.
+
+01:09:25.770 --> 01:09:39.470
+I mean, so, let me actually write down, this is really a corollary of these two theorems here, which I haven't proved, but you will prove in the homework.
+
+01:09:39.470 --> 01:09:55.090
+So, this says that the rationals are countable, all the rationals, not just the positive ones, and what's the proof?
+
+01:10:00.370 --> 01:10:15.710
+So, we know that, so, I'm going to give you kind of a sketch, should I sketch it or should I write it all out?
+
+01:10:15.710 --> 01:10:27.990
+I'm running a little bit out of time, but, so, maybe I will just tell you why this is true.
+
+01:10:28.790 --> 01:10:34.390
+I mean, all the details are essentially here, I'm just not going to write it as carefully as I've been writing down the proofs before.
+
+01:10:34.390 --> 01:10:51.310
+So, let me write this as the proof sketch. Of course, you can write these, you can actually use the definitions and write this out, but this is the essential idea.
+
+01:10:51.310 --> 01:11:03.270
+So, we have that the size of rational numbers.
+
+01:11:05.010 --> 01:11:26.850
+So, let me, this has the same size as the rational numbers, which are negative.
+
+01:11:36.270 --> 01:11:45.710
+And this, how do we establish this, or, instead of using the same letter, let's say, R,
+
+01:11:51.170 --> 01:12:06.650
+since f of q equals minus q is a bijection from the first set to the second set.
+
+01:12:06.650 --> 01:12:32.910
+So, if I just take a rational number, positive one, take its minus, then I get an element of the second set, and this is a bijection.
+
+01:12:32.910 --> 01:13:01.170
+Okay, so, thus, since this has the same size as the natural numbers, and by that theorem we proved over there, the size of this set is the same as the natural numbers, so it is countable.
+
+01:13:01.170 --> 01:13:28.310
+Okay, then there exists bijections, f going from q, so the positive rational numbers to the natural numbers.
+
+01:13:30.850 --> 01:13:49.130
+And g going from the negative ones to the natural numbers.
+
+01:13:50.830 --> 01:14:01.070
+Okay, so, picture here is, well, let's not write, draw the picture yet.
+
+01:14:02.730 --> 01:14:07.230
+Okay, so I have these two bijections from the positive rationales to the integers.
+
+01:14:07.230 --> 01:14:13.670
+So, here's this one from the negative rationales to the natural numbers.
+
+01:14:14.630 --> 01:14:21.850
+How do I get a map that goes from all of q now to the natural numbers? Well, let's go in between and go to the integers.
+
+01:14:21.850 --> 01:14:51.810
+Then I define a function h, which goes now from all of q to the integers by h of x equals 0, if x equals 0, equals f of x.
+
+01:14:51.810 --> 01:15:10.390
+If x is positive, and negative, g of x, if x is negative. Okay, and h is a bijection.
+
+01:15:10.390 --> 01:15:23.330
+So, everything up into this point has been completely fine with the exception of me verifying that this map is a bijection, and this map is a bijection.
+
+01:15:23.430 --> 01:15:28.770
+So, that's kind of the only parts that I'm leaving out for you to verify. Then h is a bijection.
+
+01:15:28.770 --> 01:15:41.530
+So, q has the same cardinality as integers, which we've shown has the same cardinality as the natural numbers.
+
+01:15:43.470 --> 01:15:51.210
+And therefore, the rationals have the same cardinality as the natural numbers, so they are countably infinite.
+
+01:16:02.810 --> 01:16:16.210
+So, a natural question is, I mean, is there anything bigger than the natural numbers? Because everything I've written down, it has the size of the natural numbers.
+
+01:16:18.990 --> 01:16:30.550
+We haven't really defined the real numbers well enough yet to make any sort of claim like that about the real numbers.
+
+01:16:32.230 --> 01:16:53.850
+And now is there just any set that is bigger in size than the natural numbers? The answer to that was unknown, and it's pretty strikingly yes, in fact.
+
+01:17:00.870 --> 01:17:04.750
+So, let me phrase that question.
+
+01:17:12.970 --> 01:17:27.750
+Does there exist a set such that a has strictly bigger cardinality than the natural numbers.
+
+01:17:27.750 --> 01:17:41.130
+So, a is uncountable. So, to answer this question astoundably yes, let me first define for a general object.
+
+01:17:45.090 --> 01:17:56.730
+If a is a set, we define script p of a, this is the power set of a.
+
+01:18:05.590 --> 01:18:09.710
+This is a set that consists of all subsets of a.
+
+01:18:10.570 --> 01:18:17.270
+So, this is a set of all sets b, such that b is a subset of a.
+
+01:18:20.170 --> 01:18:43.690
+So, for example, if a is the empty set, the power set, so a is empty, what are the subsets of the empty set? Well, there's only one subset of the empty set, the empty set.
+
+01:18:45.070 --> 01:18:49.570
+So, even though the empty set has no members, its power set has one member.
+
+01:18:53.270 --> 01:19:03.910
+If a equals one, then the power set of a, the set of all subsets, consists of the empty set, and the set itself, one.
+
+01:19:06.670 --> 01:19:31.390
+Let's do one more. If a is the set one, two, then the power set of a, this is the set, which consists of the empty set, because this is a subset of the set, the set consisting of one, because this is a subset of the set, or two.
+
+01:19:36.570 --> 01:19:49.950
+Now, notice something, this set had cardinality, strictly speaking, I should have defined that as having cardinality zero, yet its power set has cardinality one.
+
+01:19:50.730 --> 01:20:05.690
+A has size one, because it's, in one to one correspondence, with just one, and its power set has two elements, so it has cardinality two, I could count them off, one, two.
+
+01:20:06.950 --> 01:20:16.110
+A has size two, has two elements, and the power set of a has size four, it has four different elements, the empty set one, two, one, two.
+
+01:20:16.110 --> 01:20:45.530
+So, what one can prove in general, and which will appear on the homework, is if a has the same card has size n, so it's a finite set of size n, meaning it's in one to one correspondence with the numbers one up to n, then its power set is also finite.
+
+01:20:47.810 --> 01:20:57.350
+And has cardinality two to the n, and you can prove by induction if you like that two to the n is always bigger than n.
+
+01:21:03.410 --> 01:21:18.270
+And so a theorem I'll prove next time, which will finish our discussion of sets and cardinality, and then we'll move on to the real numbers, is this theorem due to cantor,
+
+01:21:24.430 --> 01:21:36.030
+which says that not just for finite sets do we have the power set being in some sense strictly bigger than the original set, but for any set.
+
+01:21:36.030 --> 01:21:53.110
+So, the theorem due to cantor is if a is a set, then the cardinality of a is strictly smaller than the cardinality of its power set.
+
+01:21:53.970 --> 01:22:02.230
+So, this definitely answers our question, does there exist a set with cardinality bigger than the natural numbers.
+
+01:22:03.110 --> 01:22:22.670
+So, let me write this as a remark. In fact, maybe I'll state this as another theorem, which just follows immediately from this kind of getting used over and over again, is that the cardinality of the natural numbers.
+
+01:22:22.670 --> 01:22:35.950
+This is less than the cardinality of the power set of the natural numbers, which is less than the cardinality of the power set of the natural numbers.
+
+01:22:36.550 --> 01:22:53.750
+I can now take this as a set and take its power set, and I get a new set with bigger size, which is less than the power set of the power set, where how many do we have now, of the power set of natural numbers, and so on.
+
+01:22:54.750 --> 01:23:10.750
+Okay? So, informally this means there...
+
+01:23:22.460 --> 01:23:34.640
+There's an infinity of infinitudes. There's an infinite number of infinite sizes. One getting strictly in some sense, strictly bigger than the previous size.
+
+01:23:35.640 --> 01:23:53.300
+Okay? And maybe you're wondering... There's one more question that's kind of sandwiched in between here, pun intended, is...
+
+01:23:54.300 --> 01:23:56.840
+Let's look at this first guy.
+
+01:24:04.880 --> 01:24:26.100
+Does there exist set A such that it has size bigger than natural numbers, so it's uncountable, but has size strictly smaller than the power set of the natural numbers.
+
+01:24:27.220 --> 01:24:34.060
+And this question is called the continuum hypothesis.
+
+01:24:39.000 --> 01:24:47.020
+Hypothesis because it is independent from one of the standard axiomatic treatments of set theory.
+
+01:24:49.120 --> 01:24:57.540
+But we will not touch this question. This is beyond the scope of this class, but it's an interesting question that's out there that people just don't know.
+

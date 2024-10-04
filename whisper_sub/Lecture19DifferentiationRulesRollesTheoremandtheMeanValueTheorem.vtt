@@ -1,0 +1,890 @@
+WEBVTT
+
+00:00:12.560 --> 00:00:15.080
+So let's continue with our discussion of the derivative.
+
+00:00:22.840 --> 00:00:34.380
+Let me recall that the derivative of a function if it exists, which we denote by f prime of c.
+
+00:00:34.380 --> 00:00:42.660
+This is the limit as x goes to c of f of x minus f of c over x minus c.
+
+00:00:44.660 --> 00:00:56.740
+Last time we look at the relationship between continuity and differentiability and show that differentiability implies continuity.
+
+00:00:58.100 --> 00:01:07.060
+But having a derivative is quite a miraculous thing because there are continuous functions which we actually constructed.
+
+00:01:07.400 --> 00:01:11.560
+We constructed a continuous function. You can generalize that example.
+
+00:01:11.560 --> 00:01:19.780
+So we constructed a continuous function that is differentiable nowhere.
+
+00:01:20.880 --> 00:01:27.860
+In fact, differentiability is a much stronger condition than continuity and it's something of a miracle.
+
+00:01:31.860 --> 00:01:44.360
+You know, just as a side note, if you go on to study complex analysis, which are functions of a complex variable rather than a real variable, you also have the notion of a derivative there.
+
+00:01:45.180 --> 00:01:52.480
+And then the derivative is much more miraculous than it is here in the setting of r.
+
+00:01:52.480 --> 00:01:57.280
+But the whole point is the derivative is something of a miracle.
+
+00:01:59.020 --> 00:02:03.760
+So today the goal is to prove some properties about the derivatives.
+
+00:02:04.860 --> 00:02:08.940
+Most of these you know, maybe you didn't cover the proofs of them in calculus.
+
+00:02:08.940 --> 00:02:27.700
+With the ultimate goal of proving the mean value theorem, which is to me kind of, you know, probably the most underappreciated but most important result in calculus.
+
+00:02:27.700 --> 00:02:43.920
+Now you could argue that probably the hero of the story of calculus is the fundamental theorem of calculus which connects integration, which will cover next after differentiation, which so the fundamental theorem of calculus connects integration and differentiation.
+
+00:02:45.680 --> 00:02:53.040
+So that really is, and that is really the hero of calculus gets used more than anything else.
+
+00:02:55.220 --> 00:02:59.300
+But to prove that, you use the mean value theorem.
+
+00:03:00.200 --> 00:03:08.400
+So, you know, if the fundamental theorem of calculus was Batman, I would say the mean value theorem is something like Alfred.
+
+00:03:09.180 --> 00:03:12.500
+You know, he's really the reason why Batman gets to be who he is.
+
+00:03:12.500 --> 00:03:20.240
+All right, enough analogies for now. Let's go back to proving some properties of the derivative.
+
+00:03:23.820 --> 00:03:34.980
+So first let's do some basic linearity and rules for the derivative.
+
+00:03:34.980 --> 00:03:43.440
+So let f go from i to r. i is always some interval.
+
+00:03:55.640 --> 00:04:00.120
+So I have two functions f and g from i to r. c is a point in i.
+
+00:04:00.120 --> 00:04:26.260
+And the conclusion is if f and g are differentiable at c, then we have several rules that we can apply the first is basically the linearity.
+
+00:04:28.380 --> 00:04:49.860
+So, the derivative of the derivative that for all alpha and r, the function alpha at plus g, which now goes from i to r, is differentiable at c.
+
+00:04:52.880 --> 00:05:06.480
+And the derivative of the function alpha f plus g prime c is alpha times f prime of c plus g prime of c.
+
+00:05:09.580 --> 00:05:11.640
+I think I'm sort of right a little slanted here.
+
+00:05:13.640 --> 00:05:41.620
+Second is the multiplication rule, which is the function f times g is differentiable at c and the derivative of the product is not the derivative of the product.
+
+00:05:41.620 --> 00:05:50.040
+The product of the derivatives, but the prime of c g of c plus f of c g prime of c.
+
+00:05:52.240 --> 00:06:00.580
+So that's a multiplication rule. And then we also have the quotient rule.
+
+00:06:10.540 --> 00:06:15.080
+And just like when you need to divide by something, you need to assume that you're never dividing by zero.
+
+00:06:15.080 --> 00:06:39.340
+So, if g of x is not equal to zero for all x and i, then the function f over g is differentiable at c.
+
+00:06:40.280 --> 00:06:58.440
+And the derivative is the derivative of the top times the bottom minus the top times the derivative of the bottom over the bottom square.
+
+00:07:07.240 --> 00:07:12.480
+So, I'll prove one and two, three will leave as an exercise.
+
+00:07:28.760 --> 00:07:42.460
+So, for one we just compute that the limit as x goes to c of alpha f plus g of x minus alpha f plus g prime of c.
+
+00:07:46.720 --> 00:07:57.400
+This is just by definition alpha times f of x plus g of x minus alpha times f of c plus g of c.
+
+00:07:57.400 --> 00:08:18.680
+And so, this equals the limit as x goes to c and just collecting terms alpha times f of x minus f of c times x minus c plus g of x minus g of c over x minus c.
+
+00:08:25.620 --> 00:08:40.720
+And all of these limits exist. So, this is just a fixed number. The limit as x goes to c of this exists and this exists. So, by what we know about limits, namely that the limit of the sum is the sum of the limits.
+
+00:08:40.720 --> 00:08:51.520
+And then the scalars just pull out of the limit. This is equal to alpha times f prime of c plus g prime of c. So, that's proof of the first one.
+
+00:08:52.280 --> 00:09:03.800
+For the proof of the second one, we'll use the fact that a function which is differentiable at a point is also continuous at a point.
+
+00:09:07.520 --> 00:09:29.460
+So, this g is differentiable at c. It is continuous at c, i.e. limit as x goes to c of g of x equals g of c.
+
+00:09:32.120 --> 00:09:45.500
+Now, we compute the limit as x goes to c of f times g of x minus f of c times g of c over x minus c.
+
+00:09:48.960 --> 00:10:15.360
+Now, what I'm going to do is add and subtract f of c times g of x. So, this I can write as the limit as x goes to c of f of x minus f of c over x minus c times g of x plus g of x.
+
+00:10:15.360 --> 00:10:22.420
+So, f of c times g of x minus g of c over x minus c.
+
+00:10:26.700 --> 00:10:41.580
+And again, so this limit as x goes to c exists. This is just the derivative of f at c. And we noted that since g is differentiable at c, g is also continuous at c, meaning the limit as x goes to c of g of x equals g of c.
+
+00:10:41.580 --> 00:10:59.000
+This is just a constant f of c. This goes to g prime of c. So, all these limits exist. And therefore, we get that this is equal to f prime of c times g of c plus f of c g prime of c.
+
+00:10:59.000 --> 00:11:16.200
+And three, I'll leave as an exercise. Again, you know, you'll write out. You'll add and subtract something to f of x over g of x minus f of c over g of c.
+
+00:11:16.200 --> 00:11:22.780
+And you use the fact that we have continuity, that differentiability at a point implies continuity and just evaluate the limit.
+
+00:11:22.980 --> 00:11:35.400
+So, I'm going to stop with these two rules. I don't know why I called it the multiplication rule. It's called the product rule.
+
+00:11:35.400 --> 00:11:38.740
+Well, multiplication and product is the same thing.
+
+00:11:45.060 --> 00:11:56.440
+But we also have the chain rule, which requires a little more care to prove than what we've done so far for these rules.
+
+00:11:56.440 --> 00:12:03.080
+So, suppose I have two intervals.
+
+00:12:09.020 --> 00:12:17.640
+And then I have a function g going from i1 to i2, f going from i2 to r.
+
+00:12:21.040 --> 00:12:38.860
+And suppose g is differentiable at c. And f is differentiable at g of c.
+
+00:12:44.240 --> 00:12:54.380
+Then the function f of g, which now goes from i1 to r.
+
+00:12:58.120 --> 00:13:18.780
+This is differentiable at c. And the derivative equals f prime of g of c times g prime of c.
+
+00:13:18.780 --> 00:13:22.540
+Okay.
+
+00:13:22.540 --> 00:13:29.540
+Okay.
+
+00:13:37.530 --> 00:13:51.430
+So, what's the basic idea again?
+
+00:13:51.430 --> 00:14:21.070
+So, this is basic idea is that we write the difference quotient g of x minus f of g of c over x minus c as f of g of x minus g of c times g of x minus g of c.
+
+00:14:33.690 --> 00:14:41.530
+And then we'll pick up the derivative of g here at c. And right here, this is f of something converging to g of c.
+
+00:14:41.530 --> 00:14:53.650
+And so, this should be like f prime of g of c. But the only problem with really writing this down is that there could be points where g of x equals g of c. And then I'm dividing by zero. That's not allowed.
+
+00:14:53.650 --> 00:15:09.090
+So, writing this expression is meaningless. But we're going to do something like this in spirit, where at least when g of x does not equal g of c, this thing kind of equals this thing.
+
+00:15:09.090 --> 00:15:14.930
+Okay. That's kind of the basic idea.
+
+00:15:16.290 --> 00:15:31.490
+Okay. So, to implement this strategy, let's introduce some notation and a few auxiliary functions.
+
+00:15:31.490 --> 00:15:45.150
+So, first off, the function we're interested in taking the derivative of f of g. Let me call that h of x because I don't want to have to keep writing f of g of x.
+
+00:15:47.250 --> 00:16:08.210
+Let's call d. This will be the point g of c. So, we want to show. Then that h prime of c exists. And it's equal to f prime of d times g prime of c.
+
+00:16:09.430 --> 00:16:30.810
+Yeah. Just in this notation, I've set up. Okay. So, now, let me define some auxiliary functions u of y. This is going to be essentially the difference quotient of f except at certain points.
+
+00:16:30.810 --> 00:16:48.730
+So, this is f of y minus f of d over y minus d when y does not equal d. So, this is meaningful. And then f prime of d when y equals d. And then v of x.
+
+00:16:50.630 --> 00:16:59.710
+So, this is going to be, this is going to kind of play the role of, you know, that first expression I wrote up there, f of g of x minus f of g of c. Okay.
+
+00:17:01.390 --> 00:17:05.730
+And then v of x. This will be g of x minus g of c.
+
+00:17:07.210 --> 00:17:22.790
+x minus c when x does not equal c and g prime of c when x equals c. Okay. Now, essentially what?
+
+00:17:26.670 --> 00:17:48.090
+Okay. So, what do we, what do we have here? Then if I look at f of y minus f of d, this is equal to u of y times y minus d. Always. Right?
+
+00:17:50.010 --> 00:18:01.650
+Because if y does not equal d, then I divide over and I get u of y. Then I get f of y minus f of d on the left hand side over y minus d. And that's equal to u of y by definition.
+
+00:18:01.650 --> 00:18:21.650
+And then when y equals d, I get zero here and I get zero over here. So, that's clear. And also the same here, g of x minus g of c equals v of x minus x minus c. Okay.
+
+00:18:26.730 --> 00:18:39.270
+All right. So, we have these two expressions. And one more thing I want to note is that u and v are continuous at y equals d and x equals c respectively.
+
+00:18:41.750 --> 00:19:07.550
+So, note that v of y is continuous at d and v of x is continuous at c. So, let's look at the proof of that. We just need to show that the limit as y goes to d of v of y equals v of d.
+
+00:19:07.550 --> 00:19:22.490
+So, compute the limit as y goes to d of v of y. Now, when we look at limits, remember, we never were not allowed to put y equals d in the expression for this limit.
+
+00:19:22.490 --> 00:19:43.350
+Okay. We're always looking at points y close to d but not equal to d is what I'm what I'm saying. And so, therefore, when y is near d and not equal to d, v of y is given by, I should, this is, you here, sorry, you. Okay.
+
+00:19:44.730 --> 00:20:03.750
+So, we're looking at y near d but not equal to d and therefore, it's given by this expression. So, this is the limit as y goes to d of f of y minus f of d over y minus d. And this is just the definition of the derivative of f at d.
+
+00:20:05.530 --> 00:20:18.190
+So, remember, d is g of c. So, f is differentiable there. And this is, by definition, u of d. Right. So, this function, u is continuous at y equals d.
+
+00:20:20.490 --> 00:20:37.730
+And similarly, the limit as x goes to c of u of x, v of x equals v of c, equal, which is g prime of c.
+
+00:20:37.730 --> 00:21:06.890
+Okay. So, now we're going to combine whatever it in here to finish the proof. So, in h of x minus h of c, this is equal to f of g of x minus f of g of c.
+
+00:21:08.070 --> 00:21:25.470
+And this is equal to u of g of x times g of x minus g of c. This is from this relation here. So, we'll call this one star.
+
+00:21:28.390 --> 00:21:52.630
+This one, double star. So, this is by star. And now I use the second relation, double star, to write g of x minus g of c equals v of x times x minus c.
+
+00:21:54.750 --> 00:22:20.710
+And therefore, the limit as x goes to c of h of x minus h of c, where x minus c, this is equal to the limit as x goes to c of u of g of x times v of x.
+
+00:22:20.710 --> 00:22:32.430
+Now, u is continuous at g of c. g is continuous at c. And we prove that the composition of two continuous functions is continuous.
+
+00:22:33.450 --> 00:22:52.530
+So, this equals u of g of c. And v of x, we've proven already that limit is v of c. And u of g of c, you know, so this is d. Remember, in the notation we had earlier.
+
+00:22:52.530 --> 00:23:06.670
+And therefore, that equals f prime of g of c. Remember, g of c was d times g prime of c.
+
+00:23:11.950 --> 00:23:33.510
+So, to go from this point to this point, we use the fact that u is continuous at c, which we proved, u is continuous at g of c, which we proved over there. And that g is continuous at c. And therefore, the composition of two continuous functions is continuous at that point to arrive at this guy.
+
+00:23:35.390 --> 00:23:57.790
+But again, the whole basic idea was to be able to write the difference quotient as kind of a product of what looks like the difference quotient of f times the difference quotient of g. But you have to be careful because g of x could equal g of c, in which case you're dividing by zero in this basic idea we had up there, which is not allowed.
+
+00:23:58.550 --> 00:24:08.690
+But you get around it by using these functions, which equal what you want, as long as you're not dividing by zero, basically.
+
+00:24:13.850 --> 00:24:20.530
+Okay, so that wraps it up for basic properties of the derivative.
+
+00:24:23.770 --> 00:24:33.950
+And now we're going to move on to trying to prove the mean value theorem.
+
+00:24:45.030 --> 00:24:48.870
+The Alfred of this Batman tale.
+
+00:24:53.590 --> 00:25:05.450
+But first, in order to prove this, we'll need a result about the derivative in relation to certain relative minimum and relative maximum.
+
+00:25:05.450 --> 00:25:08.090
+So let me first define what this means.
+
+00:25:12.930 --> 00:25:18.030
+Let s be a subset of r, f be a function from s to r.
+
+00:25:20.130 --> 00:25:45.690
+Let's say f as a relative max at c in s, if there exists a delta positive such that for all x in s x minus c is less than delta.
+
+00:25:47.810 --> 00:25:50.750
+Then f of x is less than or equal to f of c.
+
+00:25:51.730 --> 00:26:17.710
+Okay, so the picture here, and then let me state that there's analogous definition of relative min at c.
+
+00:26:17.710 --> 00:26:20.510
+So let me just take this entire definition and flip the inequality.
+
+00:26:22.250 --> 00:26:25.710
+That's the definition for relative min. So what this means, pictorially.
+
+00:26:26.970 --> 00:26:30.090
+Remember we have this notion of absolute min and absolute max.
+
+00:26:30.090 --> 00:26:39.410
+And absolute max at a point c means every other point at every other point in s, f of x lies below f of c.
+
+00:26:39.410 --> 00:26:47.450
+Here we're just saying as long as you're close to the point c, then you label o f of c.
+
+00:26:52.830 --> 00:27:05.090
+Let's say our function looks something like that.
+
+00:27:07.870 --> 00:27:20.450
+Okay, so then, let's say we're at this point here.
+
+00:27:20.450 --> 00:27:38.230
+So this would be absolute max because the graph of the function sits below the value of the function at this point for all x in this interval a, b.
+
+00:27:38.230 --> 00:27:57.530
+Okay, and then here at this point we would have an absolute min, right, because the rest of, because the graph of the function sits above that point for all x in this interval.
+
+00:27:57.530 --> 00:28:16.930
+But now if I go to this point, say, this would be a relative max, okay, because why if I look at, you know, an interval, small interval around it.
+
+00:28:18.030 --> 00:28:26.510
+And I look inside this interval, there's too many dash lines going on, so I'm going to erase this.
+
+00:28:31.870 --> 00:28:53.530
+Now I'm just going to do away with the dash. If I zoom in on just this one piece of the graph, then at this point, the graph sits below this point inside this little vertical strip.
+
+00:28:53.530 --> 00:29:14.150
+Okay, so this guy would be a relative max. And then similarly, at this point here, maybe it's a, let me, so you can really see what graph is.
+
+00:29:14.150 --> 00:29:29.010
+So this should have brought different colors. At this point, we have a relative min, right, because nearby, nearby points sit above the value of the function evaluated at this point.
+
+00:29:29.010 --> 00:29:40.910
+Okay, so relative max means nearby points, F sits below that F evaluated at that point and relative min is the other way around.
+
+00:29:40.910 --> 00:29:57.230
+Okay, so I don't think we need to, um, believe her, the point of what relative min relative maxes are, I think that's pretty clear.
+
+00:30:06.170 --> 00:30:12.250
+Okay, so the theorem is the following.
+
+00:30:16.490 --> 00:30:34.570
+If F from AB has a relative min or max at a point C, strictly inside this closed interval in the open interval AB,
+
+00:30:38.350 --> 00:30:54.070
+then F is differentiable at C, then F prime of C equals zero, right.
+
+00:30:54.070 --> 00:31:11.570
+And this is kind of clear from this picture, although this kind of might look more like a sawtooth, but it shouldn't, that the tangent at this point is horizontal, and the tangent at this point is horizontal, which is the expression that, which is expressing that F prime of C equals zero, right.
+
+00:31:11.570 --> 00:31:14.790
+So F prime of C is supposed to be the slope of the tangent.
+
+00:31:16.970 --> 00:31:16.970
+
+
+00:31:16.970 --> 00:31:35.070
+Okay, so the idea of the proof is, um, and we'll do it for relative max relative min you get by taking minus F.
+
+00:31:35.070 --> 00:31:52.610
+Um, so we'll do it for, suppose F has a relative max at C and AB.
+
+00:31:57.570 --> 00:32:18.850
+Okay, then, um, so I'm just going to draw a picture to illustrate why this is the case, so, or why would I'm about to say is the case, we have AB, we have C, then there exists delta positive,
+
+00:32:18.850 --> 00:32:28.750
+let's say delta 1, such that two things are true.
+
+00:32:28.750 --> 00:32:56.390
+So, um, X or C minus delta 1 plus delta 1 is contained in AB, two for all X and C minus delta 1, C plus delta 1, F of X is less than or equal to F of C.
+
+00:32:57.250 --> 00:33:07.490
+Okay, so, you know, delta 1 is chosen as the minimum of, so maybe, let me not call it delta, let me, one, let me just call it delta.
+
+00:33:10.730 --> 00:33:19.690
+So, um, first off, you know that AB, open interval, this is an open set, which we've encountered in the assignments.
+
+00:33:19.690 --> 00:33:39.370
+So, um, you can find a delta, so that delta 0 say, so that this interval centered at C is contained in AB.
+
+00:33:40.110 --> 00:34:01.590
+Right, now, since F has a relative maximum at this point, there exists another delta 1 say, so that if, um, I'm inside that interval, then F of X is less than or equal to F of C for all X and that interval.
+
+00:34:02.250 --> 00:34:16.430
+Okay, and I choose delta to be the minimum of these two, these two delta's and then I will have, um, chosen delta, so that X, that C minus delta C plus delta is.
+
+00:34:20.190 --> 00:34:26.250
+So, here, this one is.
+
+00:34:34.250 --> 00:34:41.310
+And then delta 0 shows, and so that that is contained, so I choose the minimum of these delta's and this is the delta I take for, for the statement.
+
+00:34:41.310 --> 00:35:06.890
+Okay, all right, so, um, now the way we get that the derivative is zero is we're going to approach C from above and from below and use the, um, the fact that we have a relative max to show that the derivative is both bigger than or equal to zero and less than or equal to zero.
+
+00:35:06.890 --> 00:35:28.510
+All right, so let X in be, um, C minus, um, I write this delta over 2N, which is in the interval C minus delta C for all N.
+
+00:35:33.390 --> 00:35:44.210
+Then what do we know X in the limit as n goes to infinity of C minus delta over 2N converges to C.
+
+00:35:46.670 --> 00:36:02.210
+So, the derivative at C is equal to the limit as n goes to infinity of f of X sub n minus f of C over X sub n minus C.
+
+00:36:02.210 --> 00:36:15.970
+Now, um, what do we note? So, X sub n is in this interval here, which is contained in this interval here, and therefore f of X sub n is always less than or equal to f of C.
+
+00:36:15.970 --> 00:36:30.250
+So, what's on top is always less than or equal to zero. Okay, now X sub n is always less than C. So, this thing on bottom is also less than zero.
+
+00:36:30.950 --> 00:36:38.730
+And therefore, something that's less than or equal to zero on top over something that's less than zero on bottom must be bigger than or equal to zero.
+
+00:36:44.050 --> 00:37:06.430
+So, that's approaching C from the left. If we approach C from the right, delta over 2N, which is contained in C, C plus delta for all N, then X in converges to C.
+
+00:37:09.350 --> 00:37:26.330
+And we look at f of C. Again, this is equal to limit as n goes to infinity of f of Y sub n minus f of C over Y sub n minus C. Again, f of C is a relative maximum.
+
+00:37:26.330 --> 00:37:42.910
+So, this thing on top is still less than or equal to zero. And the thing on bottom, though, is now since Y sub n is bigger than C, this is positive. So, something on top is negative, something on top is positive. So, the limit must be negative.
+
+00:37:45.390 --> 00:37:53.310
+So, we've just shown f prime of C is both bigger than or equal to zero. And then it's also less than or equal to zero.
+
+00:38:02.570 --> 00:38:06.910
+And therefore, the derivative is zero at this point.
+
+00:38:12.030 --> 00:38:28.270
+They get in the proof for a relative minimum is very similar, except that inequality flip signs.
+
+00:38:29.150 --> 00:38:38.330
+And therefore, you would get this is less than or equal to zero. This one would be bigger than or equal to zero. But you still get f prime of C is bounded between zero and zero.
+
+00:38:40.770 --> 00:38:55.410
+So, at a point where we have a relative minimum, strictly inside the interval, the derivative must be zero.
+
+00:39:00.530 --> 00:39:14.950
+And the fact that it happens strictly inside the interval is important. This is not necessarily true if the relative max or relative men happens at an endpoint. Think of f of x equals x on zero one.
+
+00:39:16.230 --> 00:39:34.610
+And it has a absolute minimum at zero, absolute maximum at one, and the derivative is one at both points, not zero. So, this is only for relative men, relative maxes that occur inside, strictly inside the interval that the functions defined on and words differentiable.
+
+00:39:37.730 --> 00:39:58.010
+Okay, so now we have roles theorem, which is essentially the mean value theorem rotated. We'll get the mean value theorem from roles theorem, and which states the following.
+
+00:40:03.010 --> 00:40:05.070
+f b from a b to r.
+
+00:40:07.430 --> 00:40:29.430
+b continuous. So, it's continuous at every point in a b, differentiable at every point inside of a b. Okay, it could be differentiable at the end point.
+
+00:40:29.430 --> 00:40:33.230
+So, it's fine, but it has to be differentiable on the open interval a b.
+
+00:40:38.570 --> 00:40:57.070
+f of b a equals f of b equals zero. Then, there exists a point c, the open interval a b. This is important, such that f prime of c equals zero.
+
+00:40:57.950 --> 00:41:08.730
+Alright, and what's the picture that goes with this? I'm sure you've seen it before. Let me draw a function.
+
+00:41:13.650 --> 00:41:26.630
+I look like sine or cosine, but anyways, function which is zero here, zero here, then there has to exist a point where the tangent is vertical.
+
+00:41:26.630 --> 00:41:46.090
+So, in fact here, it can occur at two different points. But something that's already kind of giving the game away as far as how we'll prove this is, let's look at where the function takes a maximum and a minimum.
+
+00:41:46.090 --> 00:42:00.090
+Okay, you know, that is the heart of the proof. And why can we, why does it even have an absolute maximum or absolute minimum?
+
+00:42:01.550 --> 00:42:15.250
+So, I guess I didn't say this over there when I discussed relative men and relative max, but an absolute maximum is also a relative maximum. And absolute minimum is also a relative minimum.
+
+00:42:18.850 --> 00:42:23.150
+So, let me make this, this is kind of a late remark.
+
+00:42:26.970 --> 00:42:49.030
+So, Mark absolute max is a relative max. Absolute min is a relative min.
+
+00:42:51.750 --> 00:43:08.630
+Okay, alright, so this picture is kind of given the game away already. Let's look at where the function takes a max and a min. And why does F take a max or a min? It's because F is continuous on this closed and bounded interval.
+
+00:43:08.630 --> 00:43:18.430
+So, this is something we prove when we were discussing continuity the min max theorem. So, let's skip the proof.
+
+00:43:25.210 --> 00:43:46.770
+Since F is continuous on AB F achieves a relative max at some point C1 and AB.
+
+00:43:46.770 --> 00:44:00.750
+So, let's see, and relative min at C2 and AB. Okay.
+
+00:44:04.870 --> 00:44:28.970
+If there exists a x, well, so, if of F of C1 is positive, then what can you say? Well, C1 cannot be one of the endpoints because at the endpoints, F of A equals F of B equals 0.
+
+00:44:31.390 --> 00:44:47.270
+This implies C1 is in the open interval AB, which implies by the previous theorem F prime of C1 equals 0. So, here you see equals C1.
+
+00:44:47.270 --> 00:45:16.930
+So, if I'm at the minimum now, and this is less than 0, then again, this implies that C2 is in the open interval AB, which implies since F has a minimum at C2, F prime of C2 equals 0 by the previous theorem.
+
+00:45:16.930 --> 00:45:19.530
+And therefore, we could take C equals C2.
+
+00:45:24.630 --> 00:45:37.830
+Now, this is two cases. F of C1, if either F of C1 is positive or F of C2 is less than 0, then we have the result.
+
+00:45:38.510 --> 00:45:44.490
+If F of C1 is less than or equal to 0 is less than or equal to F of C2.
+
+00:45:46.070 --> 00:45:54.930
+Now, remember, F achieves a max at C1. F achieves a min at C2, and therefore, this should always be less than or equal to this.
+
+00:46:07.470 --> 00:46:17.610
+If the max and the min, so first off,
+
+00:46:22.530 --> 00:46:25.030
+I'll make sure I'm getting my logic correct here.
+
+00:46:44.430 --> 00:46:52.070
+Okay, so rather than state it this way, let's do it like this.
+
+00:47:02.130 --> 00:47:09.990
+So, in terms of the picture here, this would be C1, C2, where we achieve a max and a min.
+
+00:47:11.310 --> 00:47:36.770
+Okay, then in the final case that F of C1 and then, so this is the max,
+
+00:47:36.770 --> 00:47:41.390
+0 is equal to F evaluated at a point.
+
+00:48:07.810 --> 00:48:11.370
+Alright, so let me go back to whatever we have.
+
+00:48:11.370 --> 00:48:19.470
+So, in the last case that F of C1 is less than or equal to 0 is less than F of C2.
+
+00:48:20.050 --> 00:48:32.510
+Now remember, this is the min, this is the max of F. So, this should always set above F of C2.
+
+00:48:32.510 --> 00:48:42.330
+So, that implies that F of C1 equals F of C2, and therefore, the max and min equal each other.
+
+00:48:42.330 --> 00:49:00.450
+Right, which implies for all X and AB, since F of C1 is the minimum, or F of C2 is,
+
+00:49:08.550 --> 00:49:16.090
+so I started off with something here, there, in between, which implies for all X and AB,
+
+00:49:16.090 --> 00:49:24.450
+F of C, F of X equals F of C2, so that means F is constant.
+
+00:49:32.270 --> 00:49:49.370
+So, we can take the midpoint, and that's the end.
+
+00:49:50.170 --> 00:49:57.550
+Okay, so I just hope that I kind of fumbled through that for a minute, but, okay.
+
+00:49:58.570 --> 00:50:08.110
+So, for any function, which is 0 at the end points, there has to be a point in between where the function is,
+
+00:50:08.930 --> 00:50:10.970
+the derivative of the function equals 0.
+
+00:50:13.510 --> 00:50:23.170
+Now, again, we should come back to, you know, when we see a theorem, we should kind of pick it apart a little bit to see what's necessary, what's not.
+
+00:50:24.610 --> 00:50:33.390
+You know, we had these two hypotheses coming in that the function is continuous and differentiable on this open-enterable AB.
+
+00:50:34.390 --> 00:50:36.510
+Are these necessary?
+
+00:50:36.510 --> 00:51:00.610
+So, for example, let's say I have the function, if I look at the function,
+
+00:51:00.610 --> 00:51:17.810
+then 1 minus the absolute value of X, so at minus 1, 1, 1, this is a continuous function on
+
+00:51:23.870 --> 00:51:35.530
+minus 1, 1, and F of minus 1 equals F of 1 equals 0, but there is no point where F prime of C equals 0.
+
+00:51:35.990 --> 00:51:38.710
+What hypothesis did I leave out for this function?
+
+00:51:38.710 --> 00:51:43.250
+The fact that it's the hypothesis that it's differentiable at every point in between.
+
+00:51:44.070 --> 00:51:45.830
+This function is not differentiable.
+
+00:51:57.550 --> 00:52:00.130
+But there's no point where the derivative equals 0.
+
+00:52:00.930 --> 00:52:16.690
+So, this example tells you that the hypothesis that the function is differentiable on the interval minus 1, 1, or AB is necessary for the theorem to be true.
+
+00:52:17.490 --> 00:52:18.530
+That's what I'm getting at.
+
+00:52:26.090 --> 00:52:35.350
+Now, you know, the other hypothesis that the function is continuous on the closed interval is also necessary.
+
+00:52:37.150 --> 00:52:47.350
+Let's say I look at, and this is pretty easy to come up with a counter example if I don't assume that.
+
+00:52:47.350 --> 00:53:06.930
+Let's take the function which is
+
+00:53:22.730 --> 00:53:29.050
+x minus 1 for x, not equal to minus 1 and 0 for x equal to minus 1.
+
+00:53:29.050 --> 00:53:31.130
+So, what does this function look like?
+
+00:53:38.010 --> 00:53:55.630
+So, this function here is differentiable on minus 1, 1, F of minus 1 equals F of 1 equals 0.
+
+00:53:55.630 --> 00:54:06.390
+So, but again, there's no point in minus 1, 1, so that F of C equals 0.
+
+00:54:08.210 --> 00:54:12.450
+Because the derivative in between minus 1, 1 is just 1.
+
+00:54:13.670 --> 00:54:24.130
+So, both of these hypotheses that F is continuous on the closed interval and differentiable on the open interval are necessary for this theorem to be true.
+
+00:54:24.630 --> 00:54:28.750
+If you drop either of those hypotheses, then the theorem is false.
+
+00:54:44.390 --> 00:54:50.270
+All right, so let's rotate this picture here and arrive at the mean value theorem.
+
+00:54:56.770 --> 00:55:08.610
+Let F from AB to R be continuous.
+
+00:55:08.610 --> 00:55:17.170
+So, let's continue this on the closed interval AB, differentiable on AB.
+
+00:55:25.070 --> 00:55:39.310
+Then, there exists a C in the open interval AB such that at prime of C,
+
+00:55:40.210 --> 00:55:54.670
+right at this way, F of B minus F of A times B minus A.
+
+00:55:58.030 --> 00:56:05.510
+So, why do I refer to it as a rotated picture of a shifted kind of version of roles theorem?
+
+00:56:05.510 --> 00:56:13.530
+So, there's AB, there's F of A, F of B.
+
+00:56:17.430 --> 00:56:20.410
+And let's say that's how the function looks.
+
+00:56:20.970 --> 00:56:29.250
+Now, the slope of the line connecting F of B to F of A is exactly F of B minus F of A.
+
+00:56:33.690 --> 00:56:38.930
+So, the slope of that line is F of B minus F of A.
+
+00:56:40.450 --> 00:56:52.470
+And what we're stating is that there's a point C, so that the tangent at that point is parallel to that line.
+
+00:56:52.470 --> 00:56:59.810
+It has the same slope as the line connecting F of B to F of A.
+
+00:57:09.430 --> 00:57:13.310
+So, this theorem really does reduce to roles theorem.
+
+00:57:13.310 --> 00:57:29.570
+So, let me define a function G from AB to R, which satisfies the hypotheses of roles theorem,
+
+00:57:30.110 --> 00:57:32.650
+and will give us what we want, basically.
+
+00:57:34.510 --> 00:57:54.050
+So, G of X equals F of X minus F of B plus F of B minus F of A over B minus A times B minus X.
+
+00:57:57.530 --> 00:58:10.190
+Basically, what this function G does is it takes the function now and rotates it and shifts it down so that F kind of these two points then coincide and give you zero.
+
+00:58:11.010 --> 00:58:12.350
+All right.
+
+00:58:16.810 --> 00:58:23.730
+Then, G is continuous on the closed interval AB.
+
+00:58:24.170 --> 00:58:27.750
+Why? Because it's a sum of two continuous functions on AB.
+
+00:58:27.970 --> 00:58:30.170
+F of X is continuous on AB on AB.
+
+00:58:30.610 --> 00:58:33.250
+And this is just a constant. That's just a constant.
+
+00:58:33.250 --> 00:58:37.550
+This is a polynomial. So, G is continuous on AB.
+
+00:58:38.510 --> 00:58:48.890
+And, differentiable on AB, again, because F is, right?
+
+00:58:49.390 --> 00:58:51.530
+F is differentiable on the open interval AB.
+
+00:58:52.410 --> 00:58:58.990
+This part is differentiable everywhere, so the sum of two differentiable functions is differentiable.
+
+00:58:58.990 --> 00:59:01.070
+So, G of X is differentiable on AB.
+
+00:59:06.330 --> 00:59:09.150
+So, continuous on AB and differentiable on AB.
+
+00:59:13.150 --> 00:59:16.790
+Since I said we're going to use roles theorem, let's compute G of A.
+
+00:59:16.790 --> 00:59:30.690
+This is equal to F of A minus F of B plus F of B minus F of A over B minus A times B minus A.
+
+00:59:30.810 --> 00:59:37.530
+That cancels with that minus F of B cancels with F of B, F of A cancels with minus F of A and we get zero.
+
+00:59:41.170 --> 00:59:45.990
+And, G of B, this is even easier to see if I just stick this in.
+
+00:59:46.070 --> 00:59:57.470
+This is F of B minus F of B plus F of B minus F of A over B minus A, B minus B.
+
+00:59:58.210 --> 01:00:01.990
+And, this also equals zero. So, G of A and G of B are zero.
+
+01:00:01.990 --> 01:00:06.750
+The function is continuous on the closed interval. It's differentiable on the open interval.
+
+01:00:09.450 --> 01:00:21.290
+And, therefore, I think there's supposed to be some sort of accent over O, but I can't remember and I've forgotten it already.
+
+01:00:21.930 --> 01:00:38.910
+By roles theorem, there exists point C and AB such that zero is equal to G prime of C, which is equal to,
+
+01:00:40.310 --> 01:00:47.930
+we take G and actually compute what the derivative is at C is equal to F prime of C.
+
+01:00:48.750 --> 01:01:03.170
+That's a constant derivative of that is zero. This times this, the derivative of X evaluated at C just gives me minus F of B minus F of A times B minus A.
+
+01:01:05.370 --> 01:01:12.190
+And, that's it. Zero is equal to F prime of C minus what we want.
+
+01:01:12.190 --> 01:01:15.850
+We move that to the other side, multiply through by B minus A and we're done.
+
+01:01:21.210 --> 01:01:42.170
+Okay? Okay. So, some first very nice applications of the mean value that we want to have.
+
+01:01:42.170 --> 01:01:45.930
+So, we have a very nice theorem, which I think you've learned from calculus or the following.
+
+01:02:12.970 --> 01:02:25.210
+Let F from I to R be differentiable, meaning it's differentiable at every point in the interval I. Then we have two conclusions.
+
+01:02:26.690 --> 01:02:46.970
+F is increasing, meaning, let me recall what that means for F to be increasing. That means that if X is less than Y, this implies F of X is less than or equal to F of Y.
+
+01:02:50.530 --> 01:03:03.030
+This is equivalent to RLX and I, F prime of X is bigger than or equal to zero.
+
+01:03:03.030 --> 01:03:09.790
+So, remember F prime is the rate of change. If the rate of change is always non-negative, then F has to be growing.
+
+01:03:10.730 --> 01:03:24.030
+This says F is decreasing, meaning X is Y implies F of X is bigger than or equal to F of Y.
+
+01:03:25.250 --> 01:03:33.970
+This is equivalent to, since a function is increasing, if and only if minus F is decreasing, this inequality should flip.
+
+01:03:52.010 --> 01:03:58.550
+So, I'm going to do increasing, decreasing follows from number one by taking minus F.
+
+01:04:19.670 --> 01:04:27.430
+So, suppose first that F prime of X is always non-negative.
+
+01:04:30.330 --> 01:04:36.510
+Let A be B and I.
+
+01:04:43.770 --> 01:05:02.270
+Excuse me. We now want to show F of A is less than or equal to F of B. Then F is continuous on this smaller interval A of B. Why?
+
+01:05:02.270 --> 01:05:13.810
+Because F is differentiable at every point in I. Therefore, it is continuous at every point in I. So, in particular, on this smaller interval,
+
+01:05:13.810 --> 01:05:34.470
+it is differentiable on A, B, which implies there exists to C in A, B. So, by the mean value theorem,
+
+01:05:40.750 --> 01:05:56.470
+such that F of B minus F of A equals F prime of C times B minus A. And now, since the derivative is always non-negative, and B minus A is positive, this is bigger than or equal to 0.
+
+01:06:03.110 --> 01:06:22.770
+So, we prove in one direction. We prove in that if you like that the function's derivative being non-negative implies that the function is increasing.
+
+01:06:22.770 --> 01:06:38.570
+So, now let's prove the opposite direction. So, suppose F is increasing.
+
+01:06:52.290 --> 01:07:06.650
+Let X in be a sequence in I such that X in converges to C.
+
+01:07:06.650 --> 01:07:32.330
+So, F is equal to F of B and one of two things holds. And either, say A, RLN, X in is less than C, or B, RLN, X in is bigger than C.
+
+01:07:32.330 --> 01:07:57.490
+Now, we can always find such a sequence given a point C in the interval I. So, if I, so let's say it's a closed interval and C is in here, then we can find a sequence X in converging to C approaching C from the left.
+
+01:08:00.110 --> 01:08:13.310
+If C is one of the end points, then we can find a sequence from I approaching C from the right. That's B. And the same thing if C is over here, we can find a sequence approaching C strictly from the left.
+
+01:08:15.270 --> 01:08:18.630
+So, there always exist such a sequence.
+
+01:08:22.550 --> 01:08:38.750
+Now, this is because I is an interval.
+
+01:08:38.750 --> 01:08:42.170
+Okay.
+
+01:08:42.170 --> 01:08:52.170
+Okay.
+
+01:08:57.160 --> 01:09:16.480
+So, we have a case A. We look at F prime, then we get that F of X in is less than or equal to F of C, RLN. And let me in fact write this a little bit differently.
+
+01:09:16.480 --> 01:09:42.100
+Okay. Since, so here we're using that F is increasing. Since F is increasing, which implies for all N, F of X in minus F of C over X of N minus C.
+
+01:09:42.100 --> 01:09:58.780
+Now, this thing on top is negative, X in is less than C. So, this thing on the bottom is also negative. And therefore, this thing is positive, non-negative, I mean.
+
+01:10:00.460 --> 01:10:11.780
+And therefore, the limit must also be non-negative. But that limit is just a derivative evaluated at C.
+
+01:10:19.280 --> 01:10:39.020
+Okay. And case B is kind of similar. I mean, not kind of it is. In case B, we get that for all N, F of X in. Now, since X ends to the right of C, right of this way.
+
+01:10:41.700 --> 01:11:00.400
+This minus F of C is bigger than or equal to zero, which implies that F prime of C, which is the limit as in goes to infinity of F of X in minus F of C over X in minus C.
+
+01:11:00.400 --> 01:11:24.240
+So, what's on top is non-negative. And what's on bottom is non-negative because X in is bigger than C. So, bigger than zero, bigger than zero. So, in either case, that's so, thus, in either case, we get that F prime of C is bigger than or equal to zero.
+
+01:11:28.420 --> 01:11:38.080
+And therefore, we've proven that the derivative is always non-negative. So, that's one and two.
+
+01:11:41.480 --> 01:12:05.940
+F is decreasing if and only if the function minus F is increasing, which by what we've done from part one is if and only if minus F prime of X is bigger than or equal to zero for all X and I.
+
+01:12:05.940 --> 01:12:15.520
+And then multiplying through by minus 1 gives me number 2.
+
+01:12:22.260 --> 01:12:33.300
+And so, let me make one last, I know it's taboo to write on the back part, but I'm going to do it anyways. We have the very simple theorem which now follows.
+
+01:12:38.300 --> 01:12:57.380
+Let F from I to R be differentiable. Then F is constant. So, F of X equals F of Y for all X and Y and I.
+
+01:12:57.380 --> 01:13:26.160
+F and only if the derivative is identically zero. So, F is constant if and only if F is both increasing.
+
+01:13:26.160 --> 01:13:49.540
+F is increasing and decreasing. Because it satisfies the equality sign in both of those. And by what we've done now for all this means for all X and I, F prime of X is bigger than or equal to zero.
+
+01:13:53.680 --> 01:14:10.540
+F prime of X is less than or equal to zero. And therefore, F prime of X, this is equivalent to F prime of X equals zero.
+
+01:14:16.960 --> 01:14:18.580
+Okay, so we'll stop there.
+

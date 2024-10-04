@@ -1,0 +1,1757 @@
+WEBVTT
+
+00:00:15.320 --> 00:00:19.400
+So at the end of last time, let me just restate the theorem
+
+00:00:19.400 --> 00:00:32.940
+that we proved, which was the vyrastross m test, which I'll
+
+00:00:32.940 --> 00:00:35.820
+state in brief reform now as the following.
+
+00:00:38.540 --> 00:00:45.720
+Suppose fj are a sequence of functions from some subset s of r.
+
+00:00:50.740 --> 00:00:59.460
+So that for all j, there exists non-negative number m subj such
+
+00:00:59.460 --> 00:01:00.540
+that two things hold.
+
+00:01:00.860 --> 00:01:05.720
+First off, these m subj's dominate the f subj's.
+
+00:01:09.360 --> 00:01:12.440
+f subj of x is less than or equal to m subj.
+
+00:01:13.740 --> 00:01:19.740
+And two, these m subj's are summable.
+
+00:01:31.600 --> 00:01:50.820
+Then the conclusion is the sequence of partial sums converges uniformly.
+
+00:01:51.140 --> 00:01:56.060
+So there exists some function f from s to r so that the partial sums converge uniformly.
+
+00:02:01.300 --> 00:02:09.720
+So this is a sequence of functions built up by the fj's by just taking the sum of
+
+00:02:09.720 --> 00:02:11.080
+the first j equals 1 to n.
+
+00:02:13.760 --> 00:02:18.040
+So for example, I kind of went through this last time.
+
+00:02:18.760 --> 00:02:29.440
+So example, if fj of x equals old frame, if fj of x is equal to 1, then it's equal to
+
+00:02:29.460 --> 00:02:35.640
+1 cosine of 160 j x over 4 to the j.
+
+00:02:41.540 --> 00:02:44.520
+Then, let's say on r. So s is r.
+
+00:02:49.740 --> 00:02:52.140
+Then a couple of things.
+
+00:02:55.160 --> 00:03:00.880
+fj of x for all x is less than or equal to 4 to the minus j because cosine of whatever
+
+00:03:00.880 --> 00:03:02.840
+you put into it is always bounded by 1.
+
+00:03:07.260 --> 00:03:22.120
+And since this is converges, it implies that the sum of the sum of the sum of the
+
+00:03:24.260 --> 00:03:35.640
+series, which I'm writing this way, which you should think of as a limit of functions.
+
+00:03:36.080 --> 00:03:49.020
+Of the partial sums, which are functions, converges uniformly on r. Not only that, this
+
+00:03:49.020 --> 00:03:54.100
+function defined by I take x, I stick it into here, is continuous because last time,
+
+00:03:55.420 --> 00:04:00.480
+we proved that the uniform limit of continuous functions is continuous.
+
+00:04:01.060 --> 00:04:06.780
+This function here is the uniform limit of the partial sums, which is just finitely
+
+00:04:06.780 --> 00:04:09.720
+many cosines of things, so that's continuous.
+
+00:04:10.980 --> 00:04:17.180
+This gives another proof of one of the things we did by hand when we spoke about different
+
+00:04:17.180 --> 00:04:25.160
+probability, namely that this function that we considered was continuous.
+
+00:04:28.820 --> 00:04:35.920
+So let's go back to power series, which was our original motivation.
+
+00:04:54.680 --> 00:05:00.100
+So I'm going to be saying that a series, so let me, again, make this perfectly clear.
+
+00:05:00.620 --> 00:05:12.980
+When I say, if you like, make this a definition, or really this is just, I was using this terminology
+
+00:05:12.980 --> 00:05:18.060
+up there in that theorem, and when I was talking about this example afterwards, but when
+
+00:05:18.060 --> 00:05:23.700
+I say a series involving functions converges uniformly, I mean the partial sums converge
+
+00:05:23.700 --> 00:05:42.960
+uniformly. So, means there is just a function f, so it's going to be a function f, so it's
+
+00:05:42.980 --> 00:05:56.480
+going to be a function f, such that, and all of these are from S to R as well, such
+
+00:06:01.920 --> 00:06:07.360
+that, just so that there's no ambiguity. So if I have a sequence of functions f sub j,
+
+00:06:07.360 --> 00:06:12.560
+and I form their series, and I say that converges uniformly, that means there exists
+
+00:06:12.560 --> 00:06:19.220
+some function f, so that the sequence of partial sums, these are now functions, converges
+
+00:06:19.220 --> 00:06:26.240
+uniformly to the function f. That's what power series are, right? They're expressions
+
+00:06:27.660 --> 00:06:32.680
+involving a free variable x, and therefore you can think of them as a series involving
+
+00:06:32.680 --> 00:06:42.960
+functions. So let me just state the following theorem about when we have uniform convergence.
+
+00:06:43.860 --> 00:07:02.660
+So, let's suppose we have a power series, and I say, I say, I say, I say, I say, I say,
+
+00:07:03.680 --> 00:07:17.240
+with radius of convergence, rho, which I will recall, is defined to be the limit as j goes
+
+00:07:17.240 --> 00:07:30.760
+to infinity, a j, 1 over j, inverse. If this limit is 0, we say that the radius of convergence
+
+00:07:30.760 --> 00:07:36.140
+is infinity. So if this is a finite number, this is a meaningful expression, if this
+
+00:07:36.140 --> 00:07:49.020
+is 0, then this is shorthand for saying the radius of convergence is infinity. So let's
+
+00:07:49.020 --> 00:08:00.600
+assume this is, then as long as I stay strictly inside the radius of convergence, I have uniform
+
+00:08:00.760 --> 00:08:17.720
+convergence. This is the statement of the theorem, then for all, r and 0 rho, this power series
+
+00:08:17.720 --> 00:08:30.740
+now thought of as a series of functions of x converges, and this is the number of x,
+
+00:08:31.460 --> 00:08:45.080
+uniformly on x, not minus r, x, not plus r. So the picture is, we have some radius
+
+00:08:45.080 --> 00:08:54.600
+of convergence, x, not, x, not plus rho, x, not minus rho. If we take any closed interval
+
+00:08:54.600 --> 00:09:02.060
+basically inside of that, strictly inside of that interval, then we have uniform convergence
+
+00:09:02.060 --> 00:09:20.200
+of the power series. So we'll prove this using the Vierstrauss M test. So let r be in
+
+00:09:20.200 --> 00:09:36.240
+0 rho, then for all j. So the Vierstrauss M test is for j equals starting from 1 and going
+
+00:09:36.240 --> 00:09:40.220
+to infinity, but you don't have to, just like for series, we don't have to start at 1,
+
+00:09:40.320 --> 00:09:50.180
+it can start at 0. So for all j, union 0, we have to be in the same direction as the
+
+00:09:50.200 --> 00:10:02.620
+one, what do we have? What are we writing? And for all x, in this interval, where we want
+
+00:10:02.620 --> 00:10:10.620
+to show uniform convergence, we have that, this function a sub j, x minus x, not to the
+
+00:10:10.620 --> 00:10:18.760
+j, in absolute value, what is this bounded by? This is bounded by absolute value of a j,
+
+00:10:18.760 --> 00:10:28.600
+and then j, and because x is in this interval, its distance to x not is less than or equal
+
+00:10:28.600 --> 00:10:43.780
+to r, so r to the j. So this will be my mj that I'll use for the Vierstrauss M test. Let
+
+00:10:44.660 --> 00:10:52.580
+me put that in parentheses, because I may not use that mj. So these individual functions,
+
+00:10:52.840 --> 00:11:05.420
+just polynomials are bounded by this number for each j, and now I want to see if the series
+
+00:11:05.420 --> 00:11:13.760
+of involving these numbers converges. So let me apply the number of x, x, x, x, x, x, x, x,
+
+00:11:19.420 --> 00:11:33.500
+x, the root test, we have, this is equal to, now this r to the j to the 1 over j, just
+
+00:11:33.500 --> 00:11:42.700
+becomes r, and it can just come out of this limit, and I pick up a to the 1 over j, and
+
+00:11:43.780 --> 00:11:45.640
+This is equal to 1 over rho.
+
+00:11:49.040 --> 00:11:56.180
+So this is equal to, if you like, I can put r over rho,
+
+00:11:57.060 --> 00:12:01.460
+as long as if rho is less than infinity,
+
+00:12:01.640 --> 00:12:03.000
+meaning if the radius of convergence
+
+00:12:03.000 --> 00:12:04.440
+is less than infinity and 0.
+
+00:12:08.600 --> 00:12:10.020
+And what do we notice?
+
+00:12:10.300 --> 00:12:11.580
+Now, r is less than rho.
+
+00:12:11.580 --> 00:12:17.460
+r is coming from the closed interval 0 up to the rho,
+
+00:12:17.700 --> 00:12:18.500
+not including rho.
+
+00:12:19.080 --> 00:12:22.060
+So this number, so this is always less than 1,
+
+00:12:22.160 --> 00:12:23.820
+but this number is always less than 1,
+
+00:12:23.900 --> 00:12:26.540
+2, as long as r is less than rho, which
+
+00:12:26.540 --> 00:12:31.360
+implies that the series sum from j equals 0
+
+00:12:31.360 --> 00:12:37.620
+to infinity of a j, r to the j converges.
+
+00:12:39.920 --> 00:12:44.580
+So now we have the sequence of functions, the polynomials
+
+00:12:44.580 --> 00:12:46.780
+that we use to build up our power series.
+
+00:12:47.240 --> 00:12:51.760
+Each of them bounded by these numbers, a sub j,
+
+00:12:51.960 --> 00:12:53.600
+absolute value times r to the j.
+
+00:12:54.160 --> 00:12:56.380
+And these numbers are summable.
+
+00:12:57.140 --> 00:12:58.440
+The series converges.
+
+00:12:59.160 --> 00:13:11.120
+So by the virus truss M test, this implies
+
+00:13:11.120 --> 00:13:22.800
+that the power series converges uniformly on this interval.
+
+00:13:29.900 --> 00:13:30.540
+OK.
+
+00:13:34.400 --> 00:13:34.560
+All right.
+
+00:13:34.720 --> 00:13:39.200
+So as long as we stay within, strictly within inside the radius
+
+00:13:39.200 --> 00:13:42.380
+of convergence, we have uniform convergence
+
+00:13:42.380 --> 00:13:43.260
+of the power series.
+
+00:13:46.800 --> 00:13:48.800
+And therefore, using the theorems that we proved before,
+
+00:13:52.560 --> 00:13:56.560
+we can differentiate and integrate term by term, the power series.
+
+00:14:01.460 --> 00:14:05.340
+So which follows immediately from this previous theorem,
+
+00:14:05.340 --> 00:14:09.040
+and then what we proved last time, which I'll state now.
+
+00:14:09.040 --> 00:14:36.560
+Now the power series with radius of convergence rho
+
+00:14:37.560 --> 00:14:38.220
+positive.
+
+00:14:39.800 --> 00:14:44.060
+Let me write it this way.
+
+00:14:51.880 --> 00:15:00.280
+And the first is we're all c inside x not minus r, x not
+
+00:15:00.280 --> 00:15:06.100
+plus r, the function given by the power series.
+
+00:15:08.240 --> 00:15:10.520
+Which I'm not going to call this f or anything.
+
+00:15:10.620 --> 00:15:12.440
+I'm just going to refer to the power series directly.
+
+00:15:13.420 --> 00:15:19.940
+This is differentiable at c.
+
+00:15:21.520 --> 00:15:24.500
+And to compute the derivative, you can just do it term by term,
+
+00:15:24.880 --> 00:15:33.540
+meaning I can take the derivative inside by dx of x.
+
+00:15:36.100 --> 00:15:41.300
+So this is a value of j equals 0 to infinity, a sub j
+
+00:15:44.560 --> 00:15:46.400
+evaluated at x equals c.
+
+00:15:49.100 --> 00:15:53.540
+This is equal to simply differentiating term by term.
+
+00:16:12.780 --> 00:16:35.840
+And number two, for all a, b, for all a less than b,
+
+00:16:35.840 --> 00:16:37.840
+less than x not plus rho.
+
+00:16:38.740 --> 00:16:42.300
+So here I'm sticking to strictly with inside the radius of
+
+00:16:42.300 --> 00:16:42.740
+convergence.
+
+00:16:43.660 --> 00:16:47.680
+There's the x not plus rho, x not minus rho.
+
+00:16:47.820 --> 00:16:51.380
+And so now I'm going to integrate over some interval inside.
+
+00:16:53.660 --> 00:16:55.540
+Then I can integrate term by term.
+
+00:16:57.540 --> 00:17:02.640
+The integral from a to b, sum from j equals 0 to infinity of
+
+00:17:02.640 --> 00:17:11.440
+a sub j, x minus x not j dx equals, and I'll just write it
+
+00:17:11.440 --> 00:17:14.640
+this way, sum from j equals 0 to infinity of,
+
+00:17:21.140 --> 00:17:21.860
+okay.
+
+00:17:31.000 --> 00:17:31.720
+Okay.
+
+00:17:32.060 --> 00:17:35.940
+And in fact, let me just to really emphasize that we're
+
+00:17:35.940 --> 00:17:36.980
+interchanging limits here.
+
+00:17:37.080 --> 00:17:43.300
+Let me instead write this equivalently as sum from j equals
+
+00:17:43.300 --> 00:17:55.500
+0 to infinity of j by dx of a sub j, x minus x not j
+
+00:17:55.500 --> 00:17:57.380
+evaluated at x equals c.
+
+00:17:59.520 --> 00:17:59.820
+Okay.
+
+00:18:00.020 --> 00:18:05.360
+So for power series, I can interchange the limits, okay.
+
+00:18:05.880 --> 00:18:08.780
+The limit being taken at derivative and the sum, I can
+
+00:18:08.780 --> 00:18:12.960
+interchange and then I can also interchange the integration
+
+00:18:12.960 --> 00:18:17.760
+and the sum, as long as I stay within the radius of
+
+00:18:17.760 --> 00:18:18.140
+convergence.
+
+00:18:19.460 --> 00:18:19.560
+Okay.
+
+00:18:19.700 --> 00:18:21.400
+And this statement here is a point wise.
+
+00:18:23.160 --> 00:18:23.700
+Okay.
+
+00:18:23.820 --> 00:18:26.380
+So let's see why one is the case.
+
+00:18:26.640 --> 00:18:30.700
+Two follows immediately from what we've proven.
+
+00:18:31.000 --> 00:18:34.620
+And so this previous theorem and the theorem we have about
+
+00:18:34.620 --> 00:18:36.560
+integration and uniform convergence.
+
+00:18:36.560 --> 00:18:38.300
+So what about one?
+
+00:18:43.340 --> 00:18:50.560
+So first off, we know we have uniform convergence of the
+
+00:18:51.100 --> 00:18:54.720
+series strictly inside of the radius of convergence.
+
+00:18:55.300 --> 00:19:01.880
+So how about we need to check to see if the formal derivative also
+
+00:19:01.880 --> 00:19:06.000
+has radius of convergence as well, equal to rho.
+
+00:19:06.300 --> 00:19:19.960
+So I claim that the radius convergence of the derivatives,
+
+00:19:25.360 --> 00:19:31.080
+which equals, I can write it this way.
+
+00:19:31.080 --> 00:19:31.080
+
+
+00:19:42.840 --> 00:19:43.460
+No.
+
+00:19:50.460 --> 00:19:55.480
+So the derivative of this guy is j times a sub j times x minus
+
+00:19:55.480 --> 00:19:57.000
+x not to the j minus 1.
+
+00:19:57.000 --> 00:20:02.000
+So just shifting indices is equal to times j plus 1 times
+
+00:20:03.400 --> 00:20:06.500
+x minus x not to the j.
+
+00:20:07.760 --> 00:20:18.000
+So our claim is that this power series here has radius of
+
+00:20:18.740 --> 00:20:22.940
+convergence equal to rho, the original radius of convergence.
+
+00:20:23.160 --> 00:20:26.220
+So rho is the radius of convergence of, why didn't I come
+
+00:20:26.220 --> 00:20:27.460
+over here? I still had a board left.
+
+00:20:27.680 --> 00:20:28.480
+Sorry about that.
+
+00:20:30.200 --> 00:20:34.440
+The original power series has radius of convergence rho.
+
+00:20:34.960 --> 00:20:39.540
+What we need to show to prove part one is that the radius of
+
+00:20:39.540 --> 00:20:44.000
+convergence of the derivatives of taking the derivatives inside
+
+00:20:44.000 --> 00:20:45.900
+also has radius of convergence rho.
+
+00:20:47.200 --> 00:20:50.880
+Because then this would imply that this power series,
+
+00:20:51.040 --> 00:20:54.220
+which is the derivative of that one, converges uniformly on
+
+00:20:54.220 --> 00:20:58.220
+the same set. So then we have uniform convergence of the
+
+00:20:58.900 --> 00:21:02.220
+power series and uniform convergence of the derivative of the
+
+00:21:02.220 --> 00:21:04.880
+power series. So by the theorem we proved in the last lecture,
+
+00:21:06.520 --> 00:21:12.940
+we would have that the derivative of the power series equals
+
+00:21:13.500 --> 00:21:15.600
+the power series of the derivatives.
+
+00:21:16.860 --> 00:21:18.840
+So I'm just going to focus on this claim.
+
+00:21:20.100 --> 00:21:26.260
+And this again just follows from what we know about
+
+00:21:26.260 --> 00:21:35.800
+limits. And so we compute that if we take the limit as j
+
+00:21:35.800 --> 00:21:39.840
+goes to infinity, now these are the coefficients for the
+
+00:21:40.050 --> 00:21:47.950
+new power series. So aj plus 1, j plus 1,
+
+00:21:49.270 --> 00:21:57.450
+raised to the 1 over j. This is equal to limit j goes to
+
+00:21:57.450 --> 00:22:06.990
+infinity of a sub j plus 1, now raised to the 1 over j plus
+
+00:22:06.990 --> 00:22:21.510
+1, j plus 1, 1 over j plus 1, now all raised to j plus 1
+
+00:22:21.510 --> 00:22:28.690
+over j. Now this was a special limit that we looked at last
+
+00:22:28.690 --> 00:22:36.070
+time. This, the limit as j goes to, not last time, but way
+
+00:22:36.070 --> 00:22:39.130
+back when we were looking at sequences, the limit as j goes to
+
+00:22:39.130 --> 00:22:48.170
+infinity of this guy is 1. So this in fact equals limit as j goes
+
+00:22:48.170 --> 00:22:53.090
+to infinity. This goes to 1, this goes to 1, so you can actually
+
+00:22:53.090 --> 00:23:06.050
+say this converges to 1 as well. So this equals to the j plus 1,
+
+00:23:06.050 --> 00:23:14.930
+over j. Now strictly speaking you would have to,
+
+00:23:16.850 --> 00:23:21.650
+okay, so this thing also converges to, what does it converge to?
+
+00:23:22.190 --> 00:23:26.870
+This, remember, is, so where do we have it?
+
+00:23:26.950 --> 00:23:30.810
+Do we still have it up here? So it's way over there,
+
+00:23:30.910 --> 00:23:34.410
+so let me recall that the radius of convergence, rho,
+
+00:23:35.190 --> 00:23:38.870
+let me put it inverse to here, this is equal to the limit as,
+
+00:23:39.230 --> 00:23:44.430
+let me put a k goes to infinity of a sub k 1 over k.
+
+00:23:47.790 --> 00:23:52.070
+So this is, the exponents converging to 1, this is converging to
+
+00:23:52.070 --> 00:23:58.210
+rho inverse again, so I get rho inverse to the 1.
+
+00:24:00.710 --> 00:24:06.230
+So therefore, this is supposed to be the radius 1 over the radius
+
+00:24:06.230 --> 00:24:11.210
+of convergence to the differentiated power series, which
+
+00:24:12.290 --> 00:24:21.650
+implies the differentiated power series.
+
+00:24:34.510 --> 00:24:41.890
+j is 1 over this limit, 1 over that limit, which we
+
+00:24:41.890 --> 00:24:47.950
+computed is to be is 1 over rho, which is the original radius of
+
+00:24:47.950 --> 00:24:52.770
+convergence, okay? So all this to say is that the radius of
+
+00:24:52.770 --> 00:24:55.550
+convergence of the differentiated power series, the formally
+
+00:24:55.550 --> 00:24:59.210
+differentiated power series is the same as the radius of
+
+00:24:59.210 --> 00:25:02.130
+convergence of the original power series, okay?
+
+00:25:03.270 --> 00:25:06.310
+And therefore, you have uniform convergence of the derivatives,
+
+00:25:06.850 --> 00:25:10.070
+wherever you have uniform convergence of the original power series.
+
+00:25:10.910 --> 00:25:13.190
+And therefore, by the theorem we proved last time,
+
+00:25:17.030 --> 00:25:22.170
+since both the derivatives and, so since the power series,
+
+00:25:22.170 --> 00:25:26.030
+in the derivative of the power series converges uniformly on the
+
+00:25:26.030 --> 00:25:33.990
+same set, the power series, the infinism, so this guy is
+
+00:25:33.990 --> 00:25:37.570
+actually differentiable and the derivative of the power series is
+
+00:25:37.570 --> 00:25:40.550
+the power series of the derivatives, okay?
+
+00:25:42.070 --> 00:25:43.890
+But you can iterate this, right?
+
+00:25:45.770 --> 00:25:49.750
+Because I now have this power series with radius of convergence
+
+00:25:49.750 --> 00:25:52.430
+equal to the radius of convergence of the original.
+
+00:25:53.190 --> 00:25:57.450
+And then I can take a derivative of that and show that's as the same
+
+00:25:57.450 --> 00:25:59.730
+radius of convergence as the original.
+
+00:26:00.450 --> 00:26:06.110
+So let me just leave this as a remark and not stated as a
+
+00:26:06.110 --> 00:26:06.410
+theorem.
+
+00:26:12.470 --> 00:26:19.150
+Interrating can prove that I want the kth derivative of the power
+
+00:26:22.450 --> 00:26:47.250
+series, so on, so let me say, all x in here, the kth derivative of the
+
+00:26:50.030 --> 00:26:54.610
+power series of differentiating term by term.
+
+00:27:01.310 --> 00:27:05.910
+So this holds for, okay, equals 1, 2, and so on.
+
+00:27:06.230 --> 00:27:15.450
+And so in particular, if I evaluate at x0, this tells me that k
+
+00:27:15.450 --> 00:27:24.410
+factorial a sub k is equal to the derivative of this function,
+
+00:27:24.990 --> 00:27:28.310
+which is the, which you get out when you stick x into this power
+
+00:27:28.310 --> 00:27:28.850
+series.
+
+00:27:32.970 --> 00:27:33.490
+Okay?
+
+00:27:41.650 --> 00:27:45.390
+And you can interpret this, although we never called them Taylor
+
+00:27:45.390 --> 00:27:51.490
+series, you know, as a statement that every power series is the
+
+00:27:51.490 --> 00:27:54.670
+Taylor series of a function, okay?
+
+00:27:55.790 --> 00:27:57.490
+At least in this setting that we're looking at.
+
+00:28:01.090 --> 00:28:01.690
+Okay.
+
+00:28:11.630 --> 00:28:17.730
+So we've answered pretty definitively, at least for the scope of this
+
+00:28:17.730 --> 00:28:27.470
+class, when we can interchange limits, we can do that as long as we have
+
+00:28:28.670 --> 00:28:34.470
+the, you know, the function, continuous functions or function
+
+00:28:35.390 --> 00:28:41.410
+and its derivative, but there are more powerful statements out
+
+00:28:41.410 --> 00:28:43.910
+there that one can make, especially when it comes to integration.
+
+00:28:43.910 --> 00:28:53.590
+This is why, you know, essentially, why a different theory of
+
+00:28:53.590 --> 00:28:56.150
+integration was created or one reason why.
+
+00:29:03.910 --> 00:29:08.930
+But, you know, hopefully, if I see some of you in 18102, which is
+
+00:29:08.930 --> 00:29:12.470
+what I'm teaching next semester, we'll get into that further when we
+
+00:29:12.470 --> 00:29:14.330
+just discuss LeBague integration.
+
+00:29:15.010 --> 00:29:19.770
+That was thought of because somehow Riemann integration is not
+
+00:29:19.770 --> 00:29:23.750
+complete, the same way that rational numbers are not complete.
+
+00:29:26.330 --> 00:29:29.850
+Kind of Riemann integration is not complete.
+
+00:29:31.450 --> 00:29:35.050
+LeBague integration is complete in a certain sense, I'm being very vague
+
+00:29:35.050 --> 00:29:35.730
+here for a reason.
+
+00:29:36.130 --> 00:29:42.430
+So I'm just giving you a, you know, where you can go with this.
+
+00:29:43.350 --> 00:29:52.710
+What the next step is is, you know, at least improving when can you interchange
+
+00:29:52.710 --> 00:29:58.790
+two limits is, you know, really a topic that's fundamental to the study of,
+
+00:29:58.930 --> 00:30:01.350
+in the study of LeBague integration.
+
+00:30:02.030 --> 00:30:08.030
+You have much more powerful theorems there than you do here, which allows you to
+
+00:30:08.030 --> 00:30:13.090
+improve, you know, interesting results, and especially about Fourier
+
+00:30:13.090 --> 00:30:19.770
+series. In fact, you know, if I had more time, we would apply, in fact, some
+
+00:30:19.770 --> 00:30:22.510
+of the stuff that we've done here, we could apply to the study of Fourier
+
+00:30:23.030 --> 00:30:27.670
+series, but maybe we'll do that in 18102.
+
+00:30:28.870 --> 00:30:40.830
+Okay, so I want to now prove the last theorem of the class, which is also
+
+00:30:40.830 --> 00:30:49.290
+due to the Godfather. So, you know, when we had these power series, so these are
+
+00:30:49.290 --> 00:30:50.850
+defining, you know, functions.
+
+00:30:56.590 --> 00:31:00.890
+Very special types of functions, what are called analytic.
+
+00:31:03.530 --> 00:31:09.570
+They are, by definition, essentially, the limit of polynomials, right?
+
+00:31:09.670 --> 00:31:16.410
+They're the limit of these finite sums of a sub j's times x minus x zero,
+
+00:31:18.230 --> 00:31:24.270
+raised to the j power, that's a polynomial. So, for analytic functions,
+
+00:31:24.290 --> 00:31:30.110
+which are these functions, equal to power series, they are the limits of polynomials.
+
+00:31:33.110 --> 00:31:38.090
+But that's a pretty small class of functions, analytic functions.
+
+00:31:43.130 --> 00:31:51.090
+But the virus straws proved this very interesting result that actually something
+
+00:31:51.670 --> 00:31:56.450
+like this is true for all continuous functions. So, roughly speaking,
+
+00:31:57.050 --> 00:32:04.610
+virus straws proved that basically every continuous function is in some sense
+
+00:32:04.610 --> 00:32:09.330
+that it's almost a polynomial. Just as we saw for these analytic functions,
+
+00:32:09.330 --> 00:32:15.670
+meaning defined by power series, they are very close to being, at least within
+
+00:32:15.670 --> 00:32:21.210
+their radius of convergence, a polynomial. In fact, this is true for all continuous
+
+00:32:21.210 --> 00:32:26.450
+functions, that not necessarily equal to a power series, but every continuous
+
+00:32:26.450 --> 00:32:33.630
+function is almost a polynomial. And in what sense do I mean that?
+
+00:32:33.630 --> 00:32:37.430
+So, this is a virus straws' approximation theorem,
+
+00:32:46.810 --> 00:32:56.150
+which states the following. If f is in continuous function,
+
+00:32:56.410 --> 00:33:01.070
+and on the unit intervals say you can make it a, b, just by rescaling the variables.
+
+00:33:02.070 --> 00:33:05.530
+But I'll just state it for continuous functions on the unit interval.
+
+00:33:10.990 --> 00:33:21.170
+Then there exists a sequence, polynomials,
+
+00:33:22.570 --> 00:33:37.630
+p sub n of x, such that p sub n converges to f uniformly on 0,1.
+
+00:33:42.370 --> 00:33:49.190
+And so, in this sense, every continuous function is well approximated by polynomials.
+
+00:33:49.190 --> 00:33:55.930
+So, every continuous function is close to being a polynomial.
+
+00:34:01.070 --> 00:34:10.510
+Okay, so I need to first prove a couple of things that will be needed.
+
+00:34:11.030 --> 00:34:17.430
+So, first off, I'm only going to look at only, so let me make some remarks before we go to the proof.
+
+00:34:21.230 --> 00:34:26.430
+So, we're putting the proof on hold now. So, let me just make a remark.
+
+00:34:27.210 --> 00:34:32.450
+I don't necessarily need to prove this statement for every f, just for certain f,
+
+00:34:32.670 --> 00:34:35.050
+and then for every f, we'll follow from this special class.
+
+00:34:35.970 --> 00:34:48.110
+So, we only need to consider, we'll only consider the case,
+
+00:34:51.690 --> 00:34:56.750
+f of 0 equals 0, and f of 1 equals 0.
+
+00:34:56.870 --> 00:34:58.370
+So, f is 0 at the end points.
+
+00:34:58.990 --> 00:35:03.470
+While we're doing this, is so that we can extend f to a continuous function outside of the unit interval,
+
+00:35:03.690 --> 00:35:05.690
+by just setting it equal to 0.
+
+00:35:08.270 --> 00:35:11.350
+Okay, and so, let's suppose we've proven this special case,
+
+00:35:11.350 --> 00:35:12.750
+and we look at the general case.
+
+00:35:24.710 --> 00:35:29.630
+Then, if I take any continuous function now,
+
+00:35:32.350 --> 00:35:37.290
+what do we know that there exists sequence of polynomials,
+
+00:35:37.470 --> 00:35:55.130
+piece of n, such that these polynomials, piece of n,
+
+00:36:06.750 --> 00:36:10.090
+so this function here, if I look at it,
+
+00:36:10.270 --> 00:36:14.930
+it's a continuous function on 0,1, because I'm just modifying it by constants,
+
+00:36:14.950 --> 00:36:23.210
+and then times x, and then at f of 1, I get f of 1 minus f of 0 minus f of 1 minus f of 0,
+
+00:36:23.210 --> 00:36:28.230
+so I get 0, and at 0, I get f of 0 minus 0, f of 0 is 0,
+
+00:36:28.550 --> 00:36:31.010
+minus 0 times something I don't care, equals 0.
+
+00:36:31.550 --> 00:36:35.550
+So, there exists polynomials converging to this function now.
+
+00:36:36.350 --> 00:36:40.750
+Right, if we've been able to prove the case just for f of 0 equals 0,
+
+00:36:40.890 --> 00:36:41.870
+and f of 1 equals 0.
+
+00:36:44.730 --> 00:36:46.150
+So, uniformly.
+
+00:36:47.230 --> 00:37:03.130
+And therefore, the polynomials given by piece of n of x plus now x times f of 1 minus f of 0 plus.
+
+00:37:04.970 --> 00:37:07.410
+So, this is still, if this was a polynomial,
+
+00:37:07.410 --> 00:37:12.770
+so is adding this to it, that's still a polynomial converges to,
+
+00:37:15.510 --> 00:37:19.210
+at tilde of x uniformly, and this again, this is still a polynomial.
+
+00:37:27.130 --> 00:37:32.350
+So, the whole point of this remark is that we only need to consider the case f of 0 equals 0,
+
+00:37:32.350 --> 00:37:33.630
+and f of 1 equals 0.
+
+00:37:34.270 --> 00:37:39.070
+And we're going to do that just so that we can extend f to a continuous function outside the interval.
+
+00:37:42.130 --> 00:37:43.010
+All right.
+
+00:37:54.370 --> 00:37:55.250
+All right.
+
+00:37:55.250 --> 00:38:04.290
+Now, the way we're going to build these polynomials that converge to f is by what's called an approximation to the identity.
+
+00:38:07.070 --> 00:38:11.670
+Really, I guess you could think of it as an approximation to the delta function,
+
+00:38:11.890 --> 00:38:13.310
+and I'll explain that in just a minute.
+
+00:38:13.310 --> 00:38:23.510
+So, for all n, a natural number, define c sub n.
+
+00:38:23.870 --> 00:38:32.670
+This will be the integral from minus 1 to 1 of 1 minus x squared raised to the n dx, 1 over,
+
+00:38:33.110 --> 00:38:36.230
+and then q sub n of x.
+
+00:38:36.230 --> 00:38:42.590
+This is going to be equal to c sub n times 1 minus x squared raised to the n.
+
+00:38:43.670 --> 00:38:50.150
+Then a few simple consequences are.
+
+00:38:50.510 --> 00:38:57.890
+So, first off, this is the integral of a function which is not negative,
+
+00:38:58.050 --> 00:39:00.750
+but it's positive at plenty of places between minus 1 and 1,
+
+00:39:00.750 --> 00:39:05.230
+and you proved in the homework that this means that the integral has to be positive.
+
+00:39:06.350 --> 00:39:17.610
+Then the first is, for all n, natural number, for all x and 0, 1.
+
+00:39:17.750 --> 00:39:21.210
+So, the first two of these observations are very clear.
+
+00:39:23.490 --> 00:39:28.210
+q n of x is greater than, so, minus 1 to 1.
+
+00:39:29.910 --> 00:39:35.090
+q n of x is bigger than or equal to 0, so it's just c sub n,
+
+00:39:35.190 --> 00:39:38.410
+which is a positive number times 1 minus x squared, x squared.
+
+00:39:38.930 --> 00:39:42.850
+So, x is between minus 1 and 1, and therefore 1 minus x squared is always not negative.
+
+00:39:47.370 --> 00:39:51.730
+2 is, this is also pretty clear.
+
+00:39:52.470 --> 00:39:58.610
+The integral from minus 1 to 1 of q sub n of x dx equals 1.
+
+00:40:04.230 --> 00:40:06.010
+Now, why is this clear?
+
+00:40:06.410 --> 00:40:11.690
+Because this is equal to the integral of 1 minus x squared raised to the n times c to the n,
+
+00:40:11.830 --> 00:40:12.650
+or c sub n.
+
+00:40:13.070 --> 00:40:17.970
+But c sub n is the inverse of that integral, so we should just pick up 1.
+
+00:40:18.570 --> 00:40:30.290
+Now, the third and less trivial thing, which is important, is that for all delta and 0, 1,
+
+00:40:33.810 --> 00:40:43.010
+this function q sub n, I mean this is just a polynomial, converges to 0 uniformly on
+
+00:40:46.950 --> 00:40:56.910
+the set, delta is less than, so, x such that delta is bigger than or equal to the absolute value of x.
+
+00:40:58.410 --> 00:41:01.850
+No, delta is less than or equal to the absolute value of x is less than or equal to 1.
+
+00:41:02.970 --> 00:41:11.430
+So, in other words, here's minus 1, 1, 0, delta, minus delta.
+
+00:41:11.770 --> 00:41:19.390
+If I look in these regions, so in the, if you like the union of those two intervals,
+
+00:41:20.090 --> 00:41:27.570
+then q sub n, this polynomial, is converging to 0 uniformly as n goes to infinity on,
+
+00:41:30.550 --> 00:41:32.330
+on the union of these two intervals.
+
+00:41:33.910 --> 00:41:34.070
+Okay?
+
+00:41:34.450 --> 00:41:36.370
+So, what is the picture of what's going on?
+
+00:41:36.510 --> 00:41:37.930
+What do these q sub n's look like?
+
+00:41:43.750 --> 00:41:46.170
+So, here's minus 1, here's 1.
+
+00:41:46.170 --> 00:41:53.170
+So, kind of the first one, you know, looks like some constant times 1 minus x squared, so,
+
+00:41:55.010 --> 00:41:56.250
+there's the first one.
+
+00:41:58.130 --> 00:42:07.910
+And then, as n keeps getting bigger and bigger, you know, this is 0 at higher and higher order at 1 and minus 1,
+
+00:42:07.910 --> 00:42:09.550
+and getting pretty small near here.
+
+00:42:09.550 --> 00:42:18.570
+And, in fact, according to 3, if I take any interval around 0 and look outside of it,
+
+00:42:18.910 --> 00:42:22.130
+as n goes to infinity, q sub n is going to 0 uniformly.
+
+00:42:22.350 --> 00:42:29.990
+So, what it should look like is, maybe the next one, looks like that, and then further still,
+
+00:42:33.170 --> 00:42:39.530
+like that, so that, you know, if I look at the formula,
+
+00:42:39.530 --> 00:42:47.170
+look inside over here or over here, q sub n is going to 0 uniformly.
+
+00:42:47.590 --> 00:42:54.770
+So, what you should think of is that the q sub n's as n goes to infinity is something like a Dirac delta function,
+
+00:42:55.030 --> 00:42:56.610
+which is not exactly a function.
+
+00:42:59.970 --> 00:43:00.410
+Okay?
+
+00:43:00.650 --> 00:43:07.090
+So, again, so, let me re-emphasize that, and this is in quotes.
+
+00:43:07.090 --> 00:43:28.030
+You should think of q sub n, acts like delta function,
+
+00:43:28.030 --> 00:43:38.690
+and acts like centered at x equals 0.
+
+00:43:39.210 --> 00:43:42.110
+Okay? So, that's in quotes, because that is meaningless.
+
+00:43:42.510 --> 00:43:46.610
+But some of you have taken physics, know what it properties are of a delta function.
+
+00:43:48.370 --> 00:43:53.950
+And, you know, the integral is 1. It's somehow 0 everywhere away, except for the origin,
+
+00:43:53.950 --> 00:43:57.290
+and it's infinite there, but somehow it's integral 1.
+
+00:44:00.910 --> 00:44:02.150
+So, okay.
+
+00:44:05.290 --> 00:44:12.390
+So, these q sub n's will show form an approximation to the identity in a certain sense.
+
+00:44:12.390 --> 00:44:14.170
+But let me, let's prove these.
+
+00:44:18.870 --> 00:44:25.650
+Let's prove the only non-trivial one, which is 3, right?
+
+00:44:25.790 --> 00:44:28.470
+Number 1 and 2 are clear based on how they're defined.
+
+00:44:29.670 --> 00:44:29.770
+Okay?
+
+00:44:33.310 --> 00:44:35.890
+So, let's first estimate how big is this?
+
+00:44:36.090 --> 00:44:39.770
+So, this constant c sub n, we don't really know how, what it is explicitly.
+
+00:44:39.770 --> 00:44:42.950
+But let's compute at least a rough size of it.
+
+00:44:47.830 --> 00:44:51.310
+And then we'll use this to prove the third part.
+
+00:44:53.030 --> 00:45:03.670
+So, we have, we're all in a natural number, the following inequality,
+
+00:45:03.670 --> 00:45:11.630
+n x and minus 1, 1, 1 minus x squared raised to the n.
+
+00:45:11.930 --> 00:45:15.630
+This is greater than or equal to 1 minus n x squared.
+
+00:45:17.150 --> 00:45:23.450
+Okay? Now, this, if it's not, so it shouldn't be like, you know, hit you in the face,
+
+00:45:23.450 --> 00:45:27.490
+clear why this is true. But one way you can prove it is that if you look at the function,
+
+00:45:29.150 --> 00:45:36.790
+g of x equals 1 minus x squared, and so first off, this inequality is even an x.
+
+00:45:37.090 --> 00:45:39.070
+It doesn't matter if x is negative or positive.
+
+00:45:39.350 --> 00:45:50.670
+So, let's look at this function on 0, 1.
+
+00:45:51.350 --> 00:45:52.730
+Then what's the point?
+
+00:45:55.490 --> 00:45:57.830
+I look at g of 0, this is 0.
+
+00:45:58.490 --> 00:46:07.790
+And if I compute g prime of x, this is equal to n times 2x times what?
+
+00:46:09.370 --> 00:46:14.530
+Times 1 minus 1 minus x squared to the n minus 1.
+
+00:46:15.310 --> 00:46:20.710
+And this is always less than or equal to 1, this thing in parentheses.
+
+00:46:21.370 --> 00:46:28.030
+So, this thing is always bigger than or equal to 0 on 0, 1.
+
+00:46:28.190 --> 00:46:33.050
+So, on 0, 1, this function is increasing and its value at 0, 0.
+
+00:46:33.230 --> 00:46:44.270
+So, we get that, which is exactly what we wanted to prove.
+
+00:46:45.830 --> 00:46:46.270
+Okay?
+
+00:46:50.910 --> 00:46:55.410
+So, now we compute the size of c sub n.
+
+00:46:55.670 --> 00:46:59.750
+So, to do that, let me look at 1 over c sub n.
+
+00:47:00.330 --> 00:47:05.070
+If I want an upper bound on c sub n, I need to prove a lower bound on 1 over c sub n.
+
+00:47:05.610 --> 00:47:10.090
+So, let's take 1 over c sub n and find a lower bound for it.
+
+00:47:10.730 --> 00:47:17.630
+This is the integral from minus 1 to 1, of 1 minus x squared raised to the n, dx.
+
+00:47:18.410 --> 00:47:30.750
+Now, I can't remember if I made this a homework problem or not, but for even functions integrating over an interval even with respect to the origin.
+
+00:47:30.930 --> 00:47:31.710
+This is just twice.
+
+00:47:33.650 --> 00:47:35.350
+I mean, I'm sure you remember this from calculus.
+
+00:47:35.350 --> 00:47:41.290
+This is not hard to prove with what we know of the change of variables formula and so on.
+
+00:47:41.670 --> 00:47:47.030
+That this is equal to twice times the integral from 0 to 1 of 1 minus x squared raised to the n.
+
+00:47:49.450 --> 00:47:49.690
+Okay?
+
+00:47:50.490 --> 00:47:55.050
+Now, this is bigger than or equal to 2 times if I integrate to a certain point.
+
+00:47:55.190 --> 00:48:02.290
+This certain point is chosen so that I get a result in the n that's pretty, essentially.
+
+00:48:16.530 --> 00:48:22.730
+Now, this is where I replace this by the smaller thing, which is easy to integrate.
+
+00:48:23.730 --> 00:48:33.230
+So, this is greater than or equal to 2 and it grows 0, 1 over root n, 1 minus n, x squared dx.
+
+00:48:34.230 --> 00:48:47.950
+And I leave it to you to verify that with this choice at the end point what I get is 4 over 3 root n, 1 over root n.
+
+00:48:54.330 --> 00:48:59.530
+And therefore, so, and this is bigger than 1 over root n.
+
+00:48:59.690 --> 00:49:05.170
+So, I started with 1 over c sub n and I showed that it was bigger than 1 over root n.
+
+00:49:05.850 --> 00:49:15.230
+And therefore, c sub n is less than 1 over, as c sub n is less than the square root of n.
+
+00:49:15.950 --> 00:49:16.390
+Okay?
+
+00:49:19.670 --> 00:49:23.490
+Now, we'll use this to compute what we want.
+
+00:49:23.710 --> 00:49:33.510
+In fact, I mean, we really just needed to show that c sub n is bounded by some polynomial in n, but this will suffice.
+
+00:49:34.470 --> 00:49:46.730
+So, we now want to show, let delta be positive.
+
+00:49:47.130 --> 00:49:56.790
+We now want to show that c sub n converges uniformly to 0 on that set where the absolute value of x is less than or equal to 1 is bigger than or equal to delta.
+
+00:49:58.970 --> 00:50:15.470
+Now, we note that the following sequence converges to 0 that square root of n times 1 minus delta squared raised to the end.
+
+00:50:15.470 --> 00:50:18.290
+So, we should also put delta in 0, 1.
+
+00:50:26.570 --> 00:50:32.390
+So, this sequence here converges to 0 as n goes to infinity.
+
+00:50:34.190 --> 00:50:36.270
+Now, intuitively, why is this?
+
+00:50:36.390 --> 00:50:42.150
+This is because, you know, this is some number less than 1 raised to the nth power.
+
+00:50:42.150 --> 00:50:49.990
+You know, exponential always beats just a polynomial or, you know, a power of n.
+
+00:50:51.250 --> 00:51:04.750
+If you want to see exactly why this is, we could compute the limit as n goes to infinity of this sequence raised to 1 over n power.
+
+00:51:06.010 --> 00:51:16.710
+Then, this is equal to the limit as n goes to infinity of n to the 1 over n, 1 half, 1 minus delta squared.
+
+00:51:18.170 --> 00:51:20.110
+And this converges to 1. We prove that.
+
+00:51:20.370 --> 00:51:23.510
+And so, this equals 1 minus delta squared, which is less than 1.
+
+00:51:24.330 --> 00:51:34.210
+And we have this, you know, theorem from our section on sequences that says if this limit is less than 1,
+
+00:51:34.210 --> 00:51:37.550
+then the thing here converges to 0.
+
+00:51:38.210 --> 00:51:45.110
+You know, or you could interpret this as saying that the series with this as the individual terms converges.
+
+00:51:45.590 --> 00:51:49.330
+And therefore, the individual terms have to converge to 0.
+
+00:51:50.050 --> 00:52:01.010
+So, which implies limit as n goes to infinity equals 0.
+
+00:52:02.470 --> 00:52:08.350
+So, now we have this. And, you know, once we have this, we'll have what we want.
+
+00:52:08.950 --> 00:52:16.090
+So, we want to prove uniform convergence on that set.
+
+00:52:16.290 --> 00:52:17.470
+So, let epsilon be positive.
+
+00:52:21.370 --> 00:52:26.250
+Then, since this sequence converges to 0, there exists an m, a natural number.
+
+00:52:26.990 --> 00:52:34.250
+So, that for all n, bigger than or equal to m, square root of n times 1 minus delta squared,
+
+00:52:34.990 --> 00:52:37.050
+raised to the n, is less than epsilon.
+
+00:52:39.030 --> 00:52:49.750
+And, for all n, bigger than or equal to m, for all x, so that delta is between less than 1.
+
+00:52:50.850 --> 00:52:51.830
+We get that.
+
+00:52:54.470 --> 00:53:00.770
+Q sub n, so it's not negative, minus 0, an absolute value, that's just Q sub n of x.
+
+00:53:05.110 --> 00:53:10.370
+Basically, n, this is less than or equal to square root of n, that's for this guy.
+
+00:53:10.890 --> 00:53:12.050
+1 minus x squared.
+
+00:53:13.810 --> 00:53:19.710
+This is getting smaller as I get closer to 1, so it's biggest at delta.
+
+00:53:23.310 --> 00:53:27.090
+And, how we chose m is, this is less than epsilon.
+
+00:53:28.610 --> 00:53:28.730
+Okay?
+
+00:53:35.370 --> 00:53:42.730
+Okay, so, now we're ready for the proof of the virus-trust approximation theorem.
+
+00:53:51.890 --> 00:54:07.110
+So, suppose f is continuous function on 0, 1, f of 0 equals 0, f of 1 equals 0.
+
+00:54:12.370 --> 00:54:13.110
+Okay?
+
+00:54:19.330 --> 00:54:30.690
+So, you know, this polynomial here is very concentrated at, you know, at 0, so, well, first off.
+
+00:54:30.690 --> 00:54:50.110
+Suppose f, and it's continuous here, so, you can check that if it's 0 there, and I extend it to be 0 outside of 0, 1, this is still a continuous function.
+
+00:54:50.110 --> 00:54:59.370
+I'm just defining it this way because I want to write certain symbols in a little bit without specifying exactly where the bounds of the integration are.
+
+00:55:00.510 --> 00:55:00.570
+Okay?
+
+00:55:01.590 --> 00:55:22.030
+So, we extend f by 0 outside of 0, 1, and this function f is continuous function on the real number line.
+
+00:55:23.870 --> 00:55:23.950
+Okay?
+
+00:55:25.770 --> 00:55:26.370
+Okay?
+
+00:55:29.950 --> 00:55:37.490
+So, we define, now we're going to define this polynomial, sequence of polynomials, piece of n.
+
+00:55:39.830 --> 00:55:50.990
+This is going to be equal to the integral from 0 to 1 of f of t times q sub n of t minus x dt.
+
+00:55:52.290 --> 00:56:06.170
+And just to remind you, this is equal to the integral from 0 to 1 of f of t times c sub n, 1 minus x minus t squared raised to the n dt.
+
+00:56:06.170 --> 00:56:24.370
+Okay, so this is just, you know, c sub n times this thing, if you expand everything out, is just a, you know, using the binomial theorem, this is equal to j equals,
+
+00:56:29.690 --> 00:56:31.950
+I'm just going to put a sum here, meaning a finite sum.
+
+00:56:31.950 --> 00:56:58.290
+Some numbers, a sub j, and times x, you know, to the j, times t to the, oh, just some finite numbers, a jk times x to the j, t to the k.
+
+00:56:58.290 --> 00:57:06.850
+All right? All I'm saying is, if you expand this out using the binomial theorem, you get this polynomial and x of j t sub k.
+
+00:57:07.310 --> 00:57:12.310
+Okay? And then this is getting integrated against f of t.
+
+00:57:13.350 --> 00:57:14.150
+All right?
+
+00:57:15.550 --> 00:57:17.970
+dt. And so this is in fact a polynomial.
+
+00:57:19.570 --> 00:57:31.830
+I'll give you, you know, it, okay, so let's write this out and be precise just so that you're convinced that it's a polynomial.
+
+00:57:31.830 --> 00:57:36.690
+This is equal to the integral from zero to one of f of t times c sub n.
+
+00:57:37.190 --> 00:57:46.890
+Now we use the binomial theorem. This is equal to j zero to n, n choose j.
+
+00:57:46.890 --> 00:58:07.330
+And then minus x minus t squared raised to the n minus j, or I could put j to j.
+
+00:58:07.330 --> 00:58:07.330
+
+
+00:58:13.970 --> 00:58:20.270
+Okay? And then dt.
+
+00:58:22.630 --> 00:58:28.650
+I'm not sure if this is even helping or anything, but just so that you see this is actually polynomial.
+
+00:58:28.650 --> 00:58:33.390
+f of t c sub n sum from j equals zero to n.
+
+00:58:34.190 --> 00:58:42.510
+And now sum from k equals zero to two j and choose j minus one to the j.
+
+00:58:46.010 --> 00:58:56.550
+Now two j choose k minus t to the k times x to the two j minus k.
+
+00:59:00.730 --> 00:59:02.990
+Okay? And then dt.
+
+00:59:03.530 --> 00:59:10.490
+So I have all this junk integrated dt and then this is x to the two j minus k, so that just pops out.
+
+00:59:10.490 --> 00:59:12.410
+So this is a polynomial.
+
+00:59:13.370 --> 00:59:21.730
+I mean, this is a polynomial, but then when it integrates against f of t, this x to the two j minus k comes out of the integral.
+
+00:59:22.150 --> 00:59:35.290
+And I get that times just all, you know, this becomes a sum of terms with x to the two j minus k outside this integral times f of t times integrated against minus two to the k.
+
+00:59:35.890 --> 00:59:44.270
+All right. I think I said more than I needed to there, but so the point is p sub n of x is a polynomial.
+
+00:59:46.530 --> 00:59:48.870
+Now, we can write this slightly differently.
+
+00:59:55.670 --> 00:59:59.470
+So p sub n of x, this is equal to,
+
+01:00:03.730 --> 01:00:06.050
+this as it was before.
+
+01:00:07.790 --> 01:00:11.250
+Now this, we changed variables and is equal to,
+
+01:00:14.290 --> 01:00:21.490
+so we do use substitution, now where u is equal to x minus t, and then I'm going to, you know, change the,
+
+01:00:30.530 --> 01:00:32.870
+dt, so what I did here was a change of variables.
+
+01:00:42.910 --> 01:00:47.150
+I said, u is equal to x minus t.
+
+01:00:48.290 --> 01:00:50.570
+I guess you could, if you like, t minus x.
+
+01:00:52.650 --> 01:00:56.510
+And then I just recalled, and then I just called u t then again.
+
+01:01:05.170 --> 01:01:11.310
+So I'm eventually looking at these polynomials only in the interval zero one.
+
+01:01:12.730 --> 01:01:26.850
+Okay, so this is what it looks like, but now, you know, this f of x plus t for t between minus x and one minus x,
+
+01:01:27.130 --> 01:01:34.890
+it's actually zero outside of that, so I can extend the integration to minus one and one.
+
+01:01:35.950 --> 01:01:46.430
+Again, with the understanding that I've extended f to be zero outside of zero one.
+
+01:01:48.970 --> 01:02:10.630
+So since f, y equals zero, or let me write it this way, since f of x plus t equals zero for t not n minus x and one minus x.
+
+01:02:11.850 --> 01:02:21.150
+Okay, so that was a lot of, you know, explaining for some stuff, but here, let me get to the point.
+
+01:02:23.270 --> 01:02:25.050
+What is piece of n really?
+
+01:02:25.270 --> 01:02:29.930
+So why should you expect this to converge to f?
+
+01:02:30.450 --> 01:02:32.170
+So this is a little discussion.
+
+01:02:35.390 --> 01:02:42.350
+So I said that, and this is for those who understood my comment about delta functions.
+
+01:02:44.810 --> 01:02:52.250
+You know, in Q sub n is very concentrated at zero, at t equals zero.
+
+01:02:52.730 --> 01:03:07.170
+Okay, so this, you should think of as being approximately like a delta function at t.
+
+01:03:07.830 --> 01:03:11.590
+If you don't know what a delta function is, or never heard of it, then forget the rest of this remark.
+
+01:03:11.590 --> 01:03:15.710
+But, and then I'll say something.
+
+01:03:15.870 --> 01:03:36.730
+So Q sub n kind of looks like a delta function, and therefore minus one of x plus t, q n of t, t t, should look more and more like f of x plus t, delta of t, dt.
+
+01:03:36.730 --> 01:03:49.610
+And what we know about a direct delta function is that when you integrate them against a function, you just pick up the function evaluated at zero, which is...
+
+01:03:54.330 --> 01:03:58.290
+Okay, so, you know, that's kind of why you expect it.
+
+01:03:58.290 --> 01:04:06.410
+I mean, if you look back at this picture of what the Q n's are looking like, they're concentrating more and more at zero.
+
+01:04:06.870 --> 01:04:17.230
+So all of the contribution to this integral here, which defines these polynomials, is happening at t equals zero.
+
+01:04:17.730 --> 01:04:20.290
+At t equals zero, I just pick up f of x.
+
+01:04:21.290 --> 01:04:33.130
+Okay? So that's why you should kind of expect these polynomials to converge to back to the function.
+
+01:04:34.390 --> 01:04:34.550
+Okay?
+
+01:04:37.710 --> 01:04:39.350
+So I think I can finish on this board.
+
+01:04:53.050 --> 01:04:57.170
+So this is a picture you should have seared in your mind. This is what the Q sub n's look like.
+
+01:04:58.630 --> 01:05:02.010
+That they're concentrating all of their mass right at the origin.
+
+01:05:02.590 --> 01:05:09.050
+And therefore, I should just pick up f at the point x.
+
+01:05:09.310 --> 01:05:16.150
+Since this is concentrating at the origin t equals zero, I should just pick up f of x plus t at t equals zero, which is f of x.
+
+01:05:17.550 --> 01:05:17.830
+Okay?
+
+01:05:19.110 --> 01:05:26.510
+And y f of x plus t, not some constant times f of x plus t. That's because the integral of Q sub n's is one.
+
+01:05:28.890 --> 01:05:34.070
+Okay. So now let's prove that the p-ins converge to f uniformly.
+
+01:05:47.830 --> 01:05:48.090
+All right?
+
+01:05:54.010 --> 01:05:56.170
+Okay. So let epsilon be positive.
+
+01:06:00.830 --> 01:06:08.910
+Since f is a continuous function on a closed and bounded interval, we know that it's uniformly continuous.
+
+01:06:15.290 --> 01:06:21.570
+And therefore, there exists delta positive such that.
+
+01:06:24.470 --> 01:06:26.110
+How am I writing this here?
+
+01:06:31.650 --> 01:06:48.310
+Such that if, sorry, this way for all zy so that z minus y less than delta, we get that f of z minus f of y is.
+
+01:07:01.530 --> 01:07:04.250
+Actually, we don't need, okay, so I mean, we don't need.
+
+01:07:06.150 --> 01:07:11.070
+So much, so much about f, but we'll go with this anyways.
+
+01:07:13.630 --> 01:07:17.670
+We really just know, okay, nevermind, I'll stop.
+
+01:07:18.210 --> 01:07:23.690
+So we know that f is uniformly continuous, so there exists a delta, so that I have this.
+
+01:07:23.690 --> 01:07:28.270
+Yeah, so less than epsilon over two.
+
+01:07:29.690 --> 01:07:35.370
+Okay. So z and y are then delta to each other, then f of z and f of y, no matter what z and y are,
+
+01:07:35.570 --> 01:07:37.110
+are then epsilon over two of each other.
+
+01:07:38.170 --> 01:07:51.350
+Okay. Now, since f is continuous, it has a maximum on this interval.
+
+01:07:53.070 --> 01:07:58.750
+Well, I should say since f is a continuous function, it has both a max and a min on this interval,
+
+01:07:58.910 --> 01:08:07.570
+and therefore there exists some number c such that.
+
+01:08:15.730 --> 01:08:19.030
+f of x is bounded by c for all x and 0, 1.
+
+01:08:22.190 --> 01:08:28.950
+Okay. All right. So now I have this delta coming from the uniform continuity of f,
+
+01:08:29.130 --> 01:08:32.230
+I have this c coming from the fact that it's bounded on this interval,
+
+01:08:32.230 --> 01:08:36.930
+and now I'm going to choose my m for the uniform convergence of the polynomials,
+
+01:08:37.150 --> 01:08:47.610
+just depending on these pieces of input, then as we showed since square root of n,
+
+01:08:48.370 --> 01:08:57.450
+1 minus delta square and converges to 0, this implies there exists an m, natural number,
+
+01:08:58.210 --> 01:09:01.910
+so that for all, and bigger than or equal to m,
+
+01:09:04.750 --> 01:09:17.690
+I get that square root of n, 1 minus delta square, raise to the n, is less than epsilon over 8c.
+
+01:09:19.330 --> 01:09:23.630
+Okay. All right.
+
+01:09:23.630 --> 01:09:29.490
+I claim this m works, that for all n bigger than or equal to m, for all x and 0, 1,
+
+01:09:29.610 --> 01:09:42.470
+p, n minus f is less than epsilon, and for all n bigger than or equal to m, for all x and 0, 1.
+
+01:09:44.210 --> 01:09:52.930
+If we look at piece of n of x minus f of x, we're going to use that,
+
+01:09:53.650 --> 01:09:58.430
+you know, this thing is an approximation to the identity, meaning it's, you know,
+
+01:10:01.510 --> 01:10:04.510
+essentially that it satisfies those three properties that I wrote a minute ago.
+
+01:10:04.510 --> 01:10:21.650
+So this is equal to integral from minus 1 to 1 of f of x plus t times qn of t dt minus f of x.
+
+01:10:24.710 --> 01:10:28.790
+What's the integral from minus 1 to 1 of qn sub t, that's equal to 1.
+
+01:10:28.790 --> 01:10:36.130
+So f of x is at times, so this is, you know, all of analysis is writing 1 or 0 in a certain way.
+
+01:10:38.370 --> 01:10:49.670
+Not all, but, so I can write this as f of x plus t, now minus f of x times qn of t.
+
+01:10:53.430 --> 01:11:00.290
+So, again, because the integral of q sub n of t equals 1, so again, if you just expand this out,
+
+01:11:00.410 --> 01:11:04.770
+this is f of x and integrating with respect to t, so I just pick up what I had before.
+
+01:11:07.910 --> 01:11:19.650
+Now by the triangle inequality for integrals, this is less than or equal to the integral from minus 1 to 1 of f of x plus t minus f of x times the absolute value of x times the integral of t equals 1.
+
+01:11:19.650 --> 01:11:27.790
+So, this is the value of q sub n of t, but since q sub n of t is non-negative, that's just q sub n of t.
+
+01:11:29.470 --> 01:11:32.930
+Now I'm going to split this integral up into two parts.
+
+01:11:35.150 --> 01:12:02.310
+This is equal to a part where t is less than or equal to, so it should minus delta, delta, f of x plus t minus f of x, q sub n of t dt, and then plus the other part, which I can write as,
+
+01:12:02.310 --> 01:12:10.810
+so it's a union of the two intervals now away from delta and out to 1.
+
+01:12:13.950 --> 01:12:23.910
+So, it's the sum of the integral over these two intervals, which I'm going to write as the integral over delta less than or equal to t is less than or equal to 1.
+
+01:12:24.910 --> 01:12:32.650
+And, times q n of t.
+
+01:12:38.370 --> 01:12:50.470
+Now, t is between minus delta and delta, and therefore x plus t minus x, and absolute value is less than delta.
+
+01:12:53.530 --> 01:13:10.430
+So, in this integral here, I want to note that if t is in this interval here, x plus t minus x equals t is less than delta in this here.
+
+01:13:10.430 --> 01:13:29.450
+So, since this guy, minus this guy, is less than delta in absolute value, I can use this uniform continuity part to say that this is less than epsilon over 2 q n of t dt.
+
+01:13:32.390 --> 01:13:44.230
+Plus, now, the absolute value of this guy is less than, by the triangle inequality, is less than or equal to the sum of the absolute values, which is less than or equal to 2 c.
+
+01:13:44.230 --> 01:13:50.810
+So, 1 and then 2 c.
+
+01:13:54.490 --> 01:14:03.990
+Because that's bounded by c, that's bounded by c. So, the absolute value of the difference is less than or equal to the sum of the absolute values, which is bounded by each of those bounded by c.
+
+01:14:09.070 --> 01:14:21.810
+Now, this is less than epsilon over 2 integral from, if I just integrate the whole thing from minus 1 to 1, that just gives me 1 plus 2 c times q n of t.
+
+01:14:21.810 --> 01:14:27.870
+So, the only thing on this interval is, again, so I should put delta there.
+
+01:14:29.970 --> 01:14:38.630
+2 c c sub n, 1 minus delta squared, raise to the n dt.
+
+01:14:46.010 --> 01:15:05.510
+So, there's no t here, so this is equal to epsilon over 2, because this integral is 1 plus this c sub n, remember, is less than the square root of n times 1 minus delta squared.
+
+01:15:05.510 --> 01:15:12.410
+And times the integral over this region dt, which I can make bigger by going from minus 1 to 1, that gives me 2.
+
+01:15:12.870 --> 01:15:19.290
+And this is equal to epsilon over 2 plus 4 c square root of n, 1 minus delta squared n.
+
+01:15:20.510 --> 01:15:27.250
+And this is less than epsilon over 2 plus epsilon over 2 equals epsilon.
+
+01:15:27.630 --> 01:15:28.970
+I think I have one minute to spare.
+
+01:15:29.450 --> 01:15:34.050
+So, this was quite an experience teaching to an empty room.
+
+01:15:34.730 --> 01:15:36.690
+I hope you did get something out of this class.
+
+01:15:39.390 --> 01:15:41.210
+Unfortunately, I wasn't able to meet a lot of you.
+
+01:15:41.570 --> 01:15:49.990
+And that's one of the best parts about teaching and being able to see you grasp in real time what I'm talking about.
+
+01:15:50.190 --> 01:15:56.370
+So, hopefully, this nightmare will end soon, and we'll get to see each other in the future.
+
+01:16:04.050 --> 01:16:05.970
+You
+

@@ -1,0 +1,1148 @@
+WEBVTT
+
+00:00:12.880 --> 00:00:16.340
+So let's continue our discussion of sequences of functions.
+
+00:00:27.660 --> 00:00:33.720
+So we had two different notions of convergence of sequences of functions.
+
+00:00:34.460 --> 00:00:37.280
+So the first notion was point wise convergence.
+
+00:00:40.560 --> 00:00:46.520
+So we have a sequence of functions fn from some set s to r.
+
+00:00:47.880 --> 00:00:52.200
+Another function, fixed function s from f from s to r.
+
+00:00:54.260 --> 00:01:01.720
+And then we say f converges to fn converges to f point wise,
+
+00:01:01.720 --> 00:01:10.800
+because if for every x and s, the sequence of real numbers converges to f of x.
+
+00:01:11.340 --> 00:01:23.780
+So if we're all x and s, the limit as n goes to infinity of fn of x equals f of x.
+
+00:01:24.400 --> 00:01:28.580
+So I take an x out of s, stick it into fn.
+
+00:01:28.820 --> 00:01:34.140
+So now I get a sequence of real numbers, and I should get f of x as n goes to infinity.
+
+00:01:35.400 --> 00:01:40.000
+And then we introduced a stronger notion of convergence of functions,
+
+00:01:42.800 --> 00:01:44.320
+which was the following.
+
+00:01:44.320 --> 00:01:53.140
+So we have a sequence going from s to r, function from s to r.
+
+00:01:53.760 --> 00:02:10.400
+Then we said fn converges to f uniformly on s, if somehow across the entire set,
+
+00:02:10.400 --> 00:02:12.960
+that fn gets close to s. Any f?
+
+00:02:13.620 --> 00:02:20.100
+So here, the statement says if I take us for each fixed x, eventually fn of x,
+
+00:02:20.100 --> 00:02:24.160
+so fn evaluated at that point is close to f of x.
+
+00:02:24.260 --> 00:02:31.440
+f evaluated at that point. But uniform convergence says fn is close to f across the entire set.
+
+00:02:31.440 --> 00:02:37.900
+So if for all epsilon positive, there exists natural number m,
+
+00:02:39.140 --> 00:02:45.960
+so that we're all in bigger than or equal to m, we're all x and s,
+
+00:02:47.800 --> 00:02:54.380
+fn of x minus f of x is less than epsilon.
+
+00:02:55.660 --> 00:03:01.240
+Now if you write out what this means in terms of epsilon m,
+
+00:03:01.320 --> 00:03:07.600
+remember this is a limit, so this is a limit of sequences, so this means something in terms of epsilon and m.
+
+00:03:07.920 --> 00:03:13.300
+This would say for all x and s, for all epsilon positive, there exists an m, so on.
+
+00:03:14.420 --> 00:03:19.540
+So the x appears at the front of this definition,
+
+00:03:19.540 --> 00:03:23.420
+while here for uniform convergence, it appears at the end.
+
+00:03:23.640 --> 00:03:36.640
+That is not just meaningless difference in the way you write the definition,
+
+00:03:37.080 --> 00:03:43.720
+meaning this is a stronger statement than if the x is appearing here,
+
+00:03:43.920 --> 00:03:45.820
+so what am I going on about?
+
+00:03:45.820 --> 00:03:55.120
+So first off, we proved last time that if I have a sequence of functions,
+
+00:03:55.120 --> 00:04:10.100
+again from some subset s to r, converging to f uniformly, then this implies fn converges to f point wise.
+
+00:04:15.700 --> 00:04:24.080
+But now what I'm going to prove is that in fact uniform convergence is something stronger than point wise convergence.
+
+00:04:24.320 --> 00:04:31.260
+In other words, this is a one way street. Point wise convergence does not imply uniform convergence.
+
+00:04:39.080 --> 00:04:48.940
+And we were just going to look at a very specific example, which I was going to state as a theorem,
+
+00:04:54.180 --> 00:04:55.840
+which is a following.
+
+00:04:58.380 --> 00:05:04.940
+fn of x, b, x to the n, and now we're looking on the unit interval 0, 1.
+
+00:05:09.500 --> 00:05:23.440
+And let f be the function that is 0 if x is in 0, 1, 1, x equals 1.
+
+00:05:29.420 --> 00:05:45.840
+So first off, let me from last time, or you can even just check by looking at the form of fn that fn converges to f point wise.
+
+00:05:47.840 --> 00:05:57.980
+If I take x in this interval here, so not equal to 1, then x is strictly less than 1.
+
+00:05:58.120 --> 00:06:02.520
+And if I raise it to a high enough power over and over again, that's converging to 0.
+
+00:06:02.620 --> 00:06:08.240
+So it converges to f of x 0. Now at 1, I just get 1 and that clearly converges to 1.
+
+00:06:09.220 --> 00:06:11.920
+So fn converges to f point wise.
+
+00:06:15.300 --> 00:06:29.060
+And so the claim is that for all, b between 0 and 1, fn converges to f.
+
+00:06:29.060 --> 00:06:32.040
+And I guess I could include 0. That would just be looking at one point.
+
+00:06:32.180 --> 00:06:37.640
+And not very interesting, but fn converges to f uniformly.
+
+00:06:40.560 --> 00:06:50.960
+And the second is fn does not converge to f uniformly on the whole interval, however.
+
+00:06:54.920 --> 00:07:03.720
+So maybe it's best to, again, draw this picture that you're supposed to think about when it comes to uniform convergence.
+
+00:07:03.720 --> 00:07:22.080
+So we have the limiting function fn, I mean f. And then we draw a little epsilon-size collar around the function f.
+
+00:07:23.420 --> 00:07:26.860
+And then uniform convergence, so this is f.
+
+00:07:28.140 --> 00:07:40.240
+Uniform convergence says that as long as I go far enough out, the graph of fn should be within this little epsilon collar.
+
+00:07:40.760 --> 00:07:45.160
+So that fn is getting close to f uniformly across the entire set.
+
+00:07:53.680 --> 00:08:01.780
+So number two will give us a chance to negate this definition of uniform convergence, which, like I said, you should always.
+
+00:08:03.100 --> 00:08:16.480
+So we're actually doing two things here. We're giving an example of uniform convergence and also a sequence of functions, which does not converge uniformly to this function.
+
+00:08:16.740 --> 00:08:21.580
+So we're doing both an example and non-example, which is the best thing to do for a new definition.
+
+00:08:21.580 --> 00:08:27.440
+So, for the proof of one, let's prove uniform convergence.
+
+00:08:34.320 --> 00:08:52.460
+So let b be in 0,1. Then the limit as n goes to infinity of b to the n is 0, which implies, okay, so now I'm getting ahead of myself.
+
+00:08:56.040 --> 00:09:08.420
+So now we want to prove uniform convergence of fn to f on, I didn't finish this statement, fn to f uniformly on, sorry about that, b.
+
+00:09:10.820 --> 00:09:17.340
+So I have uniform convergence on any smaller interval, other than 0,1.
+
+00:09:17.340 --> 00:09:31.460
+Okay, sorry about that if that looked a little weird. Okay, so then b in converges to 0 as n goes to infinity.
+
+00:09:32.200 --> 00:09:44.180
+Now we want to prove that fn converges to f uniformly on this interval 0b. So let epsilon be positive. We now have to find an m so that fn is close to 0,
+
+00:09:44.180 --> 00:10:05.240
+because f is 0 on such an interval. Now since b to the n converges to 0, there exists natural number m such that we're all n bigger than or equal to m.
+
+00:10:05.840 --> 00:10:26.900
+Then b to the n is less than epsilon. Then we're all n bigger than or equal to m. We get, and also for all x, 0b, we get that fn of x minus f of x.
+
+00:10:28.380 --> 00:10:46.160
+So b is less than 1. So when I stick it into f, I just get 0. This is equal to x to the n minus 0. And absolute value is just x to the n because we're on, we're looking at non-negative x.
+
+00:10:47.180 --> 00:10:58.220
+And now x is n, this interval 0b, so it's less than or equal to b. So x of the n is going to be less than or equal to b to the n. And this is less than epsilon.
+
+00:11:00.680 --> 00:11:19.420
+So just as when we looked at uniform continuity of a function, it was a statement like for all epsilon, there exists a delta, which just depends on basically the epsilon and the function.
+
+00:11:21.780 --> 00:11:34.280
+Now for uniform convergence, it looks kind of like pointwise convergence, except now for every epsilon you can find an m, which does not depend on the point x.
+
+00:11:34.280 --> 00:11:49.500
+So for every epsilon, you can find an m depending only on epsilon and maybe the function little f. But that doesn't depend on x. This n here that I chose m, dependent only on b.
+
+00:11:50.840 --> 00:11:55.580
+Not the point x, which I have to stick into this here.
+
+00:11:55.580 --> 00:12:18.440
+Okay. Okay. So now, let's prove number two. So first off, let's negate the definition so that we know what we're talking about.
+
+00:12:18.440 --> 00:12:35.220
+So f n does not converge to f uniformly on a set s if there exists a bat. So every for all becomes there exists.
+
+00:12:35.220 --> 00:12:49.540
+Okay. So if there exists some bad epsilon not positive so that we're all m, natural number, there exists an n bigger than or equal to m.
+
+00:12:50.540 --> 00:13:04.260
+And there exists an x in s so that f n of x minus f of x is bigger than or equal to epsilon not.
+
+00:13:04.960 --> 00:13:21.320
+Okay. So, you know, this is the negation but why should we not be surprised that f n does not converge to f uniformly on zero one if you believe this picture.
+
+00:13:21.320 --> 00:13:37.360
+So let's look at what's going on here. So let me draw now the graph of f.
+
+00:13:41.080 --> 00:13:46.260
+And let's say I take epsilon to be, I don't know, a fourth. Say.
+
+00:13:46.260 --> 00:13:56.700
+Okay. So.
+
+00:14:03.020 --> 00:14:09.520
+Okay. Now this is what my little epsilon neighborhood of f looks like.
+
+00:14:09.520 --> 00:14:26.720
+Or epsilon tube is, you know, it's right along or for epsilon equals a fourth say. It's, you know, a tube around zero up to x equals one. And then, you know, it's a little area around one.
+
+00:14:26.720 --> 00:14:43.060
+And now if I were to have uniform convergence, then as long as n is very large, f n has to be within this area that I've, that I have here. So, you know, in fact, let me shade it in.
+
+00:14:47.740 --> 00:14:53.060
+So, for f n large, it has to be within this region that I'm coloring in.
+
+00:14:53.060 --> 00:15:16.680
+All right. But now what do we know about x to the n? Well, you know, it starts at zero and ends at one and looks something like that, which means here always it leaves this, you know, epsilon two around f, this epsilon color, I guess.
+
+00:15:16.680 --> 00:15:21.680
+All right.
+
+00:15:21.680 --> 00:15:50.020
+epsilon f n leaves the shaded area, which is where it's supposed to stay. So I hope this, you know, intuitive def, you know, explanation is clear. And, and why it shouldn't be too big of a surprise that f n does not converge to f uniformly on zero one. We'll see another reason and little bit why it's impossible for f n to converge to f uniformly when we talk about the interchange of limits.
+
+00:15:50.020 --> 00:16:19.360
+But just using the definition we can prove that f n does not converge to f uniformly. So, all right. The negation is for all is that there exists a bad and epsilon zero so that we have all of this. So, you know, the point is to choose epsilon so that this never intersects with this epsilon neighborhood of the function down here.
+
+00:16:19.360 --> 00:16:34.500
+Never intersects with this epsilon neighborhood of just, you know, the point x equals one y equals one. So, let's choose epsilon not to be a fourth.
+
+00:16:39.740 --> 00:16:48.560
+Okay. So, now we have to prove for all n there exists to n so let m be a natural number.
+
+00:16:52.520 --> 00:17:10.100
+Choose n to be m and choose x to be, let's say, one over four to the one over m.
+
+00:17:13.920 --> 00:17:28.520
+Now, this is a number less than one so its mth root is less than one and also positive. Then this f of x equals zero.
+
+00:17:28.520 --> 00:17:53.580
+So, and f sub m of this x which is just one over four to the one over m now raised to the mth power is one over four which implies that f of m of x minus f of x is equal one fourth which equals epsilon zero.
+
+00:17:55.160 --> 00:17:59.080
+I guess if you like, you can write bigger than or equal to epsilon zero.
+
+00:18:02.180 --> 00:18:20.660
+Okay. So, yeah, basically if you choose any, so there was nothing special about epsilon zero being one fourth. You choose anything less than one that would do.
+
+00:18:20.660 --> 00:18:33.340
+Okay. Just, you can check that if I chose one half here, I could then choose this point x where f m is far away from f of x to be one over one half to the one half to the one over m.
+
+00:18:34.080 --> 00:18:38.300
+Okay. Just as long as I don't choose, you know, epsilon zero to be equal to one.
+
+00:18:46.960 --> 00:19:05.140
+Okay. So, so we have that example and, you know, we had another sequence of functions we had looked at last time,
+
+00:19:06.880 --> 00:19:14.140
+which were these functions that looked like little, that looked like tenths. I don't know why I'm making this axis bigger when it should be the other one.
+
+00:19:14.140 --> 00:19:35.100
+So, there's one, one over n, one over two n, and then way up here two n. So, at this point, and then it's piecewise linear.
+
+00:19:35.100 --> 00:19:50.000
+So, then it's just a straight line down to here. I'm not going to write down exactly the equation for each piece, but and then zero to one.
+
+00:19:50.960 --> 00:20:05.360
+So, this is f n, and we proved that, so last time we proved that f n converges to the function zero point wise.
+
+00:20:09.980 --> 00:20:28.800
+But it does not converge uniformly to zero. Again, what's the point? The point here is that, you know, if I were to draw a little epsilon collar around the function zero, it would look something like this.
+
+00:20:29.360 --> 00:20:42.860
+And f n would have to be within this little strip for all insufficiently large, but, you know, f n is getting taller and taller, so it always leaves, you know, kind of any strip that I put around the function zero.
+
+00:20:44.000 --> 00:20:53.140
+So, f n does not converge to zero uniformly. We can make a proof out of that, though. So, f n does not converge to zero uniformly.
+
+00:20:54.920 --> 00:21:05.160
+So, I should always tell you where I'm talking about, and this should be zero one.
+
+00:21:08.240 --> 00:21:23.120
+So, why not? Well, we can take any epsilon zero, really. So, let's choose epsilon zero to be one. Let m be a natural number.
+
+00:21:25.960 --> 00:21:41.740
+So, we should find n and an x, so that this inequality is satisfied. So, let's choose n to be m, x to be 1 over 2 m, this point where I peak, yeah.
+
+00:21:45.520 --> 00:21:58.720
+Then, f of m of x minus f of x, now, f here is just zero. The limiting function is zero. So, let me not even put f, let me put just zero.
+
+00:21:58.720 --> 00:22:12.640
+So, f m of 1 over 2 m, which equals 2 m, and this is certainly bigger than or equal to 1, which is epsilon zero.
+
+00:22:12.640 --> 00:22:38.180
+Okay? Now, and in a little bit, I'll give you a whole host of examples. It seems like I've only given you one example up to this point of functions which converge uniformly to zero to something.
+
+00:22:38.180 --> 00:22:49.740
+But, in a minute, I'll give you a very useful test to decide when a series involving functions converges uniformly.
+
+00:22:56.500 --> 00:23:09.700
+But, before we get to that, let's revisit these three questions that we asked in the last lecture in the context of power series, but now in this more general setting of convergence of functions.
+
+00:23:14.560 --> 00:23:38.760
+So, now what I'm talking about, and this is really, although I'm about to say may sound a bit alarming that we're now in essentially the last week of the class, and we're really getting to the first real part of analysis.
+
+00:23:38.760 --> 00:23:58.740
+So, I was talking with a professor from Duke one time, and he made this funny observation that somehow in math, and I think this is not just math, but this is a lot of science-based classes, are taught.
+
+00:23:58.740 --> 00:24:17.660
+But, you know, if you were to translate it into studying a book, it's like you spend a year studying, you know, introductions to a book, and then you spend a year studying middle parts of books, and then you spend another year studying the last parts of books.
+
+00:24:19.080 --> 00:24:30.180
+So, now here we're starting to get into the middle part of the book of analysis, not the textbook, we're at the end of that, but at least in the grand scheme of things, which is the interchange of limits.
+
+00:24:30.340 --> 00:24:35.960
+You have two limiting processes that you want to interchange.
+
+00:24:35.960 --> 00:24:54.700
+Okay, and analysis, you know, first God created the limit, and then man asked, can we interchange limits? And so, what do I mean by that? This is not always, you know, a thing you can do.
+
+00:24:54.700 --> 00:25:13.580
+So, and this is, at the very heart of analysis, when can we interchange limits? So, let me give you the simplest example. Let's say we have the following limit.
+
+00:25:14.980 --> 00:25:27.020
+So, I take the limit as k goes to infinity of the limit as n goes to infinity of n over k, n over k, plus 1. So, that's just a sequence depending on n and k.
+
+00:25:28.080 --> 00:25:46.720
+Now, as n goes to infinity, what do I get? This is just equal to, like in, you know, multiply the bottom by k to get rid of this one. So, then I just get n over n plus k. Remember, k is fixed. And then I take the limit as n goes to infinity. So, I get 1.
+
+00:25:47.460 --> 00:26:03.520
+So, I'm taking the limit as k goes to infinity of this expression. Now, for each k, when I take the limit as n goes to infinity, I get 1. So, I get 1 there. Now, what happens if I interchange the limit?
+
+00:26:04.480 --> 00:26:17.660
+And now, look at the limit as n goes to infinity of the limit as k goes to infinity of n over k, n over k, plus 1.
+
+00:26:18.600 --> 00:26:32.940
+Well, now, as k goes to infinity for each n. So, remember, I'm taking the limit as n goes to infinity of this expression, which is formally this expression, what the limits interchange.
+
+00:26:34.960 --> 00:26:47.440
+This is equal to 0 over 0 plus 1 equals 0. And these two do not equal each other. So, it's not always the case that you can interchange limits.
+
+00:26:51.180 --> 00:27:06.080
+That's the simple fact of life. And, you know, to be able to make certain statements, do certain computations, you know, you need to be able to interchange limits.
+
+00:27:06.080 --> 00:27:26.380
+And, you know, what kind of limits may be taking an infinite sum and integrating, or like we stated in the beginning, you know, power series are, in a sense, a certain limit. There are a limit of partial sums of, there are a limit of polynomials, right?
+
+00:27:27.300 --> 00:27:44.860
+And then, let's say, differentiation, that's a limit. So, if a natural question, like we said last time, is the derivative of this infinite sum, the infinite sum of the derivative. Those are two limiting processes, processes, which we're asking, can we interchange?
+
+00:27:44.860 --> 00:28:14.840
+Okay? So, the three questions, again, that I asked in terms of power series, I'm going to now frame, again, in this general setting. So, if f in from s to r, f from s to r, and f in converges to f, maybe point one, and f is the same.
+
+00:28:14.840 --> 00:28:23.240
+We have x and y are uniformly. So, let's leave this open ended for now, because these are the only two notions we have of convergence.
+
+00:28:30.700 --> 00:28:43.640
+And let me make, so suppose fn is from s to r, f is s to r, and fn converges to f point
+
+00:28:43.640 --> 00:28:51.400
+y is on, or uniformly. And so this sentence is not written very well, and fn is continuous
+
+00:28:51.400 --> 00:29:05.600
+for all n, then is f continuous. So suppose we have a sequence of continuous functions
+
+00:29:06.300 --> 00:29:13.180
+converging to another function f, either point y is or uniformly, is the limiting function
+
+00:29:13.180 --> 00:29:16.900
+continuous. And I'll explain in a minute why this is a limiting, you know, kind of asking
+
+00:29:16.900 --> 00:29:34.260
+can we interchange two limits. Second question is suppose fn from a b to r is differentiable
+
+00:29:35.420 --> 00:29:52.180
+for all n, f from a b to r. And we have that fn converges to f, you know, either point
+
+00:29:52.180 --> 00:29:58.760
+y is or uniform, we're leaving this open ended for now. And the derivatives also converge,
+
+00:29:58.760 --> 00:30:20.120
+say to some function g, then is f, differentiable, and is the limit of the derivatives equal
+
+00:30:20.120 --> 00:30:33.860
+to the derivative of the limit. And then the last question, so this is the third kind
+
+00:30:33.860 --> 00:30:47.360
+of main limiting process we've seen in this class, which is integration. Suppose fn
+
+00:31:02.900 --> 00:31:08.320
+converges to f again, maybe either point y is or uniformly, we're leaving this open
+
+00:31:08.320 --> 00:31:21.140
+ended for now, does the limit of the integral equal the integral of the limit.
+
+00:31:33.720 --> 00:31:40.580
+Now, again, I want you to, you know, it's really, I guess, more clear here, the fact that
+
+00:31:40.580 --> 00:31:46.960
+we're asking about interchanging two limits. So here we have this integration is just a symbol
+
+00:31:46.960 --> 00:31:52.320
+for taking this limiting process, right, where you take a sequence of partitions of a b with
+
+00:31:52.320 --> 00:31:57.820
+norm converging to zero, then the integral from a to b of fn, this is defined to be this limit
+
+00:31:57.820 --> 00:32:05.940
+of remonsums, right. So this is a limiting process here, although I'm writing it with this simple
+
+00:32:05.940 --> 00:32:11.980
+notation, so I'm asking it, can I take this limit as n goes to infinity, and can I interchange it
+
+00:32:11.980 --> 00:32:20.220
+with this limiting process. Now, for continuity, it's kind of maybe a little more hidden on what's
+
+00:32:20.220 --> 00:32:27.360
+the interchange of limits that you're really looking at. So it looks more like this, so remember,
+
+00:32:27.360 --> 00:32:50.560
+so for one, we're asking, you know, suppose x is in set s, xn is the sequence converging to x,
+
+00:32:58.340 --> 00:33:11.220
+then basically, can we do this? Now, I would like to show that f of x is equal to the limit as n goes
+
+00:33:11.220 --> 00:33:22.600
+to infinity of f of x of n, so let me actually make this a m, let me use two different, let's use a k.
+
+00:33:26.300 --> 00:33:33.100
+So if I compute limit as k goes to infinity of f of x of k, I would like to show that equals f of x,
+
+00:33:33.140 --> 00:33:38.940
+if I'm trying to show that the limit is continuous, assuming the functions that are converging to f are
+
+00:33:38.940 --> 00:33:44.140
+continuous, if I look at the limit as k goes to infinity, then I'm tempted to do the following that this is
+
+00:33:44.140 --> 00:33:55.620
+equal to the limit as k goes to infinity of the limit as n goes to infinity of f of x, assuming either
+
+00:33:55.620 --> 00:34:08.400
+point-wise convergence or uniform convergence, xk. And now, if I'm, you know, just being a little bit
+
+00:34:08.400 --> 00:34:17.920
+careless, I interchange limits and write this as the limit as n goes to infinity of the limit as k goes to infinity,
+
+00:34:18.160 --> 00:34:28.680
+so here is kind of where I'm asking, can I interchange limits? Again, this is not a proof, this is discussion on what is the
+
+00:34:28.680 --> 00:34:35.300
+interchange of limits that I'm looking at for question number one. Question number three is more clear, and then, you know,
+
+00:34:35.300 --> 00:34:42.040
+for this, once I've done this, you know, different stability will be a little bit clear on what is the, you know,
+
+00:34:42.180 --> 00:34:50.620
+interchange of limits I'm looking at. So let's say I was, you know, just doing whatever I like and going through this,
+
+00:34:50.720 --> 00:35:02.060
+then I would, you know, interchange these limits. And since each of these f's are continuous, then the limit as k goes to
+
+00:35:02.060 --> 00:35:14.180
+infinity of fn of x of k, and x of k converges to x, this just gives me fn of x. And so, and since fn again converges to f, in some sense,
+
+00:35:14.520 --> 00:35:25.800
+this should give me f of x, right? So what I'm asking is, was all this okay? Because at some point, at this point, in particular, I had to interchange a limit.
+
+00:35:26.460 --> 00:35:33.300
+Yeah? And we've just seen that we can't always do that. We can't always interchange limits and get the same thing.
+
+00:35:34.040 --> 00:35:41.240
+Here, we got one, when we interchange the limit, we got zero. So it's not always the case that I can interchange limits.
+
+00:35:41.500 --> 00:35:51.700
+This equality between this limit and the interchange limit is the big question mark. So that's the whole basis for question number one.
+
+00:35:54.700 --> 00:36:06.040
+Okay, so I hope that discussion wasn't, was clear enough. Now, the answer to these three questions is, in fact, yes.
+
+00:36:08.960 --> 00:36:11.360
+But only for uniform convergence.
+
+00:36:14.940 --> 00:36:19.780
+If f, if all, if the convergence,
+
+00:36:34.220 --> 00:36:48.160
+and this is the mode of convergence we must have, so that the answer to all of these three questions, which is, you know, will state and prove as theorems is, is our correct.
+
+00:36:51.640 --> 00:37:00.040
+Now, you know, the natural question is, what if we have a weaker hypothesis, namely, what if we only assume point wise convergence?
+
+00:37:01.260 --> 00:37:13.100
+Is the answer to any of these questions, yes. And, well, no. Okay, so the answer to all three of these questions is, no, if we only assume point wise convergence.
+
+00:37:35.260 --> 00:37:40.880
+So let's go through an example showing that each of these three questions is no.
+
+00:37:40.880 --> 00:37:49.260
+So, if we only assume point wise convergence. So let's look at an example showing one is no.
+
+00:37:49.260 --> 00:38:03.800
+So if we only assume point wise convergence, and we basically already have it on the board, fn of x to be x to the n on zero one.
+
+00:38:03.800 --> 00:38:12.120
+x is n.
+
+00:38:14.120 --> 00:38:28.880
+Okay, then each of these functions, so, and for all n, fn is a continuous function on zero one.
+
+00:38:31.440 --> 00:38:45.700
+fn converges to f point wise, but f itself is not a continuous function.
+
+00:38:47.380 --> 00:38:54.260
+Okay, so this provides an example of a sequence of functions which converges point wise to a function which is not continuous.
+
+00:38:54.260 --> 00:39:03.840
+Okay, again, what I was saying there in the answer is that if I have a sequence of functions which converges uniformly to a function f, then that function is continuous.
+
+00:39:04.720 --> 00:39:10.000
+Here, if we only assume point wise convergence, we may not get a continuous function in the end.
+
+00:39:10.420 --> 00:39:16.540
+All right, and this is what this example shows. fn of x equals x to the n. These are all continuous functions.
+
+00:39:16.540 --> 00:39:20.460
+They converge to a function which is not continuous point wise.
+
+00:39:21.740 --> 00:39:29.300
+Okay, and that's, you know, okay, I'll say something else in a minute.
+
+00:39:29.480 --> 00:39:31.880
+So let's look at example two now.
+
+00:39:32.780 --> 00:39:43.120
+Basically, we take the previous example and kind of integrate it to get an example of a sequence of functions with that converges and its derivative converges point wise.
+
+00:39:43.120 --> 00:39:57.880
+So, we're two take fn of x to be x to the n over n on zero one.
+
+00:39:59.420 --> 00:40:03.440
+Then, a couple of things.
+
+00:40:04.940 --> 00:40:06.860
+fn converges to zero.
+
+00:40:10.260 --> 00:40:18.620
+fn prime converges to the function f which is the same function from here.
+
+00:40:27.680 --> 00:40:29.320
+So let me actually make this g.
+
+00:40:34.680 --> 00:40:36.680
+Okay, and these are point wise.
+
+00:40:40.760 --> 00:40:50.600
+So I have a sequence of differentiable functions that converge point wise to something and the derivatives also converge point wise to something.
+
+00:40:50.600 --> 00:41:05.480
+And, but, so let's call f equals zero, but g is not equal to f prime.
+
+00:41:06.120 --> 00:41:09.040
+The derivative of f, the constant function zero is zero.
+
+00:41:09.580 --> 00:41:15.860
+g is equal to this function which is zero if x is n zero one and one if x is equal to one.
+
+00:41:15.860 --> 00:41:21.800
+So here we see that the derivative of the limit is not the limit of the derivatives.
+
+00:41:22.240 --> 00:41:26.160
+If we only assume point wise convergence of the functions.
+
+00:41:29.740 --> 00:41:37.020
+Now, the last example showing that three does not hold if we only assume point wise convergence is also on the board.
+
+00:41:37.120 --> 00:41:39.600
+It's the whole point of this one up there.
+
+00:41:39.600 --> 00:41:46.080
+So, let's go in the next board.
+
+00:42:11.580 --> 00:42:27.040
+So, here fn from zero to one to r is the function, this tent function, one over n, one over two n, two n.
+
+00:42:30.620 --> 00:42:44.900
+It's just piecewise linear so it's zero from one over n to one and it goes up to one over two n, two n and then back down to the origin.
+
+00:42:47.980 --> 00:42:54.500
+And so we know that fn converges to zero point wise.
+
+00:42:57.140 --> 00:42:59.520
+Now, the integral of zero is just zero.
+
+00:42:59.820 --> 00:43:03.460
+Let's look at the integral of fn from zero to one.
+
+00:43:08.220 --> 00:43:11.240
+The integral of zero one of fn.
+
+00:43:12.300 --> 00:43:26.880
+Now, if we were all together, this would be the point where I stop and ask if anybody can remember the area of a triangle, even though we're in this advanced analysis class.
+
+00:43:27.340 --> 00:43:34.060
+But I don't get to ask you that. I get to just ask myself that and I know the answer because I'm prepared and only because of that.
+
+00:43:34.200 --> 00:43:38.120
+This is one half base times the height.
+
+00:43:40.560 --> 00:43:55.160
+So, remember the integral is an area and I could write down the formula of what this function is and actually integrate it out using the fundamental theorem of calculus.
+
+00:43:55.160 --> 00:44:07.080
+But just go with me on this that the integral of fn is just the area of this triangle that has base starting at zero and going to one over n and it peaks at two n.
+
+00:44:07.080 --> 00:44:15.240
+So, the base is one over n. The height is two n.
+
+00:44:16.800 --> 00:44:22.240
+So, this equals one for all n. See, this is why I was making it peak.
+
+00:44:27.560 --> 00:44:38.260
+So, the integral from zero to one, which is just one for all n, does not converge to the integral of the limit.
+
+00:44:42.500 --> 00:44:50.300
+So, in this case, the limit of the integrals is not the integral of the limit.
+
+00:44:50.660 --> 00:44:55.760
+If we only, in what's the reason because we only have point wise convergence, right?
+
+00:44:56.380 --> 00:45:01.180
+Like I said a minute ago, the answer is yes to all three of these questions if the convergence is uniform.
+
+00:45:01.180 --> 00:45:09.820
+And what these three examples are supposed to show you is the answer is no if I only assume point wise convergence, the weaker notion of convergence.
+
+00:45:09.820 --> 00:45:11.760
+Okay.
+
+00:45:16.360 --> 00:45:23.440
+Okay. So, let's now prove some theorems.
+
+00:45:28.560 --> 00:45:31.900
+So, this first theorem addresses question one.
+
+00:45:37.040 --> 00:45:39.440
+Suppose f in from s to r.
+
+00:45:41.000 --> 00:45:49.720
+F from s to r. F in is continuous, meaning it's continuous at every point in s.
+
+00:45:49.720 --> 00:46:10.160
+For all n and f in converges to f uniformly on s.
+
+00:46:13.940 --> 00:46:18.840
+Then the conclusion is that f is continuous.
+
+00:46:18.840 --> 00:46:20.800
+Okay.
+
+00:46:20.800 --> 00:46:20.860
+Okay.
+
+00:46:27.880 --> 00:46:29.580
+All right. So, the proof.
+
+00:46:31.460 --> 00:46:42.540
+I mean, we've done several proofs of like this before, but for some reason, and at least I see in textbooks, for this proof, they always refer to it as an epsilon over three argument.
+
+00:46:42.540 --> 00:46:46.000
+And then it's the last time they call it an epsilon over three argument.
+
+00:46:50.240 --> 00:47:01.560
+So, we have to show f is continuous at every point in s. So, let c be a point in s. Let epsilon be positive.
+
+00:47:01.560 --> 00:47:09.960
+We have to find a delta so that for all x minus c less than delta, an absolute value, f of x minus f of c is less than epsilon.
+
+00:47:11.640 --> 00:47:22.100
+And what we're going to do is we're basically going to replace f by some fm for m large enough, and the fact that we have uniform convergence is what allows us to do that.
+
+00:47:22.100 --> 00:47:25.040
+So, let epsilon be positive.
+
+00:47:29.220 --> 00:47:37.340
+Since the fn is converged to f uniformly, there exists a natural number m.
+
+00:47:37.340 --> 00:47:55.840
+So, that for all n bigger than or equal to m for all y and s, fm of y minus f of y is less than epsilon over three.
+
+00:47:58.120 --> 00:47:58.640
+Okay.
+
+00:48:08.780 --> 00:48:16.140
+Okay. Now, this f sub capital m, I'm just going to fix it, so it should be n.
+
+00:48:16.140 --> 00:48:25.760
+But now, I mean, so this is for all n bigger than or equal to capital m. I really just need one. So, let's look at f sub capital m. That's a continuous function.
+
+00:48:28.460 --> 00:48:51.480
+Since f sub capital m is continuous, there exists a delta positive, so that for all x minus, if x is within distance delta to c.
+
+00:48:56.140 --> 00:49:06.880
+So, then I get that f sub m of x minus f sub m of c is less than epsilon over three.
+
+00:49:11.400 --> 00:49:26.600
+So, then this delta here, so I have been, okay, so I'm doing something what, you know, I stopped doing something which I was doing in all previous lectures when I would say there exists a delta not, choose delta to be this delta not, there exists a m zero, choose m to be this m zero.
+
+00:49:26.600 --> 00:49:36.980
+Now, you know, I'm actually saying, I've dropped that and stopped doing that because it should be clear from the context now what I'm choosing delta to be.
+
+00:49:36.980 --> 00:49:55.840
+So, then for all x minus c less than delta, so I'm saying that I'm now choosing this delta that came from here which came from f sub capital m. Capital m came from this what I needed here.
+
+00:49:57.940 --> 00:50:24.900
+So, now if I look at f of x minus f of c, which I want to show is less than epsilon. Now, if I add and subtract f sub m of x and f sub m of c and use the triangle inequality, this is less than or equal to f of x minus f sub m of x plus f sub m of x minus f sub m of c.
+
+00:50:24.900 --> 00:50:41.540
+So, f of c plus f sub m of c minus f of c. Okay, so I just added and subtracted f sub m of x and f of m of c and then use the triangle inequality.
+
+00:50:42.900 --> 00:50:59.540
+Now, by this estimate here, since I'm looking at a particular n basically equal to m, I have this is less than epsilon over 3 no matter what y is in this set.
+
+00:50:59.540 --> 00:51:13.240
+So, then certainly for x, I will have this is less than epsilon over 3. How I chose delta remember was to guarantee that this would be less than epsilon over 3 as long as x minus c is less than delta.
+
+00:51:15.380 --> 00:51:22.400
+And then of course, this one is less than epsilon over 3 again because of this uniform closeness of f m to f.
+
+00:51:25.720 --> 00:51:37.440
+And therefore, for all absolute value of x minus c less than delta, I have f of x minus f of c is less than epsilon. And that finishes the proof.
+
+00:51:38.880 --> 00:51:54.960
+So, if we have uniform convergence, then the uniform, so you know, a good theorem should be able to be stated in one sentence and what this or at least some sort of simple to an easy way to remember it.
+
+00:51:54.960 --> 00:51:59.140
+But this says is the uniform limit of continuous functions is continuous.
+
+00:52:03.560 --> 00:52:08.100
+So, the uniform limit of continuous functions is continuous.
+
+00:52:10.700 --> 00:52:20.900
+Next, we'll show in a sense the uniform limit of differential functions is continuous.
+
+00:52:20.900 --> 00:52:35.380
+So, this, we're going to do kind of a simplest statement of that although one can make stronger statements.
+
+00:52:38.040 --> 00:52:41.800
+But in practice, this one suffices really.
+
+00:52:49.620 --> 00:52:50.980
+So, I'm going to do a little bit of this.
+
+00:52:51.140 --> 00:52:52.780
+I'm going to do a little bit of this.
+
+00:52:53.620 --> 00:52:54.140
+I'm going to do a little bit of this.
+
+00:52:59.060 --> 00:53:01.180
+So, let's see what would be the short way of saying that.
+
+00:53:07.120 --> 00:53:10.260
+The integral of the uniform limit is the limit of the integrals.
+
+00:53:11.220 --> 00:53:20.320
+Something like that. That would be the short and sweet way of stating the following theorem which is, so this is answered at three.
+
+00:53:20.460 --> 00:53:21.880
+So, we skipped over two for a minute.
+
+00:53:21.880 --> 00:53:35.880
+So, let's see what we can do.
+
+00:53:37.500 --> 00:53:40.060
+Let's see what we can do.
+
+00:53:40.060 --> 00:53:40.360
+So, let's see what we can do.
+
+00:53:40.360 --> 00:54:07.820
+We can do a little bit of this.
+
+00:54:07.820 --> 00:54:17.760
+It is a continuous function. So, we can ask about the relationship between the integral of f and the limit of the integrals of f in.
+
+00:54:20.920 --> 00:54:33.140
+Then, the limit as n goes to infinity, integral from a to b of f in equals the integral from a b to f.
+
+00:54:33.980 --> 00:54:39.020
+So, the integral of the uniform limit is the limit of the integrals.
+
+00:54:49.340 --> 00:54:53.560
+So, this is just a sequence of numbers and we want to show it converges to this number here.
+
+00:54:53.560 --> 00:54:56.680
+So, let's do this the old fashioned way.
+
+00:54:59.700 --> 00:55:08.860
+The epsilon be positive since f in converges to f uniformly.
+
+00:55:10.660 --> 00:55:23.120
+There exists a natural number m such that we are all in bigger than or equal to m.
+
+00:55:24.600 --> 00:55:25.920
+We are all x and a b.
+
+00:55:28.240 --> 00:55:33.180
+f in of x minus f of x is less than epsilon.
+
+00:55:37.160 --> 00:55:40.320
+Now, basically, what we are going to do is integrate this inequality.
+
+00:55:41.100 --> 00:55:44.860
+Remember, integration, unlike differentiation, integration respects inequalities.
+
+00:55:48.160 --> 00:55:58.260
+For all n, bigger than or equal to m, meaning I am choosing m as this guy for this proving this limit.
+
+00:55:59.060 --> 00:56:18.400
+If I look at the integral from a b of f in minus the integral of a b to f, this is by linearity of the integral of f in minus f, absolute value, by the triangle inequality for integrals which we proved.
+
+00:56:18.540 --> 00:56:23.680
+This is less than or equal to the integral from a b of f in minus f.
+
+00:56:25.360 --> 00:56:28.780
+And what do we know for all n bigger than or equal to m?
+
+00:56:30.920 --> 00:56:36.680
+This function here, f in of x minus f of x in absolute value, is bounded by epsilon.
+
+00:56:38.120 --> 00:56:42.440
+Therefore, the integral of this side is going to be less than the integral of the right side.
+
+00:56:43.080 --> 00:56:46.580
+I did this wrong. Let's put a b minus a over this.
+
+00:56:47.960 --> 00:56:54.560
+So this is less than the integral a b epsilon over b minus a.
+
+00:56:55.780 --> 00:57:05.000
+And so then I just pick up this number times the length of the interval, which equals epsilon.
+
+00:57:05.900 --> 00:57:14.420
+So for all n bigger than or equal to m, the absolute value of this integral of f of f sub n minus the integral of f is less than epsilon.
+
+00:57:18.300 --> 00:57:22.580
+So the integral of the uniform limit is the limit of the integrals.
+
+00:57:23.680 --> 00:57:32.340
+So now we'll use this to do the last interchange of limits, theorem that I had in mind.
+
+00:57:32.660 --> 00:57:35.560
+So number two.
+
+00:57:37.720 --> 00:57:46.300
+So, and again, this is kind of the simplest statement and maybe easiest to prove that one can make stronger statements and prove them.
+
+00:57:46.300 --> 00:57:48.440
+But in most cases, this suffices.
+
+00:57:49.440 --> 00:57:54.840
+So, suppose f in a b to r.
+
+00:57:54.840 --> 00:58:10.260
+So this is continuously differentiable.
+
+00:58:10.260 --> 00:58:12.180
+So, we'll call n.
+
+00:58:14.900 --> 00:58:18.540
+F and g, these are two functions from a b to r.
+
+00:58:21.120 --> 00:58:29.140
+And f in converges to f uniformly on a b.
+
+00:58:31.120 --> 00:58:35.760
+And the derivatives converge uniformly to this function g.
+
+00:58:42.360 --> 00:58:43.000
+Okay.
+
+00:58:45.000 --> 00:58:47.400
+And in fact, I don't even need this.
+
+00:58:48.780 --> 00:58:50.340
+You could just say point wise.
+
+00:58:54.120 --> 00:59:02.000
+So, only need uniform convergence of the derivatives if I'm assuming everything is continuously differentiable.
+
+00:59:02.420 --> 00:59:05.460
+If I'm assuming the sequences are continuously differentiable.
+
+00:59:05.460 --> 00:59:14.740
+Then f is differentiable.
+
+00:59:15.200 --> 00:59:17.600
+In fact, continuously differentiable.
+
+00:59:18.000 --> 00:59:20.600
+Meaning the derivative is continuous.
+
+00:59:30.280 --> 00:59:33.500
+And the derivative of f is equal to g.
+
+00:59:33.640 --> 00:59:42.120
+Meaning that the uniform limit of the derivatives converges to the derivative of f.
+
+00:59:43.720 --> 00:59:44.300
+Okay.
+
+00:59:46.980 --> 00:59:53.800
+So, again, what this says is the uniform limit of, or at least in essence, in spirit is not exactly what it says,
+
+00:59:53.820 --> 00:59:59.960
+but it says the uniform limit of continuously differentiable functions is differentiable.
+
+01:00:01.260 --> 01:00:01.560
+Okay.
+
+01:00:02.100 --> 01:00:07.460
+And at the derivative of the uniform limit is the limit of,
+
+01:00:07.460 --> 01:00:13.940
+is, so, the derivative of the uniform limit is the uniform limit of the derivatives.
+
+01:00:15.060 --> 01:00:15.160
+Okay.
+
+01:00:19.420 --> 01:00:22.600
+So, to prove this, we use the fundamental theorem of calculus.
+
+01:00:27.820 --> 01:00:30.740
+So, let x be a point in a b.
+
+01:00:32.460 --> 01:00:45.320
+And by the fundamental theorem of calculus, if I want f in of x, by not want, but take f in of x minus f in of a,
+
+01:00:45.680 --> 01:00:50.420
+this is equal to the integral from a to x of f in prime.
+
+01:00:51.060 --> 01:00:54.800
+Right. The integral of the derivative gives me back the function evaluated at the end points.
+
+01:00:59.320 --> 01:01:12.020
+And therefore, since I know point-wise convergence, these two numbers converge point-wise to f of x and f of a, respectively.
+
+01:01:12.380 --> 01:01:20.500
+So, f of x minus f of a equals the limit as n goes to infinity of f of n of x minus f in of a.
+
+01:01:23.340 --> 01:01:35.100
+And this is equal to, just by the previous expression, the limit as n goes to infinity of the integral from a to x of f prime.
+
+01:01:36.480 --> 01:01:38.520
+Now, f in prime, sorry.
+
+01:01:41.180 --> 01:01:45.460
+Now, these f in primes are converging to g, this function g uniformly.
+
+01:01:45.960 --> 01:01:49.340
+And therefore, the integrals converge. Right. That's what we just proved.
+
+01:01:51.720 --> 01:02:01.020
+So, this equals the integral of the limit. And therefore, so we started off with f of x minus f of a.
+
+01:02:01.360 --> 01:02:04.120
+And we showed it's equal to the integral from a to x of g.
+
+01:02:04.620 --> 01:02:12.180
+So, f of x equals f of a plus the integral from a to x of g.
+
+01:02:14.160 --> 01:02:23.980
+But now, again, by the fundamental theorem of calculus, this implies that f is differentiable.
+
+01:02:26.320 --> 01:02:32.940
+And the derivative of f of x, the derivative of f is equal to the derivative.
+
+01:02:33.480 --> 01:02:39.520
+So, remember, f of a, that's just the constant equals the derivative of this function, which is g.
+
+01:02:41.080 --> 01:02:41.760
+Okay.
+
+01:02:50.360 --> 01:02:55.460
+I think we have just enough time to prove one more.
+
+01:03:00.600 --> 01:03:01.720
+Pretty good theorem.
+
+01:03:06.620 --> 01:03:08.280
+Pretty good. It's very good.
+
+01:03:13.980 --> 01:03:27.520
+And, you know, it was, and then we'll use it in our next lecture to discuss, you know, or at least conclude some answers that we originally asked about power series.
+
+01:03:30.620 --> 01:03:35.080
+So, this theorem is due to the godfather, Vierstras.
+
+01:03:36.720 --> 01:03:40.900
+I don't know. Did I refer to him as a godfather or Riemann as a godfather?
+
+01:03:41.080 --> 01:03:44.240
+Anyways, I think it was Vierstras that I refer to as godfather.
+
+01:03:45.480 --> 01:03:47.100
+Proof the following theorem.
+
+01:03:49.260 --> 01:03:58.840
+You know, when can you guarantee uniform convergence for at least series of functions, which are, you know, limits of partial sum, so limits of functions.
+
+01:04:00.040 --> 01:04:10.460
+And you prove this, you know, basically so he could come up with a whole host of examples for continuous functions, which are nowhere differentiable.
+
+01:04:12.580 --> 01:04:24.060
+We kind of gave a proof of this theorem when we looked at that example, or we were talking about different ability, but we didn't state it as a theorem there.
+
+01:04:24.060 --> 01:04:50.660
+So, let's take a sequence of functions, Fj from S to R, and suppose there exists a sequence, Mj, such that two things hold.
+
+01:04:50.660 --> 01:04:52.960
+So, these are a sequence of positive numbers.
+
+01:04:57.120 --> 01:05:03.600
+So, I don't know why I just erased that.
+
+01:05:03.600 --> 01:05:14.180
+So, we have a sequence of functions from S to R, and a sequence of positive numbers, so that these numbers dominate the Fj's.
+
+01:05:14.180 --> 01:05:31.580
+So, and two, they're summable. So, sum from J equals 1 to infinity.
+
+01:05:31.580 --> 01:05:40.920
+So, is convergent.
+
+01:05:51.160 --> 01:05:59.320
+And then the conclusion, and since I've been using numbers for conclusions and letters for hypotheses, let's go back to that.
+
+01:05:59.320 --> 01:06:05.820
+Then we have two conclusions. The first one is pretty obvious for all X and S.
+
+01:06:15.120 --> 01:06:25.440
+This series, where I just take X and stick it into F's object, this converges absolutely.
+
+01:06:27.920 --> 01:06:44.380
+And the second is, if I define now the function to be the sum of these series, then the partial sums converge to F uniformly.
+
+01:06:44.380 --> 01:07:08.420
+It converges to F uniformly as n goes to infinity on S.
+
+01:07:09.960 --> 01:07:29.240
+So, if I have a sequence of functions, bound to each one bounded by some number M sub J positive number, and, or, or, not negative number, at least, and the series involving the M sub J's are convergent, then the series of the F sub J's converges uniformly.
+
+01:07:29.240 --> 01:07:50.920
+That's a conclusion. So, in our example of that continuous, nowhere, differentiable functions, each of these F sub J's were cosine of 160 J X over 4 to the J.
+
+01:07:52.360 --> 01:08:03.780
+So, before we prove this theorem, we can combine all of the, what we've done so far to state the following.
+
+01:08:03.780 --> 01:08:31.220
+Now, function F of X equals sum from J equals 1 to infinity, and I can make it something else, but let's say sine of 40 K over 2 to the K X is continuous on, let's say, 0, 1 for now.
+
+01:08:33.320 --> 01:08:56.160
+Or, let's say, on R. Why is that? Each of these F sub, I'm really butchering this, trying to go fast, each of these functions, this is 2 to the J, not 2.
+
+01:08:57.600 --> 01:09:15.520
+Each of these functions is bounded by 1 over 2 to the J, and 1 over 2 to the J is sumable. So, then by this theorem, this convergence, so this function here, is the uniform limit of the partial sums.
+
+01:09:15.520 --> 01:09:27.860
+The partial sums are just, you know, a finite sum involving sine, so their continuous functions. So, F is the uniform limit of continuous functions, and is therefore continuous.
+
+01:09:29.720 --> 01:09:40.280
+So, we could have used this theorem to prove that function, we looked at back in different stability, it was continuous, but we didn't have uniform convergence and all that back then.
+
+01:09:40.280 --> 01:09:56.060
+So, we just proved it by hand, but, you know, using this, so this theorem, you know, gives you a big class of sequences of functions which converge uniformly to some function.
+
+01:10:01.120 --> 01:10:25.240
+So, 1, so let's prove this quickly. So, 1 follows from, what is it following? It follows from the assumption A, B, in the comparison test.
+
+01:10:28.160 --> 01:10:49.200
+If I take an x and s, F sub J of x is bounded by M sub J, and M sub J is sumable, this series converges, so by the comparison test, the sum with absolute values here for each fixed x converges, and that's absolute convergence.
+
+01:10:49.200 --> 01:10:59.860
+So, now let's show that the partial sums converge to the limit uniformly.
+
+01:11:01.980 --> 01:11:27.760
+So, let epsilon be positive since this sum converges, there exists an M natural number, so that remember we have this koshi criterion for
+
+01:11:27.760 --> 01:11:34.320
+n, I guess we don't have to have, so that what?
+
+01:11:38.460 --> 01:12:04.300
+Sum from n equals M plus 1, infinity of M sub J, so J, which is equal to, I chose a poor letter, so this is the same.
+
+01:12:04.300 --> 01:12:23.160
+So, this M here should not, let's change this to an n. So, this is less than epsilon, so the point is that the tail is small, the sum from J equals M plus 1 to infinity of M sub J is less than epsilon.
+
+01:12:30.900 --> 01:12:52.720
+Then for all n, bigger than or equal to this capital N, for all x and s, if I look at the limit, which is F of x, this is sum of the series minus sum from J equals 1 to N, this is equal to, now F of x is equal to the whole sum,
+
+01:12:52.720 --> 01:13:14.820
+so minus this first part, this is equal to sum from J equals N plus 1 to infinity of F sub J of x, and by the triangle inequality, which does hold for convergent series, this is less than or equal to sum from J equals N plus 1 to infinity of,
+
+01:13:28.060 --> 01:13:44.800
+F sub J of x, and by assumption A, this is less than or equal to sum from J equals N plus 1 to infinity of M sub J, and since N is bigger than or equal to,
+
+01:13:44.800 --> 01:14:02.420
+and I have this is less than or equal to sum from J equals capital N plus 1 to infinity of M sub J, and this thing, we chose capital N so that that's less than epsilon, and that's the end.
+
+01:14:02.420 --> 01:14:14.020
+So we chose, again, this N was chosen depending only on this series, it didn't depend on any x at any, you know, it didn't depend on the point x and s, all right?
+
+01:14:14.900 --> 01:14:41.920
+So I had to go through that kind of quickly because I'm up against the time crunch, but the point is for this theorem is that if I have a sequence of functions that are bounded by, you know, these numbers M sub J, so this is, I was going so fast I didn't even label it correctly, this is called the buyer's straws M test,
+
+01:14:42.660 --> 01:14:58.480
+because you see M here. If I have a sequence of functions bounded by some numbers M sub J, and those M sub J's are summable, then what it says is that the series of the functions converges uniformly.
+
+01:14:58.480 --> 01:15:02.560
+All right, so we'll stop there.
+

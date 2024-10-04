@@ -1,0 +1,1085 @@
+WEBVTT
+
+00:00:12.640 --> 00:00:22.720
+Okay. So, last time we were talking about sequences. And I introduced the notion of a limit
+
+00:00:22.720 --> 00:00:29.860
+of a sequence. So we say that x n converges to x if for all epsilon positive there exists
+
+00:00:29.860 --> 00:00:34.800
+an m, a natural number such that for all little n bigger than or equal to capital m, we
+
+00:00:34.800 --> 00:00:43.400
+have x of n minus x is less than epsilon. So what this definition says is that given
+
+00:00:43.400 --> 00:00:48.280
+any little bit of tolerance as long as I go far enough out in the sequence, the entries
+
+00:00:48.280 --> 00:00:54.600
+are getting within that tolerance to x. Okay. And when we, when x n converges to x, we'll
+
+00:00:54.720 --> 00:01:00.900
+write x is equal to the limit as n goes to infinity of x sub n or using this notation
+
+00:01:00.900 --> 00:01:12.320
+x sub n arrow x. Okay. And so I said before that if you ever have a reasonably complicated
+
+00:01:12.320 --> 00:01:17.560
+or interesting definition you should try to come up with examples and negate it. So,
+
+00:01:20.200 --> 00:01:26.040
+the end of last time we saw a few examples of at least one example of a convergent sequence.
+
+00:01:26.860 --> 00:01:31.600
+Let's negate this definition because then we'll also come up with an example of a sequence
+
+00:01:31.600 --> 00:01:39.640
+which is not converged. And so the negation of this definition is that x n
+
+00:01:47.380 --> 00:01:54.660
+converges to x. What does this mean? So this is the actual negation part. If there exists
+
+00:01:55.280 --> 00:02:01.740
+an epsilon positive. So whenever we negate a for all it becomes there exists and whenever
+
+00:02:01.740 --> 00:02:08.260
+we negate there exists it becomes for all. So there exists some bad epsilon zero positive.
+
+00:02:09.840 --> 00:02:24.620
+Such that for all natural numbers n there exists an n bigger than or equal to m such that x
+
+00:02:24.620 --> 00:02:33.380
+n minus x is bigger than or equal to this bad epsilon not in distance. Okay. So we have a
+
+00:02:33.380 --> 00:02:37.720
+picture that goes along with convergence. We can have a picture that goes along with a
+
+00:02:37.720 --> 00:02:47.680
+sequence not converging to x. So this means if I go out within this bad epsilon not and if I go
+
+00:02:49.280 --> 00:02:58.580
+arbitrarily out in the sequence I can always find an element x of n which is not in that interval.
+
+00:02:58.580 --> 00:03:28.560
+Okay. And we use this negation to prove a certain sequence does not converge to x. But let's go
+
+00:03:28.560 --> 00:03:34.560
+to the limit. So again how does the proof go? You have to verify the definition of the limit. I
+
+00:03:34.560 --> 00:03:42.600
+mean there's nothing else that we have to use right now. So let epsilon be positive. And now
+
+00:03:42.600 --> 00:03:51.140
+off to the side over here I'm going to do a little bit of work to show you how exactly in practice
+
+00:03:51.140 --> 00:03:58.200
+one would find such a capital M or choose a capital M to get that 1 over n squared plus 30 n plus
+
+00:03:58.200 --> 00:04:06.460
+1 would be less than epsilon for n bigger than or equal to capital M. So typically how this works
+
+00:04:06.460 --> 00:04:13.460
+is unlike in calculus where you have some inequality that you want to get and then you solve for n.
+
+00:04:14.820 --> 00:04:21.380
+And analysis what's great is that you can replace that thing you want to make small by something
+
+00:04:21.380 --> 00:04:30.920
+simpler and then solve that inequality. What do I mean? So I want what I want to do. I want to find
+
+00:04:30.920 --> 00:04:40.480
+M so that if this bigger than or equal to M then so I'm saying the limit is zero so I want to show
+
+00:04:42.380 --> 00:04:51.880
+1 over n squared plus 30 n plus 1 is less than epsilon. Okay. Now I could try to solve this
+
+00:04:51.880 --> 00:05:01.080
+inequality for n but this is a quadratic function and imagine I put 20 there so I can't exactly
+
+00:05:01.080 --> 00:05:10.080
+solve exactly for n to guarantee this but what's great about analysis is that I just I don't have to
+
+00:05:10.080 --> 00:05:19.300
+work that hard. I could start with this thing which I want to bound by epsilon replace it by
+
+00:05:19.300 --> 00:05:24.720
+something bigger and then find capital M so that that bigger thing is less than epsilon. So what do
+
+00:05:24.720 --> 00:05:35.220
+I mean? So let's start with this thing 1 over n squared plus 30 n plus 1. So this one is only
+
+00:05:35.220 --> 00:05:46.460
+making things bigger. I'm going to do this very slowly. So this is less than or equal to this
+
+00:05:46.460 --> 00:05:54.800
+because for this I've just added one to the denominator and 1 over n squared plus 30 n this
+
+00:05:54.800 --> 00:05:59.260
+certainly looks a little bit simpler to solve for n less than epsilon but I can make it even simpler
+
+00:05:59.260 --> 00:06:03.880
+by dropping the n squared because n squared is positive so that's only making the bottom bigger.
+
+00:06:06.940 --> 00:06:12.700
+Okay. So I have 1 over 30 n and this is certainly less than or equal to 1 over n.
+
+00:06:12.700 --> 00:06:24.320
+All right so what does this computation show? This shows that if 1 over n is less than epsilon
+
+00:06:24.320 --> 00:06:31.300
+then this implies that 1 over n squared plus 30 n plus 1 is less than epsilon.
+
+00:06:32.340 --> 00:06:38.940
+Okay. All right if this thing is less than epsilon then by this string of inequalities this
+
+00:06:38.940 --> 00:06:43.940
+thing will be less than epsilon. So we choose capital M so that we get this.
+
+00:06:45.020 --> 00:06:49.700
+Okay. Now when we actually write the proof it'll look something like this but the you know
+
+00:06:49.700 --> 00:06:56.120
+actual style of the proof is a little bit different and if you didn't see this it would just
+
+00:06:56.120 --> 00:07:02.280
+seem like I pulled this capital M out of nowhere but this is the thinking that goes behind it.
+
+00:07:02.840 --> 00:07:05.980
+Let epsilon be positive. Now I'll tell you how to choose capital M.
+
+00:07:09.040 --> 00:07:11.180
+Choose M, a natural number.
+
+00:07:13.260 --> 00:07:17.700
+So that so we wanted for all n bigger than or equal to capital M 1 over n is less than epsilon.
+
+00:07:19.080 --> 00:07:24.380
+So this will certainly be true if n is bigger than or equal to M capital M so that 1 over
+
+00:07:24.380 --> 00:07:32.680
+capital M is less than epsilon. And the reason we can choose capital M like this again
+
+00:07:32.680 --> 00:07:37.420
+whereas it's coming from it's coming from the Archimedean property of the real numbers.
+
+00:07:40.140 --> 00:07:44.980
+Okay so we've chosen capital M now we need to show that this capital M works
+
+00:07:47.460 --> 00:07:58.580
+in for all n bigger than or equal to capital M. If I look at 1 over n squared plus 30 n plus
+
+00:07:58.580 --> 00:08:08.740
+1 minus 0 my proposed limit this is equal to 1 over n squared plus 1 and this is less than or
+
+00:08:09.020 --> 00:08:18.880
+equal to if I drop n squared and 1 30 n which is less than or equal to 1 over n which is less than or equal to 1 over capital M which is less than epsilon.
+
+00:08:20.580 --> 00:08:21.280
+Okay.
+
+00:08:35.860 --> 00:08:46.860
+Okay so if something of a non-example let's show that the sequence minus 1 to the n
+
+00:08:49.180 --> 00:09:03.040
+dnc does not converge not democratic national committee does not converge so this is just a sequence minus 1 1 minus 1
+
+00:09:03.040 --> 00:09:18.860
+and so on. Okay so we have to show it does not converge meaning for every x and r we'll show that x
+
+00:09:18.860 --> 00:09:23.540
+proof so
+
+00:09:34.300 --> 00:09:48.040
+let x be an r and what do we want to show minus 1 to the n does not converge
+
+00:09:48.040 --> 00:10:02.620
+okay to x okay and we'll use this definition so this definition means we need to find a bad epsilon not.
+
+00:10:03.700 --> 00:10:18.020
+Okay and here's the kind of thinking that goes along with this there's 1 there's minus 1 this sequence just keeps alternating right so so intuitively there's no one
+
+00:10:18.020 --> 00:10:32.560
+in the way that every element of the sequence can be getting or every entry and the sequence can be getting close to some single x so what's the idea the idea is that the distance between these two guys is always 2.
+
+00:10:34.660 --> 00:10:47.700
+Okay so somehow the distance between every entry or basically some entry has to be within distance.
+
+00:10:47.700 --> 00:11:13.000
+If it's if this is within distance 1 say to a given x then this will be greater than or equal to 1 in distance to x okay so you can imagine x is over here minus 1 is within distance 1 to x but then 1 would be greater than distance 1 to x okay so our bad epsilon not what's going to be 1 as we'll see.
+
+00:11:16.620 --> 00:11:28.320
+Let epsilon not equals 1 that's our bad epsilon so now we have to show for all capital M and natural number there exists a little n bigger than or equal to capital M so that we have that inequality so.
+
+00:11:29.820 --> 00:11:57.900
+Let M be a natural number then what do we see so then this says there exist an n greater than or equal to capital M and I will show that n is in fact either capital M or capital M plus 1
+
+00:12:00.020 --> 00:12:20.700
+then 2 which is the distance between minus 1 to the m and minus 1 to the m plus 1 is less than or equal to now using the triangle inequality I add and subtract x and then use the triangle inequality.
+
+00:12:31.140 --> 00:12:50.560
+So I have the sum of two numbers is bigger than or equal to 2 and the only way that can happen is if one of these numbers is bigger than or equal to 1 if both of these numbers are less than 1 then the sum is less than 2 and I would have 2 is less than 2 that's not possible so one of these numbers has to be bigger than or equal to 1
+
+00:13:08.680 --> 00:13:18.220
+and therefore I could take n equal to capital M if this is bigger than or equal to 1 or if this is bigger than or equal to 1 I take a little n to be capital M plus 1.
+
+00:13:19.740 --> 00:13:20.740
+So that's the end of that.
+
+00:13:26.420 --> 00:13:40.620
+All right so that's good for examples for now. Let's prove a general theorem about convergent sequences namely that if I have a convergent sequence then it's bounded.
+
+00:13:57.240 --> 00:14:18.480
+And let me just give you a quick reminder of what being bounded means for a sequence i.e. exists some number such that fall in x n is less than or equal to capital B.
+
+00:14:21.420 --> 00:14:31.780
+Now as beginning students of math what types of questions should we start asking ourselves.
+
+00:14:36.480 --> 00:14:51.600
+So one of the types or a type of question that we should ask when we come across a theorem that is a one way street meaning if something happens and something else happens it does the converse hold.
+
+00:14:51.600 --> 00:14:58.020
+So namely if I assume x sub n as a bounded sequence does this imply that x n is convergent.
+
+00:15:00.800 --> 00:15:13.980
+So if somebody ever hear the words does a converse hold that's what they mean. Now for this statement this is false. If x n is bounded implies x n is convergent that's false because we have an example right there of a bounded sequence.
+
+00:15:13.980 --> 00:15:25.160
+This sequence here minus one to the end is bounded since I mean in absolute value this sequence one for all n so we could take B equals one.
+
+00:15:26.080 --> 00:15:30.140
+So minus one to the end is a bounded sequence which is not convergent so the converse is not hold.
+
+00:15:30.140 --> 00:15:41.700
+So let's prove the theorem and let me draw a little picture to go along with it of kind of what's going on.
+
+00:15:43.140 --> 00:15:53.840
+So here is zero let's imagine let me make this picture a little bit bigger before I go into the proof.
+
+00:15:59.560 --> 00:16:08.920
+So let x be the limit so this is not the proof yet this is just a more discussion.
+
+00:16:10.660 --> 00:16:28.140
+So if this x sub n is converging to x then let's say I go out distance one to x then all of the x sub n's eventually have to land in this strip here.
+
+00:16:31.140 --> 00:16:53.320
+So x sub n in bigger than or equal to some capital M. So I know that they're all within distance one to x so in absolute value they'd be bounded by let's say for this picture it'd be x plus one but if this was over there capital it would be the absolute value of x plus one.
+
+00:16:53.320 --> 00:16:59.760
+So that takes care of all x sub n's within bigger than or equal to M and then there's only finite limit.
+
+00:17:03.260 --> 00:17:21.480
+Guys to deal with maybe there's a bigger one out here x of m minus one to deal with and that's how we define our number is by the absolute value of x plus one plus the absolute value of these finite limit.
+
+00:17:21.480 --> 00:17:25.360
+So that's how many and then that would be something that's bigger than or equal to every element in the sequence.
+
+00:17:25.660 --> 00:17:38.760
+So how does that's the picture that goes with it how do we write how do we take that picture to prove.
+
+00:17:44.460 --> 00:17:58.720
+So, it's close x and converges to x that's our assumption and there exists a natural number m such that we're all in bigger than or equal to capital M.
+
+00:18:02.300 --> 00:18:13.320
+x of n minus x is within distance one or x of n is within distance one to x then we're all in bigger than or equal to capital M.
+
+00:18:14.040 --> 00:18:31.920
+If we look at the absolute value of x sub n add and subtract x and now use the triangle inequality this is less than or equal to absolute value of x sub n minus x plus the absolute value of x equals one plus x.
+
+00:18:32.860 --> 00:18:43.080
+So, for all entries in the sequence past this point capital M they're bounded in absolute value by one plus x that's just a number.
+
+00:18:44.920 --> 00:19:00.540
+So, then we just have to take care of the one up to capital M minus one guys we just have to find a number bigger than those guys in this number and we'll have found a B.
+
+00:19:00.540 --> 00:19:18.680
+So, then let's take B to be x of 1 plus x of 2 plus x of capital M minus 1 plus this.
+
+00:19:31.220 --> 00:19:39.160
+For all n and natural number the absolute value of x of n is less than or equal to B.
+
+00:19:39.700 --> 00:19:52.640
+Because if n is less than capital M then it's absolute value is bounded by one of these it's absolute value is equal to one of these and therefore less than or equal to one of these plus some non negative numbers.
+
+00:19:53.540 --> 00:19:58.540
+And if n is bigger than or equal to capital M then we have this bound that we use.
+
+00:20:00.040 --> 00:20:06.760
+And this number is certainly less than or equal to capital B again because it's this number plus a sum of non negative numbers.
+
+00:20:23.720 --> 00:20:31.140
+Now, in general there's no like easy like easily checkable criterion for a sequence to converge.
+
+00:20:32.240 --> 00:20:34.580
+All we can do is verify the definition.
+
+00:20:38.040 --> 00:20:50.120
+But there are some sequences which are you can easily check or figure out if they converge just by telling if they're bounded those are what are called monotone sequences.
+
+00:20:50.120 --> 00:21:02.740
+So, this is in some sense the class of sequences that does kind of satisfy the converse of that theorem I stated a minute ago.
+
+00:21:02.740 --> 00:21:29.440
+So, sequence x of n is monotone increasing if for all natural numbers little n.
+
+00:21:30.900 --> 00:21:34.020
+And x of n is less than or equal to x of n plus one.
+
+00:21:34.460 --> 00:21:44.880
+So, this means that x of one is less than or equal to x of two is less than or equal to x of three and so on.
+
+00:21:54.220 --> 00:22:04.220
+Sequences monotone decreasing if we have the other inequality.
+
+00:22:04.220 --> 00:22:06.520
+So, things are getting smaller.
+
+00:22:08.240 --> 00:22:11.260
+X of n is bigger than or equal to x of n plus one.
+
+00:22:30.860 --> 00:22:41.100
+And if we have a sequence which is monotone increasing or monotone decreasing.
+
+00:22:43.600 --> 00:22:46.100
+So, it's one or the other.
+
+00:22:46.100 --> 00:22:55.080
+Say x n is monotone or monotonic.
+
+00:23:00.120 --> 00:23:11.080
+So, it's simple enough to come up with examples of sequences which are monotone increasing monotone decreasing or neither.
+
+00:23:11.080 --> 00:23:21.700
+So, one over n. So, this is just one, one half, third, fourth.
+
+00:23:22.560 --> 00:23:26.460
+This is monotone decreasing.
+
+00:23:27.820 --> 00:23:35.800
+And if I take minus this sequence then I get that reverse is basically all of the inequalities.
+
+00:23:35.800 --> 00:23:37.820
+And I get a monotone increasing one.
+
+00:23:38.260 --> 00:23:42.740
+So, then this is minus one, minus a half, minus a third, minus a fourth.
+
+00:23:45.460 --> 00:23:46.420
+Monotone increasing.
+
+00:23:46.820 --> 00:23:52.740
+And then something that's not is we've already come across that minus one to the n.
+
+00:23:56.380 --> 00:23:57.040
+And so.
+
+00:24:02.680 --> 00:24:15.920
+And so, the theorem about monotone sequences is that there is a simpler criterion than the definition for determining when they're convergent or if you like.
+
+00:24:15.920 --> 00:24:19.160
+They satisfy the converse of this theorem up here.
+
+00:24:20.160 --> 00:24:44.180
+So, monotonic sequence is convergent if and only if it is bounded.
+
+00:24:44.180 --> 00:24:47.880
+So, we proved a minute ago that convergent sequences are bounded.
+
+00:24:48.120 --> 00:24:50.860
+So, for monotonic sequences, converse holds.
+
+00:24:54.380 --> 00:24:55.640
+So, let's do the proof of this.
+
+00:24:55.740 --> 00:24:59.820
+I'm going to do the proof for monotone increasing sequences.
+
+00:25:00.320 --> 00:25:05.760
+And as an exercise, I'll leave it to you to do the proof for monotone decreasing sequences.
+
+00:25:10.080 --> 00:25:19.200
+So, suppose X of n is a monotone increasing sequence.
+
+00:25:22.760 --> 00:25:28.820
+So, there's two directions to prove convergence if and only if bounded.
+
+00:25:28.820 --> 00:25:35.020
+So, we have one direction meaning convergence implies bounded.
+
+00:25:35.160 --> 00:25:44.420
+This is just the previous theorem where we proved that every convergent sequence is bounded, not just monotonic sequences.
+
+00:25:46.000 --> 00:25:49.480
+So, the meat is in proving the converse direction.
+
+00:25:49.480 --> 00:25:54.580
+And in fact, we'll be able to pick out what the limit is of this sequence.
+
+00:26:03.480 --> 00:26:08.600
+So, suppose X of n is bounded.
+
+00:26:13.180 --> 00:26:26.980
+Then if I look at the set of entries, so not the sequence, but if I look at the set of values that this sequence takes, so X of n is a natural number.
+
+00:26:27.040 --> 00:26:30.640
+This is now a set, subset of the real numbers.
+
+00:26:34.180 --> 00:26:36.560
+This is a bounded set.
+
+00:26:42.840 --> 00:26:50.860
+Meaning it's bounded above and below.
+
+00:26:50.860 --> 00:27:01.520
+Because there exists some capital B so that X of n is an absolute value less than or equal to capital B for all n, so that means X of n is between B and minus B.
+
+00:27:02.080 --> 00:27:02.580
+Okay?
+
+00:27:07.540 --> 00:27:09.880
+So, let's picture again that goes with this.
+
+00:27:10.400 --> 00:27:13.160
+So, we have these X of n's.
+
+00:27:13.920 --> 00:27:15.880
+X of 2, X of 3.
+
+00:27:15.980 --> 00:27:18.900
+We know that they cannot go past a certain B.
+
+00:27:20.820 --> 00:27:27.040
+And they're steadily increasing, but they can't keep strictly.
+
+00:27:28.560 --> 00:27:40.580
+They can't increase without bound, so not only that, they're bounded by some number.
+
+00:27:42.080 --> 00:27:45.360
+X, which I'll define to be the supremum of this set.
+
+00:27:46.860 --> 00:27:50.660
+And these guys are just getting in essence, so this is a picture, let me know.
+
+00:27:51.900 --> 00:27:53.820
+Let me try to explain to you what's going on.
+
+00:27:53.820 --> 00:28:03.980
+If X is the soup of this set of entries, then what do I know about X of n?
+
+00:28:05.500 --> 00:28:11.140
+I mean X is that if I go a little bit to the left of X, so let me draw this again.
+
+00:28:13.340 --> 00:28:16.600
+Okay, so let me back up a minute here.
+
+00:28:19.200 --> 00:28:26.360
+So, since this set is bounded in R, it has a supremum in R.
+
+00:28:33.540 --> 00:28:37.600
+And what I claim is that this supremum is in fact the limit of this sequence.
+
+00:28:38.300 --> 00:28:38.460
+Okay?
+
+00:28:38.540 --> 00:28:40.500
+This is a supremum of a set.
+
+00:28:40.940 --> 00:28:43.040
+I'm saying it's the limit of the sequence.
+
+00:28:43.040 --> 00:28:45.780
+So what's the thinking here?
+
+00:28:47.000 --> 00:28:56.000
+So X is the supremum of all the entries in X of n, so nothing's ever going to be bigger than some tolerance X plus epsilon,
+
+00:28:56.000 --> 00:28:58.200
+so we just need to worry about what's to the left of it.
+
+00:28:59.700 --> 00:29:06.700
+And we need to find a capital number M so that all the X of n's are in this interval here.
+
+00:29:06.700 --> 00:29:07.560
+Okay?
+
+00:29:11.160 --> 00:29:26.520
+Because we're trying to show that the X of n's converge to X, the supremum of this guy.
+
+00:29:26.520 --> 00:29:30.880
+So let's walk through this by this picture.
+
+00:29:31.100 --> 00:29:32.380
+So X is the supremum.
+
+00:29:33.380 --> 00:29:38.560
+Nothing's bigger than X, so all of the X of n's are to the left of X plus epsilon.
+
+00:29:39.120 --> 00:29:41.320
+So now we just need to worry about X minus epsilon.
+
+00:29:42.120 --> 00:29:50.080
+Now, since X is the supremum of this set, X minus epsilon can't be an upper bound for the set of entries of X of n.
+
+00:29:50.080 --> 00:29:58.180
+So that means there has to exist some X of n so that it's bigger than X minus epsilon.
+
+00:29:59.920 --> 00:30:04.520
+But now this is where we use the fact that this is a monotone increasing sequence.
+
+00:30:05.960 --> 00:30:14.580
+Because then if n is bigger than or equal to capital M, then X of n is strictly to the right of X of m, or it's equal to X of n.
+
+00:30:17.800 --> 00:30:22.600
+And still less than or equal to X because X is the supremum of all the entries.
+
+00:30:23.340 --> 00:30:27.560
+So then for n bigger than or equal to capital M, they all have to lie in this interval.
+
+00:30:27.840 --> 00:30:32.040
+And that's why the sequence converges to the supremum of this set.
+
+00:30:32.280 --> 00:30:39.000
+So we're using in a crucial way the fact that this sequence is monotonic increasing.
+
+00:30:40.980 --> 00:30:43.760
+So it proves this claim. Let epsilon be positive.
+
+00:30:51.760 --> 00:31:08.700
+Then since X minus epsilon is not an upper bound for this set X of n, there exists an M not natural number.
+
+00:31:08.700 --> 00:31:17.860
+So that X of n minus epsilon is less than X of m not is less than or equal to X.
+
+00:31:20.140 --> 00:31:24.780
+And we'll choose M to be this M not.
+
+00:31:29.400 --> 00:31:37.980
+Then for all n bigger than or equal to m, we have X of n minus epsilon, which is less than X of m not.
+
+00:31:38.340 --> 00:31:45.940
+And because n is bigger than or equal to capital M, and this is a monotone increasing sequence, X of m not is less than or equal to X of n.
+
+00:31:45.940 --> 00:31:59.140
+And because X is the supremum of the set of all entries of the sequence, this is less than or equal to X, which is less than X plus epsilon.
+
+00:32:00.220 --> 00:32:03.980
+Or to summarize so there should not be X of n. That should be X minus epsilon.
+
+00:32:03.980 --> 00:32:10.780
+Or X minus epsilon is less than X of n is less than X plus epsilon.
+
+00:32:10.940 --> 00:32:15.380
+And that's the same as showing the absolute value of X of n minus X is less than X of n.
+
+00:32:19.120 --> 00:32:30.420
+Now what's the change for monotone decreasing is that we'll be able to identify the limit of the sequence as being the imp, the infimum of this set.
+
+00:32:32.600 --> 00:32:34.380
+But I'll leave that to you as an exercise.
+
+00:32:57.140 --> 00:33:04.360
+So let's use this real quick to prove the limit of a little bit more interesting sequence than the first one.
+
+00:33:04.800 --> 00:33:27.820
+Now one over this one, which is reasonably interesting, I guess, but typically in math we just don't prove theorems for the sake of proving theorems.
+
+00:33:28.820 --> 00:33:34.360
+Typically there's some concrete reason we do things.
+
+00:33:34.680 --> 00:33:42.160
+There's some concrete sequence we're trying to prove converges or has a certain property or doesn't have a certain property.
+
+00:33:45.760 --> 00:33:52.880
+And the basic one is, if you like, a geometric sequence.
+
+00:33:52.880 --> 00:34:13.500
+So if C is a positive number between 0 and 1, then we'll prove that this sequence, C to the n, is convergent and it converges to 0.
+
+00:34:17.580 --> 00:34:33.240
+And we'll prove if C is bigger than 1, then the sequence C to the n is unbounded, in particular, can't converge.
+
+00:34:42.460 --> 00:34:48.600
+So let's go in reverse order, let's prove that if C is bigger than 1, then this thing is unbounded.
+
+00:34:49.040 --> 00:34:52.680
+It doesn't require 1, but it's shorter than 1, and we can go ahead and do it.
+
+00:34:53.140 --> 00:35:00.360
+And we'll use this fact that we proved, I think in the first lecture or first or second lecture, using induction.
+
+00:35:04.000 --> 00:35:06.540
+So what does it mean to show something is unbounded?
+
+00:35:06.660 --> 00:35:08.320
+Again, we get to use our negation skills.
+
+00:35:08.320 --> 00:35:28.320
+It means that, so what do we want to show, for all B, bigger than or equal to 0, there exist an n, a natural number, so that C to the n is bigger than B.
+
+00:35:40.380 --> 00:35:45.480
+Okay, now how are we going to find this n? This seems like a complicated thing.
+
+00:35:50.220 --> 00:36:01.900
+So let's replace it by something simpler. Again, this is analysis, which means we get to use our wits and try to replace complicated things by simpler things and work with the simpler things.
+
+00:36:01.900 --> 00:36:10.020
+So let me do a little bit of, again, this is off to the side, kind of how would one thing through this?
+
+00:36:11.460 --> 00:36:28.920
+If you look at C to the n, remember we have this inequality from infinite time ago that 1, that as long as X is bigger than or equal to minus 1, then I get 1 plus X to the n is bigger than 1 plus n times X.
+
+00:36:30.500 --> 00:36:32.460
+Okay, for all natural numbers n.
+
+00:36:37.480 --> 00:36:58.900
+Okay, so that means C to the n, which is equal to 1 plus C minus 1 to the n, so this is my X is bigger than or equal to 1 plus n times C minus 1, which is bigger than or equal to n times C minus 1.
+
+00:36:58.900 --> 00:37:06.180
+You see? So if I want to make this big, it suffices to make this big.
+
+00:37:07.880 --> 00:37:10.180
+Okay? So that's what I'll do.
+
+00:37:10.180 --> 00:37:24.820
+So let n be a natural number such that n is bigger than b over C minus 1.
+
+00:37:27.220 --> 00:37:27.700
+Okay?
+
+00:37:35.640 --> 00:37:39.700
+Then now this we did off to the side, we'll just put in the proof now.
+
+00:37:41.940 --> 00:38:01.920
+And C to the n equals 1 plus 1 minus C to the n is bigger than or equal to 1 plus n times C minus 1, which is bigger than or equal to n times C minus 1, which is bigger than b over C minus 1 times C minus 1 equals b.
+
+00:38:07.120 --> 00:38:15.620
+Okay? Okay, so now let's prove the first claim that if C is between 0 and 1, then the limit is n goes to infinity of C to the n equals 0.
+
+00:38:16.620 --> 00:38:28.040
+So first I want to prove the following claim that we in fact have a decreasing sequence, which is bounded below by 0.
+
+00:38:28.040 --> 00:38:45.900
+So claim for all n, 0 is less than C to the n is less than, I should say, C to the n plus 1 is less than C to the n.
+
+00:38:46.840 --> 00:38:47.480
+Okay?
+
+00:38:53.300 --> 00:39:05.540
+So the proof of this claim is a very simple induction argument. So we'll do this by induction. So we have the base case n equals 1.
+
+00:39:05.540 --> 00:39:22.880
+So we are assuming that C is between 0 and 1. And if I multiply through by C, I conclude that 0 is less than C squared is less than C.
+
+00:39:24.020 --> 00:39:32.800
+And that's the n equals 1 case. And the inductive step is essentially the same proof.
+
+00:39:38.580 --> 00:39:42.860
+Suppose 0 is less than C to the n plus 1 is less than C to the n.
+
+00:39:45.800 --> 00:39:57.120
+Then multiplying through by C, we get that 0 is less than C to the n plus 2 is less than C to the n plus 1, which is n equals n plus 1.
+
+00:39:58.460 --> 00:40:07.500
+Okay? Here we're using this fact here. Okay? That C is positive so it doesn't flip the inequalities. So I can multiply through and preserve the inequalities.
+
+00:40:09.000 --> 00:40:25.820
+Okay? So this shows that this sequence is monotone decreasing and it's bounded below by 0. And in fact bounded because,
+
+00:40:34.080 --> 00:40:42.660
+because, because, C to the n in absolute value, these are all positive. It's equal to C to the n. And,
+
+00:40:43.820 --> 00:40:51.600
+C to the n is less than C to the n minus 1, which is less than C to the n minus 2, so on and so on, which is less than C.
+
+00:40:53.640 --> 00:41:04.300
+So it's bounded. I guess I could have built that into this inequality and proved that as well, but that's okay.
+
+00:41:06.540 --> 00:41:27.220
+So it has a limit. So by the previous theorem, as a limit, and I'll call it L. And now what I want to show is that L is 0.
+
+00:41:34.300 --> 00:41:48.780
+And how we'll do that is one of these analysis tricks where, not really tricks, but rather than show that L is directly equal to 0, we'll show that the absolute value of L is less than epsilon for every epsilon positive.
+
+00:41:49.020 --> 00:41:51.400
+And therefore it has to be 0, because it's just a fixed number.
+
+00:41:57.500 --> 00:42:03.180
+So let epsilon be positive. Again, we're going to show that the absolute value of L, which is just a fixed number, is less than epsilon.
+
+00:42:04.520 --> 00:42:07.260
+And therefore capital L has to be 0.
+
+00:42:12.800 --> 00:42:33.520
+Then there exists, since this sequence converges, an m, a natural number, such that for all n bigger than or equal to capital m, C to the n minus L is less than 1 minus C times epsilon over 2.
+
+00:42:35.580 --> 00:42:49.220
+Now, maybe you're wondering why I chose, why didn't I just use epsilon here? Well, in the end, it's just going to come out to this being less than epsilon and absolute value.
+
+00:42:49.560 --> 00:42:55.420
+Otherwise, I would have come out with less than epsilon times some number, and I did away with that number by choosing a different number here.
+
+00:42:58.180 --> 00:43:09.500
+So, now we compute that if I look at 1 minus C times the absolute value of L, this is equal to L minus C times L.
+
+00:43:11.360 --> 00:43:29.340
+And this is less than or equal to L minus C to the capital m plus plus 1 plus C to the n plus 1 minus C to the L.
+
+00:43:29.920 --> 00:43:45.460
+And by the triangle inequality, this is less than or equal to L minus C to the n plus 1 plus C to the n plus 1 minus C to the L, so I can pull out a C, which is positive, so I can get L.
+
+00:43:47.480 --> 00:43:55.820
+Now, m plus 1 is bigger than m, so it satisfies this inequality, and so does this one.
+
+00:43:57.300 --> 00:44:07.480
+And therefore, this is less than epsilon over 2 times 1 minus C plus C times epsilon over 2 times 1 minus C.
+
+00:44:07.480 --> 00:44:20.660
+And this is less than, so C is less than 1, so this whole thing is less than epsilon over 2 times 1 minus C plus another epsilon over 2, so I get epsilon over 2 times 1 minus C.
+
+00:44:26.240 --> 00:44:41.960
+And thus, the absolute value of L is less than epsilon. And since epsilon was arbitrary, that implies the absolute value of L is equal to 0, i.e. L is equal to 0.
+
+00:44:51.660 --> 00:45:11.460
+So that's a very concrete application of some of these theorems we've been proving, which is really the only real reason one proves theorems is you typically have a concrete example of something in mind that you want to study.
+
+00:45:13.540 --> 00:45:23.060
+But in order to study it often requires some general machinery, i.e. theorems.
+
+00:45:33.820 --> 00:45:40.920
+So now we'll talk a little bit about sequences obtained from other sequences.
+
+00:45:40.920 --> 00:45:54.240
+So these are called sub sequences obtained from a single sequence.
+
+00:45:55.860 --> 00:45:59.040
+So what do I mean by this? Let me give you the precise definition.
+
+00:46:05.500 --> 00:46:23.180
+So we start off with a sequence and an increasing sequence of integers in sub k.
+
+00:46:32.600 --> 00:46:36.860
+So let me just say what this means rather than write out the word and then say what it means.
+
+00:46:37.860 --> 00:46:52.940
+So this is the sequence of natural numbers, which are strictly increasing.
+
+00:47:00.420 --> 00:47:15.260
+So the index is not n, but the index is k.
+
+00:47:27.540 --> 00:47:33.580
+Subsequence of the original sequence, x sub n.
+
+00:47:37.100 --> 00:47:40.580
+So how should you view sub sequences of a sequence?
+
+00:47:41.860 --> 00:47:49.600
+You should think that I line up all the entries of x of my original sequence, x sub n.
+
+00:47:50.600 --> 00:47:55.820
+And then I just start picking entries out of this sequence.
+
+00:47:57.540 --> 00:48:02.100
+But every time I make a choice, I have to move to the right and make another choice.
+
+00:48:03.860 --> 00:48:10.380
+That's what I was just saying there expresses this condition that this sequence of natural numbers is increasing.
+
+00:48:10.700 --> 00:48:12.860
+So I pick an entry in the sequence.
+
+00:48:13.620 --> 00:48:17.720
+That's going to be my first guy, the first element of my new sub sequence.
+
+00:48:18.360 --> 00:48:23.800
+And then I move to the right and maybe I pick the next one, maybe I pick one three down.
+
+00:48:24.400 --> 00:48:29.140
+I pick that one and then I move to the right of that one and pick a new one.
+
+00:48:30.180 --> 00:48:32.300
+And then I move to the right of that one and pick another one.
+
+00:48:33.720 --> 00:48:37.380
+So if you want to generate a sub sequence from an original sequence,
+
+00:48:38.860 --> 00:48:40.320
+how do you think about this?
+
+00:48:40.500 --> 00:48:43.080
+Again, line them all up. Start picking entries.
+
+00:48:43.260 --> 00:48:47.860
+But every time you pick an entry, you have to move to the right and pick in order to pick your next entry.
+
+00:48:52.320 --> 00:48:54.860
+So let me give you some examples and non-examples.
+
+00:48:55.980 --> 00:49:07.220
+So for example, if our original sequence is 1, 2, 3, 4, 5, 6, and so on,
+
+00:49:09.560 --> 00:49:18.060
+what would be examples of some sub sequences, the odd numbers, 1, 3, 5, 7, 9, and so on,
+
+00:49:19.340 --> 00:49:21.300
+you see how I'm taking the original sequence.
+
+00:49:21.420 --> 00:49:27.620
+So this is x sub n. I'm just picking entries from the original sequence.
+
+00:49:27.620 --> 00:49:30.660
+But every time I pick an entry, I move to the right and pick a new one.
+
+00:49:30.760 --> 00:49:33.680
+So pick one. Now I get to choose anything to the right of that.
+
+00:49:33.680 --> 00:49:37.260
+I pick three. Now I have to choose anything to the right of that.
+
+00:49:38.100 --> 00:49:45.460
+So in the language of this definition, the increasing sequence of integers is just the odd integers.
+
+00:49:45.780 --> 00:49:51.820
+So 2k minus 1. So here, x sub n is equal to just n.
+
+00:49:56.460 --> 00:50:06.160
+I could pick another sub sequence would be the sequence of even numbers, 2, 4, 6, 8, 10.
+
+00:50:07.200 --> 00:50:09.760
+This is a sub sequence of this original sequence.
+
+00:50:09.980 --> 00:50:13.620
+Here, the increasing sequence of integers is 2k.
+
+00:50:19.040 --> 00:50:30.420
+I could pick the sub sequence could be the sequence of prime numbers, 2, 3, 5, 7, 11, 13.
+
+00:50:33.560 --> 00:50:39.560
+And the increasing, yeah, so I don't have a general formula for that.
+
+00:50:39.560 --> 00:50:49.120
+Good luck finding one. But we'll just write this as kth prime number.
+
+00:50:57.560 --> 00:51:02.420
+Now what would not be an example? So these are examples of sub sequences.
+
+00:51:05.480 --> 00:51:11.420
+Not examples of sub sequences would be, for example, the sequence 1, 1, 1, 1.
+
+00:51:12.220 --> 00:51:14.660
+This is not a sub sequence of this original sequence.
+
+00:51:15.800 --> 00:51:19.160
+Remember, I have a sequence of natural numbers which is increasing.
+
+00:51:20.280 --> 00:51:29.720
+And x sub n sub k means that this new sequence is obtained from the old one by picking entries,
+
+00:51:29.720 --> 00:51:35.020
+by picking an entry, moving to the right, picking the next entry, moving to the right, and picking the next entry.
+
+00:51:35.580 --> 00:51:42.480
+Here, in order to get this sequence from this one, I just stay on the first entry and keep picking it.
+
+00:51:42.780 --> 00:51:46.520
+But that's not how a sub sequence is defined.
+
+00:51:49.160 --> 00:51:53.760
+So here, if you like, this would mean n sub k is equal to 1.
+
+00:51:56.120 --> 00:51:59.480
+This is not a strictly increasing sequence of natural numbers.
+
+00:52:02.780 --> 00:52:09.320
+Or 1, 1, 3, 3, 5, and so on. That's also not.
+
+00:52:09.320 --> 00:52:20.540
+So these are not sub sequences of the original sequence given here.
+
+00:52:25.240 --> 00:52:28.380
+So I hope that's clear.
+
+00:52:33.500 --> 00:52:50.720
+Now, I'm not saying, I want to emphasize this, I'm not saying that the number you pick each time has to be different from the number you picked before, meaning the value.
+
+00:52:51.920 --> 00:52:59.100
+You couldn't have 1, 1, 1, 1 as a sub sequence of this guy because 1 is only in the first entry.
+
+00:52:59.300 --> 00:53:09.420
+You can't keep picking 1 entry. You have to pick an entry and move to the next entry or 1 after that and pick that entry to obtain your sequence.
+
+00:53:09.420 --> 00:53:16.960
+But that doesn't necessarily mean that those actual numbers in those entries have to be different.
+
+00:53:17.180 --> 00:53:39.160
+So for example, if I look at the sequence, minus 1, 1, 1, 1, meaning x of n is equal to minus 1 to the n then a perfectly good sub sequence is given by minus 1, minus 1,
+
+00:53:39.160 --> 00:53:44.980
+minus 1, minus 1, where, OK, so it looks like I'm just picking one of the entries,
+
+00:53:45.100 --> 00:53:45.840
+but really I'm not.
+
+00:53:46.100 --> 00:53:50.960
+Here, the increasing sequence, so what I'm doing here to get this new sequence,
+
+00:53:51.460 --> 00:53:55.040
+I picked the first entry, then I picked the third, then I picked the fifth,
+
+00:53:55.340 --> 00:54:00.260
+then I picked the seventh, so n sub k equals 2k minus 1.
+
+00:54:01.220 --> 00:54:05.140
+All right, so all the actual numbers appearing in the sequence are the same,
+
+00:54:05.140 --> 00:54:11.000
+but I'm actually picking different entries from the original sequence,
+
+00:54:11.640 --> 00:54:13.660
+all right, where they appear.
+
+00:54:14.220 --> 00:54:24.300
+So this is also fine, so it's 1, 1, 1, 1, 1, and this is nk equals 2 times k.
+
+00:54:24.440 --> 00:54:33.200
+So these are all good sub sequences, so these were sub sequences of the original sequence.
+
+00:54:33.200 --> 00:54:37.020
+These are sub sequences of this sequence.
+
+00:55:07.620 --> 00:55:14.460
+All right, so from a given sequence, we obtain a new, we can obtain new sequences
+
+00:55:14.460 --> 00:55:18.200
+from this original sequence in this way.
+
+00:55:19.200 --> 00:55:26.080
+So a natural question is to ask, how does going from a sequence to a sub sequence,
+
+00:55:29.800 --> 00:55:34.560
+not react, but behave with respect to limits?
+
+00:55:35.300 --> 00:55:40.880
+If the original sequence converges to a limit, does a sub sequence, or does every sub sequence
+
+00:55:40.880 --> 00:55:42.560
+converge to that limit as well?
+
+00:55:43.560 --> 00:55:49.760
+And this shouldn't come as a surprise that it does, because all of the elements of the sequence
+
+00:55:49.760 --> 00:55:53.400
+are getting close, all the entries of the sequence are getting close to a given number.
+
+00:55:53.400 --> 00:55:58.080
+And a sub sequence is just, if you like, picking certain ones along the way.
+
+00:55:58.520 --> 00:56:03.720
+So certainly, if I'm in a sub sequence then, as long as I'm far enough out in the sub sequence,
+
+00:56:04.320 --> 00:56:05.720
+I'll be close to that limit as well.
+
+00:56:06.280 --> 00:56:14.140
+All right, so if you didn't get all that rambling, I'll go ahead and state the theorem and prove it.
+
+00:56:28.400 --> 00:56:44.140
+If xn is a sequence which converges to x, and x of n is of k,
+
+00:56:44.140 --> 00:57:02.620
+is a sub sequence of x of n, then the sub sequence converges to x as well.
+
+00:57:07.020 --> 00:57:12.200
+Limit as k goes to infinity of x of n sub k equals x.
+
+00:57:33.240 --> 00:57:40.300
+All right, so let me just start off by making a simple observation based on the fact that this increasing
+
+00:57:40.300 --> 00:57:44.840
+sequence, that the n sub k's are an increasing sequence of natural numbers.
+
+00:57:48.600 --> 00:57:57.220
+Since n sub 1 is bigger than or equal to 1 is less than n sub 2 is less than n sub 3.
+
+00:57:58.100 --> 00:58:07.940
+So on, this implies that we're all k, natural number, n sub k is bigger than or equal to k.
+
+00:58:09.200 --> 00:58:09.360
+All right?
+
+00:58:13.720 --> 00:58:17.760
+So this is not so hard to believe because n sub 1 has to be at least bigger than 1.
+
+00:58:17.760 --> 00:58:23.140
+n sub 2 has to be at least bigger than n sub 1, so it's either n sub 1 plus 1 or bigger.
+
+00:58:24.340 --> 00:58:33.220
+And therefore, you get by a simple induction argument, which I'll leave to you, you can prove that for all k, a natural number, n sub k is bigger than or equal to k.
+
+00:58:34.500 --> 00:58:35.920
+The induct on k.
+
+00:58:35.920 --> 00:58:38.740
+All right?
+
+00:58:41.040 --> 00:58:44.480
+So we want to prove that this sequence converges to x.
+
+00:58:45.120 --> 00:58:47.360
+And we're going to do that using the only means we have.
+
+00:58:47.520 --> 00:58:53.340
+So this is just some arbitrary sub sequence of x sub n. All we have is the definition to use.
+
+00:58:55.900 --> 00:58:57.480
+So we're going to now prove this.
+
+00:58:57.700 --> 00:59:00.520
+So we have to show for all epsilon positive, blah, blah, blah.
+
+00:59:00.520 --> 00:59:04.000
+So the first thing we have to do is let epsilon be positive.
+
+00:59:04.540 --> 00:59:07.160
+Now we'll use the fact that x sub n converges to x.
+
+00:59:10.100 --> 00:59:12.360
+sub x sub n converges to x.
+
+00:59:14.120 --> 00:59:21.900
+There exists a natural number, n, not, such that for all n, bigger than or equal to n, not.
+
+00:59:29.620 --> 00:59:31.740
+x sub n minus x.
+
+00:59:32.220 --> 00:59:33.700
+Absolute value is less than epsilon.
+
+00:59:34.660 --> 00:59:37.860
+Okay? This m sub not will choose for our sub sequence.
+
+00:59:40.880 --> 00:59:42.980
+Choose m to equal m sub not.
+
+00:59:44.940 --> 00:59:51.880
+So now we need to show that this capital m works for our sub sequence, meaning if k is bigger than or equal to capital m, then we have to show that this capital m works for our sub sequence.
+
+00:59:51.880 --> 00:59:56.760
+x sub n sub k minus x is an absolute value, less than epsilon.
+
+00:59:57.220 --> 00:59:59.720
+But this just follows from this fact, right?
+
+01:00:00.360 --> 01:00:14.880
+So if k is bigger than or equal to m, this implies by this inequality, n sub k is bigger than or equal to m, which remember is equal to m sub not.
+
+01:00:15.300 --> 01:00:16.540
+So n sub k is some integer.
+
+01:00:17.480 --> 01:00:19.740
+So natural number, bigger than or equal to m sub not.
+
+01:00:19.740 --> 01:00:28.820
+So that implies by this inequality that x sub n sub k minus x is an absolute value, is less than epsilon.
+
+01:00:30.820 --> 01:00:31.500
+Okay?
+

@@ -1,0 +1,944 @@
+WEBVTT
+
+00:00:14.440 --> 00:00:21.900
+Okay, so let's finish the proof that we started at the end of the lecture last time.
+
+00:00:22.960 --> 00:00:29.640
+I usually don't end lectures in the middle of a proof, but since this lecture and
+
+00:00:29.640 --> 00:00:32.460
+lecture before, we'll come to you at the same time.
+
+00:00:32.960 --> 00:00:34.600
+I didn't feel so bad about it.
+
+00:00:36.640 --> 00:00:42.980
+All right, so we're trying to prove this theorem that if there's a rational
+
+00:00:42.980 --> 00:00:48.180
+number so that it's equal to the supremum of this set, then x is bigger than or
+
+00:00:48.180 --> 00:00:51.340
+equal to 1, and it's where gives me 2.
+
+00:00:52.560 --> 00:01:00.720
+Okay, and so far what we've shown is that if I have an element a rational number
+
+00:01:01.200 --> 00:01:05.800
+that is given by the supremum, then it's bigger than or equal to 1, and x squared
+
+00:01:05.800 --> 00:01:07.400
+has to be bigger than or equal to 2.
+
+00:01:08.060 --> 00:01:11.600
+And so now we would like to show that in fact x squared equals 2.
+
+00:01:12.800 --> 00:01:18.160
+Okay, now since x squared is bigger than or equal to 2, it's either equal to 2
+
+00:01:18.160 --> 00:01:23.340
+or bigger than 2, and we want to show that the second possibility is not possible.
+
+00:01:24.220 --> 00:01:29.680
+Okay, so we're going to prove that the second possibility is not possible by
+
+00:01:29.680 --> 00:01:30.460
+contradiction.
+
+00:01:30.800 --> 00:01:36.380
+So let's assume that the thing that we say cannot happen does happen, and
+
+00:01:36.380 --> 00:01:38.700
+we're going to derive a false statement.
+
+00:01:40.840 --> 00:01:42.140
+Okay, so
+
+00:01:46.220 --> 00:01:53.440
+find h, this is going to be x squared minus 2 over 2x.
+
+00:01:54.320 --> 00:02:05.100
+All right, and so note a couple of things that since x squared is bigger than 2,
+
+00:02:06.040 --> 00:02:16.380
+this implies h is bigger than 0, which implies x minus h is less than x.
+
+00:02:17.240 --> 00:02:19.740
+Okay, so what is the contradiction going to be?
+
+00:02:19.840 --> 00:02:27.440
+It's going to be that this element x minus h is in fact an upper bound for the set e,
+
+00:02:28.400 --> 00:02:31.360
+and this will contradict the fact that x is the supremum.
+
+00:02:31.600 --> 00:02:34.120
+In other words, it's the least upper bound for the set e.
+
+00:02:34.120 --> 00:02:37.780
+There's no upper bound for e that can be less than x.
+
+00:02:38.680 --> 00:02:38.680
+
+
+00:02:41.200 --> 00:02:43.840
+All right, so
+
+00:02:47.680 --> 00:03:04.020
+we now prove that x minus h is an upper bound for the set e.
+
+00:03:09.840 --> 00:03:13.720
+Okay, now let's take a look at
+
+00:03:13.720 --> 00:03:15.100
+x minus h squared.
+
+00:03:28.740 --> 00:03:36.340
+Then this is equal to x squared minus 2x h plus h squared.
+
+00:03:40.320 --> 00:03:51.480
+Now just given by, if we just plug in what h is, this is equal to x squared minus x squared minus 2.
+
+00:03:52.540 --> 00:03:56.980
+So that's putting h in, and then the 2x here cancels with the 2x there.
+
+00:03:56.980 --> 00:04:03.360
+So I just get x squared minus 2 plus h squared, which equals 2 plus h squared.
+
+00:04:03.360 --> 00:04:09.820
+Now remember, h is a positive number, so 2 plus a positive number, this is bigger than 2.
+
+00:04:11.440 --> 00:04:16.980
+Okay, so x minus h squared is bigger than 2.
+
+00:04:19.220 --> 00:04:24.420
+So now I'm going to use this to show that x minus h is an upper bound for e.
+
+00:04:25.140 --> 00:04:28.000
+So let q be an e.
+
+00:04:33.780 --> 00:04:36.980
+q squared is less than 2.
+
+00:04:42.120 --> 00:04:51.500
+Then I have q squared is less than 2, which is less than x minus h squared by what we just proved here.
+
+00:04:53.280 --> 00:05:03.420
+So let me write this out, or just summarize that what we proved here was x minus h squared is bigger than 2.
+
+00:05:04.560 --> 00:05:16.080
+So we have q squared is less than 2 is less than x minus h squared, so that means 0 is bigger than x minus h squared minus q squared.
+
+00:05:17.000 --> 00:05:23.060
+Okay, q squared is less than this, so then if I just subtracted, I get this inequality.
+
+00:05:23.980 --> 00:05:38.080
+So that implies that 0 is bigger than, now this is the difference of 2 squared, so I can write this as x minus h plus q minus q.
+
+00:05:40.220 --> 00:06:04.400
+Okay, now if I just write out what x minus h is using the definition of h, this is equal to x squared plus 2 over 2x plus q over x minus h minus q.
+
+00:06:05.640 --> 00:06:09.960
+Okay, now the product of these two numbers is positive.
+
+00:06:10.560 --> 00:06:13.140
+This number is positive because q is positive.
+
+00:06:13.840 --> 00:06:33.880
+Okay, and so that means there's some is positive, so I have something positive times this, so I can divide by this positive thing.
+
+00:06:33.880 --> 00:06:48.100
+And keep the inequality, so that implies that 0 is less than x minus h minus q, which implies that q is less than x minus h.
+
+00:06:49.040 --> 00:06:57.300
+Alright, so we started off with an element of e, an arbitrary element of e, and we proved that q is less than x minus h.
+
+00:07:01.240 --> 00:07:17.340
+Thus, for all q and e, q is less than x minus h, which implies that x minus h is an upper bound for e.
+
+00:07:23.560 --> 00:07:32.340
+But, so let me keep that board for now.
+
+00:07:33.140 --> 00:07:37.080
+I'll write the last sentence or so of this proof.
+
+00:07:55.980 --> 00:08:06.980
+So, we stated that x minus h is an upper bound for e, which implies since x is the supremum of e, it should be less than or equal to all upper bounds.
+
+00:08:22.740 --> 00:08:31.420
+Which implies h is less than or equal to 0, but this is a direct contradiction to h being a positive number.
+
+00:08:32.100 --> 00:08:38.420
+So, this is the false statement we ultimately prove.
+
+00:08:39.780 --> 00:08:53.480
+Okay, but the idea is that if x squared is bigger than 2, you can find a lower bound, I mean an upper bound, which is strictly smaller than x, which contradicts the fact that x is the greatest lower bound for e.
+
+00:08:54.480 --> 00:09:10.420
+Okay, so, but remember what was our original assumption to begin with in this line of reasoning, that was that x squared is bigger than 2.
+
+00:09:13.540 --> 00:09:15.580
+And that concludes the proof.
+
+00:09:18.220 --> 00:09:18.220
+
+
+00:09:34.480 --> 00:09:46.140
+Okay, so, this was a statement about just if I have some element that's a rational number and it's equal to the supremum that it's square has to be 2.
+
+00:09:47.040 --> 00:09:53.100
+Now, I'm going to prove that basically no such element exists.
+
+00:09:54.080 --> 00:10:03.380
+And therefore, that the rational numbers do not have the least upper bound property, which was the discussion above those two lines in that circle on that board up there.
+
+00:10:03.380 --> 00:10:14.180
+So, what's the theorem we're going to prove the set e as before?
+
+00:10:15.760 --> 00:10:21.240
+So, this is a rational number such that q is bigger than 0.
+
+00:10:21.240 --> 00:10:28.240
+q squared is less than 2.
+
+00:10:33.160 --> 00:10:50.660
+It is bounded above and as no supremum in q.
+
+00:10:52.620 --> 00:11:11.940
+Okay, so I'm not just saying that, so this set e sits inside my kind of ordered set, which is my universe q, I'm not saying that it doesn't have a supremum in e, I'm saying it doesn't have a supremum in the universe where it sits.
+
+00:11:12.980 --> 00:11:23.820
+Okay, and therefore, the rational numbers do not have the least upper bound property because this set is set, which is bounded above and has no supremum in q.
+
+00:11:30.240 --> 00:11:35.580
+So, the first thing I want to show is that this set e is bounded above.
+
+00:11:44.000 --> 00:11:52.680
+Let q be in e, then q squared is less than 2, which is less than 4.
+
+00:11:52.680 --> 00:12:05.780
+So, this tells me 4 minus q squared is positive, which tells me 2 minus q times 2 plus q is positive.
+
+00:12:08.040 --> 00:12:26.140
+Now, since 2 is positive and q is positive, 2 plus q is positive, so I can divide both sides of this inequality by this, 2 plus q without changing the inequality, which implies I'm just going to flip this inequality.
+
+00:12:32.380 --> 00:12:36.640
+Thus, for all q and e, q is less than 2.
+
+00:12:38.660 --> 00:12:41.560
+Okay, so 2 is an upper bound for the set e.
+
+00:12:58.880 --> 00:13:03.000
+Okay, so that proves that the set e is bounded above.
+
+00:13:15.200 --> 00:13:25.840
+So, now I'm going to prove that no supremum exists by using the previous theorem, which says if I have a supremum, then it square must be 2.
+
+00:13:36.960 --> 00:13:52.180
+Okay, so now we show that the soup of e does not exist, and we do this by contradiction.
+
+00:14:15.420 --> 00:14:19.820
+Now, I know it seems like a lot of the proofs are doing are by contradiction.
+
+00:14:30.400 --> 00:14:39.060
+But, you know, proof by contradiction is very tempting because it at least gets you going somewhere.
+
+00:14:39.060 --> 00:14:48.400
+If you can assume not, then you get to the next step, which, you know, this assumption implies something else and hopefully you can keep going until you arrive at something false.
+
+00:14:49.660 --> 00:14:53.560
+But many theorems that you want to prove can be done directly.
+
+00:14:54.280 --> 00:15:00.180
+All right, but not this one. Now we show the supremum of the set does not exist.
+
+00:15:01.180 --> 00:15:12.840
+So, by contradiction, so we will assume that such a supremum does exist.
+
+00:15:24.600 --> 00:15:35.340
+So, suppose the supremum exists and call it x.
+
+00:15:35.340 --> 00:15:37.840
+So, x is the supremum of the set.
+
+00:15:42.540 --> 00:16:00.140
+Okay, so by the previous theorem, since x is an element of the rational numbers, which, whose square gives me, which is the supremum of the set, then x is bigger than or equal to 1 and it squares 2.
+
+00:16:04.740 --> 00:16:15.040
+By the previous theorem, x is bigger than or equal to 1 and x squared equals 2.
+
+00:16:18.360 --> 00:16:24.520
+Okay, in fact, x has to be bigger than 1.
+
+00:16:25.400 --> 00:16:28.380
+It cannot equal 1 because the square would give me 1 not 2.
+
+00:16:29.880 --> 00:16:35.480
+All right, so I can make that statement that x is in fact bigger than 1, not just bigger than or equal to.
+
+00:16:41.080 --> 00:17:02.780
+Okay, so thus, since x is a rational, there exists m in natural numbers such that m is bigger than n.
+
+00:17:04.960 --> 00:17:09.220
+And x is equal to m over n.
+
+00:17:11.120 --> 00:17:20.780
+Okay, so that's what it means for x to be a rational number and for it to be bigger than 1.
+
+00:17:28.380 --> 00:17:37.040
+Thus, there exists an n such that n times x is a natural number.
+
+00:17:37.800 --> 00:17:43.960
+All right, just multiplying through by n, that means that n times x is equal to m, which is a natural number.
+
+00:17:48.520 --> 00:18:01.000
+So let s be the set of natural numbers so that when I multiply x by k, I get a natural number.
+
+00:18:01.000 --> 00:18:06.460
+And so what we've shown just based on our assumption is that s is non-empty, right?
+
+00:18:06.800 --> 00:18:08.180
+Because n is an s.
+
+00:18:18.780 --> 00:18:27.100
+Now, this is a subset of natural numbers, so by the well-ordering property of n,
+
+00:18:33.560 --> 00:18:53.760
+this set s has a least element, which we'll call k0 ns.
+
+00:19:00.640 --> 00:19:10.940
+Okay, so what I'm going to show is that in fact this little guy k0 is not in fact the least element of this set s,
+
+00:19:10.940 --> 00:19:14.620
+which would contradict exactly how it's defined.
+
+00:19:19.940 --> 00:19:31.920
+So, to find k1 to be k0x minus k0.
+
+00:19:31.920 --> 00:19:45.440
+And note this is an integer. Why? Because k0 times x, so k0 is in the set s, meaning k0 times x is a natural number, so it's an integer.
+
+00:19:46.920 --> 00:19:52.700
+k0 is a natural number, so the difference of two integers is again an integer.
+
+00:19:53.480 --> 00:20:00.660
+So k0 is a natural number, k0 times x is a natural number, so the difference of two natural numbers gives me an integer.
+
+00:20:00.660 --> 00:20:05.920
+But in fact, it's a natural number.
+
+00:20:21.700 --> 00:20:24.240
+So, it's a natural number.
+
+00:20:24.240 --> 00:20:33.020
+Okay, so let's go over here.
+
+00:20:41.520 --> 00:20:56.820
+Okay, so far we have that k1 is a natural number, and I'm going to prove that k1 is actually less than k0.
+
+00:21:05.780 --> 00:21:14.220
+So, since x squared equals 2, I should say,
+
+00:21:14.220 --> 00:21:26.780
+okay, so let's write it this way. Since x squared is equal to 2, this implies that
+
+00:21:34.980 --> 00:21:40.360
+4 minus x squared is positive, I mean I just wrote down 2, 4 minus x squared is just 2.
+
+00:21:41.000 --> 00:21:55.820
+So, this tells me taking the difference, 2 minus x times 2 plus x is positive, 2 and x are positive, so I can divide this inequality through by this term and maintain the inequality which implies 2 minus x is positive.
+
+00:21:58.000 --> 00:22:05.900
+And therefore, x is less than 2. Okay, so x is less than 2.
+
+00:22:09.740 --> 00:22:19.440
+Then k1, which remember is k0 times x minus 1, is less than k0, so k0 is a natural number, it's positive.
+
+00:22:19.440 --> 00:22:48.140
+x minus 1 is bounded by 2 minus 1 equals k0. Okay, so what we've shown is so far is that this number k1 is a natural number, and it's less than k0.
+
+00:22:48.140 --> 00:23:02.940
+So, I guess I don't have to write this positive part. Okay, now let's remember what k0 is supposed to be.
+
+00:23:03.000 --> 00:23:12.780
+k0 is supposed to be the smallest element of this set s. It's the smallest natural number so that when I multiply it by x, I get another natural number.
+
+00:23:12.780 --> 00:23:24.980
+And from this k0, I constructed a new natural number called k1, which is less than k0, and it's a natural number.
+
+00:23:26.280 --> 00:23:54.400
+But here comes the fun part. If we compute what x times k1 is, this is by definition x times k0 minus k0, this is equal to x squared, k0 minus x times k0.
+
+00:23:54.400 --> 00:24:05.160
+k0, which equals 2, k0 minus x times k0 because x squared equals 2.
+
+00:24:08.900 --> 00:24:29.420
+And this last part, this is equal to k0 plus k0 minus x k0, which equals k1.
+
+00:24:30.820 --> 00:24:43.980
+Okay, now that's a natural number, that's a natural number, this natural number is bigger than this natural number. Therefore, their difference is again a natural number.
+
+00:24:45.960 --> 00:24:50.240
+So this says that x times k1 is a natural number.
+
+00:24:53.800 --> 00:25:20.220
+Thus, k1 is in s, and k1 is less than k0, which implies k0 is not the least element in s.
+
+00:25:24.140 --> 00:25:32.120
+Which is a contradiction to the fact that it is the least element of s.
+
+00:25:32.120 --> 00:25:34.480
+Okay?
+
+00:25:34.480 --> 00:25:34.540
+Okay?
+
+00:25:44.720 --> 00:25:58.800
+So what we've shown is assuming that this set E has a supremum in rational numbers, then we arrive at a contradiction.
+
+00:25:59.800 --> 00:26:08.000
+Okay, so our original assumption must be false, thus, soup E does not exist.
+
+00:26:25.440 --> 00:26:35.280
+All right, so this proof is maybe a little different than if you've seen a proof of the fact that the square root of 2 is not a rational number.
+
+00:26:35.280 --> 00:26:46.640
+So, remember, there's a different proof that maybe is a little bit simpler, but this one uses ordering instead to prove it, which I thought was pretty cool, and it's originally due to dedicine.
+
+00:26:49.700 --> 00:27:12.660
+Okay, so we've discussed one aspect of the real numbers that was in that theorem that I stated earlier, which I'll restate in a minute, namely that it is a set that has the least upper bound property.
+
+00:27:13.060 --> 00:27:22.160
+Okay, so I stated that as a theorem, I'm not going to prove that theorem. We just want to understand exactly what sets the real numbers apart.
+
+00:27:24.920 --> 00:27:31.160
+And one aspect of that, there were two things. One is that it's an ordered field, and two is that it has the least upper bound property.
+
+00:27:31.160 --> 00:27:42.640
+So we've now discussed what the least upper bound property means. So we just need to fill in one other part about the real numbers, which is the fact that it's an ordered field.
+
+00:27:42.640 --> 00:28:03.980
+So, and as I said before, Q is also an ordered field. R is not special in that respect, but as the theorem stated at the middle of the last lecture, that R is in fact the unique ordered field with the least upper bound property.
+
+00:28:04.120 --> 00:28:09.680
+Remember, we've just proven that Q does not have the least upper bound property. So in some sense, Q is missing stuff.
+
+00:28:10.240 --> 00:28:24.220
+Okay, it's missing stuff. It's missing square roots of two, which is kind of an algebraic thing, namely I can't solve the equation x squared minus two equals zero in the rational numbers.
+
+00:28:24.220 --> 00:28:39.040
+And the fact that it's missing, that you have this kind of algebraic defect manifests itself in this fact that Q is also missing things with respect to an order.
+
+00:28:39.740 --> 00:28:49.860
+Okay, so Q, in short, this is me saying that Q has holes, and R does not.
+
+00:28:49.860 --> 00:29:16.220
+I mean, that is probably the most basic statement one can make about R, but, and perhaps you heard in high school calculus, and you're hearing repeated now, but in a nutshell, I mean, Q has holes in R does not, but this means something very specifically that R has the least upper bound property and Q does not.
+
+00:29:16.220 --> 00:29:28.840
+Okay, all right, so let me talk about what ordered fields are. So first off, I need to define what a field is.
+
+00:29:32.240 --> 00:29:36.560
+So a set F is a field.
+
+00:29:36.560 --> 00:29:49.040
+If it has two operations.
+
+00:30:00.220 --> 00:30:15.900
+Plus, and I'm going to put a dot here in the middle times basically, such that you have a list of properties that hold with respect to these operations.
+
+00:30:15.900 --> 00:30:31.080
+Okay, the first is with respect to, so this is plus, this is times, this is addition multiplication. Okay, so the first condition is that this set is closed with respect to taking sums.
+
+00:30:31.080 --> 00:30:49.580
+So, if x, y is an F, then x plus y is an F. This operation of addition should be commutative.
+
+00:30:54.340 --> 00:31:06.520
+I hope that's how you spell it. This means that for all x, y, and F, x plus y equals y plus x.
+
+00:31:13.380 --> 00:31:31.520
+So, this is the condition that for all x, y, z and F, if I add x and y, and then add z, this is equal to adding x to the sum of y and z.
+
+00:31:36.360 --> 00:31:46.820
+So, the fourth is that we have, what's called an identity element, an additive identity element.
+
+00:31:46.820 --> 00:32:02.760
+There exists an element which I'll label zero in this set F, such that for all x and F, zero plus x equals zero.
+
+00:32:09.880 --> 00:32:32.740
+And we also have additive inverses, namely for all x and F, there exists an element which I call, which I label minus x and F, such that x plus minus x is equal to zero.
+
+00:32:33.840 --> 00:32:42.840
+So, these are the conditions on addition that should be satisfied for a field.
+
+00:32:47.380 --> 00:32:55.840
+So, that's about addition. So, the conditions for multiplication are similar, namely needs to be closed with respect to multiplication.
+
+00:32:55.840 --> 00:33:10.940
+So, if x, y, is in F, then x times y is in F. Multiplication should also be commutative.
+
+00:33:16.680 --> 00:33:30.980
+So, I'm just going to abbreviate that commutative as comm for all x, y, and F, x times y equals y times x. We also have associativity.
+
+00:33:34.160 --> 00:33:51.920
+Well, let's not shorten it by that. For all x, y, z, and F, I multiply x times y, and then multiply it by z. It's the same as taking x and multiplying it by y times z.
+
+00:33:55.300 --> 00:34:18.480
+So, the fourth property is the existence of multiplicative identity. There exists an element which I label as one in this set F, such that for all x and F, one times x equals x.
+
+00:34:20.360 --> 00:34:46.160
+And then I also have multiplicative inverses for non-zero elements. For all x and F, take away zero. So, for everything in the field that's non-zero, there exists an element which I call x to the minus one in F, such that x times x to the minus one equals one.
+
+00:34:47.700 --> 00:35:12.760
+Now, these are statements about the two operations. There's one last assumption in the definition that connects the two, and that's the distributive law, namely that for all x, y, z, and F, if I take x plus x.
+
+00:35:17.240 --> 00:35:41.520
+So, y times z, this is x times z plus y times z. So, all these conditions, so a field is a set with two operations plus and dot, meaning multiplication, and these two operations need to satisfy all of these conditions for my set to be called a field.
+
+00:35:43.300 --> 00:36:02.260
+So, the clearest example is, of course, rational numbers with the usual plus and minus, let me plus and multiplication, define as you learned as a child.
+
+00:36:04.780 --> 00:36:28.800
+Now, what's a non-example? The integers, so the integers come with plus and multiplication. However, it doesn't satisfy the existence of inverses of multiplicative inverses in F, but it does satisfy everything else.
+
+00:36:28.800 --> 00:36:50.300
+And typically, one would call z, what's called a commutative commutative ring, commutative because multiplication is also commutative.
+
+00:36:51.100 --> 00:37:04.140
+But a ring in general does not necessarily have to satisfy multiplication being commutative, for example, the set of say two by two matrices, former ring.
+
+00:37:05.120 --> 00:37:28.740
+What's an example of another example of a field? Well, we have, maybe I should have given this one first, z, two, which is the simplest field there is, is just the element of two, it's just a set of two elements, zero and one, where I need to define what one plus one is.
+
+00:37:33.400 --> 00:37:35.360
+One plus one defined to be zero.
+
+00:37:36.240 --> 00:37:52.000
+Okay? So, and one plus one is zero, and yeah, that's it. I mean, zero times zero would be zero, zero times one would be zero, zero plus zero would be zero.
+
+00:37:52.000 --> 00:38:00.880
+And that gives you all of the rules you need to know to be able to define multiplication and addition on this set of these two elements.
+
+00:38:02.180 --> 00:38:16.460
+This is a field because what is the inverse of one? Well, it's just one. Okay? And you can check that if I define addition by this rule, along with the, you know, other rules that,
+
+00:38:22.980 --> 00:38:38.780
+along with the, that these defining plus in multiplication this way satisfies all the conditions of being a field.
+
+00:38:38.780 --> 00:39:00.400
+Okay? More non-trivial example would be, let's say, z, three. This is a set zero, one, two. Only now, the arithmetic, so this, I didn't use such a fancy word here,
+
+00:39:00.400 --> 00:39:18.260
+but arithmetic is done. Mod three here. Here it was mod two, meaning I, if I want to add two elements, I add them, and then I take the remainder of that sum after dividing by three.
+
+00:39:18.260 --> 00:39:32.440
+So here, addition is defined mod three. So if something is a multiple of three, then I equate it to zero.
+
+00:39:33.280 --> 00:39:40.980
+So for example, one plus two, which gives me three, it's a multiple of three. This is defined to be zero.
+
+00:39:40.980 --> 00:39:50.700
+Okay? Two times two, which equals four, which equals three, plus one, multiples of three or zero, so that gives me one.
+
+00:39:51.060 --> 00:40:00.620
+In particular, this tells me that in this field, two times two equals one. So the multiplicative inverse of two is given by itself, two.
+
+00:40:03.680 --> 00:40:16.240
+And a times b equals, let's say, d, mod three. Okay? So it's another example of a field.
+
+00:40:24.980 --> 00:40:38.260
+So there, in fact, if you take mod p, where p is a prime, you get another field. You get a finite field. So these are examples of what are called finite fields, because exactly that they are fields, and they have finite number of elements.
+
+00:40:44.300 --> 00:41:06.100
+Now, based on just these assumptions that you assume your field to satisfy, I mean, for it to be a field, you can prove kind of all of the simple algebra statements that you've ever known, simply from these axioms of fields.
+
+00:41:10.260 --> 00:41:28.300
+So for example, let me just give you kind of the silliest example of a statement you can prove just using these elements. I mean, these axioms, you can prove the statement that for all x and f, if f is, so f is a field here.
+
+00:41:29.220 --> 00:41:55.720
+So f throughout will be, if x is a field, then for all x and f, zero times x is zero. Okay? All we know about zero is that when you add it to x, you get x back. Actually, this should have been, yeah, yeah, this should, this is wrong.
+
+00:41:55.720 --> 00:42:19.920
+This should have been x. Okay? Make sure there's no other errors. I don't think there are. This is another danger about not being able to lecture in person. It is that errors on the board persist.
+
+00:42:21.360 --> 00:42:47.500
+Okay, so you can prove this blockbuster theorem just using these axioms. So let's do a proof of this if x is in f, then zero is equal to zero times x plus the additive inverse of zero times x, because that's just the definition of the additive inverse.
+
+00:42:47.500 --> 00:43:13.380
+Every element has an additive inverse. And now zero is equal to zero plus zero times x plus, again, the additive inverse of x. And now I use the distributive law. This is zero times x plus zero times x plus the additive inverse of zero times x.
+
+00:43:14.420 --> 00:43:22.880
+And that cancels with that, and I get zero times x. So I started off with zero, and I arrived at, it's equal to zero times x.
+
+00:43:22.880 --> 00:43:40.420
+Alright? So, and you can prove other simple algebraic statements using these axioms as well. I think I'll put in the assignment.
+
+00:43:49.940 --> 00:44:10.100
+And I'll just state you can also prove things like, if I want to look at minus x, then this is equal to the additive inverse of one times x. Okay? I mean, this is like, you know, it's not terribly interesting at the start.
+
+00:44:11.100 --> 00:44:28.620
+There are, you know, essentially some very deep theorems in algebra that you learn at another point in your life, but that won't be in this class. Actually, today is probably all we're going to talk about fields, which are algebraic things.
+
+00:44:30.800 --> 00:44:52.260
+You know, algebraic things are, to me, you know, nice, because somehow you always deal with equality. So how hard could it be to prove two things are equal to each other? Yet analysis deals a lot with inequality, which somehow is much more subtle.
+
+00:44:53.120 --> 00:45:05.460
+But that's just a little bias. Okay? So this is what a field is. A field is just, again, the set that has these two operations. What is an ordered field?
+
+00:45:25.760 --> 00:45:47.280
+So it's a field first off. And which is also an ordered set. But it can't just, you know, you can't have two different structures on your field and them not interact for that to be interesting.
+
+00:45:49.400 --> 00:46:08.420
+So such that the algebraic structure and the order on the field are cohabitating nicely, meaning you have two conditions for all x, y, z, and f.
+
+00:46:08.420 --> 00:46:37.600
+If x is less than y, then x plus z is less than y plus z. And one other condition, x is positive, or if x is bigger than zero, and y is bigger than zero, then x times y is bigger than zero.
+
+00:46:39.920 --> 00:46:56.180
+Okay? And I just use that terminology anyways right now, but for an ordered field f, if an element is bigger than zero, then we call it positive.
+
+00:47:00.460 --> 00:47:20.320
+Or if it's bigger than or equal to zero, we say x is positive, and respectively non-negative. So non-negative, if x is bigger than or equal to zero, positive, if x is bigger than zero.
+
+00:47:21.780 --> 00:47:40.840
+And then likewise with negative and non-positive. Okay? And so the most basic example, again, is q. q is an ordered field. All right, with the usual order and with the usual algebraic structure on q.
+
+00:47:40.840 --> 00:47:57.240
+Okay? What is not an example is either one of the two fields I wrote down just a minute ago.
+
+00:48:14.260 --> 00:48:30.000
+So, a non-example is this field here, zero one.
+
+00:48:33.960 --> 00:48:52.200
+So, you know, if I put an order on this, either zero is less than one or one is less than zero. So remember, order does not have to, you know, necessarily correspond to the fact that that zero, you connect to zero in the integers, and that one you connect to one in the integers.
+
+00:48:52.640 --> 00:49:00.900
+I mean, these are just two elements of a set, and an order would be saying either that element is less than that element or that element is less than that element.
+
+00:49:01.820 --> 00:49:13.300
+So, let's consider either cases, and suppose we have that order on this set and show that it's not, it does not turn this set into an ordered field.
+
+00:49:25.060 --> 00:49:35.660
+So, then either zero is less than one or one is less than zero.
+
+00:49:37.580 --> 00:49:50.660
+So, let's do the first case. Zero is less than one.
+
+00:49:50.660 --> 00:50:01.040
+If zero is less than one, then what happens if I add one to each side?
+
+00:50:08.720 --> 00:50:21.780
+So, one plus zero would give me one. One plus one would be zero, and therefore is not, so less than one plus one.
+
+00:50:21.780 --> 00:50:25.220
+So, it does not satisfy the first property.
+
+00:50:36.240 --> 00:50:47.000
+So, if I have an order on z2, two possibilities, either zero is less than one or one is less than zero.
+
+00:50:47.000 --> 00:50:58.520
+If zero is less than one, then by the definition of addition on this set, I would, if I add one to zero, I get one. If I add one to one, I get zero.
+
+00:50:59.140 --> 00:51:06.060
+And therefore, if I were to add one to both sides, I would not get a true inequality because I'm assuming zero is less than one.
+
+00:51:06.060 --> 00:51:15.940
+So, this condition number one does not hold for this order, and neither does it hold for choosing one is less than zero.
+
+00:51:19.860 --> 00:51:37.060
+So, by the same logic, then one, so one plus one is not less than one.
+
+00:51:41.200 --> 00:51:47.280
+So, this set is not, this field cannot be turned into an ordered field.
+
+00:51:47.900 --> 00:51:58.480
+And essentially, the same thing that I've done here shows that you cannot have any finite ordered field.
+
+00:52:13.100 --> 00:52:20.120
+So, in general, there are no finite ordered fields.
+
+00:52:24.420 --> 00:52:40.560
+Now, just like we proved, the blockbuster statement at zero times anything in the field equals zero,
+
+00:52:40.560 --> 00:53:04.360
+we can also prove all of the manipulations of inequalities that you use without fear, simply from, again, these axioms about an ordered field being a field and also satisfying these two inequalities.
+
+00:53:06.500 --> 00:53:11.080
+These two conditions here for it to be an ordered field.
+
+00:53:34.480 --> 00:53:34.580
+So, for example,
+
+00:53:34.580 --> 00:53:52.520
+if f is an ordered field, then if x is an element of f and x is positive, this implies its additive inverse is negative, and vice versa.
+
+00:53:53.260 --> 00:54:00.220
+If x is less than zero, then minus x is positive.
+
+00:54:02.700 --> 00:54:11.680
+So, I know it's tempting to think, well, yeah, just multiply this inequality by minus one to give this inequality.
+
+00:54:13.220 --> 00:54:16.900
+But remember, this is really a statement about the additive inverse of x.
+
+00:54:21.980 --> 00:54:30.680
+So, the proof is not hard.
+
+00:54:33.640 --> 00:54:45.340
+If x is positive, then, well, I can write it this way, write it zero is less than x.
+
+00:54:47.380 --> 00:55:03.180
+Then, by property number one, I can add anything to both sides and get the same inequality and preserve the inequality. Therefore, minus x plus zero is less than the additive inverse of x plus x.
+
+00:55:04.160 --> 00:55:21.640
+Now, by the fact that zero is the additive identity, a four, the left side is going to be minus x, and by the definition of the additive inverse of x, the right-hand side is going to be zero.
+
+00:55:22.840 --> 00:55:45.840
+And that's it. So, what's going in here is this is by a four and a five, and this previous statement is by one in this definition before.
+
+00:55:45.840 --> 00:56:02.960
+And I'm not going to prove this statement as well. It's essentially the same proof. I add minus x to both sides and use which I can do by one, and then I use a four and a five to conclude that x is minus x is positive.
+
+00:56:02.960 --> 00:56:06.940
+Okay.
+
+00:56:06.940 --> 00:56:06.940
+
+
+00:56:16.960 --> 00:56:41.700
+So, let me just say, see proposition, 1.1.8 in textbook for
+
+00:56:44.940 --> 00:57:05.720
+the other proofs of standard inequality manipulations.
+
+00:57:12.260 --> 00:57:30.920
+Okay. So, q is an ordered field, and as I stated before, about r, r is also an ordered field, but it has a least upper bound property.
+
+00:57:30.920 --> 00:57:43.160
+So, maybe you are asking yourself, how about some sort of greatest lower bound property? The least upper bound property is about soups.
+
+00:57:43.160 --> 00:58:09.300
+Can we make a similar property about imps? Are there sets that have the least upper bound property that don't have, say, a greatest lower bound property, meaning, does there exist something has the greatest lower bound property if every non-empty set which is bounded below has an infimum.
+
+00:58:09.300 --> 00:58:26.420
+That's kind of what I'm referring to, even though I haven't written it down. So, okay, what is that leading up to? In the setting of ordered fields, there really is no difference between a least upper bound property and a greatest lower bound property.
+
+00:58:26.420 --> 00:58:36.980
+If I have an ordered field which satisfies a least upper bound property, then it also satisfies a greatest lower bound property.
+
+00:58:36.980 --> 00:58:58.040
+So, which I'll state as a theorem, and then we'll prove that fb in ordered field
+
+00:59:06.020 --> 00:59:26.920
+with the least upper bound property. Now, I'm going to prove that it has, if you like, a greatest lower bound property, then if a is a subset of f, which is non-empty,
+
+00:59:26.920 --> 00:59:50.920
+and bounded below, then, impa exists in f, meaning a has an infimum in the set f.
+
+00:59:56.680 --> 01:00:18.280
+Okay, so the proof of this is basically, in some sense, we kind of did something similar when we proved that one set given by all the minus one minus two minus three had the greatest upper bound property, or the least upper bound property, by taking its minus,
+
+01:00:19.020 --> 01:00:30.620
+and then using, in a sense, the greatest lower bound property of the natural numbers, this well ordering principle, to conclude that that set had the least upper bound property.
+
+01:00:30.780 --> 01:00:47.200
+And that's what we're going to do here, is we're going to take a set which is bounded below, take its minus, if you like, which is now bounded above, take the soup of that set which we can do, and show that that's the infimum of.
+
+01:00:48.500 --> 01:01:15.820
+That set. So, let me write over here, this should be, you know, not part of the proof, but kind of some intuition, and I'll draw it like f is the real number line, which it is, because part of the statement about the real numbers is that it's the unique ordered field with the least upper bound property,
+
+01:01:15.820 --> 01:01:36.140
+but don't worry about that for now. Let's imagine we have set a, and for now I'll draw it like it's an interval, which is bounded below.
+
+01:01:36.700 --> 01:02:02.300
+So, it stops after some point, and there's nothing there, so it's bounded below. Then, if I look at minus a, so here I'm drawing zero, if I look at minus a, which is the set of elements, the set of the additive inverses of a, I now have a set which is bounded above.
+
+01:02:02.300 --> 01:02:23.120
+So, if this is a lower bound for a, then minus b will be an upper bound for minus a, and therefore minus a has a least upper bound, which in this picture I'm drawing looks like x, and so then my goal is then to show that,
+
+01:02:28.060 --> 01:02:44.360
+so here let's go back to b, here's a, and here's now minus x, to show that minus x is an infimum of a, so that's the basic intuition on why this holds.
+
+01:02:44.360 --> 01:03:11.020
+We're using the ordered field property to be able to take minuses, okay? That's where the field property is coming in, and that minuses, although we didn't prove this, it is one of those, essentially we did prove this that if I have something positive and I multiply it through by minus one, using this as well, then that reverses the inequality.
+
+01:03:12.560 --> 01:03:36.660
+But again, these are short, unless I'm telling you to prove a certain inequality, simple inequality statement like of this type, feel freely used kind of the inequality facts that you remember from high school.
+
+01:03:37.660 --> 01:03:46.260
+Okay? And just know that these persist for ordered fields in general. Okay.
+
+01:03:52.380 --> 01:03:55.780
+So let's turn this intuition into a proof.
+
+01:04:00.820 --> 01:04:09.980
+Suppose a, so I'm not stating it here, but f is an ordered field with the least upper bound property. I'll go ahead and state it.
+
+01:04:11.420 --> 01:04:25.120
+Suppose f is an ordered field with the least upper bound property.
+
+01:04:28.340 --> 01:04:43.780
+Let a be subset of f, a not equal to empty set, a bounded below.
+
+01:04:48.920 --> 01:05:10.780
+Then that means there exists an element b in f such that b is less than or equal to a, such that for all a in capital A, b is less than or equal to a.
+
+01:05:11.780 --> 01:05:19.780
+Okay?
+
+01:05:24.440 --> 01:05:35.480
+And you just need to turn it into English because we're in Massachusetts. If you're a different country, you turn into the language that's spoken there.
+
+01:05:36.100 --> 01:05:42.620
+You just need to turn it into written word. So there exists a lower bound for a.
+
+01:05:48.960 --> 01:06:05.040
+Let me just note another set called minus, which I'll label minus a. This is the set of all elements in f of the form minus the additive inverses of a as a is in capital A.
+
+01:06:06.380 --> 01:06:09.920
+So it's the additive inverses of all elements in capital A.
+
+01:06:16.080 --> 01:06:32.720
+Then the fact that I have for all a and a, b is less than or equal to a implies for all a and a minus a is less than or equal to minus b.
+
+01:06:35.340 --> 01:06:39.160
+Because multiplying through by minus one flips the inequality.
+
+01:06:41.500 --> 01:06:48.720
+Okay? That implies so minus b is bigger than or equal to every element of minus a.
+
+01:06:48.720 --> 01:06:59.060
+So that implies b is upper bound for the set minus a.
+
+01:07:03.200 --> 01:07:12.060
+So minus a is a non-empty subset of f, which is bounded above. Therefore, it has a supremum.
+
+01:07:13.080 --> 01:07:24.680
+Thus, there exists an x and f such that x equals soup of this set minus a.
+
+01:07:26.680 --> 01:07:35.520
+This is because we're assuming the least upper bound property that every non-empty set which is bounded above has a supremum.
+
+01:07:37.060 --> 01:07:45.740
+Okay? I'm going to show this guy x is in fact the infimum of this set a or minus x is the infimum of a.
+
+01:07:56.260 --> 01:08:09.580
+So the fact that x is the supremum of minus a implies that for all a and capital A minus a is less than or equal to x because x is supposed to be the least upper bound.
+
+01:08:09.580 --> 01:08:26.260
+So it's in fact an upper bound. So that means that for all a and a again just flipping the inequalities minus x is less than or equal to a, which implies minus x is a lower bound for capital A.
+
+01:08:32.500 --> 01:08:45.840
+We now have to show that minus x is the greatest lower bound of a. If I take any other lower bound of a, then minus x is bigger than or equal to that lower bound.
+
+01:08:52.020 --> 01:09:12.480
+Now show that if let's call it something else y is lower bound for a, then y is less than or equal to minus x.
+
+01:09:13.660 --> 01:09:25.380
+And then that concludes the proof showing that minus x is in fact the infimum of a. And therefore a has an infimum. We've actually identified what the infimum is. It's the soup of minus a.
+
+01:09:26.440 --> 01:09:46.360
+Okay. So let y be a lower bound for a. Then exactly how I showed this for this single lower bound that I had for a.
+
+01:09:46.360 --> 01:10:13.640
+You can verify this again just go through the argument and replace b with y. Then minus y is an upper bound. Just look at the picture, you know, replace b with y for minus a, which implies since x is a supremum of a.
+
+01:10:22.900 --> 01:10:29.520
+So since x is a supremum of minus a, it's the least upper bound. So it has to be less than or equal to minus y.
+
+01:10:31.980 --> 01:10:39.980
+And flipping the inequality again on that means that y is less than or equal to minus x.
+
+01:10:44.380 --> 01:11:01.760
+Okay. And which is what we wanted to prove. Thus the inf of a exists. And we've in fact showed that it's equal to the soup of minus a.
+
+01:11:01.760 --> 01:11:18.780
+Okay. So in an ordered field. Not with the least upper bound property. Not only does every set which is bounded above have a supremum. Every set which is bounded below has an infimum.
+
+01:11:20.200 --> 01:11:38.780
+Okay. So now we move on and not talk about generalities, but we're just going to focus on R, the set of real numbers. And I'm just going to again state this theorem about the existence of R and its properties.
+
+01:11:38.780 --> 01:12:00.020
+So just to bring this all back to our goal of describing exactly what R is or what separates it from q is that.
+
+01:12:00.020 --> 01:12:27.100
+So there exists a unique ordered field with the least upper bound property containing q.
+
+01:12:28.360 --> 01:12:30.600
+Okay. And this field.
+
+01:12:40.180 --> 01:12:56.280
+So we denote by R. Okay. So q does just to bring this back. So we started off in ancient times with, you know, the natural numbers.
+
+01:12:56.740 --> 01:13:14.400
+We moved to the integers so that we can take additive inverses, although they didn't call them that. But we wanted zero. And then we moved to the rational numbers because we didn't have ways to solve the equation 2x plus 1 equals 0.
+
+01:13:17.820 --> 01:13:37.780
+And so we moved on from q to R, essentially because we can't solve the equation x squared minus 2 equals 0. And this inability to solve x squared minus 2 equals 0, although an algebraic fact, you know, in fact,
+
+01:13:40.800 --> 01:14:01.300
+it means that q is incomplete as an ordered set. Okay. It does not have this least upper bound property. And, you know, what characterizes the real numbers is that it is an ordered field containing q. And it's the unique one with the least upper bound property.
+
+01:14:06.020 --> 01:14:28.560
+This unique should be kind of in quotes because unique up to what's called isomorphism. Isomorphism is a fancy way of, you know, saying what you call apples, I call manzanas.
+
+01:14:30.740 --> 01:14:51.900
+Essentially. Okay. So this is what R is. It's the unique ordered field with the least upper bound property containing q. And from, so I'm not going to prove this theorem. The way you usually prove this theorem, you construct R, either as what are called dedicine cuts.
+
+01:14:53.980 --> 01:15:18.860
+Or as equivalence classes of Cauchy sequences, we'll talk about Cauchy sequences soon, ish. But I'm more interested in, you know, proving properties about R and then going on to functions on R limits, which is what analysis is, is a study of limits.
+
+01:15:21.040 --> 01:15:39.000
+Rather than get tied up in really non analytic facts, you know, algebraic facts, trying to construct this, this R, the actual field. So we're just going to take this as a given. And now we're going to go from here and start proving facts about real numbers.
+
+01:15:39.000 --> 01:16:05.300
+Okay. You know, where q failed R succeeds. So, first fact is that there exists a unique element in R such that R is positive.
+
+01:16:08.460 --> 01:16:21.280
+And R squared equals two. So we saw before that if I replace this with q, rational number, that's false. Okay. There does not exist a rational number who squares two. But in the real numbers, there does.
+
+01:16:24.880 --> 01:16:40.460
+And right now, maybe you're tempted to just say, yeah, you said R equal to square root of two. Well, what is square root of two? You know, I mean, how do you come up with that guy? So we have to come up with some element of R who squares two.
+
+01:16:40.460 --> 01:17:04.580
+Now, we basically did that a minute ago in the rational numbers and kind of the same proof works here. So, let E be the set of all x's in R such that x is positive and x squared is less than two.
+
+01:17:04.580 --> 01:17:29.240
+So, earlier in the lecture and at the end of the last lecture, we had q here. Right? Well, the same proof basically, and what we did earlier than E is bounded above by two.
+
+01:17:30.380 --> 01:17:51.480
+So, R, which I, so, soup E tilde exists in R. So, I have this set. It's bounded above by two. I mean, we did the proof earlier.
+
+01:17:52.100 --> 01:17:58.520
+So, by the least upper bound property of R, the supremum exists. Okay? Call this element little R.
+
+01:18:11.620 --> 01:18:22.520
+Then the same proof, I'm not going to do it again because we've already done it. And all you need to do is replace R q's with R's.
+
+01:18:29.720 --> 01:18:46.920
+Show R is bigger than or equal to one. In fact, it's bigger than one. And R squared equals two. Okay? So, there does exist an element of R, which is positive and who squares two.
+
+01:18:46.920 --> 01:19:15.540
+Now, I will prove that it's unique. So, now I want to prove that R is unique. That means, if I take, if there's some other element in capital R that satisfies these two inequalities, then it must be equal to my original R.
+
+01:19:17.020 --> 01:19:45.220
+So, suppose R tilde is in R. R tilde is bigger than zero. And R tilde squared equals two. Okay? Then, since their square is the same number, namely two, zero is equal to R tilde minus R.
+
+01:19:45.220 --> 01:20:09.260
+R squared, which equals R tilde plus R. R tilde minus R. Now, both R and R tilde are positive. So, R plus R tilde is positive, in particular, it's non-zero. So, since it's a field, I can therefore divide or multiply both sides by the additive inverse of this thing.
+
+01:20:10.320 --> 01:20:24.520
+And, arrive at zero is equal to R tilde minus R, or R equals R tilde. So, there exists only one element in the real numbers, which is positive and who squares two.
+
+01:20:30.320 --> 01:20:48.520
+And, I'll put it on the assignment. Namely that. So, this shows what? Square root of two exists. Okay? But you can then show.
+
+01:20:52.160 --> 01:21:15.680
+And, cube root of two exists in R. And, we'll not prove this, but you can show in general that if X is in R, then X is the one over N.
+
+01:21:15.680 --> 01:21:44.540
+And, I should say X is positive for all natural numbers. Okay? So, where Q failed are succeeds. And, it's doing this, or the fact that it does succeed is not coming from an algebraic property of R.
+
+01:21:44.540 --> 01:21:53.740
+It's coming from this property about its order. Okay? All right. We'll stop there.
+

@@ -1,0 +1,1046 @@
+WEBVTT
+
+00:00:15.940 --> 00:00:20.620
+So I'm going to prove a few theorems about limits, which will allow us to compute limits,
+
+00:00:21.620 --> 00:00:32.260
+or at least we can use to prove that other non-trivial limits exist using these theorems rather
+
+00:00:32.260 --> 00:00:41.560
+than using the definition directly. So this first theorem is kind of the easiest theorem
+
+00:00:41.560 --> 00:00:47.960
+in the world because it's simply kind of just restating the definition of convergence
+
+00:00:47.960 --> 00:01:00.360
+of a sequence. So I'm going to state it as follows, so pretty short, that if I have a sequence
+
+00:01:00.360 --> 00:01:13.720
+x of n, then it converges to x if and only if the sequence obtained by taking the absolute
+
+00:01:13.720 --> 00:01:22.720
+value of x of n minus x equals 0, or the limit of that sequence is 0. So what is the proof?
+
+00:01:24.200 --> 00:01:30.660
+It follows just immediately from the definition, so I'm not even going to write anything. I'll leave it to you,
+
+00:01:33.980 --> 00:01:44.840
+but the proof follows from the definition and the simple fact that x sub n minus x in absolute value
+
+00:01:44.840 --> 00:01:58.040
+is equal to the absolute value of the absolute value of x of n minus x minus 0. So the definition
+
+00:01:58.040 --> 00:02:03.640
+says for all epsilon positive, you have to find an m so that this is less than epsilon for all n bigger than or equal to
+
+00:02:03.640 --> 00:02:10.180
+capital m, but if you found such a capital m for this to be less than epsilon, then this will be less than epsilon,
+
+00:02:10.580 --> 00:02:17.480
+which is saying that this limit equals 0, and then going the other direction is the same thing. So this is just
+
+00:02:17.480 --> 00:02:27.740
+following directly from the definition and this simple fact. Okay, that was very silly fact about
+
+00:02:27.740 --> 00:02:57.720
+limits, but a very useful one in conjunction with the next theorem, which is not so trivial, which is the
+
+00:03:09.640 --> 00:03:27.700
+number of n equals 0, so this is the number of n equals 0, so this is the number of n equals 0, so
+
+00:03:27.700 --> 00:03:40.660
+the piece of n are convergence sequences, so, and their limits equal each other, and are given by some
+
+00:03:40.660 --> 00:03:58.200
+number, call it x, then the conclusion is that limit as n goes to infinity of x of n equals x, so when I
+
+00:03:58.200 --> 00:04:05.800
+write something like this, you should also kind of, there's kind of half a sentence before that, that goes with this,
+
+00:04:05.800 --> 00:04:11.960
+saying, you know, x sub n is a convergent sequence, and its limit is equal to x, so it's kind of two statements in
+
+00:04:11.960 --> 00:04:26.140
+one, when I write that. So, if you just draw a picture, the squeezed theorem shouldn't be too
+
+00:04:26.140 --> 00:04:46.980
+surprising, so this is a little discussion, so here's x, the common limit of a sub n and b sub n, and so we can
+
+00:04:46.980 --> 00:04:53.460
+imagine that we're trying to show the limit as n goes to infinity of x of n equals x, so that means we have to find for
+
+00:04:53.460 --> 00:05:07.220
+every epsilon, a capital M, so that x sub n is between x plus epsilon and x minus epsilon, so I go out a little bit, I
+
+00:05:07.220 --> 00:05:16.560
+would hope I can find a natural number, capital M, so that x of n minus x is, or x of n is in this little
+
+00:05:16.560 --> 00:05:25.600
+interval. Now, if I'm assuming that a sub n and x of n, if a sub n and b sub n are squeezing x of n, in other
+
+00:05:25.600 --> 00:05:36.100
+words, x of n is between the two, then and b sub n is converging to x, then for n, bigger than or equal to some integer M
+
+00:05:36.100 --> 00:05:46.520
+of zero, all of the b sub n's are in this interval, maybe they're not there, maybe they could be over here, but the way I drew it is just to the
+
+00:05:46.520 --> 00:06:01.800
+right of x. And likewise, since a sub n is converging to x, there exists some other integer m sub 1, so that if I look at a sub n, it's also in this
+
+00:06:01.800 --> 00:06:12.220
+interval, maybe it's over here, maybe it's, well, it can't be to the right of b sub n, because that inequality up there strictly implies that a sub n is less than or equal to
+
+00:06:12.220 --> 00:06:30.540
+b sub n, but it's in this interval, right? So then, what would that say, if I look at n bigger than or equal to m plus m 1, m 0 plus m 1, then n is bigger than both
+
+00:06:30.540 --> 00:06:42.380
+m 0, this guy, and n is bigger than both m 1, this guy, and therefore, if I look at x of n, it's going to be between these two, and in particular, it's going to be in this interval.
+
+00:06:44.740 --> 00:06:58.340
+So that's the proof in a picture, and now our goal is just to write it down. So that's the picture of the proof, but if you're actually trying to guess that why this would be true, I mean the b sub n's, you can
+
+00:06:58.340 --> 00:07:09.280
+imagine are getting very close to x, the a sub n's are also getting very close to x, x of n is in between the two, so it's getting squeezed to x, and that's the name.
+
+00:07:11.000 --> 00:07:11.640
+All right.
+
+00:07:25.240 --> 00:07:36.280
+Okay, so now we just need to turn this into written word. So we need to show, we're going to show that x of n converges to x, so we're all
+
+00:07:36.280 --> 00:07:36.560
+going to show that x of n, so let's go back to the first step, and then we'll see what we do.
+
+00:07:36.560 --> 00:07:46.960
+So we have an epsilon delta proof, or we could use that theorem, but let's go with an epsilon delta proof. I mean not epsilon delta epsilon m.
+
+00:07:48.480 --> 00:08:08.640
+epsilon delta proof will come later. So let epsilon be positive, and since v sub n converges to x, there exists an m sub zero in natural numbers, such that for all n bigger than or equal to m sub zero.
+
+00:08:13.140 --> 00:08:35.360
+V sub n minus x is less than epsilon, and absolute value, which is the same as, say, well I mean it's not the same, but it implies that V sub n is less than x plus epsilon.
+
+00:08:41.140 --> 00:08:53.960
+Since a sub n converges to x as well, there exists an m sub one, natural number, such that we're all in bigger than or equal to m one.
+
+00:08:56.900 --> 00:09:08.960
+A sub n minus x and absolute value is less than epsilon, which implies a sub n is between x minus epsilon and x plus epsilon, but I'm only going to use one of those equalities.
+
+00:09:19.300 --> 00:09:30.220
+Now I'm going to choose the capital m for my sequence x of n, and I'm trying to show converges to x. So choose m to be m sub zero plus m sub one.
+
+00:09:30.220 --> 00:09:35.460
+I mean you could have chosen it to be the maximum of the two, but this works just fine as well.
+
+00:09:35.460 --> 00:09:58.060
+Now, then if n is bigger than or equal to m, this implies n is bigger than or equal to m zero, and n is bigger than or equal to m one, which implies that both of these inequalities here are valid for this n.
+
+00:09:58.060 --> 00:10:18.740
+So then x minus epsilon is less than a sub n, which by assumption is less than or equal to x sub n, which is less than or equal to b sub n, which is less than x plus epsilon.
+
+00:10:19.660 --> 00:10:39.880
+Now, these string of inequalities, therefore, tell us that x minus epsilon is less than x of n is less than x plus epsilon, which is equivalent to saying the absolute value of x sub n minus x is less than epsilon.
+
+00:10:39.880 --> 00:10:45.060
+And therefore, x have been converges to x.
+
+00:10:51.500 --> 00:11:09.780
+So these two facts together kind of give us a very robust and short way to prove limits of sequences.
+
+00:11:13.960 --> 00:11:23.780
+So for example, let me give you a simple one.
+
+00:11:36.880 --> 00:11:45.820
+Let's show the limit as n goes to infinity of n squared over n squared plus n plus 1 equals 1.
+
+00:11:47.040 --> 00:11:55.500
+So I mean, this is a very simple limit to use these theorems on, but in practice, you don't always have just a simple expression like this.
+
+00:11:58.260 --> 00:12:08.000
+Okay, so, and we'll use these two theorems in conjunction to prove some other theorems here in a minute, but let's just see it in action once.
+
+00:12:10.020 --> 00:12:19.220
+Let me look at, so this sequence converges to 1 if and only if the absolute value of the difference converges to 0.
+
+00:12:19.220 --> 00:12:22.660
+So let's look at the absolute value of the difference.
+
+00:12:27.440 --> 00:12:38.920
+This is equal to, now just doing the algebra, this is equal to, and taking absolute values is me,
+
+00:12:38.920 --> 00:12:46.440
+plus n squared plus n squared plus n plus 1.
+
+00:12:48.440 --> 00:12:52.920
+And this is less than or equal to, this one is making things bigger so I can drop it.
+
+00:12:53.540 --> 00:12:58.800
+And this is less than or equal to n plus 1 over n squared plus n.
+
+00:12:58.800 --> 00:13:03.200
+Now, n squared plus n, I can factor into n times n plus 1.
+
+00:13:03.720 --> 00:13:09.080
+So then that cancels with this n plus 1 on top, and I just get 1 over n.
+
+00:13:12.860 --> 00:13:24.740
+So, 0 is less than or equal to n squared over n squared plus n plus 1 minus 1, which is less than or equal to 1 over n.
+
+00:13:25.400 --> 00:13:32.820
+Now, 1 over n we've shown using epsilon delta proof, I mean epsilon m proof, we've shown 1 over n converges to 0.
+
+00:13:34.520 --> 00:13:53.900
+So since 0 converges to 0, the left side, and 1 over n converges to 0, the right side, that implies by the squeeze theorem, n squared over n squared plus n plus 1 minus 1,
+
+00:13:53.900 --> 00:14:09.760
+n converges to 0 by the squeeze theorem, which implies that n squared over n squared plus n plus 1 converges to 1 by that first theorem.
+
+00:14:20.980 --> 00:14:35.500
+Now, you can imagine that instead of having this at your disposal, I asked you to do an epsilon proof, epsilon m proof of this statement.
+
+00:14:41.440 --> 00:14:46.660
+Then you would have taken this and played with it, just like we did here, and gotten to 1 over n.
+
+00:14:48.020 --> 00:14:52.040
+And therefore, if this is less than epsilon, that would imply this is less than epsilon.
+
+00:14:54.700 --> 00:15:00.560
+So you would choose capital m to be so that 1 over capital m is less than epsilon.
+
+00:15:01.140 --> 00:15:06.940
+But using these two theorems saves us some little work and a little time.
+
+00:15:12.040 --> 00:15:35.340
+Okay. Now, so at the end of the lecture last time, we discussed the notion of subsequences, and we showed that limiting limits and subsequences interact nicely, meaning if I have a convergent sequence, then every subsequence converges to the same thing.
+
+00:15:39.100 --> 00:15:46.380
+So now, a natural question is how do limits interact with the order of the real numbers?
+
+00:15:46.380 --> 00:16:06.380
+Okay.
+
+00:16:06.380 --> 00:16:18.280
+Right, R has these two fundamental properties about it, that it's, so first off, that it has a least upper bound property and also that it's an ordered field.
+
+00:16:20.000 --> 00:16:26.560
+So first natural question is how does this definition of limit convergence interact with the order?
+
+00:16:28.560 --> 00:16:39.160
+So the first theorem states, or the theorem that kind of answers this question as a following, is that limit respects order, basically.
+
+00:16:39.160 --> 00:17:03.300
+So, if xn yn are convergent sequences and for all n,
+
+00:17:06.620 --> 00:17:23.080
+xn is less than or equal to yn, then what should be the conclusion? The limit as n goes to infinity, so what I said a minute ago as limits respect inequality, then I should be able to take the limits of both sides and still have this inequality.
+
+00:17:30.000 --> 00:17:39.040
+Then limit as n goes to infinity is less than or equal to limit as n goes to infinity of y sub n.
+
+00:17:42.100 --> 00:18:03.640
+And, you have a simple corollary that follows from this, is that if xn is a convergent sequence,
+
+00:18:08.860 --> 00:18:33.500
+and for all n, a natural number, you have two numbers, a and b such that a sub n is less than or equal to, or a is less than or equal to x sub n is less than or equal to b, then dis implies that the limit of x sub n is also
+
+00:18:33.500 --> 00:18:46.920
+between a and b. Let me say something very brief about what this says and doesn't say.
+
+00:18:46.920 --> 00:19:07.160
+So, what does this not say? You may lose a strict inequality, meaning what?
+
+00:19:09.100 --> 00:19:17.560
+It can be the case that x sub n is less than or equal to y sub n.
+
+00:19:18.560 --> 00:19:27.140
+So, simply having less than, x sub n less than y sub n does not imply the limit of x sub n is less than the limit of y sub n.
+
+00:19:29.120 --> 00:19:45.340
+So, what do I mean by this? This does not imply that the limit is less than y sub n.
+
+00:19:45.960 --> 00:19:57.460
+Now, at this point in class, I would ask somebody to give me a counter example. So, at this point, I'm going to take a bite of my cookie, and let you think about that.
+
+00:20:02.620 --> 00:20:07.840
+I didn't have to take a bite of my cookie. You could have just paused the video and thought about it.
+
+00:20:12.680 --> 00:20:14.140
+But then I wouldn't get a bite of my cookie.
+
+00:20:15.400 --> 00:20:24.240
+So, what's an example of two sequences that satisfy this? But don't satisfy this.
+
+00:20:29.320 --> 00:20:38.420
+If x sub n equals 0 for all n, and y sub n equals 1 over n, right?
+
+00:20:43.000 --> 00:20:50.920
+If x sub n is less than y sub n for all n, and what's the limit?
+
+00:20:54.460 --> 00:21:08.100
+x sub n, well, that's just 0. And before the limit of y sub n, that's just 0, and these two things equal each other. This is not less than that.
+
+00:21:09.100 --> 00:21:12.220
+So, I just want to make that small point.
+
+00:21:16.080 --> 00:21:23.660
+I should say D midterm, and possibly the final.
+
+00:21:34.240 --> 00:21:46.800
+Let's prove one. Two follows immediately from one. For two, we simply take, for example, the upper inequality x sub n is less than or equal to b.
+
+00:21:46.800 --> 00:22:00.260
+We take y sub n to be the constant sequence b. And for the other one, we would take the bigger sequence to be x sub n, and the smaller sequence to be the constant sequence a.
+
+00:22:00.740 --> 00:22:03.220
+So, two follows immediately from one, so we're just going to do one.
+
+00:22:05.320 --> 00:22:09.220
+We haven't done a proof by contradiction in a while, so why not do it by contradiction?
+
+00:22:12.320 --> 00:22:28.900
+Okay, so the proof, let's label these sequences, so I don't have to write limit as n goes to infinity and limit of x sub n and limit as n goes to infinity of y sub n so much.
+
+00:22:30.540 --> 00:22:49.320
+So, let's call their limits x and y, and what we want to show, x is less than or equal to y. That's our goal, and we're going to prove this by contradiction.
+
+00:22:54.920 --> 00:23:06.060
+That is, let's assume y is less than x, and arrive at a false statement, which contradicts our setting, our assumptions that we have.
+
+00:23:06.060 --> 00:23:18.260
+Assume y is less than x. Now, let me draw a picture here to go along with what's going to happen.
+
+00:23:19.900 --> 00:23:39.260
+So, if y is less than x, all of the y sub n's have to be near y, if I go far enough out, and all the x sub n's have to be near x, as long as I go far enough out.
+
+00:23:40.400 --> 00:24:09.240
+So, that would contradict eventually the fact that the x sub n's are supposed to be less than or equal to the y sub n's, if y is less than x, and let's say I go out half the distance between y and x, so this is like the midpoint, and all the y sub n's are here, and all the x sub n's have to be near x, so this is the point.
+
+00:24:10.500 --> 00:24:26.520
+Are here, and the y sub n's are here, then I cannot have x sub n less than or equal to y sub n, which is my assumption, which is the assumption in my theorem.
+
+00:24:28.120 --> 00:24:44.940
+Now, maybe I should have written this here. Sometimes it's good to reiterate what your assumptions are, suppose for all n, x sub n is less than or y sub n, and let that.
+
+00:24:44.940 --> 00:25:00.900
+And so, the thing we're trying to show is this, okay, so we assume the negation of this and arrive at a contradiction to the things we're assuming, or just a general true facts.
+
+00:25:07.000 --> 00:25:13.740
+Yeah, I had to add the word true on the facts, because, like I said at some point there's alternative facts flying around out there.
+
+00:25:16.580 --> 00:25:35.640
+Okay, so this picture we're going to turn this into a proof, so since y in converges to y, there exists a natural number, sub zero such that for all n,
+
+00:25:35.640 --> 00:25:54.540
+and then, figures n are equal to m sub zero, y sub n minus y is less than x minus y over two. Now, that's a positive number because we're assuming x is bigger than y.
+
+00:25:56.100 --> 00:26:06.160
+And by the definition of limit, given any positive number I can find an integer so that for all n, bigger than or equal to that integer, this thing is less than that small number.
+
+00:26:06.320 --> 00:26:14.160
+And I'm just choosing that small number to be this very special small number because that's going to help me arrive at a contradiction.
+
+00:26:20.140 --> 00:26:36.260
+Since x in converges to x, there exists a m one natural number such that for all n, bigger than or equal to m one, x sub n minus x is less than the same thing.
+
+00:26:36.260 --> 00:26:48.500
+Okay, so this is putting into precise form what I was saying that all the x subins need to be close to x eventually and all the y subins need to be close to y eventually.
+
+00:26:49.140 --> 00:26:56.100
+And how eventually will eventually enough so that I'm in these two disjoint intervals.
+
+00:27:03.220 --> 00:27:21.880
+Okay. Let n be m sub zero plus m sub one, then n is bigger than or equal to m sub zero and n is bigger than or equal to m sub one.
+
+00:27:21.880 --> 00:27:31.740
+So both of these inequalities are valid for this n. And what does this mean? Well, then that implies that y sub n.
+
+00:27:33.240 --> 00:27:41.520
+So let me tack on one more inequality just by removing the absolute values.
+
+00:27:43.880 --> 00:27:51.500
+And adding y, this tells me y sub n is less than x plus y over two.
+
+00:27:53.500 --> 00:28:01.260
+And this tells me x sub n is less than or the other way, sorry.
+
+00:28:12.420 --> 00:28:31.240
+Well, we'll just write this down here. So then y sub n is less than y plus x minus y over two, which equals x plus y over two, which equals x minus y over two.
+
+00:28:34.600 --> 00:28:39.340
+And this is less than x sub n, right, by the second inequality.
+
+00:28:39.820 --> 00:28:46.820
+So this follows from the first inequality. This follows from the second inequality, right?
+
+00:28:47.980 --> 00:28:53.520
+Which implies for this specific n, y sub n is less than x sub n.
+
+00:28:53.900 --> 00:28:59.720
+And this is a contradiction to our assumption that y sub n is bigger than or equal to x sub n for all n.
+
+00:29:00.840 --> 00:29:10.480
+So we had just found, based on this assumption here, that we arrive at a contradiction to our other assumptions.
+
+00:29:10.720 --> 00:29:14.060
+And therefore, this must be false.
+
+00:29:28.560 --> 00:29:31.500
+So that's how limits interact with inequalities.
+
+00:29:33.300 --> 00:29:38.460
+So if I have two sequences, one bigger than the other, then the limits respect that inequality.
+
+00:29:40.200 --> 00:29:46.500
+That has to deal with the order part of r being an ordered field. So what about the field part of r being an ordered field?
+
+00:29:47.140 --> 00:30:05.580
+So how does limits interact with algebraic?
+
+00:30:20.300 --> 00:30:22.800
+So what's the theorem?
+
+00:30:26.880 --> 00:30:30.000
+So suppose I have two convergent sequences.
+
+00:30:30.000 --> 00:30:40.120
+So this is the limit as n goes to infinity of x of n equals x.
+
+00:30:44.520 --> 00:30:47.960
+And limit as n goes to infinity of y sub n equals y.
+
+00:30:52.580 --> 00:30:54.100
+Then several things hold.
+
+00:30:56.200 --> 00:31:03.800
+The first is that, again, you should kind of read this as two statements written in one.
+
+00:31:04.260 --> 00:31:06.980
+The limit as n goes to infinity of x of n plus y sub n.
+
+00:31:08.280 --> 00:31:14.280
+So this is a new sequence that I formed by just taking the term by term sum of these two things.
+
+00:31:17.260 --> 00:31:22.060
+This sequence, this new sequence is convergent and the limit equals sum of the limits.
+
+00:31:27.200 --> 00:31:43.680
+The second is, we'll see in r, the limit as n goes to infinity of the new sequence obtained by taking every entry of the sequence x sub n
+
+00:31:43.680 --> 00:31:52.260
+and multiplying it by this fixed number c. The limit of that product is the product of c and x.
+
+00:31:53.160 --> 00:31:56.580
+So limits respect what one would call scalar multiplication.
+
+00:32:04.320 --> 00:32:06.660
+But we could be more general than that.
+
+00:32:07.660 --> 00:32:13.900
+C, you can think of as just one example of a convergent sequence, just a constant sequence.
+
+00:32:14.380 --> 00:32:15.580
+But in general, we have that.
+
+00:32:16.040 --> 00:32:19.280
+The product of two convergent sequences is convergent.
+
+00:32:20.940 --> 00:32:23.820
+And the limit of the product is the product of the limit.
+
+00:32:27.380 --> 00:32:31.280
+And finally, if we have something for, write it over here.
+
+00:32:32.320 --> 00:32:38.700
+If we have something for a product, then perhaps we have something by a quotient.
+
+00:32:39.320 --> 00:32:41.100
+And that's as long as we can divide things.
+
+00:32:41.100 --> 00:33:03.860
+So if we're all n y sub n does not equal zero and the limit y does not equal zero, then limit of the quotient x sub n over y sub n is the quotient of the limits.
+
+00:33:03.860 --> 00:33:07.020
+Okay.
+
+00:33:07.020 --> 00:33:30.060
+Okay.
+
+00:33:37.300 --> 00:33:48.460
+Okay. So we're going to prove this.
+
+00:33:48.460 --> 00:33:55.980
+So this is the first one using this scheme of using both this simple theorem about limits and the squeezed theorem.
+
+00:34:01.060 --> 00:34:06.820
+And it's quite simple. So we just use the triangle inequality.
+
+00:34:11.980 --> 00:34:21.260
+By the triangle inequality, zero is less than or equal to x sub n plus y sub n minus x plus y.
+
+00:34:22.360 --> 00:34:26.660
+And x sub n minus x, y sub n minus y. And then I use the triangle inequality.
+
+00:34:26.660 --> 00:34:31.980
+I get x sub n minus x plus y sub n.
+
+00:34:31.980 --> 00:34:42.360
+You know, it scratched that because in fact, I was trying to be too clever and would have ended up using the theorem to prove the theorem.
+
+00:34:42.520 --> 00:34:47.620
+So let's not do that. It's never good to use the theorem you're trying to prove to prove the theorem that you're trying to prove.
+
+00:34:48.360 --> 00:34:52.040
+So let's go back to basics and use the definition.
+
+00:34:54.040 --> 00:34:55.360
+That's going to be positive.
+
+00:35:03.260 --> 00:35:20.720
+So since x sub n converges to x, it exists a natural number m such that we're all n bigger than or equal to m not x sub n minus x.
+
+00:35:20.720 --> 00:35:23.600
+It's supposed to be m. It looks like a k.
+
+00:35:24.540 --> 00:35:27.720
+Less than epsilon over 2, y the 2, well you've seen a minute.
+
+00:35:34.300 --> 00:35:47.720
+And similarly for the sequence y, there exists m1, natural number such that we're all n bigger than or equal to m1.
+
+00:35:47.720 --> 00:35:53.060
+So this is going to be the definition y sub n minus y is less than epsilon over 2.
+
+00:35:54.500 --> 00:36:06.620
+So I have these two integers, which are given to me by the fact that x sub n converges to x, y sub n converges to y, and the definition of convergence.
+
+00:36:07.460 --> 00:36:15.140
+I can always find these two integers for any small tolerance that I'm choosing the tolerance to be epsilon over 2 for some reason, which you'll see in a minute.
+
+00:36:15.140 --> 00:36:23.420
+And so what is the integer capital m that I choose for this epsilon for the sequence x sub n plus y sub n?
+
+00:36:25.940 --> 00:36:31.340
+I choose m to be m not plus m1.
+
+00:36:32.780 --> 00:36:35.200
+And now I need to show that this choice of m works.
+
+00:36:36.640 --> 00:36:48.380
+If n is bigger than or equal to m, this implies that n is bigger than or equal to m0 and m is bigger than or equal to m1.
+
+00:36:48.660 --> 00:36:52.140
+So both of these inequalities are valid for this n.
+
+00:36:54.300 --> 00:37:01.000
+And therefore I get x sub n plus y sub n minus x plus y.
+
+00:37:02.200 --> 00:37:05.940
+And now I do what I was going to do a minute ago when I was going to use the theorem to prove the theorem.
+
+00:37:06.420 --> 00:37:11.300
+x sub n minus x, y sub n minus y. I grouped those together and then I used the triangle inequality.
+
+00:37:11.840 --> 00:37:17.040
+This is less than or equal to x sub n minus x plus y sub n minus y.
+
+00:37:18.140 --> 00:37:22.620
+And now this is less than epsilon over 2. This is less than epsilon over 2.
+
+00:37:22.620 --> 00:37:29.020
+So equals epsilon.
+
+00:37:29.220 --> 00:37:34.560
+And now you can see why I chose the two because I wanted to show this was less than epsilon.
+
+00:37:35.220 --> 00:37:36.820
+And I had control over these two things.
+
+00:37:37.640 --> 00:37:43.180
+And the sum of controls gives me epsilon so I choose the control to be epsilon over 2.
+
+00:37:43.660 --> 00:37:49.460
+If I had three sequences, then you could probably guess I would choose epsilon over 3.
+
+00:37:50.020 --> 00:37:54.800
+Meaning if I had sequences x n, y sub n, and z sub n.
+
+00:37:55.240 --> 00:37:58.280
+And I looked at the sum x sub n plus y sub n plus z sub n.
+
+00:37:58.780 --> 00:38:01.520
+I could show that converges to the sum of the limits.
+
+00:38:02.020 --> 00:38:06.680
+And I would choose these integers m sub 0, m sub 1, m sub 2.
+
+00:38:06.940 --> 00:38:09.860
+So that I have epsilon over 3 here so that they sum up to epsilon.
+
+00:38:13.220 --> 00:38:13.780
+Okay.
+
+00:38:24.320 --> 00:38:30.820
+So now we prove too that for this single scalar multiplication,
+
+00:38:31.140 --> 00:38:33.480
+if you like, where you just multiply each term by a single number,
+
+00:38:33.480 --> 00:38:40.220
+or the limit respects that multiplication to epsilon proof again.
+
+00:38:47.320 --> 00:38:52.100
+Since x sub n converges to x, so now we're trying to show that second limit.
+
+00:38:52.940 --> 00:39:02.480
+There exists m sub 0, a natural number such that,
+
+00:39:04.300 --> 00:39:16.320
+we're all in bigger than or equal to m sub 0, x of n minus x is less than epsilon
+
+00:39:16.320 --> 00:39:18.380
+over the absolute value of c plus 1.
+
+00:39:22.060 --> 00:39:24.920
+And now you have to trust me why that thing.
+
+00:39:25.040 --> 00:39:26.860
+Well, you'll see it will come out just like this did.
+
+00:39:28.720 --> 00:39:34.620
+So for the sequence c times x of n, we'll choose m to be just this m sub 0,
+
+00:39:38.980 --> 00:39:43.860
+then n is bigger than or equal to m sub m, which is equal to m sub 0.
+
+00:39:43.860 --> 00:39:46.380
+This implies this inequality holds.
+
+00:39:47.580 --> 00:39:52.200
+And therefore c times x of n minus x, c times x.
+
+00:39:53.720 --> 00:40:01.020
+This c pops out of the absolute value and becomes the absolute value of c times the absolute value of x of n minus x.
+
+00:40:05.880 --> 00:40:10.560
+And which is less than, so I'm writing less than here, but this thing is less than that.
+
+00:40:11.720 --> 00:40:18.000
+This is less than c over c plus 1 epsilon.
+
+00:40:19.120 --> 00:40:28.140
+Now this quotient here, this number over this number plus 1 is always less than 1.
+
+00:40:30.060 --> 00:40:34.480
+So this positive number, which is less than 1, or non-negative number,
+
+00:40:34.480 --> 00:40:40.320
+which is less than 1, is going to be less than 1 times epsilon, which gives me epsilon.
+
+00:40:43.640 --> 00:40:53.480
+And maybe you're wondering why didn't I choose, so this is just a little smidgen of sophistication,
+
+00:40:54.340 --> 00:40:55.220
+not much, just a little.
+
+00:40:56.060 --> 00:41:00.900
+Why didn't I choose this so that it's epsilon over the absolute value of c,
+
+00:41:00.900 --> 00:41:06.720
+so that when I stick in my inequality for this guy, I just get epsilon.
+
+00:41:07.980 --> 00:41:09.460
+Well, what if c equals 0?
+
+00:41:09.900 --> 00:41:17.180
+So then I'm telling you to choose capital m sub 0 so that the absolute value of x of n minus x is less than epsilon over 0.
+
+00:41:17.840 --> 00:41:19.240
+Division by 0 is a no-no.
+
+00:41:20.400 --> 00:41:27.060
+But if we fudge it a little by adding 1, we get something that still does the job.
+
+00:41:27.060 --> 00:41:33.740
+It still gives me some number, which is not negative and less than 1, which is enough.
+
+00:41:34.920 --> 00:41:34.920
+
+
+00:41:43.740 --> 00:41:47.940
+So let's prove that the limit of the product is the product of the limits.
+
+00:41:54.280 --> 00:41:59.680
+Since the sequence y sub n converges to y, it's a convergent sequence and therefore it's bounded.
+
+00:42:06.140 --> 00:42:21.660
+That means that there exists some non-negative real number, b, such that for all natural numbers,
+
+00:42:21.660 --> 00:42:28.500
+n, y sub n is less than or equal to b, an absolute value.
+
+00:42:35.440 --> 00:42:39.560
+Then, if I look at x sub n times y sub n minus x times y,
+
+00:42:39.560 --> 00:42:46.360
+and I add and subtract x times y sub n.
+
+00:42:47.740 --> 00:42:52.340
+I can write this as plus.
+
+00:43:02.260 --> 00:43:16.480
+And now I use the triangle inequality that this is less than or equal to x sub n minus x times y sub n plus y sub n minus y times absolute value of x.
+
+00:43:17.380 --> 00:43:33.320
+And y sub n is bounded by b for all n, so this is less than or equal to less than or equal to y sub n minus y times absolute value of x.
+
+00:43:39.520 --> 00:43:47.320
+Now, let me just state the obvious that we get zero is less than or equal to x sub n times y sub n minus x times y.
+
+00:43:47.960 --> 00:43:58.660
+And this is less than or equal to as we've shown here plus x times y sub n minus y.
+
+00:44:04.380 --> 00:44:08.880
+Now, the right hand side, so the left side of this inequality converges to zero.
+
+00:44:09.600 --> 00:44:16.900
+The right side also converges to zero because we've just shown by 1 and 2 by 2, this converges to zero.
+
+00:44:21.020 --> 00:44:27.260
+And by that theorem, since x n converges to x, this product here converges to zero, b is a fixed number.
+
+00:44:27.260 --> 00:44:30.700
+And the same thing for this, that converges to zero.
+
+00:44:31.600 --> 00:44:37.080
+And therefore, by 2, this sum converges to zero.
+
+00:44:38.740 --> 00:44:44.040
+So these two arrows are by 2, and this is by 1.
+
+00:44:48.840 --> 00:45:08.760
+So, let me just summarize by 1 and 2 the right hand side of this inequality, b times x of n minus x plus absolute value of x times y sub n minus y.
+
+00:45:08.760 --> 00:45:36.720
+This converges to zero, which by the squeeze theorem implies that this is by squeeze theorem, which implies that x sub n times y sub n converges to x times y by that first theorem.
+
+00:45:37.360 --> 00:45:41.880
+So I'm not going to keep referring to that first theorem because it's such a simple fact.
+
+00:45:41.880 --> 00:45:53.100
+I'm just going to keep using it without referencing it, namely that the sequence, a sequence converges to x if and only if the absolute value of this thing, this difference converges to zero.
+
+00:45:57.580 --> 00:46:03.560
+So that proves the limit of the product is the product of the limits.
+
+00:46:04.140 --> 00:46:13.880
+Now for the quotient, we can use three once we've proven it for just one over y sub n.
+
+00:46:13.880 --> 00:46:20.220
+So what do I mean?
+
+00:46:27.740 --> 00:46:36.780
+So now we're assuming y sub n is not equal to zero for all n and y does not equal zero.
+
+00:46:39.940 --> 00:47:04.400
+So if we prove this statement that the limit is n goes to infinity of y, 1 over y sub n equals 1 over y, then by 3 implies at the limit is n goes to infinity of x sub n over y sub n equals x over y.
+
+00:47:04.400 --> 00:47:09.080
+Because x sub n over y sub n is just a product of x sub n and 1 over y sub n.
+
+00:47:09.880 --> 00:47:14.880
+So we just need to prove this special case, if you like.
+
+00:47:20.640 --> 00:47:27.460
+And we're going to do it kind of the same way. Now because we're dividing by y sub n.
+
+00:47:28.640 --> 00:47:32.080
+So here we used that we had an upper bound for the product here.
+
+00:47:32.680 --> 00:47:43.300
+But when we take one over y sub n to get an upper bound of that means we need sort of a load, we need a lower bound on y sub n on the absolute values of y sub n.
+
+00:47:43.760 --> 00:47:50.020
+And we get that by our assumption that the limit is non-zero for all n. And so is the y sub n.
+
+00:47:53.900 --> 00:48:12.920
+So first thing we prove, or let me write this as a claim, there exists a positive number b, little b, such that we're all natural numbers in y sub n is bigger than or equal to b.
+
+00:48:15.080 --> 00:48:22.980
+And we know that a sequence is bounded. So we know that there's always a capital b so that absolute value of y sub n is bigger than or less than or equal to b.
+
+00:48:23.180 --> 00:48:35.620
+But for sequences that are non-zero and converging to a non-zero limit, then you can bound them away from zero.
+
+00:48:36.600 --> 00:48:43.720
+And it's kind of the same proof that we gave for showing that a convergent sequence is bounded above.
+
+00:48:44.580 --> 00:48:53.340
+So let me draw a quick picture. And let's assume that the limit is positive just for the sake of the picture.
+
+00:48:55.340 --> 00:49:08.660
+So this is a little discussion on why this is true. And this picture is going to look at least the explanation is going to be kind of similar to why a sequence is bounded.
+
+00:49:08.860 --> 00:49:11.740
+And this one is why it's kind of bounded below.
+
+00:49:11.740 --> 00:49:26.640
+So let's assume that the limit y is positive. And let's say I go out within distance, let's say y over 2 so that I'm still positive.
+
+00:49:26.640 --> 00:49:37.360
+So this is y minus y over 2 absolute value. So in this picture y is positive so that's just equal to y over 2.
+
+00:49:37.360 --> 00:49:50.700
+And what can I say that eventually all of the y sub n's are here. And this interval away from zero.
+
+00:49:51.000 --> 00:50:00.580
+In fact, their absolute value is bounded by y over 2. So let me just write it that way.
+
+00:50:02.580 --> 00:50:10.380
+So all the y sub n's are n bigger than or equal to some m. I'll have to lie in this interval because they're converging to y and y is positive.
+
+00:50:11.840 --> 00:50:19.820
+And therefore in absolute value they're all bounded above below, I mean, by y over 2. They're all at least distance y over 2 to zero.
+
+00:50:21.320 --> 00:50:39.080
+And then all that's left to handle are maybe some the finitely many that are left y sub 1, y sub 2, y sub m minus 1 that are scattered on the real line, but are non-zero.
+
+00:50:39.080 --> 00:50:45.840
+So we're just going to end up taking the minimum of this number and the absolute value of these numbers.
+
+00:50:46.840 --> 00:50:53.080
+Okay? Okay.
+
+00:51:03.440 --> 00:51:21.520
+So since the y sub n's converged to y and y does not equal zero, there exists an integer m such that
+
+00:51:21.520 --> 00:51:30.500
+this is the number of y sub n that is equal to m. So this picture was y this claim is true. It was not the proof of y this claim is true.
+
+00:51:30.500 --> 00:51:45.640
+What I'm writing now is the actual proof of y this claim is true. Such that for all n bigger than or equal to m, y sub n minus y in absolute value is less than y over 2.
+
+00:51:46.200 --> 00:51:57.540
+Okay? So for this picture I drew where y is positive that would have just been y over 2. But you have to use absolute value for the other case that y is negative because this has to be a positive number.
+
+00:52:03.300 --> 00:52:11.560
+Then for all n bigger than or equal to m, this inequality and the triangle inequality gives me.
+
+00:52:11.560 --> 00:52:36.480
+So if I look at the absolute value of y, this is equal to absolute value of y minus y sub n plus y sub n. And now I use a triangle inequality which is less than this is less than y over 2 plus y sub n.
+
+00:52:36.480 --> 00:52:57.220
+And I started off with the absolute value of y. So when I subtract that over, that tells me that absolute value of y over 2 is less than absolute value of y sub n for all n bigger than or equal to m.
+
+00:52:57.220 --> 00:53:16.800
+Okay? So then I let b to be the minimum of several numbers. You know, I'm writing min but I should write mth.
+
+00:53:16.800 --> 00:53:45.020
+But so if you like, let me write m of y1, ym minus 1 and y over 2. And by what you are doing on the assignment, I think it was assignment 2, this mth always exists in a finite set.
+
+00:53:45.020 --> 00:53:59.840
+This is a finite set of positive numbers and therefore it's mthemium exists as one of these elements. One of these m numbers is the nthemium and they're all positive so this is a positive number.
+
+00:54:06.200 --> 00:54:21.700
+And so then, simply how this number is defined, it follows that we're all in y sub n is bigger than or equal to b.
+
+00:54:21.700 --> 00:54:41.060
+Okay? Right? Because again, if n is between, little n is between 1 and capital m minus 1, then certainly that absolute value of that thing is bigger than or equal to the smaller of all of these.
+
+00:54:41.940 --> 00:55:00.860
+Right? Which is bigger than or equal to b. And if n is bigger than or equal to capital m, then we proved over here that y sub n is bigger than the absolute value of y over 2, which is bigger than or equal to the minimum of these numbers and y over 2, which equals b.
+
+00:55:00.860 --> 00:55:13.880
+So, all right? So that proves the claim. That proves the claim but we haven't proved what we wanted to yet that the limit as n goes to infinity of 1 over y sub n equals 1 over y.
+
+00:55:15.180 --> 00:55:40.080
+But this follows almost immediately from what we've done so far. So, now we're going to use the claim to prove it. So we'd look at compute that 0 is less than or equal to 1 over y sub n minus 1 over y.
+
+00:55:40.080 --> 00:55:55.300
+We're going to show that this goes to 0 using those two theorems. And so, by algebra, that's equal to, and using the absolute value, this is 1 over y sub n minus y.
+
+00:55:56.660 --> 00:56:05.000
+I mean, absolute value of y sub n minus y over absolute value of y sub n, absolute value of y.
+
+00:56:07.520 --> 00:56:24.980
+Now, y sub n is bigger than or equal to b. So, this is less than or equal to 1 over b times y times y sub n minus y.
+
+00:56:26.180 --> 00:56:49.220
+Yeah? So, just to summarize, we've shown that 0 is less than 1 over y sub n minus 1 over y is less than 1 over b times 1 over b times the absolute value of y times y sub n minus y.
+
+00:56:49.220 --> 00:57:10.680
+Now, this goes to 0 because it's just a constant sequence. This converges to 0 because y sub n minus y in absolute value goes to 0. This is just a fixed number times that. And by what we've proven for 2, this product converges to 0.
+
+00:57:15.500 --> 00:57:26.340
+So, by the squeeze theorem, we get that 1 over y sub n. This converges to 0, which implies.
+
+00:57:31.620 --> 00:57:46.500
+So, another big property about the real numbers that we proved after we stated the existence of the real numbers, which remember was this defined as this ordered field with the least upper bound property.
+
+00:57:54.020 --> 00:58:12.700
+We proved that the square root of 2 exists as a real number. There was really nothing special about 2. In fact, you could prove that the square root of x exists as a real number for any x that's a positive or non negative number.
+
+00:58:16.060 --> 00:58:38.540
+So, the square root of a real number is well defined. It's a square root of a non negative number is well defined. And always exists as a real number. So, you can ask how does limits interact with square roots.
+
+00:58:41.360 --> 00:58:43.720
+And they interact just as you think they should.
+
+00:58:52.920 --> 00:58:57.680
+If I have a sequence so that for all n x sub n is bigger than or equal to 0.
+
+00:58:57.680 --> 00:59:17.440
+So, it's a convergence sequence converging to some number x. Then the limit of the square root of these guys equals the square root of the limit.
+
+00:59:19.800 --> 00:59:36.660
+Now, I want you to take a second here and understand that this is a meaningful statement because since the x sub n's are all non negative by a theorem that, let's see, did I erase it already.
+
+00:59:37.980 --> 00:59:51.280
+The one that had to deal with limits and limits and the order. So, since the x sub n's are all non negative, that implies that x is non negative so that the square root is meaningful.
+
+00:59:52.200 --> 01:00:02.040
+So, first check whenever somebody says here's the theorem or I think the theorem is true.
+
+01:00:14.220 --> 01:00:21.840
+So, let's prove this. So, there's two cases to consider. x is equal to 0 or x is non-zero. So, let's do the first case.
+
+01:00:23.400 --> 01:00:35.460
+So, the limit is 0. So, we'll do this. Proof using the definition of limits, meaning the epsilon m definition.
+
+01:00:37.060 --> 01:01:01.320
+So, we want to show that the limit of the square root of x sub n equals 0. So, let epsilon be positive. And since x sub n converges to 0, there exists natural number m sub 0 such that
+
+01:01:01.320 --> 01:01:27.280
+n is bigger than or equal to m 0 than x sub n minus the limit which is just 0 and taking the absolute value which is just x sub n, which is equal to x sub n because x sub n is non negative is less than epsilon squared.
+
+01:01:28.320 --> 01:01:38.480
+Remember, I can always find no matter what is underneath my hand, since x sub n converges to 0, I can find a natural number so that that thing is less than what's underneath my hand.
+
+01:01:39.040 --> 01:01:44.000
+And the thing that I'm going to have underneath my hand that's going to make things work out for the square root is epsilon squared.
+
+01:01:50.480 --> 01:02:09.900
+Okay? Choose m to be m sub 0. So, I'm going to show this m works for the sequence square root of x sub n. If n is bigger than or equal to m, the square root of x sub n on the 0, which is just x sub n.
+
+01:02:12.240 --> 01:02:33.860
+Now, it's also, so we didn't strictly speaking prove this, but it's not too hard to show that square roots respect inequalities. So, x sub n is less than epsilon squared. So, the square root is less than epsilon squared, which equals epsilon.
+
+01:02:35.700 --> 01:02:57.960
+Okay? So, the second case is x non equal to 0. And to do this case, we'll use those two theorems again.
+
+01:03:01.560 --> 01:03:25.620
+So, let's look at square root of x sub n minus square root of x. Now, if I write this as a multiply top and bottom by x sub n plus absolute or square root of x.
+
+01:03:26.640 --> 01:03:38.660
+Square root of x sub n plus square root of x, which is a positive number. It's fine to divide by it as well, because x is non zero. So, here, not just non zero. It's positive because x has to be non negative.
+
+01:03:40.400 --> 01:03:57.720
+Now, this is the product of something minus something else with something plus something else. So, then that's going to be the difference of the squares. So, that's equal to over and again, these are positive numbers. So, they come out of the absolute value.
+
+01:03:59.820 --> 01:04:13.840
+And this is non negative. So, in fact, it's only making things bigger on the bottom and therefore things smaller overall. So, this is less than or equal to just if I replace this by square root of x.
+
+01:04:13.840 --> 01:04:24.520
+So, what did I prove?
+
+01:04:38.380 --> 01:04:52.640
+So, this is a fixed number multiplied by this thing going to zero. So, by number two in the theorem we prove before this whole product converges to zero.
+
+01:04:54.060 --> 01:04:59.840
+So, and of course, this converges to zero. So, this thing in the middle must converge to zero by the squeeze theorem.
+
+01:04:59.840 --> 01:05:21.100
+So, all right.
+
+01:05:24.520 --> 01:05:45.460
+Okay. So, that's the square root and let me just remark.
+
+01:06:07.480 --> 01:06:18.460
+That, so, this number three up here at the limit of the product is the product of the limits. This does imply that the limit of xn squared converges to x squared.
+
+01:06:18.460 --> 01:06:32.200
+So, the square of x of n converges to the square of the limit. And by induction you can show that the cube, fourth power, fifth power of x of n converges to the fourth power, fifth power of x.
+
+01:06:32.200 --> 01:06:48.180
+Okay. And not only that, you can also prove, so I'm not going to do this. And I'm not going to force you to either but just know these as facts that I don't have to just take the square root, I could take the kth root.
+
+01:06:48.180 --> 01:07:02.600
+So, and this statement still is true that if x of n is bigger than or equal to zero for all n and I have a limit then the kth root of x of n converges to the kth root of x.
+
+01:07:04.640 --> 01:07:26.600
+So, the final theorem will prove for today, which will conclude our facts about limits is, you know, we have, I mean, we've been using this all along, although I haven't made special attention about it.
+
+01:07:26.600 --> 01:07:43.200
+But, you know, the real numbers there, this, again, like I said, in an ordered field with the least upper bound property. So, we've seen how limits interact with, you know, this structure of the real numbers, but they also have a distance associated to them, right? The absolute value.
+
+01:07:43.200 --> 01:07:57.940
+The distance from two numbers, a and b, is the absolute value of a minus b. Or the distance from a number to zero is just the absolute value of that number.
+
+01:07:57.940 --> 01:08:17.660
+So, one could ask, how does the limit interact with this additional structure of the absolute value? Okay? And so, just like everything's been good so far with limits, it's the same with the absolute value, namely that limits respect absolute value.
+
+01:08:20.880 --> 01:08:33.760
+So, if x of n is convergent sequence,
+
+01:08:42.000 --> 01:08:53.820
+the limit x, then the sequence of absolute values is also a convergent sequence.
+
+01:09:05.400 --> 01:09:15.000
+And the limit is n goes to infinity of the absolute values equals the absolute value of the limit.
+
+01:09:15.000 --> 01:09:36.660
+Okay? Now, let me, again, let's try to think a little more deeply about this real quick. If I have a convergent sequence in the absolute values converge. Does the converse hold? If the absolute values converge, does this imply that the original sequence converges? And the answer is, of course, no.
+
+01:09:38.000 --> 01:09:46.780
+Well, not, of course, I didn't even give you a minute to think about it, but why is the converse not true? So, I want to make this a mark.
+
+01:09:58.340 --> 01:10:16.760
+Converse is not true because you could look at x of n equals minus 1 to the n. Right? Then, the absolute values of these guys converges, but the original sequence does not converge.
+
+01:10:23.520 --> 01:10:33.960
+Okay? So, this is a one-way street for convergence and convergence of the absolute values.
+
+01:10:39.900 --> 01:10:59.460
+So, before I prove this theorem, let me just prove a quick inequality, which I think I said I was going to put on the assignment and then forgot to put on the assignment, but you should know it.
+
+01:10:59.460 --> 01:11:18.560
+So, this theorem is the reverse triangle inequality, which states for all AB real number, the absolute value of the difference in absolute values is less than or equal to the absolute value of the difference.
+
+01:11:18.560 --> 01:11:41.940
+Okay? So, the proof of this reverse triangle inequality just uses the original triangle inequality. So, absolute value of A, this is equal to the absolute value of A minus B plus B.
+
+01:11:41.940 --> 01:12:00.180
+And this is less than or equal to the absolute value of A minus B plus absolute value of B. And thus, absolute value of A minus absolute value of B is less than or equal to absolute value of A minus B.
+
+01:12:00.180 --> 01:12:04.900
+Now, these are just two letters, I mean two letters, reverse the letters.
+
+01:12:11.260 --> 01:12:29.840
+In this argument, replace A would be, and B would A. So, then, I get B minus the absolute value of A minus the absolute value of A is less than or equal to the absolute value of B minus A, which is the same as this.
+
+01:12:33.200 --> 01:12:41.540
+And therefore, let me multiply through by minus one, and that tells me.
+
+01:12:46.400 --> 01:12:56.200
+Okay? So, I have this is less than or equal to the absolute value of A minus B. I also have it's bigger than or equal to minus the absolute value of A minus B.
+
+01:13:00.080 --> 01:13:11.160
+And therefore, the absolute value of A minus the absolute value of B is less than or equal to absolute value of A minus B.
+
+01:13:16.080 --> 01:13:24.640
+So, I know it's taboo to write on the very back board, but I'm going to do it anyway. So, that was the proof of the reverse triangle inequality.
+
+01:13:24.640 --> 01:13:37.780
+So, here's the proof of the theorem before it. It just follows from the reverse triangle inequality and one in that combination of those two theorems over there.
+
+01:13:41.320 --> 01:13:53.960
+We have that the absolute value of X of N minus the absolute value of X. This is less than or equal to by the reverse triangle inequality, the absolute value of X of N minus X.
+
+01:13:56.580 --> 01:14:11.460
+So, this is by the reverse triangle inequality, and by assumption this converges to zero, this n goes to infinity.
+
+01:14:13.040 --> 01:14:34.940
+Okay? So, by the squeeze theorem, this goes to zero, and therefore, the absolute value of X of N converges to the absolute value of X.
+
+01:14:37.880 --> 01:14:43.060
+And that's it for that proof for this lecture and for this week.
+

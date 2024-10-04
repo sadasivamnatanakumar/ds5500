@@ -1,0 +1,2399 @@
+WEBVTT
+
+00:00:13.080 --> 00:00:16.200
+So, all right, so let's start talking about some math.
+
+00:00:19.460 --> 00:00:25.860
+So there was a last result I was going to prove for series, which is that if you have an
+
+00:00:25.860 --> 00:00:32.220
+absolutely convergent series, then, and you rearrange it, then that series is also absolutely
+
+00:00:32.220 --> 00:00:38.040
+convergent and converges to the same thing as the unarranged series. But I'm going to leave that
+
+00:00:38.040 --> 00:00:49.640
+to the lecture notes and we're just going to start on a new topic. So the topic that we're now on
+
+00:00:49.640 --> 00:01:06.140
+is continuous functions. And so continuous functions, as we'll see, it's a statement about how a
+
+00:01:06.140 --> 00:01:15.100
+function behaves near a point in relation to how it behaves at the point. Okay. Now what it means
+
+00:01:15.100 --> 00:01:22.480
+for a function to behave near a point, that's the notion of the limit of the function, which is what
+
+00:01:22.480 --> 00:01:42.760
+we'll first discuss. Okay. Now, at what points are we going to be looking at? So this is where limits
+
+00:01:42.760 --> 00:01:49.800
+take place. And somehow we want to look at a function near a point, near points where there's a
+
+00:01:49.800 --> 00:01:58.040
+lot of a set nearby to actually look at f at. So f is usually defined on some set s. And we want
+
+00:01:58.040 --> 00:02:02.580
+to look at points so that there's a lot of s nearby. And we kind of already dealt with these types
+
+00:02:02.580 --> 00:02:09.560
+of points when we encountered cluster points in the assignment. So this is exactly where we start
+
+00:02:09.560 --> 00:02:16.880
+looking at limits. So this is a definition that I'll recall from the assignment.
+
+00:02:18.560 --> 00:02:20.300
+Let s be a subset of r.
+
+00:02:23.880 --> 00:02:25.300
+And x and r.
+
+00:02:29.640 --> 00:02:52.800
+Let me say x is a plus or point of s. If we're all delta positive, the interval x minus delta x plus delta intersect s take away x.
+
+00:02:52.800 --> 00:03:04.340
+It is non empty. Okay. So the new terminology not so new since we dealt with it in the assignment is
+
+00:03:04.340 --> 00:03:11.780
+that of a cluster point. And another way to say this is that so an equivalent way of stating this is that
+
+00:03:12.660 --> 00:03:27.280
+for all delta positive, there exists and say a y in s such that zero is bigger than x minus y is less than delta.
+
+00:03:30.060 --> 00:03:39.540
+Okay. So what this means is that, you know, as far as a picture goes, x is a cluster point if when
+
+00:03:39.540 --> 00:03:49.600
+I ever take any kind of small interval about it, I can find some s in there other than, you know, possibly x.
+
+00:03:51.620 --> 00:04:00.980
+And this should be able to be done for every interval. So let's, let's take a look at some examples.
+
+00:04:02.880 --> 00:04:12.060
+Let's say we take s to be one over n in a natural number. Okay.
+
+00:04:14.960 --> 00:04:15.540
+And so,
+
+00:04:15.740 --> 00:04:16.040
+and so,
+
+00:04:20.960 --> 00:04:22.240
+and so,
+
+00:04:22.260 --> 00:04:22.620
+and so,
+
+00:04:23.260 --> 00:04:25.840
+and so,
+
+00:04:35.540 --> 00:04:37.140
+and so,
+
+00:04:42.260 --> 00:04:43.420
+and so,
+
+00:04:46.500 --> 00:04:47.300
+so,
+
+00:04:47.600 --> 00:04:47.620
+and so,
+
+00:04:47.680 --> 00:04:48.840
+and so,
+
+00:04:54.620 --> 00:04:55.420
+so,
+
+00:04:55.420 --> 00:04:57.340
+free to blurt it out if it comes to you.
+
+00:05:06.040 --> 00:05:07.140
+We'll just take a guess.
+
+00:05:08.860 --> 00:05:13.380
+One, so that's one possibility.
+
+00:05:13.880 --> 00:05:20.080
+So there has to be a lot of s near this proposed cluster
+
+00:05:20.080 --> 00:05:20.500
+point.
+
+00:05:20.680 --> 00:05:22.860
+So here's, so let me mark out the points that we have.
+
+00:05:22.860 --> 00:05:32.220
+There's a zero and then a half is there and then a third, fourth, fifth, sixth, so on and so on.
+
+00:05:34.180 --> 00:05:37.240
+And so I see a guess of zero.
+
+00:05:37.540 --> 00:05:39.880
+So that's a, that's a good guess as well.
+
+00:05:40.640 --> 00:05:43.180
+So why would one maybe not be a cluster point?
+
+00:05:43.620 --> 00:05:48.240
+Well, it's because if I draw a little interval around one,
+
+00:05:49.120 --> 00:05:54.800
+then there's only one point in s in here and it's the proposed cluster point one.
+
+00:05:55.520 --> 00:05:59.700
+OK, so remember what we should be able to do is find in every small interval,
+
+00:06:00.620 --> 00:06:04.640
+some of s in the interval that's not equal to the point.
+
+00:06:05.180 --> 00:06:07.860
+OK, and we can't do that for the point one.
+
+00:06:08.320 --> 00:06:17.580
+But for zero, if we draw any interval around zero, there's plenty of s in the interval, not equal to zero.
+
+00:06:18.240 --> 00:06:20.420
+OK, so here.
+
+00:06:25.140 --> 00:06:27.260
+Zero is a cluster point.
+
+00:06:29.520 --> 00:06:32.960
+This and let's give a quick proof of this.
+
+00:06:35.920 --> 00:06:38.620
+So we have to verify for every delta positive.
+
+00:06:39.260 --> 00:06:43.980
+This interval zero minus delta zero plus delta intersects.
+
+00:06:44.120 --> 00:06:45.560
+Take away zero is not empty.
+
+00:06:45.560 --> 00:06:50.900
+So the delta view positive.
+
+00:06:53.540 --> 00:06:55.580
+And now here's the picture.
+
+00:06:56.480 --> 00:06:57.100
+Here's zero.
+
+00:06:58.080 --> 00:06:58.920
+Here's delta.
+
+00:07:01.120 --> 00:07:02.160
+Mine is delta.
+
+00:07:02.460 --> 00:07:04.440
+We have to show that there's some s in here.
+
+00:07:04.580 --> 00:07:11.100
+So we simply choose natural number n large enough so that one over n is there.
+
+00:07:11.100 --> 00:07:15.640
+And we can always do this because of the Archimedean property of the real numbers.
+
+00:07:19.420 --> 00:07:21.500
+So let delta be positive.
+
+00:07:24.520 --> 00:07:32.180
+Fuse natural number n so that one over n is less than delta and it's certainly bigger than zero.
+
+00:07:32.900 --> 00:07:35.060
+n is a natural number.
+
+00:07:37.260 --> 00:07:46.580
+Then one over n is n x minus delta x plus delta intersects.
+
+00:07:46.720 --> 00:07:48.260
+Take away zero.
+
+00:07:48.680 --> 00:07:49.620
+So this should have been zero.
+
+00:07:57.020 --> 00:08:00.620
+Which implies this set is non-empty.
+
+00:08:01.220 --> 00:08:02.820
+Because it has something in it.
+
+00:08:06.860 --> 00:08:07.340
+Okay.
+
+00:08:09.120 --> 00:08:10.080
+All right.
+
+00:08:10.260 --> 00:08:12.040
+Was that example okay?
+
+00:08:12.260 --> 00:08:13.820
+Did you all get that all right?
+
+00:08:17.360 --> 00:08:21.700
+Okay, so feel free to ask questions as they come up.
+
+00:08:27.600 --> 00:08:29.220
+So let's do another example.
+
+00:08:29.380 --> 00:08:31.140
+This one I will not give a proof of.
+
+00:08:34.260 --> 00:08:36.100
+We'll just kind of talk our way through it.
+
+00:08:37.760 --> 00:08:41.000
+Let's say s is now the open interval zero one.
+
+00:08:51.500 --> 00:08:57.480
+What is the set of cluster points of zero one equal to?
+
+00:09:01.380 --> 00:09:05.980
+So what would be a reasonable guess or any guess?
+
+00:09:13.700 --> 00:09:17.340
+So yeah, so certainly this will contain zero one, right?
+
+00:09:19.800 --> 00:09:25.560
+Since so zero one everything between zero and one should be a cluster point of zero one
+
+00:09:25.560 --> 00:09:27.180
+because there's always a lot of numbers.
+
+00:09:27.960 --> 00:09:30.040
+I mean, there's a lot of numbers between zero and one.
+
+00:09:31.160 --> 00:09:32.400
+If I draw this.
+
+00:09:36.460 --> 00:09:37.700
+Zero one.
+
+00:09:42.700 --> 00:09:47.340
+And of everything in between zero one is certainly a cluster point.
+
+00:09:47.940 --> 00:09:48.960
+What about the point one?
+
+00:09:53.960 --> 00:09:55.780
+Is that a cluster point of this set?
+
+00:10:11.540 --> 00:10:15.980
+That's a good observation that yeah, it's the soup of this set.
+
+00:10:16.340 --> 00:10:17.120
+So for every.
+
+00:10:28.760 --> 00:10:29.360
+Right.
+
+00:10:29.360 --> 00:10:29.700
+So.
+
+00:10:33.720 --> 00:10:40.400
+You know, so for every delta positive, if I draw a little interval around one,
+
+00:10:40.660 --> 00:10:45.480
+there's going to be a number less than one that's bigger than one minus delta, right?
+
+00:10:47.460 --> 00:10:53.320
+The set of cluster points of the open interval zero one is the close interval zero one.
+
+00:10:53.320 --> 00:10:54.380
+Okay.
+
+00:10:59.580 --> 00:11:03.020
+Now, let's do another example.
+
+00:11:03.680 --> 00:11:04.800
+Let's say we look at now.
+
+00:11:07.540 --> 00:11:09.100
+Set of rational numbers.
+
+00:11:11.480 --> 00:11:18.240
+So you should again, think of cluster points as being the set of points where
+
+00:11:19.640 --> 00:11:22.700
+there is a lot of this set nearby.
+
+00:11:24.280 --> 00:11:24.760
+Okay.
+
+00:11:25.820 --> 00:11:28.560
+Now, what is the set of cluster points of the rational numbers?
+
+00:11:37.620 --> 00:11:42.480
+Okay, so so perhaps it will contain the irrational numbers.
+
+00:11:42.740 --> 00:11:44.820
+So let's think about this for a little bit.
+
+00:11:44.980 --> 00:11:46.800
+So for example, let's look at square root of two.
+
+00:11:47.280 --> 00:11:47.620
+Okay.
+
+00:11:48.000 --> 00:11:49.320
+Perfectly good rational number.
+
+00:11:49.660 --> 00:11:50.720
+I mean irrational number.
+
+00:11:51.280 --> 00:11:54.560
+If I draw a little interval around square root of two,
+
+00:11:56.520 --> 00:12:01.980
+can I find a rational number in there that's not equal to square root of two?
+
+00:12:07.660 --> 00:12:12.120
+Right, because we have the theorem about the density of the rational numbers, right?
+
+00:12:12.860 --> 00:12:13.380
+That we have.
+
+00:12:13.740 --> 00:12:20.280
+So remember that this was a theorem we proved at one point for all x,
+
+00:12:20.280 --> 00:12:24.100
+y, real numbers with x less than y,
+
+00:12:24.460 --> 00:12:30.060
+there exist an rational number r, such that x is less than r is less than y.
+
+00:12:31.100 --> 00:12:31.520
+Right?
+
+00:12:33.520 --> 00:12:36.680
+So we can always find a rational number here,
+
+00:12:37.020 --> 00:12:39.200
+or we could have taken another rational number here.
+
+00:12:40.840 --> 00:12:41.440
+Yeah.
+
+00:12:42.100 --> 00:12:46.540
+So for every interval we draw around square root of two, we can find a rational in there,
+
+00:12:47.240 --> 00:12:51.760
+not equal to square root of two, obviously, but we can find a rational in that interval.
+
+00:12:52.340 --> 00:12:52.380
+Yeah.
+
+00:12:53.380 --> 00:12:58.500
+So this suggests that the set of cluster points contains the set of irrationals.
+
+00:12:58.980 --> 00:13:00.020
+We're about rational numbers.
+
+00:13:00.160 --> 00:13:01.780
+Are those also cluster points?
+
+00:13:05.900 --> 00:13:07.060
+Let's say I take zero.
+
+00:13:08.060 --> 00:13:10.560
+Now I look at a small interval around zero.
+
+00:13:10.980 --> 00:13:13.880
+Can I find a rational number in there other than zero?
+
+00:13:19.200 --> 00:13:21.700
+I'm not asking like, you know, actually, give me one.
+
+00:13:21.720 --> 00:13:27.260
+I'm just saying, is it that does there exist a rational number in this interval other than zero?
+
+00:13:29.340 --> 00:13:31.040
+By this, by this theorem, right?
+
+00:13:34.100 --> 00:13:40.420
+You can also use a theorem to find a rational in this interval as well.
+
+00:13:40.880 --> 00:13:44.740
+So no matter if it's square root of two or any irrational number,
+
+00:13:45.460 --> 00:13:50.940
+no matter if it's a rational number, everything is a cluster point.
+
+00:13:51.160 --> 00:13:54.840
+So the set of cluster points of rational numbers is equal to r.
+
+00:13:56.640 --> 00:13:57.240
+Okay.
+
+00:13:58.540 --> 00:13:59.500
+Is that clear?
+
+00:14:05.100 --> 00:14:07.980
+Okay, feel free to stop me if you have any questions.
+
+00:14:08.340 --> 00:14:08.340
+
+
+00:14:08.340 --> 00:14:23.000
+So now let's look at, for example, s equal to just a single guy, say zero.
+
+00:14:23.780 --> 00:14:23.780
+
+
+00:14:26.200 --> 00:14:30.260
+Remember cluster points of a set means there's a lot of that set in your body.
+
+00:14:34.940 --> 00:14:38.900
+Now I claim that this guy has no cluster points.
+
+00:14:42.360 --> 00:14:45.560
+Because if you think so intuitively, why is this?
+
+00:14:45.640 --> 00:14:50.420
+This is because for some to be a cluster point, it has to have a lot of the set near it.
+
+00:14:50.860 --> 00:14:51.180
+A lot.
+
+00:14:52.100 --> 00:14:54.620
+And there's not a lot of set to begin with.
+
+00:14:54.760 --> 00:14:55.600
+There's just one element.
+
+00:14:56.460 --> 00:14:58.900
+So let's see why this is the case.
+
+00:14:59.260 --> 00:14:59.460
+Okay.
+
+00:15:00.260 --> 00:15:05.420
+And this gives us a chance to negate the definition of cluster point, which is always a good idea.
+
+00:15:06.940 --> 00:15:07.120
+Okay.
+
+00:15:09.580 --> 00:15:13.820
+So s equals just the singleton set zero.
+
+00:15:14.020 --> 00:15:15.100
+This has no cluster points.
+
+00:15:15.240 --> 00:15:17.620
+And so the negation of the definition of a cluster point.
+
+00:15:17.620 --> 00:15:24.880
+So x is not cluster point.
+
+00:15:26.580 --> 00:15:35.860
+So s means if this is some bad delta, remember, so the definition of cluster point is for all delta.
+
+00:15:36.200 --> 00:15:39.920
+So negation means there exists one bad delta.
+
+00:15:40.160 --> 00:15:47.580
+So that x minus delta zero, x plus delta zero intersect s, take away x,
+
+00:15:49.820 --> 00:15:51.100
+equals the empty set.
+
+00:15:52.260 --> 00:15:52.880
+Okay.
+
+00:15:54.980 --> 00:16:00.140
+So a picture that goes along with this is that x does not cluster point if
+
+00:16:04.160 --> 00:16:11.480
+there's some interval and possibly the only s there is the point x, but nothing else.
+
+00:16:12.280 --> 00:16:12.300
+Okay.
+
+00:16:16.200 --> 00:16:17.460
+Um, all right.
+
+00:16:17.600 --> 00:16:24.180
+So let's use the negation of this definition to show that there are no cluster points.
+
+00:16:24.880 --> 00:16:24.940
+Okay.
+
+00:16:28.000 --> 00:16:29.680
+And we have to deal with two cases.
+
+00:16:30.280 --> 00:16:31.840
+Um, we want to show.
+
+00:16:34.940 --> 00:16:36.360
+x is in r.
+
+00:16:38.800 --> 00:16:45.240
+And x is not a cluster point.
+
+00:16:45.880 --> 00:16:48.200
+The best.
+
+00:16:50.680 --> 00:16:53.680
+And I'll just do the case x not equal to zero.
+
+00:16:54.020 --> 00:16:55.960
+Um, x equal to zero is much easier.
+
+00:16:56.820 --> 00:16:59.300
+Um, so we'll just do x not equal to zero.
+
+00:17:05.160 --> 00:17:06.120
+Let's prove this.
+
+00:17:06.760 --> 00:17:09.320
+Um, and what's the, what's the idea?
+
+00:17:09.720 --> 00:17:10.920
+We have to be able to find.
+
+00:17:10.920 --> 00:17:12.600
+So here's zero.
+
+00:17:13.120 --> 00:17:14.360
+This is all that s is.
+
+00:17:14.580 --> 00:17:15.560
+It's just this point zero.
+
+00:17:16.360 --> 00:17:17.980
+Now we have a point x.
+
+00:17:19.160 --> 00:17:25.320
+What would be, uh, an interval containing x that contains none of s.
+
+00:17:35.580 --> 00:17:39.200
+So x here is just a some non zero number.
+
+00:17:39.200 --> 00:17:40.700
+s is what's highlighted.
+
+00:17:42.520 --> 00:17:47.180
+To be interval around x that doesn't contain any s.
+
+00:17:55.860 --> 00:17:57.740
+They'll like x over two.
+
+00:17:59.820 --> 00:18:04.980
+Re x over two, meaning delta equals x over two, at least for this picture.
+
+00:18:07.200 --> 00:18:07.940
+Yeah.
+
+00:18:09.740 --> 00:18:11.720
+Okay, and that's, and that's essentially the proof.
+
+00:18:12.040 --> 00:18:16.360
+So, um, choose delta zero.
+
+00:18:18.080 --> 00:18:21.840
+And we'll simplify this further and suppose x is positive.
+
+00:18:22.040 --> 00:18:25.420
+For x less than zero, you choose delta zero to be the absolute value of x.
+
+00:18:26.060 --> 00:18:28.220
+But for this one, this is simple enough.
+
+00:18:28.420 --> 00:18:30.980
+Choose delta zero to be x over two.
+
+00:18:34.220 --> 00:18:38.440
+Then x minus delta zero x plus delta zero.
+
+00:18:39.200 --> 00:18:41.280
+Is equal to x over two.
+
+00:18:41.780 --> 00:18:42.980
+Re x over two.
+
+00:18:44.200 --> 00:18:45.020
+Um,
+
+00:18:49.680 --> 00:18:54.160
+and since zero is not in this set,
+
+00:18:56.000 --> 00:18:58.440
+in this set lies.
+
+00:19:04.140 --> 00:19:05.960
+Intersect s, take away.
+
+00:19:05.960 --> 00:19:10.540
+x equals empty.
+
+00:19:12.480 --> 00:19:12.540
+Okay.
+
+00:19:14.100 --> 00:19:20.360
+So we had to find a delta so that this interval around x doesn't contain anything from s.
+
+00:19:20.560 --> 00:19:23.140
+And we've done that by choosing delta zero to be x over two.
+
+00:19:31.460 --> 00:19:32.060
+Okay.
+
+00:19:32.860 --> 00:19:33.220
+Um,
+
+00:19:36.640 --> 00:19:41.040
+so, you know, I could have done it for just, uh, so I did it for just one.
+
+00:19:41.320 --> 00:19:44.100
+So for a set containing just one element, um,
+
+00:19:45.200 --> 00:19:48.140
+showed that this set has no cluster points.
+
+00:19:48.360 --> 00:19:53.000
+You can also show that, uh, if it has finitely many points, it has no cluster points.
+
+00:19:53.740 --> 00:20:00.400
+Um, and so therefore any finite set has no cluster points, but
+
+00:20:01.320 --> 00:20:04.180
+being a cluster point has nothing to do with the cardinality.
+
+00:20:04.580 --> 00:20:09.620
+So if you see the example in the nodes, which you can think about, and I'm not going to go over right here,
+
+00:20:09.760 --> 00:20:14.080
+but for example, s equals z, uh, the set of integers.
+
+00:20:23.600 --> 00:20:25.320
+This has no cluster points.
+
+00:20:29.000 --> 00:20:29.540
+Okay.
+
+00:20:30.200 --> 00:20:35.600
+So, um, there are, you know, being a cluster point means where is the set clustering?
+
+00:20:35.660 --> 00:20:41.440
+So it has nothing necessarily to do with the size of the set, but kind of where the set is, um,
+
+00:20:42.520 --> 00:20:44.460
+taking up space in the real number line.
+
+00:20:45.520 --> 00:20:46.200
+All right.
+
+00:20:46.380 --> 00:20:47.460
+So, um,
+
+00:20:47.460 --> 00:20:47.520
+um,
+
+00:20:49.780 --> 00:20:51.680
+way of the definition of cluster points.
+
+00:20:54.760 --> 00:21:03.300
+Um, so let me first state the theorem that in fact, you proved, uh, in the assignment, which is,
+
+00:21:06.720 --> 00:21:12.720
+that for cluster points, um, let s be a subset of r.
+
+00:21:14.060 --> 00:21:18.700
+And x is a cluster point.
+
+00:21:21.000 --> 00:21:27.080
+The best if and only if there exists sequence,
+
+00:21:30.720 --> 00:21:38.440
+x in the elements of, as takeaway x,
+
+00:21:41.980 --> 00:21:42.420
+x,
+
+00:21:42.420 --> 00:21:43.920
+which that x in converges to x.
+
+00:21:46.080 --> 00:21:49.900
+Okay, and that was in the assignment, you proved that basically using the, uh, the squeeze there,
+
+00:21:50.080 --> 00:21:51.060
+um, in the definition.
+
+00:21:53.320 --> 00:21:53.860
+All right.
+
+00:21:53.940 --> 00:21:59.680
+So with, uh, the notion of a cluster point, these are kind of the points in a set where we're going to
+
+00:21:59.680 --> 00:22:02.920
+start talking about how a function behaves near a point.
+
+00:22:03.340 --> 00:22:03.700
+All right.
+
+00:22:04.300 --> 00:22:07.800
+Um, which is, uh, the notion of a limit of a function.
+
+00:22:09.300 --> 00:22:11.120
+Which is our next definition.
+
+00:22:12.180 --> 00:22:12.180
+
+
+00:22:14.220 --> 00:22:15.980
+let s be a subset of r.
+
+00:22:17.480 --> 00:22:22.520
+And even though I was referring to cluster points earlier as x, we're now going to switch over to c.
+
+00:22:24.620 --> 00:22:25.800
+The c be,
+
+00:22:30.480 --> 00:22:32.540
+cluster point of s.
+
+00:22:35.600 --> 00:22:38.580
+Let f be a function from s to r.
+
+00:22:39.840 --> 00:22:40.660
+All right.
+
+00:22:41.920 --> 00:22:42.200
+So,
+
+00:22:45.260 --> 00:22:47.660
+you say f of x converges to l.
+
+00:22:52.520 --> 00:22:55.120
+As x goes to c.
+
+00:22:55.820 --> 00:22:56.920
+So this is a new
+
+00:22:59.560 --> 00:23:00.740
+terminology here.
+
+00:23:04.960 --> 00:23:07.480
+So here l is a real number if
+
+00:23:08.380 --> 00:23:12.020
+every epsilon positive exists delta positive.
+
+00:23:13.760 --> 00:23:17.460
+That's that if x is in s.
+
+00:23:22.200 --> 00:23:26.160
+Absolute value of x minus c is bigger than zero,
+
+00:23:26.960 --> 00:23:28.920
+less than delta, then
+
+00:23:30.920 --> 00:23:33.900
+f of x minus l is less than epsilon.
+
+00:23:34.780 --> 00:23:35.080
+So, um,
+
+00:23:38.420 --> 00:23:43.600
+let's, uh, try and compare this definition a little bit to what happens for a sequence.
+
+00:23:43.700 --> 00:23:47.280
+So for sequence, it's the sequence is getting close to l.
+
+00:23:47.840 --> 00:23:54.420
+Um, as long as we go far enough out in the, in the sequence as long as we look at terms far enough out.
+
+00:23:54.420 --> 00:24:00.540
+Now, for limits of functions that going far enough out along the sequences replaced by,
+
+00:24:00.740 --> 00:24:04.880
+as long as we look close enough to the point c, but not at the point c.
+
+00:24:05.320 --> 00:24:06.300
+So, um,
+
+00:24:09.840 --> 00:24:19.980
+if you like, this says that if x is near c, then, so this is just an intuitive interpretation of what this,
+
+00:24:20.540 --> 00:24:23.580
+definition says if x is near c, then
+
+00:24:27.360 --> 00:24:29.000
+f of x is near l.
+
+00:24:30.800 --> 00:24:34.960
+And let me also throw in here that we're saying that x is near c,
+
+00:24:36.500 --> 00:24:38.360
+but not equal to c.
+
+00:24:40.060 --> 00:24:44.220
+Okay, for a limit, you don't look at what happens at f of c.
+
+00:24:44.760 --> 00:24:49.960
+The function doesn't even need to be defined there, uh, to be able to define what a
+
+00:24:49.960 --> 00:24:52.280
+limit is. We just care about what happens nearby.
+
+00:24:52.840 --> 00:24:54.480
+Okay. So,
+
+00:24:56.620 --> 00:25:01.240
+you could have the picture you should have in mind is that, uh, you're c.
+
+00:25:04.360 --> 00:25:09.440
+And, you know, maybe f is not even defined up to there, but there's f,
+
+00:25:09.580 --> 00:25:11.360
+the graph of the function f there.
+
+00:25:17.020 --> 00:25:21.720
+There's l and as long as I get very close to c,
+
+00:25:25.000 --> 00:25:26.520
+I'll be very close to l.
+
+00:25:29.780 --> 00:25:35.420
+Very close being, no, measured within some strip here.
+
+00:25:39.360 --> 00:25:39.920
+Okay.
+
+00:25:42.320 --> 00:25:55.380
+Okay, so this is the notion of the limit of a function as we approach a cluster point of the set s,
+
+00:25:55.580 --> 00:25:59.960
+where the function f is defined. This is a little bit of notation.
+
+00:26:03.960 --> 00:26:11.420
+Typically, right, uh, like we did with sequences, f of x can be referred to as to l as f of x arrow l.
+
+00:26:11.800 --> 00:26:16.120
+And then I'll write as x goes to c. Maybe I won't write as x goes to c.
+
+00:26:17.040 --> 00:26:22.760
+And we note this by limit of f of x equals l as well.
+
+00:26:26.940 --> 00:26:27.360
+Okay.
+
+00:26:27.520 --> 00:26:32.320
+So, first question about limits is, are the unique?
+
+00:26:33.080 --> 00:26:35.780
+And this is in fact why we
+
+00:26:37.920 --> 00:26:41.440
+require that c be a cluster point of s because, um,
+
+00:26:42.180 --> 00:26:46.260
+if we didn't require c to be a cluster point of s in this definition, limits would not be unique.
+
+00:26:46.680 --> 00:26:48.580
+In fact, you could have functions converging to
+
+00:26:49.420 --> 00:26:53.980
+whatever you want because the definition would then be vacuous. But, um,
+
+00:26:55.220 --> 00:26:57.160
+you know, if you don't want to think about that, that's fine.
+
+00:26:57.320 --> 00:27:01.000
+It's not a big issue, but just, uh, I'm just going to point out at one point, we're going to use
+
+00:27:01.000 --> 00:27:05.900
+the fact that c is a cluster point to prove, uh, the following theorem. So,
+
+00:27:11.000 --> 00:27:21.340
+c be a cluster point of s, which is a subset of r.
+
+00:27:26.000 --> 00:27:28.580
+And that f be a function from s to r.
+
+00:27:33.420 --> 00:27:42.660
+If f of x converges to l1 is x goes to c and f of x converges to l2 as x goes to c,
+
+00:27:45.980 --> 00:27:53.100
+then l1 equals l2. Okay. So, this is what I mean by, uh, uniqueness that, uh,
+
+00:27:53.440 --> 00:27:56.720
+a function can only have one limit as it approaches a point c.
+
+00:27:59.520 --> 00:28:03.140
+Let me get the proof. So,
+
+00:28:05.520 --> 00:28:10.060
+you know, we're going to play this game again where instead of showing something is zero or
+
+00:28:10.060 --> 00:28:13.620
+something is equal to something else directly, we'll give ourselves a little room and prove the
+
+00:28:13.620 --> 00:28:23.560
+following. We'll instead show that, uh, all epsilon positive, l1 minus l2 is less than epsilon.
+
+00:28:24.360 --> 00:28:30.480
+So, l1 and l2, these are just two fixed, uh, real numbers. If their absolute value is less than
+
+00:28:30.480 --> 00:28:37.520
+epsilon for arbitrary epsilon, then this is a number which is smaller than any positive real
+
+00:28:37.520 --> 00:28:46.140
+number that implies that that number is zero, so l1 equals l2. Okay. Um, why would we give ourselves a
+
+00:28:46.140 --> 00:28:50.720
+little room is because in the definition, we have a small parameter there, which we hope to use.
+
+00:28:51.360 --> 00:28:54.260
+So, um, so let's prove this.
+
+00:28:56.880 --> 00:28:57.960
+The epsilon deposit.
+
+00:29:01.520 --> 00:29:06.760
+So, since f of x converges to l1,
+
+00:29:09.360 --> 00:29:16.140
+there exists. So, so just from the definition, um, given some small tolerance, I can find, uh,
+
+00:29:21.780 --> 00:29:28.720
+a little number delta so that if I look inside this interval, I get mapped to, uh, the interval l plus
+
+00:29:28.720 --> 00:29:36.960
+epsilon l minus epsilon. So, there exists a delta 1 positive such that.
+
+00:29:40.460 --> 00:29:45.540
+If x is an s and I'm going to probably keep forgetting to write that, but that should be understood
+
+00:29:45.540 --> 00:29:53.380
+that x is in the domain of the function f. If x minus c is less than, uh, delta 1 and bigger than zero,
+
+00:29:55.720 --> 00:30:04.360
+then f of x minus l1 is less than epsilon over two.
+
+00:30:06.520 --> 00:30:14.720
+Okay. And in the same thing for, um, l2, I mean, if f of x is converging to l2, then there
+
+00:30:14.720 --> 00:30:21.080
+exists a delta 2 so that I have the same statement. So instead, um, I'm just going to change this one to
+
+00:30:23.860 --> 00:30:37.840
+i, i, i, i, i, and here i equals 1, 2. So, since f of x converges to each of these two numbers, l1 and l2,
+
+00:30:38.120 --> 00:30:44.700
+there exists a delta 1 and a delta 2 so that if I'm within this tolerance delta of 1 or delta
+
+00:30:44.700 --> 00:30:50.060
+2, then f of x minus delta 1, uh, l1 or l2 is less than epsilon over two.
+
+00:30:54.520 --> 00:30:57.820
+Let delta be the minimum of these two numbers.
+
+00:31:02.480 --> 00:31:06.300
+Now, since c is a
+
+00:31:09.960 --> 00:31:17.560
+plus or point of x, there in fact does equal, there does exist an x in s.
+
+00:31:19.340 --> 00:31:23.900
+So, such that zero is bigger than x minus c is less than delta.
+
+00:31:25.020 --> 00:31:29.120
+All right. And I'm going to use this x to compare l1 and l2.
+
+00:31:33.160 --> 00:31:38.620
+Then since x is in this interval, or I should say since it's, uh,
+
+00:31:41.800 --> 00:31:49.520
+so remember I have this, which means I have this inequality for i equals 1, 2.
+
+00:31:49.520 --> 00:31:53.880
+I get f of x, I should say.
+
+00:31:56.620 --> 00:32:01.460
+l1 minus l2, this is equal to if I add and subtract f of x.
+
+00:32:10.020 --> 00:32:12.000
+And now use the triangle inequality.
+
+00:32:18.600 --> 00:32:21.460
+And use the inequality that's in green.
+
+00:32:22.440 --> 00:32:25.080
+The f of x minus l1 is less than epsilon over two.
+
+00:32:26.080 --> 00:32:27.840
+Uh, and same for l2, I get
+
+00:32:32.720 --> 00:32:34.300
+equals epsilon, okay?
+
+00:32:34.780 --> 00:32:37.600
+And that's the end because remember we started off with,
+
+00:32:38.320 --> 00:32:41.440
+um, the absolute value of l1 minus l2.
+
+00:32:41.440 --> 00:32:44.420
+Do you have any questions about that?
+
+00:32:58.280 --> 00:33:06.600
+Okay, so, uh, not the most exciting theorem in the world that, uh, you know,
+
+00:33:06.600 --> 00:33:13.800
+this thing that we've defined, uh, limit is uniquely, is a unique thing for a function.
+
+00:33:15.460 --> 00:33:18.060
+But, uh, let's start looking at some examples.
+
+00:33:24.640 --> 00:33:28.060
+And at one point we'll look at the negation of this definition.
+
+00:33:28.840 --> 00:33:32.640
+So, let's suppose, so let's look at the limit.
+
+00:33:33.440 --> 00:33:39.040
+This x goes to c of the function ax plus b.
+
+00:33:40.340 --> 00:33:43.580
+And I claim this is equal to ac plus b.
+
+00:33:44.900 --> 00:33:51.280
+Okay, so here s is, although I didn't write it out, this function ax plus b, this is, uh,
+
+00:33:51.380 --> 00:33:54.500
+I'm looking at it defined on all of r.
+
+00:33:56.900 --> 00:33:58.920
+And c is a real number.
+
+00:34:01.320 --> 00:34:04.740
+Okay, so we have to verify, um, this definition.
+
+00:34:11.460 --> 00:34:14.780
+And since it's a, for every epsilon, there exists something.
+
+00:34:15.320 --> 00:34:19.060
+At the beginning of every proof, I'll give you a few points if you can just say let epsilon be positive.
+
+00:34:19.880 --> 00:34:22.560
+Um, how will we choose delta?
+
+00:34:22.880 --> 00:34:28.900
+Well, you do kind of, uh, similar computations as you would if you were doing
+
+00:34:28.920 --> 00:34:33.660
+epsilon m arguments for, um, sequences.
+
+00:34:34.020 --> 00:34:36.240
+So, what are we after?
+
+00:34:36.900 --> 00:34:47.380
+We want to find delta so that x minus c less than delta and also bigger than zero implies
+
+00:34:48.900 --> 00:34:55.480
+f of x, which is a x plus b minus ac plus b is less than epsilon.
+
+00:34:56.980 --> 00:35:05.700
+So, uh, let's start off with this thing, play with it and see if we can find how to choose delta.
+
+00:35:06.740 --> 00:35:08.720
+Remember, we don't solve this inequality.
+
+00:35:09.340 --> 00:35:16.580
+We want to find how to choose delta based on, you know, estimating this thing and trying to make it less than epsilon.
+
+00:35:16.580 --> 00:35:25.200
+So, um, f of x minus ac plus b, absolute value.
+
+00:35:25.480 --> 00:35:34.540
+This is equal to, if you just plug in, f of x equals a x plus b, this equals a times x minus c.
+
+00:35:37.020 --> 00:35:41.240
+If equals absolute value of a times x minus c.
+
+00:35:41.800 --> 00:35:46.420
+And now we're in business because the thing that we do have control over is the delta.
+
+00:35:47.140 --> 00:35:49.960
+Right. It is how big x minus c is.
+
+00:35:50.080 --> 00:35:56.220
+So, this is less than absolute value of a times delta if x minus c is less than delta.
+
+00:35:57.260 --> 00:36:05.040
+And remember, the thing that we want in the end is the thing in yellow and the thing we get to
+
+00:36:05.040 --> 00:36:06.680
+control is the thing in green.
+
+00:36:11.480 --> 00:36:18.800
+So, uh, if I want the thing in yellow and I have the thing in green, how do I choose delta?
+
+00:36:18.800 --> 00:36:40.140
+So, in the end, right, I want f of x minus ac plus b to be less than epsilon.
+
+00:36:40.580 --> 00:36:44.620
+Right now, I'm at, um, the absolute value of a times delta.
+
+00:36:44.620 --> 00:36:46.480
+Delta is the thing I get to play with.
+
+00:36:48.440 --> 00:36:50.020
+Two, so how do I choose it?
+
+00:36:53.420 --> 00:36:55.440
+Epsilon to be absolute value.
+
+00:37:01.000 --> 00:37:07.740
+Right, because if I choose delta this way, then x minus c less than delta implies that
+
+00:37:07.740 --> 00:37:17.900
+just by this computation here, I would get epsilon in the end.
+
+00:37:19.040 --> 00:37:19.380
+Yeah.
+
+00:37:22.280 --> 00:37:25.460
+So, that's kind of the scratch work that goes into it.
+
+00:37:25.540 --> 00:37:27.400
+Again, delta is the thing you get to choose.
+
+00:37:27.400 --> 00:37:31.560
+You get to, um, choose based on epsilon.
+
+00:37:32.780 --> 00:37:41.100
+And so you look at f of x minus ac plus b, you estimate it to be no bigger than, um, the absolute
+
+00:37:41.100 --> 00:37:45.340
+value of a times x minus c, which is less than the absolute value of a times delta.
+
+00:37:45.880 --> 00:37:51.360
+And so if you want that thing to be less than epsilon, you should choose, for example, delta to
+
+00:37:51.360 --> 00:37:53.100
+be epsilon over the absolute value of a.
+
+00:37:53.280 --> 00:37:54.460
+There's not a unique choice.
+
+00:37:54.580 --> 00:37:58.240
+I could have chosen delta to be epsilon over two absolute value of a.
+
+00:37:58.240 --> 00:38:01.580
+Um, but this is a choice.
+
+00:38:02.100 --> 00:38:02.260
+Okay.
+
+00:38:04.080 --> 00:38:05.860
+So let epsilon be positive.
+
+00:38:08.260 --> 00:38:14.680
+Choose delta to be epsilon over absolute value of a.
+
+00:38:17.180 --> 00:38:17.960
+If
+
+00:38:20.480 --> 00:38:24.340
+x minus c is less than delta, then.
+
+00:38:24.340 --> 00:38:31.400
+And when you write the proof, you know, it's essentially a rehashing of the best parts of your
+
+00:38:31.400 --> 00:38:36.020
+computation, and f of x minus a times c plus b.
+
+00:38:37.200 --> 00:38:41.940
+This is equal to absolute value of a times x minus c.
+
+00:38:43.960 --> 00:38:50.340
+So, uh, if we take f of x and subtract our proposed limit ac plus b, we get the absolute value of a times
+
+00:38:50.340 --> 00:38:55.260
+absolute value of x minus c, which is less than the absolute value of a times delta,
+
+00:38:55.780 --> 00:39:00.220
+g equals epsilon, since we chose delta to be epsilon over eight.
+
+00:39:08.240 --> 00:39:08.840
+Okay.
+
+00:39:09.580 --> 00:39:10.860
+That's, uh, that's the proof.
+
+00:39:11.840 --> 00:39:13.040
+Is there any questions?
+
+00:39:33.500 --> 00:39:33.980
+Okay.
+
+00:39:34.220 --> 00:39:34.220
+
+
+00:39:34.240 --> 00:39:36.560
+So let's do, uh, let's do another example.
+
+00:39:43.040 --> 00:39:48.040
+Let's look at the limit as x goes to c, uh, square of the function square root of x.
+
+00:39:48.840 --> 00:39:52.020
+And I'm going to show this is equal to square root of c.
+
+00:39:53.060 --> 00:39:58.820
+And here, uh, although I'm not writing it s will be for us, the domain of the square root,
+
+00:39:59.320 --> 00:40:05.080
+which is, uh, the closed interval, zero infinity, not including infinity, of course, but, um,
+
+00:40:06.220 --> 00:40:08.740
+and for what I'm going to do, see as positive, okay?
+
+00:40:09.060 --> 00:40:13.580
+You can also do c equal to zero, uh, but for this proof, I'm going to do c positive.
+
+00:40:18.060 --> 00:40:18.940
+All right.
+
+00:40:22.500 --> 00:40:27.140
+So I have to verify this definition, which means for every delta, I mean, for every epsilon,
+
+00:40:27.240 --> 00:40:32.260
+I can find a delta. So let epsilon be positive. Let's go over to our box of,
+
+00:40:35.700 --> 00:40:36.820
+scribbling and scratching.
+
+00:40:37.980 --> 00:40:43.620
+So remember, our goal is to find a delta, which I can choose. So that f of x minus,
+
+00:40:44.260 --> 00:40:48.240
+a square root of c in this case is less than epsilon. So if I look at
+
+00:40:49.180 --> 00:40:57.680
+f of x minus square root of c, this is square root of x minus square root of c.
+
+00:40:58.360 --> 00:41:03.020
+And perhaps you remember from your days and calculus that whenever you see the difference of two
+
+00:41:03.020 --> 00:41:12.040
+square roots, it's, um, a good idea, maybe to multiply the top and bottom, or I guess multiply by
+
+00:41:12.040 --> 00:41:17.740
+one in a very special way so that I get the difference of square. So this is equal to the square root of
+
+00:41:17.740 --> 00:41:27.500
+x minus square root of c times square root of x plus square root of c all over square root of
+
+00:41:27.500 --> 00:41:40.820
+x plus square root of c. Okay. And so now I have, uh, on the top, I have, uh, product a minus b times
+
+00:41:40.820 --> 00:41:47.820
+a plus b. So that's the difference of squares, which gives me x minus c on top over square root of
+
+00:41:47.820 --> 00:41:58.540
+x plus square root of c. Okay. Um, and remember, this is less than the thing that we're going to
+
+00:41:58.540 --> 00:42:03.280
+choose in the end, the absolute value of x minus c is going to, is less than delta. So this is less
+
+00:42:03.280 --> 00:42:09.820
+than square root of x plus square root of c. Now in the end, you have to only, you can choose delta
+
+00:42:09.820 --> 00:42:17.620
+depending only on epsilon and maybe the point c. Okay. You cannot choose it to be dependent on the
+
+00:42:17.620 --> 00:42:25.180
+point x, which is changing, right? Uh, what maybe you're tempted to do here is to then choose delta to
+
+00:42:25.180 --> 00:42:36.160
+be, uh, square root of x plus square root of c times epsilon. Um, don't do that. Okay. Because delta,
+
+00:42:36.160 --> 00:42:41.560
+again, only depends on the point c and the point epsilon. It cannot depend on the thing that's
+
+00:42:41.560 --> 00:42:49.880
+changing, which is x, right? This is changing. So, uh, you can't, you don't make this choice.
+
+00:42:52.580 --> 00:42:56.940
+Now, if we just do one more thing, then we'll get to something where we can choose an independent
+
+00:42:56.940 --> 00:43:04.400
+of the thing that's changing x. Um, the square root of x on the bottom is only making things smaller,
+
+00:43:04.880 --> 00:43:10.500
+right? Because that's not negative. So this is less than or equal to delta over square root of c.
+
+00:43:14.820 --> 00:43:20.640
+Okay. So now in the end, I have something which is delta and depends on the point c. So,
+
+00:43:20.900 --> 00:43:25.780
+and I want f of x minus square root of c to be less than epsilon. So how should I choose delta?
+
+00:43:35.260 --> 00:43:39.700
+Shout it if you know it.
+
+00:43:53.760 --> 00:44:00.420
+Right. Epsilon times square root of c. So now, uh, this will be our, our choice. So,
+
+00:44:02.760 --> 00:44:07.560
+choose delta to be epsilon times square root of c.
+
+00:44:13.260 --> 00:44:18.080
+Now, we have to show this delta works, which is essentially, again, just rehashing our,
+
+00:44:18.080 --> 00:44:22.820
+our computation over on the right, which gave us how to choose delta than if
+
+00:44:25.320 --> 00:44:36.440
+you know, the value of x minus c is less than delta f of x minus square root of c. And I'm not
+
+00:44:36.440 --> 00:44:41.920
+going to write f of x, I'm going to write just square root of x. This is equal to
+
+00:44:57.000 --> 00:44:57.420
+x minus c.
+
+00:44:57.420 --> 00:44:59.660
+Basically, what we did over here in the box, which is,
+
+00:44:59.760 --> 00:45:06.160
+the absolute value of x minus c over square root of x plus square root of c, which is less than
+
+00:45:08.540 --> 00:45:14.000
+or equal to, if I take away the square root of x on the bottom, like we did before, which is less than
+
+00:45:14.000 --> 00:45:20.680
+delta, square root of c, which equals epsilon square root of c over square root of c, which equals
+
+00:45:20.680 --> 00:45:23.540
+epsilon. So this delta works.
+
+00:45:31.680 --> 00:45:34.380
+Okay, there's any questions about that example.
+
+00:45:46.720 --> 00:45:47.160
+Okay.
+
+00:45:51.300 --> 00:45:56.300
+So let's do one more example, which really illustrates what I was getting at when I was talking
+
+00:45:56.300 --> 00:46:02.300
+about the limit on the cares about what the function is doing near a point, but not at the point.
+
+00:46:02.300 --> 00:46:12.160
+So let's say we look at the function f of x given by one if x equals zero and two, if x is not
+
+00:46:12.160 --> 00:46:22.240
+equals zero. Okay, so this is, um, here's the point zero. And
+
+00:46:27.000 --> 00:46:33.000
+for x not equal to zero is equal to two and x equals zero is equal to one.
+
+00:46:35.560 --> 00:46:36.440
+All right.
+
+00:46:41.140 --> 00:46:45.720
+And I claim that the limit as x goes to zero of f of x is equals two.
+
+00:46:47.660 --> 00:47:01.400
+And the thing to note is that this limit does not equal f of zero, which it did for the previous two cases.
+
+00:47:01.640 --> 00:47:07.700
+Right. If we look back at these two examples that we did a minute ago, the limit as x goes to
+
+00:47:07.700 --> 00:47:11.620
+c of both of these examples was I just plug in c to the function. Right.
+
+00:47:11.620 --> 00:47:18.520
+Okay. But for this example, that's not the case. Right. The example, the limit is not equal to the
+
+00:47:18.520 --> 00:47:25.740
+function evaluated at the point in highlighting that limits don't care about the function evaluated
+
+00:47:25.740 --> 00:47:31.620
+at the point they care about what's happening near the point. Okay. And near the point, f of x is
+
+00:47:31.620 --> 00:47:42.440
+just equal to two, identically. Okay. So I'll give you the quick proof or you can completely ignore it
+
+00:47:42.440 --> 00:47:51.240
+and just believe that the limit as x goes to zero of this function equals two. So the point is,
+
+00:47:51.240 --> 00:47:56.640
+is that for x not equal to zero, f of x is just a constant two. So let epsilon be positive.
+
+00:47:56.640 --> 00:48:04.580
+And you can choose delta to be whatever you like because f of x when x is not equal to zero is
+
+00:48:04.580 --> 00:48:13.600
+going to be equal to two, the proposed limit. Then if zero is bigger than the absolute value of x
+
+00:48:13.600 --> 00:48:19.080
+minus zero, which is just x is less than delta, then this implies x is not equal to zero.
+
+00:48:20.160 --> 00:48:27.620
+And therefore, if I look at f of x minus two, this is just two minus two equals zero,
+
+00:48:28.500 --> 00:48:37.920
+which is less than epsilon. Okay. Any questions about this example?
+
+00:48:55.760 --> 00:48:56.980
+No questions?
+
+00:49:09.600 --> 00:49:17.800
+All right. So what we'll talk about now is, so before this,
+
+00:49:19.360 --> 00:49:26.480
+section on continuous functions or at least this section on limits of functions. We had the notion of limits of sequences.
+
+00:49:28.700 --> 00:49:34.640
+And so a natural question is how do limits of functions and limits of sequences
+
+00:49:36.900 --> 00:49:43.880
+belong together interact, relate to each other I guess is the best way to raise that question.
+
+00:49:43.880 --> 00:49:57.240
+And the point is is that to decide if a function has a limit it suffices to stick in sequences that converge to that point that you're looking at.
+
+00:49:58.240 --> 00:50:00.300
+And that's the content of the next theorem.
+
+00:50:02.080 --> 00:50:02.080
+
+
+00:50:07.040 --> 00:50:08.920
+Let s be a subset of R.
+
+00:50:10.060 --> 00:50:10.380
+See.
+
+00:50:13.320 --> 00:50:14.780
+What's the point of.
+
+00:50:16.980 --> 00:50:17.580
+S.
+
+00:50:20.400 --> 00:50:22.740
+Let f be a function from S to R.
+
+00:50:24.620 --> 00:50:25.220
+Then.
+
+00:50:31.340 --> 00:50:37.880
+The limit exists limit as x goes to c of f of x equals a number L.
+
+00:50:38.640 --> 00:50:51.640
+This is equivalent to the statement that for every sequence x of n of elements of s take away c.
+
+00:50:55.980 --> 00:50:58.200
+Such that x and converges to c.
+
+00:51:00.480 --> 00:51:01.520
+We have.
+
+00:51:03.200 --> 00:51:05.300
+f of x n converges to.
+
+00:51:07.860 --> 00:51:10.660
+So again, the statement of this theorem is that.
+
+00:51:12.160 --> 00:51:21.160
+A function converges to L if and only if for every sequence I stick into the function which converges to c f of x n converges to L.
+
+00:51:22.020 --> 00:51:22.800
+Okay.
+
+00:51:23.240 --> 00:51:23.720
+So it did.
+
+00:51:24.660 --> 00:51:32.240
+Shoes or to decide if a function converges it suffices to look at see convergence of certain sequences.
+
+00:51:32.900 --> 00:51:33.000
+Okay.
+
+00:51:37.320 --> 00:51:38.100
+Okay.
+
+00:51:40.740 --> 00:51:45.840
+And you know, why is this theorem important or at least very useful it's because.
+
+00:51:47.400 --> 00:51:49.700
+With this theorem, we now get basically.
+
+00:51:51.200 --> 00:51:54.800
+Every analog of theorems we prove for sequences for free.
+
+00:51:55.380 --> 00:51:55.500
+Okay.
+
+00:51:55.600 --> 00:51:58.240
+For example, limits of stums of functions.
+
+00:51:59.840 --> 00:52:02.980
+A squeeze theorem that's.
+
+00:52:03.000 --> 00:52:05.200
+You know, can be stated for limits.
+
+00:52:06.340 --> 00:52:08.440
+A functions and so on.
+
+00:52:08.540 --> 00:52:11.260
+And I'll say a few comments about this after we prove the theorem.
+
+00:52:15.840 --> 00:52:17.180
+Alright, so let's.
+
+00:52:17.300 --> 00:52:18.460
+This is a two way street.
+
+00:52:19.100 --> 00:52:19.240
+So.
+
+00:52:21.420 --> 00:52:22.760
+And I'm going to mark.
+
+00:52:25.120 --> 00:52:26.680
+The second statement in green.
+
+00:52:27.880 --> 00:52:29.740
+That way I don't have to rewrite it again.
+
+00:52:30.680 --> 00:52:31.000
+So.
+
+00:52:32.360 --> 00:52:33.220
+First assume.
+
+00:52:34.500 --> 00:52:34.900
+That.
+
+00:52:35.740 --> 00:52:38.320
+Limit as x goes to c of f of x equals L.
+
+00:52:38.420 --> 00:52:40.240
+And now we want to prove the statement in green.
+
+00:52:41.520 --> 00:52:41.660
+Okay.
+
+00:52:44.100 --> 00:52:44.760
+So.
+
+00:52:45.760 --> 00:52:47.500
+Here's a here's the idea.
+
+00:52:48.200 --> 00:52:49.200
+So now we want to show.
+
+00:52:50.360 --> 00:52:50.360
+
+
+00:52:51.740 --> 00:52:53.020
+The x n.
+
+00:52:54.840 --> 00:52:56.820
+The sequence of elements.
+
+00:53:01.140 --> 00:53:02.840
+And as takeaway c.
+
+00:53:06.560 --> 00:53:09.000
+Such that x of n converges to c.
+
+00:53:09.700 --> 00:53:10.640
+And what we want to show.
+
+00:53:10.640 --> 00:53:10.700
+So.
+
+00:53:12.640 --> 00:53:13.040
+Is that.
+
+00:53:14.020 --> 00:53:15.120
+F of x n.
+
+00:53:15.460 --> 00:53:18.300
+Which is now a new sequence.
+
+00:53:19.840 --> 00:53:20.960
+Converges to L.
+
+00:53:22.640 --> 00:53:23.540
+As then goes to infinity.
+
+00:53:27.220 --> 00:53:29.480
+So here I should write as.
+
+00:53:30.640 --> 00:53:32.200
+In goes to infinity in here.
+
+00:53:36.880 --> 00:53:37.560
+Okay.
+
+00:53:40.020 --> 00:53:41.180
+So let me move that.
+
+00:53:41.580 --> 00:53:42.380
+And let me draw.
+
+00:53:42.760 --> 00:53:44.240
+And of the picture of why.
+
+00:53:45.480 --> 00:53:46.260
+You should believe this.
+
+00:53:48.840 --> 00:53:53.000
+So remember what it means for a sequence to converge to a number.
+
+00:53:53.220 --> 00:53:55.960
+Means for every epsilon there exists a capital M.
+
+00:53:56.260 --> 00:53:58.560
+So that for all in bigger than or equal to capital M.
+
+00:53:58.740 --> 00:53:59.680
+The sequence is.
+
+00:54:00.100 --> 00:54:02.940
+Close to the number L within epsilon distance to it.
+
+00:54:03.420 --> 00:54:04.420
+So let's.
+
+00:54:05.760 --> 00:54:07.420
+Let's think about this a little bit.
+
+00:54:08.620 --> 00:54:10.340
+I'm not going to draw the graph.
+
+00:54:10.540 --> 00:54:14.740
+I'm just going to draw two copies of the number line.
+
+00:54:15.880 --> 00:54:17.820
+Here we have.
+
+00:54:19.700 --> 00:54:20.580
+Number L.
+
+00:54:21.520 --> 00:54:22.660
+Here's the number C.
+
+00:54:24.160 --> 00:54:24.460
+And.
+
+00:54:26.360 --> 00:54:27.380
+Plus epsilon.
+
+00:54:28.240 --> 00:54:29.080
+Remind us epsilon.
+
+00:54:29.280 --> 00:54:29.360
+So.
+
+00:54:30.700 --> 00:54:32.260
+And epsilon be positive.
+
+00:54:35.520 --> 00:54:39.960
+And the idea is we want to be able to find or say there exists a natural
+
+00:54:39.960 --> 00:54:41.020
+number capital M.
+
+00:54:41.260 --> 00:54:46.220
+So that in bigger than or equal to capital M implies f of x in is inside this interval.
+
+00:54:46.840 --> 00:54:47.000
+Here.
+
+00:54:47.900 --> 00:54:48.220
+Now.
+
+00:54:50.160 --> 00:54:52.520
+Since f of x converges to L.
+
+00:54:53.500 --> 00:54:54.840
+As x converges to C.
+
+00:54:54.840 --> 00:54:55.960
+And.
+
+00:54:56.200 --> 00:54:58.560
+There exists a delta.
+
+00:55:00.000 --> 00:55:01.020
+So that.
+
+00:55:01.680 --> 00:55:04.260
+So this is a picture that goes along with it.
+
+00:55:05.840 --> 00:55:06.240
+So that.
+
+00:55:06.860 --> 00:55:09.640
+If I'm inside this interval here.
+
+00:55:13.840 --> 00:55:17.720
+Then I get mapped into this interval here.
+
+00:55:19.640 --> 00:55:22.080
+So this is what I get from the assumption.
+
+00:55:26.860 --> 00:55:34.540
+So then how I should choose the natural number capital M is so that all of the x sub n's.
+
+00:55:35.840 --> 00:55:39.400
+Lie in this interval C minus delta C plus delta.
+
+00:55:40.020 --> 00:55:44.000
+And if I can arrange that, which I can because the x sub n's converged to C.
+
+00:55:46.420 --> 00:55:48.940
+Then I will get that these guys.
+
+00:55:49.920 --> 00:55:54.160
+It mapped into this interval L plus epsilon L minus epsilon.
+
+00:55:54.860 --> 00:55:55.280
+Okay.
+
+00:55:55.640 --> 00:55:57.080
+And that's the whole idea of the proof.
+
+00:55:57.520 --> 00:55:58.700
+Now we just need to write it down.
+
+00:56:06.520 --> 00:56:09.000
+Since f of x converges to L.
+
+00:56:10.360 --> 00:56:12.400
+There exists a delta positive.
+
+00:56:14.000 --> 00:56:14.980
+Such that if.
+
+00:56:18.220 --> 00:56:19.400
+Listen delta.
+
+00:56:20.100 --> 00:56:20.360
+Then.
+
+00:56:22.080 --> 00:56:24.900
+If x minus L is less than epsilon.
+
+00:56:26.660 --> 00:56:28.920
+That's what I drew in yellow there.
+
+00:56:29.240 --> 00:56:29.760
+Now since.
+
+00:56:32.560 --> 00:56:34.420
+The sequence x sub n.
+
+00:56:35.420 --> 00:56:36.260
+Equal C.
+
+00:56:39.140 --> 00:56:42.640
+This implies that there exists some natural number M sub zero.
+
+00:56:44.260 --> 00:56:45.220
+Such that.
+
+00:56:46.280 --> 00:56:48.620
+All in bigger than or equal to M sub zero.
+
+00:56:49.720 --> 00:56:55.720
+And since all of these x sub n's are not equal to C by assumption there in the set S take away C.
+
+00:56:57.160 --> 00:57:01.200
+X of n minus C and actual values bigger than zero and less than delta.
+
+00:57:03.140 --> 00:57:04.340
+And so.
+
+00:57:04.340 --> 00:57:09.560
+This follows from the definition of convergence of sequences to a point here.
+
+00:57:09.780 --> 00:57:13.040
+If you like, I'm choosing epsilon in that definition to be delta.
+
+00:57:13.580 --> 00:57:18.120
+And this delta is coming from the definition for convergence of functions.
+
+00:57:22.600 --> 00:57:26.500
+And so we'll choose capital M to be.
+
+00:57:27.680 --> 00:57:29.260
+This integer M sub zero.
+
+00:57:31.880 --> 00:57:34.340
+And if N is bigger than or equal to M.
+
+00:57:35.260 --> 00:57:39.200
+I get that by our choice of it being M sub zero.
+
+00:57:39.860 --> 00:57:41.520
+I get that X of n minus C.
+
+00:57:41.520 --> 00:57:43.200
+This is less than delta.
+
+00:57:43.360 --> 00:57:48.700
+That means that it falls in this little yellow highlighted part in the first number line.
+
+00:57:52.120 --> 00:57:53.060
+Which implies.
+
+00:57:58.020 --> 00:57:59.200
+So you're what I'm using.
+
+00:58:03.100 --> 00:58:04.560
+It's what highlighted in blue.
+
+00:58:05.120 --> 00:58:05.780
+So this is.
+
+00:58:08.120 --> 00:58:09.640
+Content of this implication.
+
+00:58:10.660 --> 00:58:11.740
+implies that f.
+
+00:58:13.020 --> 00:58:14.520
+X in minus L.
+
+00:58:16.060 --> 00:58:16.840
+So that's an epsilon.
+
+00:58:18.420 --> 00:58:20.680
+Right. And that's, that's what we wanted to do. Right.
+
+00:58:20.740 --> 00:58:21.640
+We wanted to show that.
+
+00:58:22.420 --> 00:58:25.780
+There exists some natural number M so that in bigger than or equal to M.
+
+00:58:26.460 --> 00:58:29.620
+F. But X in minus L is less than epsilon and absolute value.
+
+00:58:30.840 --> 00:58:31.500
+And therefore.
+
+00:58:35.940 --> 00:58:41.360
+We've proved that the limit is in goes to infinity of this sequence f of X in equals L.
+
+00:58:48.220 --> 00:58:51.200
+Okay, so that's one direction of this if an only a statement.
+
+00:58:51.560 --> 00:58:53.360
+Let's prove the opposite direction.
+
+00:58:54.320 --> 00:58:54.800
+So.
+
+00:58:57.740 --> 00:58:59.960
+Suppose what's highlighted in green holds.
+
+00:59:06.600 --> 00:59:07.080
+Okay.
+
+00:59:08.400 --> 00:59:10.280
+And this proof is going to be by contradiction.
+
+00:59:10.620 --> 00:59:13.800
+So let's suppose that what hold what that our assumption.
+
+00:59:14.140 --> 00:59:15.740
+What what's in green holds.
+
+00:59:16.160 --> 00:59:19.400
+But the limit as X goes to C of f of X does not equal L.
+
+00:59:20.420 --> 00:59:22.540
+So now we're going to do the proof by.
+
+00:59:25.960 --> 00:59:26.560
+Contradiction.
+
+00:59:27.460 --> 00:59:29.700
+Meaning suppose the outcome is false.
+
+00:59:37.400 --> 00:59:37.440
+Okay.
+
+00:59:38.440 --> 00:59:41.500
+We're still assuming what's in green holds. That's our assumption.
+
+00:59:41.860 --> 00:59:42.660
+And we're.
+
+00:59:42.660 --> 00:59:44.000
+We're proof by contradiction.
+
+00:59:44.000 --> 00:59:52.400
+We assume that the outcome or the conclusion is false, which is that the limit of as X goes to C of f of X is not equal L.
+
+00:59:54.280 --> 00:59:56.720
+Now what does what does this mean.
+
+00:59:57.160 --> 01:00:02.080
+So now we get to negate the definition and get better acquainted with it.
+
+01:00:04.440 --> 01:00:10.540
+This means that so the definition of limit if you go back to the notes.
+
+01:00:10.540 --> 01:00:14.780
+This is a for all epsilon there exists a delta statement.
+
+01:00:17.180 --> 01:00:22.220
+So the negation is that there exists some bad epsilon epsilon zero.
+
+01:00:24.100 --> 01:00:27.880
+Such that for all delta positive.
+
+01:00:27.880 --> 01:00:35.140
+There exists an X such that.
+
+01:00:37.100 --> 01:00:38.580
+X is close to C.
+
+01:00:40.040 --> 01:00:43.640
+But as far f of X is far away from L.
+
+01:00:47.040 --> 01:00:47.600
+Okay.
+
+01:00:49.860 --> 01:00:56.500
+So the negation of the definition of limit of something being the limit is that there exists a bad epsilon so that.
+
+01:00:56.500 --> 01:00:58.740
+No matter how close I get to see.
+
+01:00:59.680 --> 01:01:04.800
+I can find something very close to see that's far away from L. If I stick it into F.
+
+01:01:07.300 --> 01:01:08.020
+That's the.
+
+01:01:10.580 --> 01:01:13.340
+Intuitive way of viewing the negation of this definition.
+
+01:01:22.500 --> 01:01:23.020
+Okay.
+
+01:01:23.020 --> 01:01:24.980
+So the one over in for in a natural number.
+
+01:01:25.720 --> 01:01:25.760
+Okay.
+
+01:01:26.720 --> 01:01:27.000
+So.
+
+01:01:29.220 --> 01:01:32.320
+And this says so this statement.
+
+01:01:34.600 --> 01:01:37.380
+Here is a for all delta statement.
+
+01:01:37.600 --> 01:01:37.860
+So.
+
+01:01:39.420 --> 01:01:42.480
+And holds for every delta I pick.
+
+01:01:42.640 --> 01:01:44.740
+So for all in a natural number.
+
+01:01:45.500 --> 01:01:48.560
+There exists an X of n.
+
+01:01:51.540 --> 01:01:56.900
+So that zero is bigger than X of n minus C is less than delta.
+
+01:01:57.080 --> 01:01:58.620
+I'm going to pick to be one over in.
+
+01:02:07.800 --> 01:02:11.920
+And F of X of n minus L is less is bigger than or equal to epsilon zero.
+
+01:02:12.420 --> 01:02:13.080
+So first off.
+
+01:02:13.840 --> 01:02:15.500
+I made it for all in statement.
+
+01:02:15.600 --> 01:02:17.360
+Let's think about this for just a second.
+
+01:02:17.360 --> 01:02:19.220
+So certainly for delta equals one.
+
+01:02:19.460 --> 01:02:21.260
+I can find a number X of one.
+
+01:02:22.460 --> 01:02:25.620
+Satisfying zero is less than X minus C is less than one.
+
+01:02:26.120 --> 01:02:30.280
+And F of X minus F of X of one minus L is bigger than or equal to epsilon zero.
+
+01:02:31.620 --> 01:02:33.540
+But delta can be anything I choose.
+
+01:02:33.940 --> 01:02:33.940
+
+
+01:02:35.000 --> 01:02:36.100
+Delta equal to half.
+
+01:02:36.300 --> 01:02:38.160
+I can find an X of two such that.
+
+01:02:38.740 --> 01:02:41.160
+X of two minus C is less than one half.
+
+01:02:42.100 --> 01:02:45.580
+And F of X minus L is bigger than or equal to epsilon zero.
+
+01:02:45.580 --> 01:02:48.520
+So I'm just choosing delta to be one over n.
+
+01:02:49.940 --> 01:02:51.920
+For each in a natural number.
+
+01:02:57.580 --> 01:02:59.080
+Choosing delta to be one over in.
+
+01:03:02.280 --> 01:03:02.840
+Okay.
+
+01:03:03.720 --> 01:03:04.680
+Is this point clear?
+
+01:03:11.140 --> 01:03:11.640
+Okay.
+
+01:03:12.520 --> 01:03:15.900
+Please stop me if you have if you have questions and something is not clear.
+
+01:03:17.400 --> 01:03:17.900
+Okay.
+
+01:03:18.040 --> 01:03:19.000
+So I have this sequence.
+
+01:03:20.520 --> 01:03:26.160
+Of elements of S that are not equal to C because they're an absolute value bigger than.
+
+01:03:27.280 --> 01:03:30.800
+Zero or the absolute value of X of n minus C is bigger than zero.
+
+01:03:32.240 --> 01:03:35.660
+And they satisfy this and equal these two inequalities.
+
+01:03:36.380 --> 01:03:36.380
+
+
+01:03:41.140 --> 01:03:43.980
+Then let me just write this inequality again.
+
+01:03:49.380 --> 01:03:58.040
+So, so then the quality, the inequality that I have is for all in the natural number zero is less than X of n minus C is less than one over n.
+
+01:03:58.040 --> 01:04:06.680
+I claim that the X of n's must then converge to see what the what tool can I use to say that.
+
+01:04:14.140 --> 01:04:15.240
+Please do them.
+
+01:04:15.440 --> 01:04:15.700
+Okay.
+
+01:04:17.460 --> 01:04:24.700
+Because this thing on the left zero this if you like is a sequence just a constant sequence this converges to zero.
+
+01:04:25.360 --> 01:04:29.980
+And one over n something on the right converges to zero as in goes to infinity.
+
+01:04:30.260 --> 01:04:34.140
+So that implies the thing that sandwich in between gets squeezed to zero.
+
+01:04:34.600 --> 01:04:35.520
+So that implies.
+
+01:04:36.980 --> 01:04:42.880
+And then it goes to infinity of X of n minus C equals zero i e.
+
+01:04:43.460 --> 01:04:44.640
+X n's converge to see.
+
+01:04:45.800 --> 01:04:55.320
+Now, I'm assuming what's in green holds right, which is if I take any sequence converging to see f of X n has to converge to L.
+
+01:04:56.360 --> 01:04:56.480
+Okay.
+
+01:04:58.280 --> 01:04:59.120
+So by.
+
+01:05:01.040 --> 01:05:03.360
+What's in green is given me this implication.
+
+01:05:04.960 --> 01:05:06.520
+Zero must be equal to.
+
+01:05:08.060 --> 01:05:12.840
+Limit as n goes to infinity of f of X of n minus L.
+
+01:05:15.060 --> 01:05:17.080
+But what I know is that.
+
+01:05:20.160 --> 01:05:28.560
+Since I've assumed f of X is not converged to L along the sequence each of these guys is bigger than or equal to epsilon not, which is positive.
+
+01:05:32.880 --> 01:05:35.920
+So now I've concluded that zero is bigger than zero.
+
+01:05:37.440 --> 01:05:38.520
+And that's a contradiction.
+
+01:05:43.820 --> 01:05:44.440
+Okay.
+
+01:05:46.900 --> 01:05:47.520
+Okay.
+
+01:05:47.620 --> 01:05:48.140
+So next time.
+
+01:05:48.860 --> 01:05:51.520
+We'll talk about applications of this theorem.
+
+01:05:51.520 --> 01:05:51.900
+And then we'll talk about the.
+
+01:05:51.900 --> 01:05:52.380
+We'll talk about the.
+
+01:05:52.380 --> 01:05:53.440
+You'll have any questions about.
+
+01:05:54.000 --> 01:05:57.820
+This proof for anything that we've covered so far today.
+
+01:06:16.680 --> 01:06:17.140
+Okay.
+
+01:06:17.140 --> 01:06:22.360
+I mean, how you get the choice of delta from doing.
+
+01:06:23.920 --> 01:06:24.380
+Right.
+
+01:06:27.040 --> 01:06:28.440
+So let me phrase this.
+
+01:06:28.440 --> 01:06:46.440
+Yeah.
+
+01:06:46.440 --> 01:06:47.140
+Yeah.
+
+01:06:47.280 --> 01:06:47.280
+
+
+01:06:47.320 --> 01:06:53.860
+I mean, so, you know, I probably in most classes, you would just be given this proof that's over here on the left.
+
+01:06:54.500 --> 01:06:57.660
+And somehow it looks like magic that I chose this delta this way.
+
+01:06:57.980 --> 01:06:59.200
+And it ends up working.
+
+01:06:59.900 --> 01:07:00.060
+Right.
+
+01:07:01.060 --> 01:07:03.400
+But the thinking that goes in behind it is.
+
+01:07:04.900 --> 01:07:06.440
+So what's the thing you want?
+
+01:07:06.600 --> 01:07:07.540
+You want what's in yellow.
+
+01:07:07.980 --> 01:07:08.240
+Okay.
+
+01:07:08.280 --> 01:07:09.980
+So let me erase some of what's in yellow.
+
+01:07:11.600 --> 01:07:14.440
+You want to choose delta so that.
+
+01:07:15.220 --> 01:07:20.100
+If you take f of x minus a c plus b, that thing in absolute value will be less than epsilon.
+
+01:07:20.720 --> 01:07:20.860
+Okay.
+
+01:07:22.780 --> 01:07:25.720
+So start with that thing that you want to make small.
+
+01:07:26.280 --> 01:07:30.400
+That you want to ensure a small f of x minus a c plus b.
+
+01:07:31.340 --> 01:07:32.640
+And start computing.
+
+01:07:33.940 --> 01:07:36.120
+And when you compute it, you get the.
+
+01:07:36.640 --> 01:07:39.200
+What we got here in the second bit of yellow.
+
+01:07:40.760 --> 01:07:41.280
+Okay.
+
+01:07:41.500 --> 01:07:45.800
+And we're assuming that the absolute value of x minus c is less than delta.
+
+01:07:46.020 --> 01:07:46.400
+All right.
+
+01:07:46.440 --> 01:07:50.300
+We're trying to choose delta so that what's in green implies what's in yellow.
+
+01:07:50.740 --> 01:07:51.180
+Okay.
+
+01:07:51.680 --> 01:07:53.180
+So far we haven't chosen delta.
+
+01:07:53.660 --> 01:07:57.980
+We just know that the absolute the absolute value of x minus c will be less than delta.
+
+01:07:57.980 --> 01:08:01.000
+And we want to choose delta so that that implies.
+
+01:08:02.420 --> 01:08:05.260
+What's in yellow after the arrow there.
+
+01:08:06.260 --> 01:08:07.840
+So when we do this computation.
+
+01:08:08.800 --> 01:08:13.300
+And assuming that the absolute value of x minus c is less than delta, we get.
+
+01:08:14.740 --> 01:08:16.000
+This thing right here.
+
+01:08:20.960 --> 01:08:23.000
+The absolute value of a times delta.
+
+01:08:23.000 --> 01:08:28.040
+This is just assuming that the absolute value of x minus c is less than delta, which is what.
+
+01:08:29.560 --> 01:08:30.920
+What will be assuming.
+
+01:08:31.460 --> 01:08:35.260
+So and we want what's in yellow, which is that thing to be less than epsilon.
+
+01:08:35.500 --> 01:08:42.860
+So what we've arrived at is this thing here, which we want less than epsilon is less than this thing in red.
+
+01:08:43.720 --> 01:08:44.100
+Okay.
+
+01:08:45.860 --> 01:08:52.920
+And therefore we want to choose the delta so that the thing in red is less than epsilon or less than or equal to epsilon.
+
+01:08:53.220 --> 01:08:59.320
+That will tell that will ensure that f of x minus a c plus b and absolute value will be less than epsilon.
+
+01:08:59.800 --> 01:09:00.200
+Okay.
+
+01:09:00.340 --> 01:09:01.740
+So I'm not solving an inequality.
+
+01:09:02.320 --> 01:09:06.940
+You know, I'm not solving the inequality I want, which is f of x minus a c plus b.
+
+01:09:07.600 --> 01:09:12.160
+I'm starting with what's on the left estimating it using my assumptions.
+
+01:09:12.160 --> 01:09:16.300
+And then at the end choosing delta so that I come up with epsilon in the end.
+
+01:09:17.160 --> 01:09:21.680
+So in the last step, I have absolute value of a times delta.
+
+01:09:22.340 --> 01:09:24.960
+And I want that to be less than epsilon.
+
+01:09:25.280 --> 01:09:32.760
+So I could have chosen, you know, delta to be less than epsilon over less than or equal to epsilon over a.
+
+01:09:35.360 --> 01:09:43.900
+So anything, anything, any delta like that would have worked. So I could have put s delta to be epsilon over 2 a that still would have worked or 3a.
+
+01:09:44.740 --> 01:09:44.780
+Okay.
+
+01:09:48.060 --> 01:09:48.580
+So.
+
+01:09:58.160 --> 01:10:01.360
+Yeah, it's what the green. That's the thing where we're doing me.
+
+01:10:02.160 --> 01:10:05.500
+And we get to use in this comment mutation.
+
+01:10:08.440 --> 01:10:09.800
+Are there any other questions?
+
+01:10:43.220 --> 01:10:50.220
+This is a, this is a style thing. All right. So throughout throughout this entire semester.
+
+01:10:50.800 --> 01:10:55.040
+You know, for all epsilon, you have to be able to find a M.
+
+01:10:55.500 --> 01:11:01.020
+So that's something happens, right? So at some point you always say choose M to be something.
+
+01:11:01.020 --> 01:11:11.320
+Right. Maybe it's the maximum of some M zero M one that you had or choose M to be one so that one over M is less than epsilon or something like that.
+
+01:11:11.740 --> 01:11:18.400
+I'm just sticking with that style of saying choose M to be this. Otherwise, I could have said,
+
+01:11:18.400 --> 01:11:25.980
+there exists a capital number M. So that for all in bigger than or equal to capital M.
+
+01:11:27.020 --> 01:11:38.340
+X of n minus C is less than delta and then move to the next part. But, you know, throughout the course, I've always like, at least the proofs I presented, you know, you're, you're making a choice of capital M.
+
+01:11:39.800 --> 01:11:55.820
+Right. You're always it's for all epsilon, there exists a capital M. So that means you have to tell me how to choose capital M. And it's the same thing with these, you know, epsilon delta proofs is that for all epsilon, there exists a delta. So at some point you have to tell me how to choose delta in the proof.
+
+01:11:57.380 --> 01:12:01.980
+So I just kind of stuck with that style of saying choose M to be something.
+
+01:12:03.900 --> 01:12:16.420
+Although you're absolutely right that I could have just said for all in bigger than or equal to capital M zero, I have what I want. And therefore, you know, implicitly, I'm saying that M equals M zero is the thing that works.
+
+01:12:32.960 --> 01:12:34.260
+Yeah, that's the same delta.
+
+01:12:35.580 --> 01:12:36.820
+Yeah, that's the same delta.
+

@@ -1,0 +1,1424 @@
+WEBVTT
+
+00:00:13.580 --> 00:00:17.740
+Okay, so let's continue our study of sequences of real numbers.
+
+00:00:23.420 --> 00:00:29.220
+So we've seen special types of sequences, monotone sequences before and then in the
+
+00:00:29.220 --> 00:00:39.540
+previous lecture, we looked at sequences obtained from sequences, namely the
+
+00:00:39.540 --> 00:00:43.280
+sequences that give you the limb soup and limb imp. And we showed that these are
+
+00:00:43.280 --> 00:00:52.160
+actually limits of sub sequences. Now I'm going to define what looks like a
+
+00:00:52.160 --> 00:00:56.660
+new class of sequences, but we'll see it's actually not. These are called
+
+00:00:56.660 --> 00:01:13.200
+Cauchy sequences. Cauchy, not Cauchy, not Cauchy. So French guy, so it's
+
+00:01:13.200 --> 00:01:20.720
+pronounced Cauchy and probably not even pronounced like that, it's probably got a
+
+00:01:20.720 --> 00:01:27.700
+different pronunciation by people who actually speak French. So what is the
+
+00:01:27.700 --> 00:01:33.600
+definition of a Cauchy sequence? Cauchy sequence is intuitively it's a sequence
+
+00:01:33.600 --> 00:01:40.480
+so that if you go far enough out in the sequence, any two entries in that sequence
+
+00:01:40.480 --> 00:01:45.780
+are close together. Okay, so convergent sequences had the property that if you go
+
+00:01:45.780 --> 00:01:51.020
+far enough out, the entries in the sequence are getting close to a real number.
+
+00:01:51.680 --> 00:01:59.500
+Cauchy sequence is that any two entries are close to each other. So a Cauchy
+
+00:02:04.220 --> 00:02:21.900
+sequence is Cauchy if we're all epsilon positive. There exists an M, natural number, such
+
+00:02:21.900 --> 00:02:35.000
+that if N is bigger than or equal to M and K is bigger than or equal to M, then Xn minus
+
+00:02:35.000 --> 00:02:43.980
+Xk is less than epsilon. So maybe not, let me not write if, I mean it's the same
+
+00:02:43.980 --> 00:02:47.420
+statement, but since it looks a little, so it'll look a little more like previous
+
+00:02:49.620 --> 00:02:58.420
+statements, let me put it for all there. So you have a definition here, you should,
+
+00:03:00.500 --> 00:03:07.520
+it's a definition of a new thing, you should now try to look at an example and then
+
+00:03:07.520 --> 00:03:12.140
+possibly negate the definition to see if you really understand it. So an example of
+
+00:03:12.240 --> 00:03:21.420
+Cauchy sequence is X of N equals 1 over N, our favorite sequence. So let's prove this.
+
+00:03:22.200 --> 00:03:27.980
+We have to, so all we have is the definition. So we have to verify that X of N equals 1 over
+
+00:03:27.980 --> 00:03:33.640
+N verifies the definition of being Cauchy. So just like when we try to prove something
+
+00:03:33.640 --> 00:03:39.020
+as convergent, which is a for all epsilon statement, the first thing you have to do is let
+
+00:03:39.020 --> 00:03:45.580
+epsilon be positive. And then I have to choose M and show that that capital M produces this
+
+00:03:45.580 --> 00:03:58.480
+statement here. So choose M, a natural number, so that 1 over M is less than epsilon over
+
+00:03:58.480 --> 00:04:08.940
+2. So I could phrase that as capital M being bigger than 2 over epsilon, but I'm going
+
+00:04:08.940 --> 00:04:12.400
+to say if I take N bigger than or equal to capital M and K bigger than or equal to capital
+
+00:04:12.400 --> 00:04:22.400
+M, then this difference is less than epsilon. Then if N is bigger than or equal to M, K is
+
+00:04:22.400 --> 00:04:29.860
+bigger than or equal to M. And I look at 1 over N minus 1 over K. This is less than or
+
+00:04:29.860 --> 00:04:35.660
+equal to by the triangle inequality, the absolute value of each of these added together,
+
+00:04:35.660 --> 00:04:41.480
+which is just 1 over N plus 1 over K. And since these are both bigger than or equal
+
+00:04:41.480 --> 00:04:49.300
+to M, each one is less than or equal to 1 over M, 1 over M. So I get 2 over M, which
+
+00:04:49.300 --> 00:04:59.020
+by our choice of M is less than epsilon. So X of N equals 1 over N is an example of a
+
+00:04:59.020 --> 00:05:11.260
+Cauchy sequence. So let's negate the definition. And then we'll obtain, look at an example of
+
+00:05:11.260 --> 00:05:14.640
+a sequence which is not Cauchy. And as you'll probably guess, if this is our favorite
+
+00:05:14.640 --> 00:05:20.020
+sequence which converges, this is our favorite sequence which doesn't converge, will be
+
+00:05:20.020 --> 00:05:25.740
+an example of a sequence which is not Cauchy. And this shouldn't come as a surprise because
+
+00:05:26.780 --> 00:05:34.040
+again, a sequence which is Cauchy, if you go far enough out, any two entries are close to each
+
+00:05:34.040 --> 00:05:39.460
+other. But if we look at, for example, the sequence minus 1 to the N, which is just minus 1 plus 1 minus
+
+00:05:39.460 --> 00:05:48.440
+1, any two entries will differ by, or you can always choose two entries that differ by 2
+
+00:05:49.240 --> 00:05:54.180
+in distance. So let's negate this definition
+
+00:05:58.740 --> 00:06:06.700
+to get what it means for something not to be Cauchy. So I'll write all that out.
+
+00:06:12.520 --> 00:06:21.800
+X sub N is not Cauchy. If so, every time we see a for all, it becomes there exists.
+
+00:06:23.520 --> 00:06:32.800
+If there exists a bad epsilon not, positive such that for all in a natural number,
+
+00:06:33.560 --> 00:06:41.200
+you can find two entries further out than M that are greater than epsilon not distance to
+
+00:06:41.200 --> 00:06:49.060
+each other. So there exists N bigger than or equal to M and K bigger than or equal to M such
+
+00:06:49.060 --> 00:06:55.040
+that X sub N minus X okay, it's bigger than or equal to this bad epsilon.
+
+00:06:57.360 --> 00:07:05.420
+Okay. So again, I mean the definition of Cauchy means that as long as I go far enough out
+
+00:07:07.500 --> 00:07:15.160
+in the sequence, this distance is supposed to be less than epsilon. So for all of epsilon
+
+00:07:15.160 --> 00:07:22.720
+positive, there exists a capital M. So that I have this picture. If I choose X sub K plus 1,
+
+00:07:22.720 --> 00:07:30.000
+then it should also be within distance epsilon to X sub N or X sub K. So they're getting closer
+
+00:07:30.000 --> 00:07:35.320
+and closer together. The negation means that they're not getting closer and closer together to each
+
+00:07:35.320 --> 00:07:42.260
+other. So there exists some small distance so that you can always go as far out as you want
+
+00:07:42.260 --> 00:07:48.180
+and find two entries that are greater than epsilon not distance to each other.
+
+00:07:48.180 --> 00:08:06.840
+So what's an example of that? Like I said, the sequence minus 1 to the N is not Cauchy.
+
+00:08:07.580 --> 00:08:10.680
+Okay. That looks...
+
+00:08:16.560 --> 00:08:18.760
+That just doesn't look right and there we go.
+
+00:08:23.540 --> 00:08:36.820
+Now it is. Okay. So this is not Cauchy. So that means there should exist some bad epsilon not so I
+
+00:08:36.820 --> 00:08:42.640
+two entries in the sequence differing from each other by epsilon not in distance. So
+
+00:08:44.220 --> 00:08:49.440
+basically any two entries other than, you know, I can always find two entries in the sequence
+
+00:08:49.440 --> 00:08:57.480
+which differ from each other by two. So that'll be my bad epsilon not. So if you like, here's a proof.
+
+00:08:59.720 --> 00:09:11.020
+Choose epsilon not equals two. Let M be a natural number. So now we have to find an element of
+
+00:09:11.020 --> 00:09:16.240
+this entries in the sequence further out than M whose distance to each other is bigger than or
+
+00:09:16.240 --> 00:09:28.780
+equal to two. We can just take M plus 1 and capital M, choose N equals M and K equals M plus 1.
+
+00:09:29.640 --> 00:09:39.760
+So these are both bigger than or equal to M. Then minus 1 to the N minus 1 to the K. This is equal to
+
+00:09:42.340 --> 00:09:51.360
+1 minus minus 1 after I factor out minus 1 to the capital M which equals 2. Okay.
+
+00:09:55.580 --> 00:09:58.140
+So minus 1 to the N is not Cauchy.
+
+00:10:04.300 --> 00:10:11.480
+All right. So at the beginning said that this will look like a definition of a new
+
+00:10:12.740 --> 00:10:21.640
+type of sequence but it's not really. So as it turns out,
+
+00:10:25.280 --> 00:10:31.560
+so the elements of the sequence are getting closer and closer together as you go far enough out.
+
+00:10:33.160 --> 00:10:37.240
+So they're all kind of clustering near each other which kind of makes you think they're all
+
+00:10:37.240 --> 00:10:43.920
+clustering near something in the real number line and therefore maybe this sequence is convergent.
+
+00:10:46.200 --> 00:10:52.200
+Now this is true and we'll prove this is that every that a sequence is Cauchy if and only if it's
+
+00:10:52.200 --> 00:10:58.460
+convergent. Now this is true only for the real numbers and I'll say a little bit about this in a
+
+00:10:58.460 --> 00:11:04.880
+minute or not only true for the real numbers but it's not true for the rational numbers and I'll
+
+00:11:04.880 --> 00:11:10.140
+get to that in just a second. So what we're going to prove is that a sequence is Cauchy if and
+
+00:11:10.140 --> 00:11:25.680
+only if it is convergent. So the first thing I want to show is that Cauchy sequences are bounded.
+
+00:11:34.540 --> 00:11:44.040
+So the proof of this statement is essentially the same as the proof that convergent sequences
+
+00:11:44.040 --> 00:11:50.120
+are bounded so let me draw a picture that goes along with this proof. So as long as I go far
+
+00:11:50.120 --> 00:11:59.540
+enough out there exists an M so that we're all n bigger than or equal to capital M. I can say this.
+
+00:12:00.020 --> 00:12:06.120
+Let's look at this entry x of M. Then for all n bigger than or equal to capital M all of the
+
+00:12:06.120 --> 00:12:12.760
+other entries have to be within a certain distance to x of N based on the definition of Cauchy.
+
+00:12:12.760 --> 00:12:23.120
+So let's say I make that distance 1 and let's say 0 is over here just for this picture.
+
+00:12:24.000 --> 00:12:29.780
+So then for all n bigger than or equal to x of N for all n bigger than or equal to capital M x of
+
+00:12:29.780 --> 00:12:44.620
+N lies in this interval here. And therefore we'll get that x of N is bounded. So the way this picture looks,
+
+00:12:44.760 --> 00:12:53.380
+I'm going to write it this way, this one plus one. Now that handles all n bigger than or equal to
+
+00:12:53.480 --> 00:13:01.000
+capital M. So we just need to deal with the first capital M minus one other guys. So maybe there's
+
+00:13:01.560 --> 00:13:07.640
+capital M minus one is over here. Capital x of one is over there. Capital x of two is over here.
+
+00:13:07.980 --> 00:13:14.380
+So then our bound will just be this one which handles all of the n bigger than or equal to M plus
+
+00:13:15.100 --> 00:13:21.200
+the absolute values of these guys that we missed. Okay?
+
+00:13:23.020 --> 00:13:24.980
+All right, so
+
+00:13:31.340 --> 00:13:37.560
+x N is Cauchy. There exists an M natural number such that
+
+00:13:38.880 --> 00:13:41.040
+for all n bigger than or equal to M,
+
+00:13:43.980 --> 00:13:54.480
+k bigger than or equal to M, x of N minus x of k is less than one in distance.
+
+00:13:56.160 --> 00:14:00.560
+So this is certainly true for k equals capital M.
+
+00:14:00.560 --> 00:14:10.600
+So this implies for all n bigger than or equal to M, x of N minus x of capital M is less than one.
+
+00:14:11.180 --> 00:14:20.520
+So now if I use the triangle inequality, I can show that the previous implies that for all n bigger than or equal to M,
+
+00:14:21.160 --> 00:14:27.760
+if I look at the absolute value of x of N, this is equal to x of N minus x of capital M plus
+
+00:14:29.380 --> 00:14:39.080
+capital M. And this is less than or equal to the absolute value of this guy plus the absolute value of
+
+00:14:39.600 --> 00:14:53.040
+this guy and this is bounded by one. Okay? So in summary, I've shown that for all n bigger than or equal to
+
+00:14:53.230 --> 00:15:05.450
+this fixed integer capital M, x of N is less than or equal to x capital M in absolute value plus one.
+
+00:15:07.010 --> 00:15:12.150
+Okay? So that's for all little n bigger than or equal to capital M. So now I just need to pick a big enough number
+
+00:15:12.150 --> 00:15:22.550
+that bounds the first capital M entries that are not covered by this inequality. Okay? Capital M is fixed.
+
+00:15:23.230 --> 00:15:34.190
+All right? So let b be the absolute value of x of one plus absolute value of x of two plus
+
+00:15:34.190 --> 00:15:52.510
+plus. Okay? So this fixed number now, then we're all in bigger than or equal to capital M. I have by
+
+00:15:53.210 --> 00:16:02.030
+this inequality up here. This is a sum of non negative numbers, so this number is certainly bigger than
+
+00:16:02.030 --> 00:16:16.910
+or equal to just this part. And if I have n bigger than equal to one and less than m,
+
+00:16:19.630 --> 00:16:26.190
+then x of N is going to be the absolute value of this guy is going to be one of these that appears
+
+00:16:26.190 --> 00:16:33.810
+here, which is certainly less than or equal to if I add on this number and the others, which is less
+
+00:16:33.810 --> 00:16:40.270
+than or equal to b. Okay? So now I've found a b, which is non negative, which bounds all the absolute values.
+
+00:16:40.850 --> 00:16:44.830
+And therefore, this proves that the sequence is bounded.
+
+00:16:51.850 --> 00:16:58.790
+Okay? So we've shown that a Cauchy sequence is bounded.
+
+00:17:04.030 --> 00:17:14.810
+And so what I'm now going to show is the following. So again, all of the entries are getting
+
+00:17:14.810 --> 00:17:22.130
+close to each other. They're kind of clustering near each other. So it kind of feels like they want
+
+00:17:22.130 --> 00:17:29.110
+to converge. And this next theorem says that, well, if you've identified a limit along a
+
+00:17:29.110 --> 00:17:34.190
+subsequence, then in fact the entire sequence converges. Okay? So of course, this is not true for
+
+00:17:34.890 --> 00:17:42.390
+an arbitrary sequence. If a subsequence converges, or should say for an arbitrary sequence, it does not,
+
+00:17:42.390 --> 00:17:47.710
+it's not true that a subsequence converging implies a full sequence converging. We have minus one
+
+00:17:47.710 --> 00:17:54.470
+to the n for which a subsequence converges, but the whole sequence does not converge. But if we make
+
+00:17:54.470 --> 00:18:01.110
+the additional hypothesis that the sequence is Cauchy, then the sequence converges if and only if
+
+00:18:01.110 --> 00:18:05.750
+that subsequence converges. So statement of the theorem is following.
+
+00:18:11.810 --> 00:18:16.350
+If X sub n is Cauchy, and
+
+00:18:19.370 --> 00:18:38.330
+if there exists a subsequence, which is converging to some number, call it X,
+
+00:18:41.710 --> 00:18:54.490
+then the sequence, full sequence converges to X. Okay? So if I have, so if I, what I was saying
+
+00:18:54.490 --> 00:18:59.250
+right before, I stated a theorem is that if I hide this part and just say there exists a subsequence
+
+00:18:59.250 --> 00:19:04.770
+which is converging to X, this does not imply that the full sequence converges to X because we have
+
+00:19:04.770 --> 00:19:11.510
+this example of minus one to the n. But if I also assume the sequence is Cauchy, then it does
+
+00:19:11.510 --> 00:19:16.370
+follow that Cauchy plus subsequence converging implies the full sequence converges.
+
+00:19:20.850 --> 00:19:27.770
+Okay, so I want to show that X n converges to X, so I want to show.
+
+00:19:35.910 --> 00:19:42.590
+And we're going to do this just by using the definition by verifying this through the
+
+00:19:42.590 --> 00:19:51.030
+definition, not using the squeeze theorem or anything like that. So let epsilon be positive.
+
+00:20:00.570 --> 00:20:03.550
+Since X n is Cauchy,
+
+00:20:07.770 --> 00:20:19.350
+there exists m not natural number such that for all n bigger than or equal to m, not
+
+00:20:20.810 --> 00:20:32.390
+and K bigger than or equal to m not X of n minus X of K, it's less than epsilon over 2. Why
+
+00:20:32.390 --> 00:20:37.990
+is epsilon over 2? Well, we have, or why should you not be surprised? Well, we have two assumptions
+
+00:20:37.990 --> 00:20:45.470
+here. So, you know, like we did when we did convergence of products of sequences and so on,
+
+00:20:46.810 --> 00:20:52.170
+which include, which had two assumptions, namely two sequences converged to something. Typically,
+
+00:20:52.270 --> 00:20:57.670
+that means we'll have two integers coming, we'll choose a bigger integer and then some up in
+
+00:20:57.670 --> 00:21:15.450
+equalities to get an epsilon, so that's a little bit of a rambling answer to why we get an epsilon
+
+00:21:15.450 --> 00:21:31.210
+sequence. So I didn't, this subsequence converges to X. There exists another integer, m sub 1,
+
+00:21:32.790 --> 00:21:44.770
+such that if K is bigger than or equal to m sub 1, then X sub n sub K,
+
+00:21:47.010 --> 00:21:52.470
+minus X is less than epsilon over 2. So maybe I should have used a different
+
+00:21:53.030 --> 00:21:58.150
+letter here, let's use a little m. So I don't want you to think these have to be the same K.
+
+00:22:07.590 --> 00:22:11.270
+So now we'll choose an integer bigger than both m1 and m2.
+
+00:22:15.450 --> 00:22:23.430
+And show that it works. Choose m to be m0 plus m1.
+
+00:22:29.410 --> 00:22:29.930
+Then,
+
+00:22:39.070 --> 00:22:43.710
+now we need to show this works. And if n is bigger than or equal to m,
+
+00:22:49.370 --> 00:23:00.930
+so this, so let me actually make a first observation before I go to the n bigger than or equal to
+
+00:23:00.930 --> 00:23:11.010
+capital m. Then simply because we, since n sub K is bigger than or equal to K,
+
+00:23:12.650 --> 00:23:17.630
+for all K, a natural number, just because the n sub K is there in increasing sequence of
+
+00:23:17.630 --> 00:23:27.590
+integers, which starts at least at 1. Since n sub K is bigger than or equal to K for all K,
+
+00:23:28.230 --> 00:23:35.870
+this implies that the integer n sub capital m is bigger than or equal to m, which remembers m0
+
+00:23:35.870 --> 00:23:47.450
+plus m1, which implies that n sub m is bigger than or equal to m0, and n sub m is bigger than or equal to m1.
+
+00:23:47.770 --> 00:23:57.150
+Okay, so I just wanted to make that this preliminary observation. And now we'll go to showing that this capital m works.
+
+00:23:59.950 --> 00:24:14.410
+Now, if n is bigger than or equal to capital m, I look at x sub n minus x in absolute value and add and subtract x sub m capital m
+
+00:24:17.750 --> 00:24:22.250
+capital m minus x, and use the triangle inequality.
+
+00:24:33.050 --> 00:24:39.730
+Then, okay, so since n is bigger than or equal to capital m, which is bigger than or equal to m0,
+
+00:24:39.730 --> 00:24:46.470
+that means n is bigger than or equal to m0. And then n sub m, we just showed is bigger than or equal to m0.
+
+00:24:47.170 --> 00:24:54.190
+So by this inequality, I get that the first term is less than epsilon over 2.
+
+00:24:56.290 --> 00:25:03.230
+And now n sub m, okay, so m is certainly bigger than or equal to m sub 1.
+
+00:25:03.790 --> 00:25:11.510
+And therefore, I will get that this part is less than epsilon over 2 because of this inequality.
+
+00:25:13.470 --> 00:25:22.330
+Okay, so that capital choice of capital m works.
+
+00:25:27.130 --> 00:25:39.590
+And now, we'll prove the following that a sequence is convergent if and only if it's koshi.
+
+00:25:55.270 --> 00:25:55.710
+Okay.
+
+00:26:06.490 --> 00:26:08.350
+All right, so this is a two-way street.
+
+00:26:08.890 --> 00:26:13.910
+So we need to show the left implies the right and then the right implies the left.
+
+00:26:15.110 --> 00:26:15.350
+Okay.
+
+00:26:18.970 --> 00:26:29.310
+All right, so this direction is in fact easy.
+
+00:26:30.430 --> 00:26:35.730
+Based on what we've done, I shouldn't say it's easy, but what we've done so far, it quickly follows.
+
+00:26:41.310 --> 00:26:46.810
+So we're assuming x of n is koshi and trying to show it's convergent.
+
+00:26:51.230 --> 00:26:56.510
+Then, so if x of n is koshi, this implies that x of n is bounded,
+
+00:26:57.310 --> 00:27:07.290
+the sequence is bounded, which implies by the bosono virus-trust theorem that x of n has
+
+00:27:14.590 --> 00:27:18.950
+a convergent subsequence.
+
+00:27:20.350 --> 00:27:25.750
+And by the theorem, we just proved if a koshi sequence has a convergent subsequence,
+
+00:27:26.510 --> 00:27:27.570
+it must be convergent.
+
+00:27:35.710 --> 00:27:42.750
+Now, for the converse direction, that xn is convergent implies xn is koshi.
+
+00:27:42.990 --> 00:27:45.670
+Well, I mean, so this should not come as a surprise.
+
+00:27:45.850 --> 00:27:46.530
+Let me draw a picture.
+
+00:27:49.850 --> 00:27:57.270
+Let's suppose x of n is converging to x and epsilon is positive.
+
+00:28:00.770 --> 00:28:05.830
+Then, since the xn's are converging to x, if I go to,
+
+00:28:07.830 --> 00:28:17.230
+if I draw a little interval around x of length, total length epsilon, so x minus epsilon over 2,
+
+00:28:17.330 --> 00:28:23.930
+and x plus epsilon over 2, then I will find, as long as, so then there exists m,
+
+00:28:24.850 --> 00:28:31.990
+so that for all n bigger than or equal to capital m, all of the x events lie in this
+
+00:28:34.850 --> 00:28:35.370
+interval.
+
+00:28:40.990 --> 00:28:45.450
+They all lie in this interval because they have to be within distance epsilon over 2 to x.
+
+00:28:46.670 --> 00:28:52.090
+If the xn's are converging to x, and since they lie in this interval,
+
+00:28:52.510 --> 00:28:57.150
+the distance between any two of them can only be as big as the length of the interval,
+
+00:28:57.270 --> 00:28:57.910
+which is epsilon.
+
+00:29:02.410 --> 00:29:06.650
+This is essentially the picture of y, a convergent sequence, has to be koshi,
+
+00:29:06.750 --> 00:29:08.250
+so now let's turn this picture into math.
+
+00:29:09.790 --> 00:29:16.110
+We have to verify that we have to verify xn is koshi through the definition that's all we have.
+
+00:29:16.650 --> 00:29:22.590
+So let epsilon be positive, since the xn's converged to x,
+
+00:29:23.790 --> 00:29:31.110
+there exists an integer m sub zero, natural number, such that for all n bigger than or equal to
+
+00:29:31.110 --> 00:29:36.970
+m sub zero, x sub n minus x is less than epsilon over 2.
+
+00:29:42.450 --> 00:29:48.630
+And so we'll choose the m for our definition of koshi to be this m sub zero.
+
+00:29:52.050 --> 00:29:58.130
+And if n is bigger than or equal to m, and k is bigger than or equal to m,
+
+00:29:58.130 --> 00:29:58.130
+
+
+00:29:59.230 --> 00:30:05.850
+Now look at the absolute value of x of n minus x of k, and add and subtract x,
+
+00:30:06.510 --> 00:30:08.030
+and use the triangle inequality.
+
+00:30:08.530 --> 00:30:15.570
+This is less than or equal to x of n minus x, and absolute value, plus x minus x of k.
+
+00:30:16.870 --> 00:30:24.070
+Each of these is less than epsilon over 2, since n is bigger than or equal to capital m,
+
+00:30:24.070 --> 00:30:29.370
+and k is bigger than or equal to capital m, so this is less than epsilon over 2, plus epsilon over 2,
+
+00:30:29.730 --> 00:30:32.730
+equals epsilon, and therefore xn is koshi.
+
+00:30:36.790 --> 00:30:44.990
+Now, I want to make a brief remark about previous theorem.
+
+00:30:47.670 --> 00:30:50.990
+So remember how this whole story started off?
+
+00:30:55.010 --> 00:30:58.690
+There was something wrong with the rational numbers.
+
+00:31:00.430 --> 00:31:06.090
+Namely, they didn't contain the square root of 2, so we couldn't solve the algebraic equation
+
+00:31:06.090 --> 00:31:14.450
+x squared minus 2 equals 0. But this also then turned into the rationals not being
+
+00:31:15.910 --> 00:31:20.090
+complete in the sense of order, not every bounded set, non-empty bounded set,
+
+00:31:20.170 --> 00:31:22.730
+has it had a supremum, it didn't have the least upper bound property.
+
+00:31:25.910 --> 00:31:29.230
+But you can also interpret this lack of having square root of 2,
+
+00:31:33.930 --> 00:31:38.770
+as somehow saying that the rationals are incomplete in this sense.
+
+00:31:38.770 --> 00:31:44.170
+So hopefully, at the end of this class, we'll be able to get to metric spaces.
+
+00:31:46.370 --> 00:31:48.050
+So what do I mean by that?
+
+00:31:48.350 --> 00:31:54.790
+Let's say I look at this statement now within the universe of rational numbers.
+
+00:31:55.190 --> 00:32:03.190
+So now, if this sequence is
+
+00:32:17.070 --> 00:32:21.930
+rational numbers, meaning sequences are only sequences of rational numbers.
+
+00:32:22.490 --> 00:32:26.810
+Limits are only elements of the rational numbers.
+
+00:32:27.470 --> 00:32:29.830
+Epsilon is only a rational number and so on.
+
+00:32:30.370 --> 00:32:36.550
+Then we still have many of the same theorems that we proved, not all of them,
+
+00:32:36.550 --> 00:32:42.670
+and I'll indicate which ones don't hold. But if we only work in rationals, then we always do have
+
+00:32:48.930 --> 00:32:55.270
+convergence implies Cauchy, meaning convergence sequences are Cauchy.
+
+00:32:55.270 --> 00:33:09.370
+But Cauchy sequences are not necessarily convergent.
+
+00:33:10.410 --> 00:33:13.510
+Again, what's the example here?
+
+00:33:18.610 --> 00:33:20.330
+What's the intuitive example?
+
+00:33:20.510 --> 00:33:37.830
+Take X sub n so that X sub n is in q, and now viewed in the universe of real numbers,
+
+00:33:37.830 --> 00:33:39.930
+X sub n is converged to root 2.
+
+00:33:46.230 --> 00:33:48.890
+Then such a sequence would be a Cauchy sequence.
+
+00:33:52.710 --> 00:33:56.310
+So such a sequence would be a Cauchy sequence of rational numbers.
+
+00:33:57.070 --> 00:34:00.830
+However, it would not converge in the set of rational numbers.
+
+00:34:01.170 --> 00:34:04.030
+It would converge to the square root of 2, which is not a rational number.
+
+00:34:04.030 --> 00:34:12.170
+So because the square root of 2 is not a rational number, this shows that the rational numbers do not have
+
+00:34:12.170 --> 00:34:16.330
+this completeness property that Cauchy sequences converge.
+
+00:34:21.290 --> 00:34:29.870
+So there's a whole still to this day kind of industry of studying spaces for which
+
+00:34:30.810 --> 00:34:35.590
+Cauchy is equivalent to convergent. These are called complete metric spaces.
+
+00:34:35.950 --> 00:34:39.010
+And then if you add a little more structure, they're called Banach spaces and so on.
+
+00:34:41.430 --> 00:34:45.430
+Which are very important, not just in math, but also for
+
+00:34:48.630 --> 00:34:58.070
+formulating rigorously a lot of the underlying assumptions for mathematical physics.
+
+00:34:58.070 --> 00:35:07.210
+But if we're just looking inside the rationales, it does not follow that Cauchy sequences always converge.
+
+00:35:08.070 --> 00:35:12.590
+And now let's just stop for a minute and take stock of why this was true for the real numbers.
+
+00:35:13.150 --> 00:35:14.370
+What did we use going back?
+
+00:35:15.210 --> 00:35:25.110
+So if you think, if you really go back to the proof of the Bolzano-Vierstrasse,
+
+00:35:25.110 --> 00:35:28.890
+that's what we used here to show that Cauchy sequences converge,
+
+00:35:31.850 --> 00:35:35.210
+we used the fact that the lymph soup and the lymph always exist.
+
+00:35:37.610 --> 00:35:43.950
+And lymph first off, they're defined to be soups and amps, which may not always exist as
+
+00:35:43.950 --> 00:35:46.010
+rational numbers as we've already shown.
+
+00:35:49.230 --> 00:35:51.290
+That's definitely a problem already there.
+
+00:35:51.290 --> 00:35:56.510
+But even more so, when we prove that every bounded monotone sequence converges,
+
+00:35:57.330 --> 00:36:02.610
+what we showed was that this limit is actually a soup of a certain set or an inf of a certain set.
+
+00:36:03.050 --> 00:36:06.790
+Which again, may or may not exist if we're just looking in the rational numbers because the
+
+00:36:06.790 --> 00:36:13.010
+rational numbers do not have the least upper bound property. So it really is the least upper
+
+00:36:13.010 --> 00:36:20.010
+bound property that gives us convergence equivalent to Cauchy for the real numbers.
+
+00:36:20.010 --> 00:36:34.250
+So for R, the least upper bound property is, I mean, it has to be because that's the
+
+00:36:34.250 --> 00:36:42.030
+main thing that separates the two fields. But I'm just reiterating this here, is the reason
+
+00:36:42.030 --> 00:36:53.470
+why convergent is equivalent to Cauchy.
+
+00:36:54.190 --> 00:36:54.430
+Okay.
+
+00:37:07.370 --> 00:37:10.750
+Now that I've proved that Cauchy is equivalent to convergence,
+
+00:37:12.870 --> 00:37:16.890
+maybe you'll ask then why did we introduce it at all? I mean,
+
+00:37:17.810 --> 00:37:25.310
+that these two notions are the same. Why prove, why even introduce them if they're just
+
+00:37:25.310 --> 00:37:34.170
+convergent sequences already. And the reason is because to show that a sequence converges,
+
+00:37:34.530 --> 00:37:41.370
+you have to somehow have your hands on a candidate for the limit. If you want to
+
+00:37:43.510 --> 00:37:48.530
+prove that x in converges, you have to somehow come up with an x that it converges to.
+
+00:37:49.050 --> 00:37:53.390
+And it's not always clear how to find that x. Okay.
+
+00:37:55.110 --> 00:38:00.410
+But Cauchy, although it's equivalent to a convergent in the set of real numbers,
+
+00:38:01.370 --> 00:38:09.470
+doesn't require you to find a candidate for convergence. Okay. All it requires you to do is show
+
+00:38:09.470 --> 00:38:16.610
+that as long as you go far enough out, any two entries in the sequence are close together.
+
+00:38:17.250 --> 00:38:20.630
+Okay. Without requiring you to come up with a limit.
+
+00:38:20.890 --> 00:38:25.650
+See, computing limits is quite difficult. We're about to do series, right? And there's maybe like,
+
+00:38:26.250 --> 00:38:31.150
+I don't know, five series people can compute explicitly. But you do know that there's a
+
+00:38:31.150 --> 00:38:35.290
+ton of other series that are actually convergent, even though you don't know what the limit is.
+
+00:38:35.290 --> 00:38:40.290
+And why do you know that? This is exactly because, and exactly why,
+
+00:38:42.030 --> 00:38:49.790
+people thought of Cauchy sequences to begin with, much of analysis. So, again, just to summarize this,
+
+00:38:51.450 --> 00:38:56.390
+you know, convergent sequences are nice, but in practice, it's difficult to get your hands on what
+
+00:38:56.390 --> 00:39:01.970
+could be a limit of a sequence, especially if that sequence is pretty complicated. So if you're
+
+00:39:01.970 --> 00:39:07.630
+trying to show a certain sequence converges, it suffices by what we've done here to show that it's
+
+00:39:07.630 --> 00:39:14.390
+Cauchy. And that's a little bit easier to do because that just requires you to work with the
+
+00:39:14.390 --> 00:39:19.530
+original sequence. You don't have to come up with a limit. You can just take your sequence and start
+
+00:39:20.410 --> 00:39:25.850
+playing directly with the entries rather than try to come up with a limit.
+
+00:39:31.170 --> 00:39:39.990
+So, that's what we're going to move on to is series now, which, as I said a minute ago, is
+
+00:39:39.990 --> 00:39:50.650
+an original reason why people started developing the foundations of analysis, you know, what we're
+
+00:39:50.810 --> 00:40:02.030
+talking about right now to begin with, because they were just kind of doing very formal things that
+
+00:40:02.030 --> 00:40:09.470
+ended up not making sense, like trying to add up, they were adding infinitely many positive
+
+00:40:09.470 --> 00:40:16.090
+numbers and coming up with a negative number. That can't be right. So, all of this was
+
+00:40:20.470 --> 00:40:29.230
+created, discovered however you want to phrase it, to put on rigorous foundations this next topic,
+
+00:40:29.330 --> 00:40:38.970
+which is series. So, I mean, you dealt with series, you know, as an encounterlist, you know,
+
+00:40:39.110 --> 00:40:43.770
+what a series is. Maybe you don't remember all the proofs of the properties of series, but,
+
+00:40:43.770 --> 00:40:50.570
+you know, suffice to say this is, you know, series is a pretty good motivation since it's one of
+
+00:40:50.570 --> 00:40:59.590
+the most useful things that comes out of math. I mean, series are how you solve series expansions
+
+00:40:59.590 --> 00:41:08.470
+or how you solve ODEs, PDEs, you know, Taylor expansions, all these things are some sense
+
+00:41:08.470 --> 00:41:17.410
+of form of series, so being able to justify them as being real things is a necessity. So,
+
+00:41:21.430 --> 00:41:32.050
+the definition of a series for now is really is just a dissymbol, I'm about to write down. So,
+
+00:41:36.290 --> 00:41:54.970
+the symbol, or maybe I'll just sometimes write just some exo-bin is what's called the series
+
+00:41:57.850 --> 00:42:24.930
+associated to the sequence exo-bin. So, right now that's just a symbol. We're going to interpret
+
+00:42:25.490 --> 00:42:54.910
+the series converges if the following sequence given by s sub m equals, so what is this, so s sub m,
+
+00:42:54.910 --> 00:43:00.410
+this is the element of the sequence, and what is it, it is the actual sum, so this is not a
+
+00:43:00.410 --> 00:43:13.230
+formal thing, this is just a finite sum from n equals 1 to m, so this is, so this sequence now, m
+
+00:43:13.230 --> 00:43:33.630
+equals 1 to infinity, and these guys we called, we call partial sums converges.
+
+00:43:36.510 --> 00:43:44.990
+So, right now if we just have a sequence exo-bin, this series associated to that sequence is just
+
+00:43:44.990 --> 00:43:56.590
+a symbol, we say that the series converges if the sequence of partial sums converge, and if
+
+00:43:56.590 --> 00:44:17.470
+s is this limit, then we write s is equal to the series,
+
+00:44:24.370 --> 00:44:39.510
+and treat the series now as a number. So, in general if I have a sequence I just have this
+
+00:44:39.510 --> 00:44:46.510
+formal symbol which I'm writing down, which I call a series associated to it, in the case that
+
+00:44:46.510 --> 00:44:52.290
+the sequence of partial sums converges, then I actually identify this series with a real number
+
+00:44:53.070 --> 00:45:16.490
+and treat it as a real number. So, when I've written this, the series is starting at 1, but
+
+00:45:16.490 --> 00:45:33.330
+we just say here that we don't necessarily have to start series at n equals 1.
+
+00:45:35.050 --> 00:45:40.310
+So, this could be sum from n equals 0 to infinity, in which case we have a sequence starting
+
+00:45:40.310 --> 00:45:47.210
+now at x sub 0, or this could be starting at 2, in which place the sequence of exo-bin starts
+
+00:45:47.210 --> 00:45:54.050
+at n equals 2, and then the sequence of partial sums would start at not m equals 1, but m equals 0,
+
+00:45:54.150 --> 00:46:08.410
+or m equals 2, depending on where the series starts. So, some examples, the series sum from n equals 1
+
+00:46:10.310 --> 00:46:21.530
+over n, n plus 1 times n. This is a convergent series.
+
+00:46:25.670 --> 00:46:32.630
+So, why is this? So, let's look at the proof. So, we look at the mth partial sum, this is the sum from
+
+00:46:32.630 --> 00:46:48.390
+n equals 1 to m of 1 over n plus 1, n, and this is equal to, now if I write 1 over n plus 1 times n
+
+00:46:52.850 --> 00:47:02.370
+as 1 over n minus 1 over n plus 1, this is now the sum of 1 over n plus these are finite.
+
+00:47:02.370 --> 00:47:14.790
+So, I can always split them up, this should be a minus, and so now this is equal to 1 plus a half plus
+
+00:47:15.650 --> 00:47:32.290
+plus 1 over m minus 1 half plus a third plus 1 over m plus 1 over m plus 1, and you see all of
+
+00:47:32.290 --> 00:47:43.990
+these cancel, and all that's left is 1 minus 1 over m plus 1. So, the mth partial sum is equal to 1 minus 1 over
+
+00:47:44.690 --> 00:47:55.130
+m plus 1, and therefore the sequence of partial sums is the limit as m goes to infinity of this,
+
+00:47:55.130 --> 00:47:59.630
+which is just 1, and therefore this series converges.
+
+00:48:10.230 --> 00:48:16.150
+Now, our favorite sequence, which does not converge, will give us a series, which does not converge.
+
+00:48:16.710 --> 00:48:26.390
+So, let's look at sum from n equals 1 to infinity minus 1 to the n, this does not converge.
+
+00:48:28.990 --> 00:48:42.490
+So, let's approve the mth partial sum, this is equal to minus 1 plus 1 plus minus 1
+
+00:48:43.050 --> 00:48:53.490
+up until I get minus 1 to the m, and therefore this is always equal to 1 of 2 things.
+
+00:48:54.490 --> 00:49:06.970
+If m is odd, then I have an odd number of these guys, and therefore the minuses and pluses
+
+00:49:06.970 --> 00:49:17.970
+cancel just leaving a minus 1 in the end, this last one, the odd one, and m is odd, and 0,
+
+00:49:20.230 --> 00:49:27.130
+if m is even. If I've added up an even number of these terms, then all of the minus ones and
+
+00:49:27.130 --> 00:49:40.570
+ones cancel out, so I just get 0. And therefore this sequence, which is just minus 1 for m odd,
+
+00:49:45.950 --> 00:49:54.950
+0 for m even, does not converge. And therefore the series does not converge. So, when I write this,
+
+00:49:54.950 --> 00:49:59.110
+this is just a symbol, this is just chalk on a chalkboard, it doesn't mean anything.
+
+00:50:05.250 --> 00:50:13.210
+All right, so let's go to another series, which does converge, and this is kind of
+
+00:50:15.710 --> 00:50:20.230
+the one to which we compare all other series, essentially, as you'll see.
+
+00:50:21.870 --> 00:50:26.310
+You have all these series tests that you remember, hopefully, from calculus,
+
+00:50:28.890 --> 00:50:35.690
+that tells you when a series converges, but maybe if you remember the proof or don't,
+
+00:50:35.930 --> 00:50:41.230
+how you do that is you converge it to one series, which you do know how to sum. So, it was just
+
+00:50:41.230 --> 00:50:48.330
+by pure luck we were able to compute the sum or compute the explicit series for this guy.
+
+00:50:50.230 --> 00:50:57.230
+Another one which we can do, that for is a geometric series. So, the theorem is if I have a real
+
+00:50:57.230 --> 00:51:12.970
+number with absolute value less than 1, then the series starting now at 0 are to the n converges,
+
+00:51:12.970 --> 00:51:22.670
+and I can actually compute some of this series, and this is 1 over 1 minus r.
+
+00:51:28.290 --> 00:51:36.670
+So, what's the proof? Let's look at the partial sums, and we can actually compute these as well,
+
+00:51:37.730 --> 00:51:47.230
+just as we were able to do for the first example. We compute that to sum from
+
+00:51:48.150 --> 00:51:56.070
+n equals 0 to m of r to the m. Now, you can prove this by induction. I think I cannot exactly
+
+00:51:56.070 --> 00:52:03.730
+remember if I did this. I believe I did in the second lecture on induction, first or second
+
+00:52:03.730 --> 00:52:10.210
+lecture on induction, but if I add up some number raised to the nth, so this should be to the n,
+
+00:52:11.450 --> 00:52:19.510
+nth power from 0 to m, this is equal to 1 minus r to the m plus 1 over 1 minus r.
+
+00:52:21.710 --> 00:52:30.590
+And I guess two lectures ago, we proved that if the absolute value, so let me state this now,
+
+00:52:50.990 --> 00:53:03.710
+let's make it m of r to the m equals 0, which implies that, so this was the
+
+00:53:03.730 --> 00:53:13.770
+nth partial sum, which implies that the limit as m goes to infinity of s sub m equals the limit
+
+00:53:13.770 --> 00:53:21.150
+as m goes to infinity of this thing, which is, if you like, this is, okay, so that plus 1 there,
+
+00:53:21.150 --> 00:53:31.050
+just multiplies r to the m by r, and using the algebraic facts we proved about limits is 1 minus
+
+00:53:31.050 --> 00:53:44.470
+r times 0 over 1 minus r, which equals 1 over 1 minus r. Okay? So now you ask about the other,
+
+00:53:45.770 --> 00:53:57.390
+what about r bigger than 1? Well, when r equals minus 1, then we get the second example we
+
+00:53:57.390 --> 00:54:06.590
+look at, if we get r equals 1, then that's just summing up 1, and I leave it to you to check
+
+00:54:06.590 --> 00:54:12.070
+that that does not converge, that the sequence of partial sums, if I just sum up 1 from n equals
+
+00:54:12.070 --> 00:54:20.290
+0 to m is equal to m plus 1, which does not converge. All right.
+
+00:54:32.330 --> 00:54:38.930
+And let me make just a kind of silly comment, and maybe I didn't explicitly make this comment about
+
+00:54:38.930 --> 00:54:49.530
+sequences, maybe I forgot to do that as well. So for a sequence, a sequence, so you could start your
+
+00:54:49.530 --> 00:54:55.910
+sequence not necessarily at the first entry, maybe you look at a, if you like, new sequence where
+
+00:54:57.390 --> 00:55:04.350
+you're going to get the first entry. Well, okay. So we know from sequences that sub sequences of
+
+00:55:04.350 --> 00:55:12.130
+convergent sequences converge. So if I, instead of looking at the whole sequence, start at, let's
+
+00:55:12.130 --> 00:55:18.650
+say, x 100, and then go x 101, x 102, and that's the sequence I look at. Well, that's a sub sequence
+
+00:55:18.650 --> 00:55:24.370
+of the original one, which if it converges implies that sub sequence converges. So all that is to say,
+
+00:55:26.650 --> 00:55:34.710
+and for this simple way of obtaining this new sequence, all of that is to say that to
+
+00:55:35.710 --> 00:55:40.990
+understand if a sequence converges, I don't have to consider what happens for the first
+
+00:55:41.670 --> 00:55:51.090
+finally many terms in the sequence, meaning a sequence x sub n converges if and only if
+
+00:55:52.370 --> 00:56:00.050
+a sequence starting now at say n equals 100, 101, 102, 103, and so on converges. Okay.
+
+00:56:00.450 --> 00:56:09.110
+And the same is true for a series that a series converges if and only if, you know,
+
+00:56:10.230 --> 00:56:15.750
+a series converges now starting at a different point along the sequence. So this is
+
+00:56:16.310 --> 00:56:38.850
+following theorem. Let x in be a sequence and let capital m be natural number. Then
+
+00:56:38.850 --> 00:56:52.330
+n equals 1 to infinity of x sub n, this converges if and only if the sequence now starting at capital
+
+00:56:52.330 --> 00:57:01.930
+m converges. Meaning when I have to decide whether a series converges or not, it doesn't matter
+
+00:57:02.590 --> 00:57:08.410
+what's going on for the first finally many terms. Okay. What matters is what's going on as I
+
+00:57:08.410 --> 00:57:17.470
+keep adding terms from further and further out of this sequence. And what's the proof? The
+
+00:57:17.470 --> 00:57:23.390
+proof is just expressing the partial sums for this guy in terms of the partial sums for this guy.
+
+00:57:36.450 --> 00:57:44.690
+So partial sum satisfied for all m sum from n equals 1 to m and now
+
+00:57:44.690 --> 00:58:02.870
+x sub n as sum from n equals capital m to m x sub n plus sum from n equals 1 to m minus 1
+
+00:58:03.890 --> 00:58:10.530
+x sub n. Okay. So this is now just a fixed number. So this is the sequence of partial sums
+
+00:58:11.530 --> 00:58:17.050
+corresponding to this series. This is the sequence of partial sums corresponding to this series
+
+00:58:17.050 --> 00:58:25.170
+and this is just a fixed number. Therefore if this converges then this side converges to this plus
+
+00:58:25.170 --> 00:58:35.130
+this fixed number. So maybe I'm going a little quick but so if this converges then this converges
+
+00:58:35.130 --> 00:58:43.970
+to this minus this number and if this converges then this sequence of partial sums converges to
+
+00:58:43.970 --> 00:58:53.310
+this limit plus this fixed number. Okay. And that's all I'm going to write. Okay.
+
+00:58:57.810 --> 00:59:15.670
+Now coming back to the usefulness of Cauchy sequences. I mean this is kind of where they
+
+00:59:18.730 --> 00:59:28.350
+really become useful in the study of series because again it's difficult to sum. So when I
+
+00:59:28.350 --> 00:59:34.230
+keep talking about saying the word sum a series I'm talking about you know find the limit of
+
+00:59:34.230 --> 00:59:42.910
+partial sum. But because we have this equivalence between Cauchy sequences and convergent sequences
+
+00:59:42.910 --> 00:59:53.330
+to decide if a series is convergent or not we can just decide if in some sense it's Cauchy
+
+00:59:53.330 --> 01:00:09.470
+or not. So let me make this definition. We say that a series x sub n is Cauchy if the sequence
+
+01:00:09.470 --> 01:00:20.210
+of partial sums again these are I'm just going to put an m up top because this may start at zero
+
+01:00:20.210 --> 01:00:31.310
+or n equals one or something so the sequence of partial sums is Cauchy.
+
+01:00:33.330 --> 01:00:44.770
+Okay. And so let me just restate what we proved for sequences in terms of series so we proved
+
+01:00:44.770 --> 01:00:54.870
+that every Cauchy sequence is convergent. So a series is Cauchy if it only means that the
+
+01:00:54.870 --> 01:01:00.970
+sequence of partial sums is Cauchy but we proven that Cauchy sequences are convergent. So if
+
+01:01:00.970 --> 01:01:08.730
+this is Cauchy then it's convergent and vice versa. So based on what we've proven already for sequences
+
+01:01:11.270 --> 01:01:16.790
+it follows that and this just follows immediately from what we've proven already so I'm not even
+
+01:01:16.790 --> 01:01:29.070
+going to write a proof. A series is Cauchy if and only if a series is convergent. Again because
+
+01:01:29.070 --> 01:01:33.910
+both are defined in terms of the sequence of partial sums associated to the series and we've
+
+01:01:34.050 --> 01:01:39.570
+already proven the equivalence between Cauchy and convergence for sequences.
+
+01:01:50.190 --> 01:01:57.110
+Now let me write what it means to be Cauchy in a slightly different way.
+
+01:02:02.710 --> 01:02:17.950
+And it's the following so. So before we had that a sequence is Cauchy intuitively if
+
+01:02:19.030 --> 01:02:24.070
+the elements of the sequence are getting close to each other. Now for a series to be Cauchy
+
+01:02:24.810 --> 01:02:31.250
+the intuitive way to think about it is that the tail of the sum is getting small.
+
+01:02:32.330 --> 01:02:37.450
+It's getting arbitrarily small. Tail of the sum being if I add up
+
+01:02:37.990 --> 01:02:45.430
+finitely many numbers far enough out. So a series is Cauchy if and only if
+
+01:02:45.620 --> 01:02:53.780
+if we're all absolutely positive there exists a m natural number such that
+
+01:02:57.140 --> 01:03:03.340
+for all integers L bigger than m which is bigger than or equal to capital m
+
+01:03:07.080 --> 01:03:17.660
+sum from n equals n plus 1 to L of x of n. So this is some involving terms that are pretty far out.
+
+01:03:17.800 --> 01:03:24.840
+There are at least all indexed by something bigger than or equal to capital m is less than epsilon.
+
+01:03:25.600 --> 01:03:32.180
+A series is Cauchy if you're kind of adding up smaller and smaller pieces. Not individual
+
+01:03:32.180 --> 01:03:49.940
+pieces but actual like adding those up. Okay so I'll leave it to you to do kind of I mean they're
+
+01:03:49.940 --> 01:03:58.200
+both pretty easy but this direction I'll leave it to you as an exercise and it'll follow
+
+01:03:58.200 --> 01:04:02.540
+immediately from what I'm going to write for essentially this direction.
+
+01:04:05.940 --> 01:04:17.320
+So let's suppose and let's make things concrete starting somewhere. Let's suppose this sum is Cauchy
+
+01:04:20.620 --> 01:04:26.260
+and we want to prove now that it has this property. Okay so let epsilon
+
+01:04:29.340 --> 01:04:34.340
+be positive. If we now want to produce some capital number m so that this holds.
+
+01:04:43.260 --> 01:04:54.360
+So since the sequence of partial sums, S of m is Cauchy that's what it means for the series
+
+01:04:54.360 --> 01:05:07.800
+to be Cauchy. There exists a natural number capital m such that for all m bigger than or equal to
+
+01:05:08.140 --> 01:05:25.720
+m not and L bigger than or equal to m not S of m minus S of L is less than epsilon.
+
+01:05:30.140 --> 01:05:49.720
+So let's actually take capital m to be this m not. Choose m to be m not. Then if L is bigger than
+
+01:05:50.700 --> 01:05:56.160
+m which is bigger than or equal to m not, bigger than or equal to m which is equal to m not.
+
+01:05:57.360 --> 01:06:09.560
+If I look at this sum from n equals m plus 1 to L x of n I can write this. So this is absolute value.
+
+01:06:13.280 --> 01:06:17.540
+So in fact let me remove the absolute value so that this becomes pretty clear.
+
+01:06:20.080 --> 01:06:27.240
+I can write this sum as the Lth partial sum minus the mth partial sum.
+
+01:06:27.980 --> 01:06:34.480
+Right because the Lth partial sum sums from n equals 1 up to L the mth partial sums from n equals
+
+01:06:34.480 --> 01:06:40.900
+1 up to m. So the sum containing only the terms between m plus 1 and L is the difference of these
+
+01:06:40.900 --> 01:06:50.960
+guys. So now I'll put on absolute values. And this thing because L and m are bigger than or
+
+01:06:50.960 --> 01:06:56.300
+equal to capital m which is equal to m not and because I have this inequality this is less than
+
+01:06:56.300 --> 01:07:03.920
+epsilon. And the converse direction again it follows immediately essentially from this equality
+
+01:07:03.920 --> 01:07:17.580
+here. So to check whether a series converges I don't have to somehow come up with a limit for this
+
+01:07:17.580 --> 01:07:26.540
+series, a sum for this series. I can just prove that kind of the tail can be made arbitrarily small
+
+01:07:26.540 --> 01:07:32.680
+as long as I go far enough out in the series. Okay.
+
+01:07:44.260 --> 01:07:54.520
+And from this we get a pretty simple elementary property. So theorem
+
+01:08:03.540 --> 01:08:19.220
+if a series converges then this implies that the limit as n goes to infinity of x of n of the
+
+01:08:19.220 --> 01:08:26.440
+sequence you used to obtain the series equals 0. Okay. So this should you know fall in line with
+
+01:08:28.100 --> 01:08:33.580
+you know a series being convergent if and only if it satisfies this property here.
+
+01:08:34.380 --> 01:08:40.240
+Right which is somehow saying the tail of the sum is getting smaller and smaller which means
+
+01:08:40.240 --> 01:08:47.140
+you can't be adding up big things as you go on out in the series.
+
+01:08:52.880 --> 01:09:00.920
+So proof. So we'll show this by
+
+01:09:03.020 --> 01:09:25.080
+simple epsilon delta or epsilon m definition. So suppose x n converges then x n the series is
+
+01:09:25.640 --> 01:09:37.840
+0. And now I'm going to verify this using the epsilon m definition. Let epsilon be positive.
+
+01:09:40.680 --> 01:09:54.080
+Since x n is cosy this implies that there exists a natural number m not such that for all L
+
+01:09:54.080 --> 01:10:00.720
+bigger than or equal to m bigger than or equal to m not. I have that condition there some from
+
+01:10:01.280 --> 01:10:11.780
+in equals m plus 1 to L. x of n is less than epsilon.
+
+01:10:21.340 --> 01:10:32.380
+Choose m to be m not plus 1. Okay. This is so y m not plus 1 but not exactly and not just because
+
+01:10:33.400 --> 01:10:39.240
+basically what I'm going to do is I'm going to take L to be equal to m plus 1 and the index gets
+
+01:10:39.240 --> 01:10:52.220
+shifted by 1. Then if m is bigger than or equal to m I get that the absolute value of x sub m.
+
+01:10:55.920 --> 01:11:01.380
+Maybe I'll instead of saying limit as n goes to infinity I'll write limit as m goes to infinity
+
+01:11:01.380 --> 01:11:14.780
+as just a change in the dummy variable. This is equal to sum from n equals m to m x of n.
+
+01:11:15.900 --> 01:11:21.340
+And now so I've shifted this so now little m is bigger than or equal to m not plus 1.
+
+01:11:23.120 --> 01:11:30.760
+So you could write this as if you like m minus 1 plus 1. So little m minus 1 is bigger than or
+
+01:11:30.760 --> 01:11:34.860
+equal to m not. So by this inequality this is less than epsilon.
+
+01:11:40.460 --> 01:11:40.540
+Okay.
+
+01:11:52.040 --> 01:11:58.760
+And so we see that if a series converges the terms the individual
+
+01:11:59.800 --> 01:12:09.560
+terms x sub n must converge to zero. So there's another reason why this series minus 1 to the end is not converged
+
+01:12:10.520 --> 01:12:20.380
+because those terms do not converge. This also tells us that for this geometric series when r is
+
+01:12:20.380 --> 01:12:24.760
+greater than or equal to 1 an absolute value the series does not converge.
+
+01:12:27.640 --> 01:12:46.280
+This is not converged. Okay. And the proof is and we proved this in fact like a few lectures
+
+01:12:46.280 --> 01:12:56.720
+ago a few lectures ago as well that if absolute value of r is bigger than 1 then limit as n goes
+
+01:12:56.720 --> 01:13:08.360
+to infinity of r to the n this limit does not exist. We showed it's in fact unbounded.
+
+01:13:08.360 --> 01:13:15.440
+Right. This is r to the n is an unbounded sequence. So
+
+01:13:20.160 --> 01:13:27.160
+does not converge. So I'm using that theorem over there in a little bit round about way. Let me
+
+01:13:27.260 --> 01:13:40.400
+let me state. Let me restate this theorem over here. This theorem says
+
+01:13:43.640 --> 01:13:51.780
+if the series converges then the series the limit this limit equals zero. Now this statement is
+
+01:13:51.780 --> 01:14:02.580
+logically equivalent to the negation of the converse or the there's an actual word for that but
+
+01:14:02.580 --> 01:14:10.480
+I can't remember. Namely that the negation of this implies the negation of this.
+
+01:14:11.640 --> 01:14:20.000
+Okay. So a logically equivalent way to rewrite that statement over there is that
+
+01:14:29.220 --> 01:14:35.440
+that if this limit is not equal to zero so if it doesn't exist at all that's also fine.
+
+01:14:36.180 --> 01:14:44.460
+This implies that does not converge. Okay. So you know this
+
+01:14:46.360 --> 01:14:51.680
+restatement of the theorem over there is really what I used to prove is really what I used here.
+
+01:14:55.720 --> 01:15:02.820
+All right. And I think I'll stop there. Next time we'll see that this theorem here
+
+01:15:03.740 --> 01:15:09.540
+is a one-way street and I think you covered this example and probably calculus namely that
+
+01:15:10.680 --> 01:15:17.300
+one-way street in the sense that if x n converges then this limit is zero but the converse does not hold
+
+01:15:17.940 --> 01:15:26.060
+namely it is not true that if the limit at this limit is zero then this converges. Okay. We'll see the
+
+01:15:28.280 --> 01:15:30.240
+famed harmonic series next time.
+

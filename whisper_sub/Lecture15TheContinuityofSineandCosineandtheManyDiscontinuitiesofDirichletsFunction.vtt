@@ -1,0 +1,656 @@
+WEBVTT
+
+00:00:12.400 --> 00:00:17.040
+So let's continue our discussion of continuity, which we began
+
+00:00:17.040 --> 00:00:28.880
+last time, which I defined last time, and I wrote again here.
+
+00:00:30.520 --> 00:00:35.300
+Which intuitively says that if you want to be that if x is
+
+00:00:35.300 --> 00:00:44.560
+sufficiently close to number c, then f of x will be very close to f of c.
+
+00:00:45.800 --> 00:00:52.580
+So it connects how the function behaves near a point to how a function behaves at the point.
+
+00:00:57.020 --> 00:01:00.920
+And last time we gave an example of a function which is continuous everywhere,
+
+00:01:01.180 --> 00:01:07.080
+namely the function f of x equals a x plus b.
+
+00:01:07.200 --> 00:01:09.440
+And one that was not continuous at a point c.
+
+00:01:09.620 --> 00:01:20.020
+And we ended with, let me just recall the question I asked last time, if f is a function,
+
+00:01:20.020 --> 00:01:31.160
+let's say that its whole domain is r. Does there exist a point where it's continuous?
+
+00:01:46.800 --> 00:01:53.540
+Okay. Okay. Now I could answer this question now just using the definition, but I'll answer it in a minute after we prove
+
+00:01:54.320 --> 00:01:59.780
+following theorem, which is an analog of this theorem that we proved here for limits.
+
+00:01:59.780 --> 00:02:11.380
+Right? We showed that if you have a subset s of r, a cluster point of s, so this is where you take limits.
+
+00:02:11.700 --> 00:02:19.560
+And then the limit as x goes to c of f of x equals l, if and only if for every sequence converging to c,
+
+00:02:19.940 --> 00:02:29.640
+we have f of x n, which is a new sequence converges to l. So this connects limits of functions to limits of sequences.
+
+00:02:29.640 --> 00:02:36.840
+Limits along sequences, if you like. We're going to prove an analog of this theorem now for the notion of continuity.
+
+00:02:40.460 --> 00:02:48.620
+But you know, there's kind of a, and these two definitions certainly look, if you look at the definition of limit and the definition of continuity,
+
+00:02:48.920 --> 00:02:56.280
+they certainly, this one certainly looks like the definition of limit where now the limit has to be f of c, the function evaluated at that point.
+
+00:02:59.240 --> 00:03:08.800
+And it essentially is, but we do have a kind of degenerate case where c here is not required to be a cluster point of s. It's just any point of s.
+
+00:03:11.940 --> 00:03:19.540
+And we'll have two cases c as a cluster point of s and c is not a cluster point of s. And you'll see that when c is not a cluster point of s,
+
+00:03:19.540 --> 00:03:39.800
+we'll have kind of a silly situation for talking about continuity. So this is the following theorem, which has three parts. So suppose s is the subset of r, c is an element of s.
+
+00:03:39.800 --> 00:04:03.920
+F is a function from s to r. So the first part is, if c is not a cluster point of s, then f is continuous at c.
+
+00:04:03.920 --> 00:04:15.860
+So if we're looking at continuity at a point, kind of the only interesting points to look at are cluster points of the set s. Otherwise, no matter what function it is, it will be continuous at such a point.
+
+00:04:18.540 --> 00:04:30.540
+The second is that now, let's suppose we're in the more interesting case that c is a cluster point of s. Suppose c is a cluster point of s.
+
+00:04:37.900 --> 00:04:45.180
+Then, which is essentially the only thing that's missing from this definition and the definition for limit.
+
+00:04:45.840 --> 00:04:58.800
+Then, f is continuous at c. And this is born out in the theorem. If and only if the limit as x goes to c of f of x equals f of c.
+
+00:05:03.860 --> 00:05:14.440
+And the third part of this theorem, which is now the analog of this theorem we proved here for limits, is the following.
+
+00:05:16.320 --> 00:05:43.900
+F is continuous at c. If and only if for every sequence x n of elements of s, such that x of n converges to c.
+
+00:05:58.640 --> 00:06:04.160
+So, again, if c is not a cluster point of the set, then every function is going to be continuous at that point.
+
+00:06:04.160 --> 00:06:11.940
+So, this is kind of a, so c is not a cluster point of s. This is kind of a silly case to look at.
+
+00:06:11.940 --> 00:06:20.200
+Okay. All right. So, let's prove the first theorem. I mean, the first part of this theorem.
+
+00:06:24.760 --> 00:06:34.800
+So, what's the intuition? Remember continuity is a connection between f near a point and the function at the point.
+
+00:06:34.800 --> 00:06:48.100
+Now, if the only points near c is c, then f of x equals f of c for x near c because x can only be c. And therefore, that will be less than epsilon.
+
+00:06:51.120 --> 00:07:02.000
+So, you know, when we're at a point that's not a cluster point, it kind of removes the near part and we're just looking at f at c and comparing f to itself at c.
+
+00:07:04.720 --> 00:07:17.680
+So, let's suppose f is not a cluster point. So, we want to prove continuity. So, that's a for all epsilon delta arguments. So, let epsilon be positive.
+
+00:07:19.940 --> 00:07:38.540
+Since c is not a cluster point of s, what does this mean? So, remember, to be a cluster point of a set s means for all delta positive there exists.
+
+00:07:38.540 --> 00:08:04.980
+So, let me recall what it means to be a cluster point over here on the side. So, c is a cluster point of s. This means for all delta positive, the set x minus delta x plus delta intersect.
+
+00:08:04.980 --> 00:08:26.400
+So, c intersect s, takeaway c is non-empty. So, since c is not a cluster point, that means for exists some delta zero. So, that this interval is disjoint from s, takeaway c.
+
+00:08:28.800 --> 00:08:54.180
+Such that c minus delta zero, c plus delta zero intersect s, takeaway c equals the empty set. Now, if I include c in this intersection, so another way of stating this is that the only thing since c is an element of s,
+
+00:08:54.180 --> 00:09:16.680
+the only thing that's in this intersection is c. So, this here is the rigorous way of saying there's nothing in s near c except for c itself.
+
+00:09:16.680 --> 00:09:31.920
+And therefore, there's nothing to compare to f of c. So, we'll choose delta to be this one because then there's nothing, there's no x in s in this interval other than c. And then f of c minus f of c is zero.
+
+00:09:31.920 --> 00:09:57.500
+So, choose delta to be delta zero. Then if x minus, so now we want to say that this delta works. So, if x is an s, and x minus c is less than delta, that implies x equals c.
+
+00:09:58.240 --> 00:10:16.180
+Because the only thing in this interval that's coming from s is c. And therefore, f of x minus f of c, this is equal to f of c minus f of c equals zero, which is less than epsilon.
+
+00:10:18.040 --> 00:10:27.500
+So, this is a really degenerate case of when you're trying to see if a function's continuous at a certain point.
+
+00:10:34.000 --> 00:10:44.440
+So, let's now move to the more interesting part that c is a cluster point.
+
+00:10:54.800 --> 00:11:06.040
+So, suppose c is a cluster point of s. And we want to show f is continuous at c if and only f the limit of f of x goes to c of f of x equals f of c.
+
+00:11:07.140 --> 00:11:17.540
+So, going this direction is really quite easy. So, we're going to go this direction and you should be able to prove this direction just from what I write down here.
+
+00:11:17.540 --> 00:11:41.780
+So, suppose the limit as x goes to c of f of x equals f of c. I mean this whole argument is kind of silly because the definitions are just so close except for the, you know, now c is a cluster point, so that's not missing from either definition.
+
+00:11:42.860 --> 00:11:48.540
+But the only difference is this guy, you only look at x and c, but not at c.
+
+00:11:50.600 --> 00:11:57.660
+So, suppose the limit as x goes to c of f of x equals f of c. Now, we want to show that f of x is continuous at c.
+
+00:11:58.900 --> 00:12:24.020
+So, let epsilon be positive since we have this, there exists a delta positive such that if x is in s
+
+00:12:27.980 --> 00:12:38.960
+and the absolute value of x minus c is bigger than 0 is less than delta 0 than f of x minus f of c is less than epsilon.
+
+00:12:40.260 --> 00:12:59.180
+And we'll just choose delta to be this delta 0. If x minus c is less than delta 0, then there are two cases. Either x is equal to c or x is not equal to z.
+
+00:13:04.080 --> 00:13:05.540
+So, let's write it this way.
+
+00:13:17.100 --> 00:13:30.640
+If x equals c, then clearly f of x minus f of c equals f of c minus f of c equals 0 is less than epsilon.
+
+00:13:35.640 --> 00:13:53.280
+And if x not equals c, then that's certainly bigger than 0, but we're still assuming it's less than delta, which remembers this delta 0 coming from the fact that the limit as x goes to c of f of x, kind of missed that there.
+
+00:13:54.720 --> 00:14:12.980
+It tells me that this is less than epsilon. So, it's just follows immediately, like from the definitions. There's not much to it.
+
+00:14:18.660 --> 00:14:31.060
+So, now let's prove the third part of this theorem, which is an analog of that theorem we have over there for limits.
+
+00:14:37.020 --> 00:14:51.140
+So, let's prove this direction. Let's suppose f is continuous at c. And now we want to prove this statement about sequences.
+
+00:14:51.140 --> 00:15:02.300
+So, let me also prove the opposite direction, not have to label it. So, let me put a star. This star is going to be the right hand side of this statement.
+
+00:15:05.420 --> 00:15:23.200
+So, let x sub n be a sequence in s. So, of elements of s, so that x n converges to c.
+
+00:15:29.640 --> 00:15:47.940
+Now, do this picture for limits, and it's the same picture now for this guy. And we're wanting to show now that limit as n goes to infinity of f of x sub n equals f of c.
+
+00:15:53.760 --> 00:16:06.560
+So, here's epsilon m arguments, so let epsilon be positive. So, now I'll go to the picture. Here's f of c. Here's f of c plus epsilon f of c minus epsilon.
+
+00:16:06.560 --> 00:16:32.500
+So, what do we know? We know the function is continuous at c. So, that means that if I look at c, then there exists a delta, so that if I'm in this interval here, everything in this interval gets mapped to inside of this interval.
+
+00:16:36.500 --> 00:16:53.500
+Now, what else do I know, or what else am I assuming? x sub n is a sequence converging to s. So, for large n, for n big enough, for some capital m zero, x sub n is going to lie inside this interval.
+
+00:16:53.500 --> 00:17:01.340
+If you like in the definition of convergence of a sequence, epsilon is equal to delta in that definition, but don't mind that.
+
+00:17:02.760 --> 00:17:20.600
+So, for all n big enough, x sub n lies in this interval, and since this interval gets mapped inside this interval by f, this f of x sub n will end up in this interval within epsilon to f of c, as long as n is big enough.
+
+00:17:22.020 --> 00:17:27.020
+So, this picture I just went through, this is the proof, and now we just need to write it out.
+
+00:17:31.280 --> 00:17:57.000
+So, since f is continuous at c, there exists a delta positive such that if x minus c is less than delta, this delta is less than delta.
+
+00:17:57.000 --> 00:18:24.460
+So, this tells me f of x minus f of c is less than epsilon. Now, since the sequence x sub n converges to c, there exists some integer capital m zero such that for all n bigger than or equal to m zero, x sub n minus c is less than delta.
+
+00:18:27.060 --> 00:18:34.100
+And therefore, for all n bigger than or equal to m sub zero, f of x n will be within epsilon of f of c.
+
+00:18:35.780 --> 00:18:56.300
+So, this will be the m we choose, then if n is bigger than or equal to m, we get that x of n minus x minus c is less than delta, which implies by how delta is defined.
+
+00:18:57.180 --> 00:19:13.400
+If x minus c is within distance delta, f of x minus f of c is within distance epsilon, we get f of x sub n minus f of c is less than epsilon.
+
+00:19:16.520 --> 00:19:19.860
+So, that gives us one direction.
+
+00:19:29.820 --> 00:19:49.540
+So, now we'll prove the opposite direction. So, we're assuming that this statement star holds, namely for all sequence x sub n's converging to c, we have f of x sub n converging to f of c.
+
+00:19:49.540 --> 00:19:56.780
+And we want to prove that the limit or that f is continuous at c.
+
+00:19:57.820 --> 00:20:09.760
+Okay? And we're going to do this by contradiction, which is the same way we proved the opposite direction for the theorem about limits.
+
+00:20:09.760 --> 00:20:29.440
+So, proof is by contradiction, namely suppose the conclusion we want does not hold. So, suppose f is not continuous at c.
+
+00:20:29.440 --> 00:20:50.480
+So, let me recall, we negated that definition in the last lecture, but we'll negate it again for this. This means that there exists a bad epsilon so that for all delta positive, there exists an x and s satisfying x minus c is less than delta.
+
+00:20:54.180 --> 00:21:01.340
+And f of x minus f of c is bigger than or equal to epsilon zero.
+
+00:21:03.080 --> 00:21:03.080
+
+
+00:21:03.080 --> 00:21:26.360
+Okay? All right. So, we apply, so since we're assuming f is not continuous, there exists an epsilon zero, so we have all this. So, which holds for every delta, and now we'll choose delta to be one, one half, one third, and so on.
+
+00:21:29.120 --> 00:21:45.820
+And there exists an x of one and s such that x of one minus c is less than one. And f of x of one minus f of c is bigger than or equal to epsilon zero.
+
+00:21:45.820 --> 00:22:04.260
+That's just delta if you like delta equals one. And now we continue, there exists an x of two and s such that x of two minus c is less than a half.
+
+00:22:06.880 --> 00:22:18.200
+And so here, this is delta equals a half. So, this is delta equals a half and so on. Okay? So, then we conclude.
+
+00:22:22.100 --> 00:22:47.000
+So, you know, if you like omit this from the proof and this is really what's behind the next statement I'm about to make, then for all natural numbers n, there exists an x of n and s such that x of n minus c is less than one over n.
+
+00:22:48.580 --> 00:23:11.260
+And f of x of n minus f of c is bigger than or equal to epsilon zero. Okay? Now, let's take a look at this sequence. All right, we're trying to break something and we'll end up breaking the assumption, the star assumption. Right?
+
+00:23:11.260 --> 00:23:27.020
+So, this is the first of s which are getting closer and closer to c. So, we have zero is bigger than or equal to x of n minus c is bigger is less than one over n. So, this converges to zero. This converges to zero.
+
+00:23:27.020 --> 00:23:42.940
+So, by the squeeze theorem, the absolute value of x of n minus c converges to zero. And therefore, x of n converges to c. By squeeze theorem, we get that x n converges to c.
+
+00:23:44.040 --> 00:23:55.600
+Now, since we're assuming star holds, that's the right side of three of the if and only if. It must be the case that f of x n converges to f of c.
+
+00:24:03.920 --> 00:24:22.780
+Right? That's what star tells me that if I take a sequence converging to c f of x n converges to f of c. But each one of these remember is bigger than or equal to epsilon zero.
+
+00:24:29.460 --> 00:24:47.060
+Which is a contradiction, epsilon zero is a positive number. And that concludes the proof of this theorem that gives us an equivalent way of stating continuity in terms of sequences.
+
+00:24:47.060 --> 00:24:59.940
+And, you know, just like for limits, this will allow us to use what we know about sequences to conclude analogous facts for continuous functions.
+
+00:25:08.540 --> 00:25:18.760
+So, let's look at a non-trivial example of a continuous function.
+
+00:25:18.760 --> 00:25:39.960
+And also put this theorem to use this previous theorem functions f of x equals sine x. And g of x equals cosine x. These are continuous functions.
+
+00:25:39.960 --> 00:25:55.740
+So, meaning their domain is a set of real numbers. So, they're continuous at every real number. They're continuous at c for every c real number.
+
+00:25:58.880 --> 00:26:16.000
+So, we're going to use this, well, we're not going to use this theorem just yet on this part. We're actually going to prove sine is continuous directly from the epsilon delta definition.
+
+00:26:17.000 --> 00:26:34.700
+Which is always good. So, first we claim sine x. So, before I state what we're going to do, let me just give you a quick refresher on what you can prove just from the definition of sine and cosine.
+
+00:26:34.700 --> 00:26:51.040
+Remember, you know, I'm not, I would usually put this to the class and see who remembers and who doesn't. But, so this is also supposed to be a unit circle, although it doesn't quite look like that.
+
+00:26:51.780 --> 00:27:13.600
+Remember, that sine and cosine are defined as you travel along, signed distance x along the circle. And you arrive at a point on the unit circle, which you, so it's an ordered pair.
+
+00:27:13.600 --> 00:27:26.160
+So, here, the first element you call cosine x, the second element you call sine x. So, that's how sine of x is defined. So, now simply, I'm not going to do these because this is trig.
+
+00:27:27.240 --> 00:27:42.640
+Not analysis, but from the definition of sine and cosine from the unit circle.
+
+00:27:45.780 --> 00:28:08.420
+So, we have that, of course, all x and r sine x plus cosine squared x is equal to 1. And therefore, each of these individual things has to be less than or equal to 1, which upon taking square roots means that
+
+00:28:20.320 --> 00:28:38.400
+you can also make a better estimate for sine x when x is close to 0, which is only useful for x close to 0, but which is the following that for all x sine x is less than or equal to the absolute value of x.
+
+00:28:38.400 --> 00:28:50.300
+So, you have x just obtained by comparing the length of one side of a triangle from this picture with the length of the arc.
+
+00:28:50.300 --> 00:29:18.560
+So, you have this, and then you also have the angle sum formula, which says that sine of a plus b equals sine a cosine b plus cosine a sine b.
+
+00:29:22.320 --> 00:29:42.880
+And you also have the, I can't remember the name of the exact formula. I think it's a difference to a product or something of that nature, but which says sine of a minus sine of b, you can write.
+
+00:29:42.880 --> 00:29:53.980
+So, this is using the previous formula twice sine of a minus b over 2 cosine of a plus b over 2.
+
+00:29:58.980 --> 00:30:06.180
+So, using these elementary properties of sine and cosine, we'll now show that f is, or that sine of x is continuous.
+
+00:30:14.420 --> 00:30:26.600
+So, first thing we want to show is that sine x is continuous function.
+
+00:30:29.380 --> 00:30:47.680
+So, let's see an r, we're going to show sine as continuous as c, let epsilon be positive. And now we have to say how to choose delta, depending on this epsilon, choose delta to be epsilon.
+
+00:30:52.340 --> 00:31:11.500
+Now, we'll use these elementary properties to show that this delta works. Then, if x minus c is less than delta, we now want to show that f of x minus f of c sine x minus sine c is less than epsilon.
+
+00:31:11.500 --> 00:31:33.000
+So, sine x minus sine c, this is equal to by this last formula we have on the board over here. This is equal to twice sine x minus c over 2 cosine x plus c over 2.
+
+00:31:35.100 --> 00:31:51.800
+And now, this is the product of 2 times absolute value of sine times absolute value of cosine. By the second property over here, cosine is always bounded by 1. So, this is less than or equal to 2 times the absolute value of sine x minus c over 2.
+
+00:31:53.320 --> 00:32:08.180
+And now, we use this third property here that sine x is less than or equal to the absolute value of that thing you're sticking in. So, this is less than or equal to 2 times x minus c over 2, which equals x minus c.
+
+00:32:09.040 --> 00:32:20.100
+So, now, we're in business, we've connected f of x to x minus c. So, this is less than or equal to, so this is less than delta, which equals epsilon by our choice of delta.
+
+00:32:21.200 --> 00:32:24.880
+And therefore, sine x minus sine c is less than epsilon.
+
+00:32:29.920 --> 00:32:45.680
+So, sine x minus sine c is less than epsilon. So, this function sine x is continuous at c.
+
+00:32:52.080 --> 00:33:14.520
+Now, we'll use this and the theorem we showed a minute ago. Have I erased it? Yes, I have now officially erased it. Anyways, we used the previous theorem that we proved for the equivalence of continuity and convergence of sequences to show that cosine is continuous.
+
+00:33:18.800 --> 00:33:38.480
+So, let's see the element of r. Let xn be a sequence, converging to c.
+
+00:33:38.480 --> 00:33:54.140
+And we now want to show that cosine of x of n converges to cosine of c.
+
+00:33:55.300 --> 00:34:02.420
+Once we've done that, then by the theorem we proved, previously we can conclude that cosine is continuous at c.
+
+00:34:08.640 --> 00:34:28.500
+Now, here's the thing. For all x and r, we have cosine of x is equal to sine of x plus pi over 2.
+
+00:34:28.500 --> 00:34:42.780
+So, we can deduce that simply from this angle sum formula. Take a equals x, b equals pi over 2. And using that cosine of pi over 2 is 0.
+
+00:34:45.160 --> 00:35:03.120
+And this is what we'll use. And the fact that we know sine is continuous. Since the sequence x in converges to c, this implies the sequence x sub n plus pi over 2 converges to c plus pi over 2.
+
+00:35:05.520 --> 00:35:21.520
+Now, this sequence x sub n plus pi over 2 converges to this number. And since sine is continuous, we have by the previous theorem, that sine of this converges to this.
+
+00:35:21.520 --> 00:35:46.500
+And therefore, cosine of cosine of x sub n, which is equal to sine of x sub n plus pi over 2 converges to sine of c plus pi over 2, which equals cosine of c.
+
+00:35:50.380 --> 00:36:02.680
+So, cosine of x sub n converges to cosine of c. And therefore, we've now shown that cosine is also continuous.
+
+00:36:10.580 --> 00:36:29.180
+So, let's answer this question real quick. So, the answer is no. You can find a function which is discontinuous at every point, every real number.
+
+00:36:33.940 --> 00:36:37.480
+So, maybe this is an example rather than a theorem, but I'll state it as a theorem.
+
+00:36:40.720 --> 00:37:05.660
+Let f of x be the function, which takes the value 1. If x is a rational, 0. If x is not a rational, then f is...
+
+00:37:07.540 --> 00:37:27.320
+not continuous at every c and r. So, first off, don't try to plot this using like matlab or mathematical or anything, because first off, computers can't deal with irrational numbers.
+
+00:37:28.060 --> 00:37:42.720
+So, you will just get 1, no matter what you stick into f. But, okay, so you have this function, which is 1, if x is a rational, 0, if x is not a rational number, if it's irrational.
+
+00:37:43.660 --> 00:37:54.940
+Let's show it's discontinuous at every c. A different way, if you like, to state the theorem which I've already erased.
+
+00:37:54.940 --> 00:38:14.960
+So, but let me just state it slightly differently. F is not continuous at c. So, remember the two statements are equivalent, if and only if they're negations are equivalent.
+
+00:38:14.960 --> 00:38:34.060
+So, f is not continuous at c. If and only if there exists a sequence x of n, such that x n's converged to c.
+
+00:38:50.840 --> 00:38:59.520
+So, maybe it just doesn't converge at all, or maybe it converges to something other than f of c. So, this is just a restatement of the theorem we've already proven.
+
+00:38:59.520 --> 00:39:17.220
+But, now using negations of the statements that appeared on the if and only if. So, there's two cases. So, to consider for this, so now we're going, so this is a statement of the theorem that we're used, or restatement of the theorem we're using.
+
+00:39:17.220 --> 00:39:27.960
+And now we're going to prove the theorem that I've stated here. So, let c be an element of r. We're going to show that this function is discontinuous at c. There are two cases to consider.
+
+00:39:27.960 --> 00:39:42.140
+C is a rational number, or c is an irrational number. So, case 1, c is rational number. Let's show f is not continuous at c.
+
+00:39:49.260 --> 00:40:08.400
+So, now we know that for every natural number in, there exists an element x of n, and the complement of q. So, an irrational number.
+
+00:40:15.260 --> 00:40:22.780
+So, we prove this in an assignment. Between any two real numbers, I can find an irrational number in between them.
+
+00:40:23.840 --> 00:40:32.120
+So, that's what this statement says. For each n, I can find an irrational number between the number c and the number c plus 1 over n.
+
+00:40:37.100 --> 00:40:52.460
+Now, by the squeeze theorem, this is just a constant sequence if you like, converging to c, this converges to c. And as n goes to infinity, this converges to c. So, I get that the sequence x sub n converges to c.
+
+00:40:54.240 --> 00:41:20.140
+This will be my bad sequence to satisfy this conclusion. Because, so, x n converges to c. But, if I look at f of x n, if I take the limit as n goes to infinity of f of x n,
+
+00:41:21.080 --> 00:41:38.700
+since all the x ns are not rational, they're irrational numbers, and I stick them into f, I get 0, 0, and this does not equal 1, which equals f of c. Because, we're in the case that c is a rational number.
+
+00:41:40.000 --> 00:41:59.680
+So, here we use the density of the irrationals to show that this function is not continuous at a rational number. And we'll do the same thing for the case that c is an irrational number.
+
+00:41:59.680 --> 00:42:15.500
+I mean, it's the same proof except now we essentially take compliments. We proved the theorem right after the Archimedean property of r that for any two real numbers, I can find a rational number in between them.
+
+00:42:15.500 --> 00:42:31.100
+So, for every n, there exists a rational number such that c is less than x sub n is less than c plus 1 over n.
+
+00:42:36.260 --> 00:43:00.500
+And again, by the squeeze theorem, it follows that x n converges to c. And if we look at the limit as n goes to infinity of f of x sub n, this is equal to all of these values are 1, which does not equal 0.
+
+00:43:05.380 --> 00:43:25.740
+So, this function is not continuous at every real number. So, just terminology here. If you hear me say this, when I say something is not continuous, I'll often say discontinuous.
+
+00:43:29.460 --> 00:43:51.540
+Okay, we're going to use this theorem. Now, I keep saying this theorem, although I already erased it, but the theorem that equates continuity at a point in the fact that every sequence converges to c implies f of x n converges to f of c.
+
+00:43:51.540 --> 00:44:07.540
+So, we're going to use that theorem to get kind of corresponding theorems about continuity that look kind of analogous to statements we made about sequences.
+
+00:44:22.380 --> 00:44:47.020
+And then we'll consider a case which is not covered, which has no analog for sequences. So, let me say the following theorem. So, suppose s is the subset of r, c is an element of s. And I have two functions from s to r.
+
+00:44:47.020 --> 00:45:13.700
+Then, if f and g are continuous at c, then the conclusion is f plus g. The function f plus g is continuous at c.
+
+00:45:15.740 --> 00:45:36.600
+So, if f times g is continuous at c, and if g of x does not equal zero for all x and s. So, I can divide by it.
+
+00:45:36.600 --> 00:45:49.380
+Then, f over g is continuous at c.
+
+00:45:56.220 --> 00:46:11.020
+And so, for example, I'll prove the first statement, the other two you can prove for yourself. And again, this just follows from this characterization we have of a function being continuous at a point in terms of limits of sequences.
+
+00:46:11.020 --> 00:46:28.820
+And limits of sequences, we know well. We've proven all these properties about them. If you'd like, that's where we did all the hard work. And now, getting some payoff in that we get interesting statements without a whole lot of work.
+
+00:46:28.820 --> 00:46:39.320
+So, we're assuming f and g are continuous at c. So, let's prove f plus g is continuous at c via this sequential characterization.
+
+00:46:40.600 --> 00:47:04.160
+Suppose, xn is the sequence converging to c. Then, since f and g are continuous at c, this implies that the sequence is f of x of n converges to f of c.
+
+00:47:05.460 --> 00:47:20.420
+And g of x of n converges to g of c. And therefore, by the theorem we proved several lectures ago that the sum of two convergent sequences converges to the sum of the limits.
+
+00:47:21.140 --> 00:47:39.820
+So, we get that f plus g of x of n, which is f of x of n plus g of x of n converges to f of c plus g of c or function f plus g evaluated at c.
+
+00:47:41.740 --> 00:47:58.960
+And that's it. We've now shown that every sequence converging to c, f plus g of x of n converges to f plus g of c. And similarly, for others, although there's maybe a little bit of a small hiccup here in that you want to, well, no.
+
+00:48:01.400 --> 00:48:18.980
+Right. So, this follows, I was thinking of something else, don't worry about that. But they, two and three also follow similarly using the sequential analogous sequential theorems.
+
+00:48:39.440 --> 00:48:53.780
+However, we do have, so these are kind of three natural operations we can do with two functions. We can add them, we can multiply them, we can divide them, just like we had for sequences.
+
+00:48:53.780 --> 00:49:00.500
+There is one operation we can do with functions that you don't do with sequences or can't do with sequences and that's composed them.
+
+00:49:01.720 --> 00:49:11.660
+So, the natural question is, is the composition of two continuous functions continuous? And the answer to that is yes. We have to state this carefully.
+
+00:49:11.660 --> 00:49:27.040
+So, suppose a and b are a subset of r and c is an element of a.
+
+00:49:31.980 --> 00:49:48.440
+So, let's write this a little bit different. A and b be a subset of r, c is an element of a and f will be a function from, let me get this right.
+
+00:49:52.240 --> 00:50:03.540
+f will be a function from a to r and g is a function from a set b to a. And, okay, so I'm getting this backwards.
+
+00:50:07.040 --> 00:50:14.260
+So, when I compose these two, when I take f of g, f of g will be a function now from b to r.
+
+00:50:16.520 --> 00:50:36.360
+So, if g is continuous at c and f is continuous at the point g of c, which is, remember, an element of a.
+
+00:50:39.360 --> 00:50:50.520
+Then the composition f of g is continuous at c.
+
+00:50:56.240 --> 00:51:00.280
+So, we'll use again this characterization in terms of sequences.
+
+00:51:02.520 --> 00:51:13.620
+We don't necessarily have to, we could have done it strictly speaking from the definition, but this is a nice short way of proving this statement.
+
+00:51:13.620 --> 00:51:27.380
+So, an x in be a sequence in b. So, a element of b such that x sub n converges to c.
+
+00:51:27.380 --> 00:51:43.640
+And, what we want to show is that f of g limit as n goes to infinity of f of g of x sub n equals f of g of c.
+
+00:51:46.540 --> 00:51:48.940
+Let's put this up to the side.
+
+00:51:49.940 --> 00:52:16.480
+Okay, so since x n's converges to c and g is continuous at c, this implies that the sequence g of x n converges to g of c.
+
+00:52:18.000 --> 00:52:25.120
+Now, g of x sub n, this is a sequence now in a converging to an element of a.
+
+00:52:25.120 --> 00:52:55.100
+Yeah, so since this sequence g of x sub n converges to g of c and g now f is continuous at g of c, this implies that f of g of x sub n converges to f of g of x sub n.
+
+00:53:13.720 --> 00:53:22.500
+So, we have a new, we have an operation that we can't do with sequences, but this operation still preserves continuity.
+
+00:53:22.500 --> 00:53:36.700
+So, taking sums of continuous functions, maintains and stays in the class of continuous functions, product of two continuous functions is continuous, quotient is continuous.
+
+00:53:39.640 --> 00:53:45.880
+And now also the composition of two continuous functions is continuous.
+
+00:53:50.680 --> 00:54:03.240
+Now, so as a consequence of this, we can use this to prove some, give more examples of functions which are continuous.
+
+00:54:03.240 --> 00:54:23.120
+So, for example, draw in the natural number, f of x equals x to the n is continuous as a function for x and r.
+
+00:54:24.420 --> 00:54:29.540
+So, what's the proof? We can do this by induction.
+
+00:54:29.540 --> 00:54:43.240
+So, for n equals 1, f of x equals x, we've already done.
+
+00:54:51.960 --> 00:55:01.800
+So, this is the base case, let's now do the inductive step.
+
+00:55:05.880 --> 00:55:15.500
+Suppose that the function x to the m is continuous and now we want to show x to the m plus 1 is continuous.
+
+00:55:20.980 --> 00:55:35.660
+Then x to the m plus 1, this is equal to x times x to the m. And since x to the m is continuous and the function x, f of x equals x is continuous, the product of two continuous functions is continuous.
+
+00:55:42.980 --> 00:56:05.640
+This is the product of two continuous functions, which by the theorem we proved implies that x to the m plus 1 is continuous.
+
+00:56:09.420 --> 00:56:17.980
+So, I keep saying continuous, but what I'm saying is for all c and r, x to the m is continuous at c.
+
+00:56:20.480 --> 00:56:24.000
+So, maybe I should have written that down, but I think that meaning should be clear enough.
+
+00:56:25.940 --> 00:56:35.460
+And by the same inductive reasoning, you could also prove that,
+
+00:56:35.460 --> 00:57:05.440
+that the function x to the m is continuous.
+
+00:57:17.360 --> 00:57:23.000
+So, rather than write down the actual proof by induction, let's talk our way through it.
+
+00:57:23.540 --> 00:57:32.400
+So, again, for n equals 1, this is just going to be some number times x, which we've already dealt with in a previous example, so we know that's continuous.
+
+00:57:33.000 --> 00:57:45.240
+So, that settles the base case. Now, let's assume that we've proved this for n equals m, or let's assume this for n equals m, and look at a function with n equals m plus 1.
+
+00:57:45.240 --> 00:57:54.840
+That's going to be a to the a sub m plus 1 times x to the m plus 1 plus a lower order polynomial, which we already know is continuous.
+
+00:57:55.980 --> 00:58:07.220
+And a sub m plus 1 times x to the m plus 1, that's continuous, because it's the product of a constant and a continuous function by the previous example.
+
+00:58:07.220 --> 00:58:16.580
+So, that would be continuous plus the lower order polynomial, which is continuous by assumption, that will be continuous by the theorem that we proved.
+
+00:58:20.920 --> 00:58:25.660
+But, you know, you don't have to just look at polynomials, for example.
+
+00:58:30.620 --> 00:58:50.460
+So, for example, the function f of x equals 1 over 3 plus sine x to the fourth, this is also continuous, is a continuous function.
+
+00:58:50.460 --> 00:59:01.020
+Why? Because for all x, first off, 3 plus sine x to the fourth, this is never 0. So, this function makes perfectly good sense. So, the bottom is always non-zero.
+
+00:59:02.220 --> 00:59:13.000
+So, sine x is continuous, so sine x to the fourth is continuous. 3 is a continuous function, it's just a constant. So, the bottom as a function on its own is continuous.
+
+00:59:15.420 --> 00:59:30.000
+And, 1 over that function is continuous, as long as the bottom is never 0, which it's never 0. So, again, by this theorem here, so we used the composition one to say that sine x to the fourth is continuous.
+
+00:59:30.620 --> 00:59:36.780
+And, we used that one, the theorem before that to show that 1 over 3 plus sine x for is continuous.
+
+00:59:37.200 --> 00:59:58.960
+So, just let me write this out real quick. I will say by composition theorem, the function sine x to the fourth is continuous, which implies by, I'll say, algebra break theorem.
+
+00:59:59.820 --> 01:00:26.200
+Meaning, the theorem that involves algebraic operations. 3 plus sine x to the fourth is continuous. And, by the algebraic theorem again, since 3 plus sine x to the fourth is never 0 for all x and r.
+
+01:00:26.200 --> 01:00:33.080
+It's continuous.
+
+01:00:37.320 --> 01:00:54.500
+So, next time we'll look at some properties of continuous functions, namely, what are called the min and max theorems for continuous functions.
+
+01:00:54.500 --> 01:01:13.800
+So, the great thing about continuous functions is if you look at them on clothes and bounded intervals, they always attain a max and a minimum at some point. Not just that the graph is bounded above or below, but there's actual point that reaches that min and reaches that max.
+
+01:01:13.800 --> 01:01:18.640
+And, then we'll also prove the intermediate value theorem, which says between any two.
+
+01:01:21.900 --> 01:01:37.960
+If I have a continuous function on an interval, a, b, and I look at f of a and f of b, and I take a number in between those two values, f of a and f of b, there exists a point in between them so that f attains that value.
+
+01:01:37.960 --> 01:01:41.840
+And, this is extremely important.
+
+01:01:45.080 --> 01:01:50.480
+And, we'll definitely see why later once we get to different stability and continuity.
+

@@ -1,0 +1,1451 @@
+WEBVTT
+
+00:00:13.560 --> 00:00:18.560
+Okay, so we're going to continue with our discussion of the derivative.
+
+00:00:22.840 --> 00:00:29.660
+So, now let me recall the definition we introduced at the end of last time of the
+
+00:00:29.660 --> 00:00:35.720
+derivative. So, let I be an interval, meaning it could be open closed, it could go
+
+00:00:35.720 --> 00:00:40.600
+out to plus infinity, it could go out to minus infinity. But you know what an
+
+00:00:40.600 --> 00:00:47.660
+interval is. And let's take a function from that interval to r. So, we say f is
+
+00:00:47.660 --> 00:00:54.740
+differentiable at a point c and i. If this limit of f of x minus f of c over x
+
+00:00:54.740 --> 00:01:01.140
+minus c, this difference quotient, if this limit exists, if this limit exists, we
+
+00:01:01.140 --> 00:01:12.620
+also denote it by f prime of c. Okay. And last time we showed that we gave a simple
+
+00:01:12.620 --> 00:01:23.400
+example that, from last time that if f of x equals alpha times x to the n, then this
+
+00:01:23.400 --> 00:01:28.760
+function is differentiable at every c and its derivative is equal to n times alpha x
+
+00:01:29.460 --> 00:01:42.080
+c to the n minus 1. Okay. Alright. Now, let's state this in an equivalent way using
+
+00:01:42.080 --> 00:01:49.140
+sequences. Remember, we had this characterization of limits of functions and you know the
+
+00:01:49.140 --> 00:01:54.220
+function we're kind of looking at is f of x minus f of c over x minus c. We had this
+
+00:01:55.760 --> 00:02:03.720
+equivalence between limits and limits of sequences. From last time that the limit, as,
+
+00:02:03.800 --> 00:02:10.820
+let's say, g of x, as x goes to c equals l. If and only if for every sequence x have
+
+00:02:10.820 --> 00:02:19.740
+been converging to c, g of x have been converges to l as n goes to infinity. So we can
+
+00:02:19.740 --> 00:02:24.420
+restate what it means for a function to be differentiable at a point and its derivative
+
+00:02:24.420 --> 00:02:32.720
+to be l, say. If and only if for every sequence x have been, with x have been not equal to
+
+00:02:32.720 --> 00:02:40.040
+c for all n and converging to c, we have that l is equal to this limit as n goes to infinity
+
+00:02:40.040 --> 00:02:53.860
+of now this sequence of numbers f of x n minus f of c over x of n minus c. Alright. So,
+
+00:02:55.040 --> 00:03:08.060
+today the theme of today is the connection between different ability and continuity. And we
+
+00:03:08.060 --> 00:03:15.420
+have kind of a very easy implication which is that if a function is differentiable at a
+
+00:03:15.420 --> 00:03:22.080
+point, then it must be continuous at that point. So that's a statement of this theorem.
+
+00:03:22.080 --> 00:03:33.560
+If f going from an interval to r is differentiable at c, then f is also continuous at c. So,
+
+00:03:33.560 --> 00:03:41.980
+let me also add in here that continuity at the point c in an interval is equivalent to
+
+00:03:41.980 --> 00:03:51.640
+saying that the limit as x goes to c of f of x equals f of c. Now this is just a subtle
+
+00:03:51.640 --> 00:03:58.680
+point that I want to make is that for an interval, open closed, half open, half closed,
+
+00:03:58.680 --> 00:04:06.100
+whatever, any point in that interval is a cluster point of that interval. And therefore,
+
+00:04:06.420 --> 00:04:11.540
+you know, this definition I made up there is actually meaningful and for continuity,
+
+00:04:12.820 --> 00:04:17.920
+something being continuous at c is equivalent to, if c is a cluster point which I just said
+
+00:04:17.920 --> 00:04:22.660
+it is, it always is, this limit equals the function evaluated at the point. Alright. So,
+
+00:04:22.660 --> 00:04:38.900
+that's just kind of a subtle comment I want to make. Alright. So, how do we prove this?
+
+00:04:40.520 --> 00:04:48.200
+We write the limit as x goes to c of f of x as in this way. So, essentially what I
+
+00:04:48.200 --> 00:04:54.700
+do is I add and subtract f of c and then the part that is f of x minus f of c, I multiply
+
+00:04:55.800 --> 00:05:01.580
+by x minus c and divide by x minus c which is perfectly fine because remember for a limit,
+
+00:05:01.780 --> 00:05:10.420
+I never actually put, I'm never actually looking at points where x equals c. Okay. So,
+
+00:05:10.460 --> 00:05:16.720
+that's fine. And so, I get this expression here. Alright. Now, what we know about limits
+
+00:05:16.720 --> 00:05:23.980
+is that the limit of the sum is the sum of the limits if they are as long as all these
+
+00:05:23.980 --> 00:05:28.480
+limits exist and the limit of the product is a product of the limits again assuming
+
+00:05:28.480 --> 00:05:35.560
+all of these limits exist. And the limit as x goes to c of everything you see here do
+
+00:05:36.260 --> 00:05:43.280
+exist. So, as x goes to c, this thing in brackets or in, I guess these are brackets.
+
+00:05:43.280 --> 00:05:51.840
+I don't know what those are called. This limit here is f prime of c as x goes to c of
+
+00:05:51.840 --> 00:05:58.780
+x minus c that's just zero and f of c is just a constant. There's nothing changing with
+
+00:05:58.780 --> 00:06:04.900
+x so the limit of a constant is that constant so I just get f of c. So, the limit of this
+
+00:06:04.900 --> 00:06:10.920
+whole expression is f prime of c times zero plus f of c which equals f of c. So, we've
+
+00:06:11.000 --> 00:06:18.700
+just proven that the limit as x goes to c of f of x is equal to f of c which is what
+
+00:06:18.700 --> 00:06:24.600
+we wish to prove. Okay. Therefore, a function which is differentiable at a point must be
+
+00:06:24.600 --> 00:06:32.760
+continuous at that point. Okay. Alright. So, as beginning mad students we're learning
+
+00:06:32.760 --> 00:06:37.260
+the proofs but we're also learning questions. Alright. What types of questions to ask.
+
+00:06:38.500 --> 00:06:47.600
+And whenever you come across a new theorem that has one implication, one hypothesis, one
+
+00:06:47.600 --> 00:06:55.360
+conclusion, then you should ask yourself does the converse hold does the conclusion also
+
+00:06:55.360 --> 00:07:02.180
+imply the hypothesis. So, we've shown that f differentiable at c implies f is continuous
+
+00:07:02.180 --> 00:07:08.120
+so it does the converse hold. Namely if f is continuous at a point does this imply that
+
+00:07:08.120 --> 00:07:14.660
+f is differentiable at that point. Okay. And as you can see already there the answer is
+
+00:07:14.660 --> 00:07:23.100
+no. Alright. I think you've probably covered this in calculus. But what's the function
+
+00:07:23.100 --> 00:07:28.880
+that gives this counter example that is continuous at c but not differentiable at c? Well,
+
+00:07:28.880 --> 00:07:33.440
+let's take for example c equals zero and let's look at the function f of x equals the
+
+00:07:33.440 --> 00:07:39.920
+absolute value of x. Okay. In this function here this is continuous at every point so in
+
+00:07:39.920 --> 00:07:47.420
+particular at c equals zero but it's not differentiable at c equals zero. Okay. And how do you
+
+00:07:47.420 --> 00:07:51.840
+come up with and how do you do that? You know how do you show something is not differentiable.
+
+00:07:52.600 --> 00:07:59.400
+The simplest way is to use this remark up here by finding a sequence converging to c so
+
+00:07:59.400 --> 00:08:06.660
+that the difference quotient does not have a limit as n goes to infinity. Okay. So that's
+
+00:08:06.660 --> 00:08:13.060
+what we'll do here is we'll find a sequence x sub n with x sub n not equal to zero for
+
+00:08:13.060 --> 00:08:22.120
+all n converging to zero such that this limit does not exist. Okay. And rather than write
+
+00:08:22.120 --> 00:08:27.660
+that because the limit does not exist it doesn't make really sense for me to even write
+
+00:08:27.660 --> 00:08:43.040
+that. Let me write this as saying as the sequence is divergent. So let's take a look at the
+
+00:08:43.980 --> 00:08:50.380
+sequence. Okay. Now how are we going to come up with a sequence x sub n so that the
+
+00:08:50.380 --> 00:08:56.280
+difference quotient does not converge? Well what's the logic? So for f of x equals the
+
+00:08:56.280 --> 00:09:09.200
+absolute value of x it looks like this. It looks like x it's equals x over here minus
+
+00:09:09.200 --> 00:09:16.960
+x over here. So if you were to formally differentiate, well I mean you could actually differentiate
+
+00:09:16.960 --> 00:09:22.380
+to the left of zero you get the derivative is equal to minus one to the right the derivative
+
+00:09:22.380 --> 00:09:29.380
+is one. So that kind of suggests maybe there's some funny business going on at zero. So
+
+00:09:29.380 --> 00:09:36.420
+let's look at a sequence which alternates between being negative and positive but is
+
+00:09:36.420 --> 00:09:45.680
+converging to zero and see if that sequence will provide us with this desired sequence which
+
+00:09:46.320 --> 00:09:53.000
+results in the difference quotient being divergent. So let's just take a guess. Let x n be minus
+
+00:09:53.000 --> 00:09:56.740
+one to the n over n. It doesn't have to be this one just something that alternates back
+
+00:09:56.740 --> 00:10:03.960
+and forth would be enough. So this could be n squared here or two n or n to the 2020,
+
+00:10:04.760 --> 00:10:17.080
+whatever you like. Then this is clearly always non-zero and it converges to zero. And of course
+
+00:10:17.080 --> 00:10:23.100
+y converges to zero. I mean you could prove this by epsilon m definition but also you know
+
+00:10:27.520 --> 00:10:34.060
+if I take the absolute value that's less than or equal to one over n and this one we know
+
+00:10:34.060 --> 00:10:42.700
+converges to zero. So by squeeze theorem the thing in the middle must converge to zero and
+
+00:10:43.300 --> 00:10:50.960
+we're done. Okay so we have this sequence x sub n equals minus one to the n over n which
+
+00:10:50.960 --> 00:10:59.200
+is alternating back and forth. And we hope it's going to result in this difference quotient
+
+00:10:59.200 --> 00:11:04.200
+being divergent as n goes to infinity. And so we compute that. Let's look at the difference
+
+00:11:04.200 --> 00:11:10.240
+quotient, f of x sub n minus f of zero. f of zero is just zero. So I just get f of x sub n
+
+00:11:10.240 --> 00:11:15.720
+which is the absolute value of minus one to the n over n over x sub n which is minus one
+
+00:11:15.720 --> 00:11:30.580
+to the n over n. This is just equal to, so this is just equal to one over n over minus
+
+00:11:30.580 --> 00:11:39.640
+one to the n over n which equals minus one to the minus n but you know minus one to the
+
+00:11:39.640 --> 00:11:48.500
+minus n this is equal to the same thing as minus one to the n. So this sequence here
+
+00:11:48.500 --> 00:11:54.860
+of difference quotient so f of x n minus f of zero over x n minus zero this is just equal
+
+00:11:54.860 --> 00:12:09.620
+to the sequence minus one to the n which we know is divergent doesn't have a limit. That's
+
+00:12:09.620 --> 00:12:17.440
+the difference. So in summary this function f of x equals the absolute value of x is continuous
+
+00:12:17.440 --> 00:12:24.400
+at c equals zero but not differentiable at c equals zero. So now a natural question that
+
+00:12:24.400 --> 00:12:34.060
+people ask is, okay so a function being continuous at a point does not necessarily imply that
+
+00:12:34.060 --> 00:12:38.180
+it's differentiable. But let's take a function which is continuous on the real number
+
+00:12:38.180 --> 00:12:47.480
+line. Is there a point where it's differentiable? So it's already on the board but you know this
+
+00:12:47.480 --> 00:12:53.500
+is not completely a crazy question to ask. For example let's go back to f of x equals
+
+00:12:53.500 --> 00:13:00.000
+the absolute value of x. This function is differentiable everywhere except zero. So there's lots of
+
+00:13:00.000 --> 00:13:04.700
+points where this function is differentiable. It's differentiable for c positive and c negative.
+
+00:13:05.400 --> 00:13:10.940
+So for this continuous function there does exist points where it's differentiable. And you can
+
+00:13:10.940 --> 00:13:15.880
+imagine trying to draw any kind of curve that you can on a piece of paper and you can probably find a point
+
+00:13:15.880 --> 00:13:22.900
+on that curve that has a tangent. I mean if you sit there with pencil and then try to draw something very
+
+00:13:22.900 --> 00:13:28.840
+jagged I mean there's still going to be little sections of your jagged curve where it has a
+
+00:13:28.840 --> 00:13:36.620
+tangent. So you know I imagine this is why people thought this was the case that a continuous
+
+00:13:36.620 --> 00:13:42.820
+function has to have at least one point where it's differentiable. And Varastras the godfather
+
+00:13:42.820 --> 00:13:49.860
+of analysis said no. He came up with a whole class of examples of functions which are continuous
+
+00:13:49.860 --> 00:13:57.300
+on the real number line but are differentiable nowhere. And this was a really surprising
+
+00:13:59.420 --> 00:14:21.200
+set of examples and result to the community. And to me it's also one of the few results in this class that you really didn't see in your calculus class.
+
+00:14:21.200 --> 00:14:27.660
+So we're going to go through this example although in most analysis classes it's reserved for later.
+
+00:14:28.960 --> 00:14:35.740
+But I think we can do it now. And so what we're going to prove is
+
+00:14:49.200 --> 00:14:54.340
+that we're going to construct a function which is continuous everywhere but is differentiable nowhere.
+
+00:14:55.100 --> 00:15:04.420
+So a continuous nowhere differentiable function. And I'll even write down the function for you.
+
+00:15:04.420 --> 00:15:17.140
+So what's the idea that Varastras had? It was let me, well I'm not going to write down the function just yet, but the idea of constructing such a function is that it should be highly
+
+00:15:17.140 --> 00:15:31.700
+oscillatory. Imagine again you're trying to draw a picture of the graph of a function that's nowhere differentiable. You would kind of sit there and break your pencil trying to draw just kind of highly
+
+00:15:31.700 --> 00:15:45.960
+oscillating function so that it never has a tangent. And that's his idea is to build a function which is highly oscillatory but not two
+
+00:15:45.960 --> 00:15:48.760
+oscillatory so that it's still continuous at every point.
+
+00:15:48.760 --> 00:16:13.940
+Okay.
+
+00:16:17.080 --> 00:16:27.180
+So to start with the construction of this function which is continuous but nowhere differentiable we're going to need a few simple facts to start off with.
+
+00:16:27.180 --> 00:16:50.320
+So what is so again let me write out state our goal we're going to construct a continuous function from r to r which is
+
+00:16:50.320 --> 00:16:57.320
+it's nowhere differentiable.
+
+00:17:02.400 --> 00:17:17.960
+So let's start off with a few simple facts about so I said that we're going to build a function which is oscillating quite a lot. There's two functions you know that oscillate cosine inside.
+
+00:17:24.660 --> 00:17:46.120
+So that's those are going to be our building blocks we'll choose one of them. Let's choose co-sign say as to be our building block but anyway so let's start off with some
+
+00:17:46.120 --> 00:18:00.240
+elementary facts about co-sign so first is that for all x, y and r co-sign x minus co-sign y is less than or equal to the absolute value of x times x minus y.
+
+00:18:00.240 --> 00:18:28.680
+So the second is that for every real number c and for all k natural number there exists a y and c plus pi over k c plus 3 pi over k.
+
+00:18:33.240 --> 00:18:52.000
+Let me label this as theorem one such that co-sign of k c that's funny minus co-sign of k y is greater than or equal to 1.
+
+00:19:05.280 --> 00:19:08.020
+So both of these are simple facts about co-sign.
+
+00:19:20.160 --> 00:19:27.800
+So first off we did prove and maybe I should have used sine instead of co-sign in all of this but if you recall
+
+00:19:32.020 --> 00:19:49.080
+from our continuity section we prove that for all x and y sine x minus sine y is less than or equal to the absolute value of x minus y for all x and y.
+
+00:19:49.080 --> 00:19:57.560
+And there is a simple relation between co-sign x and sine of something and that's just a shift by pi over 2.
+
+00:20:00.860 --> 00:20:15.540
+Then co-sign of x minus co-sign of y this is equal to sine x plus pi over 2 minus sine y plus pi over 2.
+
+00:20:16.460 --> 00:20:21.920
+And if you like let me instead of using x and y here let me use a and b.
+
+00:20:27.820 --> 00:20:38.520
+So then this is less than or equal to x plus pi over 2 minus y plus pi over 2 using this inequality.
+
+00:20:41.100 --> 00:20:53.180
+So that proves number one. For number two it's just a simple fact about co-sign being two pi periodic.
+
+00:21:00.400 --> 00:21:10.120
+So function g of x equals co-sign k of x. This is also periodic but now what's the period it's 2 pi over k.
+
+00:21:21.000 --> 00:21:30.940
+Now this interval has linked to pi except it's missing the point c plus pi over 2 and c plus 3 pi over k.
+
+00:21:44.060 --> 00:21:56.740
+So if I look at the image of,
+
+00:22:03.840 --> 00:22:15.220
+then so this function g of x equals co-sign k of x if I look at the image of this interval,
+
+00:22:21.300 --> 00:22:30.080
+this will contain all of the real numbers between minus 1 and 1.
+
+00:22:31.820 --> 00:22:36.580
+So this is a interval of length 2 pi over k.
+
+00:22:36.580 --> 00:22:47.560
+So cosine k x is 2 pi over k periodic so I should get everything between minus 1 and 1 except possibly the value at the endpoints.
+
+00:22:47.560 --> 00:22:59.660
+So take away and the value at the endpoints is minus cosine kc.
+
+00:23:05.460 --> 00:23:20.320
+Because cosine of k times c plus pi is equal to pi over k is equal to cosine of kc plus pi and cosine of something plus pi is equal to minus cosine of that thing.
+
+00:23:23.800 --> 00:23:35.100
+So the image of this set by cosine kx contains everything between minus 1 and 1 except for possibly the end point.
+
+00:23:35.100 --> 00:23:44.180
+So this really only happens at cosine of k times c equals 1.
+
+00:23:44.180 --> 00:24:09.300
+So then if cosine of kc is
+
+00:24:13.260 --> 00:24:34.220
+bigger than or equal to 0, then we choose y in this interval c plus pi over kc plus 3 pi over k.
+
+00:24:52.700 --> 00:24:54.960
+Let's write it this way.
+
+00:24:54.960 --> 00:25:15.880
+So if this thing is bigger than or equal to 0, then we choose y in this interval so that cosine of ky equals minus 1.
+
+00:25:18.620 --> 00:25:38.460
+And if cosine kc is less than 0, then we choose y so that cosine of ky equals 1.
+
+00:25:45.340 --> 00:26:01.520
+So again, just to get an idea, I'm quibbling over a minor point, the fact that we have to take away possibly the point where possibly the value of cosine kc.
+
+00:26:04.100 --> 00:26:12.780
+Let's erase this for a minute and let's imagine that the range of this guy, I mean it's a 2 pi over k periodic interval.
+
+00:26:13.320 --> 00:26:16.500
+So this should basically cover all values between minus 1 and 1.
+
+00:26:16.500 --> 00:26:26.340
+So cosine of kc will either be plus or minus, so if it's non-negative, then I can find a y in this interval since it's 2 pi over k periodic.
+
+00:26:26.740 --> 00:26:29.100
+So that cosine of ky equals minus 1.
+
+00:26:31.640 --> 00:26:40.780
+And since this is non-negative and this is equal to minus 1, the difference between these two and absolute value will be greater than or equal to 1.
+
+00:26:43.060 --> 00:26:55.180
+Now, if cosine of kc is less than 0, then again, since this interval contains minus 1 to 1, it's 2 pi over k periodic, we choose a y so that cosine of ky equals 1.
+
+00:26:55.800 --> 00:27:03.120
+And then this is negative, this is 1, so the difference between something negative and 1 is greater than or equal to 1.
+
+00:27:05.440 --> 00:27:06.500
+And that's the proof.
+
+00:27:08.780 --> 00:27:18.640
+I made kind of a mess of it, but this is very easy to understand if you just draw a picture really.
+
+00:27:24.020 --> 00:27:25.720
+So let's continue.
+
+00:27:29.300 --> 00:27:41.780
+And again, what these two parts of this theorem say is that cosine can be quite oscillatory if you insert a k here.
+
+00:27:43.160 --> 00:27:49.880
+Because the difference between this interval is actually quite small.
+
+00:27:50.340 --> 00:28:01.160
+The length of this interval is 2 pi over k. If k is very large, that's a very small interval, yet somehow we can find two points which differ by at least one in value if we plug them into the function.
+
+00:28:02.520 --> 00:28:07.020
+But cosine is not too wild because it satisfies this bound.
+
+00:28:07.020 --> 00:28:23.980
+So these two are going to be the ingredients in that idea I said at the start that we're going to build a function which oscillates, which is quite oscillatory, but it's not too oscillatory that it's still continuous.
+
+00:28:26.060 --> 00:28:35.580
+And we're going to build our function out of cosine kx where k is going to be changing.
+
+00:28:37.720 --> 00:28:46.800
+So I'm going to need one more very simple fact, so this one I won't mess up too much, which is the following.
+
+00:28:46.800 --> 00:29:01.600
+For all a, b, c, and r, the absolute value of a plus b plus c, this is bigger than or equal to the absolute value of a minus the absolute value of c.
+
+00:29:03.280 --> 00:29:06.980
+And the proof of this is just to use the triangle inequality twice.
+
+00:29:07.680 --> 00:29:18.100
+We have the absolute value of a, this is equal to a plus b plus c minus b plus c.
+
+00:29:19.300 --> 00:29:31.240
+And this is less than or equal to, by the triangle inequality, the absolute value of a plus b plus c plus the absolute value of minus times b plus c.
+
+00:29:31.240 --> 00:29:33.580
+But that minus goes away with the absolute value.
+
+00:29:36.760 --> 00:29:39.860
+And then I use the triangle inequality one more time here to get.
+
+00:29:47.000 --> 00:29:50.900
+And then if I subtract, what do I want to do that?
+
+00:29:56.760 --> 00:30:12.440
+And so if I subtract this side over to the other side of this inequality, I get the statement of the theorem.
+
+00:30:12.440 --> 00:30:13.760
+All right?
+
+00:30:17.960 --> 00:30:22.320
+So now we're going to introduce, call this theorem 2.
+
+00:30:24.680 --> 00:30:29.620
+Now let me introduce the guest of honor.
+
+00:30:31.380 --> 00:30:46.100
+So first, I have a following claim for all x and r, the series given by sum from n equals 0 to infinity.
+
+00:30:46.100 --> 00:30:52.220
+And instead of n, I'm going to use k cosine 160k x.
+
+00:30:52.360 --> 00:31:04.420
+So here's our very oscillatory guy over 4 to the k is absolutely convergent.
+
+00:31:07.460 --> 00:31:08.420
+All right?
+
+00:31:08.660 --> 00:31:11.640
+So for each x and r, this series converges absolutely.
+
+00:31:11.940 --> 00:31:13.220
+So it spits out a real number.
+
+00:31:13.420 --> 00:31:17.920
+So I can define a function in terms of this series.
+
+00:31:21.520 --> 00:31:34.320
+Let f from r to r be defined by f prime f of x is just the number that I get.
+
+00:31:34.320 --> 00:31:51.500
+And I stick in x to the series, which is meaningful because for all x, this series converges absolutely.
+
+00:31:51.500 --> 00:31:53.420
+So this is just a function.
+
+00:31:53.740 --> 00:31:56.580
+I put in x. I get out a real number.
+
+00:31:57.180 --> 00:32:09.240
+Then the claim is f is bounded and continuous.
+
+00:32:11.800 --> 00:32:16.840
+So this is going to be our function, which is continuous, but nowhere differentiable.
+
+00:32:16.840 --> 00:32:23.860
+As you can see, it's built out of a bunch of very oscillatory functions.
+
+00:32:24.020 --> 00:32:25.660
+Cosine of 160k x.
+
+00:32:25.660 --> 00:32:28.040
+This is just a really big number here.
+
+00:32:29.100 --> 00:32:34.600
+And as I said, when we were talking about this theorem here, each one of those pieces is very oscillatory.
+
+00:32:34.600 --> 00:32:40.840
+A very small interval, it oscillates between two values that differ by at least one.
+
+00:32:47.000 --> 00:32:50.620
+And so all of these guys are oscillatory.
+
+00:32:50.920 --> 00:32:53.880
+And they're oscillatory on smaller and smaller intervals.
+
+00:32:54.500 --> 00:33:01.660
+And somehow we're adding them all up in a way to get a function that's oscillatory on arbitrarily small intervals.
+
+00:33:01.660 --> 00:33:03.540
+And therefore, it will not be differentiable.
+
+00:33:07.540 --> 00:33:08.100
+So.
+
+00:33:16.720 --> 00:33:19.120
+The proof of one is very easy.
+
+00:33:19.680 --> 00:33:21.720
+We just use a comparison principle.
+
+00:33:24.500 --> 00:33:29.280
+Cosine of 160k times x over 4 to the k.
+
+00:33:29.820 --> 00:33:34.900
+This is less than or equal to because cosine of no matter what you plug in is bounded by 1.
+
+00:33:35.040 --> 00:33:37.840
+This is always bounded by 1 over 4 to the k.
+
+00:33:39.880 --> 00:33:45.960
+And therefore, by the comparison principle, we get that.
+
+00:33:53.260 --> 00:33:57.860
+This series is convergent.
+
+00:33:58.300 --> 00:34:02.660
+And therefore, the original series is absolutely convergent.
+
+00:34:04.480 --> 00:34:07.520
+So each of these is bounded by 1 over 4 to the k.
+
+00:34:08.200 --> 00:34:09.900
+This series converges.
+
+00:34:10.300 --> 00:34:11.760
+This is a geometric series.
+
+00:34:12.280 --> 00:34:16.380
+Therefore, by the comparison principle, this series converges.
+
+00:34:17.920 --> 00:34:22.060
+So now we have this function defined by this series.
+
+00:34:23.820 --> 00:34:29.040
+No, this is not a power series because a power series involves polynomials and x.
+
+00:34:29.040 --> 00:34:32.740
+This is cosine of x or number times x.
+
+00:34:33.280 --> 00:34:34.540
+So let's show it's bounded.
+
+00:34:35.200 --> 00:34:38.780
+The same proof actually that we gave here shows it's bounded.
+
+00:34:40.900 --> 00:35:08.760
+x, b and r, then f of x equals this is equal to the limit as x.
+
+00:35:11.500 --> 00:35:15.780
+And goes to infinity of this sum.
+
+00:35:16.540 --> 00:35:23.620
+And now for absolute values, this limit pulls out.
+
+00:35:24.820 --> 00:35:34.380
+Whenever the limit exists, the limit of the absolute value equals the absolute value of the limit.
+
+00:35:43.560 --> 00:35:50.760
+And this is less than or equal to the limit as n goes to infinity of bringing the epsilon.
+
+00:35:50.760 --> 00:35:54.960
+So by the triangle inequality, this is just a finite sum.
+
+00:35:55.220 --> 00:35:58.060
+So I can bring the absolute values in.
+
+00:35:58.260 --> 00:36:07.860
+And I get sum from k equals 0 to m of cosine 160k x over 4 to the k, absolute value.
+
+00:36:07.860 --> 00:36:20.620
+And this is less than or equal to limit as m goes to infinity of sum k equals 0 to m of 4 to the minus k again,
+
+00:36:20.820 --> 00:36:23.520
+because cosine of anything is bounded by 1.
+
+00:36:26.860 --> 00:36:30.420
+And this equals 4 thirds.
+
+00:36:30.420 --> 00:36:35.380
+This is just a sum from k equals 0 to infinity of 4 to the minus k.
+
+00:36:37.500 --> 00:36:40.200
+So this function is always bounded by 4 thirds.
+
+00:36:47.260 --> 00:36:50.580
+So the function is bounded. Let's now show it's continuous.
+
+00:37:02.220 --> 00:37:09.780
+To show a function's continuous, remember we have that other characterization of continuity that
+
+00:37:09.780 --> 00:37:14.260
+functions continuous at a point if and only if for every sequence converging to that point,
+
+00:37:15.760 --> 00:37:18.540
+f of xn converges to f of c.
+
+00:37:19.900 --> 00:37:33.520
+So before I start writing all this down, let's see, vnr, and let xn be a sequence converging to c.
+
+00:37:33.520 --> 00:37:46.840
+So what we want to show is that limit as m goes to infinity of f of xn minus f of c in absolute value equals 0.
+
+00:37:47.320 --> 00:37:52.080
+That's the same as saying the limit as n goes to infinity of f of xn equals f of c.
+
+00:37:55.940 --> 00:38:00.280
+Now, f is a bounded function.
+
+00:38:00.540 --> 00:38:09.680
+So this sequence, f of xn minus f of c is an absolute value, is a bounded sequence.
+
+00:38:09.680 --> 00:38:10.940
+So it has a limb soup.
+
+00:38:11.700 --> 00:38:22.300
+And we did an exercise on the assignment that the limit of a sequence equals 0 if and only if the limb soup equals 0.
+
+00:38:26.640 --> 00:38:46.960
+So the equivalent leave will show that limb soup of f of x to the n minus f of c equals 0.
+
+00:38:46.960 --> 00:38:50.000
+This thing always exists for a bounded sequence.
+
+00:38:51.180 --> 00:39:00.760
+Just one of the reasons which is what makes limb soup so useful is that they do always exist.
+
+00:39:01.080 --> 00:39:07.860
+So if we show that this limb soup equals 0, then this is equivalent to showing this limit equals 0.
+
+00:39:09.760 --> 00:39:16.980
+Again, this was an exercise where you can take it as the limb inf of something that's not negative is always bigger than or equal to 0.
+
+00:39:17.280 --> 00:39:24.660
+So if we show this is equal to 0, we would have 0 as less than or equal to the limb inf of this thing as less than or equal to the limb soup, which equals 0.
+
+00:39:24.880 --> 00:39:28.020
+And therefore, the limb inf equals the limb soup equals 0.
+
+00:39:28.800 --> 00:39:32.360
+So that's another way of seeing that this is equivalent to this.
+
+00:39:33.960 --> 00:39:39.180
+So we're going to show this at the limb soup of f of x to the n minus f of c equals 0.
+
+00:39:43.640 --> 00:39:54.740
+So that might be a little tough, but what we can show and what we will show is we'll give ourself a little room.
+
+00:39:54.740 --> 00:40:09.620
+We'll show that for all epsilon positive, the limb soup of f of x of n minus f of c, which is a non-negative number, is less than epsilon.
+
+00:40:10.680 --> 00:40:22.820
+So this is a fixed number, not a negative number, which is always smaller than, put less than or equal to that, which is smaller than any number that I want, and therefore it has to be 0.
+
+00:40:22.820 --> 00:40:30.140
+So improving thus, let's soup.
+
+00:40:37.580 --> 00:40:44.060
+So just to recap, we want to show we have a sequence converging to c.
+
+00:40:44.200 --> 00:40:47.020
+We want to show that f of x n converges to f of c.
+
+00:40:48.020 --> 00:40:53.920
+Another way of stating that is that this limit of the absolute value between these two converges to 0.
+
+00:40:53.920 --> 00:40:56.940
+That's again an equivalent way of stating the limit.
+
+00:41:00.900 --> 00:41:19.360
+And in another assignment, we proved that for a sequence of non-negative numbers, or if you like just for a sequence of numbers, it converges to 0 if and only if the limb soup of the absolute value converges to 0.
+
+00:41:19.360 --> 00:41:26.660
+But this is a sequence of non-negative numbers, this absolute value of f of x n minus f of c. So this is equivalent to this.
+
+00:41:28.520 --> 00:41:35.000
+So this thing we want to show is equivalent to this thing right below it.
+
+00:41:36.140 --> 00:41:44.680
+Now rather than show directly that this limit, limb soup equals 0, we're going to show that for all epsilon positive, it's less than or equal to that small number.
+
+00:41:44.900 --> 00:41:51.660
+And therefore proving that it's 0 because it's a non-negative number, smaller than every positive number.
+
+00:41:53.580 --> 00:41:58.560
+Okay, so this is our goal to show this limb soup is less than epsilon.
+
+00:41:58.560 --> 00:42:08.220
+All right, so let epsilon be positive.
+
+00:42:10.700 --> 00:42:14.400
+We're now going to prove that that limb soup is less than epsilon.
+
+00:42:20.500 --> 00:42:43.000
+So first off, let M naught be a natural number such that the sum from k equals M naught plus 1 to infinity of 4 to the minus k is less than epsilon over 2.
+
+00:42:44.000 --> 00:42:50.540
+So this series here, this is a convergent series if I go from k equals 0 to infinity.
+
+00:42:52.140 --> 00:42:52.160
+Okay.
+
+00:42:53.900 --> 00:43:07.280
+And you know, we have this koshi criterion for convergent series which can be equivalently stated as for all M zero and natural number, there exists or for all epsilon, there exists.
+
+00:43:07.280 --> 00:43:13.380
+So first off, okay, rather than go through all that, we can actually just compute this.
+
+00:43:15.500 --> 00:43:42.560
+That the left hand side equals 4 to the minus M naught minus 1 times sum from L equals 0 to infinity 4 to the minus L, which equals 4 thirds or to the minus M naught minus 1.
+
+00:43:49.740 --> 00:43:55.620
+So if M naught is chosen very large, this is 4 to the minus M zero.
+
+00:43:55.840 --> 00:44:01.040
+So this is like I can write this as 1 third over 1 fourth.
+
+00:44:03.920 --> 00:44:14.400
+And as long as M zero is chosen very large, I can always make this very small, that's the left side over there, so I can always find a M zero so that this is the case.
+
+00:44:15.320 --> 00:44:15.440
+Okay.
+
+00:44:23.700 --> 00:44:24.260
+Okay.
+
+00:44:25.920 --> 00:44:35.540
+And now we compute the lymph soup of f of x in minus f of x.
+
+00:44:36.540 --> 00:44:41.420
+We split this up into two pieces. This is equal to lymph soup.
+
+00:44:42.400 --> 00:44:54.720
+Then two parts, sum from k equals 0 to M zero of cosine of 160 k x in minus.
+
+00:44:57.980 --> 00:45:23.720
+So each of these is defined in terms of sum, so I'm going to break the sum up into up to M zero and then everything past M zero, this is equal to 1 over 4 k times cosine 160 k x in minus cosine 160 k x plus sum from k equals 0 to 1.
+
+00:45:23.720 --> 00:45:30.420
+M zero plus 1 to infinity 1 over 4 k.
+
+00:45:32.060 --> 00:45:33.200
+Same thing.
+
+00:45:43.580 --> 00:45:44.400
+Absolute value.
+
+00:45:45.920 --> 00:46:00.300
+And now we use a triangle inequality in the fact that lymph soups preserve inequality, so the absolute value of this thing is less than or equal to the sum of the absolute values.
+
+00:46:00.300 --> 00:46:04.800
+And the lymph soup of those sequences is less than or equal to the sum of the lymph soups.
+
+00:46:04.880 --> 00:46:10.780
+That was another exercise from an assignment or you did something similar with the lymph imp.
+
+00:46:11.280 --> 00:46:25.520
+So this is less than or equal to lymph soup of now I use the triangle inequality sum from k equals 0 to M zero for minus k.
+
+00:46:27.100 --> 00:46:36.680
+So I'm going to write x in minus cosine 160 k x in minus cosine 160 k.
+
+00:46:36.680 --> 00:46:41.280
+Oh dear.
+
+00:46:45.040 --> 00:46:49.420
+So I've been writing x, I'm into write c. Sorry about that.
+
+00:46:49.420 --> 00:46:59.420
+C, C, C, C, C.
+
+00:47:12.080 --> 00:47:20.540
+And then same thing in these brackets here.
+
+00:47:27.500 --> 00:47:29.080
+Now, let's see how it might keep that.
+
+00:47:31.780 --> 00:47:41.340
+All right, so we have that this lymph soup of x sub n minus f of c is less than or equal to the lymph soup of this guy plus the lymph soup of this guy.
+
+00:47:41.340 --> 00:47:58.200
+And now I'm going to use the triangle inequality again bringing the absolute values inside of the sums, which is perfectly valid even for the infinite sum by the same argument I use basically over there.
+
+00:48:00.440 --> 00:48:26.200
+This is less than or equal to the lymph soup as n goes to infinity of minus cosine of 160 k, C and soup plus.
+
+00:48:36.280 --> 00:48:41.920
+And then the absolute value of the same thing.
+
+00:48:46.680 --> 00:48:51.360
+Now, I applied the triangle inequality to that.
+
+00:49:03.960 --> 00:49:08.500
+Now, cosine of anything is always bounded by one.
+
+00:49:08.500 --> 00:49:19.780
+So this is bounded by, first off, let me come back to this second one, M zero is fixed. Remember, this is not changing within.
+
+00:49:20.020 --> 00:49:22.280
+It's just fixed. It depended only on epsilon.
+
+00:49:25.060 --> 00:49:30.620
+So M zero is fixed and this is less than or equal to lymph soup of n.
+
+00:49:30.620 --> 00:49:42.200
+And now we use what we know about cosine, that cosine of something minus cosine of something else is bounded by the difference in the argument.
+
+00:49:42.200 --> 00:50:11.320
+So this is bounded by minus four to the minus k times 160 k x n minus 160 k, C plus lymph soup of k equals M zero plus one to infinity four minus k times two.
+
+00:50:13.720 --> 00:50:21.960
+Now, there's no n left here. So this is really just now equal to that.
+
+00:50:22.700 --> 00:50:29.060
+And we chose M zero so that this quantity here is less than epsilon over two. So times two, this is less than epsilon.
+
+00:50:29.060 --> 00:50:42.480
+So this is less than or equal to lymph soup, sum from k equals zero to M zero of forty k.
+
+00:50:42.840 --> 00:50:45.140
+Now, again, this is just a fixed number.
+
+00:50:47.840 --> 00:50:55.220
+The lymph soup is in n. This is just a fixed number times x of n minus C.
+
+00:50:57.000 --> 00:51:01.880
+The difference in this is just equal to 160 k times four to the minus k that's forty k.
+
+00:51:02.740 --> 00:51:07.880
+And then we chose M zero so that this quantity over here is less than epsilon.
+
+00:51:11.120 --> 00:51:16.020
+And now, as n goes to infinity, x of n is converging to C.
+
+00:51:16.240 --> 00:51:31.340
+So this thing here converges to zero equals times zero plus epsilon equals epsilon.
+
+00:51:36.340 --> 00:51:39.660
+So, to me, this is a real first proof of analysis.
+
+00:51:39.920 --> 00:51:47.280
+We're kind of using everything that you've been exposed to up to this point to prove a really deep theorem.
+
+00:51:48.280 --> 00:51:54.280
+So, go through this slowly, but there's not too much...
+
+00:51:59.420 --> 00:52:03.400
+The estimates are not all that tricky once you have them in front of you.
+
+00:52:04.080 --> 00:52:11.800
+So we've shown that for all epsilon, this lymph soup is less than or equal to epsilon because remember, we ended with epsilon here.
+
+00:52:13.200 --> 00:52:18.840
+But we started off estimating this lymph soup here.
+
+00:52:20.700 --> 00:52:20.820
+Okay?
+
+00:52:23.920 --> 00:52:31.880
+Now, we're in a position to prove the final theorem that we want to prove, and this is due to virus loss.
+
+00:52:44.320 --> 00:52:57.020
+The function, which we've been studying, f of x equals sum from k equals zero to infinity, cosine 160 k x over four to the k.
+
+00:53:04.940 --> 00:53:06.540
+There's nowhere differentiable.
+
+00:53:07.600 --> 00:53:08.120
+Okay?
+
+00:53:12.160 --> 00:53:17.880
+Alright, so, you know, with everything we've done so far, so we know this function is continuous.
+
+00:53:18.480 --> 00:53:19.240
+We've proven that.
+
+00:53:19.820 --> 00:53:26.440
+So this theorem provides you with an example of a function which is continuous, but nowhere differentiable.
+
+00:53:28.980 --> 00:53:39.660
+And with what we have on the board, namely, you know, the key parts are going to be, what's in that first theorem there.
+
+00:53:40.440 --> 00:53:46.140
+And just trying to win equality we have over here, we'll be able to prove this.
+
+00:53:46.140 --> 00:53:51.140
+So, in fact, let me give myself a little space.
+
+00:53:59.280 --> 00:54:15.420
+And I'm going to state the theorem two from over there because I need some space to write in a minute for all A, B, C, the absolute value of A plus P plus C is bigger than or equal to.
+
+00:54:15.420 --> 00:54:20.980
+So, let me give A minus absolute value of B minus the absolute value of C.
+
+00:54:22.200 --> 00:54:22.280
+Alright?
+
+00:54:32.140 --> 00:54:43.260
+Alright, so let me re-summarize it already.
+
+00:54:43.260 --> 00:54:44.600
+So, let me show you what we've done up to this point.
+
+00:54:45.340 --> 00:54:50.680
+We've shown that this function here is well defined, absolutely, the series is always absolutely convergent.
+
+00:54:51.200 --> 00:54:56.920
+And therefore, this function is bounded and, or we also proved that it's bounded and continuous.
+
+00:54:57.740 --> 00:54:59.200
+Right? That was the previous theorem.
+
+00:55:00.420 --> 00:55:04.820
+So, this function is bounded and continuous and we're going to prove it's nowhere differentiable.
+
+00:55:06.140 --> 00:55:07.780
+And again, what's the idea?
+
+00:55:08.200 --> 00:55:14.360
+The idea is that we've built it out of functions which are highly oscillatory at smaller and smaller scales.
+
+00:55:15.400 --> 00:55:20.360
+So, somehow this function is highly oscillatory at every scale.
+
+00:55:21.240 --> 00:55:32.780
+And if you have a function which is highly oscillatory of every scale, if some of you have heard of Brownian motion, which is a function which is a path,
+
+00:55:32.780 --> 00:55:43.140
+which is highly oscillatory, then that function will not be differentiable anywhere.
+
+00:55:45.600 --> 00:55:52.380
+Okay? So, proof.
+
+00:55:53.800 --> 00:55:57.000
+Let's see, be any real number.
+
+00:55:57.980 --> 00:56:03.580
+And what we're going to do, just as in, when we looked at f of x equal the absolute value of x, we're going to construct.
+
+00:56:07.200 --> 00:56:24.740
+Or find a sequence, x of n such that, x of n does not equal c for all n, x n converges to c.
+
+00:56:25.980 --> 00:56:44.000
+And the sequence, f of x of n, minus f of c over x of n minus c, in fact, is divergent but will go even further is unbounded.
+
+00:56:44.000 --> 00:56:50.920
+Okay? And therefore the sequence cannot converge. And therefore the function is not differentiable at c.
+
+00:56:50.920 --> 00:56:52.480
+Okay?
+
+00:57:02.400 --> 00:57:17.160
+So, we're going to use theorem one to find the sequence by theorem one, namely part two,
+
+00:57:19.060 --> 00:57:31.140
+for all n, the natural number, there exists the x of n such that what x of n is n, this interval of the form,
+
+00:57:31.140 --> 00:57:48.560
+so c plus pi over 160 n is less than x is less than c plus 3 pi over 160 n.
+
+00:57:50.320 --> 00:57:51.120
+Okay?
+
+00:57:58.020 --> 00:58:08.540
+And cosine of 160 n, x of n, minus cosine of 160 n, c is bigger than or equal to 1.
+
+00:58:10.100 --> 00:58:10.920
+Okay?
+
+00:58:16.220 --> 00:58:20.860
+So, let me call these two properties a and b.
+
+00:58:25.640 --> 00:58:35.320
+So, another way of writing a is we could have instead written by subtracting c across the board,
+
+00:58:35.320 --> 00:58:47.000
+that x of n minus c is between pi over 160 n and 3 pi over 160 n.
+
+00:58:48.300 --> 00:58:59.060
+Okay? So, by a, brawl n, x of n does not equal to c because their difference is bounded below by a positive number.
+
+00:59:02.120 --> 00:59:05.820
+I mean their difference is actually positive and it's non-zero, so.
+
+00:59:11.440 --> 00:59:24.820
+And by this quiz theorem, you know, again, if you like putting the c on both sides, we get that x of n converges to c.
+
+00:59:24.820 --> 00:59:31.360
+So, this will be our sequence, our bad sequence for which the difference quotient is unbounded.
+
+00:59:31.680 --> 00:59:31.680
+
+
+00:59:37.400 --> 00:59:40.400
+So, in fact, let me write this out a little bit more.
+
+00:59:45.820 --> 00:59:58.800
+And x of n minus c, which is equal to x of n minus c because this is positive, is less than 3 pi over 160 n.
+
+00:59:58.800 --> 01:00:07.940
+Okay? And this goes to zero, therefore the absolute value of x n minus c converges to zero and therefore x of n converges to c.
+
+01:00:09.400 --> 01:00:09.920
+Okay?
+
+01:00:17.720 --> 01:00:22.860
+All right. Now, it's a lesson. The number of times I have to write cosine 160 k.
+
+01:00:26.440 --> 01:00:33.260
+Let fk of x be cosine 160 k x over 4 to the k.
+
+01:00:34.540 --> 01:00:42.760
+So, f of x is equal to the sum and k equal to zero of fk of x.
+
+01:00:44.040 --> 01:00:44.180
+All right?
+
+01:00:52.920 --> 01:01:01.440
+And now what we're going to do is we're going to find a lower bound on the absolute value of f of x n minus f of c over x of n minus c.
+
+01:01:01.440 --> 01:01:27.120
+So, now, find a lower bound on, okay?
+
+01:01:29.060 --> 01:01:37.140
+It's like I find a lower bound on this absolute value which is getting large as large as I wish and that proves that this sequence is unbounded.
+
+01:01:37.380 --> 01:01:38.000
+And I'm done.
+
+01:01:52.120 --> 01:01:52.600
+Okay?
+
+01:01:55.220 --> 01:02:03.500
+So, let's look at the absolute value of f of x n minus f of c.
+
+01:02:06.860 --> 01:02:14.260
+Let's just write this in a few different ways or not a few different ways, but let's split it up as a sum.
+
+01:02:14.260 --> 01:02:19.020
+So, all of these guys are equal to sum of f of k.
+
+01:02:19.260 --> 01:02:28.800
+So, I have the int one.
+
+01:02:29.100 --> 01:02:32.900
+So, remember, f of k, this is just one of these building blocks.
+
+01:02:35.040 --> 01:02:43.100
+Plus, sum from k equals zero to n minus one.
+
+01:03:03.980 --> 01:03:06.420
+Plus, put x here and min to write c.
+
+01:03:07.180 --> 01:03:07.780
+Okay?
+
+01:03:10.440 --> 01:03:23.740
+And so, I'm going to let a sub n be this first number, b sub n be the second number, including the sum.
+
+01:03:25.400 --> 01:03:27.160
+And this will be c sub n.
+
+01:03:27.940 --> 01:03:34.060
+So, this is equal to a sub n plus b sub n plus c sub n.
+
+01:03:34.780 --> 01:03:38.700
+Okay? And now, I'm going to use that triangle inequality I proved.
+
+01:03:42.180 --> 01:04:04.040
+Then, f of x sub n minus f of c is greater than or, which is equal to a sub n plus b sub n plus c sub n is bigger than or equal to a sub n minus b sub n minus c sub n.
+
+01:04:04.040 --> 01:04:10.140
+Okay? Now, a sub n, this is going to be, this is just the difference between these guys.
+
+01:04:10.140 --> 01:04:11.880
+This is bounded below by one.
+
+01:04:12.740 --> 01:04:14.540
+All right? So, it's kind of large.
+
+01:04:15.580 --> 01:04:18.360
+Not one, but one over four to the n.
+
+01:04:18.760 --> 01:04:21.860
+These other guys will prove are very small compared to the a sub n.
+
+01:04:22.880 --> 01:04:29.380
+And then, this lower bound, this upper bound we have on x sub n minus c will be the nail in the coffin, as we see.
+
+01:04:29.380 --> 01:04:34.020
+So, our goal is now to estimate from below a sub n.
+
+01:04:34.200 --> 01:04:38.740
+Remember, we're trying to find a lower bound for this quantity over x sub n minus c.
+
+01:04:39.160 --> 01:04:41.740
+So, we need to estimate these things from below.
+
+01:04:42.700 --> 01:04:46.880
+Or this sum from below. That means we need to estimate this from below.
+
+01:04:47.460 --> 01:04:50.720
+And then, b sub n and c sub n since they have minus signs from above.
+
+01:04:51.580 --> 01:04:51.680
+Okay?
+
+01:04:56.520 --> 01:05:15.240
+Now, by b, a sub n, which is equal to four to minus n cosine 160 in x sub n minus cosine 160 to the nc.
+
+01:05:18.000 --> 01:05:24.620
+This is, remember how we chose these x sub n's?
+
+01:05:24.840 --> 01:05:30.440
+This is bounded above by one or bounded below by one.
+
+01:05:30.660 --> 01:05:38.860
+So, this is bigger than or equal to four to the minus n.
+
+01:05:39.480 --> 01:05:40.540
+All right? So, that's a sub n.
+
+01:05:41.800 --> 01:05:44.220
+Now, let's look at how big b sub n is.
+
+01:05:46.880 --> 01:05:50.760
+Now, we want to bound this from above because when it hits the minus sign,
+
+01:05:50.940 --> 01:05:55.340
+this will flip the inequality and we'll have that this will be bounded from below by something.
+
+01:05:56.200 --> 01:06:04.080
+So, the absolute value of b sub n, okay, that's equal to sum from k equals zero to n minus one.
+
+01:06:04.080 --> 01:06:16.360
+Now, of fk of x sub n minus f of c k of c.
+
+01:06:18.780 --> 01:06:22.700
+And bringing the absolute values inside by the triangle inequality,
+
+01:06:22.700 --> 01:06:31.820
+this is less than or equal to sum from k equals n minus one of f of fk of x sub n minus fk of c.
+
+01:06:34.460 --> 01:06:52.680
+And now, so this is equal to sum from k equals zero to n minus one four to the minus k cosine 160 k x of n minus cosine of 160 k.
+
+01:06:53.700 --> 01:07:04.480
+And now, we use theorem one number two, or number one, I'm sorry, theorem one part one.
+
+01:07:07.400 --> 01:07:12.360
+So, this is theorem one, one.
+
+01:07:14.560 --> 01:07:20.000
+The difference in these is bounded by 160 k times the difference in those two.
+
+01:07:20.260 --> 01:07:24.120
+So, that's...
+
+01:07:29.960 --> 01:07:35.100
+And now, these things we can sum up in closed form will actually x sub n minus c.
+
+01:07:35.100 --> 01:07:40.040
+We proved is less than three pi over 160 n.
+
+01:07:43.800 --> 01:07:54.680
+So, this is less than sum from k equals zero n minus one forty k.
+
+01:07:55.480 --> 01:07:59.720
+And this equals three pi over 160 n.
+
+01:07:59.720 --> 01:08:04.060
+Now, sum from k equals zero to n minus one forty k.
+
+01:08:04.240 --> 01:08:09.880
+We use this formula for summing a geometric sum.
+
+01:08:10.520 --> 01:08:12.140
+This is equal to...
+
+01:08:13.720 --> 01:08:22.260
+This is equal to forty to the n minus one over thirty nine.
+
+01:08:25.960 --> 01:08:26.560
+And...
+
+01:08:28.000 --> 01:08:29.600
+Which is less than...
+
+01:08:29.600 --> 01:08:31.320
+Okay, so take away the one.
+
+01:08:31.980 --> 01:08:40.360
+This is one over thirteen four to minus n times pi.
+
+01:08:44.940 --> 01:08:51.920
+And that's less than pi is less than four, so plus one.
+
+01:08:53.440 --> 01:08:58.980
+Okay, so let me summarize this.
+
+01:09:05.240 --> 01:09:13.100
+This is less than or equal to one over thirteen four to minus n plus one.
+
+01:09:17.720 --> 01:09:18.240
+Okay.
+
+01:09:23.080 --> 01:09:28.920
+Now, for the last box, this is less the absolute value of c sub n.
+
+01:09:29.480 --> 01:09:33.140
+Absolute value is less than or equal to...
+
+01:09:35.620 --> 01:09:38.700
+Now, we just kind of do a brutal estimate.
+
+01:09:47.140 --> 01:09:49.200
+We bring the absolute values inside.
+
+01:09:50.400 --> 01:09:51.360
+Okay, so this is equal.
+
+01:09:51.580 --> 01:09:58.120
+So, just as we had before with the v sub n's except now we're summing from k equals n plus one to infinity.
+
+01:09:58.120 --> 01:09:59.680
+We brought the absolute values inside.
+
+01:10:00.420 --> 01:10:02.740
+And then let's use the triangle inequality on that.
+
+01:10:10.100 --> 01:10:16.640
+Remember, fk is equal to cosine of one sixty k times x over four to the k.
+
+01:10:16.640 --> 01:10:22.620
+So, that's no matter what you plug in, that's bounded by four one over four to the k.
+
+01:10:24.820 --> 01:10:25.460
+Okay.
+
+01:10:32.400 --> 01:10:33.040
+Okay.
+
+01:10:36.160 --> 01:10:38.120
+And now this we can actually sum.
+
+01:10:38.280 --> 01:10:51.520
+This is equal to four to the minus n minus one times sum from l equals zero to infinity of four to the minus l.
+
+01:10:54.780 --> 01:10:56.360
+And one is this equal.
+
+01:10:56.680 --> 01:11:06.380
+This equals two times four to the minus n minus one times four thirds equals two thirds for the minus n.
+
+01:11:09.420 --> 01:11:09.920
+Okay.
+
+01:11:14.720 --> 01:11:18.660
+So, my board works getting a little shoddy but it'll be okay.
+
+01:11:21.840 --> 01:11:28.900
+IE, we've proven that the absolute value of c sub n is bounded by two thirds for the minus n.
+
+01:11:31.840 --> 01:11:32.060
+Okay.
+
+01:11:37.160 --> 01:11:38.320
+All right.
+
+01:11:38.580 --> 01:11:48.740
+So, combining everything that we've done, we've shown that f of x sub n minus f of c,
+
+01:11:48.740 --> 01:11:52.500
+which remember is equal to bounded below by,
+
+01:12:01.220 --> 01:12:09.800
+this is bounded below by a sub n. Remember, so the first box is bounded by four to the minus n.
+
+01:12:10.300 --> 01:12:20.120
+So, first off, everything, the a sub n's, b sub n's, c sub n's, they all have some four to the minus n involved.
+
+01:12:21.960 --> 01:12:25.160
+I have them to the minus n for b. Covering it up.
+
+01:12:26.760 --> 01:12:36.160
+Four to the minus n. So, this is one coming from the a sub n's and minus four over 13 coming from the b sub n's.
+
+01:12:36.160 --> 01:12:45.000
+Minus two thirds coming from the c sub n's.
+
+01:12:50.160 --> 01:12:59.300
+And if you do the arithmetic, this is four to the minus n, one over 39.
+
+01:13:01.020 --> 01:13:09.520
+Okay. So, f of x sub n minus f of c is bounded from below by four to the minus n times one over 39.
+
+01:13:10.180 --> 01:13:17.580
+Now, I just divide by x sub n minus c, which is bounded above by three pi over 160 n.
+
+01:13:17.580 --> 01:13:32.600
+And therefore, when I take reciprocals, I get that.
+
+01:13:33.620 --> 01:13:47.520
+I get that the absolute value of f of x sub n minus f of c over x sub n minus c is bounded from above by one over x sub n.
+
+01:13:47.520 --> 01:13:57.320
+Minus c times four to the minus n, one over 39, which is bounded below by now inserting this estimate here.
+
+01:13:57.820 --> 01:14:03.260
+I get 40 n over, I think that's 117 pi.
+
+01:14:08.980 --> 01:14:19.640
+Yes. And therefore, the absolute value of the difference quotient is bounded below by 40 to the n over some fixed number.
+
+01:14:20.500 --> 01:14:27.100
+And this thing on the right hand side is unbounded, as n gets, as n varies from one to infinity.
+
+01:14:27.100 --> 01:14:35.580
+And therefore, the absolute value of this difference quotient is unbounded.
+
+01:14:48.540 --> 01:14:50.320
+Which finishes the proof.
+
+01:14:50.320 --> 01:14:59.380
+All right, so we've done some things, maybe a few things that you haven't seen in calculus course.
+
+01:14:59.700 --> 01:15:02.220
+Definitely haven't seen this most likely.
+
+01:15:03.200 --> 01:15:15.700
+And really, this is the first result that involves a lot of math that we've covered up to this point to prove a very non-trivial and deep theorem that
+
+01:15:19.500 --> 01:15:23.320
+that different ability is a bit of a miracle.
+
+01:15:24.720 --> 01:15:26.100
+It's a miracle when it happens.
+
+01:15:26.500 --> 01:15:27.220
+Okay, we'll stop there.
+

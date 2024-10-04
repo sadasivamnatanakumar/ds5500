@@ -1,0 +1,740 @@
+WEBVTT
+
+00:00:21.360 --> 00:00:23.840
+difference as many times as you like.
+
+00:00:37.800 --> 00:00:47.160
+So, what do I bring this up? Because then the Taylor-Pollonomio for
+
+00:00:47.160 --> 00:00:55.340
+this function that I've written here at zero. So, this is the Taylor-Pollonomio at zero,
+
+00:00:56.100 --> 00:01:03.240
+just equals, again, the sum of the derivatives evaluated at zero times x minus zero to the
+
+00:01:03.240 --> 00:01:15.100
+k, but all the derivatives are zero. And thus, the function is in fact equal to the remainder
+
+00:01:15.100 --> 00:01:21.940
+term near zero. So, you see the remainder term carries all of f, so it doesn't necessarily
+
+00:01:21.940 --> 00:01:30.100
+need to be small. Okay? And what I'm trying to say is that in general, you can't just throw
+
+00:01:30.100 --> 00:01:37.800
+away this remainder term and expect that to be even near the point x, some sort of faithful
+
+00:01:41.220 --> 00:01:45.040
+representation of the function just by the Taylor-Pollonomio. Because as we see for this
+
+00:01:45.040 --> 00:01:49.860
+function, the Taylor-Pollonomio is identically zero. If I throw away the remainder term,
+
+00:01:50.040 --> 00:01:57.380
+I would be saying f is zero, but it most certainly is not near x equals zero. Okay? So, that
+
+00:01:57.380 --> 00:02:11.840
+was the point of that discussion. So, now let's give the proof. And as you see, we're
+
+00:02:11.840 --> 00:02:18.660
+just going to kind of apply the mean value theorem repeatedly to higher derivatives of f,
+
+00:02:18.920 --> 00:02:31.680
+but not necessarily of f, but of a function we cook up out of f. So, let's take two points
+
+00:02:31.680 --> 00:02:37.540
+x zero and x, not equal to each other. Of course, if they're equal to each other, we can
+
+00:02:37.540 --> 00:02:43.660
+take c to be whatever we want, because then f of, because then what we pick up is f of
+
+00:02:43.660 --> 00:02:49.100
+x equals f of x on the right-hand side. So, we can just consider the case that x zero
+
+00:02:49.100 --> 00:03:09.000
+does not equal x. Now, let m be, so this is just a number, depending on x and f zero over x minus
+
+00:03:09.000 --> 00:03:19.280
+x zero to the n plus one. Okay? So, piece of n, this is again the Taylor-Pollonomio of
+
+00:03:19.280 --> 00:03:25.200
+degree n, f of x minus piece of n of x over x minus x of zero. So, this is just a number,
+
+00:03:25.340 --> 00:03:36.160
+depending on x and x zero. Then, just rewriting this, this means that f of x is equal to
+
+00:03:36.160 --> 00:03:45.640
+piece of n of x, the Taylor-Pollonomio of n at x plus m x times m x x zero, x minus x of zero
+
+00:03:45.640 --> 00:03:53.200
+over n to the n plus one. Okay? So, now the goal is to show that in fact this number can be written
+
+00:03:53.200 --> 00:04:04.920
+as the n plus one derivative evaluated at some point over n plus one factorial. Okay? So, now the goal
+
+00:04:10.040 --> 00:04:23.020
+shows there exists a c and a b such that m x equals f in plus one over c over n plus one
+
+00:04:23.020 --> 00:04:39.120
+factorial. Okay? Okay. So, now, what is this defining characteristic of this Taylor-Pollonomio
+
+00:04:39.120 --> 00:04:55.200
+at this nth order Taylor-Pollonomio, evaluate with respect to x zero? Well, the point is, is that
+
+00:04:55.200 --> 00:05:09.100
+this Taylor-Pollonomio agrees with f at x zero up to nth order, up to n derivatives. Okay? In other
+
+00:05:09.100 --> 00:05:17.220
+words, f in evaluated at x zero, this is the same as taking the k-th derivative of the Taylor-Pollonomio
+
+00:05:17.740 --> 00:05:26.560
+and evaluating it at x zero. So, the Taylor-Pollonomio agrees with f up to n derivatives at the point x zero.
+
+00:05:27.620 --> 00:05:34.700
+Alright? So, again, this is whole point of Taylor-Pollonomio is that they at least at the point
+
+00:05:34.700 --> 00:05:45.020
+agree with f up to nth order. Okay? Does it mean they agree with f or even our good representation of f
+
+00:05:45.020 --> 00:06:00.680
+away from x zero, like we just saw, but at least at x zero, they're agree with f. Okay? So, now, I'm going to define a
+
+00:06:00.680 --> 00:06:07.820
+new function, which I'm going to start applying the mean value theorem to, and hopefully come up with
+
+00:06:12.620 --> 00:06:24.580
+this C. It's g of s equals f of s minus p sub n of s minus this number from earlier times s minus x zero to the n plus one.
+
+00:06:25.900 --> 00:06:40.400
+Okay? And something to note is that this function here, so this whole function, so g, first off, f is n plus one times
+
+00:06:40.400 --> 00:06:47.520
+differentiable, this is a polynomial, so it's n plus one times differentiable, and this is just a polynomial also in s.
+
+00:06:48.180 --> 00:07:07.720
+So, it's n plus one times differentiable. So, in s. Okay? So, let me draw a picture.
+
+00:07:12.100 --> 00:07:17.840
+So, we have x zero and x, at least in the picture x is bigger than x zero, but that doesn't really matter.
+
+00:07:18.440 --> 00:07:39.660
+So, what do we know about g of x zero? Well, this is equal to f. And now, when I stick in x zero here, I get zero, so, and now f of x zero minus p n of x zero
+
+00:07:39.660 --> 00:07:44.280
+is equal to zero again by this first thing here for k equals zero, this is equal to zero.
+
+00:07:45.180 --> 00:08:09.640
+Okay? And now, what do I know about g evaluated at x? This is equal to f of x minus p n of x. Remember the variable that I'm changing, or at least the free variable there is s, so if I stick in x, I get zero.
+
+00:08:09.640 --> 00:08:23.520
+So, I get f of x minus p n of x minus m, this constant from earlier, which I chose depending on x and x zero, but using this relation here, this is zero.
+
+00:08:24.620 --> 00:08:33.480
+Okay? So, I have that the function g at x zero and at x is zero.
+
+00:08:33.480 --> 00:08:59.180
+So, by the mean value theorem or roles theorem, so, by mean value theorem, there exists a point x one between x zero x such that g prime of x one equals zero.
+
+00:09:03.580 --> 00:09:12.080
+Yeah? Now, remember that x zero or g prime of x one equals zero. Now, at x zero, we have that.
+
+00:09:12.780 --> 00:09:37.280
+So, okay, so at g prime of x one, so at x one, g prime is zero, but also, so, if I look at the derivative of g at x zero, this is equal to f prime of x zero minus p n prime of x zero minus.
+
+00:09:37.760 --> 00:09:51.940
+Now, here I'm working under the assumption, so just for illustration purposes, I'm assuming n is, you know, n is say bigger than two, bigger than or equal to two, at least from what I'm writing down right now.
+
+00:09:51.940 --> 00:10:04.500
+But if I take the derivative of this and set in plug in x zero, then I will also get zero here, so I just get f prime of x zero minus p n prime of x zero, so this equals zero.
+
+00:10:05.180 --> 00:10:12.920
+Yeah? So, I have g prime of x one equals zero, g prime of x zero equals zero.
+
+00:10:16.560 --> 00:10:42.900
+And therefore, by the mean value theorem applied again, there exists a point x two between x and x zero such that the second derivative of g evaluated at x zero.
+
+00:10:47.680 --> 00:11:01.860
+And now, I just iterate this, right, because I still know at x zero, the second derivative of g is also zero, as long as n is bigger than or equal to two.
+
+00:11:03.100 --> 00:11:09.200
+And then I'll get that there's a, so there's x one here.
+
+00:11:13.220 --> 00:11:19.700
+So, let me write here, at this point we know g equals zero, g prime equals zero, and so on.
+
+00:11:20.200 --> 00:11:31.580
+At this point, g prime equals zero, and then at x two, right, so then the fact that g double prime here at this point is zero.
+
+00:11:35.320 --> 00:11:45.660
+And at zero here, we apply the mean value theorem again, and we get a point x three in between them, where now the third derivative equals zero, and we can keep going on up until a certain point.
+
+00:11:45.660 --> 00:11:52.660
+And what point is that, that's when I've taken away end derivatives here, and all that I have left here is s minus x zero.
+
+00:11:52.660 --> 00:12:02.940
+So, let me summarize continuing in this way.
+
+00:12:09.860 --> 00:12:26.000
+We see there exists, we see, for all k between zero and n, there exists an x.
+
+00:12:26.000 --> 00:12:43.600
+So, k between x zero and x, such that the kth derivative at x of k equals zero.
+
+00:12:49.380 --> 00:12:57.580
+So, in particular at the n plus at the k equals n stage, what do I have?
+
+00:12:57.580 --> 00:13:08.120
+So, x zero x is x of n.
+
+00:13:08.800 --> 00:13:14.640
+So, I'm just now going to repeat this argument one last time, and we'll see where that leads us.
+
+00:13:17.820 --> 00:13:29.740
+Since g, the int derivative of g evaluated at x of zero equals zero, again, this is coming from this relation here.
+
+00:13:29.740 --> 00:13:32.200
+So, let me in fact write that again.
+
+00:13:34.840 --> 00:13:53.100
+This is equal to f of x zero minus p n of x zero, and I'll even write out this is equal to m x x zero n plus one,
+
+00:13:53.900 --> 00:14:04.520
+factorial times x zero minus x zero. This is what happens when I take end derivatives of n s of this monomial here.
+
+00:14:06.520 --> 00:14:15.760
+So, this of course is zero equals zero.
+
+00:14:15.760 --> 00:14:39.780
+So, since we have that, and we have its equals zero at this other point, there exists by the mean value theorem now applied to g of n g, the int derivative of g.
+
+00:14:39.780 --> 00:14:47.320
+So, when I write mean value theorem here, I'm not applying it to the function g, I'm applying it to the derivative.
+
+00:14:49.080 --> 00:14:55.460
+So, here I was applying it just to g. Here I was applying the mean value theorem to the derivative of g.
+
+00:14:58.160 --> 00:15:05.320
+And here I'm now applying the mean value theorem to the int derivative of g.
+
+00:15:11.500 --> 00:15:31.260
+So, let me make that perfectly clear. There exists a number c between x and x zero such that the n plus one, the derivative of g,
+
+00:15:31.260 --> 00:15:38.900
+the derivative of the int derivative of g, so the n plus first derivative of g, c equals zero.
+
+00:15:40.220 --> 00:15:53.440
+But what does this mean? Now, if I take n plus one derivatives with respect to s of this over here,
+
+00:15:56.420 --> 00:16:09.640
+I get f. Now, if I take n plus one derivatives of an int degree polynomial, I get zero.
+
+00:16:09.640 --> 00:16:19.240
+If I take two derivatives of a degree one polynomial, which is just x, I get zero. If I take three derivatives of a degree two polynomial, I get zero.
+
+00:16:22.180 --> 00:16:40.960
+So, I get zero for when I differentiate n plus one times an int degree polynomial minus n plus one derivatives of this monomial here in s.
+
+00:16:43.460 --> 00:16:47.300
+So, remember, all these derivatives I'm writing down here, these are all in terms of s.
+
+00:16:50.140 --> 00:17:00.040
+I'm n plus one factorial in this equals zero. This here, expressed here.
+
+00:17:03.800 --> 00:17:26.020
+This should be c, I'm sorry. We're plugging in c. But that means precisely that, which is what I wanted to show, existed.
+
+00:17:26.620 --> 00:17:45.060
+So, at this point c, this constant from earlier, which, remember, was defined in this way, is actually equal to the n plus one derivative of f evaluated at some c.
+
+00:17:45.060 --> 00:18:04.280
+So, and therefore, f of x is equal to pn of x plus c times, where c is between x and x zero.
+
+00:18:10.620 --> 00:18:24.280
+So, again, Taylor's theorem says a couple of things, but it doesn't say certain things.
+
+00:18:26.180 --> 00:18:41.400
+The mean value theorem, as it's written, says there exists some point in between, so that the secant line from f of b to f of a is equal to the derivative of the function tangent to the graph at some point in between.
+
+00:18:42.400 --> 00:18:53.460
+But it doesn't tell you that the function near a point can necessarily, what am I trying to say?
+
+00:18:59.540 --> 00:19:07.780
+So, what Taylor's theorem does say is that you can iterate the mean value theorem for higher order derivatives.
+
+00:19:07.780 --> 00:19:23.640
+But what it doesn't say is that this polynomial that you get over here, which you interpret, you know, kind of as an approximation of the function f near x zero, it doesn't say that that approximation in this is necessarily good.
+
+00:19:24.840 --> 00:19:30.560
+Because we just saw from this example that remainder term may end up being the entire function.
+
+00:19:38.720 --> 00:19:44.960
+You know, that still doesn't make it any less useful in applications.
+
+00:19:57.720 --> 00:20:14.940
+Okay, so let's give a simple application of Taylor's theorem, which is the same as the one in the first class.
+
+00:20:20.360 --> 00:20:40.640
+Perhaps you had endless homework problems or exam problems on when you, back when you first took calculus and were finding critical points and trying to characterize them as relative minimums or relative maximums.
+
+00:20:40.640 --> 00:20:54.360
+We have the second derivative test, which states the following, which states that suppose I have a function from the open interval a, b to r.
+
+00:20:57.840 --> 00:21:13.840
+And suppose this has two continuous derivatives on this open interval a, b.
+
+00:21:20.240 --> 00:21:28.640
+If at a point in a, b, the derivative equals zero.
+
+00:21:31.080 --> 00:21:38.460
+And the second derivative of f evaluated at zero, x of zero is positive.
+
+00:21:39.460 --> 00:21:53.140
+Then f has relative min at x zero.
+
+00:21:55.940 --> 00:22:01.180
+Okay, and I should say that this is a strict relative min.
+
+00:22:07.780 --> 00:22:23.120
+What's the difference between a strict relative min and just a relative min, a strict relative min, I mean that if I'm at any point other than x zero and I'm nearby, then f of x is bigger than f of x zero.
+
+00:22:26.560 --> 00:22:28.760
+Let me just write that here.
+
+00:22:28.980 --> 00:22:32.720
+That means near x zero.
+
+00:22:32.720 --> 00:22:40.840
+Okay.
+
+00:22:47.340 --> 00:23:02.060
+In fact, let's just briefly recall what the definition of relative min is and this will allow me to state what it means to be a strict relative min.
+
+00:23:02.060 --> 00:23:17.380
+Then this means there exists a delta positive such that brawl x in.
+
+00:23:22.940 --> 00:23:47.360
+So, let's say brawl x, x minus x zero implies f of x is bigger than f of x.
+
+00:23:47.360 --> 00:23:49.420
+Okay.
+
+00:23:54.680 --> 00:23:55.220
+Okay.
+
+00:23:57.160 --> 00:23:57.460
+Okay.
+
+00:23:58.660 --> 00:24:16.520
+So, this is a definition of strict relative min. A strict relative min is a relative min because what's the only thing missing from the definition of relative min is what happens if I evaluated x zero and then at x zero we get f of x zero equals f of x zero.
+
+00:24:16.520 --> 00:24:22.300
+So, a strict relative min is a relative min.
+
+00:24:25.540 --> 00:24:34.060
+But it's a little bit stronger because it's saying that as long as x is not equal to x zero meaning this thing is bigger than zero, f of x is bigger than f of x zero.
+
+00:24:34.640 --> 00:24:35.760
+Not bigger than or equal to.
+
+00:24:38.300 --> 00:24:38.600
+Okay.
+
+00:24:38.600 --> 00:24:38.600
+
+
+00:24:44.120 --> 00:24:50.500
+All right. So, I hate doing this but the theorem stated over there. Now we need to go across the room to do the proof.
+
+00:25:20.400 --> 00:25:20.460
+All right.
+
+00:25:20.460 --> 00:25:33.460
+So, we get that the limit as x goes to x zero or let me put instead of x, let's say c, this equals f double prime of x zero which is positive, right?
+
+00:25:33.460 --> 00:25:35.760
+So, let's say we get that right by assumption. That's what we're assuming.
+
+00:25:40.460 --> 00:25:53.920
+And therefore, by an exercise in one of the assignments, since this limit
+
+00:25:57.100 --> 00:26:10.000
+implies that there exists a delta zero positive such that for all zero bigger than c bigger than x zero.
+
+00:26:10.000 --> 00:26:14.120
+So, and in fact we can include.
+
+00:26:27.420 --> 00:26:38.180
+So, let me see. There exists a delta zero positive such that for all c satisfying.
+
+00:26:47.300 --> 00:26:54.360
+We get that f prime of c is positive, right?
+
+00:26:54.360 --> 00:27:12.840
+So, all I'm saying is we have this point x zero, x zero plus delta zero, x zero minus delta zero and then on this interval f double prime of c is positive.
+
+00:27:14.820 --> 00:27:27.320
+All right. You prove that in fact in an assignment. If the limit of a function as I approach a point equals l which is positive then near the point the function has to be positive.
+
+00:27:32.220 --> 00:27:44.340
+So, now I have to verify that what am I trying to do? I'm trying to verify that I have a strict relative minimum so that there exists a delta.
+
+00:27:44.340 --> 00:27:50.460
+I have this delta zero which ensures that the second derivative is positive on this interval.
+
+00:27:52.620 --> 00:28:04.240
+So, I say choose delta to be this delta zero and now I have to show that this delta works meaning for all x in that satisfying that inequality.
+
+00:28:04.240 --> 00:28:09.460
+So, in reality I have f of x bigger than f of x zero.
+
+00:28:09.460 --> 00:28:24.440
+So, taking x between delta, I mean within delta distance to x zero.
+
+00:28:24.440 --> 00:28:51.300
+So, here's x, say, then by Taylor's theorem, there exists to c between x and x zero.
+
+00:28:51.300 --> 00:29:00.460
+So, here's x, there's this point c between x and x zero which I can always choose strictly in between them.
+
+00:29:00.460 --> 00:29:24.720
+So, such that I have that f of x equals so f of x zero plus f prime of x zero times c minus x zero plus, no this should be x, sorry.
+
+00:29:24.720 --> 00:29:32.540
+Plus f double prime of c over 2 times x minus x zero squared.
+
+00:29:37.200 --> 00:29:49.780
+Now, at the func at x zero the derivative is assumed to be zero right? We're assuming the derivative vanishes at x zero and the second derivative is positive there.
+
+00:29:49.780 --> 00:29:59.540
+So, this equals f of x zero plus f prime of c over 2 times x minus x zero squared.
+
+00:30:02.980 --> 00:30:11.080
+Now, on this whole interval which is where I'm looking at f double prime of c is positive. So, this thing here is positive.
+
+00:30:12.140 --> 00:30:20.280
+And as long as x minus x zero is not zero, as long as x is not equal to x zero, this thing is positive, this is a square.
+
+00:30:21.140 --> 00:30:26.680
+So, this is strictly bigger than f of x zero which is what I wanted to prove.
+
+00:30:26.680 --> 00:30:38.300
+Right? So, I have proven that f of x is bigger than f of x zero on this interval here.
+
+00:30:41.780 --> 00:30:57.880
+So, of course, the picture that goes along with this is something like, let's say the point x zero is zero, at least near this point.
+
+00:30:57.880 --> 00:31:03.740
+The derivative is zero, the second derivative is positive so this is how the function should look.
+
+00:31:06.680 --> 00:31:12.080
+So, that concludes what we're going to say about differentiation.
+
+00:31:13.880 --> 00:31:28.820
+I have put in the assignment a kind of the most useful version of Lopital's rule which is kind of the only other main thing we're missing right now from just the theory of differentiation.
+
+00:31:32.520 --> 00:31:52.800
+But remember, you know, kind of differentiation is a bit of a miracle, as I've said before, because there exists continuous functions and never have a derivative.
+
+00:31:55.580 --> 00:32:00.180
+Integration, which is what we're moving on to now, is not so much of a miracle.
+
+00:32:03.060 --> 00:32:15.740
+Because, as we'll show, every continuous function has a Riemann integral, which is a different limiting process.
+
+00:32:15.740 --> 00:32:25.400
+So, all of these things we're talking about, you know, all of these notions, continuity is a notion that involves limits.
+
+00:32:27.080 --> 00:32:39.460
+Differentiation is a process involving limits and integration is a process involving limits, but somehow integration is not as harsh or process as differentiation.
+
+00:32:39.460 --> 00:32:48.460
+Okay.
+
+00:33:04.160 --> 00:33:13.640
+Riemann should say the Riemann integral, but I'll say, right, Riemann integration.
+
+00:33:15.760 --> 00:33:18.280
+And so, what is Riemann integration?
+
+00:33:23.180 --> 00:33:41.060
+You were told this in calculus, but maybe in not so careful away. This is a theory of what it means or this is a number that we associate to a function that you interpret as the area underneath the curve.
+
+00:33:41.060 --> 00:33:52.720
+Okay. It is not as maybe you're told somehow magically equal to the area underneath the curve.
+
+00:33:53.360 --> 00:34:09.260
+There is no notion of area underneath the curve. Right. The Riemann integral is a number which you interpret as the area underneath the curve, because it agrees with what you think the area underneath the curve should be for simple examples.
+
+00:34:09.260 --> 00:34:23.220
+For example, a half circle or, you know, just a box. You know, these two notions agree. And therefore, you interpret the Riemann integral, which is a number obtained by a limiting process as the area underneath the curve.
+
+00:34:23.220 --> 00:34:36.880
+It is not somehow, you know, out in the universe there is this notion of area underneath the curve. And the Riemann integral magically coincides with that notion.
+
+00:34:37.220 --> 00:34:44.540
+No, it is a theory, if you like, of assigning a number that we interpret as the area underneath the curve.
+
+00:34:44.540 --> 00:35:00.480
+Okay. And it is good for, very good for, especially once we get to the real miracle of calculus, the fundamental theorem of calculus, which connects the derivative to integration.
+
+00:35:00.480 --> 00:35:19.580
+You know, it is fantastic in, you know, being able to, in its ease of computing. You know, hopefully at some point you go on to learn about the bag integration, which is a much more versatile notion of area underneath the curve.
+
+00:35:23.820 --> 00:35:30.900
+And a little bit more robust. You have better theorems that you can then use and prove, prove then use, of course.
+
+00:35:34.560 --> 00:35:42.540
+But Riemann integration is a place to start and in fact, you know, in some treatments of the bag integration.
+
+00:35:42.540 --> 00:35:56.020
+You know, the bag integration is treated as the completion of Riemann integration, just as the real numbers are, you know, the completion in some sense of the rational numbers.
+
+00:35:57.440 --> 00:36:09.660
+Okay. So let's set up some definitions and notions that we'll need. So I'm just going to be talking about Riemann integration of continuous functions. This is the simplest way to go.
+
+00:36:11.540 --> 00:36:20.720
+Why not for, you know, some sense of general functions or something like that? Because, you know, in general, a function does not have a Riemann integral.
+
+00:36:21.600 --> 00:36:34.180
+So you could try to ask, can you characterize what functions do have a Riemann integral? And the answer to that is functions which are continuous in a sense almost everywhere.
+
+00:36:34.820 --> 00:36:42.280
+Almost everywhere though, you don't know we don't have the length, we don't have the machinery to describe that. That's a measure theory course.
+
+00:36:43.360 --> 00:37:02.040
+So because you cannot, or at least because we don't have the machinery to fully state what it means precise, you know, if and only if statement about when a function is Riemann integral, I'm just going to do the Riemann integral for continuous functions.
+
+00:37:02.660 --> 00:37:15.040
+Which is nice and simple enough and still pretty. So let me just introduce first some notation that I'll be using a lot.
+
+00:37:16.520 --> 00:37:33.860
+C of a b, this is going to be the set of all continuous functions from a b to R. So f, maybe to R, f is continuous.
+
+00:37:44.980 --> 00:38:03.000
+Now. So, as I said, that we're going to associate to an interval and a function, a number, which we will later interpret as, you know, as the, as.
+
+00:38:03.900 --> 00:38:25.300
+You know, a notion of area underneath the curve. So this process is a limiting process where we're going to be taking the domain and cutting it up into smaller and smaller pieces and somehow writing down a number that we think approximates the area is a good approximate area underneath the curve.
+
+00:38:27.860 --> 00:38:43.660
+So I'm going to assign some words to this breaking down process partition of the interval a b. This is just a finite set.
+
+00:38:50.520 --> 00:39:09.620
+X underline, which I'll write in this way, is so it's a finite set, which I write X zero, X one, X two up to X in with the property that X zero is equal to a less than X one less than X two.
+
+00:39:21.880 --> 00:39:36.200
+Okay. The norm of a partition, so I denote with these two vertical lines on either side of X underline is by definition.
+
+00:39:37.680 --> 00:39:48.240
+So, I'm going to assign the max of the differences between these partition points. So I refer to these points that are in the partition as partition points. So this is X one minus X zero.
+
+00:39:48.240 --> 00:39:52.720
+So on X in minus X in minus one.
+
+00:39:52.720 --> 00:40:13.800
+So I'm going to assign a tag for partition X bar is finite set X zero.
+
+00:40:13.800 --> 00:40:35.720
+So get used to some Greek letters in your life Xe equals C one up to Xe in. So as before in the partition we started off with a zero here we started off one such that each of these Xe's lie between partition points.
+
+00:40:35.720 --> 00:40:41.640
+In other words X zero is less than Xe one is less than X one.
+
+00:40:53.780 --> 00:41:07.160
+Okay. And the pair is referred to as a tagged partition.
+
+00:41:10.920 --> 00:41:29.740
+Okay. So although maybe it looks a little bit fancy it's not a partition is you take your interval a b and you cut it up into pieces with your first point always being a and your last point always being b.
+
+00:41:31.140 --> 00:41:50.360
+So X one two and because I can't draw in points I'm going to make I'm going to draw four points X three X four.
+
+00:41:52.120 --> 00:42:02.540
+So there's a partition of a b into you know think of these points as being the end points of little intervals that I've broken up the bigger interval into.
+
+00:42:04.100 --> 00:42:22.580
+And the Xe's are just points in each of these little intervals so Xe one has to land there you know Xe two could land in the next one it could actually be the end point if we like Xe three let's say it's the midpoint.
+
+00:42:22.580 --> 00:42:35.840
+So Xe four is there as well so you know the tagged points are just lying in these smaller intervals.
+
+00:42:35.840 --> 00:42:53.220
+Okay. And at least in this picture you know the biggest separation between partition points would be something like X three minus X two here.
+
+00:42:53.220 --> 00:43:06.680
+Okay. So the norm of a partition is the length of the largest sub interval.
+
+00:43:13.980 --> 00:43:26.400
+Okay. So you know I drew kind of something abstract here. Let's make this more concrete let's say I'm looking at.
+
+00:43:26.400 --> 00:43:47.560
+Okay. So just to write down a few examples let's say my interval is one three and then my partition is are the points one you know three halves.
+
+00:43:47.560 --> 00:44:00.580
+X, X, X, X, X, X, X and X, X, X, X, X, X, X, X, X and two three. And then my set of tags are 5.
+
+00:44:00.580 --> 00:44:07.260
+of ports, just the midpoint, 7.5.
+
+00:44:07.580 --> 00:44:10.540
+So my partition is 1.
+
+00:44:12.480 --> 00:44:14.540
+There's 2, 3.5.
+
+00:44:15.260 --> 00:44:19.420
+So those are my partition points.
+
+00:44:21.420 --> 00:44:23.880
+And meanwhile, my tags are the midpoint.
+
+00:44:23.880 --> 00:44:24.240
+So.
+
+00:44:33.020 --> 00:44:33.740
+OK.
+
+00:44:34.400 --> 00:44:39.200
+And then the norm of this partition
+
+00:44:39.200 --> 00:44:44.820
+is the maximum of the lengths of these smaller subintervals
+
+00:44:44.820 --> 00:44:48.360
+here, not the ones using C, but the one with the partition
+
+00:44:48.360 --> 00:44:48.700
+points.
+
+00:44:48.940 --> 00:45:03.440
+So max the 3.5 minus 1, 2 minus 3.5, 3 minus 2, and is 1.
+
+00:45:03.600 --> 00:45:07.620
+The length of this subinterval.
+
+00:45:35.280 --> 00:45:37.600
+OK.
+
+00:45:38.000 --> 00:45:45.760
+So now, given a tag partition, we're
+
+00:45:46.860 --> 00:45:51.100
+going to remember to this tag partition, which we interpret
+
+00:45:51.100 --> 00:45:52.760
+as an approximate area.
+
+00:45:54.300 --> 00:46:11.720
+So let FBA continues function, XE, the tagged partition.
+
+00:46:17.940 --> 00:46:38.560
+The Riemann sum associated to, I should say, of F associated
+
+00:46:38.560 --> 00:46:56.200
+to the tagged partition XE is the number S sub F of X bar,
+
+00:46:56.500 --> 00:47:04.000
+I mean, X underline, XE underline, which is the sum from K equals 0 to K equals 1
+
+00:47:04.000 --> 00:47:12.160
+to N of F of XE K times XK minus XK minus 1.
+
+00:47:14.060 --> 00:47:14.060
+
+
+00:47:18.860 --> 00:47:26.120
+So again, what we interpret this number at,
+
+00:47:26.520 --> 00:47:28.360
+so how do we interpret this number?
+
+00:47:28.360 --> 00:47:36.160
+We interpret it as somehow we give meaning to this number as an approximate area,
+
+00:47:36.440 --> 00:47:37.780
+right, if this is AB.
+
+00:47:42.380 --> 00:47:49.480
+And there's a function F. And let's say those are the partition points.
+
+00:47:49.480 --> 00:48:06.040
+So X1, X2, X3, so X4, X0, and let's say the tag are just the right end points
+
+00:48:06.040 --> 00:48:08.300
+of each of these smaller intervals.
+
+00:48:12.840 --> 00:48:16.080
+Then what is this number, at least in terms of this picture?
+
+00:48:26.380 --> 00:48:36.260
+Okay, that's a little off, but anyways, so what I've shaded in this area,
+
+00:48:41.780 --> 00:48:53.380
+this equals this Riemann sum of F associated to this tag here.
+
+00:48:53.660 --> 00:48:58.900
+And let me go over again the graph of F.
+
+00:49:01.500 --> 00:49:10.260
+So this number here, which we've come up with, we interpret as somehow being an approximate area.
+
+00:49:11.580 --> 00:49:21.500
+Again, I don't like saying area underneath the curve because that presupposes that there is a notion of the area underneath the curve independent of what we're doing here.
+
+00:49:21.500 --> 00:49:32.100
+But that's not the case. We are, in fact, giving a theory, a mathematical theory of area underneath the curve.
+
+00:49:32.640 --> 00:49:36.980
+We are prescribing a number which we interpret as an area underneath the curve.
+
+00:49:37.220 --> 00:49:43.980
+So these Riemann sums, we interpret as being, you know, approximate areas.
+
+00:49:45.480 --> 00:49:57.220
+And so what we would like to do is somehow take a limit as the lengths of these subintervals get smaller and smaller as the norm of the partitions go to zero.
+
+00:49:58.240 --> 00:50:06.280
+And what we would like to say is that these approximate areas, these are just numbers, converge to some limiting number, A, I'm saying.
+
+00:50:07.260 --> 00:50:18.080
+That number, we refer to the Riemann integral, we refer to as the Riemann integral of F, and we interpret as the area underneath the graph of F.
+
+00:50:19.680 --> 00:50:31.940
+Now for this to work, we have to show that as we take partitions with smaller and smaller norm, where the intervals get smaller and smaller,
+
+00:50:31.940 --> 00:50:36.800
+these approximate areas actually do converge to some number.
+
+00:50:38.500 --> 00:50:48.700
+And that's going to be the content of the next lecture in which we'll prove the existence of the Riemann integral and do some properties about.
+
+00:50:49.040 --> 00:50:58.580
+So the take home point is, you know, again, there is no definition of area underneath the curve independent of what we're doing.
+
+00:50:58.580 --> 00:51:12.140
+It's not like out there in the universe there's a notion of the area underneath the curve, and when we compute the Riemann integral magically those two things, those two numbers coincide.
+
+00:51:12.620 --> 00:51:26.160
+No, we are giving, we are constructing a theory of the area underneath the curve, which for examples, for example, for a half circle or square or ellipse,
+
+00:51:27.260 --> 00:51:31.420
+do in fact coincide with stuff, you know, from ordinary geometry.
+
+00:51:32.120 --> 00:51:37.520
+Okay, and therefore it gives a good theory of area underneath the curve, you know.
+
+00:51:40.260 --> 00:51:54.300
+But in order for us to construct that theory, or how we're constructing that theory is, for a continuous function, we define a number associated to a partition, which we interpret as approximate areas.
+
+00:51:54.300 --> 00:52:05.820
+We would like to say these approximate areas converge to some number as the partitions get finer and finer, or as the norm gets smaller and smaller.
+
+00:52:06.920 --> 00:52:11.060
+And that limiting number we interpret as the area underneath the curve.
+
+00:52:11.560 --> 00:52:22.100
+And so that'll be what we do next time is actually show the existence of this limiting number, which is the Riemann integral of f.
+
+00:52:22.780 --> 00:52:23.960
+And we'll stop there.
+

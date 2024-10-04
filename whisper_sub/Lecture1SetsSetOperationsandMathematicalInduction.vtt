@@ -1,0 +1,806 @@
+WEBVTT
+
+00:00:12.540 --> 00:00:22.440
+Okay. So I have to admit this is extremely awkward lecturing to an empty room. So I have
+
+00:00:22.440 --> 00:00:25.920
+to imagine there's somebody on the other end actually listening to me at some point.
+
+00:00:28.660 --> 00:00:37.060
+Perhaps this is what YouTube stars have to go through at some point in their career. So what is
+
+00:00:37.060 --> 00:00:54.720
+the purpose of this course? So this is for 1800A. Real analysis. So the purpose of this course is twofold.
+
+00:01:02.600 --> 00:01:23.100
+The really I think the first primary purpose of this course is to gain experience with proofs. So that means being able to
+
+00:01:23.100 --> 00:01:38.540
+read a proof, being able to write a proof. And the second statement, which is supposed to be kind of a way to obtain the first purpose, is to
+
+00:01:38.540 --> 00:01:58.220
+prove statements about real numbers, functions and limits.
+
+00:02:06.800 --> 00:02:28.200
+Okay. So the second part, this is the analysis part. Okay. So for the first few lectures, we're going to do what maybe to some will be
+
+00:02:28.200 --> 00:02:48.240
+kind of review. And for most of you, a lot of this material in the first few lectures will be review. So but it's a nice way to ease into the material and things will most definitely pick up after a few lectures.
+
+00:02:48.240 --> 00:03:10.100
+So the first set of objects we're going to define and try to prove some statements about our sets. So definition. And because I use a lot of
+
+00:03:10.100 --> 00:03:31.180
+short hand, I will mostly write DFN from now on instead of the entire word definition. So a set is a collection of objects
+
+00:03:38.780 --> 00:04:00.240
+called elements or members. Okay. Now this course is supposed to be probably the first really rigorous course in math that many of you will deal with.
+
+00:04:03.080 --> 00:04:20.840
+So essentially everything that we talk about will be rigorously and unambiguously defined. But we do have to start somewhere. And so maybe you think this word collection is a little ambiguous. And perhaps you should.
+
+00:04:23.620 --> 00:04:39.020
+But to actually build up set theory from the ground up would take us quite beyond the scope of this class and too far field of the things that we want to do. Or at least that what I want to do.
+
+00:04:39.020 --> 00:05:06.380
+So okay. So a set is just a collection of objects called elements or members. There is the simplest set to define the empty set is set with no elements.
+
+00:05:06.380 --> 00:05:19.720
+And we denote it by this symbol here circle with a dash through it.
+
+00:05:22.060 --> 00:05:35.200
+Okay. So with new math typically comes new notation, new symbols that you use. So let me introduce a few short hand notations will use throughout the course.
+
+00:05:36.760 --> 00:05:50.620
+I mean, you know, quite honestly this is a little bit of the fun of doing higher math you get all these funny symbols. And very accomplished mathematician at the University of Chicago one time said.
+
+00:05:50.620 --> 00:06:00.740
+But you're really only interested in the math where that has the symbols you like to write over and over again. So some notation.
+
+00:06:00.740 --> 00:06:16.700
+So this is a collection. And this symbol which looks like a ES means a is an element of S.
+
+00:06:19.680 --> 00:06:32.620
+A with dash through this little E means everything here. But so A is not an element of S.
+
+00:06:35.740 --> 00:06:52.780
+This upsides down A means for all, a short hand for all backwards E means there exists and a couple more.
+
+00:06:55.740 --> 00:07:08.700
+You see an arrow like this is mean this means implies. So I've written down one thing this implies the next statement.
+
+00:07:08.700 --> 00:07:31.360
+I'll put an arrow between them. And an arrow going both ways means if and only if meaning if I have a statement P if and only if q that means statement P implies q and statement q implies P.
+
+00:07:34.120 --> 00:07:43.820
+And if you need a quick refresher on kind of basic logic, you can find that in the appendix of the textbook.
+
+00:07:46.040 --> 00:07:54.880
+Okay. So that's the basic definition of set empty set.
+
+00:08:01.400 --> 00:08:18.320
+So set A, another definition is set A is subset of B which we write A, this little symbol looks like a C B.
+
+00:08:21.460 --> 00:08:35.120
+So if every element in A is an element in B, hey, A, little A is in capital A means little A is in capital B.
+
+00:08:40.440 --> 00:09:00.300
+So two sets are equal, we write A equals B if A is a subset of B and B is a subset of A.
+
+00:09:00.300 --> 00:09:20.580
+Okay. And so, and A is a proper subset of B.
+
+00:09:26.200 --> 00:09:45.040
+And A is a subset of B and A does not equal B. Okay. And we typically write that by A and with a dash going through a line underneath this C to signify that it's not equal.
+
+00:09:45.040 --> 00:09:52.700
+So think of it as not so less than or equal to but not equal to is one way to think about it.
+
+00:09:57.120 --> 00:10:03.680
+Okay. So let me say something since I'm now one, two, three definitions in.
+
+00:10:06.080 --> 00:10:15.180
+So definitions are a fact of life when it comes to math. In the beginning of any subject there's going to be a lot of definitions because we have to have objects we want to talk about.
+
+00:10:16.340 --> 00:10:20.700
+And we have to have these unambiguously defined objects.
+
+00:10:23.060 --> 00:10:34.280
+So it may seem like there's going to be a lot of definitions now but this will let up and we will start proving some theorems which are facts about these objects.
+
+00:10:34.480 --> 00:10:38.040
+These are the things that we're really after. We're not really after just making of definitions.
+
+00:10:39.200 --> 00:10:47.800
+Definitions are meant to be a rigorous way of defining an object we're interested in studying.
+
+00:10:48.380 --> 00:10:51.380
+We're interested in proving theorems facts about.
+
+00:10:57.400 --> 00:11:01.060
+So again a lot of this is just a probably review.
+
+00:11:07.300 --> 00:11:28.340
+When we describe sets we will use these braces and maybe list the elements in here or we will describe it as x in some set a.
+
+00:11:28.340 --> 00:11:45.480
+We're going to write a set a. Satisfying some property p of x. Or we won't write this x in a part. We'll just write all objects x. Satisfying x as being an element of whatever universe we're in.
+
+00:11:45.480 --> 00:11:59.220
+And that's satisfied property p of x. So again you should read this as all x satisfying property p of x.
+
+00:12:00.740 --> 00:12:13.460
+So the basic examples. And this is you should expect this after kind of seeing any kind of non trivial definition.
+
+00:12:14.260 --> 00:12:25.900
+If you were here I would ask you to call me out. So I have to police myself. But after every kind of semi interesting definition you should see examples.
+
+00:12:25.900 --> 00:12:37.560
+This is how you actually learn about these things. Or at least digest what these things are. So we have the natural numbers which everyone's familiar with since they started to count.
+
+00:12:40.420 --> 00:12:55.280
+So we have the integers which is 0, 1, minus 1, 2, minus 2. So all the natural numbers along with their additive in versus along with the zero element and additive identity.
+
+00:12:55.280 --> 00:13:12.060
+We have rational numbers. So this is written as m over n such that m and n are integers and n does not equal to zero.
+
+00:13:15.280 --> 00:13:34.880
+And we have r, the real numbers, which I as of right now cannot actually write down what they are in terms of set building notation.
+
+00:13:34.880 --> 00:13:47.080
+In fact this will be our first goal of the course is to give a proper description or definition of what our actually is.
+
+00:13:48.620 --> 00:14:09.280
+But you can think of this as so as you did in calculus as q along with so rationals and irrationals like i2 and these things.
+
+00:14:09.280 --> 00:14:37.820
+So this is fine to think about for now. So of course I didn't have to use these. I could have maybe I'm interested in odd numbers that's the set of numbers of the form 2m minus 1 where m is a natural number.
+
+00:14:37.820 --> 00:14:56.400
+So this is just 1, 3, 5, and so on. And so note that we have the inclusions. Natural numbers are contained in the integers which are contained in the rational numbers which are contained in the real numbers.
+
+00:14:58.340 --> 00:15:12.960
+And you know if you kind of look at the history of why these things were thought up in the first place, I mean they were thought up to solve you know kind of polynomial equations that you couldn't solve in the number system before.
+
+00:15:14.920 --> 00:15:30.540
+Inagers were created because I could not solve the equation x plus 1 equals 0 in the natural numbers. Rationals were thought up because I could not solve the equation 2x plus 1 equals 0 in the integers.
+
+00:15:30.540 --> 00:15:52.940
+And the real numbers were thought up because I cannot solve the equation x squared minus 2 equals 0 in the rational numbers. Now I can't solve the equation x squared plus 1 equals 0 in the real numbers which led to the creation of complex numbers but we will not deal with complex numbers in this class.
+
+00:15:52.940 --> 00:16:06.120
+Although hopefully if you keep studying analysis you go on to complex analysis which is really a beautiful subject of study to this day.
+
+00:16:07.500 --> 00:16:21.820
+So as I said, let me write this here. Our first goal, real goal of the class and this is something to keep in mind. We're not going to do it right now.
+
+00:16:21.820 --> 00:16:51.460
+Our first real goal is to describe what R is. I mean if we're going to be proving statements about the real numbers, functions of real numbers and limits, whatever, you know those limits that you learned in calculus, then we have to be able to really describe what we're starting with the real numbers.
+
+00:16:54.740 --> 00:17:08.920
+Okay, so let's get back to sets to our review of sets. So there were some examples. We have a few more definitions.
+
+00:17:13.180 --> 00:17:35.680
+The unions of two sets A and B is the set which we write. So this is how we denote it, A, U, B. This is the set of all elements x, x is in A.
+
+00:17:38.300 --> 00:17:57.940
+Or x is in B. The intersection of A and B. So this was defining the union. This was defining the intersection.
+
+00:17:57.940 --> 00:18:16.300
+The intersection is the set A, cap B and this is the set of all x's so that x is in A and x is in B.
+
+00:18:22.700 --> 00:18:35.420
+So the union is take all the things from A, take all the things from B and put them together in one big basket. The intersection is just take the things that A and B have in common.
+
+00:18:44.320 --> 00:18:55.320
+The set difference of A with respect to B is the set.
+
+00:19:00.260 --> 00:19:10.980
+And A, backslash B, this is the set of all elements in A such that x is not in B.
+
+00:19:17.540 --> 00:19:30.300
+The complement of A is the set A. So this is how I'm denoting the set.
+
+00:19:31.180 --> 00:19:42.920
+The next part is how I'm defining this set. This is a set of all elements in our universe that is not in A.
+
+00:19:44.340 --> 00:19:59.120
+And when I say universe, I don't mean this universe necessarily. I mean if we're looking at subsets of R, the complement is generally with respect to R.
+
+00:20:00.520 --> 00:20:08.000
+Or if all of our sets are subsets of Q, then our universe would be Q, the rationals. And we're taking the complement in there.
+
+00:20:11.660 --> 00:20:14.080
+Two sets are disjoint.
+
+00:20:21.200 --> 00:20:28.080
+So the complement if the intersection is empty.
+
+00:20:31.960 --> 00:20:42.520
+So it took me quite a long time to figure out this complement has an E in the middle as opposed to an I as in the complement you would give a friend.
+
+00:20:44.880 --> 00:20:54.620
+I had to do a lot of spell checking in my thesis when my advisor pointed that out. So this is just something to keep in mind. This complement has an E in the middle of it.
+
+00:20:57.560 --> 00:21:13.600
+Okay, so let me just kind of draw a quick picture. So this blob over here is A. This is a set B. This is a set C.
+
+00:21:13.600 --> 00:21:32.580
+In fact, let's make this a little more. Okay, let's keep C there. Then what I have here, that's a intersect B. This bit over here with the lines going this way, but not including this.
+
+00:21:32.580 --> 00:21:48.420
+This is a takeaway B, a backslash B. And, okay, so that was not meant to be along the same direction as this one. So let's go vertical.
+
+00:21:49.240 --> 00:22:03.380
+And everything with a vertical line is a intersect B. Okay, so a backslash has the lines going this direction.
+
+00:22:04.300 --> 00:22:18.320
+A intersect has the lines going this direction. A union B has the lines going vertical. And C is way over here not touching any of A and B.
+
+00:22:18.320 --> 00:22:38.780
+So A and C are disjoint and B and C are disjoint. Okay, they have nothing in common.
+
+00:22:44.340 --> 00:22:46.040
+Okay, so this is a lot of definitions.
+
+00:22:53.720 --> 00:23:08.040
+We have not proven a single statement yet, so it's about time we do. This is probably one of the most basic theorems one can prove at the start of a real analysis class or any class about proofs.
+
+00:23:08.040 --> 00:23:29.940
+This is analogous to when you write your first Hello World program in a programming class. So let me state the theorem, which is the Morgan's laws.
+
+00:23:32.200 --> 00:23:46.420
+And the statement is the following. So if ABC or sets, then I have several things I can say.
+
+00:23:51.140 --> 00:24:03.700
+The union of B and C taking their complement, this is the intersection of the compliments. So the complement of the union is the intersection of the compliments.
+
+00:24:20.320 --> 00:24:31.100
+Now these are compliments, meaning I, in some sense, taking a set difference with respect to the entire universe. But I can make these things relative to some set A.
+
+00:24:31.100 --> 00:24:48.400
+So A take away B union C. This is the same as A take away B intersect A take away C. Really again, this is, you should think of this as a special case of one.
+
+00:24:51.100 --> 00:25:00.960
+Or at least if you were to write the proof, I'm not going to because it's all going to be contained in the first two, then you would see it's really just a proof of this guy.
+
+00:25:00.960 --> 00:25:12.860
+A take away B intersect C equals A take away B union A take away C.
+
+00:25:17.300 --> 00:25:35.500
+So again, for quick refresher about logic, I would look at the appendix of the textbook. And general, so let me make a few remarks before we move on to the proof about typically how this is going to look.
+
+00:25:37.460 --> 00:26:03.800
+So this is some remarks. Typically a theorem is a statement of the type P implies Q. Let me write this out in English. If some statement P holds, then Q for us it's if I have any three sets, then I have these equalities between these operations of sets.
+
+00:26:07.460 --> 00:26:21.300
+So the general structure you'll see of the classes, I have objects which I define unambiguously. I want to prove theorems now, meaning true statements about these objects. And the real meat is the proof part.
+
+00:26:21.300 --> 00:26:46.600
+So what is in this mysterious guy, the proof, it's quite simple. You start with you assume P, meaning what you're given the hypotheses, the hypothesis P.
+
+00:26:46.600 --> 00:27:07.520
+And I'm going to put dots here through logic and most definitely most of the time some calculations you arrive at.
+
+00:27:10.280 --> 00:27:32.020
+Q is true. And most proofs are ended with this little box here. So most proofs have this structure. I take my hypotheses and these hypotheses mean something in terms of the definitions I have given.
+
+00:27:32.840 --> 00:27:52.400
+And now I need to use these unambiguous definitions along with logic and maybe some calculations to conclude that statement Q is true. That is the essence of a proof that is all there is to it.
+
+00:27:53.680 --> 00:28:03.840
+Now that doesn't mean it's a simple thing to learn how to do. That's the point of this course. But to still down that's what a proof is.
+
+00:28:09.080 --> 00:28:21.480
+Q, so I said P usually means something in terms of the definitions we have, but also Q will usually mean something in the definitions that we've given. And so our job is to verify Q.
+
+00:28:21.480 --> 00:28:35.140
+So let's go with proving this theorem. And in fact, I'm only going to prove property 1, property 2, 3, and 4. I'll likely put on the homework.
+
+00:28:42.440 --> 00:28:53.340
+So B and C be set. So I mean this is the only hypothesis I get. I'm trying to prove that B union C complement equals the intersection of the compliments.
+
+00:28:54.180 --> 00:29:08.600
+So what does that mean? So we want to prove, so this is quite helpful, especially when you're first starting to do proofs to write down what you're actually trying to prove.
+
+00:29:08.600 --> 00:29:24.260
+So even though I have this statement here, it's an equality between two sets. Equality between two sets means something specifically. Right? We have that in our definition. Where is it?
+
+00:29:26.980 --> 00:29:43.280
+Over there, the two sets are equal if one is a subset of the other and vice versa. So that's what we have to prove. We have to prove that the left side, B union C complement is a subset of B complement intersect C complement and vice versa.
+
+00:29:43.280 --> 00:29:56.860
+So we want to prove that is a subset of B and.
+
+00:30:09.460 --> 00:30:15.080
+So that's what the equality means. That's what we have to prove. We have to prove those two statements now.
+
+00:30:15.080 --> 00:30:29.420
+Okay, and that's as distilled down as far as we can go. So let's prove this now. We'll prove this using again logic and what these things actually are.
+
+00:30:30.760 --> 00:30:45.800
+So let's prove this first statement here. So I have to show that every element in this set is an element of this set. So I'll even write this down.
+
+00:30:45.800 --> 00:31:05.840
+So I'll show this one as WTS. It means want to show. This is the first thing we'll show. As we go on, I'm not going to write as much as I'm doing right now. But this is the first theorem proof you're seeing. So I should write down quite a bit.
+
+00:31:05.840 --> 00:31:21.560
+So the first thing we want to show is we have this inclusion. That means every element here is an element here. So let X be in B union C complement.
+
+00:31:21.560 --> 00:31:38.780
+And now we're going to trace what this means and we'll eventually arrive at X is in this. So the X is not in B union C. That's just the definition of the complement.
+
+00:31:38.780 --> 00:32:00.900
+Now X is not in B union C means X is not in B and X is not in C. Right? Because the union is something's in the union if it's in B or C. So something's not in the union if it's not in B and not in C.
+
+00:32:01.980 --> 00:32:15.120
+Now this implies simply again by the definition of what it means to be in the complement X is in B complement and X is in C complement.
+
+00:32:18.740 --> 00:32:29.360
+But this again is simply the definition of X being in B complement intersect C complement.
+
+00:32:30.660 --> 00:32:39.260
+So you see we started off with an element in this guy and we showed that it's also an element of the right hand side.
+
+00:32:40.520 --> 00:32:52.260
+So this B union C complement is contained in B complement intersect C complement.
+
+00:32:53.600 --> 00:32:56.920
+Now we want to do this other inclusion here.
+
+00:33:10.880 --> 00:33:20.820
+Now this is one of those kind of rare situations where you get to essentially reverse the entire argument and get what you want.
+
+00:33:24.760 --> 00:33:37.440
+So let's just go through it in a linear fashion. Let's take something from here and show it's in here.
+
+00:33:37.440 --> 00:33:58.380
+So let X be in the intersection of the compliments. Then that means X is in B complement and X is in C complement. That means X is not in B.
+
+00:33:58.380 --> 00:34:09.220
+So that's this statement. That's the definition of being in the complement. And X is not in C. That's again the definition of being in the complement.
+
+00:34:11.300 --> 00:34:23.420
+Now just like we used here in this step, this is equivalent to, so really I should in this statement I should have written this statement is equivalent to this statement.
+
+00:34:26.120 --> 00:34:43.000
+So X is not in B and X is not in C. This means X is not in their union, which implies that X is in the complement of the union.
+
+00:34:51.060 --> 00:35:09.460
+So thus we've proven is the subset of B. And since we've shown both sets are subset of each other, that means by the definition of two sets being equal.
+
+00:35:09.460 --> 00:35:12.400
+So they are equal.
+
+00:35:21.240 --> 00:35:25.860
+So again this box means really nothing. It just means that's the end of the proof.
+
+00:35:25.860 --> 00:35:47.480
+All right. Let's move over here.
+
+00:35:47.480 --> 00:35:54.840
+This is terrible.
+
+00:36:09.620 --> 00:36:16.960
+And not everybody uses that little box to finish a proof. Some people don't put anything.
+
+00:36:16.960 --> 00:36:29.500
+I was a graduate school. I was a TA for the sky named Paul Sally, who was a fantastic teacher and really loved math.
+
+00:36:32.400 --> 00:36:42.060
+Who would end. So an amazing story about this guy is when I was his TA. He was in his 70s I think.
+
+00:36:43.400 --> 00:36:57.280
+But he had also had diabetes. So he had lost both of his legs beneath his knees. He was also legally blind. And he had a patch over one eye.
+
+00:36:57.280 --> 00:37:14.740
+So he himself often referred to himself as the pirate mathematician. But he would end his proofs with at least in his textbook. He didn't ask me to do this on the board, thankfully.
+
+00:37:14.740 --> 00:37:30.720
+He would end his proofs with a picture of himself with this pipe that he had very much in the pirate fashion.
+
+00:37:30.720 --> 00:37:41.780
+Anyway, moving on from things that improve. Let's go on to the next subject.
+
+00:37:43.480 --> 00:38:05.700
+So induction is a way to prove theorems about natural numbers. That's the theorem itself is more of a tool rather than an interesting fact on its own.
+
+00:38:07.580 --> 00:38:12.800
+So let me state the theorem and then we'll go over a couple of examples on how to use induction.
+
+00:38:12.800 --> 00:38:31.960
+Let me recall from, I think I just erased it, n is the natural numbers. And it has an ordering meaning.
+
+00:38:32.800 --> 00:38:42.160
+So we'll precisely define what ordering means. But just in your head this means the usual thing. One is less than two. It's less than three is less than four.
+
+00:38:47.460 --> 00:38:56.560
+So a property of the natural numbers, which we'll take as an axiom is the well ordering property.
+
+00:39:06.520 --> 00:39:17.140
+So an axiom is not something you prove. You assume this about the objects that you've defined or studying up to this point.
+
+00:39:17.140 --> 00:39:43.960
+So the statement is if I take a subset of natural numbers, which is non-empty, then S has a least element or smallest element.
+
+00:39:43.960 --> 00:40:10.840
+Now what does this mean? Let me write this last statement out. I.e. there exists an x and s. St I will often write meaning such that. Or so that such that x is less than or equal to y for all y and s.
+
+00:40:10.840 --> 00:40:26.080
+So every non-empty subset of the natural numbers has a smallest element. We're going to take that as an axiom as just a property of the natural numbers, which will assume.
+
+00:40:27.940 --> 00:40:43.100
+Now using this axiom we're going to prove. It's not really a you'll often hear it called as the principle of mathematical induction. But this will state it as a theorem instead of a principle. Whatever a principle is supposed to be.
+
+00:40:43.100 --> 00:41:06.180
+So induction. So this is due to Pascal or at least in the its first rigorous formulation is.
+
+00:41:06.180 --> 00:41:12.660
+Let pn be statement.
+
+00:41:12.660 --> 00:41:12.700
+So that's the statement.
+
+00:41:21.560 --> 00:41:34.520
+Depending on natural number n. So maybe we have some equality between two quantities that involves a natural number n. That could be our statement p of n.
+
+00:41:38.180 --> 00:41:55.720
+Now we're going to assume. So what are hypotheses about this statement? What are what's our if? Assume that this statement satisfies two properties. This first property is usually referred to as a base case.
+
+00:42:00.640 --> 00:42:10.840
+That is that p of one is true. And the second property is called the inductive step.
+
+00:42:18.280 --> 00:42:35.660
+So this statement satisfies the following property. That if you assume p of m is true. Then you can prove that p of m plus one is true.
+
+00:42:35.660 --> 00:42:53.120
+So I have a statement which satisfies both of these properties. And particular since I'm assuming p of one is true. The second property p of two is true. And then again by the second property p of three is true.
+
+00:42:53.120 --> 00:43:04.380
+And then p of four and then p of five. And so if you follow that last line of reasoning, this means you should kind of be able to guess what the conclusion of this theorem is.
+
+00:43:04.380 --> 00:43:15.120
+Then p n is true for all natural numbers.
+
+00:43:23.780 --> 00:43:33.040
+So we're going to use the well ordering property of the natural numbers to prove the theorem about induction.
+
+00:43:39.860 --> 00:43:49.040
+So we have our assumptions. I'm not going to, although I said over there, let bc be sets. I'm not going to rewrite the assumptions that we have about our statement p.
+
+00:43:49.040 --> 00:44:10.840
+We're just going to start trying to prove p of n is true for all n. So let me write our conclusion slightly differently. Let s be the set of all natural numbers such that
+
+00:44:14.700 --> 00:44:34.100
+p of n is not true. So what I want to show is that p of n is true for all n. So that's equivalent to saying we want to show that s is empty.
+
+00:44:35.020 --> 00:44:42.580
+So that's the set of natural numbers where p of n is not true, this is empty. This is equivalent to saying p of n is true for all n.
+
+00:44:44.900 --> 00:45:00.160
+And the way we're going to do this is another staple of mathematical proofs is trying to prove this by contradiction.
+
+00:45:11.680 --> 00:45:15.420
+So what does that mean?
+
+00:45:15.420 --> 00:45:22.340
+Let me make a few comments about what that means proof by contradiction.
+
+00:46:03.000 --> 00:46:13.640
+So in a proof by contradiction, this is what I'm about to write down is not part of the proof. This is commentary not to be included in the proof.
+
+00:46:16.000 --> 00:46:29.640
+What does it mean to say we're going to prove s is equal to the empty set by contradiction? We're going to assume that the statement we want to prove is false.
+
+00:46:29.640 --> 00:46:41.240
+We're not false, but we want to assume that the negation of the statement we want to prove is true and then arrive at a false statement.
+
+00:46:43.840 --> 00:46:52.600
+So we want to assume this is what we're going to do. We're going to assume the negation of the statement we want to prove, namely s is not empty.
+
+00:47:00.400 --> 00:47:11.940
+And from this we want to derive a false statement.
+
+00:47:18.360 --> 00:47:34.680
+So if we were able to do that, then let me just say again you can check in the appendix or you can just believe me that rules of logic then say
+
+00:47:42.620 --> 00:47:51.900
+that our initial assumption that s was not empty is false to begin with.
+
+00:47:51.900 --> 00:48:03.480
+So rules of logic meaning I cannot start from a true assumption and derive in a logically consistent way a false statement.
+
+00:48:06.280 --> 00:48:32.340
+That is if we believe that the rules of logic we're using are consistent, which that's a little bit hairy to talk about, but for our purposes of our class you can believe me that the rules of logic we use are at least accept that the rules of logic we're going to use are
+
+00:48:33.940 --> 00:48:45.660
+consistent and sound. So back to the proof at hand we had this set of natural numbers where the statement is not true. We want to show it is empty.
+
+00:48:45.660 --> 00:48:57.220
+So we're going to do it by contradiction meaning we're going to assume the negation of the statement we want to prove namely s is not empty and we're going to derive a false statement from that assumption.
+
+00:48:58.260 --> 00:49:05.800
+And by the rules of logic that means that our initial assumption that s is not empty is in fact false.
+
+00:49:13.520 --> 00:49:34.340
+So towards a contradiction suppose that s is not empty. Now we're going to use the well ordering property of the natural numbers by the well ordering property of the natural numbers.
+
+00:49:37.340 --> 00:49:59.940
+s has a lease element x. Now what do we know about x? So first off x cannot be one.
+
+00:50:01.040 --> 00:50:11.360
+s is a set where this property does not hold x cannot be one because let me again rewrite that this fact that s is the least element.
+
+00:50:13.020 --> 00:50:23.940
+Let me just reiterate that s has a least element in the set. Now x cannot be one because we're assuming the base case meaning p of one is true.
+
+00:50:23.940 --> 00:50:39.580
+So since p of one is true that means one is not an s which means x is not one.
+
+00:50:44.860 --> 00:50:53.820
+And particular x must be bigger than one. So x is some magical natural number out there bigger than one that's the least element of this set s.
+
+00:51:04.680 --> 00:51:22.500
+Since x is the least element of s. So let me draw along the number line we have one, two, three, four out there is some magic point x which is the least element of s.
+
+00:51:22.500 --> 00:51:32.620
+And the rest of the subset s lies to the right of this number x. Right because it's the least element of s.
+
+00:51:33.740 --> 00:51:50.120
+And therefore x minus one cannot be an s. So since x is the least element of s and x minus one is less than x.
+
+00:51:51.640 --> 00:52:07.320
+This means that x minus one is not an s. Otherwise it would be a smaller element than x in s. So thus what does it mean to not be an s.
+
+00:52:08.080 --> 00:52:20.980
+It means that p of x minus one is true. By the definition of s this means p of x minus one is true.
+
+00:52:26.980 --> 00:52:46.040
+But by the second property we're assuming about our statement p. This means that the next guy in line x minus one plus one is true which is just x.
+
+00:52:48.660 --> 00:53:08.020
+Which means that x is not an s. So from the assumption, so let me just recap, from the assumption that s is non empty we've derived two facts.
+
+00:53:08.020 --> 00:53:35.760
+x. One x has the least element in s. And that element is also not an s. So for now we've concluded there exists a natural number.
+
+00:53:41.200 --> 00:53:50.680
+So this is a false statement. You cannot have an object and a member that's both in the set and not in the set.
+
+00:53:53.180 --> 00:54:04.380
+And at the end of contradiction arguments are usually put two arrows hitting each other. So that's a contradiction. Therefore our initial assumption that s is non empty has to be false.
+
+00:54:09.560 --> 00:54:32.180
+And therefore s is the empty set. So I encourage you to kind of go through that proof a little slowly because maybe you got turned around by taking the compliments or the general scheme of how proof by contradiction works.
+
+00:54:34.860 --> 00:54:46.760
+But don't spend too much time on it because as I've said, the serum itself and its proof are not the thing we're really interested in or at least it's not the most interesting.
+
+00:54:47.500 --> 00:54:50.800
+It's more of a tool that will use to prove more interesting statements.
+
+00:54:53.220 --> 00:55:11.740
+Okay, so how do we actually use this serum induction to prove other statements? So I guess I should include this here. You know, this is falls under the umbrella of logic, meaning we're going to prove previous, we're going to use previous statements we've proven to prove new statements.
+
+00:55:12.840 --> 00:55:16.000
+But anyway, so how do we use induction in practice?
+
+00:55:30.660 --> 00:55:42.680
+So if we want to prove some statement for all NPN is true.
+
+00:55:44.100 --> 00:55:51.140
+And the print then this theorem about induction, the serum of induction tells us we just have to do two things.
+
+00:55:58.560 --> 00:56:09.360
+Okay, we have to prove the base case. And this is usually easy.
+
+00:56:11.840 --> 00:56:20.980
+Okay, you just stick the number one into the statement that you want to prove. And that's the end of the story.
+
+00:56:26.800 --> 00:56:44.500
+And the second step is usually or the second thing we have to prove is a more involved part, which is we have to prove that the statement that if PM is true.
+
+00:56:50.700 --> 00:57:01.060
+Then P of M plus 1 is true. Okay, it's kind of if we want to do a proof by induction, there's kind of two smaller proofs we have to do.
+
+00:57:01.060 --> 00:57:15.900
+First we have to prove, P of 1 is true, and then we have to prove this statement if PM then PM plus 1. Okay, so again, this is usually referred to as the base case. This is the inductive step.
+
+00:57:15.900 --> 00:57:19.140
+So let's try and actually do this.
+
+00:57:28.220 --> 00:57:30.360
+Alright, so.
+
+00:57:37.340 --> 00:57:47.940
+And so another question I get at the beginning of a course, especially about proofs, you know, because there's a lot of uncertainty about what you can assume is true, what can you use, what can you not use.
+
+00:57:47.940 --> 00:58:12.980
+Right now, at this point, you can use whatever you know about any of the algebraic properties you know about the real numbers, the rational numbers. And by algebraic properties, I mean, you know, of A plus B equals C, then A plus B times D equals C times D.
+
+00:58:12.980 --> 00:58:26.420
+And what you know about inequality. So we're going to go much more in depth into ordering, which is what, you know, inequality is a part of.
+
+00:58:26.420 --> 00:58:43.240
+But you can use all the properties you know about solving inequalities or manipulating inequalities, meaning if I have one number is less than or equal to another number, then when I multiply both sides by a positive number that doesn't change the inequality.
+
+00:58:43.240 --> 00:59:04.820
+So you can use all of these algebraic properties of rationals and real numbers from here on out. There will be it. I mean, so we're going to be proving things about calculus, so you certainly cannot use anything about continuity differentiation or anything like that.
+
+00:59:07.980 --> 00:59:25.120
+But for now, you can use all the algebraic properties you know. So the first statement we're going to try and prove using induction is the statement that for all C, not equal to one.
+
+00:59:27.440 --> 00:59:39.580
+And we're all in a natural number, one plus C plus C squared plus C to the N equals one minus C to the N plus one over one minus C.
+
+00:59:42.480 --> 00:59:59.400
+So this here is our statement P of N, it depends on a natural number N. So we're going to do this by induction, which means we're going to do those two things.
+
+00:59:59.400 --> 01:00:13.360
+We're going to prove the base case, P of one, which I said is easy. And then we're going to prove the second case, the second property, the inductive step, which is a little more involved, but not so much involved, at least in the beginning.
+
+01:00:13.360 --> 01:00:19.920
+So let me call this inequality star.
+
+01:00:26.640 --> 01:00:35.040
+We're going to prove star by induction. So first, we will do the base case.
+
+01:00:43.140 --> 01:00:51.300
+And like I said, the base case is usually you just plug in N equals one and verify that P of N is true. And that's what we do.
+
+01:00:53.160 --> 01:01:14.860
+One plus C to the one, which is the left hand side, does in fact equal one minus C to the one plus one over one minus C, because this right hand side, one minus C squared is one minus C times one plus C.
+
+01:01:17.280 --> 01:01:25.100
+The one minus C's cancel. And so the base case is proven.
+
+01:01:30.600 --> 01:01:32.580
+Now we do the inductive step.
+
+01:01:41.300 --> 01:02:02.100
+So we're going to assume that star holds for N equals M. So we're going to assume P of M. So assume that one plus C plus C to the M equals one minus C over one minus C.
+
+01:02:04.060 --> 01:02:31.660
+Now we want to show, again, let's write out what we want to do, what's our plan, want to prove that this equality, that this line star holds for N equals M plus one.
+
+01:02:33.780 --> 01:02:41.780
+So again, this is what I wrote here. This is basically star for N equals M.
+
+01:02:44.240 --> 01:03:00.880
+Okay. And let me call this second inequality two stars. So this is my assumption for M and equals M. Okay.
+
+01:03:04.120 --> 01:03:18.080
+So let's take the left side for N equals M plus one and see if we cannot massage it to get the right hand side for, I should say, the right hand side for N equals M plus one.
+
+01:03:18.080 --> 01:03:33.140
+So here is the calculation part. So we have one plus C plus C to M plus C to the M plus one.
+
+01:03:33.140 --> 01:03:44.500
+So one, this is the M plus one case of the left hand side of star, which we want to show is equal to the N equals M plus one case of the right hand side.
+
+01:03:46.520 --> 01:03:58.900
+Now this is equal to, now we already know what this is equal to by our assumption. This is by the second star there, which is what we're assuming is true.
+
+01:03:58.900 --> 01:04:09.640
+This is equal to one minus C and plus one over one minus C plus C and plus one.
+
+01:04:12.560 --> 01:04:26.980
+And so now we just do a little bit of algebra. This is equal to one over one minus C and plus one plus C and plus one minus C and plus two over one minus C.
+
+01:04:28.040 --> 01:04:38.340
+So I'm left with one minus C to the M plus two and I'll write it just so that you can see this is really the M plus one case.
+
+01:04:44.980 --> 01:04:55.620
+So again, we arrived at this first step by our assumption, the second star equation.
+
+01:05:00.700 --> 01:05:08.200
+So the star holds for N equals M plus one.
+
+01:05:10.280 --> 01:05:30.860
+So by induction, or really I should say the theorem of induction that we proved, our equality between those two objects or two expressions is valid for all N.
+
+01:05:30.860 --> 01:05:38.760
+OK.
+
+01:05:38.760 --> 01:05:58.580
+OK.
+
+01:05:58.580 --> 01:06:01.140
+OK.
+
+01:06:01.140 --> 01:06:04.740
+OK.
+
+01:06:04.740 --> 01:06:27.620
+OK.
+
+01:06:27.620 --> 01:06:50.620
+OK.
+
+01:06:59.740 --> 01:07:10.180
+So let's prove if C is real number bigger than or equal to minus one.
+
+01:07:13.980 --> 01:07:30.040
+Then for all N, a natural number, one plus C to the N is bigger than or equal to one plus N times C. OK.
+
+01:07:30.040 --> 01:07:41.060
+OK. So we're going to do this by induction again. That means we need to prove the base case and we need to do the inductive step.
+
+01:07:43.220 --> 01:08:04.560
+So base case as always, we're going to do this by induction. So as you can see, the base case is again N equals one is clear just by looking at it.
+
+01:08:05.560 --> 01:08:14.860
+So one plus C to the one in fact equals one plus one times C. So it's certainly bigger than or equal to one plus N times C.
+
+01:08:17.340 --> 01:08:27.920
+So I think that's the last stars I'll use for this lecture.
+
+01:08:27.920 --> 01:08:40.920
+So our statement, our inequality star, star star holds for N equals one.
+
+01:08:41.040 --> 01:08:51.420
+So that's our base case. Now we're going to assume that this inequality holds for N equals M and try to prove that it holds for N equals M plus one.
+
+01:09:01.160 --> 01:09:13.180
+So we're assuming this when N equals M. So one plus C to the M is bigger than or equal to one plus M times C.
+
+01:09:14.740 --> 01:09:25.660
+And we want to prove this inequality with N equal to M plus one. OK. And we're just assuming this guy. OK.
+
+01:09:27.540 --> 01:09:41.360
+So I want to get the statement for N equals M plus one. One way to do that is this left side, I want to get, let's look at the N equals M plus one side and see what we can do with it.
+
+01:09:43.140 --> 01:09:50.040
+So again, this is a calculation part and logic. So we have one plus C to the M plus one.
+
+01:09:51.300 --> 01:10:08.460
+So that's the N equals M plus one side of this. This is equal to one plus C times one plus C to the M. Now we're assuming again this inequality. This is the N equals M case.
+
+01:10:09.040 --> 01:10:22.500
+So we can use it. So we're assuming it. We use it. This. And since C is bigger than or equal to minus one, one plus C is non-negative. So this thing is bigger than or equal to this thing.
+
+01:10:22.500 --> 01:10:35.860
+So if I multiply both sides by one plus C, I preserve the inequality. So this is bigger than or equal to one plus M C. OK.
+
+01:10:37.440 --> 01:10:46.260
+Again, this just follows from essentially the assumption multiplied through by one plus C. OK. And now.
+
+01:11:11.500 --> 01:11:16.220
+So now I'm going to.
+
+01:11:20.680 --> 01:11:31.980
+So this is bigger than or equal to this. And this here. So when I write it equal, I do not mean that this left side is now equal to what I'm about to write here.
+
+01:11:31.980 --> 01:11:48.660
+That means the previous thing on here is equal to what I'm about to write here. OK. This is a typical fashion and writing down inequalities, or I guess practice.
+
+01:11:48.660 --> 01:12:07.800
+So this is equal to one. So just doing the algebra. In plus one times C plus M times C squared. OK. Now this part is exactly the N equals M plus one side of this.
+
+01:12:10.060 --> 01:12:16.700
+And I have a little room to give because now this is plus something that's non-negative.
+
+01:12:21.140 --> 01:12:29.820
+So let me just rewrite this again. This means that one plus C to the M plus one is greater than or equal to one plus.
+
+01:12:34.120 --> 01:12:43.320
+So again, I'm kind of writing a lot here. I will stop writing as much as the course goes on. And.
+
+01:12:44.040 --> 01:12:50.980
+But I encourage you, especially in the beginning, to write. You know, all the steps and logic. OK.
+
+01:12:53.080 --> 01:13:12.040
+So again, I'm not rewriting anything. I'm just summarizing what I've done here. Now this right hand side. So I have this as bigger than or equal to this. And this right hand side. Since I have a number plus something non-negative M times C squared M's a natural number.
+
+01:13:12.040 --> 01:13:32.560
+This is bigger than or equal to one plus M plus one times C. Thus one plus C to the M plus one is greater than or equal to which is the N equals M plus one case.
+
+01:13:32.560 --> 01:13:47.300
+So by induction.
+
+01:13:54.760 --> 01:13:58.220
+This inequality triple star holds for all N.
+
+01:13:58.220 --> 01:14:13.980
+All right.
+

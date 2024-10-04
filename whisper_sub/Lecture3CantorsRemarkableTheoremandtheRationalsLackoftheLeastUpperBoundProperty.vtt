@@ -1,0 +1,1076 @@
+WEBVTT
+
+00:00:14.140 --> 00:00:17.620
+Okay, so here we are again.
+
+00:00:19.600 --> 00:00:25.660
+So I'm going to finish real quick proof of a theorem that I stated last time due to
+
+00:00:25.890 --> 00:00:27.370
+the end-tour, so let me recall the setting.
+
+00:00:28.490 --> 00:00:37.310
+So last time we were finishing up what I have to say about cardinality, which remember
+
+00:00:37.310 --> 00:00:42.050
+is a notion of size of sets.
+
+00:00:45.690 --> 00:01:00.910
+And at the end, for a given set A, then we defined the power set of A to be the set
+
+00:01:00.910 --> 00:01:02.410
+of all subsets.
+
+00:01:06.750 --> 00:01:11.970
+And last time, for example, we did several of them, or looked at a few different power
+
+00:01:11.970 --> 00:01:12.390
+sets.
+
+00:01:18.670 --> 00:01:23.370
+Simplest example is that the power set of the empty set is the set containing the empty
+
+00:01:23.370 --> 00:01:23.830
+set.
+
+00:01:24.710 --> 00:01:29.930
+And in particular, the power set has one more element than the empty set.
+
+00:01:30.010 --> 00:01:31.410
+The empty set has no elements.
+
+00:01:31.810 --> 00:01:36.610
+The power set of the empty set has one element, namely the empty set.
+
+00:01:43.550 --> 00:01:51.430
+And we are looking at this to answer a question which I posed at the end of last class.
+
+00:01:51.430 --> 00:02:00.070
+Namely, all the sets we saw from the integers to even numbers, to rational numbers, which
+
+00:02:00.070 --> 00:02:07.010
+is on the assignment, all have the same cardinality as the natural numbers.
+
+00:02:08.870 --> 00:02:10.810
+And that's what we call the countably infinite.
+
+00:02:12.670 --> 00:02:20.410
+And so a question would be, is there any set that is bigger than in cardinality than the
+
+00:02:20.410 --> 00:02:20.990
+natural numbers?
+
+00:02:21.110 --> 00:02:22.450
+Is there any set that's uncountable?
+
+00:02:23.150 --> 00:02:28.810
+And so this theorem, due to Cantor, answers that and more.
+
+00:02:29.070 --> 00:02:44.290
+And it says the following, if A is any set, so if A is a set, then the cardinality of
+
+00:02:44.290 --> 00:02:51.990
+A is strictly smaller than the cardinality of the power set of A. And as a consequence,
+
+00:03:01.570 --> 00:03:21.970
+so consequence is that the natural numbers have smaller size than the power set of the
+
+00:03:21.970 --> 00:03:28.250
+power set of A. And so on, there are an infinity of infinity.
+
+00:03:28.510 --> 00:03:31.710
+There is an infinite size.
+
+00:03:33.770 --> 00:03:34.970
+That's a consequence.
+
+00:03:34.970 --> 00:03:41.390
+I don't know if that's...
+
+00:03:41.390 --> 00:03:41.850
+Okay.
+
+00:03:47.710 --> 00:03:51.110
+So, let's prove this theorem.
+
+00:03:53.850 --> 00:03:59.550
+And it's extremely clever and a bit mind-boggling.
+
+00:04:05.170 --> 00:04:12.830
+So, first, let me prove that A has cardinality less than or equal to the cardinality of the power
+
+00:04:12.830 --> 00:04:20.910
+set of A. So, let A be a set.
+
+00:04:21.930 --> 00:04:26.110
+First, going to show that the cardinality of A is less than or equal to the cardinality
+
+00:04:26.110 --> 00:04:36.090
+of the power set of A. So, we need to find an injection, a 1 to 1 map from A into the power set
+
+00:04:36.090 --> 00:04:46.330
+of A. And the simplest one to choose is one that takes an element of A to the set containing just that element.
+
+00:04:46.330 --> 00:05:00.870
+So, define F from A into the power set of A by the function that takes X.
+
+00:05:01.450 --> 00:05:10.990
+And this should spit out a subset of A. So, this will be the subset that consists solely of X.
+
+00:05:12.070 --> 00:05:14.710
+Okay. And this is clearly 1 to 1.
+
+00:05:16.530 --> 00:05:23.510
+Now, prove this right now. Then, we need to prove that if F of X equals F of Y, then X equals Y.
+
+00:05:23.570 --> 00:05:37.050
+But this is sort of clear from the definition. Then, if F of X equals F of Y, this means this set containing X.
+
+00:05:37.050 --> 00:05:45.550
+This is by the definition of how we've defined little F. Means that the set containing X is equal to the set containing Y.
+
+00:05:46.250 --> 00:05:51.150
+But this means X equals Y. They both contain one element.
+
+00:05:51.890 --> 00:05:59.650
+Two sets are equal. If only if that element is a one set as an element of the other, that just means X equals Y in this setting.
+
+00:06:04.610 --> 00:06:17.510
+Thus, F is 1 to 1, which since we found an injective map from A to the power set of A, this means.
+
+00:06:21.650 --> 00:06:30.670
+Okay. So, now we want to show that they cannot have the same cardinality.
+
+00:06:36.030 --> 00:06:48.790
+We now show that A does not have the same cardinality as the power set of A.
+
+00:06:48.790 --> 00:07:02.350
+And these two statements are what is meant when we write down, we call the definition of the cardinality of A or size of A being smaller than the cardinality of the power set of A.
+
+00:07:02.350 --> 00:07:10.710
+Okay. So, we're going to do this by a proof by contradiction.
+
+00:07:11.570 --> 00:07:21.310
+So, proof by contradiction.
+
+00:07:22.330 --> 00:07:32.150
+So, that means we're going to assume that this does not hold and arrive at a false statement.
+
+00:07:33.710 --> 00:07:45.550
+Okay. So, assume that they do have the same cardinality.
+
+00:07:45.550 --> 00:07:51.790
+So, this is our initial assumption. We're going to derive a false statement from this assumption.
+
+00:07:52.610 --> 00:08:04.070
+And the only way to arrive at a false statement from a given assumption in a logically consistent fashion is that the original statement, namely this, is false.
+
+00:08:05.090 --> 00:08:08.550
+Okay. In other words, the thing we want to show is true.
+
+00:08:08.550 --> 00:08:29.410
+Okay. So, let's assume they have the same cardinality. What does that mean? Then there exists a bijective function,
+
+00:08:30.870 --> 00:08:41.970
+g going from A to the power set of A. Remember, a bijective function means that g is 1 to 1 and on 2.
+
+00:08:42.850 --> 00:08:53.690
+Okay. 1 to 1, meaning different things of A gets mapped to different things of the power set. On 2 means everything in the power set gets mapped on 2 from A.
+
+00:08:54.190 --> 00:08:59.310
+All right. So, really, the fact that it's a surjective is the only thing I'm going to use.
+
+00:09:01.570 --> 00:09:08.310
+And I'm going to define kind of a weird set. And we're going to look at this set.
+
+00:09:08.310 --> 00:09:33.210
+So, define a set B. And this is a subset of A. By B is the set of all x's in A, such that x is not in f of x.
+
+00:09:33.210 --> 00:09:48.570
+All right. This should be g. Okay. So, remember, g maps from A to the power set. So, for any given x in A, g of x is a subset of A.
+
+00:09:49.110 --> 00:09:57.430
+So, the condition to be in B is that this element x is not in the image of itself by g.
+
+00:09:57.430 --> 00:10:09.390
+Okay. And B could be empty. All right. It could be there could be no x's in A that satisfy this. But it's just a subset of A.
+
+00:10:09.390 --> 00:10:18.050
+All right. I mean, simply by definition, we're just looking at elements in A that satisfy a certain condition.
+
+00:10:22.370 --> 00:10:33.970
+So, since it's a subset of A, this means that it's a element of the power set of A. This is just how the power set is defined.
+
+00:10:33.970 --> 00:10:45.330
+Remember, it's all subsets of A. So, B is an element of the power set of A. Therefore, something gets mapped to B under this map.
+
+00:10:45.330 --> 00:11:12.810
+Okay. So, since g is surjective, there exists B in capital A such that g of little B equals capital B.
+
+00:11:14.130 --> 00:11:24.970
+Okay. So, this just follows from the fact that g is a surjection, meaning everything in here must get mapped to by some element in A.
+
+00:11:27.110 --> 00:11:37.110
+All right. But now, let's take a look at this B guy. There are two cases.
+
+00:11:37.110 --> 00:11:59.410
+This is either B is in G of B or B is not in G of B. So, B is in G of B.
+
+00:12:02.590 --> 00:12:21.910
+If B is in G of B, remember, this is equal to capital B. All right. By definition. And to B in capital B means that X is not in G of X, but, let me just write this again.
+
+00:12:21.910 --> 00:12:39.310
+This means B is in B, which means B is not in G of B. So, we started off with B in G of B and ended with B is not in G of B.
+
+00:12:40.310 --> 00:12:54.530
+Okay. So, we arrive at a false statement in this case. Then there's one other case, B is not in G of B. Okay.
+
+00:12:56.150 --> 00:13:15.830
+Then if B is not in G of B, this immediately implies by the definition of capital B, meaning G of B is in capital B.
+
+00:13:20.610 --> 00:13:43.530
+So, let me write it this way. So, if B is not in G of B, this followed then from the definition of capital B, this implies that B is in capital B.
+
+00:13:44.710 --> 00:14:04.050
+Okay. That's just from the definition of capital B. But now capital B is equal to G of little B, which is another contradiction, because we started with this and ended with this.
+
+00:14:04.050 --> 00:14:25.030
+So, what I've really proven is, so let's ignore this contradiction mark here, thus we have shown that B in G of B implies B not in G of B.
+
+00:14:28.610 --> 00:14:44.170
+So, we've proven the statement that B is in G of B, if and only if B is not in G of B. And this is a very false statement.
+
+00:14:44.170 --> 00:14:51.790
+It cannot have some object being in the set, if and only if it's not in the set.
+
+00:14:53.830 --> 00:15:09.810
+So, we've arrived at a false statement, and therefore our initial assumption, which led us there, namely that the cardinality of the set A has the same cardinality as the power set of A, must have been false.
+
+00:15:23.270 --> 00:15:31.710
+Okay. So, you know, this is, it feels almost like you're being hoodwinked a little bit with this proof.
+
+00:15:35.430 --> 00:15:59.710
+But kind of to, I don't know, give you some sort of cling or connection back to reality, what's kind of underlying this argument or what's
+
+00:16:02.170 --> 00:16:18.590
+one way of understanding this argument is to think about, so in some sense what this argument does is make you talk about being in B while having to also reference B itself.
+
+00:16:18.590 --> 00:16:31.870
+Okay. And maybe this seems a bit wild because this is a math course, but you can do this statement just in the English language.
+
+00:16:31.990 --> 00:16:45.310
+If I am to tell you that I am a liar, then if that statement is true, then what I just said, namely that I am a liar, is false, which means I'm not a liar.
+
+00:16:47.110 --> 00:17:06.810
+Therefore, I am a liar, implies I'm not a liar, and vice versa, just if I say I am a liar, and that statement is false, meaning I'm not a liar, then that statement is true, which implies I am a liar.
+
+00:17:07.690 --> 00:17:20.770
+So of course I would not lie to you, I would just give you alternative facts, but that statement is kind of what's underlying this argument.
+
+00:17:39.490 --> 00:17:40.990
+True or false?
+
+00:17:46.330 --> 00:17:54.810
+Okay, that's kind of the connection to these two things.
+
+00:17:57.350 --> 00:18:03.250
+Lusely is, or at least the logic is contained in trying to verify this statement.
+
+00:18:04.570 --> 00:18:10.950
+Okay. So that's all I'm going to say about cardinality.
+
+00:18:10.950 --> 00:18:14.130
+We're going to move on to the real numbers now.
+
+00:18:28.150 --> 00:18:38.310
+And so this is really, like I said in the previous lecture, our first real goal of the class is to describe R.
+
+00:18:48.610 --> 00:18:55.370
+Namely, what exactly is the set of real numbers? What characterizes the set of real numbers?
+
+00:18:58.710 --> 00:19:13.050
+And so let me state this as a theorem just completely ahead of time so that it's there for us, and this is kind of our goal, although we're not going to prove it, our goal is just to understand what this theorem says.
+
+00:19:13.050 --> 00:19:23.270
+So this is a complete description of what R is.
+
+00:19:23.270 --> 00:19:48.730
+There exists a unique ordered field containing q with the least upper bound.
+
+00:20:03.490 --> 00:20:11.330
+Property, which we denote by R, set of real numbers.
+
+00:20:11.330 --> 00:20:23.690
+Okay, so as you sit there and listen to this, you shouldn't have, maybe you do, but you really shouldn't expect to have any idea about what this theorem says, what all these words mean.
+
+00:20:26.770 --> 00:20:34.030
+So our goal for this lecture is to make sense of these words.
+
+00:20:38.210 --> 00:20:41.030
+So the rest you should understand.
+
+00:20:44.050 --> 00:20:51.250
+So our goal for this lecture is to make sense of these words, ordered field, least upper bound property.
+
+00:20:51.670 --> 00:20:59.250
+Okay, because these are the two defining characteristics of R.
+
+00:21:00.110 --> 00:21:04.490
+And I'm not going to prove this theorem. We're just going to take it as a given.
+
+00:21:06.250 --> 00:21:15.730
+We could prove this theorem, but it takes quite a bit of time, and I'd rather start studying properties of R than building R.
+
+00:21:17.050 --> 00:21:39.750
+This is not so uncommon in math that one is not especially interested in the proof of actually why certain things exist, but we are definitely interested in the properties of that thing once we know it exists.
+
+00:21:43.250 --> 00:21:47.990
+So, okay, so let's get started on making sense of what this theorem says.
+
+00:21:50.090 --> 00:22:02.750
+Let's start off with order stuff. This says ordered field, least upper bound property. Let's start off with, what do I mean by order?
+
+00:22:02.750 --> 00:22:11.070
+We've kind of seen that just a little bit already when we talked about the natural numbers and this well ordering property of the natural numbers.
+
+00:22:12.730 --> 00:22:18.230
+But I was just using words to label a certain property of the natural numbers I didn't give.
+
+00:22:18.510 --> 00:22:21.890
+I didn't say they meant anything specifically. It was just a label for that.
+
+00:22:21.890 --> 00:22:25.170
+But when I say order now, this will definitely mean something.
+
+00:22:35.350 --> 00:22:36.770
+Ordered sets and fields.
+
+00:22:41.410 --> 00:23:01.970
+So, definition, ordered set is a set S with
+
+00:23:06.410 --> 00:23:10.470
+a relation which we label with this less than symbol.
+
+00:23:13.330 --> 00:23:17.470
+And this relation satisfies two properties.
+
+00:23:17.750 --> 00:23:23.850
+One is you can always check whether two elements are bigger than each other or equal.
+
+00:23:24.850 --> 00:23:39.570
+So, for all x, y and s, either x equals y, x is less than y or that's just restating y is less than x.
+
+00:23:47.310 --> 00:24:00.010
+And if x is less than y is less than z, then x is less than z.
+
+00:24:01.350 --> 00:24:15.030
+So, an ordered set is just a set with some relation which has two properties namely that for any two elements in the set, I can compare the two that's basically what this says.
+
+00:24:15.490 --> 00:24:22.670
+And I have this transitive property that if x is less than y and y is less than z, then x is less than z.
+
+00:24:24.190 --> 00:24:40.810
+Okay? And so, as I said before, whenever you have some sort of mildly interesting definition, you should definitely try to come up with examples and non-examples.
+
+00:24:40.810 --> 00:24:56.510
+So, what's the simplest example of an ordered set? Well, the natural numbers which we discussed earlier, but also the integers where I have to define what this relation means.
+
+00:24:56.510 --> 00:25:02.350
+We say m is less than n.
+
+00:25:05.470 --> 00:25:14.770
+This m is less than m if m minus m is a natural number.
+
+00:25:14.770 --> 00:25:22.350
+So, this is how we define our order. So, n is bigger than m if n minus m is a natural number.
+
+00:25:24.530 --> 00:25:24.670
+Okay?
+
+00:25:27.250 --> 00:25:34.970
+So, and you can check that this is just the usual ordering on z and that satisfies these two properties.
+
+00:25:35.970 --> 00:25:59.610
+The standard order on q, namely that we'll say q is less than r if there exists natural numbers m in such that r minus q equals m over n.
+
+00:26:03.230 --> 00:26:03.870
+Okay?
+
+00:26:07.250 --> 00:26:29.310
+So, these are just the usual orders of the integers and rational numbers that you're used to and that you know I'm just writing out exactly how one would define this order and you can check just using this definition of these orders that these orders satisfy one and two.
+
+00:26:30.690 --> 00:26:31.570
+Okay?
+
+00:26:32.930 --> 00:26:54.330
+Now, a simple non-example, which is a, I guess you could call it, it's a relation which satisfies two but not one is the following.
+
+00:26:54.330 --> 00:27:23.310
+So, let's take our set s to be concrete, the power set of the natural numbers and we define a relation a less than b by a less than b.
+
+00:27:23.310 --> 00:27:27.290
+So, let's say if a is a subset of b.
+
+00:27:29.090 --> 00:27:29.570
+Okay?
+
+00:27:30.830 --> 00:27:43.130
+So, I'm just defining a relation on the power set a less than b if a is a subset of b and maybe I shouldn't even use less than because this makes you think that it's automatically in order.
+
+00:27:43.130 --> 00:27:46.350
+So, let's make it a script looking less than.
+
+00:27:48.930 --> 00:27:51.630
+Then this relation is not an order though.
+
+00:27:51.950 --> 00:28:05.170
+It's a, so I keep saying order so we usually refer to this relation as an order.
+
+00:28:09.350 --> 00:28:10.270
+Okay?
+
+00:28:11.110 --> 00:28:14.110
+So, it's clear that it satisfies two.
+
+00:28:21.130 --> 00:28:38.090
+Why? Because a is a subset of b, b is a subset of c, then a is a subset of c, i.e. a, less than c.
+
+00:28:40.270 --> 00:28:45.550
+Okay? Just follows from the definition of what it means to be a subset of the other.
+
+00:28:45.670 --> 00:28:53.810
+If a is a subset of b, that means every element of a is an element of b. If b is an element of c, that means every element of b is an element of c.
+
+00:28:54.430 --> 00:28:57.030
+And therefore, every element of a is an element of c.
+
+00:28:58.730 --> 00:29:04.450
+So, this relation satisfies this second transitive property.
+
+00:29:05.210 --> 00:29:07.590
+But it doesn't satisfy the first.
+
+00:29:12.470 --> 00:29:26.550
+I cannot always measure if one thing is bigger than the other because, why is this?
+
+00:29:30.370 --> 00:29:38.010
+For example, the set containing zero does not equal the set containing one.
+
+00:29:38.010 --> 00:29:52.430
+But neither of these things hold.
+
+00:29:53.650 --> 00:30:04.950
+Okay? So, for something to be an order or a set to be an ordered set, it has to have this property that I can always compare two elements of this set.
+
+00:30:05.870 --> 00:30:22.970
+And for this relation, which seems like it could be an order, it satisfies the second property. It does not satisfy the first property because I cannot always compare two subsets of the natural numbers by saying one is a subset of the other.
+
+00:30:23.510 --> 00:30:32.350
+Okay? So, we just solved that. We have two sets which are not equal, but one is not bigger than the other.
+
+00:30:33.850 --> 00:30:34.250
+Okay?
+
+00:30:34.250 --> 00:30:52.250
+Okay?
+
+00:30:52.250 --> 00:31:06.330
+And so, one more example, which again, I will leave for you to check that it does satisfy conditions one and two just based on how it's defined.
+
+00:31:08.170 --> 00:31:24.950
+For example, this is the dictionary ordering of q Cartesian product q. I think I wrote this down.
+
+00:31:24.950 --> 00:31:44.310
+I mean, you should know what the Cartesian product is of two things, but let me just recall that I have two sets. The Cartesian product of A and B, this is the set of all ordered pairs of elements from those sets.
+
+00:31:46.590 --> 00:32:13.110
+Okay? So, the dictionary ordering of q is what? So, I need to define this relation, which I claim is an order. So, we'll say that A, B is less than qR, if one of two things happens.
+
+00:32:17.050 --> 00:32:30.990
+If either A is less than q or A equals q and B is less than r.
+
+00:32:31.930 --> 00:32:45.210
+Okay? So, dictionary ordering or alphabetical ordering of q, right? You just check, see which is smaller first. If they're both equal, then you check the next letter and see which one's smaller there.
+
+00:32:45.210 --> 00:33:05.530
+Okay? So, then this relation that I've defined here is an order on q cross q, making it an ordered set.
+
+00:33:16.690 --> 00:33:24.450
+Okay? Okay. So, this is what an ordered set is, we'll get to an ordered field in just a second.
+
+00:33:25.390 --> 00:33:34.070
+But now, let's make sense, or let me define what I mean by this least upper bound property, and this is really what sets r apart from q.
+
+00:33:36.330 --> 00:33:45.950
+So, we'll see in a minute that both r and q are ordered fields, so that's not what separates r from q, the rational numbers.
+
+00:33:45.950 --> 00:33:50.930
+But what does separate r from q is the second property, least upper bound property.
+
+00:33:51.210 --> 00:34:00.950
+So, if I said that there, if I removed that property and just said there exists a unique ordered field containing q, that would just be q.
+
+00:34:00.950 --> 00:34:13.310
+All right? We don't need to add anything to it, but it's the second property, this least upper bound property, that really separates r from q.
+
+00:34:17.350 --> 00:34:24.710
+Okay? So, to define this, I need to define what a least upper bound is.
+
+00:34:25.350 --> 00:34:43.190
+So, and this is all in the setting of an ordered set, let s be an ordered set, and let e be a subset of s.
+
+00:34:43.190 --> 00:35:11.330
+So, I'm going to make a series of definitions here. First, if there exists an element of s, so not the set necessarily the set I'm looking at, the subset I'm looking at, such that for all x and e, x is less than or equal to b.
+
+00:35:11.330 --> 00:35:19.750
+So, here I have this order less than or equal to means just what it means in English, either x is less than b or x is equal to b.
+
+00:35:20.410 --> 00:35:40.750
+And the same thing with bigger than or equal to, and so on, but just keep in mind that, you know, this order is a, or this ordered set as a general ordered set, you know, you could think of it as the dictionary ordering on q, cross q.
+
+00:35:40.750 --> 00:36:08.950
+So, if there exists a b such that for all x and e, x is less than or equal to b, then we say that e is bounded above, and this element of b is an upper bound.
+
+00:36:13.470 --> 00:36:14.130
+For e.
+
+00:36:24.050 --> 00:36:33.710
+So, if I can find some element of my set, bigger than everything in this set e, I say e is bounded above, and will be as an upper bound.
+
+00:36:33.710 --> 00:37:01.070
+I also have lower bounds. If there exists a b and s such that for all x and e, b is smaller than or equal to everything in e, so b is less than or equal to x, then we say e is bounded below.
+
+00:37:01.070 --> 00:37:20.990
+And b is a lower bound for e.
+
+00:37:20.990 --> 00:37:26.330
+So, b sits below everything in e.
+
+00:37:39.790 --> 00:37:53.910
+Okay. Now, we call an element in s the least.
+
+00:38:00.990 --> 00:38:09.550
+Up or bound. For e, if it satisfies two conditions.
+
+00:38:15.250 --> 00:38:20.130
+One is, well, if it's an up, least upper bound, it should at least be an upper bound.
+
+00:38:28.770 --> 00:38:36.170
+b is an upper bound for b, and it should be, in some sense, the least of all upper bound.
+
+00:38:36.170 --> 00:38:43.350
+So, if I take any other upper bound, b sub zero should sit below that one.
+
+00:38:59.670 --> 00:39:11.910
+Okay. So, an element is the least upper bound for set e, if it's an upper bound, and it's the least among all other upper bounds.
+
+00:39:11.910 --> 00:39:33.490
+It sits below every other upper bound. And in this case, we also say b not is the supremum of e.
+
+00:39:33.490 --> 00:39:48.010
+And we write b not equals sub e. Now, this was having to deal with upper bounds.
+
+00:39:49.970 --> 00:39:57.270
+We can also deal with lower bounds, or we also have a definition corresponding to lower bounds for what would be the greatest lower bound.
+
+00:39:57.270 --> 00:40:17.110
+So, we call an element of s the greatest lower bound for e.
+
+00:40:17.110 --> 00:40:36.250
+b, if two conditions hold, which is kind of similar to the conditions we had for least upper bound except now for lower bounds, b zero is a lower bound for e.
+
+00:40:37.330 --> 00:41:01.230
+And it is the greatest of all lower bounds, if b is any lower bound for e, then b is less than or equal to b zero.
+
+00:41:04.910 --> 00:41:18.970
+Okay. And so, there's some let name attached to least upper bound. So, there's a let name attached to the greatest lower bound, which we call the infimum.
+
+00:41:18.970 --> 00:41:38.290
+We also call b zero, the infimum of e, and we write b zero equals infe.
+
+00:41:39.650 --> 00:41:53.250
+So, we have a small, interesting and complex definition, which means we should look at some examples to get a feel for it.
+
+00:41:54.250 --> 00:42:11.070
+Okay, so let's look at some simple examples. So, let's take our big ordered set to be z, and let's take our set e to be minus one zero and two.
+
+00:42:20.270 --> 00:42:32.210
+Okay. So, what about this guy? What is the supremum? What is the infimum?
+
+00:42:34.930 --> 00:42:55.710
+So, you know, really if I'm going to prove or if I'm going to make a statement, something is equal to the supremum or something is equal to the infimum, I should actually give a proof of that, meaning if I say something's the infimum or something is the supremum, then I need to prove that it satisfies these two conditions and these two conditions.
+
+00:42:55.710 --> 00:43:07.530
+But, I'm just going over examples, so I will not give a full proof of that. This is just to get some intuition going.
+
+00:43:07.530 --> 00:43:24.930
+So, now, first off, what would be an upper bound for e? Well, three, four, five, two is an upper bound because two is bigger than or equal to everything in the set.
+
+00:43:31.050 --> 00:43:45.970
+So, two, three, four, five, these are all upper bounds for this set e. But what is the supremum, meaning the least upper bound? Well, that would be two.
+
+00:43:46.570 --> 00:43:52.050
+If I take anything less than two, that's not an upper bound because there's something in the set bigger than that.
+
+00:43:54.730 --> 00:44:03.390
+And if I take anything bigger than that, then this is going to be bigger than two, but two is still an upper bound.
+
+00:44:03.390 --> 00:44:19.070
+So, two is the least upper bound. Now, what about lower bounds? Well, lower bound would be minus one because minus one is bigger than is less than or equal to everything in the set.
+
+00:44:19.070 --> 00:44:34.950
+But then, so would be minus two, minus three, and so on. But the smallest, I mean the greatest lower bound would be minus one.
+
+00:44:43.630 --> 00:44:47.170
+Okay. Now, let's do another example.
+
+00:44:55.150 --> 00:45:11.790
+Let's now look at S, the rational numbers. And let's take e to be the set of rational numbers such that
+
+00:45:16.650 --> 00:45:34.270
+zero is bigger than or equal to, I mean, q is between zero and one, inclusive. Okay. So then what are some upper bounds? Well, everything in e is less than or equal to one.
+
+00:45:34.270 --> 00:45:56.570
+So, one is also a perfectly good upper bound. Three halves, five ports, six fifths, seven sixths, anything bigger than or equal to one is also an upper bound for this set.
+
+00:45:56.570 --> 00:46:20.570
+And the least upper bound would be one. Okay. So, if I were to try to draw q, so, or the set, let's not do that.
+
+00:46:24.410 --> 00:46:44.270
+Now, I know you usually draw this line as for the real number of line, but let's imagine it's q. So, everything bigger than or equal to one sits above everything in e. So, everything bigger than or equal to one is an upper bound and the least upper bound is one.
+
+00:46:45.330 --> 00:47:05.130
+What are some lower bounds? Well, everything in this set is bigger than or equal to zero. So, zero is a lower bound. So, is minus a half, minus a third, minus a fourth, minus a fifth, and so on.
+
+00:47:07.370 --> 00:47:20.070
+But, anything less than or equal to zero is a lower bound. Nothing, a bigger than zero can be a lower bound because I can always find some, so this is not a proof, but this is some explanation.
+
+00:47:24.370 --> 00:47:47.070
+Maybe I should have also said this for the upper bound statement, but anything bigger than zero is not a lower bound because what if I take some number, call it R, bigger than zero.
+
+00:47:47.070 --> 00:47:59.470
+And say, less than one, then R cannot be a lower bound because I can find something in e less than R, namely R over two.
+
+00:48:02.390 --> 00:48:13.410
+So, therefore, and we'll do, we're going to do some proofs where we actually have to get our hands dirty and prove something is in FEMA more the supreme.
+
+00:48:14.330 --> 00:48:23.230
+So, you'll see how that works, but for now, let's just go off of intuition. The infimum of this set is zero.
+
+00:48:24.410 --> 00:48:40.130
+Okay? Now, both of these examples so far have this property that both the soup and the inf belong to the set e that I'm looking at.
+
+00:48:40.130 --> 00:48:54.230
+But this is not necessarily always the case, so I could change this slightly. So, our universe, the ordered set we're looking at, looking in is still q.
+
+00:48:55.230 --> 00:49:09.590
+And the subset e is now, let's say, q is bigger than zero and less than one.
+
+00:49:16.050 --> 00:49:29.010
+Then, soup of e is still going to be one, but this is not an element of this set e. It's of course an element of s, this universe we're in, but it's not an element of the set e.
+
+00:49:36.530 --> 00:49:41.030
+And likewise, the infimum is still zero, but it's not an element of e.
+
+00:49:42.110 --> 00:49:52.890
+So, there are situations where you have a set, a subset of an ordered set, which has an infimum and supremum, which do not exist in this smaller set you're looking at.
+
+00:49:52.890 --> 00:50:01.310
+Whether or not the supremum or infimum exist in the universe that you're looking at in the bigger set is an entirely different issue.
+
+00:50:04.230 --> 00:50:09.290
+In fact, that's the next issue we're going to talk about.
+
+00:50:11.510 --> 00:50:19.650
+Okay, so let me just reiterate what we saw a minute ago.
+
+00:50:20.190 --> 00:50:29.430
+So, we can be in some ordered set, z or q, and the set, the smaller set, which we're taking the infim soup.
+
+00:50:29.430 --> 00:50:40.230
+And it could belong to the smaller set, for example, in this case, one in zero were in the set e, or not.
+
+00:50:40.870 --> 00:50:52.230
+You know, there is this case where neither of them were in e. And of course, if I put less than or equal to here, then I would have the inf in e and the soup not in e and then vice versa.
+
+00:50:53.190 --> 00:51:01.050
+Infs and soups of these sets don't necessarily need to belong to that set you're looking at.
+
+00:51:02.270 --> 00:51:06.070
+But they at least existed in the big set, q.
+
+00:51:10.490 --> 00:51:30.330
+Now, big ordered sets, so this ordered set that has this property that the inf and soup of bounded above and below sets exist in the bigger set always is what we call an ordered set with the least upper bound property.
+
+00:51:36.390 --> 00:52:03.390
+So, definition ordered set s as the least property.
+
+00:52:14.630 --> 00:52:29.090
+If every subset of s, which is non-empty, and bounded above,
+
+00:52:29.090 --> 00:52:48.950
+as a supremum in s.
+
+00:52:51.750 --> 00:52:58.850
+So, a set has the least upper bound property if every non-empty bounded set has a supremum.
+
+00:53:04.150 --> 00:53:24.310
+And so, you know, we could come up with simple examples of sets that do have the least upper bound property, for example, let's take s to be, I mean, this is kind of the simplest one, s with a single element.
+
+00:53:25.210 --> 00:53:26.190
+Let's say zero.
+
+00:53:28.770 --> 00:53:35.370
+Here, you know, there's no order to put on it. I mean, every element in here is equal to itself.
+
+00:53:36.270 --> 00:53:45.750
+And therefore, every non-empty subset of s is just the whole set, and the supremum would then be that one element.
+
+00:53:46.350 --> 00:53:52.290
+So, this is kind of the silliest one you could do.
+
+00:53:56.170 --> 00:54:09.730
+Let's say, you could have two elements, and then if e is a subset of s, e is one of four guys.
+
+00:54:10.430 --> 00:54:17.190
+If e is a non-empty subset of s here, the order is one, zero is less than one.
+
+00:54:17.630 --> 00:54:24.910
+If e is equal to zero, then soupy equals zero.
+
+00:54:25.530 --> 00:54:30.870
+If e is equal to one, soupy equals one.
+
+00:54:31.870 --> 00:54:40.350
+And if e is equal to zero, one, this implies soupy equals one.
+
+00:54:40.490 --> 00:54:43.930
+So, this is ns. This is ns. This is ns.
+
+00:54:44.370 --> 00:54:51.550
+Okay? So, every subset of s, which is non-empty, has a supremum in s.
+
+00:54:51.550 --> 00:55:01.070
+Okay? So, you know, these are not the most interesting examples of sets with this least upper bound property.
+
+00:55:04.730 --> 00:55:21.530
+So, for example, maybe a more interesting one would be if I take s to be, let's say, I'm going to put dots here, minus three, minus two, minus two.
+
+00:55:22.030 --> 00:55:24.130
+So, let me just write it this way.
+
+00:55:24.490 --> 00:55:33.230
+Minus one, minus two, minus three, minus four, and so on, with the usual ordering coming from the integers.
+
+00:55:34.070 --> 00:55:40.190
+So, minus two is less than minus one, minus three is less than minus two, and so on.
+
+00:55:40.190 --> 00:55:44.250
+I claim this set does have the least upper bound property.
+
+00:55:45.110 --> 00:55:59.050
+Why? Because if e is a subset of s, e, non-empty, in fact.
+
+00:56:00.390 --> 00:56:08.690
+So, both of these, you know, this was always bounded above, because there's only two elements, and you can choose the biggest one, one.
+
+00:56:09.690 --> 00:56:16.690
+Every subset of s is also bounded above by minus one, so every subset of s is automatically bounded above.
+
+00:56:17.490 --> 00:56:22.610
+So, I just need to check that every non-empty set has a supremum in s.
+
+00:56:23.610 --> 00:56:31.010
+If e is a subset of s and is non-empty, then let me look at the set minus e.
+
+00:56:31.010 --> 00:56:35.370
+I'm just, this is a label, this is not meant to mean anything always.
+
+00:56:35.630 --> 00:56:41.450
+I'm just, this is a label, which is the set of elements minus x.
+
+00:56:43.730 --> 00:56:48.270
+So, I take all my elements in e, which is a subset of the negative integers.
+
+00:56:48.710 --> 00:56:52.690
+I take their minuses. This is now a subset of natural numbers.
+
+00:56:52.690 --> 00:57:22.170
+And since, by the well-ordering property of the natural numbers, there exists an element in minus e, such that it sits below everything in minus e.
+
+00:57:26.370 --> 00:57:41.430
+For all x in e, which means that for all x in e, x is less than or equal to minus m.
+
+00:57:46.670 --> 00:57:50.090
+And I'll let you think about this just for a minute.
+
+00:57:51.610 --> 00:58:02.890
+But, so m is in, number m is in minus e, therefore, minus m is in e.
+
+00:58:07.310 --> 00:58:18.510
+And m less than or equal to minus x for all x in e implies that for all x in e, x is less than or equal to minus m.
+
+00:58:19.930 --> 00:58:25.250
+And therefore, I found an element actually in the set, capital E, that's bigger than or equal to everything in the set.
+
+00:58:25.250 --> 00:58:39.090
+But, you can convince yourself or write down a formal proof of E like that this implies that minus m is therefore the supremum.
+
+00:58:54.650 --> 00:59:05.990
+And so, kind of using this trickery of going from one set that's bounded above to a different set.
+
+00:59:05.990 --> 00:59:31.550
+And, kind of a subset of the natural numbers, you can also show, for example, z is as the least upper bound property, which I'm going to now shorten, because it's a lot of things to write.
+
+00:59:32.330 --> 00:59:35.950
+LUBP, least upper bound property. The integers also have this property.
+
+00:59:38.270 --> 00:59:43.590
+But, the integers are not all that interesting again, because I cannot divide by an integer and stay in the set.
+
+00:59:47.890 --> 00:59:55.170
+For what we want to do, we want to be able to add, multiply, subtract and divide.
+
+00:59:56.310 --> 01:00:01.790
+And we can't do that in the integers. We can do that in the rational numbers.
+
+01:00:01.790 --> 01:00:15.170
+However, q does not have this property.
+
+01:00:17.610 --> 01:00:27.810
+And we're going to prove this. This is what we're going to prove in a couple of theorems here.
+
+01:00:28.530 --> 01:00:30.950
+But, let me just put this out in front.
+
+01:00:41.890 --> 01:00:44.390
+q does not have the least upper bound property.
+
+01:00:47.410 --> 01:01:11.830
+And, where does this come from? This comes from the simple fact, which, you know, if you believe your, I don't want to call it Greek mythology, but maybe it's Greek mythology, strictly speaking, that some young guy discovered that the square root of two is not a rational number.
+
+01:01:11.830 --> 01:01:26.170
+And then he got thrown off a cliff. That's who we have to think for showing us that q is not perfect, that it does have this algebraic property, which I just referenced.
+
+01:01:26.170 --> 01:01:38.030
+In fact, you can add some trigonoplane divide and stay within the set. But, it does not have square roots of prime numbers, but square root of two in it.
+
+01:01:38.710 --> 01:01:55.150
+And, this then manifests itself in this least upper bound property by giving an example of a set, which is bounded above, which does not have a supremum in the set q.
+
+01:01:58.030 --> 01:02:13.390
+So, basically, if e is the set of rational numbers, so I have not stated a theorem yet, but I'm just telling you what we're about to do.
+
+01:02:13.390 --> 01:02:36.590
+So, if e is the subset of rational numbers, where positive and q squared is less than two, then soup e does not exist in rational numbers.
+
+01:02:37.970 --> 01:02:50.290
+So, therefore, we would have found a set, which is bounded above, which does not have a supremum in the rational numbers, and therefore, the rational numbers do not have the least upper bound property.
+
+01:02:51.030 --> 01:03:01.270
+So, this is what we're going to do, and I'll prove a state of couple of theorems that spell all this out.
+
+01:03:01.270 --> 01:03:13.710
+So, first I'm going to prove a theorem about what the supremum of such a set would have to satisfy.
+
+01:03:13.710 --> 01:03:30.530
+So, if x is in q, so this is a statement of a theorem, if x is in q, and if x equals the supremum of the set,
+
+01:03:41.970 --> 01:03:49.830
+then x is bigger than or equal to 1, and x squared equals 2.
+
+01:03:50.990 --> 01:04:18.670
+Okay, so we're just saying, I mean, I'm not, you know, don't try to take this as necessarily contradicting what I wrote there, because that was not a statement of a theorem, yet I'm stating this theorem that if I have such a supremum in q of this set,
+
+01:04:18.670 --> 01:04:34.490
+then it would have to square and give me two. Okay, not saying such an element exists, I'm just saying if there is any element of q that is a supremum of this set, then it has to be bigger than or equal to 1, and it squares 2.
+
+01:04:34.490 --> 01:04:51.790
+So, let's give a proof of this, and because I don't want to keep writing this set again, so I'm going to use the notation so that I use in the comments, let e be the set that I'm interested in.
+
+01:04:56.870 --> 01:05:20.550
+So, this should be, and suppose we have an element of q,
+
+01:05:26.190 --> 01:05:37.230
+which is the supremum of e. So, first off, what would be one element of e? What's one rational number whose square is less than 2?
+
+01:05:41.590 --> 01:06:04.130
+So, since 1 is in e, square is less than 2, and x is the supremum of e, meaning it's an upper bound for e, it must be bigger than or equal to everything in e, in particular for 1,
+
+01:06:06.850 --> 01:06:11.250
+that implies x is bigger than or equal to 1, so that's the first part of the theorem we want to prove.
+
+01:06:14.510 --> 01:06:31.850
+So, now we're going to prove two inequalities to show that x squared is actually equal to 2. We're going to prove, so this is a common trick and analysis that if I have two things that I would like to show equal to each other,
+
+01:06:33.150 --> 01:06:39.610
+sometimes a way to show that is by showing 1 is less than or equal to that, and this is less than or equal to that.
+
+01:06:40.650 --> 01:06:50.070
+So, one side is less than or equal to the other side, and vice versa, which immediately implies that it must equal each other.
+
+01:06:59.210 --> 01:07:06.930
+So, that's what we're going to do, and we're going to now prove that x squared is bigger than or equal to 2.
+
+01:07:09.970 --> 01:07:15.330
+We'll then prove that x squared is less than or equal to 2, and therefore x squared equals 2.
+
+01:07:16.730 --> 01:07:19.590
+So, to do this, we'll do this by contradiction.
+
+01:07:24.330 --> 01:07:36.910
+So, let's assume, so everything else we've done so far is still true, but now we want to prove this statement, so we're going to assume that this statement is false.
+
+01:07:39.970 --> 01:07:46.910
+Let's assume that x squared is less than 2.
+
+01:07:58.430 --> 01:08:10.670
+So, we'll define a certain rational number, h, which it's a smaller of two rational numbers.
+
+01:08:10.670 --> 01:08:26.970
+It's going to be the smaller of 1 half, and 2 minus x squared over 2 over 2x plus 1, and let me just reiterate this is less than 1, because it's the smaller of 1 half in this number.
+
+01:08:30.290 --> 01:08:37.290
+Now, when you write a proof, as you'll see, it's going to be magic that somehow this h does something magical.
+
+01:08:39.290 --> 01:08:41.810
+That's not exactly how you come up with proofs.
+
+01:08:41.810 --> 01:08:54.010
+So, what how it comes up is you take an inequality that you want to mess with, you fiddle around with it, and you see that if h is given by something, then it breaks the inequality.
+
+01:08:55.890 --> 01:08:59.270
+Or it satisfies the inequality, whichever one you're trying to do.
+
+01:09:04.090 --> 01:09:13.010
+So, since x squared is less than 2, h is positive.
+
+01:09:13.750 --> 01:09:18.070
+It's the minimum of 1 half and this number. So, if it's a half, it's positive.
+
+01:09:18.070 --> 01:09:20.130
+If it's this one, then it's still positive.
+
+01:09:26.670 --> 01:09:34.570
+And what I'm going to prove now is that x plus h is an e. It's square is less than 2.
+
+01:09:35.950 --> 01:09:45.150
+This will give us our contradiction, because x is supposed to be an upper bound for e, and therefore x is supposed to be bigger than or equal to x plus h.
+
+01:09:45.310 --> 01:09:51.530
+But this is x plus a positive number. x plus a positive number is bigger than x.
+
+01:09:54.310 --> 01:09:59.390
+So, how do we do this? Well, we have to compute the square of this and show it's less than 2.
+
+01:09:59.970 --> 01:10:04.730
+And that's kind of where our choice of h comes from.
+
+01:10:08.010 --> 01:10:18.690
+We compute that x plus h squared, this is x squared plus 2xh plus h squared.
+
+01:10:23.730 --> 01:10:37.910
+Now, this is less than x squared plus 2xh plus h. Why? Because h times h is less than h since h is less than 1.
+
+01:10:38.490 --> 01:10:54.630
+So, this is kind of why we chose h to be less than 1, so that I can get rid of this square and somehow just have a single h floating around which I can then use to show x plus h is an e.
+
+01:10:58.870 --> 01:11:07.710
+So, when I write the string of inequalities, this thing is supposed to be equal to the next thing. This is not saying x plus h squared is equal to what I'm about to write now.
+
+01:11:07.710 --> 01:11:25.890
+So, this is equal to x squared plus 2x plus 1 times h. Now, h is the minimum of these two numbers. So, h is going to be smaller than or equal to this thing.
+
+01:11:30.010 --> 01:11:37.890
+And so, this is 2 minus x squared over 2.
+
+01:11:41.490 --> 01:11:51.910
+So, I have what I had before and then times 2 minus x squared over 2x plus 1.
+
+01:11:53.410 --> 01:12:01.830
+So, now, some magic is happening. This cancels with that and I have 2 minus x squared over 2, which is less than 2 minus x squared.
+
+01:12:02.090 --> 01:12:12.390
+So, less than x squared plus 2 minus x squared because I took a half of it equals 2.
+
+01:12:15.530 --> 01:12:20.170
+So, summarizing, we started off with x plus h squared and we showed it was less than 2.
+
+01:12:25.950 --> 01:12:47.510
+And therefore, x plus h is an e. But, if I have an element of e, let's see where we on space.
+
+01:13:06.730 --> 01:13:16.390
+But, I have an element of e, which is bigger than x.
+
+01:13:16.390 --> 01:13:31.410
+So, that implies that x is not equal to the supremum of the set. Remember, by definition, something is the supremum if it's an upper bound for the set.
+
+01:13:32.510 --> 01:13:40.150
+Something is not an upper bound if you can find something in the set bigger than b not.
+
+01:13:40.650 --> 01:13:47.930
+And this is also a good exercise to do when you come across a new definition is to try and negate it to understand it a little bit better.
+
+01:13:47.930 --> 01:13:57.350
+So, let me write here next to be as an upper bound for e. Let me write what this means actually here.
+
+01:14:00.170 --> 01:14:10.470
+Well, let me write this here. B not is not. So, what's the negation of being an upper bound?
+
+01:14:14.130 --> 01:14:25.670
+So, not an upper bound for e if there exists an x in e such that x is bigger than b not.
+
+01:14:28.010 --> 01:14:42.930
+So, we have found an element. So, going back to our proof, we have found an element of our set e which is bigger than x, which means that x is not the supremum of e, which is a contradiction to our assumption.
+
+01:14:42.930 --> 01:14:55.110
+This is, these are assumptions for the theorem. So, we're always assuming this. So, this is a contradiction.
+
+01:14:59.950 --> 01:15:11.690
+Thus, our assumption that x squared bigger than or equal to 2, I mean less than 2, which is different from our assumptions of the theorem, is false.
+
+01:15:11.690 --> 01:15:18.810
+Okay.
+
+01:15:18.810 --> 01:15:27.450
+Okay.
+
+01:15:28.450 --> 01:15:35.210
+Okay.
+
+01:15:35.210 --> 01:15:57.710
+Okay.
+
+01:15:57.710 --> 01:16:00.330
+So, now we want to prove that x squared equals 2.
+
+01:16:05.910 --> 01:16:25.590
+So, we now show x squared equals 2. Since x squared, so this is not exactly the proof, just I'm going to rewrite it a little differently so it's maybe clear that,
+
+01:16:27.950 --> 01:16:37.590
+instead of showing also x squared is less than or equal to 2, which we know the less than cannot happen. Let's just show that x squared cannot be bigger than 2.
+
+01:16:45.730 --> 01:16:53.910
+Since x squared is bigger than or equal to 2, this means either x squared equals 2, which we want to show or x squared is bigger than 2.
+
+01:16:55.430 --> 01:17:01.610
+So, let's rule out this case.
+
+01:17:11.770 --> 01:17:21.410
+Now, show that the case x squared bigger than 2 cannot hold. So, suppose otherwise, we're going to do this. This is going to be a proof by contradiction as well.
+
+01:17:22.610 --> 01:17:32.390
+I guess when I say x squared bigger than 2 cannot hold. I'm also saying x squared must be less than or equal to 2. But anyways, so let's show this cannot hold.
+
+01:17:33.490 --> 01:17:45.550
+So, we're going to do this by contradiction as well. So, we're trying to show this cannot hold. So, let's assume that it does hold.
+
+01:17:47.370 --> 01:18:01.430
+So, that's the negation of what we want to show, which is this statement that x squared greater than 2 does not hold. So, assume x squared is bigger than 2.
+
+01:18:02.170 --> 01:18:19.750
+So, what we're going to do is we're going to find an upper bound for the set e, which is strictly smaller than x. And we're going to do that next time because I think I'm about to run out of time.
+
+01:18:21.650 --> 01:18:29.670
+So, okay. So, I hate to stop the proof here. But we'll finish this in the next lecture.
+

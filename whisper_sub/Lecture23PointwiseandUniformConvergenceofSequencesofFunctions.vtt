@@ -1,0 +1,1028 @@
+WEBVTT
+
+00:00:12.720 --> 00:00:18.320
+So last time we proved the fundamental theorem of calculus, and as a consequence, integration
+
+00:00:18.320 --> 00:00:22.780
+by parts formula in the change of variables formula or u substitution.
+
+00:00:22.780 --> 00:00:25.340
+So let me just recall for integration by parts.
+
+00:00:29.020 --> 00:00:36.660
+It was that if I had to continuously differentiable functions,
+
+00:00:52.780 --> 00:00:55.700
+then I can shift the burden of taking a derivative.
+
+00:00:56.680 --> 00:01:06.900
+F prime times g, integrate is equal to F of b, g of b minus F of a, g of a,
+
+00:01:09.740 --> 00:01:13.980
+minus the integral from a to b of g prime f.
+
+00:01:15.380 --> 00:01:19.700
+Okay, so I can shift that derivative over to from F to g.
+
+00:01:21.120 --> 00:01:31.480
+And this is, apart from the triangle inequality, probably one of the most useful
+
+00:01:32.780 --> 00:01:36.560
+theorems that comes out of calculus other than the fundamental theorem of calculus.
+
+00:01:39.020 --> 00:01:42.780
+In fact, for those of you who've taken quantum mechanics,
+
+00:01:43.000 --> 00:01:51.140
+which, I mean, you don't have to, but, or you heard of something called the Heisenberg uncertainty principle,
+
+00:01:51.140 --> 00:01:58.680
+which says something like something to the effect that you cannot measure the position
+
+00:01:58.680 --> 00:02:08.460
+of a particle and its momentum to arbitrarily a good degree, you're bound by,
+
+00:02:08.680 --> 00:02:14.340
+if you can measure the position of a particle very well, then your measurement of the momentum
+
+00:02:14.340 --> 00:02:17.660
+is going to be not so great and vice versa.
+
+00:02:18.740 --> 00:02:24.700
+And that's based on an inequality, and how do you prove that inequality integration by parts?
+
+00:02:25.140 --> 00:02:33.460
+So, integration by parts is, in fact, responsible for one of the great head scratchers from quantum mechanics.
+
+00:02:33.820 --> 00:02:35.960
+So, just to back up my claim a little bit.
+
+00:02:36.840 --> 00:02:38.640
+Now, I'm not going to give that as an application.
+
+00:02:38.880 --> 00:02:42.080
+I'm going to give a different application related to Fourier series.
+
+00:02:55.340 --> 00:02:57.100
+So, Fourier series, what are these?
+
+00:02:57.340 --> 00:03:05.360
+So, suppose we have a function, and I'm not going to say what type, suppose f for minus pi to pi,
+
+00:03:06.360 --> 00:03:10.200
+r is 2 pi periodic.
+
+00:03:15.160 --> 00:03:25.780
+And so, the question that arose due to Fourier in his study of heat transfer, so this is Fourier,
+
+00:03:28.140 --> 00:03:46.600
+I don't know something like 200 years ago, he made the following claim that the function f of x can be expanded
+
+00:03:46.600 --> 00:04:00.340
+in terms of simpler building blocks in terms of simpler functions.
+
+00:04:00.640 --> 00:04:06.340
+So, we haven't talked about Taylor series, we will just minute or power series,
+
+00:04:06.580 --> 00:04:15.760
+which you've come into contact with, which is a way of, if you'd like, expanding a function in terms of polynomials,
+
+00:04:17.460 --> 00:04:20.060
+and now, or monomials.
+
+00:04:21.060 --> 00:04:34.060
+Now, Fourier suggested that f of x can be expanded as a superposition of functions,
+
+00:04:34.080 --> 00:04:39.780
+which are 2 pi periodic, and kind of the most basic 2 pi periodic functions.
+
+00:04:39.780 --> 00:04:51.320
+Now, what is so special about sin x and cosine x? Well, this is a little bit deeper, the fact that they satisfy certain second order differential equation,
+
+00:04:52.040 --> 00:04:59.260
+and they are the, all of the solutions to the second order differential equation that are 2 pi periodic.
+
+00:05:00.660 --> 00:05:15.520
+So, you should think of these as kind of being building blocks. Another way to think of this is, you know, analogous to, if you have a vector,
+
+00:05:15.520 --> 00:05:34.580
+right? So, now, this is not a partition, this is a vector, x1, x2, xn, then you can expand this vector as a sum of coefficients,
+
+00:05:34.580 --> 00:05:54.040
+A sub n, A sub j, j equals 1 to n. You know what, let me make this m, let's make this n, let's make this m, so it looks a little, A sub n, E sub n.
+
+00:05:54.040 --> 00:06:13.240
+We're now, E sub n, this is the basis vector given by, you know, 0, 1, 0, where this is in the, in spot, okay?
+
+00:06:16.760 --> 00:06:28.440
+So, you can think of this expansion in terms of signs and cosines as being analogous to, you know, expanding a vector in terms of basis elements,
+
+00:06:29.280 --> 00:06:37.000
+or you can think of it as a, kind of a different way to expand a function other than Taylor series, or power series, okay?
+
+00:06:37.000 --> 00:06:50.820
+But these, you know, components arose in, sort of a natural way if one were to study the problem of heat transfer, which is governed by the equation,
+
+00:06:50.820 --> 00:07:10.200
+Dt, U equals dx squared U, okay? And then along with the initial condition, that U of 0, x, so at times 0 equals f of x, okay?
+
+00:07:12.340 --> 00:07:28.380
+So, okay, now, just like for how we expand a vector into basis elements, there's a formula for computing these coefficients, right?
+
+00:07:28.380 --> 00:07:43.500
+Okay, so, you know, they should be, A sub n should be x sub n over here, but what's a different way of obtaining these coefficients?
+
+00:07:46.020 --> 00:08:12.500
+So, this is a vector in Rm. And so, how do you obtain the coefficients A sub n? Well, if I take the inner product of both sides, the dot product, say, of e, x dot, let's say, e sub n,
+
+00:08:12.500 --> 00:08:27.300
+n prime, let's say, okay, so I have these, m, n, let's say, l, this is equal to the sum from n equals 1, t, m, of a sub n, e sub n dot e sub l.
+
+00:08:28.620 --> 00:08:41.400
+Now, I wrote these basis vectors this way, because that's kind of a standard choice for Rm, and what makes some standard is they have unit length, and they're orthogonal to each other, okay?
+
+00:08:41.400 --> 00:09:09.160
+So, they form an orthonormal basis. So, when I take the product of e sub n with e sub l, I pick up what is usually referred to as delta in l, we're here delta in l, this is 1 if n equals l, and 0 if n does not equal l.
+
+00:09:11.980 --> 00:09:25.900
+And therefore, this just reduces to a l. So, we see that A sub l is equal to x dot e sub l, okay?
+
+00:09:27.260 --> 00:09:54.740
+And this is, so all of this discussion was in the setting of a finite dimensional vector in Rm, and expanding in terms of the standard basis here, but it didn't have to be, it could have been as long as it's an orthonormal basis, then I get this relation, that the coefficient that appears in front of that vector is equal to the thing I'm interested in dotted with.
+
+00:09:58.540 --> 00:10:18.680
+So, let's say we try to do this same thing now with f of x except now, so these are functions, so instead of taking dot products, which is a sum of components, let's take an integral.
+
+00:10:26.000 --> 00:10:43.000
+So, if I take f of x and if you like, dot it with sine of x and sum, which is, you can think of as, you know, I said that the integral is, you should think of as maybe a continuous sum.
+
+00:10:44.380 --> 00:10:54.920
+What do we get assuming that this expansion holds, this is equal to the sum from n equals zero, so let me make this l.
+
+00:10:56.360 --> 00:11:11.820
+This is the sum from n equals zero to infinity of a sub n sine in x times sine, so let me, we're getting to write the integrals here.
+
+00:11:14.960 --> 00:11:18.560
+I'm skipping a point I want to make as well.
+
+00:11:19.920 --> 00:11:42.180
+Just remember the sum is starting from zero to infinity, I don't want to keep writing it, a in sine in x sine l x plus b in cosine in x sine n l x sine l x.
+
+00:11:44.780 --> 00:11:49.060
+And then n equals zero to infinity of a sub n, I'll just write it, stop being lazy.
+
+00:11:49.940 --> 00:12:08.920
+Now, assuming I can do what I'm about to do, and that's actually going to be, you know, a lot of, you know, the motivation for what we're going to discuss in our final chapter, assuming I can take this infinite sum and interchange it with this integral, this is the interchange of two limits, right?
+
+00:12:08.920 --> 00:12:38.280
+Assum is an infinite limit, an integration is a limit, so assuming I can switch these two limiting processes, processes, then I pick up a sub n minus pi pi, sine in x sine in l x sine l x, sorry.
+
+00:12:38.920 --> 00:12:50.720
+Plus b sub n integral minus pi to pi, cosine in x sine l x d x.
+
+00:12:52.500 --> 00:13:13.740
+Now, you can actually sit down and compute this based on, you know, trigonometric identities, and what you get is that this is always equal to zero, and that this here equals pi times delta in l.
+
+00:13:18.940 --> 00:13:33.380
+So, this equals the sum from n equals zero to infinity, a n pi delta in l, which equals pi times a l.
+
+00:13:33.380 --> 00:13:54.400
+Okay? Alright, so we get this quantity here is assuming everything we've done is kosher equal to pi times a sub l. And then to pick up the b sub l is the same except now you integrate against cosine of l x.
+
+00:13:54.400 --> 00:14:15.740
+So, similarly pi times b sub l is equal to the integral from minus pi to pi of f of x cosine l x d x.
+
+00:14:15.740 --> 00:14:33.800
+Okay? So, so the b sub l's and a sub l's are referred to as a Fourier coefficients of the function f.
+
+00:14:48.640 --> 00:14:58.320
+So, if f from minus pi to pi to r is continuous.
+
+00:15:00.740 --> 00:15:28.300
+And two pi periodic, the numbers a sub n equals one over pi integral from minus pi to pi of f of x sine in x d x.
+
+00:15:29.380 --> 00:15:44.440
+And b sub n equals one over pi integral from minus pi to pi f of x cosine in x d x are referred to as a Fourier coefficients of f.
+
+00:15:44.440 --> 00:15:56.060
+Okay?
+
+00:16:06.340 --> 00:16:20.900
+And so, just using integration by parts. So, what's the first question one should ask if it's even possible or in what sense does f of x equal this infinite sum?
+
+00:16:21.480 --> 00:16:32.340
+Well, we haven't even gotten into that but one question you can ask is do these coefficients that come in front of these basic building blocks sine in x and cosine in x, do they converge to zero?
+
+00:16:32.700 --> 00:16:42.080
+I mean if we expect f of x to be equal to the sum of these basic parts then the contributions from each should be getting smaller and smaller.
+
+00:16:42.080 --> 00:16:52.620
+Okay? So, does a and b and 10 to zero as n goes to infinity? And this is the content of what's usually referred to as the reman libac lemma.
+
+00:16:56.200 --> 00:17:02.280
+But it's usually stated in a different way. I'm just going to state it the way I'm going to state it this way right now.
+
+00:17:11.740 --> 00:17:25.500
+And which is the following if f from a b to r is continuously differentiable.
+
+00:17:40.660 --> 00:17:49.320
+Then limit as n goes to infinity of a sub n equals the limit as n goes to infinity of b sub n equals zero.
+
+00:17:50.080 --> 00:17:59.340
+Now the actual way the reman libac lemma is typically stated is in fact I don't need it to be continuously differentiable. I just need it to be continuous this is still true.
+
+00:18:01.040 --> 00:18:16.900
+But we haven't done or won't do in this class approximation the arms for continuous functions which says that if you can do this for continuously differentiable functions and basically you can do it for continuous functions.
+
+00:18:17.740 --> 00:18:29.260
+But this will suffice. So what this says is that the contributions coming from these building blocks is getting smaller at least in the sense that the coefficients are getting smaller.
+
+00:18:29.400 --> 00:18:39.280
+But it says nothing about if that sum up there with the a and b ends to find this way actually converges to f. I do want to emphasize that.
+
+00:18:39.280 --> 00:19:02.620
+In fact, trying to straighten out this question in what sense this series converges to f is really the motivation for a lot of analysis developed past sort of in the first part of the last century and the last part of the century before that.
+
+00:19:02.620 --> 00:19:06.880
+And forms a basis of what's called harmonic analysis.
+
+00:19:11.240 --> 00:19:16.460
+Which is a really beautiful subject and still an active area of ongoing research.
+
+00:19:20.960 --> 00:19:33.120
+Okay. So how do we prove this? Well, I stated the integration by parts formula earlier. So in fact it will follow pretty easily from that.
+
+00:19:38.880 --> 00:19:47.880
+Let's prove that the limit as n goes to infinity of b sub n equals zero. The one for a sub n is similar. There's just an extra piece but I'm going to be a little bit lazy and do the easier one.
+
+00:19:56.060 --> 00:19:56.840
+We'll show.
+
+00:19:57.480 --> 00:20:07.860
+Okay. So let's look at b sub n. This is equal to.
+
+00:20:09.460 --> 00:20:24.500
+The integral from minus pi to pi of f of x. In fact, let me write cosine n x times f of x d x d x. Why am I writing d x d x.
+
+00:20:24.500 --> 00:20:37.720
+And now what I do is cosine n x I can write as the derivative of something one over n times sine n x.
+
+00:20:38.760 --> 00:20:42.660
+If I take the derivative of that with respect to x I get cosine n x.
+
+00:20:46.180 --> 00:20:55.880
+Okay. It didn't actually prove that but you can look back in your calculus textbooks. We've proven enough to be able to make that precise.
+
+00:20:57.380 --> 00:21:08.640
+So by integration by parts I can now shift the blame or shift the burden of this derivative on to f. But look what I've gained. I've gained a one over n here.
+
+00:21:08.640 --> 00:21:29.640
+So now this is equal to one over n sine n pi f of pi minus sine of n minus pi times f of pi minus pi.
+
+00:21:29.640 --> 00:21:39.800
+Minus one over n sine n x minus pi to pi f prime of x d x.
+
+00:21:42.400 --> 00:21:50.380
+And really what this computation is showing is illustrating is the oscillatory nature of what's going on.
+
+00:21:51.100 --> 00:22:04.780
+Cosine of n x is oscillating as n gets very large between minus one and one and sort of equal footing. So on average you're getting the same amount of positive f as negative f.
+
+00:22:06.580 --> 00:22:14.000
+Or you're waiting f in such a way that it's both positive and negative and equal amounts.
+
+00:22:16.120 --> 00:22:33.280
+Now sine of n pi no matter what n is I get zero sine of n minus pi. I get zero. So this first part drops off. So this is equal to minus one over n minus pi pi sine n x times f prime of x d x.
+
+00:22:33.280 --> 00:22:51.100
+And therefore if I take the absolute value of b sub n this is less than or equal to one over n minus pi pi sine n x f prime of x d x.
+
+00:22:51.100 --> 00:23:08.480
+So if I bring the absolute value inside. So I can bring the absolute value inside and still get this. So in fact before when I had the absolute value outside it's a equality but now it's a less than or equality.
+
+00:23:08.480 --> 00:23:29.520
+I mean inequality. So now sine of n x is always bounded by one. So this is less than or equal to the integral of f prime of x d x. So this is equal to one over n integral a b f.
+
+00:23:30.100 --> 00:23:47.060
+Now this is just f prime. This is just a fixed number times one over n. So this converges to zero as n goes to infinity and b sub n in absolute value of course it's always bigger than or equal to zero and it's bounded by something converging to zero as n goes to infinity.
+
+00:23:47.060 --> 00:24:13.540
+So by the squeeze theorem we conclude b sub n converges to zero. And that's the proof. The proof for the a sub n's is similar except now you can't throw away necessarily the end points but it's still not a very big deal.
+
+00:24:13.540 --> 00:24:21.240
+Okay.
+
+00:24:22.680 --> 00:24:43.620
+Okay. And in fact if we have time I'll show you how much. So in fact one can prove and this is proven and classes on courses on harmonic analysis that in fact for a function which is continuously differentiable.
+
+00:24:43.620 --> 00:25:00.020
+So this in two pi periodic this series actually does converge uniformly to f on this interval and I have even said what uniform convergence means but actually does converge to the function f of x.
+
+00:25:00.020 --> 00:25:28.140
+Okay. So this is the case for continuously differentiable functions. I'll give a proof later that in fact this series converges if f is twice continuously differentiable. We can actually do that using the fundamental the integration by parts again essentially but so.
+
+00:25:28.140 --> 00:25:46.920
+But you know there are a few things here that are behind the scene that are kind of swept away first off. You know when we computed these formulas formulae I guess we interchange summation infinite summation of functions with integration.
+
+00:25:46.920 --> 00:26:10.920
+When can we do that you know in what sense does if this if this Fourier series converges what what sense does it converge to f you know for convergence of real numbers there was just one sense of the convergence of real numbers now when we have a sequence of functions which is now what we're going to turn to.
+
+00:26:14.640 --> 00:26:33.700
+Well have different notions of convergence to another function and depending on you know in what sense that conversion that convergence takes place some of these limiting operations may not interchange.
+
+00:26:35.140 --> 00:27:03.540
+Okay so now we're going to move on to the final chapter of this class and I know it seems like you know we're kind of hitting a lot of different things now towards the end of the class and we took it slow during the first part of class but that's like I said that's I think I even said this at the start of class we didn't have very much to go off of we built things from the ground up in the more technology you have the more things you can prove the more interesting questions you can ask.
+
+00:27:03.700 --> 00:27:19.720
+So now we're going to go on to sequences of functions and you could also put sequences in series because the series is just a special type of sequence of functions.
+
+00:27:21.920 --> 00:27:47.780
+So you know I motivated a little bit of you know why we would be interested in you know functions converging to other functions or sequences of functions converging to a function but you know we could look at something much more basic so let's look at take a step back and look at power series.
+
+00:27:47.780 --> 00:27:56.860
+Okay and this should be thought of as motivation for what's to come just like our discussion about Fourier series.
+
+00:27:59.200 --> 00:28:13.280
+And again I'm not going to ask any deep questions about Fourier series on the homework or on the exam so you know a lot of this is just this discussion was to motivate this theorem here.
+
+00:28:15.200 --> 00:28:37.080
+But now I'm going to make kind of a more precise motivation I guess for what's to come so although we've had series forever I never brought up power series and it's for a reason it's because I didn't think they belonged anywhere until we got to sequences of functions so a power series.
+
+00:28:43.080 --> 00:29:06.200
+About a point x not is a series of the form some from j equals 0 to infinity of a sub j x minus x not to the j.
+
+00:29:06.200 --> 00:29:17.660
+Okay so the x not is given and you know the things that could change are the coefficients or this number x here.
+
+00:29:17.660 --> 00:29:45.080
+Okay so theorem which immediately follows from essentially the root test suppose this number are which is the limit as j goes to infinity of a sub j 1 over j exists.
+
+00:29:45.080 --> 00:30:08.900
+So it's a finite number positive non negative number and define row to be 1 over r if r is bigger than 0 and infinity if r equals 0.
+
+00:30:14.900 --> 00:30:31.020
+Then we have the following conclusion that this power series a sub j converges absolutely.
+
+00:30:39.380 --> 00:30:52.660
+If x minus x not is less than row and diverges if x minus x not an absolute value is bigger than row.
+
+00:30:54.660 --> 00:31:04.160
+Okay and this number row we refer to as radius of convergence.
+
+00:31:16.620 --> 00:31:23.300
+So again the proof follows immediately from the root test because if we take
+
+00:31:23.300 --> 00:31:51.640
+the limit as j goes to infinity of a sub j absolute value x minus x not j 1 over j this is equal to x minus x not this kills that j this is just a fixed number so this pops out of the limit.
+
+00:31:53.560 --> 00:32:00.160
+And this limit exists so this equals x minus x not times r.
+
+00:32:02.040 --> 00:32:17.900
+Okay and we have two things happening this is less than 1 if x minus x not is less than row bigger than 1 if x minus x not is bigger than row.
+
+00:32:19.920 --> 00:32:37.420
+Okay this number here and therefore by the root test that theorem holds.
+
+00:32:47.320 --> 00:33:03.860
+Okay so we see that this series where the if you like the what's given are the coefficients a sub j and x not and what could change is x that this series converges as long as x minus x not is less than row.
+
+00:33:03.860 --> 00:33:29.980
+So as long as we stay as long as we stay in that interval as the metric interval about x not then this series converges absolutely.
+
+00:33:31.440 --> 00:33:40.260
+Okay so we can define a function where if I take x in this interval stick it into this series I get out a number so.
+
+00:33:46.220 --> 00:34:03.180
+So define function f now going from this interval so x not minus row x not plus row to r by f x equals.
+
+00:34:05.320 --> 00:34:14.860
+The number that gets a spat out by this power series on the chip there.
+
+00:34:21.240 --> 00:34:39.360
+Okay so for example what is f of x let's say I take all of the coefficients to be let's say x not is zero and all the coefficients are one so.
+
+00:34:40.800 --> 00:34:54.560
+Let's say I look at some of x of j then f of x so we've already computed for a geometric series this is equal to one over one minus x for x and minus one one.
+
+00:34:56.280 --> 00:35:01.580
+Okay so in this simple setting one over one minus x is equal x to the j.
+
+00:35:01.580 --> 00:35:25.340
+Okay another example is that if I take a sub j equals one over j factorial x not equals zero then you've done this in an exercise that this series here.
+
+00:35:30.780 --> 00:35:36.940
+Converges absolutely for all x meaning row equals infinity.
+
+00:35:50.820 --> 00:35:54.800
+And this is how we define the exponential function.
+
+00:35:59.680 --> 00:36:06.460
+Exponential function exponential of x to be what comes out of this series.
+
+00:36:16.440 --> 00:36:32.620
+Okay and then simply from this definition you can show things that an exponential function should satisfy x the x e to the n is equal to n e to the e of one to the nth power and so on and so on.
+
+00:36:32.620 --> 00:36:44.740
+So let's say that this really does obey what you believe an exponential function should look like and also it grows faster than any power of x as x goes to infinity goes to zero those types of things.
+
+00:36:45.880 --> 00:36:48.100
+But this is how the exponential function is defined.
+
+00:36:52.020 --> 00:37:04.100
+Okay we have this function that's defined by whatever this power series fits out for x inside this interval of convergence.
+
+00:37:08.700 --> 00:37:27.920
+So then I could write f of x as the limit as n goes to infinity of a sequence of functions because this is just how it's defined where f n of x is the partial sum.
+
+00:37:33.340 --> 00:37:45.880
+Okay it's just a polynomial right so for a power series the limiting function you can write it as the limit of the partial sums which are just polynomials.
+
+00:37:45.880 --> 00:38:01.740
+Okay and so I should say for all x in this interval we have this.
+
+00:38:02.980 --> 00:38:18.500
+Okay so now some questions arise. So what this function is equal to the limit of these maybe simpler functions these simpler functions are just polynomials for the case of power series.
+
+00:38:18.500 --> 00:38:28.160
+So like I said one over one minus x is equal to the limit of these polynomials. Some questions should arise. I mean analysis is about limits.
+
+00:38:29.580 --> 00:38:39.840
+You can think of that as half the story first off what is the limit what are the you know important limiting processes that we consider.
+
+00:38:39.840 --> 00:38:46.400
+So the second question is how do different limits interact.
+
+00:38:50.740 --> 00:39:04.300
+So let's pose that as a question now for three parted question for power series and this will motivate and this is again motivating all of what we're going to be doing now.
+
+00:39:08.020 --> 00:39:24.260
+So you know is the function that I get as this limit of polynomials as the you know output from a power series is it continuous.
+
+00:39:24.260 --> 00:39:33.920
+Okay the individual pieces that I take a limit to get f of x you know these polynomials the partial sums are certainly continuous they're just polynomials.
+
+00:39:34.540 --> 00:39:36.700
+So is the limiting thing continuous.
+
+00:39:40.660 --> 00:40:03.540
+Now if so is f differentiable and in particular since f is equal to the limit as n goes to infinity of the f in's is f prime equal to the limit as n goes to infinity of the f in prime.
+
+00:40:07.060 --> 00:40:21.520
+Okay so you know the derivative is a limiting process so I'm taking the derivative of the limit so I'm asking can I take that derivative inside the limit can I swap the two processes and the same with integration.
+
+00:40:22.880 --> 00:40:40.900
+If one does the integral of f equal limit as n goes to infinity of the integrals of the f in's.
+
+00:40:50.300 --> 00:41:01.520
+Okay so again this is a limiting process that we're asking us to flip because f is equal to the limit as n goes to infinity of f in and what I'm asking is can I take this integral inside that limit.
+
+00:41:03.980 --> 00:41:20.900
+Okay all right now you can ask these questions not just for power series but in a more general setting which is what we're going to turn to now but this should be in the back of your mind as the motivation for what we're doing.
+
+00:41:20.900 --> 00:41:50.480
+Okay and you know apart from being just an academic question I mean apart from being an academic question it's also somehow giving you information over whether the formal manipulations that you're doing with Fourier series that are actually you know somehow modeling some physical phenomenon are these formal manipulations even meaningful.
+
+00:41:53.300 --> 00:42:16.960
+So these are the three questions that motivate what we're going to do going forward but we don't have to just stick to the setting of being in power series this should be a kind of very important example of you know a sequence of functions converging to a function a limiting function.
+
+00:42:16.960 --> 00:42:45.780
+And then we can ask these questions but we don't have to just stick to power series so let me move on to a more general setting in which we'll answer these three questions and two modes of convergence for limits of functions or sequences of functions.
+
+00:42:48.640 --> 00:43:11.100
+So first definition this is in fact you know what we showed or what we were talking about before for in natural number but Fn be function from S to R S is some non empty subset of the real numbers
+
+00:43:13.080 --> 00:43:39.820
+and let F be from S to R. We say Fn so the sequence of functions Fn converges point wise to the function F.
+
+00:43:41.120 --> 00:43:59.340
+So F if for all X and S by stick in X into S so for each fixed X and S if I stick this into Fn of X I get a limit and this limit is F of X.
+
+00:44:00.720 --> 00:44:15.840
+So for example going back to power series you know if we defined F of X so let me just rewrite that example that I had up there.
+
+00:44:15.840 --> 00:44:44.600
+If I define F of X equals 1 over 1 minus X Fn of X to be some from J equals 0 to N of XJ then for all X and minus 1 to 1 limit as n goes to infinity of Fn of X equals F of X.
+
+00:44:44.600 --> 00:44:57.120
+So this sequence of partial sums of corresponding to this power series converges to 1 over 1 minus X point wise on minus 1 1.
+
+00:45:06.700 --> 00:45:18.260
+So I say whenever you come across a definition you should negate it but the negation of this definition is not too difficult.
+
+00:45:18.260 --> 00:45:30.320
+So a sequence of functions is not converged to another function point wise if there exists some point so that when I stick them into Fn of X is not converged to F of X.
+
+00:45:37.620 --> 00:45:52.460
+So let's look at another example which is not a power series. Let's say we take Fn of X to be X to the N where X is in the closed intervals 0, 1.
+
+00:45:53.820 --> 00:46:16.000
+So what's happening here is n gets very large there's 1, 1, there's I don't know F of X and then as n gets very large these guys are dropping down even more and more.
+
+00:46:18.380 --> 00:46:33.860
+And what is are we picking up something in the limit? Well let's look. Well if X equals 1 it's pretty clear that the limit as n goes to infinity of Fn of 1 this equals 1.
+
+00:46:33.860 --> 00:46:41.160
+If I stick in 1 here I get 1 for all n and therefore the limit as n goes to infinity of Fn of 1 is 1.
+
+00:46:42.500 --> 00:46:58.860
+Now if X is in 0, 1 then we've done this limit before. The limit as n goes to infinity of Fn of X this is equal to the limit as n goes to infinity of X of the N.
+
+00:46:58.860 --> 00:47:04.660
+Now X is less than 1 so X is being raised to a higher and higher power this equals 0.
+
+00:47:13.080 --> 00:47:32.580
+Thus what do we conclude for all X and 0, 1 this sequence of functions X of the N converges point wise to the function F of X which is equal to 0.
+
+00:47:32.580 --> 00:47:42.980
+So let's draw if X is in 0, 1 and 1 if X equals 1.
+
+00:47:44.820 --> 00:47:53.160
+So I draw another picture here of what the limit looks like.
+
+00:48:00.100 --> 00:48:07.040
+And you can kind of start to see this as n gets large. Again this is becoming more vertical there but then going to 0.
+
+00:48:07.040 --> 00:48:11.920
+So for any fixed n it's converging to this picture on the right.
+
+00:48:13.540 --> 00:48:33.680
+And so we can already pick up something or at least answer one of these questions if we take them as a question about convergence or functions in the point wise sense.
+
+00:48:33.680 --> 00:48:46.380
+So we could have asked this question now right after having this definition. Suppose Fn are continuous converging point wise to a function F is the function F continuous.
+
+00:48:47.120 --> 00:48:53.900
+And what this example shows is that no that's not the case right X to the N is always continuous.
+
+00:48:53.900 --> 00:49:05.080
+So we can't just get the limit as n goes to infinity the point wise limit is given by this function which is 0 from 0 to 1 and 1 at X equals 1 which is not a continuous function.
+
+00:49:09.920 --> 00:49:35.060
+So already we're kind of seeing that point wise convergence which is this first weakest mode of convergence that we as of now can say about power series and is not good enough to ensure that the limit is even continuous because this example shows that we have a sequence of continuous functions whose point wise limit is not continuous.
+
+00:49:50.040 --> 00:49:59.300
+So as another example you should always like this kind of last chapter because you can draw a lot of pictures.
+
+00:49:59.300 --> 00:50:06.100
+So I'm going to draw pictures of Fn so it's piecewise linear.
+
+00:50:08.640 --> 00:50:20.000
+So now I can write down what the function is but I don't want to I'm just going to draw pictures. So Fn of X from 0, 1 to R. This is how it looks.
+
+00:50:20.000 --> 00:50:40.240
+So there's 1, 1 and what I do is I go to the point 1 over n and the function Fn of X is 0 up until then and then it's a linear function connecting 1 over n to 2n here.
+
+00:50:42.480 --> 00:50:55.000
+And then it's connects this point 2n 0 so I should say 1 over 2n 2n connects that to the origin.
+
+00:50:55.000 --> 00:51:24.560
+So that's Fn of X. So for example if I wanted to draw F1 would look like there's 1 0 2 1 1 1 1 1 1 1 and let's say I wanted to draw F100 what does that look like?
+
+00:51:26.960 --> 00:51:29.380
+So maybe I should make this one a little bit bigger.
+
+00:51:29.840 --> 00:51:32.560
+There's 1, 1 over 100.
+
+00:51:33.280 --> 00:51:36.360
+And then that should be 1 over 200.
+
+00:51:36.360 --> 00:51:57.160
+And then if I go up to 200, this is piecewise linear function,
+
+00:51:58.980 --> 00:52:08.080
+which is getting from 1 up to 1 over 100.
+
+00:52:08.240 --> 00:52:09.560
+So it's 0 most of the time.
+
+00:52:09.660 --> 00:52:11.580
+And it's 0 at the origin.
+
+00:52:12.020 --> 00:52:14.700
+But in this in between, it's very tall and very slim.
+
+00:52:14.700 --> 00:52:15.540
+OK?
+
+00:52:19.240 --> 00:52:38.900
+And so my claim is that at brawl x and 0, 1, limit as n goes to infinity of f in of x equals
+
+00:52:38.900 --> 00:52:39.260
+0.
+
+00:52:39.260 --> 00:52:44.480
+So this sequence of functions converges pointwise to 0.
+
+00:52:46.960 --> 00:52:46.960
+
+
+00:52:50.880 --> 00:52:52.940
+So y is this.
+
+00:52:55.320 --> 00:53:01.460
+Well, let's just give a full proof of this rather than me talking it out.
+
+00:53:02.120 --> 00:53:04.900
+I mean, I'll talk it out and give a full proof.
+
+00:53:11.260 --> 00:53:15.260
+OK, so let's look at the easiest spot first.
+
+00:53:17.900 --> 00:53:21.380
+And I don't even need the formula for these guys.
+
+00:53:21.380 --> 00:53:25.460
+I just need to know that they have this basic characteristic that their pointwise
+
+00:53:25.460 --> 00:53:31.120
+linear, I mean that their piecewise linear connecting 0 to 1 over 2.
+
+00:53:31.120 --> 00:53:35.540
+And 2 in here and then down to 1 over n 0.
+
+00:53:35.900 --> 00:53:38.420
+And then there's 0 between that and 1.
+
+00:53:40.980 --> 00:53:53.000
+So first off, if x equals 0, then all these functions are 0 at the origin.
+
+00:53:57.180 --> 00:53:58.460
+So that equals 0.
+
+00:53:58.680 --> 00:53:59.400
+So that equals 0.
+
+00:54:00.000 --> 00:54:01.540
+So that's fine.
+
+00:54:02.200 --> 00:54:08.160
+So now suppose x is in 0, 1.
+
+00:54:11.420 --> 00:54:13.120
+And so what do we want to show?
+
+00:54:21.220 --> 00:54:28.840
+I want to show limit as n goes to infinity of f n of x equals 0.
+
+00:54:31.100 --> 00:54:32.940
+And here, so what's the point here?
+
+00:54:35.940 --> 00:54:38.860
+Now there's 1, there's x.
+
+00:54:39.420 --> 00:54:51.180
+So I have to give a, well, I'm not even going to do an epsilon delta,
+
+00:54:52.000 --> 00:54:53.020
+epsilon m argument.
+
+00:54:53.180 --> 00:54:54.380
+I'm just going to show you what happens.
+
+00:54:56.080 --> 00:54:59.120
+So there's x between 0 and 1.
+
+00:54:59.680 --> 00:55:12.040
+Now let's choose a very large integer so that 1 over m is less than x.
+
+00:55:13.640 --> 00:55:18.300
+So here's 1 over m strictly to the left of x.
+
+00:55:21.360 --> 00:55:28.100
+Now what does the graph of f n of x look like for n bigger than or equal to m?
+
+00:55:28.100 --> 00:55:33.500
+It's 0 from x equals 1 to x equal 1 over m.
+
+00:55:33.840 --> 00:55:38.520
+And then shoots up and then comes back down over here to 0.
+
+00:55:38.660 --> 00:55:39.440
+But here's the point.
+
+00:55:40.180 --> 00:55:42.400
+It's 0 all the way from 1 to 1 over m.
+
+00:55:42.540 --> 00:55:46.340
+So in particular, at x, f n of x is 0.
+
+00:55:50.560 --> 00:55:57.880
+So if I look at this sequence, f n of x, which I'm trying to show converges
+
+00:55:57.880 --> 00:55:59.980
+just as 0, it is 0.
+
+00:56:00.360 --> 00:56:09.980
+No, it is f 1 of x, f 2 of x, f 2 of f n minus 1 of x.
+
+00:56:10.540 --> 00:56:23.220
+And then at f m of x, so at the now, so this is f m of x spot, it's 0.
+
+00:56:25.160 --> 00:56:27.340
+And this point is only going to the left.
+
+00:56:27.340 --> 00:56:34.800
+So for all n bigger than or equal to m, now this will be 1 over m will be to the left of x.
+
+00:56:35.040 --> 00:56:38.300
+And therefore, f n of x will be 0.
+
+00:56:38.700 --> 00:56:43.580
+So this is 0, 0, 0, 0, and so on.
+
+00:56:50.280 --> 00:56:55.080
+So I have the sequence is eventually 0.
+
+00:56:55.920 --> 00:56:57.980
+For all n, bigger than or equal to capital m.
+
+00:57:00.440 --> 00:57:00.480
+So.
+
+00:57:06.360 --> 00:57:10.280
+And therefore, the limit, I mean, it's pretty easy to take a limit of a constant sequence.
+
+00:57:15.840 --> 00:57:21.820
+And which proves that this sequence of functions converges point wise to 0.
+
+00:57:25.080 --> 00:57:28.660
+I didn't come up with this fancy example for just any old reason.
+
+00:57:28.820 --> 00:57:32.660
+It'll come back in a minute when we start answering some of these questions or asking them.
+
+00:57:33.760 --> 00:57:44.840
+Again, within the context of these two convergence, ways of converging.
+
+00:57:47.920 --> 00:57:54.000
+So far, I've only given you one definition of convergence, point wise convergence of a sequence of functions.
+
+00:57:54.640 --> 00:57:58.140
+And now I'm going to give a slightly stronger, it's not slightly, it's much stronger.
+
+00:58:00.100 --> 00:58:03.600
+Definition of convergence of a sequence of functions.
+
+00:58:05.400 --> 00:58:05.980
+So.
+
+00:58:17.560 --> 00:58:21.860
+We have a sequence of functions and a given function from s to r.
+
+00:58:22.000 --> 00:58:23.560
+s is a non-empty subset of r.
+
+00:58:24.180 --> 00:58:24.600
+Then.
+
+00:58:28.820 --> 00:58:40.880
+You say the sequence f in converges point wise or uniformly to 0.
+
+00:58:42.760 --> 00:58:43.460
+Uniformly to 0.
+
+00:58:43.860 --> 00:58:44.620
+Uniformly to.
+
+00:58:45.860 --> 00:58:46.700
+Same of a day.
+
+00:58:46.880 --> 00:58:50.400
+If I start mixing up some of my words, I'm always going to correct it.
+
+00:58:50.460 --> 00:58:52.840
+But the first word out of my mouth may not be the correct one.
+
+00:58:53.800 --> 00:58:59.540
+Converges uniformly to f of x to f.
+
+00:59:01.740 --> 00:59:07.880
+If now we have an epsilon in statement, we're all epsilon positive.
+
+00:59:08.100 --> 00:59:15.580
+There exists an m, natural number, such that we're all in bigger than or equal to m.
+
+00:59:15.580 --> 00:59:18.100
+We're all x and s.
+
+00:59:20.860 --> 00:59:26.860
+f in of x minus f of x is less than epsilon.
+
+00:59:31.320 --> 00:59:34.060
+Now I want to make a brief comment.
+
+00:59:34.460 --> 00:59:37.440
+This looks suspiciously like point wise convergence.
+
+00:59:37.600 --> 00:59:44.180
+If you just wrote down what it means for the limit as n goes to infinity of f in of x goes
+
+00:59:44.180 --> 00:59:49.160
+to f of x except there's a very subtle and important point.
+
+00:59:49.700 --> 00:59:52.480
+And that is where does the for all x and s appear.
+
+00:59:53.300 --> 01:00:00.760
+For point wise convergence, you can state point wise convergence as this being at the
+
+01:00:00.760 --> 01:00:06.000
+start of the line for all x and s, for all epsilon positive blah, blah, blah.
+
+01:00:07.800 --> 01:00:11.940
+Here, it appears at the end of the line of the quantifiers.
+
+01:00:11.940 --> 01:00:18.700
+This makes a very important difference between point wise convergence and uniform convergence.
+
+01:00:18.860 --> 01:00:25.820
+Point wise convergence means I take a point x, I stick it into f in of x that gives me a sequence of numbers.
+
+01:00:27.160 --> 01:00:31.100
+And point wise convergence says that sequence of numbers converges to f of x.
+
+01:00:31.960 --> 01:00:36.020
+For each x, I get a sequence of numbers which converges to f of x.
+
+01:00:40.180 --> 01:00:43.020
+Now uniform convergence is actually saying something stronger.
+
+01:00:43.900 --> 01:00:44.820
+I'll say that.
+
+01:00:46.740 --> 01:00:52.800
+In fact, let me draw a picture that goes with this definition.
+
+01:00:53.820 --> 01:00:57.200
+Let's make s to be an interval.
+
+01:01:00.900 --> 01:01:05.840
+Let's say my limiting function is f is given by this graph.
+
+01:01:06.920 --> 01:01:25.120
+And so what I'm going to do is basically shift the graph up and down.
+
+01:01:29.360 --> 01:01:30.380
+By epsilon.
+
+01:01:32.420 --> 01:01:34.620
+Meaning this length is epsilon.
+
+01:01:34.880 --> 01:01:37.460
+And so is this length all the way across.
+
+01:01:37.460 --> 01:01:46.100
+So let me shade this in and re-outline.
+
+01:01:46.100 --> 01:01:47.360
+Oh.
+
+01:01:53.760 --> 01:01:54.420
+Okay.
+
+01:01:55.080 --> 01:02:05.040
+So I get this little, if you like, shaded area around my function f.
+
+01:02:05.400 --> 01:02:09.540
+So this is f of x. That's the graph.
+
+01:02:09.540 --> 01:02:21.640
+And the shaded part, this is the set of all x and y such that f of x minus y is less than epsilon.
+
+01:02:22.800 --> 01:02:25.280
+Okay. So I get a little tube snaking with f.
+
+01:02:26.880 --> 01:02:34.720
+Now what uniform convergence says is that for all n bigger than or equal to some m.
+
+01:02:34.720 --> 01:02:40.800
+So given epsilon for all n bigger than or equal to m, if I were to draw the graph of f of n of x,
+
+01:02:42.880 --> 01:02:50.620
+it better fall inside this tube across all of a b.
+
+01:02:51.420 --> 01:02:54.780
+See this tube is defined for all x between a b.
+
+01:02:54.780 --> 01:03:06.400
+So it's making a statement about how close f in of x is to f of x across the entire set.
+
+01:03:07.680 --> 01:03:16.200
+Point-wise convergence just says if I put an x into f of x, then eventually that number is those numbers are getting close to f of x.
+
+01:03:16.620 --> 01:03:19.100
+Uniform convergence is a global property.
+
+01:03:19.100 --> 01:03:28.160
+It's saying across the entire set, as n is getting large, the graph of this f in is getting very close to the graph of f of x.
+
+01:03:28.540 --> 01:03:30.700
+Not just if I fix an x.
+
+01:03:32.720 --> 01:03:36.620
+The f in of x at that point are converging to f of x.
+
+01:03:38.400 --> 01:03:43.940
+So I've said a couple of times that uniform convergence is stronger than point-wise convergence.
+
+01:03:43.940 --> 01:03:47.220
+Let me actually prove this now.
+
+01:03:49.640 --> 01:03:52.660
+So let me prove that the following theorem.
+
+01:03:59.300 --> 01:04:02.260
+So if I have a sequence of functions from s to r,
+
+01:04:08.000 --> 01:04:16.280
+and f in rather than write converges to f point-wise or uniformally I'm going to put an arrow.
+
+01:04:16.280 --> 01:04:24.480
+And then with the description afterwards, uniformly on s,
+
+01:04:27.960 --> 01:04:37.240
+then this implies f in converges to f point-wise on s.
+
+01:04:38.360 --> 01:04:40.100
+So it's very simple.
+
+01:04:41.680 --> 01:04:52.140
+Again, what is the picture that's going on for uniform convergence is that f in is getting close to f across the entire set that we're looking at.
+
+01:04:52.260 --> 01:04:56.060
+So certainly at one point, which is all you need for point-wise convergence.
+
+01:04:56.260 --> 01:04:58.640
+Each fixed point we should be getting close.
+
+01:04:58.640 --> 01:05:02.980
+So let epsilon be positive.
+
+01:05:03.400 --> 01:05:07.680
+So first off, let's fix a number in the set s.
+
+01:05:11.200 --> 01:05:22.200
+So now we want to prove that the limit as n goes to infinity of f in of c equals f of c.
+
+01:05:26.300 --> 01:05:35.140
+Let epsilon be positive since f in converges to f uniformly.
+
+01:05:35.140 --> 01:05:55.480
+Similarly, uniformly there exists a natural number m0 such that for all n bigger than or equal to m0, for all x in s, f in of x minus f of x is less than epsilon.
+
+01:05:57.380 --> 01:06:06.100
+So choose m to be this m0, the m that is for this epsilon.
+
+01:06:06.740 --> 01:06:10.620
+Then we're all n bigger than or equal to m.
+
+01:06:12.380 --> 01:06:14.320
+Let's call this equation star.
+
+01:06:18.080 --> 01:06:29.740
+Star with at the single point x equals at c implies f in of c minus f of c is less than epsilon.
+
+01:06:31.260 --> 01:06:38.660
+And thus the limit as n goes to infinity of f of c f in of c equals f of c.
+
+01:06:50.980 --> 01:06:56.680
+So I don't think I have enough time to do the example that I want to do.
+
+01:06:56.780 --> 01:07:04.380
+So I'm just going to leave you on the edge of your seat by stating the following theorem that in fact, so this is a one-way street.
+
+01:07:04.380 --> 01:07:09.200
+Meaning point wise convergence does not imply uniform convergence.
+
+01:07:09.420 --> 01:07:13.880
+So we just proved uniform implies point wise, but the converse does not hold.
+
+01:07:13.880 --> 01:07:22.780
+And what we'll prove next time is for in the setting of the simple example of x to the end.
+
+01:07:47.920 --> 01:07:52.020
+And so what we'll prove next time is the following.
+
+01:07:54.640 --> 01:08:08.100
+If I take any b between 0 and 1, then f in converges to f uniformly on the set 0b.
+
+01:08:09.240 --> 01:08:11.540
+So these functions are defined on 0, 1.
+
+01:08:11.640 --> 01:08:14.980
+So they're certainly defined on 0b for b less than 1.
+
+01:08:14.980 --> 01:08:41.120
+But however, this sequence of functions does not converge uniformly to f on 0, 1.
+
+01:08:44.480 --> 01:08:55.140
+So here, this second part, since the fn's converge to f point wise on 0, 1, the second part says that this is a one-way street.
+
+01:08:55.560 --> 01:09:04.800
+This is not a two-way street. These two modes of convergence, uniform convergence, and point wise are not equivalent.
+
+01:09:06.500 --> 01:09:08.420
+All right, I think we'll stop there.
+
