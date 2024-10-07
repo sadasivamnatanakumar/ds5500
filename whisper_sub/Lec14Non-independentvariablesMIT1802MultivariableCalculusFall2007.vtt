@@ -1,0 +1,1664 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.960
+Your support will help MIT OpenCourseWare
+
+00:00:05.960 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.920 --> 00:00:12.520
+To make a donation or to view additional materials
+
+00:00:12.520 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:22.660 --> 00:00:26.620
+OK, so we are going to continue looking
+
+00:00:26.620 --> 00:00:33.020
+at what happens when we have non-independent variables.
+
+00:00:41.020 --> 00:00:44.000
+So I'm afraid we don't take deliveries during class time.
+
+00:00:44.180 --> 00:00:44.280
+Sorry.
+
+00:00:49.380 --> 00:00:50.700
+OK, please take a seat.
+
+00:00:51.080 --> 00:00:51.300
+Thanks.
+
+00:00:51.620 --> 00:00:51.740
+Oh.
+
+00:00:54.900 --> 00:00:55.640
+No, thanks.
+
+00:00:55.640 --> 00:00:55.720
+Thanks.
+
+00:00:57.740 --> 00:00:57.940
+OK.
+
+00:01:10.440 --> 00:01:13.660
+OK, so Jason, you please claim your package at the end of lecture.
+
+00:01:17.380 --> 00:01:20.460
+So last time we saw how to use Lagrange multipliers
+
+00:01:21.140 --> 00:01:24.900
+to find the minimum or maximum of a function of several variables
+
+00:01:24.900 --> 00:01:26.420
+when the variables are not independent.
+
+00:01:27.300 --> 00:01:30.440
+And today we are going to try to figure out more about relations
+
+00:01:30.440 --> 00:01:33.660
+between variables and how to handle functions that depend
+
+00:01:33.660 --> 00:01:35.660
+on several variables when they're related.
+
+00:01:37.400 --> 00:01:41.720
+So just to give you an example, in physics very often,
+
+00:01:42.180 --> 00:01:45.680
+you have functions that depend on pressure, volume,
+
+00:01:45.780 --> 00:01:51.340
+and temperature, where pressure, volume, and temperature
+
+00:01:51.340 --> 00:01:54.280
+are actually not independent, but they're related, say,
+
+00:01:54.280 --> 00:01:55.900
+by pv equals nRt.
+
+00:01:57.120 --> 00:01:59.940
+So of course, then you can substitute and express the function
+
+00:01:59.940 --> 00:02:03.520
+in terms of two of them only, but very often it's
+
+00:02:03.520 --> 00:02:04.680
+convenient to keep all three.
+
+00:02:05.000 --> 00:02:08.040
+But then we have to figure out what are the rates of change
+
+00:02:08.960 --> 00:02:12.360
+of p and v with respect to t, with respect to each other,
+
+00:02:12.960 --> 00:02:15.260
+the rate of change of f with respect to these variables,
+
+00:02:15.480 --> 00:02:15.900
+and so on.
+
+00:02:16.600 --> 00:02:18.240
+So we have to figure out what we mean
+
+00:02:18.240 --> 00:02:19.480
+by partial derivatives again.
+
+00:02:23.200 --> 00:02:31.060
+So, I mean, marginally, let's say just for the sake
+
+00:02:31.060 --> 00:02:33.240
+of notation, I'm going to think of a function of three
+
+00:02:33.240 --> 00:02:38.220
+variables xyz where the variables are related by some
+
+00:02:38.220 --> 00:02:42.940
+equation, but they will put a form in the form g of xyz
+
+00:02:42.940 --> 00:02:43.880
+equals some constant.
+
+00:02:44.300 --> 00:02:47.360
+So that's the kind of, same kind of setup as we had last time,
+
+00:02:48.720 --> 00:02:51.740
+except now we are not just looking for minima and maxima,
+
+00:02:51.740 --> 00:02:53.520
+we are trying to understand partial derivatives.
+
+00:02:59.020 --> 00:03:07.040
+So the first observation is that if xyz are related,
+
+00:03:07.860 --> 00:03:11.280
+then that means, in principle, we could solve for one of them
+
+00:03:11.280 --> 00:03:13.220
+and express it as a function of the two others.
+
+00:03:13.220 --> 00:03:19.100
+So, in particular, can we understand even without solving,
+
+00:03:19.540 --> 00:03:22.660
+maybe we cannot solve, can we understand how the variables
+
+00:03:22.660 --> 00:03:23.840
+are related to each other?
+
+00:03:27.880 --> 00:03:32.660
+So, for example, z, you can think of z as a function of x and y.
+
+00:03:33.980 --> 00:03:40.940
+So, we can ask ourselves what are the rates of change of z
+
+00:03:40.940 --> 00:03:43.280
+with respect to x, keeping y constant,
+
+00:03:44.160 --> 00:03:46.360
+or with respect to y, keeping x constant.
+
+00:03:49.680 --> 00:03:52.600
+And of course, if we can solve, then we know from your
+
+00:03:52.600 --> 00:03:54.600
+office and then we can compute these guys,
+
+00:03:54.860 --> 00:03:55.980
+but what if we can't solve?
+
+00:03:58.460 --> 00:04:04.380
+So, how do we find these things without solving?
+
+00:04:06.840 --> 00:04:08.760
+Well, so let's do an example.
+
+00:04:08.760 --> 00:04:16.940
+So, let's say that my relation is x squared plus yz plus z cube
+
+00:04:16.940 --> 00:04:17.620
+equals 8.
+
+00:04:19.280 --> 00:04:26.160
+And let's say that I'm looking near the point xyz equals 2,
+
+00:04:26.340 --> 00:04:26.840
+3, 1.
+
+00:04:27.220 --> 00:04:32.560
+So, let me check, 2 squared plus 3 times 1 plus 1 cubed is indeed 8.
+
+00:04:33.620 --> 00:04:37.140
+But now, if I change x and y a little bit, how does z change?
+
+00:04:38.160 --> 00:04:40.680
+Well, of course, I could solve for z in here.
+
+00:04:41.080 --> 00:04:42.140
+It's a cubic equation.
+
+00:04:42.140 --> 00:04:44.920
+There is actually a formula, but that formula is quite
+
+00:04:44.920 --> 00:04:45.500
+complicated.
+
+00:04:45.660 --> 00:04:46.920
+We actually don't want to do that.
+
+00:04:47.180 --> 00:04:47.920
+That's an easier way.
+
+00:04:56.060 --> 00:04:57.580
+So, how can we do it?
+
+00:04:57.960 --> 00:05:02.000
+Well, let's look at the differential.
+
+00:05:07.680 --> 00:05:10.120
+Of this constraint quantity.
+
+00:05:10.740 --> 00:05:14.340
+So, if we call this g, let's look at dg.
+
+00:05:18.700 --> 00:05:21.000
+So, well, what's the differential of this?
+
+00:05:21.740 --> 00:05:29.520
+So, differential of x squared is 2x dx plus, I think,
+
+00:05:29.660 --> 00:05:31.040
+there's a z dy.
+
+00:05:31.820 --> 00:05:35.240
+There's a y dz and there's also a free z squared.
+
+00:05:38.120 --> 00:05:41.140
+You can get this either by implicit differentiation
+
+00:05:41.140 --> 00:05:46.140
+and the product rule, or you can get this just by putting here
+
+00:05:46.140 --> 00:05:49.620
+and here the partial derivatives of this with respect
+
+00:05:49.620 --> 00:05:50.620
+to x, y, and z.
+
+00:05:54.040 --> 00:05:55.940
+Any questions about how I got this?
+
+00:05:57.760 --> 00:05:58.440
+No, okay.
+
+00:06:00.240 --> 00:06:02.360
+So, now, what do I do with this?
+
+00:06:03.060 --> 00:06:05.880
+Well, this represents somehow variations of g.
+
+00:06:07.360 --> 00:06:10.600
+But, well, I've set this thing equal to 8,
+
+00:06:11.580 --> 00:06:13.180
+and 8 is a constant.
+
+00:06:13.980 --> 00:06:15.000
+So, it doesn't change.
+
+00:06:16.000 --> 00:06:22.040
+So, in fact, well, we can set this to zero,
+
+00:06:30.000 --> 00:06:32.840
+because, well, they call this g,
+
+00:06:35.520 --> 00:06:41.320
+then g equals 8 is constant, that means we set dg equal to zero.
+
+00:06:43.340 --> 00:06:43.340
+
+
+00:06:45.040 --> 00:06:49.260
+So, now, let's just plug in some values at this point
+
+00:06:53.400 --> 00:06:57.720
+that tells us, well, so if x equals 2, that's 4 dx,
+
+00:06:58.860 --> 00:07:05.620
+plus z is 1, so dy, plus y plus free z squared
+
+00:07:06.200 --> 00:07:09.960
+should be 6 dz equals 0.
+
+00:07:11.300 --> 00:07:15.780
+And now, this equation here tells us about a relation
+
+00:07:15.780 --> 00:07:18.160
+between the changes in x, y, and z, near that point.
+
+00:07:18.600 --> 00:07:20.620
+It tells us how, if you change x and y,
+
+00:07:21.140 --> 00:07:25.380
+well, how z will change, or it tells you, actually,
+
+00:07:25.940 --> 00:07:27.620
+anything you might want to know about the relations
+
+00:07:27.620 --> 00:07:28.480
+between these variables.
+
+00:07:29.660 --> 00:07:32.240
+So, for example, you can move dz to that side,
+
+00:07:32.240 --> 00:07:34.580
+and then express dz in terms of dx and dy,
+
+00:07:34.960 --> 00:07:36.860
+or you can move dy to that side,
+
+00:07:37.380 --> 00:07:40.280
+and express dy in terms of dx and dz, and so on.
+
+00:07:41.020 --> 00:07:42.480
+It tells you, at the level of derivatives,
+
+00:07:43.160 --> 00:07:45.720
+how each of the variables depends on the two of us.
+
+00:07:49.020 --> 00:07:52.220
+Okay, so just to clarify this,
+
+00:07:55.540 --> 00:07:59.100
+if we want to view z as a function of x and y,
+
+00:08:00.620 --> 00:08:04.060
+then what we will do is we'll just move the dz
+
+00:08:04.060 --> 00:08:07.940
+to the other side, and it will tell us dz equals
+
+00:08:09.380 --> 00:08:13.600
+minus 1 over 6 times 4 dx plus dy.
+
+00:08:17.440 --> 00:08:22.140
+And so, that should tell you that partial z
+
+00:08:22.220 --> 00:08:26.260
+over partial x is minus 4 over 6,
+
+00:08:26.380 --> 00:08:30.140
+well, that's minus 2 thirds, and partial z
+
+00:08:30.140 --> 00:08:34.440
+over partial y is going to be minus 1, 6.
+
+00:08:39.900 --> 00:08:41.700
+Another way to think about this,
+
+00:08:42.540 --> 00:08:44.980
+when we compute partial z over partial x,
+
+00:08:45.720 --> 00:08:48.900
+that means that, actually, we keep y constant.
+
+00:08:50.300 --> 00:08:54.060
+Okay, let me actually add some subtitles here.
+
+00:08:54.840 --> 00:08:57.000
+So here, that means we keep y constant,
+
+00:08:59.680 --> 00:09:03.200
+and so if we keep y constant, another way to think about it
+
+00:09:03.200 --> 00:09:07.060
+is we set dy to zero.
+
+00:09:07.460 --> 00:09:08.960
+We set dy equals zero.
+
+00:09:09.620 --> 00:09:13.900
+So if we do that, we get dx equals negative 4, 6 dx.
+
+00:09:15.360 --> 00:09:18.320
+That tells us the rate of change of z with respect to x.
+
+00:09:19.840 --> 00:09:28.300
+Here, we set x constant, so that means we set dx equal to zero.
+
+00:09:29.500 --> 00:09:33.920
+And if we set dx equal to zero, then we have dz equals negative 1, 6th of dy,
+
+00:09:34.260 --> 00:09:36.540
+that tells us the rate of change of z with respect to y.
+
+00:09:39.020 --> 00:09:41.140
+Okay, any questions about that?
+
+00:09:46.260 --> 00:09:46.840
+No?
+
+00:09:48.860 --> 00:09:49.800
+What? Yes?
+
+00:09:50.900 --> 00:09:56.020
+Can you explain why we have run dt when dx and dy into partial?
+
+00:09:56.500 --> 00:09:58.800
+Yes, okay, let me explain that again.
+
+00:09:59.480 --> 00:10:02.880
+So we found an expression for dz in terms of dx and dy,
+
+00:10:03.380 --> 00:10:08.040
+that means that this thing is the total differential of z
+
+00:10:08.560 --> 00:10:09.000
+and z is the total differential of z,
+
+00:10:09.000 --> 00:10:10.200
+so that means that we have run dt as a function of x and y.
+
+00:10:11.700 --> 00:10:14.840
+Okay, and so the coefficients of dx and dy are the partial.
+
+00:10:16.420 --> 00:10:18.100
+Or another way to think about it,
+
+00:10:18.480 --> 00:10:20.460
+if you want to know partial z partial x,
+
+00:10:20.660 --> 00:10:22.200
+it means you set y to be constant.
+
+00:10:22.680 --> 00:10:25.860
+Setting y to be constant means that you will put zero
+
+00:10:25.860 --> 00:10:27.320
+in the place of dy.
+
+00:10:27.820 --> 00:10:31.580
+So you'll be left with dz equals minus 4, 6 dx.
+
+00:10:32.580 --> 00:10:35.780
+And that will give you the rate of change of z with respect to x
+
+00:10:35.780 --> 00:10:37.160
+when you keep y constant.
+
+00:10:38.420 --> 00:10:38.420
+
+
+00:10:41.760 --> 00:10:44.000
+So various ways to think about this,
+
+00:10:44.160 --> 00:10:46.300
+but hopefully it makes sense.
+
+00:10:52.480 --> 00:10:53.000
+Okay.
+
+00:10:54.980 --> 00:10:58.200
+So how do we think about this in general?
+
+00:11:04.000 --> 00:11:10.620
+Well, if we know that g of x, y, z equals constant,
+
+00:11:15.380 --> 00:11:24.900
+then dg, which is g sub x dx plus g sub y dy plus g sub z dz,
+
+00:11:25.840 --> 00:11:27.680
+should be set equal to zero.
+
+00:11:28.480 --> 00:11:28.960
+Okay.
+
+00:11:31.180 --> 00:11:35.340
+And now we can solve for whichever variable we want to express
+
+00:11:35.340 --> 00:11:36.340
+in terms of the others.
+
+00:11:38.340 --> 00:11:42.520
+So, for example, if we care about z as a function of x and y,
+
+00:11:47.500 --> 00:11:47.980
+it's...
+
+00:11:53.120 --> 00:12:01.240
+We'll get that dz is negative g sub x of g sub z dx,
+
+00:12:02.420 --> 00:12:08.440
+sorry, minus g sub y of g sub z dy.
+
+00:12:09.720 --> 00:12:12.700
+And so if we want partial z,
+
+00:12:18.000 --> 00:12:19.120
+then we can solve for other partial x.
+
+00:12:20.600 --> 00:12:24.360
+Well, so one way is just to say that's going to be the coefficient
+
+00:12:24.360 --> 00:12:27.540
+of dx in here, or just to write down the other way.
+
+00:12:28.620 --> 00:12:31.360
+We are setting y equals constant.
+
+00:12:33.560 --> 00:12:36.920
+So that means we set dy equal to zero.
+
+00:12:38.920 --> 00:12:39.120
+Okay.
+
+00:12:39.300 --> 00:12:47.220
+And then we get dz equals negative g sub x of our g sub z dx.
+
+00:12:47.980 --> 00:12:55.120
+So that means partial z of our partial x is minus gx over gz.
+
+00:12:56.200 --> 00:12:58.580
+And see, that's a very counter-intuitive formula,
+
+00:12:58.960 --> 00:13:01.900
+because you have this minus sign that you somehow probably
+
+00:13:01.900 --> 00:13:05.960
+couldn't have seen come, you know, if you hadn't actually derived things
+
+00:13:05.960 --> 00:13:06.380
+this way.
+
+00:13:07.800 --> 00:13:12.780
+I mean, it's pretty surprising to see that minus sign come out of nowhere
+
+00:13:12.780 --> 00:13:13.940
+the first time you see it.
+
+00:13:18.440 --> 00:13:18.860
+Okay.
+
+00:13:20.300 --> 00:13:25.400
+So now we know how to find the rate of change of constrained variables
+
+00:13:25.400 --> 00:13:26.620
+with respect to each other.
+
+00:13:28.780 --> 00:13:30.680
+You can apply the same to find, you know,
+
+00:13:31.200 --> 00:13:33.920
+if you want partial x, partial y or any of them, you can do it.
+
+00:13:36.700 --> 00:13:38.200
+Any questions so far?
+
+00:13:40.580 --> 00:13:41.120
+No?
+
+00:13:44.360 --> 00:13:44.900
+Okay.
+
+00:13:47.500 --> 00:13:55.420
+So before we proceed further, I should probably expose some
+
+00:13:55.420 --> 00:13:57.580
+problem with the notations that we have so far.
+
+00:13:59.400 --> 00:14:01.620
+So let me try to get you a bit confused.
+
+00:14:03.080 --> 00:14:03.240
+Okay.
+
+00:14:04.660 --> 00:14:06.780
+So let's take a very simple example.
+
+00:14:07.300 --> 00:14:11.900
+Let's say I have a function f of xy equals x plus y.
+
+00:14:13.200 --> 00:14:13.260
+Okay.
+
+00:14:13.420 --> 00:14:15.100
+So far, it doesn't sound very confusing.
+
+00:14:18.140 --> 00:14:21.620
+And then I can write partial f of our partial x.
+
+00:14:22.620 --> 00:14:24.940
+And I think you all know how to compute it.
+
+00:14:25.180 --> 00:14:27.460
+It's going to be dressed one.
+
+00:14:28.100 --> 00:14:30.100
+Okay. So far we are pretty happy.
+
+00:14:33.280 --> 00:14:35.140
+Now, let's do a change of variables.
+
+00:14:35.140 --> 00:14:42.700
+Let's set x equals u and y equals u plus v.
+
+00:14:43.880 --> 00:14:45.700
+Okay. It's not a very complicated change of variables.
+
+00:14:46.340 --> 00:14:48.400
+But let's do it.
+
+00:14:50.780 --> 00:14:53.140
+Then f in terms of u and v.
+
+00:14:54.720 --> 00:14:55.320
+Well.
+
+00:14:56.420 --> 00:15:02.500
+So f, remember, was x plus y becomes u plus u plus v.
+
+00:15:06.460 --> 00:15:08.360
+What's partial f of our partial u?
+
+00:15:12.980 --> 00:15:13.540
+It's two.
+
+00:15:14.720 --> 00:15:16.840
+So x and u are the same thing.
+
+00:15:18.060 --> 00:15:20.820
+Partial f of our partial x and partial f of our partial u.
+
+00:15:21.720 --> 00:15:24.220
+Well, unless you believe that one equals two,
+
+00:15:24.860 --> 00:15:26.000
+they are really not the same thing.
+
+00:15:26.460 --> 00:15:26.460
+
+
+00:15:26.460 --> 00:15:26.460
+
+
+00:15:26.800 --> 00:15:31.920
+So that's an interesting slightly strange phenomenon.
+
+00:15:35.360 --> 00:15:36.520
+x equals u.
+
+00:15:37.340 --> 00:15:41.900
+But partial f, partial x is not the same as partial f, partial u.
+
+00:15:49.540 --> 00:15:51.620
+So how do we get rid of this contradiction?
+
+00:15:54.320 --> 00:15:57.440
+Well, we have to think a bit more about what these notations mean.
+
+00:15:58.220 --> 00:15:58.220
+
+
+00:15:58.980 --> 00:16:00.960
+So when we write partial f of our partial x,
+
+00:16:01.580 --> 00:16:05.800
+it means that we are varying x, keeping y constant.
+
+00:16:07.460 --> 00:16:09.580
+When we write partial f of our partial u,
+
+00:16:09.820 --> 00:16:11.960
+it means we are varying u, keeping v constant.
+
+00:16:12.840 --> 00:16:15.160
+So varying u or varying x is the same thing.
+
+00:16:15.800 --> 00:16:19.180
+But keeping v constant or keeping y constant are not the same thing.
+
+00:16:19.180 --> 00:16:22.920
+If I keep y constant, then when I change x,
+
+00:16:24.280 --> 00:16:27.400
+so when I change u, then v will also have to change
+
+00:16:27.400 --> 00:16:28.720
+so that their sum stays the same.
+
+00:16:29.680 --> 00:16:31.000
+Or if you prefer the other way around,
+
+00:16:31.700 --> 00:16:33.260
+when I do this one, I keep v constant.
+
+00:16:33.400 --> 00:16:36.420
+If I keep v constant and I change u, then y will change.
+
+00:16:36.920 --> 00:16:37.700
+It won't be constant.
+
+00:16:39.180 --> 00:16:44.300
+So that means, well, life looked quite nice and easy
+
+00:16:44.300 --> 00:16:45.100
+with these notations.
+
+00:16:45.100 --> 00:16:50.160
+But what's dangerous about them is they're not making explicit
+
+00:16:50.160 --> 00:16:52.260
+what it is exactly, but we are keeping constant.
+
+00:16:55.540 --> 00:17:01.700
+Okay, so just to write things.
+
+00:17:03.420 --> 00:17:07.040
+So here we change u and x by the same thing,
+
+00:17:07.260 --> 00:17:10.260
+but we keep y constant.
+
+00:17:14.160 --> 00:17:17.940
+While here we change u, which is still the same thing as x,
+
+00:17:19.260 --> 00:17:23.760
+but what we keep constant is v,
+
+00:17:24.240 --> 00:17:28.240
+or in terms of x and y, that's y minus x constant.
+
+00:17:30.240 --> 00:17:31.340
+And that's y, not the same.
+
+00:17:34.680 --> 00:17:36.980
+So whenever there's any risk of confusion,
+
+00:17:37.180 --> 00:17:39.080
+so not in the cases that we had before,
+
+00:17:39.080 --> 00:17:41.720
+because in what we've done until now,
+
+00:17:41.940 --> 00:17:43.040
+we didn't really have any problem.
+
+00:17:43.920 --> 00:17:45.500
+But in a situation like this,
+
+00:17:45.980 --> 00:17:49.040
+to clarify things, we'll actually say explicitly
+
+00:17:50.460 --> 00:17:52.500
+what it is that we want to keep constant.
+
+00:18:04.160 --> 00:18:06.080
+Okay, so what's going to be our new notation?
+
+00:18:07.080 --> 00:18:12.360
+Well, so it's not particularly pleasant,
+
+00:18:12.480 --> 00:18:15.640
+because it uses now a subscript not to indicate
+
+00:18:15.640 --> 00:18:16.700
+what you're differentiating,
+
+00:18:16.960 --> 00:18:18.360
+but rather what you're holding constant.
+
+00:18:19.360 --> 00:18:21.620
+So that's quite a conflict of notation
+
+00:18:21.620 --> 00:18:23.400
+with what we had before.
+
+00:18:24.820 --> 00:18:27.340
+I think I can safely blame it on physicists or chemists.
+
+00:18:27.800 --> 00:18:28.060
+So...
+
+00:18:32.140 --> 00:18:34.900
+Okay, so this one means we keep y constant.
+
+00:18:39.560 --> 00:18:44.040
+And partial f of a partial u with v health constant,
+
+00:18:47.240 --> 00:18:47.940
+similarly.
+
+00:18:50.500 --> 00:18:54.180
+Okay, so now what happens is we no longer have any contradiction.
+
+00:18:54.820 --> 00:18:57.420
+We have partial f of our partial x
+
+00:18:59.220 --> 00:19:06.060
+with y constant is different from partial f of our partial f.
+
+00:19:06.080 --> 00:19:07.960
+So we have partial x with v constant,
+
+00:19:08.420 --> 00:19:11.440
+which is the same as partial f of our partial u
+
+00:19:12.080 --> 00:19:12.900
+with v constant.
+
+00:19:15.400 --> 00:19:17.060
+Okay, so this guy is one,
+
+00:19:17.320 --> 00:19:19.340
+and this guy is two.
+
+00:19:24.520 --> 00:19:27.780
+So now we can safely use the fact that x equals u
+
+00:19:28.400 --> 00:19:31.560
+if we are keeping track of what is actually health constant.
+
+00:19:35.440 --> 00:19:38.260
+Okay, so now that's going to be particularly important
+
+00:19:38.260 --> 00:19:40.420
+when we have variables that are related.
+
+00:19:41.560 --> 00:19:43.700
+Because let's say now that I have a function
+
+00:19:43.700 --> 00:19:46.740
+that depends on x, y, and z, but x, y, and z are related.
+
+00:19:47.620 --> 00:19:49.960
+Then it means that, you know,
+
+00:19:50.880 --> 00:19:55.420
+if I look at, say, x and y as my independent variables
+
+00:19:55.920 --> 00:19:58.020
+and z as a function of x and y,
+
+00:19:58.500 --> 00:20:00.800
+then it means that when I do partial say,
+
+00:20:00.800 --> 00:20:03.720
+with respect to x, I will hold y constant,
+
+00:20:03.960 --> 00:20:06.660
+but I will let z vary as a function of x and y.
+
+00:20:08.100 --> 00:20:09.740
+Or I could do it the other way around.
+
+00:20:09.920 --> 00:20:12.560
+I could very x keep z constant
+
+00:20:12.560 --> 00:20:14.640
+and let y be a function of x and z.
+
+00:20:15.080 --> 00:20:16.800
+And so I will need to use this kind of notation
+
+00:20:16.800 --> 00:20:18.100
+to indicate which one I mean.
+
+00:20:28.780 --> 00:20:30.300
+Okay, any questions?
+
+00:20:34.400 --> 00:20:34.600
+No?
+
+00:20:36.360 --> 00:20:39.280
+All right, so let's try to do an example
+
+00:20:39.280 --> 00:20:41.820
+where we have a function that depends on variables
+
+00:20:41.820 --> 00:20:42.500
+that are related.
+
+00:20:43.420 --> 00:20:48.820
+Okay, so I don't want to do one with pv equals an RT
+
+00:20:48.820 --> 00:20:51.540
+because probably, I mean, if you've seen it,
+
+00:20:51.780 --> 00:20:53.060
+then you've seen too much of it.
+
+00:20:53.200 --> 00:20:57.100
+And if you haven't seen it, then maybe it's not the best example.
+
+00:20:57.380 --> 00:20:59.820
+So let's do a geometric example.
+
+00:21:02.560 --> 00:21:05.820
+Okay, so let's look at the array of the triangle.
+
+00:21:13.460 --> 00:21:15.380
+So let's say I have a triangle,
+
+00:21:15.840 --> 00:21:19.820
+and my variables will be the sides A and B,
+
+00:21:20.540 --> 00:21:22.460
+and the angle here theta.
+
+00:21:24.320 --> 00:21:25.860
+Okay, so what's the array of this triangle?
+
+00:21:26.800 --> 00:21:28.900
+Well, it's base times height of R2,
+
+00:21:29.880 --> 00:21:33.080
+so it's 1 half of the base is A,
+
+00:21:33.080 --> 00:21:36.400
+and the height is B sine theta.
+
+00:21:39.240 --> 00:21:42.860
+Okay, so that's a function of A, B, and theta.
+
+00:21:44.960 --> 00:21:48.360
+Now, let's say, actually, there's a relation between A, B, and theta
+
+00:21:48.360 --> 00:21:49.400
+that I didn't tell you about.
+
+00:21:50.220 --> 00:21:55.720
+Namely, actually, I want to assume that it's a right triangle.
+
+00:21:57.240 --> 00:22:05.380
+Okay, so let's now assume it's a right triangle
+
+00:22:11.260 --> 00:22:13.680
+with, let's say, the hypotenuse is B.
+
+00:22:14.140 --> 00:22:17.760
+So we have a right angle here, actually.
+
+00:22:19.040 --> 00:22:21.880
+So A is here, B is here, theta is here.
+
+00:22:21.880 --> 00:22:28.960
+So saying that it's a right triangle is the same thing as saying that A equals B cosine theta.
+
+00:22:30.540 --> 00:22:32.140
+Okay, so that's our constraint.
+
+00:22:34.200 --> 00:22:36.580
+That's the relation between A, B, and theta.
+
+00:22:37.720 --> 00:22:44.640
+And this is a function of A, B, and theta.
+
+00:22:44.640 --> 00:22:54.900
+Okay, let's say that we want to understand how the area depends on theta.
+
+00:22:57.220 --> 00:23:01.080
+What's the rate of change of the area of this triangle with respect to theta?
+
+00:23:02.040 --> 00:23:04.160
+So I claim there's various answers.
+
+00:23:04.160 --> 00:23:09.760
+I can think of at least three possible answers.
+
+00:23:43.100 --> 00:23:53.780
+So what can we possibly mean by the rate of change of A with respect to theta?
+
+00:23:55.020 --> 00:23:58.440
+So these are all things that we might want to call partial A, partial theta.
+
+00:23:58.440 --> 00:24:04.440
+But of course we'll have to actually use different notations to distinguish them.
+
+00:24:07.720 --> 00:24:15.160
+So the first way that we actually already know about is if we just forget about the fact that the variables are related.
+
+00:24:16.840 --> 00:24:23.260
+Okay, so if we just think of little A, B, and theta as independent variables,
+
+00:24:23.640 --> 00:24:26.160
+and we just change theta keeping A and B constant.
+
+00:24:44.860 --> 00:24:50.100
+So that's exactly what we meant by partial A, partial theta.
+
+00:24:50.920 --> 00:24:53.640
+We are not putting any constraint.
+
+00:24:56.800 --> 00:25:04.360
+So just to use some new notation that would be the rate of change of A with respect to theta,
+
+00:25:04.540 --> 00:25:06.280
+keeping A and B fixed at the same time.
+
+00:25:07.100 --> 00:25:10.560
+Of course if we are keeping A and B fixed and we are changing theta,
+
+00:25:11.180 --> 00:25:14.800
+it means we completely ignore this property of being a right triangle.
+
+00:25:14.800 --> 00:25:21.000
+So in fact it corresponds to changing the area by changing the angle, keeping these lengths fixed.
+
+00:25:21.660 --> 00:25:23.400
+And of course we lose the right angle.
+
+00:25:24.300 --> 00:25:30.500
+When we rotate this side here, then the angle doesn't stay the right angle.
+
+00:25:31.840 --> 00:25:33.140
+And that one we know how to compute.
+
+00:25:35.820 --> 00:25:38.220
+Because it's the one we've been computing all along.
+
+00:25:39.420 --> 00:25:43.000
+So that means we keep A and B fixed.
+
+00:25:44.660 --> 00:25:53.740
+And then, so let's see, what's the derivative of A with respect to theta?
+
+00:25:53.920 --> 00:25:58.420
+I guess it's 1 half AB cosine theta.
+
+00:26:02.540 --> 00:26:03.880
+Okay, that one we know.
+
+00:26:05.700 --> 00:26:06.860
+Any questions?
+
+00:26:11.060 --> 00:26:14.020
+No? Okay, the two other guys will be more interesting.
+
+00:26:16.120 --> 00:26:20.440
+So far I'm not really doing anything with my constraint.
+
+00:26:21.460 --> 00:26:24.640
+Let's say that actually I do want to keep a right angle.
+
+00:26:25.720 --> 00:26:28.680
+Then when I change theta, there's two options.
+
+00:26:28.680 --> 00:26:30.540
+One is I keep A constant.
+
+00:26:31.600 --> 00:26:33.880
+And then of course B will have to change.
+
+00:26:34.140 --> 00:26:38.980
+Because if this width stays the same, then when I change theta, the height increases.
+
+00:26:39.240 --> 00:26:40.440
+And then this side length increases.
+
+00:26:42.320 --> 00:26:46.660
+The other option is I change the angle, keeping B constant.
+
+00:26:47.060 --> 00:26:49.000
+So actually this side stays the same length.
+
+00:26:49.320 --> 00:26:50.880
+But then A has to become a bit shorter.
+
+00:26:53.040 --> 00:26:56.860
+And of course the area will change in different ways depending on what I do.
+
+00:27:01.220 --> 00:27:03.620
+So that's why I say we have very different answers.
+
+00:27:04.800 --> 00:27:11.340
+So the next one is keep, I thought which one I said first.
+
+00:27:11.520 --> 00:27:12.780
+Let's say keep A constant.
+
+00:27:18.040 --> 00:27:22.160
+And that means that B will change.
+
+00:27:26.060 --> 00:27:28.420
+B is going to be some function of A and theta.
+
+00:27:29.520 --> 00:27:31.540
+Well in fact here we know what the function is.
+
+00:27:32.220 --> 00:27:34.240
+Because we can solve the constraint.
+
+00:27:34.500 --> 00:27:36.760
+Namely B is A over cosine theta.
+
+00:27:39.460 --> 00:27:41.200
+But we don't actually need to know that.
+
+00:27:45.200 --> 00:27:48.120
+So that the triangle.
+
+00:27:54.280 --> 00:27:55.700
+So that we keep a right angle.
+
+00:28:00.960 --> 00:28:09.040
+And so the name we will have for this is partial A of a partial theta with A held constant.
+
+00:28:12.220 --> 00:28:17.860
+And the fact that I'm not putting B in my subscript there means that actually B will be a dependent variable.
+
+00:28:17.860 --> 00:28:21.300
+It changes in whatever way it has to change.
+
+00:28:22.060 --> 00:28:26.380
+So that when theta changes A stays the same.
+
+00:28:26.520 --> 00:28:29.140
+Well B changes so that we keep a right angle.
+
+00:28:37.540 --> 00:28:44.900
+And the third guy is the one where we actually keep B constant.
+
+00:28:47.980 --> 00:28:53.200
+And now A we think of A as a function of B and theta.
+
+00:28:53.940 --> 00:28:56.240
+And it changes so that we keep a right angle.
+
+00:28:56.240 --> 00:29:00.580
+So actually as a function of B and theta it's given over.
+
+00:29:00.700 --> 00:29:03.620
+It's given over A equals B cosine theta.
+
+00:29:06.400 --> 00:29:12.080
+And so this guy is called partial A of a partial theta with B held constant.
+
+00:29:16.820 --> 00:29:18.600
+So we've just defined them.
+
+00:29:18.760 --> 00:29:20.560
+We don't know yet how to compute these things.
+
+00:29:20.820 --> 00:29:21.800
+That's what we're going to do now.
+
+00:29:21.800 --> 00:29:24.960
+But it's the definition and what these things mean.
+
+00:29:25.200 --> 00:29:26.120
+Is that clear to everyone?
+
+00:29:29.740 --> 00:29:30.460
+Yes.
+
+00:29:31.040 --> 00:29:31.180
+Okay.
+
+00:29:32.880 --> 00:29:33.600
+Yes.
+
+00:29:37.240 --> 00:29:41.560
+Okay. So the second answer again.
+
+00:29:42.040 --> 00:29:49.960
+So one way to ask ourselves how does the area depend on theta is to say well.
+
+00:29:49.960 --> 00:29:59.380
+So theta will actually look at the area of a right triangle as a function of A and theta only by solving for B.
+
+00:30:00.460 --> 00:30:05.880
+And then we'll change theta, keep A constant and ask how does the area change?
+
+00:30:07.200 --> 00:30:13.760
+So when we do that, when we change theta and keep A the same, then B has to change so that it stays a right triangle.
+
+00:30:13.760 --> 00:30:18.980
+So that this relation still holds, that requires us to change B.
+
+00:30:20.320 --> 00:30:29.500
+So when we write partial A of a partial theta with A constant, it means that actually B will be the dependent variable.
+
+00:30:29.880 --> 00:30:31.080
+It depends on A and theta.
+
+00:30:31.740 --> 00:30:42.580
+And so the area depends on theta not only because theta is in the formula, but also because B changes and B is in the formula.
+
+00:30:45.920 --> 00:30:46.360
+Yes.
+
+00:30:46.840 --> 00:30:50.600
+So we can say that A constant will be keep theta constant.
+
+00:30:51.640 --> 00:30:54.160
+No, no, we don't keep theta constant with very theta.
+
+00:30:54.420 --> 00:30:57.940
+The goal is to see how things change when I change theta by a little bit.
+
+00:30:59.320 --> 00:31:09.100
+So if I change theta a little bit in this one, if I change theta a little bit and I keep A the same, then B has to change also in some way so that it stays a right triangle.
+
+00:31:09.100 --> 00:31:15.440
+And then because theta and B change, that causes the area to change.
+
+00:31:16.780 --> 00:31:18.260
+So maybe I should explain that again.
+
+00:31:19.480 --> 00:31:20.860
+So theta changes.
+
+00:31:22.940 --> 00:31:24.340
+A is constant.
+
+00:31:27.240 --> 00:31:28.660
+But we have the constraint.
+
+00:31:29.500 --> 00:31:31.440
+A equals B cosine theta.
+
+00:31:32.000 --> 00:31:34.040
+That means that B changes.
+
+00:31:36.200 --> 00:31:40.240
+And then the question is how does A change?
+
+00:31:43.100 --> 00:31:47.800
+Well, it will change in part because theta changes and in part because B changes.
+
+00:31:48.300 --> 00:31:52.100
+But we want to know how it depends on theta in this situation.
+
+00:31:53.600 --> 00:31:53.880
+Yes.
+
+00:31:54.740 --> 00:32:01.860
+Why is it a large situation where a theta increases B and A are not constant, but they try to do this too.
+
+00:32:02.800 --> 00:32:03.960
+That's a very good question.
+
+00:32:04.200 --> 00:32:06.860
+So what about I don't keep A and B constant?
+
+00:32:07.900 --> 00:32:09.800
+Well, then there's too many choices.
+
+00:32:10.040 --> 00:32:12.820
+So I have to decide actually how I'm going to change things.
+
+00:32:13.320 --> 00:32:20.680
+See, if I just say I have this relation, that means I have two independent variables left, whichever two of the three I want.
+
+00:32:20.760 --> 00:32:25.460
+But I still have to specify two of them to say exactly which triangle I mean.
+
+00:32:27.740 --> 00:32:33.540
+So I cannot ask myself just how will it change if I change theta and do random things with A and B?
+
+00:32:33.760 --> 00:32:35.140
+It depends what I do with A and B.
+
+00:32:36.180 --> 00:32:41.440
+Of course, I could choose to change them simultaneously, but then I have to specify how exactly I'm going to do that.
+
+00:32:45.020 --> 00:32:52.060
+Yes, if you wanted to, indeed, we could also change things in such a way that the third side remains constant.
+
+00:32:52.060 --> 00:32:55.740
+And that would be yet a different way to attack the problem.
+
+00:32:56.220 --> 00:32:59.300
+I mean, we don't have a good notation for this here because we didn't give it a name.
+
+00:32:59.600 --> 00:33:06.080
+But, yeah, I mean, we could call this guy C and then we'd have a different formula and so on.
+
+00:33:08.800 --> 00:33:12.820
+So I mean, I'm not looking at it for simplicity, but you could have many more.
+
+00:33:16.740 --> 00:33:33.080
+I mean, in general, you will want, you know, once you have a set of nice natural variables, you will want to look mostly at situations where one of the variable changes, some of them are held fixed and then some dependent variable does whatever it must so that the constraint keeps holding.
+
+00:33:36.260 --> 00:33:39.260
+Okay, so let's try to compute one of them.
+
+00:33:39.360 --> 00:33:42.720
+Let's say I decide that we'll compute this one.
+
+00:33:44.000 --> 00:33:48.660
+Okay, let's see how we can compute partial A, partial theta with A held fixed.
+
+00:34:21.900 --> 00:34:32.280
+Okay, so let's try to compute partial A, partial theta with A held constant.
+
+00:34:34.420 --> 00:34:37.000
+So let's see three different ways of doing that.
+
+00:34:40.020 --> 00:34:43.720
+So let me start with method zero.
+
+00:34:45.180 --> 00:34:51.100
+Okay, it's not a real method. That's why I'm not giving it a positive number.
+
+00:34:51.980 --> 00:34:58.400
+So that one is just we solve for B and we remove B from the formulas.
+
+00:34:58.400 --> 00:35:08.180
+Okay, so here it works well because we know how to solve for B, but I'm not considering this to be a real method because in general, we don't know how to do that.
+
+00:35:08.560 --> 00:35:17.820
+I mean, if we use, you know, at the beginning I had this relation that was an equation of degree three, you don't really want to solve your equation for the dependent variable usually.
+
+00:35:18.840 --> 00:35:19.440
+Here we can.
+
+00:35:19.440 --> 00:35:27.160
+So solve for B and substitute.
+
+00:35:32.100 --> 00:35:33.980
+So how do we do that?
+
+00:35:34.700 --> 00:35:38.580
+Well, the constraint is A equals B cosine theta.
+
+00:35:39.840 --> 00:35:44.700
+That means B is A over cosine theta.
+
+00:35:46.220 --> 00:35:50.080
+So I'm a few know that as a second theta, that's the same.
+
+00:35:56.100 --> 00:36:01.000
+And now if we express the area in terms of A and theta only.
+
+00:36:01.000 --> 00:36:19.380
+A is one half of AB cosine, sorry, AB sine theta is now one half of A squared sine theta over cosine theta.
+
+00:36:20.100 --> 00:36:24.860
+Or if you prefer, one half of A square tangent theta.
+
+00:36:28.400 --> 00:36:37.460
+Well, now that it's only a function of A and theta, I know what it means to take the partial derivative with respect to theta, keeping A constant.
+
+00:36:37.740 --> 00:36:38.660
+I know how to do it.
+
+00:36:47.780 --> 00:36:53.220
+So partial A over partial theta with A held constant.
+
+00:36:54.800 --> 00:37:02.420
+Well, if A is a constant then I get this one half A squared coming out times what's the derivative of tangent?
+
+00:37:03.180 --> 00:37:04.100
+Second squared.
+
+00:37:07.100 --> 00:37:07.780
+Very good.
+
+00:37:09.220 --> 00:37:12.340
+If you're European and you've never heard of second, that's one of our cosine.
+
+00:37:13.880 --> 00:37:19.060
+And if you know the derivative has one plus tangent squared, that's the same thing and it's also correct.
+
+00:37:21.300 --> 00:37:23.420
+Okay, so that's one way of doing it.
+
+00:37:24.760 --> 00:37:29.640
+But as I've already said, it doesn't get us very far if we don't know how to solve for B.
+
+00:37:30.320 --> 00:37:33.920
+I mean, we really used the fact that we can solve for B and get rid of it.
+
+00:37:38.320 --> 00:37:40.380
+So there's two systematic methods.
+
+00:37:47.380 --> 00:37:52.020
+And let's say the basic rule is that you should give both of them a chance.
+
+00:37:52.580 --> 00:37:58.000
+You should see which one you prefer and you should be able to use one of the other on the exam.
+
+00:37:58.860 --> 00:38:03.300
+Okay, most likely you will actually have a choice between one of the other.
+
+00:38:03.300 --> 00:38:06.800
+It will be up to you to decide which one you want to use.
+
+00:38:07.120 --> 00:38:10.720
+But you cannot use solving and substitution.
+
+00:38:11.020 --> 00:38:11.440
+That's not fair.
+
+00:38:14.100 --> 00:38:18.820
+Okay, so the first one is to use differentials.
+
+00:38:25.220 --> 00:38:29.880
+By the way, in the notes, they're also method one and method two.
+
+00:38:29.880 --> 00:38:32.200
+I'm not promising that I have the same one.
+
+00:38:32.440 --> 00:38:34.520
+I might have one and two switched.
+
+00:38:35.080 --> 00:38:35.640
+It doesn't really matter.
+
+00:38:37.060 --> 00:38:39.500
+So how do we do things using differentials?
+
+00:38:40.620 --> 00:38:45.000
+Well, first we know that we want to keep a fixed.
+
+00:38:48.120 --> 00:38:53.200
+And that means that we'll set dA equal to zero.
+
+00:38:53.200 --> 00:38:59.680
+Okay, the second thing that we want to do is we want to look at the constraint.
+
+00:39:00.360 --> 00:39:05.320
+The constraint is a equals b cosine theta.
+
+00:39:06.280 --> 00:39:07.480
+And we want to differentiate that.
+
+00:39:08.520 --> 00:39:11.120
+Well, differentiate the left hand side.
+
+00:39:11.440 --> 00:39:12.640
+You get dA.
+
+00:39:14.600 --> 00:39:16.620
+And differentiate the right hand side.
+
+00:39:16.940 --> 00:39:21.140
+As a function of b and theta, you could get, well, how many db's?
+
+00:39:21.140 --> 00:39:23.660
+Well, that's the rate of change we've respect to b.
+
+00:39:23.900 --> 00:39:30.360
+That's cosine theta db minus b sine theta d theta.
+
+00:39:31.620 --> 00:39:35.060
+That's the product rule applied to b times cosine theta.
+
+00:39:44.700 --> 00:39:51.120
+So, well, now if we have the constraint that's relating dA, dA, dA,
+
+00:39:51.120 --> 00:39:52.080
+dB and d theta.
+
+00:39:52.980 --> 00:39:54.080
+So that's actually what we did.
+
+00:39:54.320 --> 00:39:58.480
+That's the same sort of thing as what we did at the beginning when we related dx,
+
+00:39:58.640 --> 00:39:59.260
+dy and dz.
+
+00:39:59.940 --> 00:40:00.740
+That's really the same thing.
+
+00:40:01.920 --> 00:40:03.740
+Except now our variables are a, b and theta.
+
+00:40:04.700 --> 00:40:06.660
+Now we know that also we're keeping a fixed.
+
+00:40:06.840 --> 00:40:08.400
+So actually we set this equal to zero.
+
+00:40:09.720 --> 00:40:18.400
+So we have zero equals dA equals cosine theta db minus b sine theta d theta.
+
+00:40:20.120 --> 00:40:23.960
+That means that actually we know how to solve for dB.
+
+00:40:27.080 --> 00:40:34.900
+So cosine theta db equals b sine theta d theta.
+
+00:40:35.720 --> 00:40:42.040
+Or db is b tangent theta d theta.
+
+00:40:42.040 --> 00:40:49.980
+So in fact what we found, if you want, is the rate of change of b with respect to theta.
+
+00:40:51.340 --> 00:40:52.100
+Why do we care?
+
+00:40:53.280 --> 00:40:58.460
+Well, we care because let's look now at dA.
+
+00:40:59.860 --> 00:41:01.800
+The function that we want to look at.
+
+00:41:02.680 --> 00:41:10.220
+So the function is a equals one half AB sine theta.
+
+00:41:11.320 --> 00:41:13.000
+Well then dA.
+
+00:41:15.220 --> 00:41:18.240
+So we have to use the product rule carefully or we use the partials.
+
+00:41:18.500 --> 00:41:21.360
+So the coefficient of d little a will be partial respect to little a.
+
+00:41:21.540 --> 00:41:34.080
+But so one half b sine theta dA plus coefficient of dB will be one half a sine theta dB.
+
+00:41:36.460 --> 00:41:43.380
+Plus coefficient of d theta will be one half AB cosine theta d theta.
+
+00:41:46.660 --> 00:41:48.420
+But now what do I do with that?
+
+00:41:48.760 --> 00:41:51.320
+Well first I said a is constant.
+
+00:41:51.980 --> 00:41:53.180
+So dA is zero.
+
+00:41:55.420 --> 00:41:58.420
+Second, well actually we don't like b at all.
+
+00:41:58.980 --> 00:42:02.620
+We want to view a as a function of theta.
+
+00:42:04.940 --> 00:42:12.200
+So well maybe we actually want to use this formula for dB that we found in here.
+
+00:42:16.400 --> 00:42:19.760
+And then we'll be left only with d-faters, which is what we want.
+
+00:42:54.280 --> 00:43:09.020
+So if we plug this one into that one, we get dA equals one half a sine theta times b tension theta.
+
+00:43:09.020 --> 00:43:19.640
+d theta plus one half AB cosine theta d theta.
+
+00:43:22.020 --> 00:43:38.820
+And if we collect these things together, we get one half of AB times sine theta times tension theta plus cosine theta d theta.
+
+00:43:38.820 --> 00:43:45.300
+And if you know your trick then you will see that this is sine square over cosine plus cosine square over cosine.
+
+00:43:45.520 --> 00:43:47.520
+That's the same as second theta.
+
+00:43:49.460 --> 00:43:52.960
+So now you have expressed dA as something times d theta.
+
+00:43:54.640 --> 00:44:06.640
+Well that coefficient is the rate of change of a with respect to theta with the understanding that we are keeping a fixed and letting b vary as a dependent variable.
+
+00:44:35.540 --> 00:44:36.060
+Not enough space.
+
+00:44:36.060 --> 00:44:40.240
+But now this tells us how a depends on little a, little b and theta.
+
+00:44:41.800 --> 00:44:46.360
+Well we know actually we want to keep little a constant. So we set this to be zero.
+
+00:44:48.680 --> 00:44:52.180
+Feta, well we are very happy because we want to express things in terms of theta.
+
+00:44:53.360 --> 00:44:56.500
+dB we want to get rid of. How do we get rid of dB?
+
+00:44:57.540 --> 00:45:03.780
+Well we do that by figuring out how b depends on theta when a is fixed.
+
+00:45:04.620 --> 00:45:09.860
+And we do that by differentiating the constraint equation and setting dA equal to zero.
+
+00:45:09.860 --> 00:45:12.560
+Okay so.
+
+00:45:19.860 --> 00:45:22.820
+The I guess to summarize the method.
+
+00:45:26.760 --> 00:45:35.340
+We wrote dA in terms of dA dB d theta.
+
+00:45:36.740 --> 00:45:44.380
+Then we say that a is constant means we set dA equal zero.
+
+00:45:45.300 --> 00:45:56.280
+And the third thing is that because well we differentiate the constraint.
+
+00:45:56.280 --> 00:46:08.120
+And we can solve for dB in terms of d theta.
+
+00:46:10.100 --> 00:46:23.500
+And then we plug into dA and we get the answer.
+
+00:46:31.600 --> 00:46:38.220
+So here's another method to do the same thing differently.
+
+00:46:38.620 --> 00:46:43.180
+So we can use the chain rule with dependent variables.
+
+00:46:44.200 --> 00:46:46.740
+So what does the chain rule tell us?
+
+00:46:55.320 --> 00:47:02.840
+The formula for a, we respect to theta holding a constant.
+
+00:47:04.780 --> 00:47:09.900
+So I claim well what does the chain rule tell us?
+
+00:47:10.540 --> 00:47:17.780
+It tells us that well when we change things, a changes because of the changes in the variables.
+
+00:47:19.500 --> 00:47:24.520
+So part of it is that a depends on theta and theta changes.
+
+00:47:24.520 --> 00:47:32.280
+How fast does theta change? Well you could call that the rate of change of theta with respect to theta with a constant.
+
+00:47:33.080 --> 00:47:36.740
+But of course how fast does theta depend on itself? The answer is one.
+
+00:47:38.140 --> 00:47:39.120
+So that's pretty easy.
+
+00:47:40.740 --> 00:47:53.120
+Plus then we have this, the partial derivative, the formal partial derivative of a with respect to little a times the rate of change of a in our situation.
+
+00:47:54.680 --> 00:47:59.540
+Well how does little a change if a is constant? Well it doesn't change.
+
+00:48:04.800 --> 00:48:14.580
+And then there's a sub little b, the formal partial derivative times, sorry, the rate of change of b.
+
+00:48:17.860 --> 00:48:21.840
+And how do we find this one? Well here we have to use the constraint.
+
+00:48:26.500 --> 00:48:34.640
+And we can find this one from the constraint as we've seen at the beginning either by differentiating the constraint or by using the chain rule on the constraint.
+
+00:48:36.400 --> 00:48:48.460
+So of course the calculations are exactly the same. See this is the same formula as the one over there just dividing everything by partial theta and with subscripts little a.
+
+00:48:50.520 --> 00:48:56.280
+But if you, you know, if it's easier for you to think about it this way then that's also valid.
+
+00:48:59.180 --> 00:49:08.500
+Okay so tomorrow we're going to review for the test. So I'm going to tell you a bit more about this also as we go over one practice problem on that.
+

@@ -1,0 +1,1946 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.960
+Your support will help MIT OpenCourseWare
+
+00:00:05.960 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.900 --> 00:00:12.520
+To make a donation or to view additional materials
+
+00:00:12.520 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:23.700 --> 00:00:28.000
+So yesterday we saw how to define double integrals
+
+00:00:28.000 --> 00:00:31.240
+and how to start computing them in terms of x and y
+
+00:00:31.240 --> 00:00:31.660
+coordinates.
+
+00:00:33.240 --> 00:00:39.100
+So we've defined the double integral of a region in plane
+
+00:00:39.100 --> 00:00:42.040
+of a function f of xy dA.
+
+00:00:45.400 --> 00:00:46.300
+You can hear me.
+
+00:00:47.820 --> 00:00:50.580
+Is the sound working?
+
+00:00:50.840 --> 00:00:51.820
+Can you hear me at the back now?
+
+00:00:54.080 --> 00:00:55.240
+Can we make the sound louder?
+
+00:00:56.960 --> 00:00:57.440
+Is this work?
+
+00:00:57.440 --> 00:00:57.880
+Does this work?
+
+00:00:58.460 --> 00:01:00.560
+And people are not hearing me at the back.
+
+00:01:01.940 --> 00:01:02.340
+Is it better?
+
+00:01:05.160 --> 00:01:06.800
+People are still saying make it louder.
+
+00:01:08.700 --> 00:01:09.340
+Is it better?
+
+00:01:10.020 --> 00:01:11.260
+OK, great.
+
+00:01:12.140 --> 00:01:12.420
+Thanks.
+
+00:01:17.160 --> 00:01:20.300
+So that's not an excuse to start chatting with your friends.
+
+00:01:20.300 --> 00:01:20.420
+Thanks.
+
+00:01:23.540 --> 00:01:26.140
+OK, so when we have a region in the xy plane
+
+00:01:27.400 --> 00:01:29.740
+and we have a function of x and y,
+
+00:01:31.080 --> 00:01:34.760
+we are defining the double integral of f over this region
+
+00:01:36.480 --> 00:01:40.880
+by taking basically the sum of the values of a function
+
+00:01:40.880 --> 00:01:43.680
+of a y and here times the area element.
+
+00:01:44.280 --> 00:01:47.400
+And the definition actually is we split the region
+
+00:01:47.400 --> 00:01:49.580
+into lots of tiny little pieces.
+
+00:01:50.040 --> 00:01:52.700
+We multiply the value of the function at that point
+
+00:01:53.280 --> 00:01:55.980
+times the area of a little piece and we sum that everywhere.
+
+00:01:56.940 --> 00:02:00.100
+And we've seen actually how to compute these things
+
+00:02:02.360 --> 00:02:03.980
+as iterated integrals.
+
+00:02:06.280 --> 00:02:10.480
+So first integrating over dy, then over dx,
+
+00:02:10.940 --> 00:02:11.800
+or the other way around.
+
+00:02:16.960 --> 00:02:19.860
+So one example that we did in particular
+
+00:02:19.860 --> 00:02:28.320
+was to compute the double integral of a quarter of a unit
+
+00:02:28.320 --> 00:02:32.080
+disk so that was the region where x squared plus y squared
+
+00:02:32.080 --> 00:02:37.880
+is less than 1 and x and y are positive of 1 minus x squared
+
+00:02:37.880 --> 00:02:40.520
+minus y squared dA.
+
+00:02:42.160 --> 00:02:44.900
+And well, hopefully I kind of convinced you
+
+00:02:44.900 --> 00:02:47.420
+that we can do it using enough trig and substitutions
+
+00:02:47.420 --> 00:02:49.740
+and so on, but it's not very pleasant.
+
+00:02:53.040 --> 00:02:56.040
+And the reason for that is that using x and y
+
+00:02:56.040 --> 00:02:58.600
+coordinates here doesn't seem very appropriate.
+
+00:02:59.140 --> 00:03:01.340
+So in fact, we can use polar coordinates instead
+
+00:03:02.080 --> 00:03:03.260
+to compute this double integral.
+
+00:03:14.900 --> 00:03:18.360
+So remember that polar coordinates
+
+00:03:18.920 --> 00:03:23.160
+are about replacing x and y as coordinates
+
+00:03:23.800 --> 00:03:28.200
+for a point in the plane by instead r, which
+
+00:03:28.200 --> 00:03:30.260
+is the distance from the origin to our point,
+
+00:03:30.820 --> 00:03:35.840
+and theta, which is the angle measured counterclockwise
+
+00:03:35.840 --> 00:03:37.220
+from the positive x axis.
+
+00:03:39.260 --> 00:03:45.380
+So in terms of r and theta, you have x equals r cosine theta,
+
+00:03:45.900 --> 00:03:48.180
+y equals r sine theta.
+
+00:03:51.260 --> 00:03:54.460
+So the claim is we are able actually
+
+00:03:54.460 --> 00:03:58.240
+to do double integrals in polar coordinates,
+
+00:03:58.620 --> 00:03:59.980
+we just have to learn how to.
+
+00:04:02.140 --> 00:04:09.520
+So just to draw a quick picture, when we were integrating
+
+00:04:09.520 --> 00:04:12.920
+in x, y coordinates, in rectangular coordinates,
+
+00:04:13.840 --> 00:04:18.660
+we were slicing our region by grid lines
+
+00:04:18.660 --> 00:04:20.380
+that were either horizontal or vertical,
+
+00:04:20.660 --> 00:04:22.600
+and we used that to set up the iterated integral.
+
+00:04:23.440 --> 00:04:27.200
+And we said dA became dx dy or dy dx.
+
+00:04:28.140 --> 00:04:30.520
+So now we are going to actually integrate
+
+00:04:32.380 --> 00:04:35.200
+in terms of the polar coordinates r and theta.
+
+00:04:36.920 --> 00:04:42.760
+So let's say we will integrate in the order
+
+00:04:43.440 --> 00:04:45.440
+well r first and then theta.
+
+00:04:45.640 --> 00:04:48.860
+That's the order that makes the most sense usually
+
+00:04:48.860 --> 00:04:49.860
+when you do polar coordinates.
+
+00:04:50.960 --> 00:04:52.440
+So what does that mean?
+
+00:04:52.440 --> 00:04:57.400
+It means that we will first focus on a slice
+
+00:04:57.400 --> 00:04:59.320
+where we fix the value of theta.
+
+00:05:01.060 --> 00:05:03.980
+And we let r vary, so that means we fix a direction,
+
+00:05:04.260 --> 00:05:07.760
+we fix a ray out from the origin in a certain direction.
+
+00:05:08.620 --> 00:05:11.460
+And we'll travel along this ray and see which part of it,
+
+00:05:11.860 --> 00:05:13.880
+which values of r are in our region.
+
+00:05:15.280 --> 00:05:17.220
+So here it will be actually pretty easy,
+
+00:05:18.220 --> 00:05:22.400
+because r will just start at zero,
+
+00:05:22.740 --> 00:05:26.220
+and you'll have to stop when you actually exit
+
+00:05:27.220 --> 00:05:27.940
+this quarter disk.
+
+00:05:28.460 --> 00:05:31.340
+Well, what's the equation of this circle in polar coordinates?
+
+00:05:31.720 --> 00:05:33.720
+It's just r equals 1.
+
+00:05:34.440 --> 00:05:36.140
+So we'll stop when r is 1.
+
+00:05:39.640 --> 00:05:41.240
+What about theta?
+
+00:05:41.840 --> 00:05:45.700
+Well, the first ray that we might want to consider
+
+00:05:45.700 --> 00:05:47.900
+is the one that goes along the x-axis.
+
+00:05:48.200 --> 00:05:49.320
+That's when theta equals zero,
+
+00:05:50.040 --> 00:05:53.280
+and we'll stop when theta reaches pi over 2,
+
+00:05:53.420 --> 00:05:55.500
+because we don't care about the rest of the disk.
+
+00:05:55.600 --> 00:05:56.920
+We only care about the first quadrant.
+
+00:06:01.540 --> 00:06:03.160
+So we'll stop at pi over 2.
+
+00:06:05.880 --> 00:06:07.980
+Now there's a catch for,
+
+00:06:09.360 --> 00:06:11.820
+which is that dA is not dr d theta.
+
+00:06:12.040 --> 00:06:13.220
+So let me explain to you why.
+
+00:06:14.220 --> 00:06:16.760
+So let's say that we are slicing,
+
+00:06:17.020 --> 00:06:19.300
+what it means really is that we are cutting our region
+
+00:06:19.300 --> 00:06:23.340
+into little pieces that are the elementary,
+
+00:06:24.520 --> 00:06:28.120
+what corresponds to a small rectangle in the xy coordinate system.
+
+00:06:28.300 --> 00:06:31.080
+Here would be actually a little piece of circle
+
+00:06:33.540 --> 00:06:39.100
+between a given radius r and r plus delta r,
+
+00:06:39.800 --> 00:06:43.300
+and given an angle theta and theta plus delta theta.
+
+00:06:44.480 --> 00:06:46.560
+So I need to draw actually a bigger picture of it,
+
+00:06:46.980 --> 00:06:49.980
+because it makes it really hard to read.
+
+00:06:52.180 --> 00:06:54.440
+So let's say that I fix an angle theta,
+
+00:06:55.500 --> 00:06:57.060
+and a slightly different one,
+
+00:06:57.760 --> 00:07:00.440
+where I've added delta theta to it.
+
+00:07:01.920 --> 00:07:06.520
+And let's say that I have radius r,
+
+00:07:06.520 --> 00:07:10.960
+and I add delta r to it.
+
+00:07:12.040 --> 00:07:16.380
+So then I'll have a little piece of xy plane that's in here,
+
+00:07:18.080 --> 00:07:20.440
+and I have to figure out what is its area,
+
+00:07:21.220 --> 00:07:24.060
+what is delta A for this guy.
+
+00:07:26.720 --> 00:07:27.940
+Well, let's see.
+
+00:07:28.220 --> 00:07:32.560
+This guy actually, if my delta r and delta theta are small enough,
+
+00:07:33.180 --> 00:07:34.800
+it will almost look like a rectangle.
+
+00:07:34.800 --> 00:07:37.440
+It's rotated, but it's basically rectangle.
+
+00:07:37.780 --> 00:07:39.160
+I mean, these sides, of course, are curvy,
+
+00:07:39.400 --> 00:07:43.780
+but if they're short enough, it's almost straight.
+
+00:07:45.480 --> 00:07:51.540
+So the area here should be this length times that length.
+
+00:07:53.180 --> 00:07:54.280
+Well, what's this length?
+
+00:07:55.080 --> 00:07:56.540
+That one is easy. It's delta r.
+
+00:08:00.060 --> 00:08:01.440
+What about that length?
+
+00:08:01.440 --> 00:08:03.040
+Well, it's not delta theta.
+
+00:08:03.220 --> 00:08:04.220
+It's something slightly different.
+
+00:08:05.440 --> 00:08:08.000
+It's a piece of a circle of radius r,
+
+00:08:08.400 --> 00:08:10.540
+corresponding to angle delta theta.
+
+00:08:11.000 --> 00:08:12.120
+So it's r delta theta.
+
+00:08:18.480 --> 00:08:21.300
+So times r delta theta.
+
+00:08:23.560 --> 00:08:26.400
+So that means now, even if we shrink things
+
+00:08:26.400 --> 00:08:27.960
+and take smaller and smaller radians,
+
+00:08:29.880 --> 00:08:34.300
+dA is going to be r, dR, d theta.
+
+00:08:36.740 --> 00:08:38.300
+Okay, so that's the important thing to remember.
+
+00:08:38.480 --> 00:08:40.080
+When you integrate in polar coordinates,
+
+00:08:42.180 --> 00:08:45.140
+you just set up your bounds in terms of r and theta,
+
+00:08:45.420 --> 00:08:47.840
+but you replace dA by r, dR, d theta.
+
+00:08:48.320 --> 00:08:49.700
+Not just dR, d theta.
+
+00:08:53.420 --> 00:08:56.220
+And then, of course, we have some function that we're integrating.
+
+00:08:56.980 --> 00:08:58.600
+Let's say that I called that thing F.
+
+00:09:01.660 --> 00:09:03.780
+Then it's the same F that I put up here.
+
+00:09:09.380 --> 00:09:11.060
+So concretely, how do I do it here?
+
+00:09:12.920 --> 00:09:16.300
+Well, my function F was given as, you know,
+
+00:09:16.300 --> 00:09:18.520
+1-x square-y square.
+
+00:09:18.920 --> 00:09:20.940
+And I like to switch that to polar coordinates.
+
+00:09:21.360 --> 00:09:22.620
+I want to put r and theta in there.
+
+00:09:24.620 --> 00:09:27.460
+Well, I have formulas for x and y in polar coordinates.
+
+00:09:27.740 --> 00:09:31.720
+So I could just replace, you know, x squared by r squared cosine square theta.
+
+00:09:32.620 --> 00:09:34.860
+y squared by r squared sine square theta.
+
+00:09:35.620 --> 00:09:36.640
+And that works just fine.
+
+00:09:37.300 --> 00:09:42.700
+But maybe you can observe that this is actually, you know,
+
+00:09:42.760 --> 00:09:44.280
+this is x squared plus y squared.
+
+00:09:44.840 --> 00:09:47.140
+It's just the square of a distance from the origin.
+
+00:09:47.400 --> 00:09:48.300
+So that's just r squared.
+
+00:09:48.840 --> 00:09:49.700
+Okay, that's a useful thing.
+
+00:09:50.420 --> 00:09:52.000
+You know, if you don't strictly need it,
+
+00:09:52.360 --> 00:09:55.760
+but it's much faster if you see this right away.
+
+00:09:56.400 --> 00:09:59.060
+It saves you, you know, writing down a sine and a cosine.
+
+00:10:06.600 --> 00:10:11.340
+So now we just end up with the integral from 0 to pi over 2,
+
+00:10:11.340 --> 00:10:19.140
+integral from 0 to 1 of 1 minus r squared r, the theta.
+
+00:10:20.800 --> 00:10:23.600
+Now, if I want to compute this integral,
+
+00:10:25.200 --> 00:10:27.620
+so let's first do the inner integral.
+
+00:10:29.720 --> 00:10:32.820
+So if I integrate r minus r cubed,
+
+00:10:33.240 --> 00:10:37.480
+I will get r squared over 2 minus r squared over,
+
+00:10:37.480 --> 00:10:41.060
+sorry, r to the 4 over 4 between 0 and 1.
+
+00:10:42.380 --> 00:10:44.560
+And then I will integrate the theta.
+
+00:10:47.160 --> 00:10:49.120
+So what is this equal to?
+
+00:10:49.280 --> 00:10:51.980
+Well, for r equals 1, you get 1 half minus a quarter.
+
+00:10:52.280 --> 00:10:54.220
+That's going to be just a quarter.
+
+00:10:54.900 --> 00:10:56.420
+And when you plug 0, you get 0.
+
+00:10:56.620 --> 00:11:01.940
+So it's the integral from 0 to pi over 2 of 1 quarter, the theta.
+
+00:11:01.940 --> 00:11:06.760
+And that just integrates to the quarter of pi over 2,
+
+00:11:07.260 --> 00:11:08.900
+which is pi over 8.
+
+00:11:10.900 --> 00:11:11.080
+Okay?
+
+00:11:14.240 --> 00:11:17.740
+So that's a lot easier than the way we did it yesterday.
+
+00:11:20.680 --> 00:11:22.680
+Now, well, here we were lucky.
+
+00:11:23.260 --> 00:11:26.300
+I mean, usually you will switch to polar coordinates either
+
+00:11:26.300 --> 00:11:28.280
+because the region is easier to set up.
+
+00:11:28.280 --> 00:11:32.360
+Here it's indeed easier to set up because, see, the bounds became very simple.
+
+00:11:32.500 --> 00:11:35.160
+We don't have that square root of 1 minus x squared anymore.
+
+00:11:36.280 --> 00:11:38.860
+Or because the integrant becomes much simpler.
+
+00:11:39.580 --> 00:11:43.240
+Here, our function, well, it's not very complicated in xy coordinates,
+
+00:11:43.520 --> 00:11:45.740
+but it's even simpler in our theta coordinates.
+
+00:11:47.260 --> 00:11:48.380
+So here we were very lucky.
+
+00:11:49.580 --> 00:11:51.960
+In general, there's maybe a trade-off.
+
+00:11:52.060 --> 00:11:53.720
+Maybe it will be easier to set up the bounds,
+
+00:11:54.000 --> 00:11:55.620
+but maybe the function will become harder
+
+00:11:55.620 --> 00:11:58.040
+because it will have all these signs and cosines in it.
+
+00:11:58.780 --> 00:12:00.620
+If our function had been just x,
+
+00:12:01.940 --> 00:12:03.580
+x is very easy in xy coordinates.
+
+00:12:04.180 --> 00:12:05.680
+Here it becomes our cosine theta.
+
+00:12:06.480 --> 00:12:08.880
+That means you will have a little bit of trade to do in the integral.
+
+00:12:09.780 --> 00:12:13.260
+Not a very big one, but not a very complicated integral.
+
+00:12:14.200 --> 00:12:16.760
+But imagine, you know, it could get potentially much harder.
+
+00:12:20.620 --> 00:12:24.540
+Okay. So anyway, that's the whole integral in polar coordinates.
+
+00:12:25.680 --> 00:12:30.900
+And the way that you set up the bounds in general is,
+
+00:12:32.640 --> 00:12:35.900
+so in 99% of the cases, you will integrate over r first.
+
+00:12:36.420 --> 00:12:38.980
+So what you will do is you will look for a given theta.
+
+00:12:40.100 --> 00:12:42.440
+What are the bounds for r to be in the region?
+
+00:12:42.640 --> 00:12:45.460
+What is the portion of my ray that's in the given region?
+
+00:12:46.340 --> 00:12:48.040
+And then you will put the bounds for theta.
+
+00:12:49.000 --> 00:12:50.760
+But conceptually, it's the same as before.
+
+00:12:50.920 --> 00:12:53.640
+Just instead of slicing horizontally or vertically,
+
+00:12:53.640 --> 00:12:55.180
+we slice radially.
+
+00:12:56.880 --> 00:12:59.020
+Okay. So we'll do more examples in a bit.
+
+00:13:00.020 --> 00:13:02.580
+Any questions about this arbitrary normal method?
+
+00:13:04.860 --> 00:13:05.460
+Yes?
+
+00:13:06.280 --> 00:13:11.040
+When you say you're computing the rectangle with the biggest sign of the rectangle,
+
+00:13:12.220 --> 00:13:13.560
+I'm curious when it is,
+
+00:13:16.960 --> 00:13:20.520
+are the data set of r plus and tell the r?
+
+00:13:21.280 --> 00:13:23.180
+Yes. So that's a very good question.
+
+00:13:23.500 --> 00:13:27.860
+Okay. Yes. Why do I measure the length inside instead of outside?
+
+00:13:28.360 --> 00:13:29.580
+Oops. Which one do we want?
+
+00:13:29.980 --> 00:13:30.240
+This one.
+
+00:13:31.940 --> 00:13:34.840
+So here, I said this side is r delta theta.
+
+00:13:35.060 --> 00:13:37.680
+I could have said, actually, r delta theta is the length here.
+
+00:13:37.880 --> 00:13:38.880
+Here, it's slightly more.
+
+00:13:39.120 --> 00:13:41.140
+It's r plus delta r times delta theta.
+
+00:13:41.700 --> 00:13:44.520
+But, you know, if delta r is very small compared to r,
+
+00:13:44.960 --> 00:13:46.160
+then that's almost the same thing.
+
+00:13:46.380 --> 00:13:47.840
+And this is an approximation anyway.
+
+00:13:47.840 --> 00:13:50.640
+So I took this one because it gives me the simpler formula.
+
+00:13:53.940 --> 00:13:56.940
+If you want, if you take the limit as delta r tends to zero,
+
+00:13:57.360 --> 00:13:59.440
+then the two things become the same anyway.
+
+00:14:00.740 --> 00:14:02.940
+Okay. The length, you know,
+
+00:14:03.060 --> 00:14:05.840
+whether you put r or r plus delta r in here doesn't matter anymore.
+
+00:14:06.080 --> 00:14:08.620
+If you imagine that, you know, this guy is infinitely small,
+
+00:14:09.420 --> 00:14:10.940
+then really the length becomes the same.
+
+00:14:14.640 --> 00:14:18.480
+Okay. We'll also see another proof of this formula
+
+00:14:18.480 --> 00:14:21.200
+using changes of variables next week.
+
+00:14:21.520 --> 00:14:24.720
+But, I mean, hopefully this is at least slightly convincing.
+
+00:14:27.940 --> 00:14:29.200
+Okay. More questions?
+
+00:14:31.340 --> 00:14:31.900
+Nope.
+
+00:14:33.760 --> 00:14:35.900
+Okay. So let's see.
+
+00:14:39.960 --> 00:14:42.200
+So we've seen how to compute double integrals.
+
+00:14:42.280 --> 00:14:44.240
+I have to tell you what they're good for as well.
+
+00:14:48.980 --> 00:14:51.040
+So the definition we saw yesterday,
+
+00:14:51.460 --> 00:14:53.360
+and motivation was in terms of finding volumes.
+
+00:14:54.020 --> 00:14:58.280
+Okay. But that's not going to be our main preoccupation
+
+00:14:58.280 --> 00:15:00.800
+because, you know, finding volumes is fun,
+
+00:15:00.900 --> 00:15:02.180
+but it's not all there is to life.
+
+00:15:02.180 --> 00:15:05.620
+And, you know, I mean, you're doing single integrals.
+
+00:15:05.800 --> 00:15:08.100
+When you do single integrals, it's usually not to find the
+
+00:15:08.100 --> 00:15:09.460
+array of some region of a plane.
+
+00:15:10.100 --> 00:15:11.960
+It's for something else, usually.
+
+00:15:12.920 --> 00:15:16.560
+Okay. So the way we actually think of a double integral
+
+00:15:16.560 --> 00:15:19.100
+is really as summing the values of a function,
+
+00:15:19.420 --> 00:15:20.120
+all of our this region.
+
+00:15:20.760 --> 00:15:24.460
+So we can use that to get information about maybe the region
+
+00:15:24.460 --> 00:15:27.400
+or about the average value of a function in that region,
+
+00:15:27.400 --> 00:15:27.940
+and so on.
+
+00:15:27.940 --> 00:15:31.980
+So let's think about various uses of double integrals.
+
+00:15:38.580 --> 00:15:43.260
+So the first one that I will mention is actually something
+
+00:15:43.260 --> 00:15:45.400
+you thought maybe you could do with a simple integral,
+
+00:15:46.200 --> 00:15:47.020
+with a single integral.
+
+00:15:47.720 --> 00:15:50.820
+But it's useful very often to do it as a double integral.
+
+00:15:51.240 --> 00:15:56.160
+It's to find the array of a given region of our plane.
+
+00:15:57.900 --> 00:16:01.740
+Okay. So I give you, you know, some region in the plane.
+
+00:16:03.000 --> 00:16:05.260
+And you want to know just its area.
+
+00:16:06.980 --> 00:16:11.360
+So in various cases you could set this up as a single integral.
+
+00:16:12.520 --> 00:16:15.800
+But often it could be useful to set it up as a double integral.
+
+00:16:16.440 --> 00:16:19.000
+So how do you express the area as a double integral?
+
+00:16:19.620 --> 00:16:25.600
+Well, the area of this region is the sum of the areas of all
+
+00:16:27.100 --> 00:16:29.480
+the region of the region.
+
+00:16:30.060 --> 00:16:37.220
+Okay. So the area of r is the double integral of r of a function
+
+00:16:37.220 --> 00:16:41.160
+1. Let's.
+
+00:16:45.380 --> 00:16:48.460
+So one way to think about it, if you're really still attached
+
+00:16:48.460 --> 00:16:51.360
+to the idea of double integral as a volume, you know,
+
+00:16:51.480 --> 00:16:54.560
+what this measures is the volume below the graph of a function 1,
+
+00:16:54.560 --> 00:16:57.860
+the graph of a function 1 is just a horizontal plane at height 1.
+
+00:16:58.880 --> 00:17:06.420
+So what should be measuring would be the volume of a prism or with base r and height 1.
+
+00:17:09.940 --> 00:17:12.600
+And the volume of that, of course, would be base times height,
+
+00:17:12.680 --> 00:17:14.500
+so it would just be the area of r again.
+
+00:17:16.000 --> 00:17:17.940
+But we don't actually even need to think about it that way.
+
+00:17:17.940 --> 00:17:21.940
+Really, what we're doing is we're summing dA over the entire region.
+
+00:17:25.460 --> 00:17:27.080
+Okay. A related thing we can do.
+
+00:17:27.880 --> 00:17:33.320
+So imagine that actually this is, you know, some object, some physical object.
+
+00:17:34.200 --> 00:17:38.000
+I mean, it's got to be a flat object because we're just dealing with things in the plane so far.
+
+00:17:38.700 --> 00:17:41.860
+But, you know, you have a flat metal plate or something.
+
+00:17:42.640 --> 00:17:44.240
+And you would like to know it's mass.
+
+00:17:45.120 --> 00:17:49.760
+Well, its mass is the sum of the masses of every single little piece.
+
+00:17:51.180 --> 00:17:53.900
+And so you would get that by integrating the density.
+
+00:17:54.180 --> 00:17:57.820
+The density for a flat object would be the area, sorry,
+
+00:17:57.880 --> 00:17:58.940
+the mass per unit area.
+
+00:18:00.800 --> 00:18:12.280
+Okay. So you can get the mass of a flat object.
+
+00:18:12.280 --> 00:18:18.660
+With density, let's use delta for density,
+
+00:18:19.780 --> 00:18:22.480
+which is the mass per unit area.
+
+00:18:29.400 --> 00:18:34.900
+So each little piece of your object will have a mass,
+
+00:18:35.240 --> 00:18:40.560
+which will be just the density, times its area, for each small piece.
+
+00:18:40.560 --> 00:18:43.580
+And you will get the total mass by summing these things.
+
+00:18:46.880 --> 00:18:54.340
+So the mass will be the double integral of the density times the area element.
+
+00:18:56.080 --> 00:18:59.980
+Now, if it has constant density, you know, if it's always the same material,
+
+00:19:00.440 --> 00:19:05.560
+then of course you could just take the density out and you will get density times the total area.
+
+00:19:06.200 --> 00:19:08.680
+And if you know that it's always the same material.
+
+00:19:09.620 --> 00:19:14.060
+But if actually it has varying density, maybe because it's some metallic thing,
+
+00:19:14.120 --> 00:19:17.020
+but with various metals or with varying thickness or something,
+
+00:19:17.620 --> 00:19:19.900
+then you can still get the mass by integrating the density.
+
+00:19:23.020 --> 00:19:26.640
+So, I mean, of course looking at flat objects might be a little bit strange,
+
+00:19:26.640 --> 00:19:28.760
+that's because we're only doing double integrals so far.
+
+00:19:29.300 --> 00:19:31.720
+In a few weeks we'll be doing triple integrals,
+
+00:19:31.800 --> 00:19:33.600
+and then we'll be able to do solids in space.
+
+00:19:33.600 --> 00:19:36.700
+But, you know, one thing at a time.
+
+00:19:40.200 --> 00:19:41.680
+Okay.
+
+00:19:45.140 --> 00:19:46.620
+So.
+
+00:19:54.600 --> 00:19:55.380
+Okay.
+
+00:19:56.880 --> 00:20:02.360
+Another useful application is to find the average value of some quantity in a region.
+
+00:20:13.220 --> 00:20:18.240
+So what does it mean to take the average value of some function f in this region r?
+
+00:20:19.160 --> 00:20:22.440
+Well, you know what's the average of, you know, a finite set of data.
+
+00:20:22.440 --> 00:20:26.340
+For example, if I ask you to compute your average score on 18 or two problem sets,
+
+00:20:26.580 --> 00:20:29.780
+you would just take the scores, add them up and divide by the number of problem sets.
+
+00:20:31.620 --> 00:20:33.480
+What if there's infinitely many things?
+
+00:20:33.580 --> 00:20:36.940
+Because, you know, say I ask you to find the average temperature in this room,
+
+00:20:37.220 --> 00:20:38.960
+where you would have to measure the temperature everywhere,
+
+00:20:39.360 --> 00:20:43.340
+and then add all of these together and divide by the number of data points.
+
+00:20:43.540 --> 00:20:48.140
+But depending on how careful you are, actually there's potentially infinitely many points to look at.
+
+00:20:48.900 --> 00:20:59.880
+So the mathematical way to define the average over a continuous set of data is that you actually integrate the function over the entire set of data.
+
+00:21:00.520 --> 00:21:05.220
+And then you divide by the size of the sample, which is just the area of the region.
+
+00:21:07.040 --> 00:21:07.260
+Okay.
+
+00:21:07.380 --> 00:21:12.700
+So in fact, the average of f.
+
+00:21:13.540 --> 00:21:19.940
+So the notation we'll use usually for that is f with a bar on top, okay, to tell us the average f.
+
+00:21:20.920 --> 00:21:32.160
+That would be, so we say it, we'll take the integral of f, and we'll divide by the area of the region.
+
+00:21:34.900 --> 00:21:38.900
+Okay. You can really think of it as the sum of the values of f everywhere,
+
+00:21:39.580 --> 00:21:42.520
+divided by the number of points in everywhere.
+
+00:21:45.740 --> 00:21:50.940
+And so that's an average where everything is actually equally likely.
+
+00:21:51.360 --> 00:21:54.600
+You know, that's a uniform average where all the points in the region,
+
+00:21:54.780 --> 00:21:57.320
+all the little pieces of the region, are equally likely.
+
+00:21:58.620 --> 00:22:03.140
+But maybe if you want to do say an average over some solid with variable density,
+
+00:22:03.620 --> 00:22:07.180
+or if you want to somehow give more importance to certain parts than to others,
+
+00:22:08.020 --> 00:22:10.320
+then you could actually do a weighted average.
+
+00:22:11.960 --> 00:22:13.300
+So what's a weighted average?
+
+00:22:14.140 --> 00:22:22.000
+Well, you know, in the case of taking the average of your problem sets,
+
+00:22:22.000 --> 00:22:25.160
+if I tell you well, problems set one is worth twice as much as the others,
+
+00:22:25.160 --> 00:22:29.460
+then you would count twice that score in the sum, and then you would divide,
+
+00:22:29.680 --> 00:22:31.340
+you would count it as two, of course, when you divide.
+
+00:22:32.880 --> 00:22:38.360
+So the weighted average is the sum of the values that each weighted by a certain coefficient,
+
+00:22:39.340 --> 00:22:41.260
+and then you will divide by the sum of the weights.
+
+00:22:43.060 --> 00:22:48.080
+So it's a bit of the same idea as when we, you know, replace a rare by some mass
+
+00:22:48.080 --> 00:22:50.820
+that tells you how important a given piece is.
+
+00:22:50.820 --> 00:22:54.900
+So we'll actually have a density.
+
+00:22:57.560 --> 00:22:58.920
+Let's call it delta again.
+
+00:22:59.880 --> 00:23:03.360
+That would be now, well, we'll see what we divide by.
+
+00:23:04.220 --> 00:23:11.700
+But what we will take is the integral times of a function times the density times the area element.
+
+00:23:13.140 --> 00:23:15.460
+Because this would correspond to the mass element,
+
+00:23:16.400 --> 00:23:21.740
+telling us how to weight the various points of our region.
+
+00:23:22.240 --> 00:23:26.440
+And then we would divide by the total weight, which is the mass of the region.
+
+00:23:26.920 --> 00:23:28.300
+So as defined up there.
+
+00:23:31.880 --> 00:23:32.020
+Okay?
+
+00:23:32.960 --> 00:23:38.840
+So, you know, if a density is uniform, then of course the density gets out, and you know,
+
+00:23:39.040 --> 00:23:42.580
+you can simplify and reduce to that, if all the points are equally likely.
+
+00:23:43.780 --> 00:23:46.600
+Okay, so why is that important?
+
+00:23:46.880 --> 00:23:48.720
+Well, that's important for various applications.
+
+00:23:49.240 --> 00:23:57.720
+But one that you might have seen in physics, we care about maybe where is the center of mass of a given object.
+
+00:23:58.880 --> 00:24:03.300
+So the center of mass is basically the point, you know, you would call that point to be, you know,
+
+00:24:03.300 --> 00:24:05.240
+you would say that point is right in the middle of the object.
+
+00:24:05.600 --> 00:24:11.680
+But of course, if the object has a very strange shape, or if somehow part of it is heavier than the rest,
+
+00:24:12.540 --> 00:24:14.440
+then that takes a very different meaning.
+
+00:24:15.880 --> 00:24:22.240
+So strictly speaking, the center of mass of a solid is the point where you would have to concentrate all the mass.
+
+00:24:22.500 --> 00:24:27.700
+If you wanted it to behave equivalently from the point of view of mechanics,
+
+00:24:27.700 --> 00:24:30.280
+if you are trying to do translations of that object.
+
+00:24:31.040 --> 00:24:35.060
+You know, if you were going to push that object, that would be really where, you know,
+
+00:24:35.600 --> 00:24:37.260
+where the equivalent point of mass would lie.
+
+00:24:41.680 --> 00:24:50.440
+So the other way to think about it, you know, if I have a flat object, then the center of mass is basically the point where I would need to hold it so that it's perfectly balanced.
+
+00:24:51.360 --> 00:24:54.560
+You know, and of course I can do this because I'm not well, whatever.
+
+00:24:54.740 --> 00:24:58.500
+But you get the feeling, I mean, the center of mass of this eraser is somewhere in the middle.
+
+00:24:59.080 --> 00:25:04.180
+And so in principle, that's why I would have to put my finger for it to stay, well, and it doesn't work.
+
+00:25:09.400 --> 00:25:11.260
+Okay, that's where the center of mass should be.
+
+00:25:11.340 --> 00:25:12.620
+I think it should be in the middle.
+
+00:25:20.280 --> 00:25:25.420
+So, well, maybe if you don't call this free, it should call this, maybe, you know, 2A or whatever.
+
+00:25:25.600 --> 00:25:29.120
+It's, it's really a special case of the average value.
+
+00:25:30.400 --> 00:25:41.920
+So, how do we find the center of mass of a flat object with the set of delta?
+
+00:25:50.720 --> 00:26:04.720
+Well, so if you have your object in the xy plane, then its center of mass will be at positions that are actually just the coordinates of the center of mass.
+
+00:26:04.720 --> 00:26:09.540
+So, the center of mass will just be the weighted of rages of x and y on the solid.
+
+00:26:11.620 --> 00:26:16.100
+Okay, so the center of mass will be at a position that I will call x bar y bar.
+
+00:26:17.040 --> 00:26:22.020
+And these are really just the average values of x and of y in the solid.
+
+00:26:22.340 --> 00:26:25.080
+So, just to give it from you, let's begin.
+
+00:26:25.080 --> 00:26:34.860
+The main x bar would be 1 of over mass times the double integral of x times density dA.
+
+00:26:36.840 --> 00:26:51.200
+And same thing with y, y bar is the weighted average of y coordinate in your region.
+
+00:26:52.780 --> 00:27:00.460
+Okay, so you see if you take a region that's symmetric and has uniform density that will just give you the center of the region.
+
+00:27:01.100 --> 00:27:10.200
+But if the region has a strange shape, or if a density is not homogeneous, if parts of it are heavier, then, you know, you will get whatever weighted average will be.
+
+00:27:11.560 --> 00:27:19.340
+And that would be the point where this thing would be balanced if you were trying to, you know, balance it on a pole or on your finger.
+
+00:27:19.340 --> 00:27:24.760
+Okay.
+
+00:27:55.020 --> 00:27:56.820
+Any questions so far?
+
+00:27:58.860 --> 00:28:00.140
+No? Yes?
+
+00:28:01.580 --> 00:28:09.960
+When you do that double integral over here, the inner one is y, y, y, y.
+
+00:28:09.960 --> 00:28:18.480
+Oh, no, sorry. No, no. So, when you do, I mean, so here I set up this, I didn't set this up as an iterative integral yet.
+
+00:28:19.260 --> 00:28:29.360
+Okay. So, here the function that I'm integrating is x times delta, where delta, you know, the density will be given to me maybe as a function of x and y.
+
+00:28:29.360 --> 00:28:37.160
+And then I will integrate this dA. And dA could mean dx dy, it could mean dy dx, it could mean rdrd theta.
+
+00:28:37.980 --> 00:28:42.060
+I will choose how to set it up depending maybe on the shape of the region.
+
+00:28:42.980 --> 00:28:47.360
+You know, if my solid is actually just, you know, going to be round, then I might want to use polar coordinates.
+
+00:28:47.680 --> 00:28:55.500
+If it's a square, I might want to use xy coordinates. If it's more complicated, well, I will choose depending on how I feel about it.
+
+00:28:57.320 --> 00:29:00.820
+Yes? Yes?
+
+00:29:01.040 --> 00:29:12.300
+Yes. So, delta is the density. It's in general, it's a function of x and y. If you imagine that your solid, you know, is not homogeneous, then its density will depend on which piece of it you're looking at.
+
+00:29:13.000 --> 00:29:22.940
+Of course, to compute this, you need to know the density. If you have a problem asking you to find the center of mass of something and you have no information about the density, assume it's uniform.
+
+00:29:22.940 --> 00:29:27.960
+Take the density to be a constant. Even take it to be a one, that's even easier if you want.
+
+00:29:29.380 --> 00:29:35.940
+It's a general fact of math. We don't care about units. So, if density is constant, we might as well take it to be one.
+
+00:29:36.540 --> 00:29:39.360
+That just means that our mass unit becomes the area unit.
+
+00:29:41.000 --> 00:29:41.360
+Yes?
+
+00:29:41.360 --> 00:29:51.360
+The area of origin in general of the central mass, we're using x to y coordinates. If we wanted to use polar coordinates, we would just search for a bigger space.
+
+00:29:51.860 --> 00:30:00.600
+That's a good question. No, I don't think we could actually find the center of mass in polar coordinates by finding the average of r or the average of theta.
+
+00:30:01.300 --> 00:30:07.600
+For example, take a disk center that the origin. Well, you know that the center of mass should be at the origin.
+
+00:30:08.660 --> 00:30:14.620
+But the average of r is certainly not zero because r is positive everywhere. So that doesn't work.
+
+00:30:14.760 --> 00:30:20.820
+You cannot get the polar coordinates of the center of mass just by taking the average of r and the average of theta.
+
+00:30:21.440 --> 00:30:25.920
+But what's the average of theta? If you take theta to go from zero to two pi, the average theta will be pi.
+
+00:30:25.920 --> 00:30:31.620
+If you take it to go from minus pi to pi, the average theta will be zero. So there's a problem there.
+
+00:30:32.380 --> 00:30:33.840
+So that actually just doesn't work.
+
+00:30:35.300 --> 00:30:43.620
+So we really have to compute x bar and y bar. But still we could compute them, you know, we could set this up and then switch to polar coordinates to evaluate this integral.
+
+00:30:43.980 --> 00:30:46.460
+But we'd still be computing the average values of x and y.
+
+00:30:51.160 --> 00:30:51.760
+Okay.
+
+00:30:56.700 --> 00:31:03.380
+So the next thing, so we're basically re-exploring, you know, mechanics and motion of solids here.
+
+00:31:04.520 --> 00:31:06.240
+So the next thing is moment of inertia.
+
+00:31:12.440 --> 00:31:17.860
+So just to remind you, or in case you somehow haven't seen it in physics yet.
+
+00:31:18.660 --> 00:31:24.800
+So the moment of inertia is basically to rotation of a solid, what the mass is to translation.
+
+00:31:25.500 --> 00:31:30.440
+Okay. In the following sense, mass, the mass of a solid is what makes it hard to push it.
+
+00:31:30.440 --> 00:31:35.200
+You know, how hard it is to throw something is related to its mass.
+
+00:31:36.120 --> 00:31:40.980
+How hard it is to spin something on the other hand is given by its moment of inertia.
+
+00:31:43.760 --> 00:31:56.560
+Maybe I should write this down. So mass is how hard it is to impart a translation motion to a solid.
+
+00:31:58.880 --> 00:32:00.940
+So I'm using fancy words to the end.
+
+00:32:03.960 --> 00:32:05.620
+And the moment of inertia.
+
+00:32:09.440 --> 00:32:13.980
+So the difference with the masses at the moment of inertia is defined about some axis.
+
+00:32:15.660 --> 00:32:20.420
+So you choose an axis, then you will try to measure how hard it is to spin your object around that axis.
+
+00:32:20.420 --> 00:32:27.140
+For example, I can try to measure how hard it is to spin this sheet of paper about an axis that's in the center of it.
+
+00:32:27.260 --> 00:32:30.640
+So I will try to spin it like that and see how much effort I have to make.
+
+00:32:31.500 --> 00:32:33.400
+Well, for a sheet of paper, not very much, but.
+
+00:32:35.600 --> 00:32:44.600
+So that would measure the same thing, but it would be rotation, motion, about that axis.
+
+00:32:57.760 --> 00:32:59.720
+So maybe some of you know the definition.
+
+00:33:00.040 --> 00:33:02.380
+If not, I'm going to try to derive it again.
+
+00:33:03.560 --> 00:33:07.600
+I'm sorry, but it won't be quite as detailed as the way you've probably seen it in physics, but you know,
+
+00:33:07.660 --> 00:33:10.420
+I'm not trying to replace your physics teachers. I'm sure they're doing a great job.
+
+00:33:15.340 --> 00:33:17.360
+So what's the idea for the definition?
+
+00:33:17.640 --> 00:33:19.340
+To find a formula for the moment of inertia.
+
+00:33:20.220 --> 00:33:21.980
+So the idea is to think about kinetic energy.
+
+00:33:22.200 --> 00:33:28.200
+Kinetic energy is really what, you know, when you push something or when you try to make it move,
+
+00:33:28.800 --> 00:33:30.180
+you have to provide some energy to it.
+
+00:33:30.720 --> 00:33:31.900
+And then it has kinetic energy.
+
+00:33:32.540 --> 00:33:37.140
+And if you have a right device, then you can convert back that kinetic energy into something else.
+
+00:33:40.480 --> 00:33:46.200
+So if you try to look at the kinetic energy of a point mass,
+
+00:33:46.480 --> 00:33:51.960
+so you have something with mass m going at velocity V,
+
+00:33:52.420 --> 00:33:56.940
+well, that will be one half of a mass times the square of the speed.
+
+00:33:57.900 --> 00:34:00.900
+Hopefully you've all seen that formula sometime before.
+
+00:34:01.800 --> 00:34:04.460
+Now let's say that instead of just trying to push this mass,
+
+00:34:04.460 --> 00:34:07.420
+I'm going to make it spin around something.
+
+00:34:08.460 --> 00:34:16.500
+So instead of just somewhere, maybe, you know, I will have the origin,
+
+00:34:17.040 --> 00:34:22.020
+and I'm trying to actually make it go around the origin at a certain, you know,
+
+00:34:22.100 --> 00:34:23.960
+in a circle, at a certain angular velocity.
+
+00:34:27.620 --> 00:34:35.820
+So for a mass m, at distance r, let's call r this distance.
+
+00:34:40.780 --> 00:34:48.540
+And angular velocity, let's call the angular velocity omega.
+
+00:34:48.840 --> 00:34:50.080
+I think that's what physicists call it.
+
+00:34:50.080 --> 00:34:56.420
+So remember, the angular velocity is just the rate of change of the angle over time.
+
+00:34:56.780 --> 00:34:58.760
+It's d theta dt if you want.
+
+00:35:00.760 --> 00:35:02.760
+Well, what's the kinetic energy now?
+
+00:35:03.420 --> 00:35:05.320
+Well, first we have to find out what's the speed.
+
+00:35:05.740 --> 00:35:06.620
+What's the speed?
+
+00:35:07.100 --> 00:35:12.280
+Well, if we are going on a circle of radius r at angular velocity omega,
+
+00:35:13.200 --> 00:35:15.640
+that means that in unit time, we rotate by omega,
+
+00:35:15.640 --> 00:35:17.980
+and we go by a distance of r times omega.
+
+00:35:21.020 --> 00:35:26.080
+So the actual speed is the radius times the angular velocity.
+
+00:35:28.700 --> 00:35:37.700
+And so the kinetic energy is 1.5 mv squared, which is 1.5 mr squared omega squared.
+
+00:35:39.920 --> 00:35:46.060
+And so, see, by similarity with that formula, we can think of,
+
+00:35:46.120 --> 00:35:49.920
+so here, the coefficient of V squared is the mass.
+
+00:35:50.740 --> 00:35:52.760
+And here we'll see the coefficient of omega squared,
+
+00:35:52.860 --> 00:35:55.180
+so this thing is the moment of inertia.
+
+00:35:56.820 --> 00:35:58.560
+That's how we define the moment of inertia.
+
+00:36:15.100 --> 00:36:18.380
+Okay. Now that's only for a point mass.
+
+00:36:19.840 --> 00:36:22.460
+And it's kind of fun to spin just a small ball,
+
+00:36:22.460 --> 00:36:25.120
+but maybe you'd like to spin actually a larger solid
+
+00:36:26.620 --> 00:36:28.620
+and try to define this moment of inertia.
+
+00:36:29.380 --> 00:36:32.900
+Well, the moment of inertia of a solid will be just the sum of the moments of inertia
+
+00:36:33.340 --> 00:36:34.640
+of all the little pieces.
+
+00:36:36.220 --> 00:36:39.320
+So what we'll do is we'll just cut our solid into little chunks
+
+00:36:39.320 --> 00:36:42.760
+and we'll sum this thing for each little piece.
+
+00:36:46.400 --> 00:36:53.460
+Okay, so for a solid width density,
+
+00:36:56.500 --> 00:36:59.820
+so each little piece has mass,
+
+00:37:02.640 --> 00:37:06.480
+which is the density times the amount of area,
+
+00:37:06.880 --> 00:37:07.860
+this is equal actually.
+
+00:37:10.860 --> 00:37:14.300
+And the moment of inertia of a small portion of the solid will be
+
+00:37:14.300 --> 00:37:17.700
+delta m, the small mass, times r squared,
+
+00:37:17.980 --> 00:37:22.200
+the square of a distance to the center, to the axis around which I'm spinning.
+
+00:37:25.180 --> 00:37:28.220
+So that means if I sum these things together,
+
+00:37:29.760 --> 00:37:32.880
+well, so it has a moment of inertia,
+
+00:37:36.940 --> 00:37:44.560
+delta m times r squared, which is r squared times the density times delta a.
+
+00:37:45.140 --> 00:37:47.980
+And so I will be summing these things together.
+
+00:37:48.880 --> 00:37:55.180
+And so the moment of inertia about the origin will be the double integral
+
+00:37:55.180 --> 00:37:58.460
+of r squared times density times dA.
+
+00:38:21.620 --> 00:38:35.000
+Okay, so the final formula for the moment of inertia about the origin
+
+00:38:39.160 --> 00:38:45.460
+is the double integral of a region of r squared density dA.
+
+00:38:46.240 --> 00:38:49.360
+Or if you're going to do it in x-y coordinates,
+
+00:38:49.660 --> 00:38:52.320
+of course r squared becomes x squared plus y squared,
+
+00:38:52.800 --> 00:38:58.320
+it's the square of the distance from the origin.
+
+00:38:59.880 --> 00:39:04.080
+Okay, so when you integrate this, that tells you how hard it is to spin that solid
+
+00:39:04.080 --> 00:39:05.380
+about the origin.
+
+00:39:05.640 --> 00:39:08.460
+So the motion that we try to do, we keep this fixed,
+
+00:39:08.820 --> 00:39:13.900
+and then we just rotate around the origin.
+
+00:39:13.900 --> 00:39:18.000
+So that's a pretty bad picture, but hopefully you get what I mean.
+
+00:39:19.900 --> 00:39:28.060
+Okay, and then the rotational energy, so the name we use for that is i0.
+
+00:39:28.800 --> 00:39:41.860
+And then the rotational kinetic energy is one half times this moment of inertia
+
+00:39:41.860 --> 00:39:44.380
+times the square of the angular velocity.
+
+00:39:45.840 --> 00:39:50.540
+So it's in this sense that this replaces the mass for rotation motions.
+
+00:39:55.860 --> 00:39:59.400
+Okay, what about other kinds of rotations?
+
+00:40:02.860 --> 00:40:07.140
+So in particular here we've been rotating things about just a point in the plane.
+
+00:40:07.860 --> 00:40:11.820
+What you could imagine also is instead you have your solid.
+
+00:40:17.200 --> 00:40:19.880
+So what I've done so far is I've skewered it this way,
+
+00:40:20.100 --> 00:40:21.960
+and I'm rotating around the axis.
+
+00:40:23.000 --> 00:40:27.040
+Instead I could skewer it through, say, the horizontal axis,
+
+00:40:27.300 --> 00:40:29.320
+and then I could try to spin about the horizontal axis.
+
+00:40:29.660 --> 00:40:33.920
+So then it would rotate in space in that direction, like that.
+
+00:40:45.140 --> 00:40:49.000
+So, let's say we do rotation about the x-axis.
+
+00:40:51.080 --> 00:40:52.820
+Well, the idea would still be the same.
+
+00:40:53.020 --> 00:40:59.780
+Okay, if moment of inertia for any small piece of the solid would be its mass element
+
+00:41:00.760 --> 00:41:03.560
+times the square of the distance to the axis,
+
+00:41:03.700 --> 00:41:06.000
+because that will be the radius of the trajectory.
+
+00:41:06.000 --> 00:41:12.760
+If you take this point here, it's going to go on a circle like that,
+
+00:41:13.980 --> 00:41:14.960
+center on the x-axis.
+
+00:41:16.180 --> 00:41:19.060
+So the radius will just be this distance here.
+
+00:41:20.720 --> 00:41:21.540
+Well, what's this distance?
+
+00:41:22.640 --> 00:41:25.200
+It's just y, or maybe absolute value of y.
+
+00:41:26.820 --> 00:41:35.100
+So distance to x-axis is absolute value of y,
+
+00:41:36.440 --> 00:41:39.660
+and what we actually care about is the square of the distance,
+
+00:41:39.920 --> 00:41:41.260
+so that it will just be y squared.
+
+00:41:43.400 --> 00:41:50.800
+So the moment of inertia about the x-axis is going to be obtained by integrating y squared.
+
+00:41:51.860 --> 00:41:52.880
+Thanks for my sentiment.
+
+00:41:55.880 --> 00:42:00.900
+Okay, it's slightly strange that I have y in the inertia about the x-axis,
+
+00:42:01.000 --> 00:42:04.260
+but if you think about it, why tell us me how far I am from the x-axis,
+
+00:42:04.260 --> 00:42:07.240
+so how hard it will be to spin around the x-axis.
+
+00:42:09.360 --> 00:42:12.600
+Okay, and I could do the same about any other axis that I want,
+
+00:42:13.140 --> 00:42:17.060
+just I would have to sum the square of the distance to the axis of rotation.
+
+00:42:22.800 --> 00:42:25.420
+Okay, so maybe I should do an example.
+
+00:42:27.320 --> 00:42:27.820
+Yes.
+
+00:42:29.760 --> 00:42:33.460
+Oh, sorry, same thing as above, distance to the x-axis.
+
+00:42:37.780 --> 00:42:40.480
+Because that's what we care about, right, for the moment of inertia,
+
+00:42:40.520 --> 00:42:42.980
+we want the square of the distance to the axis of rotation.
+
+00:42:52.120 --> 00:42:53.360
+Okay, so let's do an example.
+
+00:42:53.360 --> 00:42:58.220
+Let's try to figure out if we have just a uniform disc,
+
+00:42:58.780 --> 00:43:01.000
+how hard it is to spin it around its center.
+
+00:43:04.760 --> 00:43:07.900
+Okay, so that shouldn't be very hard to figure out.
+
+00:43:07.900 --> 00:43:17.520
+So let's say that we have a disc of radius a,
+
+00:43:24.460 --> 00:43:26.700
+and we want to rotate it about its center.
+
+00:43:29.520 --> 00:43:31.320
+And let's say that it's a uniform density,
+
+00:43:32.100 --> 00:43:33.640
+and let's take just the density to be one,
+
+00:43:33.640 --> 00:43:36.040
+so that we don't really care about the density.
+
+00:43:38.060 --> 00:43:40.880
+So what's the moment of inertia of that?
+
+00:43:41.200 --> 00:43:48.900
+Well, we have to integrate over our disc, r squared times the density,
+
+00:43:49.060 --> 00:43:50.920
+which is one, times dA.
+
+00:43:52.640 --> 00:43:53.560
+Okay, what's r squared?
+
+00:43:54.560 --> 00:43:56.840
+So you have here to resist the urge to say,
+
+00:43:56.960 --> 00:43:59.440
+oh, the radius is just a, we know the radius is a.
+
+00:44:00.380 --> 00:44:03.840
+No, it's not a, because we're looking at rotation of,
+
+00:44:03.840 --> 00:44:05.700
+you know, any point inside this disc,
+
+00:44:06.040 --> 00:44:09.520
+and when you're inside the disc, the distance to the origin is not a,
+
+00:44:09.700 --> 00:44:12.460
+it's less than a, it's actually anything between zero and a.
+
+00:44:13.860 --> 00:44:15.380
+Okay, so just you know to point out a pitfall,
+
+00:44:16.320 --> 00:44:18.400
+r here is really a function on this disc,
+
+00:44:18.540 --> 00:44:19.840
+and we're going to integrate that function.
+
+00:44:20.560 --> 00:44:23.000
+Okay, don't plug r equals a, just yet.
+
+00:44:24.740 --> 00:44:28.340
+Okay, what coordinates do we use to compute this integral?
+
+00:44:29.500 --> 00:44:30.740
+We are probably polar coordinates,
+
+00:44:31.040 --> 00:44:35.140
+I mean, unless you want to repeat of what happened already with, you know, X and Y.
+
+00:44:36.000 --> 00:44:41.620
+So that will tell us we want to integrate r squared times r dr d theta.
+
+00:44:42.480 --> 00:44:46.640
+And the bounds for r, well, r will go from zero to a,
+
+00:44:47.020 --> 00:44:49.860
+no matter in which direction I go from the origin,
+
+00:44:49.860 --> 00:44:55.520
+if I fix theta, r goes from zero to r equals a.
+
+00:44:56.260 --> 00:45:01.480
+The part of this ray that lives inside the disc is always from zero to a.
+
+00:45:02.840 --> 00:45:06.120
+And theta goes from, well, zero to two pi, for example.
+
+00:45:08.740 --> 00:45:11.320
+Okay, and now you can compute this integral.
+
+00:45:11.860 --> 00:45:14.300
+Well, I'll let you figure it out,
+
+00:45:14.360 --> 00:45:17.440
+but the inner integral becomes a to the four over four,
+
+00:45:17.440 --> 00:45:20.620
+and the outer multiplies things by two pi,
+
+00:45:20.800 --> 00:45:23.600
+so you get pi a to the four over two.
+
+00:45:24.920 --> 00:45:25.640
+No, yes.
+
+00:45:29.680 --> 00:45:33.360
+Okay, so that's how hard it is to spin this disc.
+
+00:45:34.300 --> 00:45:38.640
+Now, what about instead of spinning it about the center,
+
+00:45:39.240 --> 00:45:42.680
+we decide actually to spin it about a point on the circumference?
+
+00:45:44.600 --> 00:45:46.700
+So, you know, for example, think of a Frisbee, you know,
+
+00:45:46.960 --> 00:45:48.240
+Frisbee, you know, it has this frame,
+
+00:45:48.340 --> 00:45:52.660
+and so you can actually try to make it rotate around the point on the circumference.
+
+00:45:53.660 --> 00:45:56.640
+By holding it, you know, near the remains, spinning it there.
+
+00:45:57.420 --> 00:45:59.260
+How much harder is that than around the center?
+
+00:46:00.800 --> 00:46:04.040
+Well, we'll try to compute now the moment of inertia about this point.
+
+00:46:05.120 --> 00:46:06.260
+So we have two options.
+
+00:46:06.640 --> 00:46:09.600
+One is we keep the system of coordinates centered here,
+
+00:46:09.600 --> 00:46:13.260
+but then the formula for distance to this point becomes harder.
+
+00:46:14.820 --> 00:46:17.180
+The other option, which is the one I will choose,
+
+00:46:18.000 --> 00:46:20.940
+is to change the coordinates so that this point becomes the origin.
+
+00:46:22.200 --> 00:46:22.840
+Okay, so let's do that.
+
+00:46:48.420 --> 00:46:57.300
+Okay, so about a point on the circumference,
+
+00:47:02.360 --> 00:47:04.200
+what I would have to do,
+
+00:47:08.160 --> 00:47:11.460
+maybe, is set up my origin like that.
+
+00:47:13.060 --> 00:47:16.780
+You know, now I've moved the origin so that it's on the circumference of the disc,
+
+00:47:17.060 --> 00:47:22.360
+and I will again try to find the moment of inertia of this disc about the origin.
+
+00:47:26.680 --> 00:47:30.340
+So it's still the double integral of r squared dA.
+
+00:47:31.840 --> 00:47:34.740
+But now I want to find out how to set up the integral.
+
+00:47:38.300 --> 00:47:41.740
+So I could try to use xy coordinates and it would work.
+
+00:47:42.460 --> 00:47:46.300
+Or I can use polar coordinates and actually it works a little bit better that way.
+
+00:47:48.480 --> 00:47:50.260
+But both are doable.
+
+00:47:50.260 --> 00:47:53.040
+So let's say I do it this way.
+
+00:47:54.320 --> 00:47:56.100
+So I have to figure out how to set up my bounds.
+
+00:47:56.920 --> 00:47:58.620
+So what are the bounds for r?
+
+00:48:00.040 --> 00:48:02.080
+Well, if I fix a value of theta,
+
+00:48:04.700 --> 00:48:06.820
+so it means I chose an angle here,
+
+00:48:07.400 --> 00:48:11.520
+and now I'm shooting a ray from the origin in that direction.
+
+00:48:12.960 --> 00:48:17.740
+So I enter my region at r equals 0, but hasn't changed.
+
+00:48:18.900 --> 00:48:21.680
+The question is, where do I exit the region?
+
+00:48:22.960 --> 00:48:24.940
+So what is that distance?
+
+00:48:28.460 --> 00:48:30.700
+So maybe you've seen a recitation, maybe not.
+
+00:48:35.660 --> 00:48:36.740
+So let's see.
+
+00:48:37.160 --> 00:48:40.220
+Well, actually I should have written down the radius of the circle is a,
+
+00:48:40.440 --> 00:48:41.780
+so this distance here is 2A.
+
+00:48:41.780 --> 00:48:49.560
+Okay, so if you draw this segment in here,
+
+00:48:49.760 --> 00:48:52.600
+you know that here you have a right angle.
+
+00:48:53.920 --> 00:48:55.300
+So you have a right triangle.
+
+00:48:55.860 --> 00:48:58.500
+The hypotenuse here has length 2A.
+
+00:48:58.940 --> 00:48:59.880
+This angle is theta.
+
+00:49:00.540 --> 00:49:04.780
+Well, this length is 2A cosine theta.
+
+00:49:06.720 --> 00:49:13.740
+Okay, so the polar coordinates equation of this circle passing
+
+00:49:13.740 --> 00:49:18.260
+through the origin is r equals 2A cosine theta.
+
+00:49:22.900 --> 00:49:27.040
+So r will go from 0 to 2A cosine theta.
+
+00:49:28.960 --> 00:49:30.300
+Okay, that's the distance.
+
+00:49:33.260 --> 00:49:34.980
+Now what are the bounds for theta?
+
+00:49:37.220 --> 00:49:40.740
+It's not quite 0 to 2A because actually you see in this direction,
+
+00:49:41.260 --> 00:49:43.660
+if I shoot a ray in this direction, I will never meet my region.
+
+00:49:43.940 --> 00:49:46.720
+So I have to actually think a bit more.
+
+00:49:47.340 --> 00:49:50.940
+Well, the directions in which I will actually hit my circle
+
+00:49:51.480 --> 00:49:54.200
+are all the directions in the right half of a plane.
+
+00:49:55.460 --> 00:49:58.760
+Okay, I mean, of course I should very close to the axis.
+
+00:49:59.140 --> 00:50:01.760
+You might think, oh, I won't be in there, but actually that's not true
+
+00:50:01.760 --> 00:50:04.460
+because here the circle is tangent to the axis.
+
+00:50:04.780 --> 00:50:06.620
+So in no matter which direction I take,
+
+00:50:06.860 --> 00:50:08.900
+I will still have a little tiny piece.
+
+00:50:10.260 --> 00:50:13.840
+So the angle actually goes from minus pi over 2 to pi over 2.
+
+00:50:15.020 --> 00:50:19.760
+So now if you compute that, you will get,
+
+00:50:19.760 --> 00:50:25.480
+well, the inner integral will be r to the 4 over 4
+
+00:50:25.480 --> 00:50:27.780
+between 0 and 2A cosine theta,
+
+00:50:28.740 --> 00:50:34.220
+which will turn out to be 4A to the 4 cosine to the 4 theta.
+
+00:50:35.340 --> 00:50:40.960
+And now you will integrate that from minus pi over 2 to pi over 2.
+
+00:50:43.880 --> 00:50:48.240
+And well, that's again the evil integral that we had yesterday.
+
+00:50:48.240 --> 00:50:51.180
+So either we remember the method from yesterday,
+
+00:50:51.840 --> 00:50:54.080
+or we remember from yesterday that actually there's formulas
+
+00:50:54.080 --> 00:50:56.020
+in the notes to help you.
+
+00:50:56.140 --> 00:50:58.860
+So on homework, you can use this formula in the notes
+
+00:50:58.860 --> 00:51:00.300
+at the beginning of section 3B.
+
+00:51:04.920 --> 00:51:07.480
+There's formulas for these particular kinds of integrals.
+
+00:51:08.280 --> 00:51:12.280
+And that will end up being three halves of pi a to the 4.
+
+00:51:12.940 --> 00:51:14.520
+So in case you wanted to know,
+
+00:51:14.860 --> 00:51:16.840
+it's three times harder to spin a frisbee
+
+00:51:16.840 --> 00:51:19.320
+about a point in circumference than around the center.
+
+00:51:19.780 --> 00:51:23.200
+See, we got three times the moment of inertia about the center.
+
+00:51:25.700 --> 00:51:27.560
+Okay, that's it. Have a nice weekend.
+

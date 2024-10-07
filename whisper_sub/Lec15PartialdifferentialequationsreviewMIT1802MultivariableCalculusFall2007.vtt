@@ -1,0 +1,1670 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.960
+Your support will help MIT OpenCourseWare
+
+00:00:05.960 --> 00:00:08.760
+continue to offer high quality educational resources
+
+00:00:08.760 --> 00:00:09.340
+for free.
+
+00:00:09.920 --> 00:00:12.520
+To make a donation or to view additional materials
+
+00:00:12.520 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:22.160 --> 00:00:24.380
+Let me start by basically listing the main things
+
+00:00:24.380 --> 00:00:27.200
+we've learned over the past three weeks or so.
+
+00:00:28.080 --> 00:00:30.680
+And I'll add a few compliments of information about that,
+
+00:00:30.760 --> 00:00:32.280
+because there's a few small details
+
+00:00:32.280 --> 00:00:36.280
+that I didn't quite clarify and that I should probably
+
+00:00:36.980 --> 00:00:38.720
+make a bit clearer, especially what
+
+00:00:38.720 --> 00:00:41.040
+happened at the very end of yesterday's class.
+
+00:00:47.520 --> 00:00:54.380
+So here's a list of things that should be on your review
+
+00:00:54.380 --> 00:00:55.360
+sheet for the exam.
+
+00:00:57.200 --> 00:01:00.780
+So the first thing we learned about the main topic of this unit
+
+00:01:00.780 --> 00:01:03.840
+is about functions of several variables.
+
+00:01:10.080 --> 00:01:12.720
+So we've learned how to think of functions of two
+
+00:01:12.720 --> 00:01:16.960
+of revivals in terms of plotting them, in particular,
+
+00:01:17.000 --> 00:01:20.140
+well, not only the graph, but also the contour plot
+
+00:01:20.140 --> 00:01:22.000
+and how to read a contour plot.
+
+00:01:27.200 --> 00:01:31.160
+And we've learned how to study variations of these functions
+
+00:01:32.040 --> 00:01:33.940
+using partial derivatives.
+
+00:01:41.600 --> 00:01:45.460
+So remember, we've defined the partial of f with respect
+
+00:01:45.460 --> 00:01:50.580
+to some variables say x to be the rate of change with respect
+
+00:01:50.580 --> 00:01:53.400
+to x when we hold all the other variables constant.
+
+00:01:53.400 --> 00:01:56.600
+So if you have a function of x and y,
+
+00:01:56.780 --> 00:01:59.080
+this symbol means you differentiate with respect
+
+00:01:59.080 --> 00:02:01.280
+to x, trading y as a constant.
+
+00:02:08.440 --> 00:02:12.740
+And we've learned how to package partial derivatives
+
+00:02:12.740 --> 00:02:15.140
+into a vector, the gradient vector.
+
+00:02:18.820 --> 00:02:21.280
+So for example, if we have a function of variables,
+
+00:02:21.280 --> 00:02:24.500
+that's just the vector with components
+
+00:02:24.500 --> 00:02:25.600
+of the partial derivatives.
+
+00:02:26.500 --> 00:02:29.180
+And we've seen how to use the gradient vector
+
+00:02:29.180 --> 00:02:32.340
+of the partial derivatives to derive various things,
+
+00:02:32.340 --> 00:02:34.320
+such as approximation formulas.
+
+00:02:39.440 --> 00:02:44.420
+So the change in f when we change x, y, and z slightly
+
+00:02:44.960 --> 00:02:49.860
+is approximately equal to, well, there's several terms.
+
+00:02:57.300 --> 00:03:02.040
+And I can rewrite this in vector form as the gradient dot
+
+00:03:02.040 --> 00:03:06.480
+product, the amount by which the position vector has changed.
+
+00:03:07.640 --> 00:03:09.980
+So basically, what causes f to change
+
+00:03:09.980 --> 00:03:12.820
+is that I'm changing x, y, and z by small amounts.
+
+00:03:13.280 --> 00:03:16.040
+And how sensitive f is to each variable
+
+00:03:16.560 --> 00:03:18.940
+is precisely what the partial derivatives measure.
+
+00:03:22.140 --> 00:03:25.480
+And in particular, we can use, so this approximation
+
+00:03:26.040 --> 00:03:28.160
+is called the tangent plane approximation,
+
+00:03:28.740 --> 00:03:33.600
+because it tells us, in fact, it amounts
+
+00:03:34.360 --> 00:03:37.940
+to identifying the graph of a function with its tangent plane.
+
+00:03:38.560 --> 00:03:41.580
+It means that we assume that the function
+
+00:03:41.580 --> 00:03:44.380
+depends more or less linearly on x, y, z.
+
+00:03:45.100 --> 00:03:47.580
+And if we set these things equal, what we get is actually,
+
+00:03:47.580 --> 00:03:51.680
+we are replacing the function by its linear approximation.
+
+00:03:52.120 --> 00:03:54.400
+We are replacing the graph by its tangent plane.
+
+00:03:55.900 --> 00:03:57.820
+Except, of course, we haven't seen the graph of a function
+
+00:03:57.820 --> 00:03:59.120
+of three variables, because that would
+
+00:03:59.120 --> 00:04:00.660
+live in four dimensional space.
+
+00:04:01.340 --> 00:04:02.920
+So when we think of the graph, that's really
+
+00:04:02.920 --> 00:04:04.300
+with a function of two variables.
+
+00:04:08.160 --> 00:04:10.620
+That also tells us how to find tangent planes
+
+00:04:11.380 --> 00:04:12.240
+to level surfaces.
+
+00:04:20.800 --> 00:04:33.140
+So recall that the tangent plane to a surface given by the equation
+
+00:04:33.680 --> 00:04:38.840
+f of x, y, z equals c at a given point can be found
+
+00:04:39.900 --> 00:04:42.340
+by looking first for its normal vector.
+
+00:04:44.580 --> 00:04:48.200
+And we know that the normal vector is actually,
+
+00:04:48.640 --> 00:04:51.460
+well, one normal vector is given by the gradient of a function,
+
+00:04:51.700 --> 00:04:56.560
+because we know that the gradient is actually pointing
+
+00:04:57.980 --> 00:05:01.280
+perpendicularly to the level sets towards higher values
+
+00:05:01.280 --> 00:05:01.740
+of a function.
+
+00:05:01.900 --> 00:05:05.640
+It gives us the direction of fastest increase of a function.
+
+00:05:08.840 --> 00:05:11.520
+Any questions about these topics?
+
+00:05:14.860 --> 00:05:20.720
+OK, so let me add actually a cultural note
+
+00:05:20.720 --> 00:05:23.800
+to what we've seen so far about partial derivatives
+
+00:05:23.800 --> 00:05:27.220
+and how to use them, which is maybe something
+
+00:05:27.220 --> 00:05:28.920
+I should have mentioned a couple of weeks ago.
+
+00:05:31.320 --> 00:05:33.400
+So why do we like partial derivatives?
+
+00:05:33.800 --> 00:05:36.100
+Well, one obvious reason is we can do all these things.
+
+00:05:36.860 --> 00:05:39.640
+But another reason is that really you need partial derivatives
+
+00:05:39.640 --> 00:05:41.960
+to do physics and to do, actually,
+
+00:05:42.060 --> 00:05:43.840
+to understand much of the world that's around you,
+
+00:05:44.160 --> 00:05:46.560
+because a lot of things actually
+
+00:05:46.560 --> 00:05:50.100
+are governed by what's called partial differential equations.
+
+00:05:59.440 --> 00:06:04.680
+So that's, if you want a cultural remark about what
+
+00:06:04.680 --> 00:06:05.680
+this is good for.
+
+00:06:07.020 --> 00:06:08.880
+So a partial differential equation
+
+00:06:09.520 --> 00:06:11.820
+is an equation that involves the partial derivatives
+
+00:06:12.400 --> 00:06:13.000
+of a function.
+
+00:06:13.500 --> 00:06:15.340
+So you have some function that's unknown
+
+00:06:16.160 --> 00:06:17.460
+that depends on a bunch of variables.
+
+00:06:18.400 --> 00:06:20.860
+And a partial differential equation
+
+00:06:20.860 --> 00:06:23.680
+is some relation between its partial derivatives.
+
+00:06:25.940 --> 00:06:27.540
+So let me see.
+
+00:06:28.180 --> 00:06:32.380
+These are equations involving.
+
+00:06:34.680 --> 00:06:47.660
+The partial derivatives of an unknown function.
+
+00:06:51.060 --> 00:06:54.780
+So let me give you an example to see how that works.
+
+00:06:55.540 --> 00:06:58.940
+So for example, the heat equation
+
+00:07:01.260 --> 00:07:04.300
+is one example of a partial differential equation.
+
+00:07:05.280 --> 00:07:08.680
+It's the equation, well, let me write for you
+
+00:07:08.680 --> 00:07:10.340
+the space version of it.
+
+00:07:15.540 --> 00:07:17.340
+And the equation partial f partial t
+
+00:07:17.340 --> 00:07:21.840
+equals some constant times the sum of the second
+
+00:07:21.840 --> 00:07:23.840
+partial with respect to x, y, and z.
+
+00:07:28.780 --> 00:07:31.580
+So this is an equation where we're
+
+00:07:31.580 --> 00:07:35.220
+trying to solve for a function f that
+
+00:07:35.220 --> 00:07:40.640
+depends, actually, on four variables, x, y, z, and t.
+
+00:07:42.380 --> 00:07:46.280
+And what should you have in mind?
+
+00:07:46.920 --> 00:07:49.100
+Well, this equation governs temperature.
+
+00:07:49.100 --> 00:07:52.900
+So if you think that f of x, y, z t
+
+00:07:52.900 --> 00:07:55.880
+will be the temperature at a point in space,
+
+00:07:56.180 --> 00:07:58.500
+at position x, y, z, and at time t,
+
+00:07:59.200 --> 00:08:02.740
+then this tells you how temperature changes over time.
+
+00:08:04.220 --> 00:08:06.320
+It tells you that at any given point,
+
+00:08:06.720 --> 00:08:08.980
+the rate of change of temperature over time
+
+00:08:08.980 --> 00:08:11.960
+is given by this complicated expression
+
+00:08:12.700 --> 00:08:14.620
+in the partial derivatives in terms
+
+00:08:14.620 --> 00:08:16.860
+of the space coordinates x, y, z.
+
+00:08:17.400 --> 00:08:21.160
+So if you know, for example, the initial distribution
+
+00:08:21.160 --> 00:08:23.560
+of temperature in this room, and if you assume
+
+00:08:23.560 --> 00:08:26.320
+that nothing is generating heat or taking heat away,
+
+00:08:26.440 --> 00:08:28.620
+so if you don't have any air conditioning or heating going on,
+
+00:08:29.240 --> 00:08:31.800
+then it will tell you how the temperature will change over time
+
+00:08:32.300 --> 00:08:34.900
+and eventually stabilize to some final value.
+
+00:08:36.120 --> 00:08:36.220
+Yes?
+
+00:08:36.620 --> 00:08:39.640
+Why do we take the partial derivative twice?
+
+00:08:42.860 --> 00:08:44.460
+Well, that's a question, I'd say.
+
+00:08:45.300 --> 00:08:46.740
+It's a question for a physics person,
+
+00:08:46.880 --> 00:08:48.220
+but actually I'm going to, no.
+
+00:08:48.740 --> 00:08:50.840
+In a few weeks, we'll actually see a derivation
+
+00:08:50.840 --> 00:08:53.820
+of where this equation comes from and try to justify it.
+
+00:08:54.320 --> 00:08:56.320
+But really, that's something you will see in a physics class.
+
+00:08:56.780 --> 00:09:00.200
+The reason for that is basically physics
+
+00:09:00.200 --> 00:09:05.580
+of how heat is transported between particles in a fluid
+
+00:09:05.580 --> 00:09:07.120
+or actually in any medium.
+
+00:09:07.560 --> 00:09:11.460
+But this constant k actually is called the heat conductivity.
+
+00:09:11.460 --> 00:09:14.540
+It tells you how well the heat flows through the material
+
+00:09:14.540 --> 00:09:15.320
+that you're looking at.
+
+00:09:18.460 --> 00:09:21.540
+So anyway, I'm giving it to you just to show you an example
+
+00:09:21.540 --> 00:09:24.260
+of a real life problem, where in fact,
+
+00:09:24.260 --> 00:09:25.780
+you have to solve one of these things.
+
+00:09:26.380 --> 00:09:28.600
+So now how to solve partial differential equations
+
+00:09:28.600 --> 00:09:30.200
+is not a topic for this class.
+
+00:09:30.900 --> 00:09:32.560
+It's not even a topic for 18 or three,
+
+00:09:32.640 --> 00:09:35.340
+which is called differential equations, without partial,
+
+00:09:36.100 --> 00:09:38.720
+which means that actually you will learn tools
+
+00:09:38.720 --> 00:09:41.000
+to study and solve these equations,
+
+00:09:41.000 --> 00:09:42.760
+but when there's only one variable involved.
+
+00:09:43.360 --> 00:09:44.920
+And you'll see it's already quite hard.
+
+00:09:46.740 --> 00:09:48.500
+And if you want more, then later on,
+
+00:09:48.640 --> 00:09:51.400
+we have many fine classes about partial differential equations.
+
+00:09:52.300 --> 00:09:53.760
+But one thing at a time.
+
+00:09:55.580 --> 00:09:58.120
+So just I wanted to point out to you that very often,
+
+00:09:58.680 --> 00:10:00.120
+functions that you see in real life
+
+00:10:01.100 --> 00:10:03.820
+satisfy many nice relations between their partial derivatives.
+
+00:10:07.320 --> 00:10:09.660
+So that was, in case you were wondering why
+
+00:10:09.660 --> 00:10:12.540
+on the syllabus for today, it said partial differential equations
+
+00:10:12.540 --> 00:10:14.140
+now we've officially covered the topic.
+
+00:10:14.920 --> 00:10:16.720
+That's basically all we need to know about it.
+
+00:10:17.260 --> 00:10:17.260
+
+
+00:10:19.360 --> 00:10:21.420
+But we'll get back to that a bit later.
+
+00:10:21.940 --> 00:10:22.180
+You'll see.
+
+00:10:24.800 --> 00:10:25.280
+OK.
+
+00:10:26.500 --> 00:10:28.500
+If there's no further questions,
+
+00:10:28.760 --> 00:10:30.760
+let me continue and go back to my list of topics.
+
+00:10:32.060 --> 00:10:33.800
+Oh, sorry, I should have written down.
+
+00:10:34.500 --> 00:10:35.140
+OK.
+
+00:10:36.440 --> 00:10:40.260
+But this equation is solved by temperature
+
+00:10:41.520 --> 00:10:44.920
+at the point x, y, z at time t.
+
+00:10:48.600 --> 00:10:48.740
+OK.
+
+00:10:50.780 --> 00:10:54.860
+And there are actually many other interesting partial differential equations.
+
+00:10:55.080 --> 00:10:57.440
+You will maybe sometime learn about the wave equation
+
+00:10:57.440 --> 00:10:59.640
+that governs how waves propagate in space
+
+00:11:00.780 --> 00:11:02.500
+about the diffusion equation,
+
+00:11:02.500 --> 00:11:05.840
+which tells you how, you know, when you have maybe a mixture
+
+00:11:05.840 --> 00:11:10.280
+of two fluids, how this somehow makes over time and so on.
+
+00:11:10.460 --> 00:11:13.360
+There's basically two every problem you might want to consider.
+
+00:11:13.360 --> 00:11:15.120
+There's a partial differential equation to solve.
+
+00:11:18.780 --> 00:11:19.260
+OK.
+
+00:11:19.420 --> 00:11:21.080
+Anyway, sorry, back to my list of topics.
+
+00:11:22.880 --> 00:11:26.180
+So one important application we've seen of partial derivatives
+
+00:11:26.900 --> 00:11:30.640
+is to try to optimize things, try to solve minimum, maximum problems.
+
+00:11:41.260 --> 00:11:46.740
+So remember that we've introduced
+
+00:11:46.740 --> 00:11:48.760
+an option of critical points of a function.
+
+00:11:50.480 --> 00:11:56.920
+So a critical point is when all the partial derivatives are zero.
+
+00:12:02.840 --> 00:12:05.360
+And then there are various kinds of critical points.
+
+00:12:05.520 --> 00:12:08.840
+There are maxima, there's minima, but there's also saddle points.
+
+00:12:10.080 --> 00:12:14.440
+And we've seen a method using second derivatives
+
+00:12:19.520 --> 00:12:23.040
+to decide which kind of critical point we have.
+
+00:12:25.700 --> 00:12:29.540
+So I should say that's for a function of two variables.
+
+00:12:32.500 --> 00:12:34.720
+To try to decide whether a given critical point
+
+00:12:35.300 --> 00:12:37.340
+is a minimum, a maximum or a saddle point.
+
+00:12:40.680 --> 00:12:44.340
+And we've also seen that actually that's not enough
+
+00:12:44.340 --> 00:12:46.340
+to find the minimum of a maximum of a function
+
+00:12:47.140 --> 00:12:50.300
+because the minimum of a maximum could occur on the boundary.
+
+00:12:50.560 --> 00:12:52.100
+So just to give you a small reminder,
+
+00:12:52.720 --> 00:12:55.240
+when you have a function of one variable, you know,
+
+00:12:55.280 --> 00:12:59.180
+if you're trying to find the minimum and the maximum
+
+00:12:59.700 --> 00:13:01.920
+of say a function with graph looks like this,
+
+00:13:02.960 --> 00:13:04.800
+well, you're going to tell me quite obviously
+
+00:13:04.800 --> 00:13:06.900
+that the maximum is this point up here.
+
+00:13:07.480 --> 00:13:10.740
+And that's a point where the first derivative is zero,
+
+00:13:10.900 --> 00:13:11.680
+that's a critical point.
+
+00:13:12.700 --> 00:13:14.640
+And we use the second derivative to see
+
+00:13:14.640 --> 00:13:16.720
+that this critical point is a local maximum.
+
+00:13:18.440 --> 00:13:21.380
+But then when we're looking for the minimum of a function,
+
+00:13:21.780 --> 00:13:23.360
+well, it's not that a critical point,
+
+00:13:23.560 --> 00:13:28.020
+it's actually here at the boundary of the domain of,
+
+00:13:28.660 --> 00:13:30.580
+the range of values that we're going to consider.
+
+00:13:32.700 --> 00:13:36.580
+So here the minimum is at the boundary.
+
+00:13:39.280 --> 00:13:43.000
+And the maximum is at a critical point.
+
+00:13:47.880 --> 00:13:50.860
+So similarly, when you have a function of several variables,
+
+00:13:51.260 --> 00:13:53.000
+say of two variables, for example,
+
+00:13:53.620 --> 00:13:56.160
+then the minimum and the maximum will be achieved
+
+00:13:56.160 --> 00:13:57.760
+either at a critical point,
+
+00:13:58.360 --> 00:14:01.100
+and then we can use these methods to find where they are,
+
+00:14:01.620 --> 00:14:05.200
+or somewhere on the boundary of the set of values
+
+00:14:05.200 --> 00:14:05.940
+that are allowed.
+
+00:14:06.560 --> 00:14:10.100
+So it could be that we actually achieve the minimum
+
+00:14:10.100 --> 00:14:12.280
+by making x and y as small as possible,
+
+00:14:12.840 --> 00:14:15.080
+maybe letting them go to zero if they had to be positive,
+
+00:14:15.700 --> 00:14:17.380
+or maybe by making them go to infinity.
+
+00:14:18.860 --> 00:14:22.060
+So we have to keep our minds open and look
+
+00:14:22.060 --> 00:14:23.000
+at various possibilities.
+
+00:14:23.000 --> 00:14:26.100
+So we're going to do a problem like that.
+
+00:14:26.680 --> 00:14:28.640
+We're going to go over practice problem
+
+00:14:28.640 --> 00:14:31.920
+from the practice test to clarify this.
+
+00:14:33.400 --> 00:14:36.560
+So another important cultural application
+
+00:14:37.140 --> 00:14:39.500
+of minimum maximum problems in two variables
+
+00:14:39.500 --> 00:14:43.400
+that we've seen in class is the list squares method
+
+00:14:43.400 --> 00:14:48.100
+to find the best fit line or the best fit anything, really,
+
+00:14:48.840 --> 00:14:52.760
+to find when you have a set of data points,
+
+00:14:54.520 --> 00:14:57.640
+what's the best linear approximation
+
+00:14:57.640 --> 00:14:58.500
+for this data point?
+
+00:15:01.040 --> 00:15:02.940
+And here I have some good news for you
+
+00:15:03.600 --> 00:15:05.660
+while you should definitely know what this is about,
+
+00:15:06.080 --> 00:15:08.740
+it will not be on the test.
+
+00:15:08.740 --> 00:15:09.740
+Let's go.
+
+00:15:15.220 --> 00:15:16.620
+Let's go.
+
+00:15:16.760 --> 00:15:17.920
+Let's go.
+
+00:15:25.600 --> 00:15:27.000
+Let's go.
+
+00:15:29.240 --> 00:15:29.940
+Let's go.
+
+00:15:29.940 --> 00:15:29.940
+
+
+00:15:30.020 --> 00:15:30.020
+
+
+00:15:30.020 --> 00:15:30.020
+
+
+00:15:30.420 --> 00:15:32.140
+That doesn't mean that you should forget everything
+
+00:15:32.140 --> 00:15:33.480
+we've seen about it, okay?
+
+00:15:35.240 --> 00:15:35.940
+Okay.
+
+00:15:38.020 --> 00:15:38.720
+Okay.
+
+00:15:38.720 --> 00:15:38.720
+
+
+00:15:38.720 --> 00:15:38.720
+
+
+00:15:43.980 --> 00:15:47.000
+Now, what's next on my list of topics?
+
+00:15:53.720 --> 00:15:56.520
+So we've seen differentials.
+
+00:15:57.300 --> 00:16:01.960
+So remember the differential of f by definition
+
+00:16:02.880 --> 00:16:06.000
+would be this kind of quantity.
+
+00:16:06.840 --> 00:16:10.000
+So at first it looks just like a new way to package
+
+00:16:10.000 --> 00:16:13.120
+partial derivatives together into some new kind of object.
+
+00:16:14.000 --> 00:16:15.180
+Now, what is this good for?
+
+00:16:15.360 --> 00:16:17.540
+Well, it's a good way to remember approximation formulas.
+
+00:16:17.920 --> 00:16:22.120
+It's a good way to also study how variations in x, y, z
+
+00:16:22.120 --> 00:16:23.460
+relate to variations in f.
+
+00:16:24.100 --> 00:16:29.000
+In particular, we can divide this by variations of,
+
+00:16:29.780 --> 00:16:33.400
+actually, by dx or by dy or by dz in any situation
+
+00:16:33.400 --> 00:16:37.340
+that we want to find or by dy of some other variable
+
+00:16:37.340 --> 00:16:38.340
+to get chain rules.
+
+00:16:43.620 --> 00:16:47.420
+So the chain rule says, for example, well,
+
+00:16:47.720 --> 00:16:51.240
+there's many different situations, but for example,
+
+00:16:52.000 --> 00:16:58.380
+if x, y, and z depend on some other variable say
+
+00:16:59.040 --> 00:17:00.920
+variables may be even u and v,
+
+00:17:05.480 --> 00:17:08.980
+then that means that f becomes a function of u and v.
+
+00:17:09.720 --> 00:17:12.580
+And then we can ask ourselves how sensitive is f
+
+00:17:14.160 --> 00:17:15.740
+to the value of u?
+
+00:17:17.340 --> 00:17:19.420
+And well, we can answer that.
+
+00:17:22.260 --> 00:17:25.380
+So the chain rule is something like this.
+
+00:17:26.260 --> 00:17:29.340
+And let me explain to you again where this comes from.
+
+00:17:38.300 --> 00:17:43.060
+So basically, what this quantity means is if we change u
+
+00:17:43.060 --> 00:17:46.160
+and keep v constant, what happens to the value of f?
+
+00:17:46.960 --> 00:17:49.380
+Well, why would the value of f change in the first place
+
+00:17:49.380 --> 00:17:52.900
+when f is just a function of x, y, z and not directly of u?
+
+00:17:52.900 --> 00:17:56.300
+Well, it changes because x, y, and z depend on u.
+
+00:17:57.340 --> 00:18:00.180
+So first we have to figure out how quickly x, y, and z change
+
+00:18:00.180 --> 00:18:01.020
+when we change u.
+
+00:18:02.120 --> 00:18:05.980
+Well, how quickly we do that is precisely partial x, partial u,
+
+00:18:06.280 --> 00:18:08.360
+partial y, partial u, partial z, partial u.
+
+00:18:08.600 --> 00:18:11.560
+These are the rates of change of x, y, z when we change u.
+
+00:18:12.480 --> 00:18:16.620
+And now when we change x, y, and z, that causes f to change.
+
+00:18:16.880 --> 00:18:17.980
+How much does f change?
+
+00:18:18.720 --> 00:18:22.180
+Well, partial f, partial x tells us how quickly f changes
+
+00:18:22.180 --> 00:18:23.420
+if I just change x.
+
+00:18:24.240 --> 00:18:27.940
+So I get this, that's the change in f,
+
+00:18:28.420 --> 00:18:31.920
+caused just by the fact that x changes when you change it.
+
+00:18:32.580 --> 00:18:34.340
+But then why also changes?
+
+00:18:34.960 --> 00:18:38.340
+Why changes at this rate and that causes f to change at that rate?
+
+00:18:39.080 --> 00:18:42.680
+And z changes as well and that causes f to change at that rate.
+
+00:18:43.120 --> 00:18:44.360
+And the effects add up together.
+
+00:18:45.180 --> 00:18:46.060
+Does that make sense?
+
+00:18:47.240 --> 00:18:47.460
+Okay.
+
+00:18:56.660 --> 00:19:01.020
+And so in particular we can use the chain rule to do changes of variables.
+
+00:19:01.320 --> 00:19:05.960
+If we have, say, a function defined in terms of polar coordinates are and theta.
+
+00:19:06.520 --> 00:19:09.400
+And we'd like to switch it to rectangular coordinates x and y.
+
+00:19:09.960 --> 00:19:13.000
+Then we can use chain rules to relate the partial derivatives.
+
+00:19:19.020 --> 00:19:26.180
+And finally, last but not least, we've seen how to deal with non-independent variables.
+
+00:19:31.120 --> 00:19:35.920
+So when our variables say x, y, z are related by some equation.
+
+00:19:37.100 --> 00:19:43.820
+So one way we can deal with this is to solve for one of the variables and go back to two independent variables.
+
+00:19:44.540 --> 00:19:45.800
+But we can't always do that.
+
+00:19:46.060 --> 00:19:51.480
+Of course, on the exam you can be sure that I will make sure that you cannot solve for the variable you want to remove.
+
+00:19:52.100 --> 00:19:53.060
+Because that would be too easy.
+
+00:19:55.280 --> 00:20:00.460
+So then when we have to keep all of them but handle, you know, take into account this relation,
+
+00:20:00.460 --> 00:20:04.280
+we've seen two useful methods.
+
+00:20:05.140 --> 00:20:13.560
+One of them is to find the minimum of a maximum of a function when the variables are not independent.
+
+00:20:13.560 --> 00:20:16.980
+And that's the method of Lagrange multipliers.
+
+00:20:31.860 --> 00:20:41.280
+So remember to find the minimum or maximum of a function f subject to the constraint.
+
+00:20:41.280 --> 00:20:47.880
+And g equals constant.
+
+00:20:49.000 --> 00:20:57.820
+Well, we've write down equations that say that the gradient of f is actually proportional to the gradient of g.
+
+00:21:00.320 --> 00:21:04.140
+So there's a new variable here, lambda, the multiplier.
+
+00:21:08.480 --> 00:21:12.660
+So, you know, for example, if f g, well, I guess here I had functions of three variables.
+
+00:21:12.940 --> 00:21:14.120
+So this becomes three equations.
+
+00:21:14.520 --> 00:21:16.880
+f sub x equals lambda g sub x.
+
+00:21:17.660 --> 00:21:20.320
+f sub y equals lambda g sub y.
+
+00:21:20.840 --> 00:21:23.380
+And f sub z equals lambda g sub z.
+
+00:21:24.440 --> 00:21:32.180
+And when we plug in the formulas for f and g, well, we're left with three equations involving the four variables x, y, z, and lambda.
+
+00:21:32.920 --> 00:21:33.500
+What's wrong?
+
+00:21:34.340 --> 00:21:37.060
+Well, we don't have actually four independent variables.
+
+00:21:37.060 --> 00:21:47.020
+We also have this relation g equals, well, whatever the constraint was relating x, y, and z together.
+
+00:21:47.880 --> 00:21:49.800
+So then we can try to solve this.
+
+00:21:50.320 --> 00:21:55.460
+And depending on situations, it's sometimes easy and sometimes it's very hard or even impossible.
+
+00:21:58.160 --> 00:22:01.840
+So in particular on the test, I haven't decided yet.
+
+00:22:02.060 --> 00:22:08.160
+But it could well be that the problem about Lagrange multipliers will just ask you to write the equations not to solve them.
+
+00:22:08.160 --> 00:22:09.160
+Okay, so...
+
+00:22:11.620 --> 00:22:12.720
+Well, I don't know yet.
+
+00:22:13.900 --> 00:22:15.420
+Okay, I'm not promising anything.
+
+00:22:15.680 --> 00:22:22.120
+But just, you know, before you start solving, check whether the problem asks you to solve them on it.
+
+00:22:22.680 --> 00:22:25.960
+Okay, if it doesn't, then probably you wouldn't.
+
+00:22:38.160 --> 00:22:58.760
+Okay.
+
+00:22:58.760 --> 00:23:08.380
+Okay. So another topic that we saw just yesterday is constraint partial derivatives.
+
+00:23:11.060 --> 00:23:20.460
+And I guess I have to re-explain a little bit because my guess is that things were not extremely clear at the end of class yesterday.
+
+00:23:22.460 --> 00:23:24.940
+So now we're in the same situation.
+
+00:23:25.560 --> 00:23:39.020
+We have a function, let's say, f of x, y, z, where the variables x, y, and z are not independent, but are constrained by some relation of this form.
+
+00:23:39.300 --> 00:23:43.920
+So some quantity involving x, y, and z is equal to maybe zero or some other constant.
+
+00:23:44.920 --> 00:23:58.540
+And then what we want to know is what is the rate of change of f with respect to one of the variables, say x or y or z, when I keep the others constant?
+
+00:23:59.140 --> 00:24:07.680
+Well, I can't keep all the others constant because that wouldn't be compatible with this condition.
+
+00:24:07.680 --> 00:24:15.480
+I mean, that would be the usual, also called formal partial derivative of f, ignoring the constraint.
+
+00:24:16.440 --> 00:24:27.140
+To take this into account means that if we vary one variable while keeping another one fixed, then the third one, since it depends on them, must also change somehow.
+
+00:24:27.620 --> 00:24:29.000
+And we must take that into account.
+
+00:24:31.600 --> 00:24:42.900
+So let's say, for example, we want to find some going to do a different example from yesterday, so that if you really didn't like that one, you don't have to see it again.
+
+00:24:45.700 --> 00:24:52.600
+So let's say that we want to find the partial derivative of f with respect to z keeping y constant.
+
+00:24:53.400 --> 00:24:54.560
+So what does that mean?
+
+00:24:55.700 --> 00:25:10.640
+That means y is constant, z varies, and x somehow is mysteriously a function of y and z through this equation.
+
+00:25:11.600 --> 00:25:15.320
+And then, of course, because it depends on y, that means x will vary.
+
+00:25:15.880 --> 00:25:18.800
+Sorry, x depends on y and z and z varies.
+
+00:25:19.920 --> 00:25:25.480
+So now we're asking ourselves, what's the rate of change of f with respect to z in this situation?
+
+00:25:41.820 --> 00:25:43.940
+And so we have two methods to do that.
+
+00:25:46.560 --> 00:25:53.500
+So let me start with one with the frontials, which hopefully you kind of understood yesterday.
+
+00:25:53.800 --> 00:25:56.720
+But if not, here's the second chance.
+
+00:26:03.000 --> 00:26:10.480
+So using the frontials means that we'll try to express df in terms of dz in this particular situation.
+
+00:26:11.080 --> 00:26:13.760
+So what do we know about df in general?
+
+00:26:14.620 --> 00:26:23.780
+Well, we know that df is f sub x dx plus f sub y dy plus partial f partial z dz.
+
+00:26:24.980 --> 00:26:26.640
+That's the general statement.
+
+00:26:27.300 --> 00:26:28.620
+But of course, we're in a special case.
+
+00:26:28.620 --> 00:26:31.480
+We're in a special case where first y is constant.
+
+00:26:32.440 --> 00:26:37.620
+Y is constant means that we can set dy to be zero.
+
+00:26:44.960 --> 00:26:47.900
+So this goes away and becomes zero.
+
+00:26:49.360 --> 00:26:52.800
+The second thing is, actually, we don't care about x.
+
+00:26:52.860 --> 00:26:57.400
+We'd like to get rid of x because it's this dependent variable.
+
+00:26:57.400 --> 00:27:00.980
+What we really want to do is express df only in terms of dz.
+
+00:27:02.540 --> 00:27:13.120
+So what we need is to relate dx with dz.
+
+00:27:14.560 --> 00:27:18.540
+Well, to do that, we need to look at how the variables are related.
+
+00:27:19.440 --> 00:27:21.100
+So we need to look at the constraint, g.
+
+00:27:22.300 --> 00:27:23.460
+Well, how do we do that?
+
+00:27:23.900 --> 00:27:25.520
+We look at the differential of g.
+
+00:27:26.580 --> 00:27:33.900
+So dg is g sub x dx plus g sub y dy plus g sub z dz.
+
+00:27:35.160 --> 00:27:38.900
+And that's zero because we are setting g to always stay constant.
+
+00:27:39.840 --> 00:27:40.460
+G doesn't change.
+
+00:27:41.920 --> 00:27:46.540
+If g doesn't change, then we have a relation between dx dy and dz.
+
+00:27:47.940 --> 00:27:51.260
+Well, in fact, we said we are going to look only at the case where y is constant.
+
+00:27:51.260 --> 00:27:52.940
+So y doesn't change.
+
+00:27:53.820 --> 00:27:55.540
+This becomes zero.
+
+00:27:56.480 --> 00:27:58.980
+Well, now we have our relation between dx and dz.
+
+00:27:59.560 --> 00:28:01.180
+We know how x depends on z.
+
+00:28:02.240 --> 00:28:08.460
+And when we know how x depends on z, we can plug that into here and get how f depends on z.
+
+00:28:10.040 --> 00:28:10.780
+Let's do that.
+
+00:28:11.960 --> 00:28:12.000
+Oh.
+
+00:28:14.300 --> 00:28:14.860
+Oh.
+
+00:28:15.920 --> 00:28:16.480
+Oh.
+
+00:28:16.480 --> 00:28:16.480
+
+
+00:28:17.660 --> 00:28:17.660
+
+
+00:28:20.620 --> 00:28:21.300
+Okay.
+
+00:28:24.220 --> 00:28:24.900
+So.
+
+00:28:27.140 --> 00:28:36.720
+Well, so again, saying that g cannot change and keeping y constant tells us gx dx plus gz dz is zero.
+
+00:28:37.460 --> 00:28:45.060
+And we'd like to solve for dx in terms of dz that tells us dx should be.
+
+00:28:46.620 --> 00:28:50.800
+Minus gz dz divided by gx.
+
+00:28:52.760 --> 00:28:52.880
+Okay.
+
+00:28:53.060 --> 00:28:58.960
+So if you want, this is the rate of change of x with respect to z when we keep y constant.
+
+00:29:00.240 --> 00:29:03.760
+In our new terminology, this is partial z.
+
+00:29:04.320 --> 00:29:04.620
+No.
+
+00:29:06.060 --> 00:29:10.200
+This is partial x over partial z with y held constant.
+
+00:29:15.860 --> 00:29:18.240
+Okay. This is the rate of change of x with respect to z.
+
+00:29:19.020 --> 00:29:24.080
+So now when we know that we are going to plug that into this equation.
+
+00:29:29.320 --> 00:29:36.880
+And that will tell us that df is f sub x times dx.
+
+00:29:37.220 --> 00:29:37.960
+Well, what is dx?
+
+00:29:37.960 --> 00:29:44.760
+dx is now minus gz over gx dz plus fz dz.
+
+00:29:46.440 --> 00:29:54.980
+So that will be minus fx gz over gx plus fz times dz.
+
+00:29:56.340 --> 00:30:04.240
+And so this coefficient here is the rate of change of f with respect to z in the situation we are considering.
+
+00:30:04.240 --> 00:30:13.100
+So this quantity is what we call partial f over partial z with y held constant.
+
+00:30:14.540 --> 00:30:15.760
+That's what we wanted to find.
+
+00:30:17.720 --> 00:30:17.800
+Okay.
+
+00:30:20.480 --> 00:30:24.460
+So now let's see another way to do the same calculation.
+
+00:30:25.580 --> 00:30:27.700
+And then you can choose which one you prefer.
+
+00:30:27.700 --> 00:30:51.140
+Okay.
+
+00:30:55.540 --> 00:30:59.820
+So the other method is using the chain rule.
+
+00:31:05.900 --> 00:31:06.500
+Okay.
+
+00:31:06.800 --> 00:31:15.460
+So let's use the chain rule to understand how f depends on z when y is held constant.
+
+00:31:15.460 --> 00:31:21.080
+So let me first fight the chain rule brutally and then we'll try to analyze what's going on.
+
+00:31:23.940 --> 00:31:28.960
+So you can just use the version that I have affair as a template to see what's going on.
+
+00:31:28.960 --> 00:31:37.160
+But I'm going to explain it markedly again.
+
+00:31:47.620 --> 00:31:48.140
+Okay.
+
+00:31:50.240 --> 00:31:54.480
+Okay. So that's the most mechanical and no.
+
+00:31:56.380 --> 00:31:58.140
+Mindless way of fighting down the chain rule.
+
+00:31:58.780 --> 00:32:02.680
+I'm just saying here, let's say that I'm varying z keeping y constant.
+
+00:32:02.680 --> 00:32:07.000
+I want to know how f changes. Well, f might change because x might change.
+
+00:32:07.320 --> 00:32:09.980
+Why might change? And z might change.
+
+00:32:11.240 --> 00:32:18.800
+Now how quickly does x change? Well, the rate of change of x in the situation is partial x partial z with y held constant.
+
+00:32:20.380 --> 00:32:25.060
+So if I change x at this rate, then f will change at that rate.
+
+00:32:27.000 --> 00:32:34.660
+Now, why might change? So the rate of change of y would be the rate of change of y respect to z holding y constant.
+
+00:32:35.300 --> 00:32:38.520
+Wait a second. If y is held constant, then y doesn't change.
+
+00:32:39.300 --> 00:32:42.240
+So actually this guy is zero. And you didn't really have to write that term.
+
+00:32:43.260 --> 00:32:45.440
+But I wrote it just to be systematic. Okay.
+
+00:32:46.720 --> 00:32:53.280
+If y had been somehow able to change at a certain rate, then that would have caused f to change at that rate.
+
+00:32:53.280 --> 00:32:57.560
+Of course, if f is held constant, sorry, if y is held constant, then nothing happens here.
+
+00:32:58.480 --> 00:33:04.100
+And finally, while z is changing at a certain rate, this rate is this one.
+
+00:33:04.900 --> 00:33:09.820
+And that causes f to change at that rate. And then we add the effects together.
+
+00:33:10.400 --> 00:33:12.520
+Okay. See, it's nothing but the good old chain rule.
+
+00:33:13.160 --> 00:33:17.820
+Just I've put these extra subscripts to tell us what is held constant and what isn't.
+
+00:33:19.440 --> 00:33:27.560
+Okay. Now, of course, we can simplify it a bit more because here, how quickly does z change, if I'm changing z,
+
+00:33:28.100 --> 00:33:30.960
+well, the rate of change of z with respect to itself is just one.
+
+00:33:36.360 --> 00:33:44.540
+Okay. So in fact, the really mysterious part of this is the one here, which is the rate of change of x with respect to z.
+
+00:33:44.960 --> 00:33:47.420
+And to find that, we have to understand the constraint.
+
+00:33:49.360 --> 00:33:53.620
+Okay. So how can we find the rate of change of x with respect to z?
+
+00:33:53.900 --> 00:33:57.900
+Well, we could use differentials, like we did here, but we can also keep using the chain rule.
+
+00:33:57.900 --> 00:34:24.340
+Okay. So how can I do that? Well, I can just look at how g would change with respect to z when y is held constant.
+
+00:34:24.340 --> 00:34:27.940
+So I just do the same calculation, but with g instead of f.
+
+00:34:33.080 --> 00:34:36.720
+But before I do it, let's ask ourselves first what is this equal to.
+
+00:34:38.580 --> 00:34:46.940
+Well, if g is held constant, then when we vary z, keeping y constant and changing x, well, g still doesn't change.
+
+00:34:46.940 --> 00:34:55.420
+It's held constant. So in fact, that should be zero.
+
+00:34:56.160 --> 00:34:59.000
+Okay. But if we just say that, we're not going to get to that.
+
+00:35:00.400 --> 00:35:03.880
+So let's see how we can compute that using the chain rule.
+
+00:35:04.920 --> 00:35:09.220
+Well, the chain rule tells us g changes because x, y, and z change.
+
+00:35:10.100 --> 00:35:15.840
+Okay. How does it change because of x? Well, partial g partial x times the rate of change of x.
+
+00:35:17.960 --> 00:35:23.020
+How does it change because of y? Well, partial g partial y times the rate of change of y.
+
+00:35:23.580 --> 00:35:27.960
+But of course, if you're smarter than me, then you don't need to actually write this one because y is held constant.
+
+00:35:30.200 --> 00:35:34.220
+And then there's the rate of change because z changes.
+
+00:35:37.620 --> 00:35:41.140
+And how quickly z changes here, of course, is one.
+
+00:35:43.120 --> 00:35:46.380
+Okay. So out of this, you get that.
+
+00:35:50.260 --> 00:35:56.940
+Well, I'm tired of writing partial g partial x. Let me just write g sub x times partial x partial z.
+
+00:35:56.940 --> 00:36:00.500
+So let me write the y constant plus g sub z.
+
+00:36:04.840 --> 00:36:07.920
+Okay. And now we found how x depends on z.
+
+00:36:10.420 --> 00:36:17.960
+Partial x partial z with y held constant is negative g sub z over g sub x.
+
+00:36:18.880 --> 00:36:22.300
+Now we plug this into that and we get our answer.
+
+00:36:22.300 --> 00:36:28.720
+Okay. So it goes all the way up here.
+
+00:36:30.260 --> 00:36:35.380
+Okay. And then we get the answer. I'm not going to, well, I guess I can write it again.
+
+00:36:46.060 --> 00:36:57.460
+So there was partial f partial x times this guy minus g sub z over g sub x plus partial f over partial z.
+
+00:36:58.460 --> 00:37:03.360
+And you can observe that this is exactly the same formula that we had over here.
+
+00:37:04.680 --> 00:37:07.260
+In fact, let's compare these two methods side by side.
+
+00:37:07.880 --> 00:37:11.560
+I claimed we did exactly the same thing just with different notations.
+
+00:37:12.560 --> 00:37:19.780
+See, if you take the differential of f and you divide it by dz in this situation where y is held constant and so on,
+
+00:37:20.340 --> 00:37:22.420
+you get exactly this chain rule up there.
+
+00:37:23.180 --> 00:37:31.120
+Right? That chain rule up there is this guy df divided by dz with y held constant.
+
+00:37:33.260 --> 00:37:40.760
+And the term involving dy was replaced by zero on both sides because we knew actually that y is held constant.
+
+00:37:42.260 --> 00:37:45.420
+Now the real difficulty in both cases comes from dx.
+
+00:37:46.180 --> 00:37:48.640
+And what we do about dx is we use the constraint.
+
+00:37:49.140 --> 00:37:52.080
+So here we use it by writing dg equals zero.
+
+00:37:52.920 --> 00:37:58.480
+Here we write the chain rule for g. That's the same thing just divided by dz with y held constant.
+
+00:38:00.420 --> 00:38:07.620
+So this formula or that formula are the same just dividing by dz with y held constant.
+
+00:38:08.460 --> 00:38:12.020
+And then in both cases we use that to solve for dx.
+
+00:38:13.500 --> 00:38:20.420
+And then we plugged into the formula for df to express df dz or partial f partial z with y held constant.
+
+00:38:23.900 --> 00:38:26.520
+So the two methods are pretty much the same.
+
+00:38:26.880 --> 00:38:28.420
+Quick pull, we'll preface this one.
+
+00:38:30.140 --> 00:38:31.260
+We'll preface that one.
+
+00:38:33.580 --> 00:38:36.520
+Majority vote seems to be for differentials, that doesn't mean that it's better.
+
+00:38:36.880 --> 00:38:37.400
+Both are fine.
+
+00:38:39.160 --> 00:38:40.500
+You can use whichever one you want.
+
+00:38:41.700 --> 00:38:42.840
+But you could give both a try.
+
+00:38:46.640 --> 00:38:47.720
+Any questions?
+
+00:38:52.360 --> 00:38:54.320
+Sorry, can we use?
+
+00:38:57.060 --> 00:38:58.620
+Yes, thank you.
+
+00:38:58.760 --> 00:38:59.840
+I forgot to mention it.
+
+00:39:00.840 --> 00:39:01.840
+Where did that go?
+
+00:39:02.460 --> 00:39:03.700
+I think I raised that part.
+
+00:39:04.320 --> 00:39:13.860
+So yes, we need to know directional derivatives.
+
+00:39:18.060 --> 00:39:27.960
+The pretty much the only thing to remember about them is that the fDS in the direction of some unit vector u is just the gradient f dot product with u.
+
+00:39:29.800 --> 00:39:33.260
+So that's pretty much all we know about them.
+
+00:39:35.020 --> 00:39:37.060
+Any other topics that I forgot to list?
+
+00:39:39.180 --> 00:39:39.660
+No?
+
+00:39:41.160 --> 00:39:41.640
+Yes?
+
+00:39:42.520 --> 00:39:46.100
+You have some free boards at the time?
+
+00:39:46.280 --> 00:39:47.660
+No, I would need free hands to do that.
+
+00:39:52.060 --> 00:39:52.700
+Okay.
+
+00:39:56.640 --> 00:39:57.420
+Let's see.
+
+00:40:01.360 --> 00:40:02.000
+Okay.
+
+00:40:02.860 --> 00:40:07.500
+I think what we should do for is look quickly at the practice tests.
+
+00:40:07.680 --> 00:40:12.280
+I mean given the time, you will mostly have to think about it yourselves.
+
+00:40:12.280 --> 00:40:16.960
+So hopefully you have a copy of the practice exam.
+
+00:40:18.780 --> 00:40:19.200
+Oh, yes.
+
+00:40:20.400 --> 00:40:23.080
+Okay, so let's look at the second.
+
+00:40:23.460 --> 00:40:26.100
+So the first problem is a simple problem.
+
+00:40:26.280 --> 00:40:28.180
+Find the gradient, find an approximation formula.
+
+00:40:28.420 --> 00:40:29.540
+Hopefully you know how to do that.
+
+00:40:30.440 --> 00:40:32.560
+The second problem is when about reading a control plot.
+
+00:40:32.900 --> 00:40:38.380
+And so before I let you go for a weekend, I want to make sure that you actually know how to read a control plot.
+
+00:40:46.660 --> 00:40:55.120
+So one thing I should first mention is, you know, this problem asks you to estimate partial derivatives by reading a control plot.
+
+00:40:55.260 --> 00:40:57.360
+We haven't done that, so that won't be actually on the test.
+
+00:40:57.540 --> 00:41:01.360
+We'll be doing qualitative questions like what is the sign of a partial derivative?
+
+00:41:01.620 --> 00:41:03.640
+Is it zero, less than zero, more than zero?
+
+00:41:03.640 --> 00:41:09.060
+So you don't need to bring a ruler to estimate partial derivatives in the way that this problem asks you to.
+
+00:41:09.060 --> 00:41:27.060
+Okay.
+
+00:41:27.060 --> 00:41:27.800
+Okay.
+
+00:41:31.640 --> 00:41:36.680
+Okay, so let's look at problem 2b.
+
+00:41:38.180 --> 00:41:43.360
+Problem 2b is asking you to find a point at which h equals 2200.
+
+00:41:43.980 --> 00:41:48.360
+Partial h, partial x equals zero, and partial h, partial y is less than zero.
+
+00:41:49.460 --> 00:41:52.080
+So let's try and see what is going on here.
+
+00:41:52.080 --> 00:42:00.320
+So a point where f equals 2200, well, that should be probably unvalved curve, that's a 2200, so I can actually zoom in.
+
+00:42:03.380 --> 00:42:05.760
+And here's the level 2200.
+
+00:42:07.380 --> 00:42:11.560
+Okay. Now I want partial h, partial x to be zero.
+
+00:42:12.080 --> 00:42:17.600
+That means if I change x, keeping y constant, the value of h doesn't change.
+
+00:42:19.400 --> 00:42:24.200
+So which points on the level curve satisfy that property?
+
+00:42:26.480 --> 00:42:28.720
+Yeah, it's the top and the bottom, okay.
+
+00:42:29.700 --> 00:42:33.660
+If you are here, for example, and you move in the x direction,
+
+00:42:35.280 --> 00:42:42.800
+well, you see as you get to where from the left, the height first increases and then decreases, it goes for a maximum at that point.
+
+00:42:43.340 --> 00:42:49.360
+So at that point, the partial derivative is zero with respect to x, and same here.
+
+00:42:52.700 --> 00:42:58.200
+Now we also told, and let's find partial h, partial y, less than zero.
+
+00:42:58.820 --> 00:43:01.660
+So that means if we go north, we should go down.
+
+00:43:04.420 --> 00:43:06.260
+Well, which one is it? Top or bottom?
+
+00:43:07.500 --> 00:43:08.120
+Top. Yes.
+
+00:43:08.860 --> 00:43:14.140
+Here, if you go north, then you go from 2200 down to 2100.
+
+00:43:15.340 --> 00:43:19.140
+So this is where the point is.
+
+00:43:21.180 --> 00:43:27.060
+So now the problem here was also asking you to estimate partial h, partial y, and just if you're curious how you would do that.
+
+00:43:27.900 --> 00:43:32.520
+Well, you would try to figure out how long it takes before you reach the next level curve.
+
+00:43:33.520 --> 00:43:37.660
+Okay, and you see that so here, to go from here to here,
+
+00:43:41.300 --> 00:43:52.760
+so to go from q to this new point, say, q prime, the change in y, well, you'd have to read the scale, which was up, down here.
+
+00:43:54.700 --> 00:43:58.380
+Okay, that would be about something like 300.
+
+00:44:00.080 --> 00:44:03.760
+What's the change in height when you go from q to q prime?
+
+00:44:04.040 --> 00:44:11.860
+Well, you go down from 2200 to 2100, that's about, well, that's actually minus 100, exactly.
+
+00:44:13.860 --> 00:44:19.540
+Okay, and so delta h over delta y is about minus 1 third.
+
+00:44:20.620 --> 00:44:25.760
+Well, minus 100 over 300, which is, whoops, getting out of,
+
+00:44:29.160 --> 00:44:30.060
+minus 1 third.
+
+00:44:31.600 --> 00:44:36.340
+And that's the same, I mean, that's an approximation for the partial derivative.
+
+00:44:37.920 --> 00:44:39.520
+Okay, so that's how you would do it.
+
+00:44:42.560 --> 00:44:46.920
+Now, so, okay, let me go back to other things.
+
+00:44:47.760 --> 00:44:54.840
+So if you look at this practice exam, basically, there's a bit of everything, and it's kind of, you know, fairly representative of what might happen.
+
+00:44:55.900 --> 00:45:01.300
+On Tuesday, so, you know, there will be a mix of easy problems and of harder problems.
+
+00:45:02.100 --> 00:45:06.040
+Expect something about, you know, computing, gradients, approximations, space of change.
+
+00:45:06.380 --> 00:45:08.400
+Expect a problem about reading the contour plot.
+
+00:45:10.120 --> 00:45:13.420
+Expect one about, you know, a min max problem.
+
+00:45:13.900 --> 00:45:15.600
+Something about Lagrange multipliers.
+
+00:45:15.940 --> 00:45:19.480
+Something about the chain rule, and something about constraint partial derivatives.
+
+00:45:19.900 --> 00:45:21.920
+I mean, pretty much all the topics are going to be there.
+

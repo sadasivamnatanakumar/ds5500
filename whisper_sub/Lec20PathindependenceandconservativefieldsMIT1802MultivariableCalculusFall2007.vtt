@@ -1,0 +1,1319 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.940
+Your support will help MIT OpenCourseWare
+
+00:00:05.940 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.900 --> 00:00:12.500
+To make a donation or to view additional materials
+
+00:00:12.500 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:21.680 --> 00:00:27.520
+So let me remind you yesterday with defined and started
+
+00:00:27.520 --> 00:00:36.300
+to compute line integrals for work of a vector field along a curve.
+
+00:00:36.760 --> 00:00:44.960
+So we have a curve in the plane C. We have a vector field F
+
+00:00:44.960 --> 00:00:48.320
+that gives us a vector at every point.
+
+00:00:54.880 --> 00:00:59.660
+And we want to find a work done along the curve.
+
+00:01:04.320 --> 00:01:08.920
+So that's the line integral along C of F.dr.
+
+00:01:10.880 --> 00:01:16.220
+Or more geometrically, line integral along C of F.tds,
+
+00:01:17.020 --> 00:01:21.040
+where t is the unit tangent vector, and ds is the arc length element.
+
+00:01:23.020 --> 00:01:30.160
+Or in coordinates, that's the integral of mdx plus ndy,
+
+00:01:31.500 --> 00:01:35.620
+where m and n are the components of a vector field.
+
+00:01:46.220 --> 00:01:50.240
+Let's do an example that will just summarize what we did yesterday.
+
+00:01:51.100 --> 00:01:54.960
+And then we'll move on to interesting observations about physics.
+
+00:01:57.140 --> 00:02:00.440
+So here's an example we're going to look at now.
+
+00:02:02.620 --> 00:02:09.180
+Let's say I give you a vector field yi plus xj.
+
+00:02:10.320 --> 00:02:13.340
+So it's not completely obvious what it looks like.
+
+00:02:13.860 --> 00:02:16.100
+But here's a computer plot of that vector field.
+
+00:02:16.320 --> 00:02:18.320
+So that tells you a bit what it does,
+
+00:02:20.960 --> 00:02:22.480
+points in all sorts of directions.
+
+00:02:24.420 --> 00:02:31.660
+And let's say we want to find the work done by this vector field.
+
+00:02:31.800 --> 00:02:35.880
+If I move along this closed curve, I
+
+00:02:35.880 --> 00:02:36.700
+started the origin.
+
+00:02:37.540 --> 00:02:39.820
+Then I moved along the x axis to 1.
+
+00:02:39.820 --> 00:02:43.620
+Then I moved along the unit circle to the diagonal,
+
+00:02:43.900 --> 00:02:47.120
+and then I moved back to the origin in a straight line.
+
+00:02:50.340 --> 00:02:58.280
+So C consists of three parts so that you
+
+00:02:58.280 --> 00:03:08.300
+enclose a sector of a unit disk corresponding
+
+00:03:08.300 --> 00:03:13.440
+to angles between 0 and 45 degrees.
+
+00:03:17.420 --> 00:03:20.960
+So to compute this line integral, what we have to do
+
+00:03:20.960 --> 00:03:24.920
+is we have to set up three different integrals and add them together.
+
+00:03:33.120 --> 00:03:42.640
+So we need to set up the integral of ydx plus xdy for each
+
+00:03:43.600 --> 00:03:45.680
+of these pieces, each of these pieces.
+
+00:03:46.740 --> 00:03:53.020
+So let's do the first one on the x axis.
+
+00:03:55.360 --> 00:04:00.580
+Well, one way to parameterize that is to just use the x variable.
+
+00:04:01.620 --> 00:04:12.460
+And say that because we're on the origin to 1,0,
+
+00:04:15.540 --> 00:04:18.400
+well, we know we're on the x axis, so
+
+00:04:18.400 --> 00:04:21.880
+there's y there is actually just 0.
+
+00:04:23.200 --> 00:04:25.860
+And the variable will be x from 0 to 1.
+
+00:04:26.800 --> 00:04:31.340
+If you prefer, you can parameterize things, say x equals t for t from 0 to 1,
+
+00:04:31.560 --> 00:04:32.400
+and y equals 0.
+
+00:04:32.860 --> 00:04:37.660
+What doesn't change is y is 0, and therefore, dy is also 0.
+
+00:04:37.660 --> 00:04:55.980
+So in fact, we're integrating ydx plus xdy, but that becomes, well, 0dx plus 0.
+
+00:04:56.580 --> 00:04:58.380
+And that's just going to give you 0.
+
+00:04:59.320 --> 00:05:04.700
+So there's the line integral here is very easy to compute.
+
+00:05:05.540 --> 00:05:07.220
+Of course, you can also do it geometrically,
+
+00:05:07.440 --> 00:05:12.220
+because geometrically, you can see in the picture, along the x axis,
+
+00:05:12.560 --> 00:05:14.100
+the vector field is pointing vertically.
+
+00:05:14.760 --> 00:05:19.760
+If I'm on the x axis, my vector field is actually in the y direction.
+
+00:05:20.540 --> 00:05:24.820
+So it's perpendicular to my curve, so the work done is going to be 0.
+
+00:05:25.060 --> 00:05:26.380
+f dot t will be 0.
+
+00:05:47.240 --> 00:05:49.560
+So f dot t is 0, so v integral is 0.
+
+00:05:51.200 --> 00:05:54.180
+Any questions about this first part of a calculation?
+
+00:05:56.560 --> 00:05:57.060
+No?
+
+00:05:57.540 --> 00:05:57.820
+It's OK?
+
+00:06:00.100 --> 00:06:05.120
+OK, let's move on to a more interesting part of it.
+
+00:06:05.800 --> 00:06:12.360
+Let's do the second part, which is a portion of a unit circle.
+
+00:06:19.360 --> 00:06:21.920
+So we should have drawn my picture.
+
+00:06:23.700 --> 00:06:30.980
+And so now we are moving on this part of the curve.
+
+00:06:32.100 --> 00:06:32.760
+Let's see, too.
+
+00:06:38.240 --> 00:06:41.040
+And of course, we have to choose how to express x and y
+
+00:06:41.040 --> 00:06:42.260
+in terms of a single variable.
+
+00:06:43.200 --> 00:06:45.640
+Well, most likely, when you're moving on a circle,
+
+00:06:46.040 --> 00:06:49.960
+you're going to use the angle along the circle to tell you where you are.
+
+00:06:50.680 --> 00:06:54.940
+So we're going to use the angle theta as parameter.
+
+00:06:55.740 --> 00:06:59.740
+And we'll say, well, we're on the unit circle, so x is cosine theta.
+
+00:07:00.500 --> 00:07:02.060
+And y is sine theta.
+
+00:07:03.320 --> 00:07:04.520
+What's the range of theta?
+
+00:07:04.700 --> 00:07:08.100
+Feta goes from 0 to pi over 4.
+
+00:07:11.880 --> 00:07:18.400
+So whenever I see dx, I will replace it by, well, the derivative of cosine is negative
+
+00:07:18.400 --> 00:07:18.800
+sine.
+
+00:07:18.800 --> 00:07:21.180
+So minus sine theta, the theta.
+
+00:07:22.280 --> 00:07:24.860
+And dy, the derivative of sine is cosine.
+
+00:07:25.640 --> 00:07:27.640
+So it will become cosine theta, the theta.
+
+00:07:30.340 --> 00:07:34.780
+So I'm computing the integral of y dx plus x dy.
+
+00:07:36.840 --> 00:07:47.340
+That means I'll be actually computing the integral
+
+00:07:47.340 --> 00:07:59.540
+of y is sine theta dx that's negative sine theta d theta plus x cosine.
+
+00:08:01.140 --> 00:08:06.680
+dy is cosine theta d theta from 0 to pi over 4.
+
+00:08:08.440 --> 00:08:15.340
+So that's integral from 0 to pi over 4 of cosine square minus sine square.
+
+00:08:19.280 --> 00:08:25.120
+And if you know your trig, then you should recognize this as cosine of 2 theta.
+
+00:08:27.320 --> 00:08:34.920
+So that will integrate to 1 half of sine 2 theta from 0 to pi over 4.
+
+00:08:36.180 --> 00:08:40.300
+And sine pi over 2 is 1, so you will get 1 half.
+
+00:08:43.600 --> 00:08:45.360
+Any questions about this one?
+
+00:08:49.060 --> 00:08:49.700
+No.
+
+00:08:58.100 --> 00:09:00.240
+OK, then let's do the third one.
+
+00:09:07.180 --> 00:09:13.280
+So the third guy is when we come back to the origin along the diagonal.
+
+00:09:15.100 --> 00:09:18.580
+OK, so we're going to straight line from this point.
+
+00:09:19.000 --> 00:09:19.680
+Where's this point?
+
+00:09:19.800 --> 00:09:24.240
+Well, this point is 1 over root 2, 1 over root 2.
+
+00:09:24.760 --> 00:09:26.060
+And we go back to the origin.
+
+00:09:29.400 --> 00:09:35.980
+OK, so we need to figure out a way to express x and y in terms of the same parameter.
+
+00:09:38.400 --> 00:09:43.440
+So one way, which is very natural, would be to just say, well,
+
+00:09:43.440 --> 00:09:46.180
+let's say we move from here to here over time.
+
+00:09:47.480 --> 00:09:50.460
+And you know, at time 0, we're here, at time 1, we're here.
+
+00:09:50.540 --> 00:09:52.400
+We know how to parameterize this line.
+
+00:09:53.780 --> 00:10:00.580
+So what we could do is say, let's parameterize this line.
+
+00:10:01.360 --> 00:10:12.600
+So we start at 1 over root 2, and we go down by 1 over root 2 in time 1, and same with y.
+
+00:10:18.720 --> 00:10:23.680
+That's actually perfectly fine, but that's unnecessarily complicated.
+
+00:10:25.000 --> 00:10:26.920
+OK, why is it complicated?
+
+00:10:26.920 --> 00:10:29.140
+Because we'll get all of these expressions.
+
+00:10:29.980 --> 00:10:35.540
+It would be easier to actually just look at motion in this direction, and then say,
+
+00:10:35.780 --> 00:10:41.820
+well, if we have a certain work, if we move from here to here, then the work done moving from here to here,
+
+00:10:42.060 --> 00:10:43.360
+is just going to be the opposite.
+
+00:10:45.780 --> 00:10:53.980
+OK, so in fact, we can do slightly better by just saying, well,
+
+00:10:53.980 --> 00:11:07.540
+we'll take x equals t, y equals t, t from 0 to 1 over root 2, and take, well, sorry.
+
+00:11:09.980 --> 00:11:18.620
+That gives us what I will call minus c free, which means c free backwards.
+
+00:11:19.620 --> 00:11:30.780
+And then we can say the integral for work along minus c free is the opposite of the work along c free.
+
+00:11:32.660 --> 00:11:42.600
+Or, you know, if you're comfortable with integration, where variables go down, then you could also say that t just goes from 1 over square root of 2 down to 0.
+
+00:11:42.600 --> 00:11:47.640
+And, you know, when you set up your integral, it will go from 1 over root 2 to 0.
+
+00:11:48.640 --> 00:11:52.860
+And of course, it will be the negative of the 1 from 0 to 1 over root 2. So it's the same thing.
+
+00:11:56.100 --> 00:12:06.600
+OK, so if we do it with this parameterization, we'll get that, well, of course, dx is dt, dy is dt.
+
+00:12:07.600 --> 00:12:22.880
+So the integral along minus c free of y dx plus x dy is just the integral from 0 to 1 over root 2 of t dt plus t dt.
+
+00:12:23.980 --> 00:12:27.220
+Sorry, I'm messing up my blackboard.
+
+00:12:29.380 --> 00:12:44.260
+OK, which is going to be, well, the integral of 2t dt, which is t squared between these bounds, which is 1 half.
+
+00:12:45.840 --> 00:12:49.860
+That's the integral along minus c free, along the reverse path.
+
+00:12:50.480 --> 00:13:03.560
+And if I want to do it along c free instead, then I just take the negative.
+
+00:13:05.600 --> 00:13:13.040
+OK, or if you prefer, you could have done it directly with integral from 1 over root 2 to 0, which gave you immediately the negative 1 half.
+
+00:13:15.520 --> 00:13:28.220
+OK, so at the end, we get that the total work was the sum of the free line integrals.
+
+00:13:29.800 --> 00:13:32.600
+I'm not writing f dot dr just to save space.
+
+00:13:33.880 --> 00:13:38.340
+That's 0 plus 1 half minus 1 half. And that comes out to 0.
+
+00:13:38.340 --> 00:13:41.280
+So a lot of calculations for nothing.
+
+00:13:44.020 --> 00:13:50.760
+OK, so that should give you a good overview of various ways to compute line integrals.
+
+00:13:50.980 --> 00:13:52.440
+Any questions about all that?
+
+00:13:56.300 --> 00:14:04.460
+No? OK, so next, let me tell you about how to avoid computing line integrals.
+
+00:14:06.320 --> 00:14:08.920
+Well, one is easy. Don't take this class, but that's not.
+
+00:14:13.580 --> 00:14:15.820
+So here's another way not to do it.
+
+00:14:17.240 --> 00:14:25.840
+OK, so let's look a little bit about one kind of vector field that actually we've encountered a few weeks ago without saying it.
+
+00:14:26.620 --> 00:14:30.480
+So we said when we have a function of two variables, we have a gradient vector.
+
+00:14:31.080 --> 00:14:34.960
+Well, at the time, it was just a vector, but that vector depended on x and y.
+
+00:14:35.640 --> 00:14:40.980
+So in fact, it's a vector field. OK, so here's an interesting special case.
+
+00:14:45.280 --> 00:14:51.020
+Say that f, our vector field, is actually the gradient of some function.
+
+00:14:51.440 --> 00:14:52.860
+So it's a gradient field.
+
+00:14:58.980 --> 00:15:02.120
+And so f is a function of two variables, x and y.
+
+00:15:03.380 --> 00:15:10.520
+And that's called the potential for the vector field.
+
+00:15:11.340 --> 00:15:12.800
+The reason is, of course, from physics.
+
+00:15:13.180 --> 00:15:18.320
+You know, in physics, you call potential, well, electrical potential or gravitational potential.
+
+00:15:18.320 --> 00:15:30.740
+The potential energy, this function of position that tells you how much actually energy is stored somehow by the force field.
+
+00:15:31.440 --> 00:15:32.740
+And its gradient gives you the force.
+
+00:15:33.280 --> 00:15:34.940
+Actually, not quite.
+
+00:15:35.160 --> 00:15:39.140
+If you're a physicist, then the force will be negative the gradient.
+
+00:15:40.100 --> 00:15:44.480
+So that means that physicists' potentials are the opposite of the mathematician's potential.
+
+00:15:44.480 --> 00:15:46.940
+OK, so that's just here to confuse you.
+
+00:15:48.080 --> 00:15:53.020
+It doesn't really matter, but to make things simpler, we are using this convention.
+
+00:15:54.120 --> 00:15:56.580
+And you know, you just put a minus sign if you're doing physics.
+
+00:16:01.240 --> 00:16:14.460
+So then I claim we can simplify the evaluation of the line integral for all the physics.
+
+00:16:17.980 --> 00:16:29.520
+So perhaps you've seen in physics, the work done by, say, the electrical force is actually given by the change in value of the potential from the starting point to the ending point.
+
+00:16:30.460 --> 00:16:32.820
+Or same for gravitational force.
+
+00:16:34.080 --> 00:16:40.140
+So these are special cases of what's called the fundamental theorem of calculus for line integrals.
+
+00:16:41.160 --> 00:16:48.000
+So the fundamental theorem of calculus, not for line integrals, tells you if you integrate a derivative, then you get back the function.
+
+00:16:49.040 --> 00:16:51.680
+And here it's the same thing in multivariable calculus.
+
+00:16:51.800 --> 00:16:58.080
+It tells you if you take the line integral of the gradient of a function, what you get back is the function.
+
+00:17:22.580 --> 00:17:24.500
+OK, so.
+
+00:17:24.500 --> 00:17:27.020
+So.
+
+00:17:32.500 --> 00:17:36.660
+The fundamental theorem of calculus for line integrals.
+
+00:17:47.120 --> 00:17:47.860
+Says.
+
+00:17:50.660 --> 00:17:56.120
+Following thing it says, if you integrate a vector field that's the gradient of a function.
+
+00:17:58.960 --> 00:18:00.000
+Along a curve.
+
+00:18:01.440 --> 00:18:07.740
+Let's say that you have a curve that goes from some starting point p0 to some ending point p1.
+
+00:18:09.440 --> 00:18:15.960
+Then all you will get is the value of f at p1 minus the value of f at p0.
+
+00:18:20.360 --> 00:18:27.620
+OK, so that's a pretty nifty formula, but it only works if the field that you're integrating is a gradient.
+
+00:18:28.360 --> 00:18:30.900
+You know it's a gradient and you know the function little f.
+
+00:18:32.940 --> 00:18:35.920
+I mean, we can't put just any vector field in here.
+
+00:18:36.360 --> 00:18:37.800
+We have to put the gradient of f.
+
+00:18:39.560 --> 00:18:46.620
+So actually on Tuesday we'll see how to decide whether a vector field is a gradient or not.
+
+00:18:47.540 --> 00:18:50.840
+And if it is a gradient, how to find the potential function.
+
+00:18:51.720 --> 00:18:52.960
+So we'll cover that.
+
+00:18:54.000 --> 00:18:59.160
+But for now, we're going to try to figure out a bit more about this.
+
+00:18:59.760 --> 00:19:05.000
+What it says, what it means physically, how to think about it geometrically, and so on.
+
+00:19:15.220 --> 00:19:21.240
+So maybe I should say, you know, if you try to find this in coordinates, because that's also a useful way to think about it.
+
+00:19:21.960 --> 00:19:28.660
+If I give you the line integral along c, so the gradient field, the components are f sub x and f sub y.
+
+00:19:28.660 --> 00:19:34.900
+So it means I'm actually integrating f sub x dx plus f sub y dy.
+
+00:19:36.760 --> 00:19:41.660
+Or if you prefer, that's the same thing as actually integrating df.
+
+00:19:42.540 --> 00:19:45.320
+So I'm integrating the differential of a function f.
+
+00:19:46.640 --> 00:19:51.540
+Well, then that's the change in f.
+
+00:19:54.240 --> 00:20:01.300
+And of course, if you write it in this form, then probably it's quite obvious to you that this should be true.
+
+00:20:06.140 --> 00:20:10.400
+I mean, in this form, actually, it's the same statement as in single variable calculus.
+
+00:20:14.660 --> 00:20:16.680
+And actually, that's how we prove a theorem.
+
+00:20:17.060 --> 00:20:21.520
+So let's prove this theorem.
+
+00:20:23.420 --> 00:20:26.520
+How do we prove it?
+
+00:20:27.480 --> 00:20:31.640
+Well, let's say I give you a curve, and I ask you to compute this integral.
+
+00:20:32.420 --> 00:20:33.300
+How will you do that?
+
+00:20:34.100 --> 00:20:40.980
+Well, the way you compute the integral actually is by choosing a parameter and expressing everything in terms of that parameter.
+
+00:20:42.980 --> 00:20:52.720
+So we'll set, well, so we know it's f sub x dx plus f sub y dy.
+
+00:20:56.800 --> 00:21:05.500
+And we'll want to parameterize c in the form x equals x of t, y equals y of t.
+
+00:21:07.720 --> 00:21:14.420
+So if we do that, then dx becomes x prime of t dt, dy becomes y prime of t dt.
+
+00:21:22.420 --> 00:21:29.500
+So we know x is x of t, that tells us dx is x prime of t dt.
+
+00:21:30.500 --> 00:21:36.680
+y is y of t gives us dy is y prime of t dt.
+
+00:21:38.040 --> 00:21:57.940
+So now what we are integrating, actually, is becomes the integral of f sub x times dx dt plus f sub y times dy dt.
+
+00:22:05.780 --> 00:22:12.380
+But now here I recognize a familiar guy, I've seen this one before, in the chain rule.
+
+00:22:14.200 --> 00:22:23.080
+This guy by the chain rule is the rate of change of f if I take x and y to be functions of t and I plug those into f.
+
+00:22:23.940 --> 00:22:36.560
+So in fact, what I'm integrating is df dt when I think of f as a function of t by just plugging x and y as functions of t.
+
+00:22:39.000 --> 00:22:39.640
+dt.
+
+00:22:42.040 --> 00:22:53.020
+And so maybe actually I should now say, you know, I have sometimes t goes from some initial time, let's say, t0 to t1.
+
+00:22:58.620 --> 00:23:08.320
+And now by the usual fundamental theorem of calculus, I know that this will be just the change in the value of f between t0 and t1.
+
+00:23:39.100 --> 00:23:51.500
+So integral from t0 to t1 of df dt, well that becomes f between t0 and t1.
+
+00:23:52.340 --> 00:24:02.980
+So f of what? We just have to be a little bit careful here. Well, it's not quite f of t, it's f seen as a function of t by putting x of t and y of t into it.
+
+00:24:03.160 --> 00:24:05.240
+So let me write that down carefully.
+
+00:24:06.400 --> 00:24:11.580
+What I'm integrating to is f of x of t and y of t.
+
+00:24:14.340 --> 00:24:15.980
+Right? Does that sound fair?
+
+00:24:16.860 --> 00:24:16.940
+Yeah.
+
+00:24:18.000 --> 00:24:18.200
+Okay.
+
+00:24:18.620 --> 00:24:24.960
+And so when I plug in t1, I get the point where I am at time t1, that's the end point of my curve.
+
+00:24:25.740 --> 00:24:31.160
+When I plug t0, I will get the starting point of my curve p0.
+
+00:24:32.300 --> 00:24:33.640
+And that's the end of the proof.
+
+00:24:37.840 --> 00:24:38.760
+Put some of that hard.
+
+00:24:40.740 --> 00:24:41.220
+Okay.
+
+00:24:45.260 --> 00:24:46.240
+So let's see an example.
+
+00:24:53.860 --> 00:24:55.860
+Well, let's look at that example again.
+
+00:24:55.860 --> 00:24:58.920
+Okay. So we have this curve.
+
+00:24:59.940 --> 00:25:05.040
+We had this vector field. Could it be that by accident that vector field was a gradient field?
+
+00:25:05.840 --> 00:25:10.960
+So remember our vector field was y, x.
+
+00:25:12.160 --> 00:25:17.820
+Can we think of a function with derivative respect to x is y and derivative respect to y is x?
+
+00:25:19.060 --> 00:25:22.980
+Yeah, x times y sounds like a good candidate.
+
+00:25:23.600 --> 00:25:27.200
+Well, f of xy is xy.
+
+00:25:29.020 --> 00:25:29.080
+Okay.
+
+00:25:29.960 --> 00:25:40.600
+So that means that the line integrals that we computed along these things can be just evaluated from just finding out the values of f at the end point.
+
+00:25:41.460 --> 00:25:44.380
+So here's version two of my plot.
+
+00:25:44.380 --> 00:25:52.380
+Where I've added the contour plot of a function xy on top of the vector field.
+
+00:25:53.380 --> 00:26:00.140
+Actually see how you know the vector field is still pointing perpendicular to the level curves if we have c just to remind you.
+
+00:26:01.480 --> 00:26:08.600
+And so now when we move, well, the origin is on the level curve f equal zero.
+
+00:26:08.600 --> 00:26:13.040
+And when we start going along c1, we stay on f equal zero.
+
+00:26:13.680 --> 00:26:15.860
+So there's no work. The potential doesn't change.
+
+00:26:17.220 --> 00:26:22.020
+Then on c2, the potential increases from zero to one half. The work is one half.
+
+00:26:22.900 --> 00:26:26.380
+And then on c3, we go back down from one half to zero.
+
+00:26:26.880 --> 00:26:28.400
+The work is negative one half.
+
+00:26:29.960 --> 00:26:31.740
+See, that was much easier than computing.
+
+00:26:42.380 --> 00:26:52.060
+So for example, the integral along c2 is actually just.
+
+00:26:52.740 --> 00:27:00.880
+So c2 goes from one zero to one over two, one over two.
+
+00:27:03.120 --> 00:27:06.460
+So that's one half minus zero, and that's one half.
+
+00:27:08.160 --> 00:27:16.300
+Because c2 was going here.
+
+00:27:17.960 --> 00:27:22.980
+And at this point, f is zero, at that point, f is one half.
+
+00:27:25.540 --> 00:27:27.180
+And similarly for the others.
+
+00:27:27.180 --> 00:27:32.160
+And of course, when you sum, you get zero because the total change in f,
+
+00:27:32.240 --> 00:27:34.940
+when you know you go from here to here to here to here,
+
+00:27:35.160 --> 00:27:36.940
+eventually you're back at the same place.
+
+00:27:37.760 --> 00:27:38.900
+So f hasn't changed.
+
+00:27:41.440 --> 00:27:43.240
+Okay, so that's a neat trick.
+
+00:27:43.720 --> 00:27:49.640
+And it's important conceptually because a lot of forces are gradients of potentials.
+
+00:27:50.020 --> 00:27:52.460
+I mean, namely gravitational force, electric force.
+
+00:27:53.440 --> 00:27:57.260
+The problem is not every vector field is a gradient.
+
+00:27:58.200 --> 00:28:00.160
+A lot of vector fields are not gradients.
+
+00:28:00.920 --> 00:28:04.100
+For example, magnetic fields, certainly are not gradients.
+
+00:28:04.100 --> 00:28:16.640
+So a big warning.
+
+00:28:19.600 --> 00:28:36.360
+Everything today only applies if f is a gradient field.
+
+00:28:45.400 --> 00:28:47.960
+Okay, it's not true of n-wise.
+
+00:29:06.520 --> 00:29:11.960
+Okay, let's see what are the consequences of a fundamental theorem.
+
+00:29:26.360 --> 00:29:28.480
+So just to put one more time, this disclaimer,
+
+00:29:28.480 --> 00:29:40.680
+if f is a gradient field, then what do we have?
+
+00:29:42.200 --> 00:29:46.560
+Well, there's various nice features of work done by gradient fields
+
+00:29:46.560 --> 00:29:48.220
+that are not true for over vector fields.
+
+00:29:48.220 --> 00:29:51.520
+So one of them is this property of path independence.
+
+00:29:59.900 --> 00:30:03.160
+Okay, so the claim is if I have a line integral to compute,
+
+00:30:03.980 --> 00:30:08.660
+then it doesn't matter which path I take as long as it goes from point A to point B.
+
+00:30:09.120 --> 00:30:13.100
+It just depends on the point where I start the point where I end.
+
+00:30:14.940 --> 00:30:17.720
+And that certainly falls in general.
+
+00:30:18.960 --> 00:30:20.840
+But for a gradient field, it works.
+
+00:30:21.640 --> 00:30:25.820
+Okay, so if I have a point P0, a point P1,
+
+00:30:26.160 --> 00:30:32.500
+and I have two different paths that go there, say C1 and C2,
+
+00:30:33.400 --> 00:30:37.480
+so they go from the same point to the same point, but in different ways,
+
+00:30:41.100 --> 00:30:50.800
+then in this situation, the line integral along C1 is equal to the line integral along C2.
+
+00:30:55.440 --> 00:31:02.560
+Well, actually, let me insist that this is only for gradient fields by putting gradient f in here.
+
+00:31:03.760 --> 00:31:08.640
+Just so you know, you don't get tempted to ever use this for a field that's not a gradient field.
+
+00:31:17.600 --> 00:31:22.380
+If C1 and C2 have the same start and end points.
+
+00:31:24.620 --> 00:31:29.600
+Okay, how do we prove that?
+
+00:31:29.800 --> 00:31:30.500
+Well, it's very easy.
+
+00:31:30.660 --> 00:31:32.060
+We just use the fundamental theorem.
+
+00:31:32.660 --> 00:31:35.960
+It tells us if you compute the line integral along C1,
+
+00:31:36.540 --> 00:31:39.260
+it's just f at this point minus f at this point.
+
+00:31:39.500 --> 00:31:41.260
+If you do it for C2, well, same.
+
+00:31:42.220 --> 00:31:43.200
+So they're the same.
+
+00:31:45.080 --> 00:31:48.400
+And for that, you don't actually even need to know what little f is.
+
+00:31:48.580 --> 00:31:51.280
+You know in advance that it's going to be the same.
+
+00:31:51.280 --> 00:31:55.640
+So if I give you a vector field, and I tell you it's the gradient of a mysterious function,
+
+00:31:56.360 --> 00:31:59.020
+but I don't tell you what the function is and you don't want to find out,
+
+00:31:59.160 --> 00:32:00.720
+you can still use path independence.
+
+00:32:01.520 --> 00:32:03.100
+But only if you know that it's a gradient.
+
+00:32:25.320 --> 00:32:25.740
+Okay.
+
+00:32:29.660 --> 00:32:31.480
+Okay, I guess this one is dead.
+
+00:32:34.180 --> 00:32:37.280
+But we'll stay here forever because nobody's stolen enough to erase it now.
+
+00:32:39.980 --> 00:32:42.680
+When you come back next year and you still see that formula, you'll see.
+
+00:32:44.700 --> 00:32:45.120
+Okay.
+
+00:32:50.400 --> 00:32:52.800
+Yes, but there's no useful information here.
+
+00:32:54.080 --> 00:32:55.700
+That's a good point.
+
+00:32:59.020 --> 00:32:59.140
+Okay.
+
+00:33:00.240 --> 00:33:03.580
+So what's another consequence?
+
+00:33:04.740 --> 00:33:13.760
+One, I mean, so if you have a gradient field, it's what's called conservative.
+
+00:33:16.340 --> 00:33:18.120
+Okay. So what's a conservative field?
+
+00:33:19.300 --> 00:33:23.540
+Well, the word conservative comes from the idea in physics.
+
+00:33:23.540 --> 00:33:25.480
+It's the notion of conservation of energy.
+
+00:33:26.180 --> 00:33:31.140
+It tells you that you cannot get energy for free out of your first field.
+
+00:33:31.140 --> 00:33:38.720
+So what it means is in particular, you know, if you take a closed trajectory,
+
+00:33:38.900 --> 00:33:42.960
+so a trajectory that goes from some point back to the same point.
+
+00:33:44.740 --> 00:34:00.800
+So if C is a closed curve, then the work done along C is zero.
+
+00:34:02.820 --> 00:34:05.900
+Okay. That's the definition of what it means to be conservative.
+
+00:34:07.060 --> 00:34:10.680
+If I take any closed curve, the work will always be zero.
+
+00:34:12.320 --> 00:34:14.940
+Contrary, you know, the contrary, not conservative means,
+
+00:34:15.500 --> 00:34:18.440
+somewhere there is a curve along which the work is not zero.
+
+00:34:19.840 --> 00:34:24.000
+If you find a curve where the work is zero, that's not enough to say it's conservative.
+
+00:34:24.440 --> 00:34:28.480
+You have to show that no matter what curve I give you, if it's a closed curve,
+
+00:34:28.540 --> 00:34:29.400
+it will always be zero.
+
+00:34:32.460 --> 00:34:37.320
+So what that means concretely is, you know, if you have a first field that's conservative,
+
+00:34:37.320 --> 00:34:41.680
+then you cannot build somehow some, you know, perpetual motion out of it.
+
+00:34:41.780 --> 00:34:45.380
+You can't build something that will just keep going just powered by that force,
+
+00:34:45.820 --> 00:34:50.180
+because that force is actually not providing any energy after you've gone, you know, one loop around.
+
+00:34:50.860 --> 00:34:54.220
+Nothing's happened from the point of view of the energy provided by that force.
+
+00:34:54.860 --> 00:34:56.420
+There's no work coming from the force.
+
+00:34:57.380 --> 00:35:02.820
+While if you have a first field that's not conservative, then you can try to actually maybe find a loop
+
+00:35:02.820 --> 00:35:06.220
+where the work will be positive, and then, you know, that thing will just keep running.
+
+00:35:07.760 --> 00:35:14.780
+So actually, if you look at magnetic fields and transformers or, you know, power adapters and things like that,
+
+00:35:15.240 --> 00:35:17.660
+you precisely, you extract energy from a magnetic field.
+
+00:35:18.020 --> 00:35:21.260
+Of course, I mean, you actually have to take some power supply to maintain the magnetic field.
+
+00:35:22.400 --> 00:35:27.240
+So a magnetic field, you could actually try to get energy from it almost for free.
+
+00:35:27.900 --> 00:35:30.380
+A gravitational field or an electric field, you can't.
+
+00:35:34.900 --> 00:35:36.260
+Okay. So.
+
+00:35:38.740 --> 00:35:40.600
+And now, why does that hold?
+
+00:35:41.080 --> 00:35:46.460
+Well, if I have a gradient field, then if I try to compute this line integral,
+
+00:35:46.940 --> 00:35:51.880
+I know that it will be the value of a function at the end point, minus the value at the starting point.
+
+00:35:52.640 --> 00:35:53.540
+But they're the same.
+
+00:35:54.020 --> 00:35:56.360
+So, you know, the value is the same.
+
+00:36:03.640 --> 00:36:10.440
+So if I have a gradient field, and I do the line integral, then I will get f at the end point,
+
+00:36:11.080 --> 00:36:12.660
+minus f at the starting point.
+
+00:36:14.120 --> 00:36:16.180
+But they have the same point, so that's.
+
+00:36:26.620 --> 00:36:27.180
+Okay.
+
+00:36:30.580 --> 00:36:34.060
+So just to reinforce my warning that not every field is a gradient field.
+
+00:36:40.040 --> 00:36:46.320
+Let's look again at, you know, our favorite vector field from yesterday.
+
+00:36:46.840 --> 00:36:50.520
+So our favorite vector field yesterday was negative y and x.
+
+00:36:51.040 --> 00:36:56.140
+It's a vector field that just rotates around the origin counterclockwise.
+
+00:36:56.140 --> 00:37:07.020
+Okay. Well, we said if you take, say, say you take just the unit circle.
+
+00:37:14.920 --> 00:37:16.380
+For example, counterclockwise.
+
+00:37:17.020 --> 00:37:23.300
+Well, remember we said yesterday that the line integral of f dot d r,
+
+00:37:24.120 --> 00:37:26.120
+maybe I should say f dot t d s now.
+
+00:37:27.800 --> 00:37:30.760
+So because the vector field is tangent to the circle.
+
+00:37:33.380 --> 00:37:42.300
+So on the unit circle, f is tangent to the curve.
+
+00:37:43.220 --> 00:37:50.360
+And so f dot t is length f times, well, length t, but t is a unit vector.
+
+00:37:50.360 --> 00:37:56.100
+So it's length f and the length of f on the unit circle was just one.
+
+00:37:56.880 --> 00:38:00.160
+So that's the integral of one d s.
+
+00:38:00.580 --> 00:38:02.920
+So that's just the length of the circle. That's two pi.
+
+00:38:03.820 --> 00:38:05.960
+And two pi is definitely not zero.
+
+00:38:07.120 --> 00:38:09.640
+So this vector field is not conservative.
+
+00:38:12.740 --> 00:38:16.380
+And so now we know actually it's not the gradient of anything.
+
+00:38:17.540 --> 00:38:22.620
+Because if it were gradient, then it would be conservative and it's not.
+
+00:38:27.000 --> 00:38:28.140
+So that's you.
+
+00:38:28.620 --> 00:38:30.800
+It's an example of a vector field that is not conservative.
+
+00:38:31.740 --> 00:38:33.760
+It's not path independent either by the way.
+
+00:38:34.160 --> 00:38:42.420
+Because see, if I go from here to here along the upper half circle or under the lower, along the lower half circle.
+
+00:38:42.860 --> 00:38:45.980
+In one case, I will get pi. In the other case, I will get negative pi.
+
+00:38:46.300 --> 00:38:50.380
+I don't get the same answer. And so on and so on.
+
+00:38:50.400 --> 00:38:53.080
+It just fails to have all of these properties.
+
+00:38:55.960 --> 00:38:57.960
+So maybe I will write that down.
+
+00:38:59.540 --> 00:39:00.820
+It's not conservative.
+
+00:39:06.200 --> 00:39:07.800
+Not path independent.
+
+00:39:13.040 --> 00:39:14.600
+It's not a gradient.
+
+00:39:20.320 --> 00:39:22.180
+It doesn't have any of these properties.
+
+00:39:29.440 --> 00:39:30.400
+Any questions?
+
+00:39:34.260 --> 00:39:34.440
+Yes.
+
+00:39:38.020 --> 00:39:40.220
+How do you determine whether something is a gradient of not?
+
+00:39:40.460 --> 00:39:42.200
+Well, that's what we will see on Tuesday.
+
+00:39:44.980 --> 00:39:52.340
+Is it possible that it's conservative and not path independent or vice versa?
+
+00:39:52.480 --> 00:39:53.160
+The answer is no.
+
+00:39:53.460 --> 00:39:54.660
+These two properties are equivalent.
+
+00:39:55.000 --> 00:39:56.240
+We are going to see that right now.
+
+00:39:57.180 --> 00:39:58.780
+At least that's the plan.
+
+00:40:04.680 --> 00:40:08.560
+So if it's not conservative, then it's possible to draw a level curve.
+
+00:40:12.120 --> 00:40:12.800
+Let's see.
+
+00:40:13.420 --> 00:40:16.980
+If it's not path independent, then we cannot draw level curves.
+
+00:40:19.640 --> 00:40:23.440
+I wouldn't necessarily go that far.
+
+00:40:23.440 --> 00:40:26.600
+You might be able to draw curves that are perpendicular to it.
+
+00:40:27.220 --> 00:40:30.680
+But they won't be the level curves of a function for which this is the gradient.
+
+00:40:33.420 --> 00:40:39.220
+I mean, you might still have, you know, if you take this gradient field and scale it,
+
+00:40:39.280 --> 00:40:41.660
+but in strange ways, you know, multiplied by two in some places,
+
+00:40:41.700 --> 00:40:44.440
+by one in other places, by five in some other places,
+
+00:40:44.920 --> 00:40:47.200
+you will get something that won't be conservative anymore.
+
+00:40:47.840 --> 00:40:49.520
+And it will still be perpendicular to the curves.
+
+00:40:50.900 --> 00:40:52.940
+So it's more subtle than that.
+
+00:40:53.320 --> 00:40:56.960
+But certainly if it's not conservative, then it's not a gradient,
+
+00:40:57.340 --> 00:40:59.600
+and you cannot do what we say.
+
+00:41:01.580 --> 00:41:05.280
+And how to decide whether it is or not that will be Tuesday's topic.
+
+00:41:06.560 --> 00:41:12.580
+So for now, I just want to figure out again.
+
+00:41:12.580 --> 00:41:15.720
+Actually, let's now state all these properties.
+
+00:41:29.940 --> 00:41:39.440
+Actually, let me first do one minute of physics.
+
+00:41:43.460 --> 00:41:46.720
+So let me just tell you again, you know, what's the physics in here.
+
+00:41:48.000 --> 00:41:57.280
+So if the first field is the gradient of a potential.
+
+00:42:05.080 --> 00:42:06.840
+So I'll still keep my plus sign.
+
+00:42:06.840 --> 00:42:08.360
+So maybe I should say this is minus physics.
+
+00:42:15.620 --> 00:42:24.720
+So the work of f is the change in value of potential from one endpoint to the other endpoint.
+
+00:42:35.220 --> 00:42:43.860
+And so you might know about gravity, oops, gravity,
+
+00:42:43.860 --> 00:42:51.460
+rational field or electrical,
+
+00:43:04.240 --> 00:43:07.180
+or electrical potential.
+
+00:43:12.240 --> 00:43:19.120
+And in case you haven't done any 802 yet, electrical potential is also commonly known as voltage.
+
+00:43:19.120 --> 00:43:22.660
+It's the one that makes it hurt when you stick your fingers into the socket.
+
+00:43:28.020 --> 00:43:28.620
+Don't try.
+
+00:43:28.620 --> 00:43:28.620
+
+
+00:43:33.500 --> 00:43:49.420
+And so now conservativeness means no energy can be extracted for free
+
+00:43:54.060 --> 00:43:55.340
+from the field.
+
+00:44:00.620 --> 00:44:12.260
+You can't just have a particle moving in that field and going on indefinitely faster and faster or actually friction then keep moving.
+
+00:44:14.760 --> 00:44:22.180
+So total energy is conserved.
+
+00:44:25.260 --> 00:44:28.580
+And I guess that's why we call that conservative.
+
+00:44:29.580 --> 00:44:46.780
+Okay, so let's end with a recap of various equivalent properties.
+
+00:44:48.980 --> 00:45:02.040
+Okay, so the first property that I will have for a vector field is that it's conservative.
+
+00:45:06.700 --> 00:45:17.580
+So to save at a vector field is conservative means that the line integral is zero along any closed curve.
+
+00:45:33.520 --> 00:45:45.120
+So now I claim this is the same thing as a second property which is that the line integral of f is path independent.
+
+00:45:48.540 --> 00:45:57.520
+Okay, so that means if I have two paths with the same end points then I will get always the same answer.
+
+00:45:58.360 --> 00:46:03.220
+Why is that equivalent? Well, let's say that I'm path independent.
+
+00:46:04.100 --> 00:46:12.480
+If I'm path independent then if I take a closed curve well it has the same end points as just the curve that doesn't move at all.
+
+00:46:13.160 --> 00:46:19.760
+So path independent tells me instead of going all around I could just stay where I am and then the work would be just zero.
+
+00:46:19.760 --> 00:46:30.300
+So if I'm path independent then I'm conservative. Conversely let's say that I'm just conservative and I want to check path independence.
+
+00:46:31.680 --> 00:46:36.560
+Well, so I have two points and I have two paths between them.
+
+00:46:37.420 --> 00:46:40.760
+I want to show that the work is the same. Well, how do I do that?
+
+00:46:40.760 --> 00:46:50.280
+Let's see one and see two. Well, I observe that if I do C1 minus C2 I get a closed path.
+
+00:46:51.740 --> 00:46:57.220
+Right? If I go first from here to here and then back along that one I get a closed path.
+
+00:46:57.640 --> 00:47:06.580
+So if I'm conservative I should get zero. But if I get zero on C1 minus C2 it means that the work on C1 and the work on C2 are the same.
+
+00:47:07.300 --> 00:47:14.840
+See, so it's the same. It's just a different way to think about the situation.
+
+00:47:18.880 --> 00:47:24.420
+More things that are equivalent. You have two more things to say.
+
+00:47:25.480 --> 00:47:29.260
+The third one is equivalent to F being a gradient field.
+
+00:47:37.460 --> 00:47:47.980
+So this is equivalent to the third property F is a gradient field.
+
+00:47:58.500 --> 00:48:04.620
+Why? Well, if we know that it's a gradient field then we've seen that we get these properties out of a fundamental theorem.
+
+00:48:04.620 --> 00:48:13.520
+The question is if I have a conservative or path independent vector field, why is it the gradient of something?
+
+00:48:17.180 --> 00:48:21.080
+So this way is a fundamental theorem.
+
+00:48:24.680 --> 00:48:36.180
+That way, well, so that actually, let me just say that will be how we find the potential.
+
+00:48:36.180 --> 00:48:47.560
+So how do we find the potential? Well, let's say that I know the value of my potential here.
+
+00:48:48.160 --> 00:48:53.520
+Actually I get to choose what it is. Remember, in physics the potential is defined up to adding or subtracting a constant.
+
+00:48:54.100 --> 00:48:55.860
+What matters is only the change in potential.
+
+00:48:56.980 --> 00:49:00.220
+So let's say I know my potential here and I want to know my potential here.
+
+00:49:00.220 --> 00:49:10.940
+What do I do? Well, I take my favorite particle and I move it from here to here and I look at the work done and that tells me how much the potential has changed.
+
+00:49:12.080 --> 00:49:14.020
+So that tells me what the potential should be here.
+
+00:49:16.260 --> 00:49:21.100
+And this does not depend on my chose of path because I've assumed that I'm path independent.
+
+00:49:21.100 --> 00:49:25.060
+So that's what we will do on Tuesday.
+
+00:49:26.060 --> 00:49:30.460
+And let me just state a fourth property. That's the same.
+
+00:49:33.080 --> 00:49:36.120
+So all that stuff is the same as also four.
+
+00:49:37.320 --> 00:49:45.720
+If I look at mdx plus ndy is what's called an exact differential.
+
+00:49:45.720 --> 00:49:55.460
+So what that means, an exact differential means it can be put in the form df for some function f.
+
+00:49:56.220 --> 00:50:08.060
+And you know, I'm just reformulating this thing because I'm saying just I can put it in the form f sub xdx plus f sub ydy, which means my vector field was a gradient field.
+
+00:50:08.500 --> 00:50:09.680
+So these things are really the same.
+
+00:50:12.540 --> 00:50:20.760
+Okay. So after the weekend on Tuesday, we'll actually figure out how to decide whether these things hold or not and how to find the potential.
+

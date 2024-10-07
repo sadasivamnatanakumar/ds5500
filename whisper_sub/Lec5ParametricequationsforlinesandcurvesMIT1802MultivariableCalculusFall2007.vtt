@@ -1,0 +1,1694 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.240
+The following content is provided under a Creative
+
+00:00:02.240 --> 00:00:03.080
+Commons license.
+
+00:00:03.680 --> 00:00:05.920
+Your support will help MIT OpenCourseWare
+
+00:00:05.920 --> 00:00:09.300
+continue to offer high quality educational resources for free.
+
+00:00:09.880 --> 00:00:12.480
+To make a donation or to view additional materials
+
+00:00:12.480 --> 00:00:16.420
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.420 --> 00:00:18.240
+at ocw.mit.edu.
+
+00:00:22.300 --> 00:00:28.900
+OK, so yesterday we learned about equations of planes
+
+00:00:29.860 --> 00:00:32.740
+and how to think of free-by-free linear systems
+
+00:00:33.500 --> 00:00:35.720
+in terms of intersections of planes
+
+00:00:36.400 --> 00:00:39.020
+and how to think about them geometrically.
+
+00:00:40.200 --> 00:00:43.060
+And that in particular led us to see in which cases,
+
+00:00:43.720 --> 00:00:47.300
+actually, we don't have a unique solution to the system.
+
+00:00:47.840 --> 00:00:50.500
+But maybe we have no solutions or infinitely many solutions
+
+00:00:51.260 --> 00:00:54.020
+because maybe the line of intersection of two of the planes
+
+00:00:54.020 --> 00:00:56.920
+happens to be parallel to the other plane.
+
+00:00:57.640 --> 00:01:03.680
+So today, well, we'll start by looking
+
+00:01:03.680 --> 00:01:04.780
+at equations of lines.
+
+00:01:09.700 --> 00:01:14.900
+And so in a way, it seems like something
+
+00:01:14.900 --> 00:01:22.720
+that we've already seen last time because we have seen that
+
+00:01:22.720 --> 00:01:30.760
+we can think of a line as the intersection of two planes.
+
+00:01:34.080 --> 00:01:36.500
+And we know what equations of planes look like.
+
+00:01:38.200 --> 00:01:41.440
+So we could describe a line by two equations
+
+00:01:42.240 --> 00:01:44.980
+telling us about the two planes that intersect on the line.
+
+00:01:45.600 --> 00:01:47.420
+That's not the most convenient way
+
+00:01:47.420 --> 00:01:49.040
+to think about a line, usually, though.
+
+00:01:50.420 --> 00:01:52.560
+Because when you have these two equations,
+
+00:01:52.800 --> 00:01:53.600
+how do you solve them?
+
+00:01:53.720 --> 00:01:56.320
+Well, you can, but takes a bit of effort.
+
+00:01:57.280 --> 00:02:00.580
+So instead, there's another representation of a line.
+
+00:02:05.720 --> 00:02:10.460
+So if you have a line in space, well, you can imagine maybe
+
+00:02:10.460 --> 00:02:13.780
+that you have a point on it and that point is moving in time.
+
+00:02:14.500 --> 00:02:18.560
+And the line is the trajectory of a point as time varies.
+
+00:02:19.400 --> 00:02:27.780
+So think of a line as the trajectory of a moving point.
+
+00:02:34.740 --> 00:02:38.280
+And so when we think of the trajectory of a moving point,
+
+00:02:38.460 --> 00:02:40.760
+that's called a parametric equation.
+
+00:02:51.120 --> 00:02:53.800
+So we're going to learn about parametric equations of lines.
+
+00:03:02.280 --> 00:03:09.340
+So let's say, for example, that we are looking at the line
+
+00:03:12.180 --> 00:03:14.960
+for, so to specify a line in space,
+
+00:03:15.840 --> 00:03:18.740
+I can do that by giving you two points on the line,
+
+00:03:18.980 --> 00:03:21.940
+or by giving you a point and a vector parallel to the line,
+
+00:03:22.120 --> 00:03:22.600
+for example.
+
+00:03:23.820 --> 00:03:30.180
+So let's say I give you two points on the line minus 1, 2, 2.
+
+00:03:31.180 --> 00:03:35.580
+And the other point will be, let's say, 1, 3, negative 1.
+
+00:03:40.400 --> 00:03:42.980
+So it's pretty good because we have two points in that line.
+
+00:03:43.620 --> 00:03:45.340
+Now, how do we find all the other points?
+
+00:03:46.060 --> 00:03:48.080
+Well, there are other points in between these guys,
+
+00:03:48.260 --> 00:03:49.300
+and also on either side.
+
+00:03:50.700 --> 00:03:54.180
+Let's imagine that we have a point that's moving on the line.
+
+00:03:56.200 --> 00:04:00.580
+And at times 0, it's here at Q0.
+
+00:04:01.840 --> 00:04:04.720
+And in a unit time, I'm not telling you what the unit is.
+
+00:04:04.720 --> 00:04:07.100
+It could be a second, it could be an hour, it could be a year.
+
+00:04:09.000 --> 00:04:12.140
+At t equals 1, it's going to be at Q1.
+
+00:04:12.440 --> 00:04:13.500
+And it moves at constant speed.
+
+00:04:14.340 --> 00:04:17.400
+So maybe at time 1 half, it's going to be here, time 2,
+
+00:04:17.440 --> 00:04:18.200
+it will be over there.
+
+00:04:18.960 --> 00:04:21.160
+And in fact, that point didn't start here.
+
+00:04:21.300 --> 00:04:23.340
+Maybe it's always been moving on the line.
+
+00:04:23.820 --> 00:04:25.460
+At times minus 2, it was down there.
+
+00:04:31.440 --> 00:04:35.220
+So let's say Q of t is a moving point.
+
+00:04:42.040 --> 00:04:47.520
+And at t equals 0, it's at Q0.
+
+00:04:50.760 --> 00:04:52.480
+And let's say that it moves.
+
+00:04:53.520 --> 00:04:55.860
+Well, we could make it move in any way we want,
+
+00:04:56.000 --> 00:04:57.780
+but probably the easiest to find.
+
+00:04:57.940 --> 00:04:59.580
+So our goal is going to find formulas
+
+00:05:00.360 --> 00:05:03.080
+for the position of this moving point in terms of t.
+
+00:05:04.180 --> 00:05:07.260
+And we'll use that to say, well, any point on the line
+
+00:05:07.260 --> 00:05:12.240
+is of this form where you have to plug in the correct value of t
+
+00:05:12.760 --> 00:05:14.960
+depending on when it's hit by the moving point.
+
+00:05:15.860 --> 00:05:19.720
+So perhaps it's easiest to do it if we make it move
+
+00:05:19.720 --> 00:05:20.720
+at constant speed.
+
+00:05:31.000 --> 00:05:35.000
+And the line, and that speed is chosen so that at time 1,
+
+00:05:35.120 --> 00:05:35.940
+it's at Q1.
+
+00:05:44.520 --> 00:05:52.480
+So the question we want to answer is what is the position
+
+00:05:54.620 --> 00:06:00.200
+at a time t, so the point Q of t?
+
+00:06:02.380 --> 00:06:06.580
+Well, to answer that, we have an easy observation,
+
+00:06:06.980 --> 00:06:10.600
+which is that the vector from Q0 to Q of t
+
+00:06:11.440 --> 00:06:14.940
+is proportional to the vector from Q0 to Q1.
+
+00:06:18.360 --> 00:06:20.880
+And what's the proportionality factor here?
+
+00:06:20.880 --> 00:06:20.940
+Yeah.
+
+00:06:25.040 --> 00:06:26.580
+Yeah, it's exactly t.
+
+00:06:27.500 --> 00:06:33.340
+At time 1, Q0, Q is exactly the same.
+
+00:06:33.720 --> 00:06:35.300
+Maybe I should run over a picture again.
+
+00:06:36.140 --> 00:06:36.800
+I have Q0.
+
+00:06:37.540 --> 00:06:38.240
+I have Q1.
+
+00:06:39.480 --> 00:06:49.700
+And after time t, I'm here at Q of t
+
+00:06:50.380 --> 00:06:53.100
+where this vector from Q0 to Q of t
+
+00:06:57.020 --> 00:07:01.620
+is actually going to be t times the vector Q0, Q1.
+
+00:07:03.800 --> 00:07:06.100
+So when t increases, it gets longer and longer.
+
+00:07:10.980 --> 00:07:13.100
+So does everybody see this now?
+
+00:07:13.540 --> 00:07:14.840
+Is that OK?
+
+00:07:15.280 --> 00:07:16.340
+Any questions about that?
+
+00:07:19.700 --> 00:07:20.100
+Yes?
+
+00:07:20.580 --> 00:07:22.600
+The blue is pretty bad.
+
+00:07:23.340 --> 00:07:25.700
+OK, so I will try to avoid using blue.
+
+00:07:25.860 --> 00:07:28.020
+Thanks for that's fine.
+
+00:07:29.080 --> 00:07:32.940
+So OK, I will not use blue anymore.
+
+00:07:39.120 --> 00:07:43.480
+OK, well, for this time, let me just make everything
+
+00:07:43.480 --> 00:07:45.400
+white for now.
+
+00:07:45.840 --> 00:07:48.860
+This is vector from Q0 to Q of t.
+
+00:07:48.860 --> 00:07:51.340
+This is the point Q of t.
+
+00:07:53.020 --> 00:07:54.540
+Is it kind of visible now?
+
+00:07:54.900 --> 00:07:54.920
+Yes.
+
+00:07:55.080 --> 00:07:55.320
+OK.
+
+00:07:57.440 --> 00:08:00.560
+Thanks for pointing it out.
+
+00:08:00.740 --> 00:08:02.240
+I will switch to brighter colors.
+
+00:08:05.600 --> 00:08:10.600
+So OK, so apart from that, I claim now we can find a position
+
+00:08:10.600 --> 00:08:11.440
+of this moving point.
+
+00:08:13.140 --> 00:08:16.000
+Because, well, this vector is Q0, Q1.
+
+00:08:16.000 --> 00:08:18.660
+We can find from the coordinates of Q0 and Q1.
+
+00:08:19.380 --> 00:08:23.220
+So we just subtract the coordinates of Q0 from those of Q1.
+
+00:08:23.560 --> 00:08:27.960
+We'll get that vector Q0, Q1 is 2, 1, minus 3.
+
+00:08:32.980 --> 00:08:43.580
+So if I look at it, well, so let's call x of t y of t
+
+00:08:44.940 --> 00:08:48.820
+and z of t the coordinates of the point that's moving
+
+00:08:48.820 --> 00:08:56.220
+on the line, then we get x of t minus, well, actually,
+
+00:08:56.280 --> 00:09:00.100
+plus 1 equals t times 2.
+
+00:09:02.220 --> 00:09:06.940
+I'm writing the components of vector Q0, Q of t.
+
+00:09:08.260 --> 00:09:11.460
+And here I'm writing t times Q0, Q1.
+
+00:09:13.580 --> 00:09:25.720
+y of t minus 2 equals t and z of t minus 2 equals minus 3t.
+
+00:09:26.140 --> 00:09:30.300
+So in other terms, the more familiar way
+
+00:09:30.300 --> 00:09:33.300
+that we'll use to write these equations,
+
+00:09:34.620 --> 00:09:40.880
+let me do it that way instead, minus 1 plus 2t, y of t
+
+00:09:41.480 --> 00:09:49.600
+equals 2 plus t, z of t equals 2 minus 3t.
+
+00:09:50.180 --> 00:09:56.100
+And if you prefer, I can just say Q of t is Q0 plus t times
+
+00:09:56.100 --> 00:09:57.560
+the vector Q0, Q1.
+
+00:10:03.080 --> 00:10:05.880
+So that's our first parametric equation
+
+00:10:05.880 --> 00:10:07.560
+of a line in this class.
+
+00:10:08.140 --> 00:10:10.500
+And I hope you see it's not extremely hard.
+
+00:10:10.740 --> 00:10:13.060
+In fact, so parametric equations of lines
+
+00:10:13.060 --> 00:10:14.360
+always look like that.
+
+00:10:15.020 --> 00:10:19.440
+x, y, and t are functions of t that are of a form a constant,
+
+00:10:19.760 --> 00:10:21.180
+plus a constant times t.
+
+00:10:21.820 --> 00:10:25.740
+The coefficients of t tell us about a vector along the line.
+
+00:10:26.500 --> 00:10:32.320
+Here we have a vector Q0, Q1, which is 2, 1, negative 3.
+
+00:10:33.300 --> 00:10:36.780
+And the constant terms tell us about where we are at t equals 0.
+
+00:10:36.780 --> 00:10:38.740
+If I play t equals 0, if this guy's going away,
+
+00:10:39.260 --> 00:10:41.800
+and get minus 1, 2, 2, that's my starting point.
+
+00:10:54.940 --> 00:10:56.380
+Any questions about that?
+
+00:11:01.480 --> 00:11:03.560
+OK, so let's see.
+
+00:11:04.280 --> 00:11:07.060
+Now what we can do with this parametric equations.
+
+00:11:11.420 --> 00:11:24.020
+So one application is to think about the relative position
+
+00:11:24.020 --> 00:11:26.520
+of a line and a plane with respect to each other.
+
+00:11:36.220 --> 00:11:39.780
+So let's say that we take still the same line of VAR.
+
+00:11:40.860 --> 00:11:50.600
+And let's consider the plane with equation x plus 2y plus 4z
+
+00:11:51.160 --> 00:11:51.800
+equals 7.
+
+00:11:52.800 --> 00:11:53.980
+So I'm giving you this plane.
+
+00:11:54.960 --> 00:11:56.720
+And the questions that we're going to ask ourselves
+
+00:11:58.120 --> 00:12:00.260
+well, does the line intersect the plane?
+
+00:12:00.420 --> 00:12:01.860
+And where does it intersect the plane?
+
+00:12:23.700 --> 00:12:28.780
+So let's start with first pre-linear question.
+
+00:12:28.780 --> 00:12:30.200
+But maybe we should try to understand.
+
+00:12:30.200 --> 00:12:33.160
+We have this point, we have this plane,
+
+00:12:34.000 --> 00:12:36.040
+and we have this point Q0 and Q1.
+
+00:12:36.340 --> 00:12:38.580
+I'm going to draw them in completely random places.
+
+00:12:39.680 --> 00:12:42.860
+Well, our Q0 and Q1 on the same side of a plane
+
+00:12:42.860 --> 00:12:46.840
+or on different sides, on opposite sides of a plane.
+
+00:12:47.380 --> 00:12:50.080
+Or could it be that maybe one of the points is in the plane?
+
+00:12:51.580 --> 00:12:55.800
+So I think I'm going to let you vote on that.
+
+00:13:02.640 --> 00:13:03.860
+So is that readable?
+
+00:13:04.060 --> 00:13:04.680
+Is it too small?
+
+00:13:06.480 --> 00:13:09.300
+OK, so anyway, the question says relative to the plane
+
+00:13:09.300 --> 00:13:15.040
+x plus 2y plus 4z equals 7, this points Q0 and Q1
+
+00:13:15.500 --> 00:13:18.220
+are they on the same side, on opposite sides,
+
+00:13:18.420 --> 00:13:19.340
+is one of them on the plane.
+
+00:13:20.000 --> 00:13:20.940
+We can't decide.
+
+00:13:28.320 --> 00:13:30.340
+OK, should be better.
+
+00:13:34.540 --> 00:13:37.100
+So I see relatively few answers.
+
+00:13:43.220 --> 00:13:44.800
+OK, it looks like also a lot of you
+
+00:13:44.800 --> 00:13:46.420
+have forgotten their cards.
+
+00:13:51.540 --> 00:13:53.100
+So I see people raising two fingers.
+
+00:13:53.280 --> 00:13:54.560
+I see people raising three fingers.
+
+00:13:55.040 --> 00:13:56.260
+And I see people raising four fingers.
+
+00:13:56.860 --> 00:14:00.220
+I don't see anyone answering number one.
+
+00:14:01.260 --> 00:14:03.820
+So the general idea seems to be that either they're on opposite
+
+00:14:03.820 --> 00:14:05.540
+sides, or maybe one of them is on the plane.
+
+00:14:07.040 --> 00:14:08.940
+Well, let's try to see.
+
+00:14:09.420 --> 00:14:10.640
+Is one of them on the plane?
+
+00:14:11.800 --> 00:14:13.420
+Well, let's check.
+
+00:14:14.300 --> 00:14:16.600
+OK, so let's look at the point.
+
+00:14:16.820 --> 00:14:19.360
+Sorry, I have one more blackboard to use here.
+
+00:14:25.400 --> 00:14:30.240
+So I take the point Q0, which is at minus 1, 2, 2.
+
+00:14:30.880 --> 00:14:34.760
+Well, if I plug that into the plane equation,
+
+00:14:35.760 --> 00:14:44.300
+so x plus 2y plus 4z will equal minus 1 plus 2 times 2 plus 4
+
+00:14:44.300 --> 00:14:45.000
+times 2.
+
+00:14:47.500 --> 00:14:51.620
+That's, well, 4 plus 8, 12 minus 11.
+
+00:14:52.520 --> 00:14:54.640
+That, I think, is bigger than 7.
+
+00:14:55.560 --> 00:14:58.520
+OK, so Q0 is not in the plane.
+
+00:15:01.000 --> 00:15:02.480
+Let's try again with Q1.
+
+00:15:04.960 --> 00:15:07.100
+1, 3, negative 1.
+
+00:15:08.160 --> 00:15:12.500
+Well, if we plug that into x plus 2y plus 4z,
+
+00:15:12.960 --> 00:15:17.100
+we'll have 1 plus 2 times 3 makes 7.
+
+00:15:17.360 --> 00:15:20.660
+But we add 4 times negative 1.
+
+00:15:20.840 --> 00:15:23.140
+We end up with 3 less than 7.
+
+00:15:23.620 --> 00:15:25.560
+Well, that one is not in the plane either.
+
+00:15:25.560 --> 00:15:30.200
+So I don't think, actually, that the answer should be number 3.
+
+00:15:32.420 --> 00:15:34.920
+So let's get rid of answer number 3.
+
+00:15:40.100 --> 00:15:42.220
+OK, let's see, in the light of this,
+
+00:15:43.260 --> 00:15:46.900
+are you willing to reconsider your previous answers?
+
+00:15:47.560 --> 00:15:51.540
+And OK, so I think now everyone seems
+
+00:15:51.540 --> 00:15:53.800
+to be interested in answering number 2.
+
+00:15:55.320 --> 00:15:57.260
+And I would agree with that answer.
+
+00:15:57.820 --> 00:15:58.800
+So let's think about it.
+
+00:15:59.940 --> 00:16:01.340
+These points are not in the plane,
+
+00:16:01.540 --> 00:16:03.200
+but they're not in the plane in different ways.
+
+00:16:03.480 --> 00:16:05.580
+One of them somehow overshudes, we get 11.
+
+00:16:05.820 --> 00:16:07.400
+They're one, we only get 3.
+
+00:16:07.640 --> 00:16:08.400
+That's less than 7.
+
+00:16:09.420 --> 00:16:12.380
+If you think about how a plane splits space
+
+00:16:12.380 --> 00:16:14.840
+into two half spaces on either side,
+
+00:16:15.900 --> 00:16:18.980
+well, one of them is going to be the points
+
+00:16:18.980 --> 00:16:22.920
+where x plus 2y plus 4z is less than 7.
+
+00:16:23.700 --> 00:16:29.800
+And the other one will be, so that's somehow this side.
+
+00:16:30.340 --> 00:16:31.480
+And that's where q1 is.
+
+00:16:31.940 --> 00:16:39.780
+And the other side is where x plus 2y plus 4z
+
+00:16:39.780 --> 00:16:41.180
+is actually bigger than 7.
+
+00:16:44.520 --> 00:16:48.180
+And to go from one to the other, well,
+
+00:16:49.820 --> 00:16:52.780
+x plus 2y plus 4z needs to go through the value 7.
+
+00:16:53.120 --> 00:16:56.940
+If you're moving along any path from q0 to q1,
+
+00:16:58.020 --> 00:17:01.660
+this thing will change continuously from 11 to 3.
+
+00:17:01.820 --> 00:17:03.380
+At some time, it has to go through 7.
+
+00:17:04.520 --> 00:17:05.380
+Does that make sense?
+
+00:17:06.560 --> 00:17:09.420
+So to go from q0 to q1, we need to cross-peer at some place.
+
+00:17:10.400 --> 00:17:12.300
+So there are no opposite sides.
+
+00:17:33.100 --> 00:17:37.260
+Now, that doesn't quite finish answering
+
+00:17:37.260 --> 00:17:42.160
+the question that we had, which was where does the line intersect
+
+00:17:42.160 --> 00:17:42.660
+the plane?
+
+00:17:44.600 --> 00:17:48.040
+But while we can do the same thing, now we know not only
+
+00:17:48.040 --> 00:17:52.100
+the points q0 and q1, we know actually any point on the line
+
+00:17:52.100 --> 00:17:55.600
+because we have a geometric equation of ver telling us
+
+00:17:55.600 --> 00:17:58.540
+where is the point that's moving on the line at time t?
+
+00:18:02.060 --> 00:18:05.620
+So what about the moving point q of t?
+
+00:18:06.340 --> 00:18:09.620
+Well, let's plug its coordinates into the plane equation.
+
+00:18:10.220 --> 00:18:16.360
+So we'll take x of t plus twice y of t plus 4z of t.
+
+00:18:17.640 --> 00:18:26.720
+That's equal to, well, minus 1 plus 2t plus twice 2 plus t
+
+00:18:26.720 --> 00:18:31.200
+plus 4 times 2 minus 3t.
+
+00:18:34.240 --> 00:18:40.040
+So if you simplify this a bit, you get 2t plus 2t minus 12t.
+
+00:18:40.460 --> 00:18:42.200
+That should be minus 8t.
+
+00:18:43.220 --> 00:18:47.020
+And the constant term is minus 1 plus 4 plus 8 is 11.
+
+00:18:49.120 --> 00:18:54.540
+And we have to compare that with 7.
+
+00:18:55.340 --> 00:18:57.220
+Question is, is this other equal to 7?
+
+00:18:58.720 --> 00:19:12.580
+Well, so q of t is in the plane exactly when minus 8t plus 11
+
+00:19:12.580 --> 00:19:14.460
+equals 7.
+
+00:19:15.700 --> 00:19:18.420
+And that's the same, if you manipulate this,
+
+00:19:18.560 --> 00:19:21.040
+you will get t equals 1 half.
+
+00:19:24.960 --> 00:19:27.240
+In fact, that's not very surprising.
+
+00:19:27.840 --> 00:19:30.160
+If you look at these values 11 and 3,
+
+00:19:30.520 --> 00:19:33.520
+you see that 7 is actually right in between.
+
+00:19:33.840 --> 00:19:35.080
+It's the average of these two numbers.
+
+00:19:36.020 --> 00:19:40.160
+So it would make sense that it's halfway in between q 0 and q 1
+
+00:19:40.160 --> 00:19:41.440
+that we will get 7.
+
+00:19:46.720 --> 00:19:50.200
+And then at that time, q at time 1 half
+
+00:19:50.200 --> 00:19:52.120
+well, let's plug the values.
+
+00:19:53.840 --> 00:19:58.780
+So minus 1 plus 2t will be 0.
+
+00:20:00.640 --> 00:20:04.580
+2 plus t will be 2 and a half, or 5 halves.
+
+00:20:05.820 --> 00:20:10.000
+And 2 minus 3 halves will be 1 half.
+
+00:20:12.860 --> 00:20:16.380
+So this is where the line intersects the plane.
+
+00:20:43.080 --> 00:20:47.120
+So you see that's actually a pretty easy way of finding where a line
+
+00:20:47.120 --> 00:20:48.400
+intersects each other.
+
+00:20:49.000 --> 00:20:53.500
+If we can find a parametric equation of the line and an equation of the plane,
+
+00:20:54.020 --> 00:20:59.740
+then we basically just plug one into the other and see at what time the moving point hits the plane.
+
+00:21:00.480 --> 00:21:01.500
+And then we know where it is.
+
+00:21:04.240 --> 00:21:06.200
+Okay, other questions about this.
+
+00:21:14.460 --> 00:21:14.940
+Yes.
+
+00:21:22.840 --> 00:21:24.000
+Sorry, can you say that?
+
+00:21:28.320 --> 00:21:28.800
+Yes.
+
+00:21:29.160 --> 00:21:30.860
+So what if we don't get a solution?
+
+00:21:31.060 --> 00:21:31.440
+What happens?
+
+00:21:31.440 --> 00:21:37.800
+So indeed, our line could have been parallel to the plane, or maybe even contained in the plane.
+
+00:21:38.460 --> 00:21:45.480
+Well, if a line is parallel to the plane, then maybe what happens is that when we plug in the positions of a moving point,
+
+00:21:46.380 --> 00:21:48.620
+we actually get something that never equals 7.
+
+00:21:48.920 --> 00:21:50.320
+Because maybe we get actually a constant.
+
+00:21:50.620 --> 00:21:54.360
+Say that we have gotten, I don't know, 13 all the time.
+
+00:21:54.580 --> 00:21:57.220
+Well, when it's 13 equal to 7, the answer is never.
+
+00:21:57.220 --> 00:22:01.660
+Okay, so that's what would tell you that the line is actually parallel to the plane.
+
+00:22:01.900 --> 00:22:05.120
+You would not find a solution to the equation that you get at the end.
+
+00:22:06.280 --> 00:22:06.700
+Yes.
+
+00:22:12.840 --> 00:22:15.980
+So if there's no solution at all to the equation that you get,
+
+00:22:16.240 --> 00:22:19.840
+it means that at no time is the travelling point going to be on the plane.
+
+00:22:20.380 --> 00:22:22.960
+That means the line really does not hit the plane ever.
+
+00:22:23.180 --> 00:22:25.140
+So it has to be parallel outside of it.
+
+00:22:25.680 --> 00:22:31.980
+So on the other hand, if a line is inside the plane, then that means that no matter what time you choose, you always get 7.
+
+00:22:33.040 --> 00:22:36.040
+Okay, that's what would happen if a line is in the plane, you would always get 7.
+
+00:22:37.860 --> 00:22:39.360
+So maybe I should fight this down.
+
+00:22:42.260 --> 00:22:56.480
+So if a line is in the plane, then, you won't say.
+
+00:22:58.780 --> 00:23:13.460
+When we plug X of t, Y of t, Z of t into the equation, always gives, we always get, we always get,
+
+00:23:16.080 --> 00:23:20.320
+well, here in this case, 7 or whatever, the value of food be for the plane.
+
+00:23:22.160 --> 00:23:40.400
+If the line is parallel to the plane, in fact, we, well, we get, let's say, another constant.
+
+00:23:47.300 --> 00:23:54.080
+So, in fact, you know, when you plug these things, normally you get a quantity that's overform, something times t plus a constant,
+
+00:23:54.360 --> 00:23:56.880
+because that's what you plug in into the equation of a plane.
+
+00:23:57.980 --> 00:24:04.860
+And so in general, you have an equation overform, something times t plus something equals something, and that usually has a single solution.
+
+00:24:04.860 --> 00:24:16.220
+And the special case is if this coefficient of t turns out to be 0 in the end, and that's actually going to happen, exactly when the line is either parallel or in the plane.
+
+00:24:19.560 --> 00:24:30.860
+In fact, if you think this is wrong carefully, the coefficient of t that you get here, see, it's 1 times 2 plus 2 times 1 plus 4 times minus 3,
+
+00:24:30.860 --> 00:24:36.380
+it's the dot product between the normal vector of the plane and the vector along the line.
+
+00:24:38.060 --> 00:24:45.520
+So, see, this coefficient becomes 0 exactly when the line is perpendicular to the normal vector, that means it's parallel to the plane.
+
+00:24:46.120 --> 00:24:51.460
+So everything makes sense. If you're confused about what I just said, you can ignore it.
+
+00:24:54.400 --> 00:24:55.620
+Okay, more questions?
+
+00:24:59.720 --> 00:25:06.300
+Okay, so if not, let's move on to more general parametric equations.
+
+00:25:08.400 --> 00:25:15.420
+So I hope you've seen here that parametric equations are a great way to think about line in space.
+
+00:25:16.100 --> 00:25:22.240
+There are also a great way to think about actually any curve, any trajectory that can be traced maybe by a moving point.
+
+00:25:23.240 --> 00:25:25.360
+So, so,
+
+00:25:38.360 --> 00:25:53.840
+so, marginally, we can use parametric equations for
+
+00:25:55.360 --> 00:26:08.860
+arbitrary motions in the plane or in space.
+
+00:26:13.000 --> 00:26:20.580
+So, let's look at an example. Let's take, so it's a famous curve called the cycloid.
+
+00:26:20.580 --> 00:26:31.180
+And the cycloid is something that you can actually see sometimes at night when people are biking if they have something that reflects light and their will.
+
+00:26:31.620 --> 00:26:33.600
+So let me explain what's the definition of the cycloid.
+
+00:27:00.880 --> 00:27:08.800
+So I should say I've seen a lecture where actually a professor had a volunteer on the unicycle to demonstrate how that works.
+
+00:27:09.040 --> 00:27:16.540
+But I didn't arrange for that. So instead I will explain it to you using more conventional means.
+
+00:27:16.540 --> 00:27:28.800
+So let's say that we have a wheel that's rolling on horizontal ground.
+
+00:27:32.040 --> 00:27:38.860
+And as it's rolling, of course, it's going to turn. So it's going to move forward to a new position.
+
+00:27:41.500 --> 00:27:46.720
+And now let's imagine that we have a point that's been painted red on the circumference of the wheel.
+
+00:27:47.560 --> 00:27:48.840
+And initially that point is here.
+
+00:27:50.660 --> 00:27:56.300
+So as the wheel starts rotating, well, of course, it moves forward and it also turns on itself.
+
+00:27:56.980 --> 00:28:06.820
+So that point starts falling back behind the point of contact because the wheel is rotating at the same time as it's moving forward.
+
+00:28:07.820 --> 00:28:11.860
+And so the cycloid is the trajectory of this moving point.
+
+00:28:15.780 --> 00:28:26.180
+So the cycloid is obtained by considering so we have a wheel.
+
+00:28:26.760 --> 00:28:28.220
+Let's say of radius a.
+
+00:28:30.400 --> 00:28:34.920
+So this height here is a.
+
+00:28:38.940 --> 00:28:45.540
+Rolling on a floor, which is the x-axis.
+
+00:28:55.740 --> 00:28:58.060
+And let's.
+
+00:28:58.060 --> 00:29:05.100
+So the plane is painted on the wheel. Initially it's at the origin. But of course, as time goes by, it moves on the wheel.
+
+00:29:06.180 --> 00:29:12.540
+So p is a point on the rim of the wheel.
+
+00:29:16.340 --> 00:29:19.980
+And it starts at the origin.
+
+00:29:21.000 --> 00:29:22.440
+So the question is what happens?
+
+00:29:27.100 --> 00:29:34.080
+In particular, can we find the position of this point x of t y of t as a function of time?
+
+00:29:36.920 --> 00:29:39.840
+So here's the reason why I have this computer.
+
+00:29:44.060 --> 00:29:47.400
+So I'm not sure if it will be very easy to visualize.
+
+00:29:47.400 --> 00:29:51.400
+But so we have a wheel.
+
+00:29:52.780 --> 00:29:55.200
+Oh, that's not very well.
+
+00:29:56.120 --> 00:29:59.620
+I hope you can vaguely see that there's a circle that's moving.
+
+00:29:59.860 --> 00:30:01.280
+The wheel is green here.
+
+00:30:03.240 --> 00:30:06.760
+And as you know, there's a radius that's been painted blue in it.
+
+00:30:07.100 --> 00:30:11.060
+And the radius rotates on the wheel as the wheel is moving forward.
+
+00:30:12.060 --> 00:30:16.980
+So now let's try to paint actually the trajectory of the point.
+
+00:30:25.060 --> 00:30:27.440
+Okay, so that's what the cycle looks like.
+
+00:30:36.280 --> 00:30:36.720
+Okay.
+
+00:30:42.560 --> 00:30:46.160
+So the cycle, I guess it doesn't quite look like what I've drawn.
+
+00:30:46.760 --> 00:30:48.260
+It looks like it goes a bit higher up.
+
+00:30:49.760 --> 00:30:53.300
+It will be the trajectory of this red point.
+
+00:30:55.300 --> 00:30:58.860
+And see, it hits the bottom once in a while.
+
+00:30:58.860 --> 00:31:04.500
+It forms these arches because when the wheel has rotated by a full term,
+
+00:31:04.680 --> 00:31:08.320
+then you're basically back at the same situation, except a bit further along the road.
+
+00:31:10.040 --> 00:31:11.500
+So we do it once more.
+
+00:31:13.120 --> 00:31:15.120
+See, the point now is at the top and now it's at the bottom.
+
+00:31:15.340 --> 00:31:16.140
+And then we start again.
+
+00:31:16.360 --> 00:31:17.940
+It's at the top and then again at the bottom.
+
+00:31:17.940 --> 00:31:23.340
+Okay.
+
+00:31:24.800 --> 00:31:26.000
+No.
+
+00:31:33.340 --> 00:31:40.200
+Okay.
+
+00:31:40.200 --> 00:31:46.460
+Okay. So the question that we want to answer is what is the position?
+
+00:31:50.720 --> 00:31:56.560
+X of t, Y of t, of the point p.
+
+00:32:03.740 --> 00:32:07.180
+Okay. So actually, I'm writing X of t, Y of t.
+
+00:32:07.180 --> 00:32:10.840
+I mean, I'm expressing the position in terms of time.
+
+00:32:11.260 --> 00:32:14.240
+Let's see, is time going to be a good thing to do?
+
+00:32:14.360 --> 00:32:16.540
+Well, certainly the position changes over time.
+
+00:32:17.580 --> 00:32:20.820
+But does it actually matter how fast the wheel is running?
+
+00:32:21.740 --> 00:32:25.260
+No, because I can just play the motion in fast forward.
+
+00:32:25.880 --> 00:32:28.480
+The wheel will be going faster, but the trajectory is still the same.
+
+00:32:29.420 --> 00:32:32.220
+So in fact, time is not the most relevant thing here.
+
+00:32:32.220 --> 00:32:37.100
+What matters to us more is how far the wheel has gone.
+
+00:32:37.800 --> 00:32:42.660
+So we could use as a parameter, for example, the distance by which the wheel has moved.
+
+00:32:44.620 --> 00:32:50.280
+Or we can do even better because we see that really the most complicated thing that happens here is really the rotation.
+
+00:32:50.660 --> 00:32:56.320
+So maybe we could actually use the angle by which the wheel has turned to parameterize the movement.
+
+00:32:56.980 --> 00:33:01.800
+Okay, so there's various choices and actually you can choose whichever one you prefer.
+
+00:33:02.460 --> 00:33:06.960
+But I think here we'll get the simplest answer if we parameterize things by the angle.
+
+00:33:07.560 --> 00:33:11.360
+So in fact, instead of t, I will be using, let's call theta,
+
+00:33:11.360 --> 00:33:32.540
+as a function of the angle, theta by which the wheel has rotated.
+
+00:33:39.840 --> 00:33:41.540
+So how are we going to do that?
+
+00:33:55.940 --> 00:33:58.700
+Well, because we are going to try to use our new knowledge,
+
+00:33:58.700 --> 00:34:01.400
+let's try to do it using vectors in a smart way.
+
+00:34:03.040 --> 00:34:07.200
+So let me draw a picture of the wheel after things have rotated by a certain amount.
+
+00:34:10.520 --> 00:34:12.820
+So maybe my point P now is here.
+
+00:34:14.400 --> 00:34:18.360
+And so the wheel has rotated by this angle here.
+
+00:34:20.020 --> 00:34:22.040
+And I want to find the position of my point P.
+
+00:34:22.040 --> 00:34:27.740
+Okay, so the position of this point P that's going to be the same as knowing the vector,
+
+00:34:28.140 --> 00:34:32.260
+OP, from the origin to this moving point.
+
+00:34:34.760 --> 00:34:40.540
+So I haven't really simplified the problem yet because we don't really know about vector OP.
+
+00:34:40.960 --> 00:34:45.680
+But maybe we know about simpler vectors, where some will be OP.
+
+00:34:47.040 --> 00:34:47.860
+So let's see.
+
+00:34:49.060 --> 00:34:51.100
+Let's give names to a few of our points in there.
+
+00:34:51.220 --> 00:34:53.700
+For example, let's say that this will be point A.
+
+00:34:54.420 --> 00:34:56.640
+A is the point where the wheel is touching the road.
+
+00:34:57.580 --> 00:34:59.900
+And B will be the center of the wheel.
+
+00:35:02.840 --> 00:35:11.440
+Then it looks like maybe I have actually a chance of understanding vectors like maybe OA doesn't look quite so scary.
+
+00:35:11.440 --> 00:35:13.920
+Or AB doesn't look too bad.
+
+00:35:14.400 --> 00:35:15.680
+BP doesn't look too bad.
+
+00:35:16.040 --> 00:35:20.800
+And if I sum them together, I will obtain OP.
+
+00:35:26.940 --> 00:35:28.580
+So let's do that.
+
+00:35:33.740 --> 00:35:36.640
+So now we've greatly simplified the problem.
+
+00:35:36.680 --> 00:35:39.460
+We had to find one vector that we didn't know.
+
+00:35:39.460 --> 00:35:42.040
+Now we have to find three vectors that we don't know.
+
+00:35:45.100 --> 00:35:48.240
+But you'll see each of them is actually fairly easy to think about.
+
+00:35:48.960 --> 00:35:49.340
+So let's see.
+
+00:35:50.440 --> 00:35:52.040
+Should we start with vector OA maybe?
+
+00:35:57.080 --> 00:35:58.760
+So OA has two components.
+
+00:35:59.320 --> 00:36:00.520
+One of them should be very easy.
+
+00:36:03.260 --> 00:36:06.040
+Well, the Y component is just going to be zero.
+
+00:36:06.320 --> 00:36:08.480
+It's directed along the X axis.
+
+00:36:10.060 --> 00:36:11.300
+What about the X component?
+
+00:36:12.100 --> 00:36:18.800
+So OA is the distance by which the wheel has traveled to get to its current position.
+
+00:36:20.700 --> 00:36:20.960
+Yeah.
+
+00:36:21.760 --> 00:36:23.540
+I hear a lot of people saying our theta.
+
+00:36:23.820 --> 00:36:27.340
+Let me actually say A theta because I've called A the radius of the wheel.
+
+00:36:28.020 --> 00:36:31.560
+So this distance is A theta.
+
+00:36:31.880 --> 00:36:32.780
+Why is it A theta?
+
+00:36:33.480 --> 00:36:36.920
+That's because the wheel, well, there's an assumption which is that the wheel is
+
+00:36:36.920 --> 00:36:41.120
+running on something normal like a road and not on maybe, you know,
+
+00:36:41.240 --> 00:36:42.360
+ice or something like that.
+
+00:36:42.720 --> 00:36:44.220
+So it's running without slipping.
+
+00:36:45.540 --> 00:36:53.100
+So that means that this distance on the road is actually equal to the distance
+
+00:36:53.100 --> 00:36:55.020
+here on the circumference of the wheel.
+
+00:36:55.020 --> 00:37:00.380
+This point P was there and the amount by which things have moved can be
+
+00:37:00.380 --> 00:37:02.360
+measured either here or here.
+
+00:37:02.980 --> 00:37:04.160
+These are the same distances.
+
+00:37:06.160 --> 00:37:06.180
+Okay.
+
+00:37:07.940 --> 00:37:10.180
+So that makes it A theta.
+
+00:37:10.960 --> 00:37:20.160
+And maybe I could justify by saying amount by which the wheel has
+
+00:37:20.160 --> 00:37:22.200
+traveled has moved.
+
+00:37:24.120 --> 00:37:26.000
+It's equal to the.
+
+00:37:26.500 --> 00:37:35.840
+So the distance from O to A is equal to the arc length on the circumference of the circle from A to
+
+00:37:35.840 --> 00:37:36.040
+P.
+
+00:37:37.720 --> 00:37:41.920
+And you know that if you have a sector corresponding to an angle theta,
+
+00:37:42.140 --> 00:37:48.200
+then its length is A times theta provided that of course you express the angle in radians.
+
+00:37:48.200 --> 00:37:50.800
+That's the reason why we always use radians in math.
+
+00:37:55.460 --> 00:37:56.020
+Okay.
+
+00:37:57.380 --> 00:38:01.200
+Now let's think about vector AB and vector BP.
+
+00:38:29.800 --> 00:38:30.760
+Okay.
+
+00:38:31.440 --> 00:38:34.140
+So AB is pretty easy, right?
+
+00:38:36.820 --> 00:38:44.800
+Because it's pointing straight up and its length is A.
+
+00:38:45.280 --> 00:38:48.280
+So it's just zero A.
+
+00:38:48.280 --> 00:38:48.280
+
+
+00:38:53.220 --> 00:38:58.420
+Now the most serious one we've kept for the end, what about vector BP?
+
+00:38:59.740 --> 00:39:04.020
+So vector BP, we know two things about it.
+
+00:39:04.100 --> 00:39:05.180
+We know actually its length.
+
+00:39:06.300 --> 00:39:17.020
+So the magnitude of BP is A.
+
+00:39:17.020 --> 00:39:22.520
+And we know it makes an angle, an angle theta with the vertical.
+
+00:39:26.520 --> 00:39:28.720
+So that should let us find its components.
+
+00:39:29.800 --> 00:39:32.640
+Let's draw a closer picture.
+
+00:39:34.360 --> 00:39:38.680
+Now in a picture I'm going to center things at B.
+
+00:39:40.420 --> 00:39:41.880
+So I have my point P.
+
+00:39:41.880 --> 00:39:45.320
+Here I have theta, this length is A.
+
+00:39:46.020 --> 00:39:48.320
+Well, what are the components of BP?
+
+00:39:50.240 --> 00:39:53.600
+Well, the X component is going to be...
+
+00:39:58.400 --> 00:39:58.840
+Almost.
+
+00:39:59.340 --> 00:40:02.240
+I hear people saying things about A, but I agree with A.
+
+00:40:02.720 --> 00:40:04.360
+I hear some cosines, I hear some signs.
+
+00:40:04.500 --> 00:40:05.660
+I think it's actually the sign.
+
+00:40:06.740 --> 00:40:10.060
+Yes, it's A sign theta, except it's going to the left.
+
+00:40:10.060 --> 00:40:12.900
+So actually it will have a negative A sign theta.
+
+00:40:16.800 --> 00:40:16.900
+Okay?
+
+00:40:18.100 --> 00:40:23.820
+And the vertical component, well it will be A cosine theta,
+
+00:40:23.960 --> 00:40:26.540
+but also negative because we are going downwards.
+
+00:40:27.000 --> 00:40:29.620
+So it's negative A cosine theta.
+
+00:40:41.660 --> 00:40:47.500
+So now we can answer the initial question because vector OP,
+
+00:40:47.600 --> 00:40:52.340
+well we'll just add up OA, AB and BP.
+
+00:40:53.640 --> 00:40:58.120
+So the X component will be A theta minus A sign theta.
+
+00:41:00.160 --> 00:41:03.880
+And A minus A cosine theta.
+
+00:41:05.800 --> 00:41:06.400
+Okay?
+
+00:41:14.620 --> 00:41:16.760
+So any questions about that?
+
+00:41:24.880 --> 00:41:31.400
+Okay, so again that's the answer because this thing here is the X coordinate as a function of theta.
+
+00:41:31.400 --> 00:41:35.880
+And that one is the Y coordinate as a function of theta.
+
+00:41:38.860 --> 00:41:44.800
+So now just to show you that we can do a lot of things when we have a parametric equation.
+
+00:41:46.600 --> 00:41:47.820
+Here's a small mystery.
+
+00:41:48.100 --> 00:41:51.840
+So what happens exactly near that bottom point?
+
+00:41:54.040 --> 00:41:55.480
+What does that curve look like?
+
+00:41:55.660 --> 00:41:58.800
+You know, the computer tells us well it looks like it has some sort of pointy thing.
+
+00:41:58.800 --> 00:42:01.080
+But is that something of a display?
+
+00:42:01.660 --> 00:42:03.100
+Or is it actually what happens?
+
+00:42:12.420 --> 00:42:15.280
+So what do you think happens near the bottom point?
+
+00:42:17.200 --> 00:42:20.120
+But we had that picture, let me show it once more,
+
+00:42:23.220 --> 00:42:27.100
+where you have this corner like things at the bottom.
+
+00:42:27.740 --> 00:42:33.200
+Well actually, is it indeed a corner with some angle between the two directions?
+
+00:42:33.700 --> 00:42:34.500
+Does it make an angle?
+
+00:42:36.480 --> 00:42:40.900
+Or is it actually a smooth curve without any corner?
+
+00:42:41.560 --> 00:42:45.240
+But we don't see it because it's too small to be visible on the computer screen.
+
+00:42:45.900 --> 00:42:46.900
+Does it actually make a loop?
+
+00:42:47.540 --> 00:42:54.200
+Or does it actually come down and then back up without going to the left or to the right?
+
+00:42:54.200 --> 00:42:55.360
+And we thought it would make an angle.
+
+00:42:58.060 --> 00:43:04.060
+So yeah, I see majority votes for answer number two or four.
+
+00:43:05.420 --> 00:43:07.780
+And well, at this point we can't quite tell.
+
+00:43:08.200 --> 00:43:09.980
+So let's try to figure it out from these formulas.
+
+00:43:10.340 --> 00:43:14.540
+I mean, really the way to answer that for sure is to actually look at the formulas.
+
+00:43:18.120 --> 00:43:28.420
+So the question that we are trying to answer now is what happens
+
+00:43:31.560 --> 00:43:33.660
+near the bottom point?
+
+00:43:52.640 --> 00:43:54.500
+So how do we answer that?
+
+00:43:54.900 --> 00:44:01.540
+Well, we should probably try to find simpler formulas for these things.
+
+00:44:02.740 --> 00:44:06.180
+So well, to simplify, maybe let's divide everything by a.
+
+00:44:06.320 --> 00:44:07.620
+Let's rescale everything by a.
+
+00:44:07.860 --> 00:44:11.960
+If you want, let's say that we take the unit of length to be the radius of our wheel.
+
+00:44:12.500 --> 00:44:16.800
+So instead of measuring things in feet or meters, we'll just measure them in wheel radius.
+
+00:44:21.740 --> 00:44:28.240
+So take the length unit to be equal to the radius.
+
+00:44:28.240 --> 00:44:31.140
+So that means we'll have a equals one.
+
+00:44:31.740 --> 00:44:33.980
+Then our formulas are slightly simpler.
+
+00:44:34.780 --> 00:44:39.240
+We get x of theta is theta minus sine theta.
+
+00:44:40.540 --> 00:44:44.260
+And y equals one minus cosine.
+
+00:44:46.860 --> 00:44:50.660
+Okay, so if we want to understand what these things look like,
+
+00:44:50.660 --> 00:44:52.600
+maybe we should try to take some approximation.
+
+00:44:53.660 --> 00:44:57.040
+Okay, so what about approximations?
+
+00:44:57.220 --> 00:45:01.300
+Well, probably you know that if I take the sine of a very small angle,
+
+00:45:01.880 --> 00:45:05.560
+it's about equal, it's close to the actual angle itself.
+
+00:45:06.160 --> 00:45:07.240
+If theta is very small.
+
+00:45:11.340 --> 00:45:18.400
+And you know that the cosine of an angle that's very small is close to one.
+
+00:45:19.560 --> 00:45:20.600
+Well, that's pretty good.
+
+00:45:20.900 --> 00:45:24.880
+If we use that, well, we'll get theta minus theta, one minus one.
+
+00:45:25.380 --> 00:45:26.900
+It looks like it's not precise enough.
+
+00:45:27.040 --> 00:45:28.160
+We just get zero and zero.
+
+00:45:28.680 --> 00:45:30.400
+That's not telling us much about what happens.
+
+00:45:31.460 --> 00:45:34.020
+Okay, so we need actually better approximations than that.
+
+00:45:48.760 --> 00:45:53.980
+So hopefully you have seen in one variable calculus something called
+
+00:45:53.980 --> 00:45:55.500
+Taylor expansion.
+
+00:45:56.880 --> 00:45:57.820
+That's...
+
+00:46:00.820 --> 00:46:01.760
+Okay.
+
+00:46:02.520 --> 00:46:04.000
+I see that's a very small angle.
+
+00:46:04.000 --> 00:46:04.000
+
+
+00:46:04.000 --> 00:46:04.000
+
+
+00:46:04.000 --> 00:46:04.000
+
+
+00:46:13.780 --> 00:46:16.560
+Okay, so if you have not seen Taylor expansion,
+
+00:46:16.740 --> 00:46:21.020
+or if somehow it was so traumatic that you've blocked it out of your memory,
+
+00:46:22.460 --> 00:46:27.400
+let me just remind you that Taylor expansion is a way to get a better approximation
+
+00:46:27.400 --> 00:46:29.720
+than just looking at the function that's derivative.
+
+00:46:34.200 --> 00:46:34.760
+So...
+
+00:46:40.020 --> 00:46:43.520
+And here's an example of where it actually comes in handy in real life.
+
+00:46:44.560 --> 00:46:55.920
+So, Taylor approximation says that if T is small,
+
+00:46:58.420 --> 00:47:04.420
+then the value of a function f of T is approximately equal to,
+
+00:47:04.460 --> 00:47:07.440
+well, our first guess, of course, would be f of zero.
+
+00:47:07.660 --> 00:47:09.520
+That's the, you know, our first approximation.
+
+00:47:10.560 --> 00:47:14.120
+If we want to be a bit more precise, we know that when we change by T,
+
+00:47:14.840 --> 00:47:17.440
+well, T times the derivative comes in.
+
+00:47:17.620 --> 00:47:21.260
+That's the linear approximation to how the function changes.
+
+00:47:23.060 --> 00:47:26.240
+Now, if we want to be even more precise, then there's an over term,
+
+00:47:26.700 --> 00:47:30.140
+which is T square over 2 times the second derivative.
+
+00:47:31.620 --> 00:47:33.720
+And if you want to be even more precise,
+
+00:47:34.700 --> 00:47:39.440
+you'll have T cube over 6 times the third derivative at zero.
+
+00:47:41.280 --> 00:47:44.360
+Okay, and you can continue and so on, but we won't need more.
+
+00:47:45.560 --> 00:47:53.880
+So, if you use this here, it tells you that sine of a small angle theta,
+
+00:47:54.840 --> 00:47:58.020
+well, yeah, it looks like theta, but if we want to be more precise,
+
+00:47:58.660 --> 00:48:01.340
+then we should add minus theta cubed over 6.
+
+00:48:04.460 --> 00:48:09.200
+And cosine of theta, well, it's not quite one,
+
+00:48:09.400 --> 00:48:12.060
+it's close to 1 minus theta square over 2.
+
+00:48:12.060 --> 00:48:19.120
+Okay, so these are slightly better approximations of sine and cosine for small angles.
+
+00:48:24.400 --> 00:48:29.020
+So, now, if we try to figure out, again, what happens to our x of theta,
+
+00:48:29.860 --> 00:48:35.180
+well, that will be T, sorry, theta minus theta minus theta cubed over 6,
+
+00:48:37.760 --> 00:48:39.560
+that's theta cubed over 6.
+
+00:48:40.280 --> 00:48:51.420
+And y, on the other hand, is going to be 1 minus theta squared over 2.
+
+00:48:53.660 --> 00:48:57.020
+So, now, which one of them is bigger when theta is small?
+
+00:48:59.560 --> 00:49:01.120
+Yeah, y is much larger, okay?
+
+00:49:01.120 --> 00:49:04.180
+If you take the cube of a very small number, it becomes very, very, very small.
+
+00:49:05.560 --> 00:49:10.640
+So, in fact, we can look at that, you know, so let me say,
+
+00:49:11.580 --> 00:49:14.680
+x in absolute value is much smaller than y.
+
+00:49:15.120 --> 00:49:19.000
+And in fact, what we can do is we can look at the ratio between y and x,
+
+00:49:19.120 --> 00:49:22.940
+that tells us the slope with which we approach the origin.
+
+00:49:23.600 --> 00:49:28.460
+So, y over x is, well, let's take the ratio of this two,
+
+00:49:34.660 --> 00:49:44.060
+that gives us 3 divided by theta, that tends to infinity when theta approaches 0.
+
+00:49:45.140 --> 00:49:49.240
+So, that means that the slope of our curve near the origin is actually infinite.
+
+00:49:59.160 --> 00:50:02.780
+And so, the correct picture is really something like this.
+
+00:50:04.480 --> 00:50:09.180
+So, the instantaneous motion, if you had to describe what happens very, very close to the origin,
+
+00:50:09.700 --> 00:50:13.960
+is that your point is actually not moving to the left or to the right, along with the wheel.
+
+00:50:14.060 --> 00:50:15.820
+It's moving down and then up.
+
+00:50:16.920 --> 00:50:21.440
+And of course, I mean, at the same time, it is actually moving a little bit forward at the same time.
+
+00:50:21.880 --> 00:50:26.860
+But the dominant movement near the origin is really that it goes down and then up.
+
+00:50:27.240 --> 00:50:29.520
+So, answer number 4, you have a vertical tangent.
+
+00:50:34.260 --> 00:50:36.800
+Okay, I think I'm at the end of time.
+
+00:50:37.460 --> 00:50:38.840
+So, have a nice weekend.
+
+00:50:40.160 --> 00:50:42.880
+And I'll see you on Tuesday.
+
+00:50:43.460 --> 00:50:47.620
+So, on Tuesday, we'll have practice exams for next week's test.
+
