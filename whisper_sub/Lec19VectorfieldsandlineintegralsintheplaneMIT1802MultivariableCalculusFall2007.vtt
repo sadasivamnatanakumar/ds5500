@@ -1,0 +1,1622 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.700 --> 00:00:05.960
+Your support will help MIT OpenCourseWare
+
+00:00:05.960 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.900 --> 00:00:12.520
+To make a donation or to view additional materials
+
+00:00:12.520 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:21.840 --> 00:00:23.820
+OK, so today we have a new topic.
+
+00:00:24.560 --> 00:00:27.780
+And we're going to start to learn about vector fields
+
+00:00:29.220 --> 00:00:30.380
+and line integrals.
+
+00:00:35.960 --> 00:00:39.860
+So last week we've been doing double integrals for today,
+
+00:00:39.880 --> 00:00:43.000
+we just forget all of that, but don't actually forget it.
+
+00:00:43.020 --> 00:00:44.820
+You know, put it away in a corner of your mind.
+
+00:00:45.240 --> 00:00:46.400
+It's going to come back next week.
+
+00:00:47.100 --> 00:00:49.300
+But what we do today, we're going to do line integrals
+
+00:00:49.300 --> 00:00:50.920
+and these are completely different things.
+
+00:00:51.280 --> 00:00:54.520
+So it helps, actually, if you don't think of double integrals
+
+00:00:54.520 --> 00:00:56.040
+at all while doing line integrals.
+
+00:00:57.340 --> 00:00:57.760
+So we're going to do a lot of things.
+
+00:00:57.760 --> 00:00:59.400
+So anyway, let's start with vector fields.
+
+00:00:59.780 --> 00:01:00.740
+So what's a vector field?
+
+00:01:02.580 --> 00:01:07.380
+Well, a vector field is something that's of a form.
+
+00:01:09.240 --> 00:01:14.380
+Well, it's a vector, but where m and n, the components,
+
+00:01:18.480 --> 00:01:22.260
+actually depend on x and y, on the point where you are.
+
+00:01:22.260 --> 00:01:28.420
+So there are functions of x and y.
+
+00:01:30.340 --> 00:01:34.040
+So what that means, concretely, is that at every point
+
+00:01:34.040 --> 00:01:35.500
+in the plane, you have a vector.
+
+00:01:36.480 --> 00:01:39.220
+So in a corn field, everywhere you have corn,
+
+00:01:39.420 --> 00:01:41.220
+in a vector field, everywhere you have a vector.
+
+00:01:42.700 --> 00:01:43.560
+That's how it works.
+
+00:01:45.900 --> 00:01:48.460
+So a good example of a vector field,
+
+00:01:49.060 --> 00:01:52.420
+I don't know if you've seen these maps that show the wind.
+
+00:01:54.160 --> 00:01:57.840
+But so here's some cool images done by NASA.
+
+00:01:58.360 --> 00:02:04.300
+So actually, that's a picture of the wind patterns
+
+00:02:04.940 --> 00:02:07.400
+of the coast of California with Santa Ana winds.
+
+00:02:07.560 --> 00:02:09.280
+In case you're wondering what's been going on recently.
+
+00:02:10.720 --> 00:02:12.820
+So you have all of these vectors that show you
+
+00:02:12.820 --> 00:02:17.180
+the velocity of the air, basically, at every point.
+
+00:02:17.180 --> 00:02:18.960
+I mean, of course, you don't draw it at every point
+
+00:02:18.960 --> 00:02:22.040
+because if you draw a vector at absolutely all
+
+00:02:22.040 --> 00:02:25.320
+the points of a plane, then you just fill up everything
+
+00:02:25.320 --> 00:02:26.660
+and you wouldn't see anything.
+
+00:02:27.340 --> 00:02:30.760
+So you just choose points and you draw the vectors
+
+00:02:30.760 --> 00:02:31.320
+at those points.
+
+00:02:32.560 --> 00:02:36.720
+So here's another cooling major of, let's take down,
+
+00:02:37.700 --> 00:02:40.600
+that's a hurricane of the coast of Mexico
+
+00:02:41.180 --> 00:02:43.380
+with the winds spiraling around the hurricane.
+
+00:02:47.460 --> 00:02:49.140
+So anyway, it's kind of hard to see,
+
+00:02:49.400 --> 00:02:50.640
+you don't really see all the vectors.
+
+00:02:51.520 --> 00:02:53.980
+Actually, I guess the autofocus is having trouble with it.
+
+00:02:58.980 --> 00:03:00.120
+Yeah, I can't really do it.
+
+00:03:00.400 --> 00:03:02.440
+So I guess I'll go back to the previous one.
+
+00:03:08.320 --> 00:03:08.720
+Okay.
+
+00:03:10.360 --> 00:03:15.940
+So anyway, a vector field is something where,
+
+00:03:16.140 --> 00:03:16.820
+at each point,
+
+00:03:25.060 --> 00:03:30.720
+in the plane, we have a vector f,
+
+00:03:36.540 --> 00:03:38.440
+that depends on x and y.
+
+00:03:48.960 --> 00:03:53.820
+So this occurs in real life when you look at velocity fields
+
+00:03:53.820 --> 00:03:54.400
+in a fluid.
+
+00:03:54.620 --> 00:03:56.960
+For example, the wind, that's what these pictures show.
+
+00:03:57.500 --> 00:04:00.640
+At every point, you have a velocity of a fluid that's moving.
+
+00:04:01.880 --> 00:04:03.740
+Another example is force fields.
+
+00:04:04.040 --> 00:04:05.920
+So now, force fields are not something out of star walls.
+
+00:04:06.160 --> 00:04:09.360
+It's just, if you look at gravitational attraction,
+
+00:04:10.100 --> 00:04:12.740
+you know that if you have a mass somewhere,
+
+00:04:13.060 --> 00:04:14.460
+well, it will be attracted to fall down
+
+00:04:14.460 --> 00:04:16.380
+because of a gravity field of the Earth,
+
+00:04:16.760 --> 00:04:19.020
+which means that at every point, you have a vector
+
+00:04:19.020 --> 00:04:19.860
+that's pointing down.
+
+00:04:20.880 --> 00:04:23.540
+And same thing in space, you have the gravitational field
+
+00:04:23.540 --> 00:04:25.500
+of planets, stars, and so on.
+
+00:04:26.260 --> 00:04:28.300
+So that's also an example of a vector field
+
+00:04:28.300 --> 00:04:31.500
+because wherever you go, you would have that vector
+
+00:04:31.500 --> 00:04:34.320
+and what it is depends on where you are.
+
+00:04:36.600 --> 00:04:42.680
+So the examples from the real world are things like velocity
+
+00:04:43.780 --> 00:04:44.680
+in a fluid
+
+00:04:49.940 --> 00:04:51.460
+or force field
+
+00:04:54.700 --> 00:04:57.520
+where you have a force that depends on the point where you are.
+
+00:04:58.640 --> 00:05:02.320
+So we're going to try to study vector fields mathematically
+
+00:05:02.320 --> 00:05:05.880
+so we won't really care what they are most of the time,
+
+00:05:06.420 --> 00:05:10.080
+but as we'll explore with them, define quantities and so on,
+
+00:05:10.140 --> 00:05:12.360
+we'll very often use these motivations
+
+00:05:12.360 --> 00:05:15.840
+to justify why we would care about certain quantities.
+
+00:05:17.960 --> 00:05:20.560
+Okay, so the first thing we have to figure out is
+
+00:05:20.560 --> 00:05:22.000
+how do we draw a vector field?
+
+00:05:23.080 --> 00:05:24.700
+How do you generate a plot like that?
+
+00:05:29.700 --> 00:05:33.300
+So let's practice drawing a few vector fields.
+
+00:05:36.120 --> 00:05:39.100
+Well, let's start with, let's say our very first vector field
+
+00:05:39.100 --> 00:05:40.900
+will be just 2i plus j.
+
+00:05:41.600 --> 00:05:43.040
+So it's kind of a silly vector field
+
+00:05:43.040 --> 00:05:45.260
+because it doesn't actually depend on x and y.
+
+00:05:45.460 --> 00:05:47.540
+So that means it's the same vector everywhere.
+
+00:05:48.740 --> 00:05:53.560
+Okay, so I take a picture of a plane
+
+00:05:54.200 --> 00:05:59.220
+and I take a vector 2,1, I guess it points in that direction.
+
+00:05:59.220 --> 00:06:00.980
+It's 2 units to the right, 1 up.
+
+00:06:01.600 --> 00:06:03.680
+And I just put that vector everywhere.
+
+00:06:04.920 --> 00:06:06.560
+Okay, so you know,
+
+00:06:09.100 --> 00:06:12.700
+you just put it at a few points all over the place
+
+00:06:12.700 --> 00:06:14.460
+and when you think you have enough
+
+00:06:14.460 --> 00:06:16.760
+so that you understand what's going on, then you stop.
+
+00:06:18.140 --> 00:06:19.780
+So here probably we don't need that many.
+
+00:06:20.000 --> 00:06:21.100
+I mean, here I think we get the picture.
+
+00:06:21.540 --> 00:06:21.600
+Okay?
+
+00:06:24.420 --> 00:06:27.100
+So everywhere we have a vector 2,1.
+
+00:06:32.940 --> 00:06:35.820
+Now let's try to look at slightly more interesting examples.
+
+00:06:36.720 --> 00:06:40.120
+Okay, let's say I give you a vector field x times i hat.
+
+00:06:41.620 --> 00:06:43.240
+Okay, so there's no j component.
+
+00:06:47.080 --> 00:06:48.640
+So how would you draw that?
+
+00:06:49.200 --> 00:06:50.380
+Maybe I don't need that much.
+
+00:06:57.780 --> 00:06:59.580
+Well, so first of all,
+
+00:07:00.520 --> 00:07:02.940
+we know that this guy is only in the i direction
+
+00:07:02.940 --> 00:07:04.540
+so it's always horizontal.
+
+00:07:05.020 --> 00:07:06.060
+It doesn't have a j component.
+
+00:07:06.280 --> 00:07:07.820
+So everywhere it would be a horizontal vector.
+
+00:07:09.000 --> 00:07:10.600
+Now the question is how long is it?
+
+00:07:10.600 --> 00:07:14.320
+Well, how long it depends on x?
+
+00:07:15.160 --> 00:07:17.200
+So for example, if x is 0,
+
+00:07:17.540 --> 00:07:19.040
+then this will be actually the 0 vector.
+
+00:07:20.380 --> 00:07:23.420
+So x is 0, but here, see, on the y axis,
+
+00:07:23.720 --> 00:07:26.180
+maybe I should take a different corner.
+
+00:07:28.080 --> 00:07:29.600
+So if I'm on the y axis,
+
+00:07:30.040 --> 00:07:32.400
+I actually have the 0 vector.
+
+00:07:34.200 --> 00:07:36.880
+Now if x becomes positive small,
+
+00:07:37.020 --> 00:07:39.180
+then I will have actually a small positive multiple
+
+00:07:39.180 --> 00:07:43.520
+of i, so I will be going a little bit to the right.
+
+00:07:45.080 --> 00:07:46.380
+And then if I increase x,
+
+00:07:46.720 --> 00:07:47.860
+then this guy becomes larger.
+
+00:07:48.320 --> 00:07:50.500
+So I get a longer vector to the right.
+
+00:07:52.380 --> 00:07:55.760
+If x is negative, then my vector field points to the left instead.
+
+00:07:56.460 --> 00:07:56.460
+
+
+00:08:01.160 --> 00:08:05.560
+if it looks something like that.
+
+00:08:10.700 --> 00:08:13.800
+Any questions about that picture?
+
+00:08:15.980 --> 00:08:16.080
+No.
+
+00:08:16.720 --> 00:08:19.540
+So usually we're not going to try to have very accurate,
+
+00:08:20.140 --> 00:08:23.820
+we won't actually take time to plot the vector field very carefully.
+
+00:08:24.640 --> 00:08:26.680
+If we need to, computers can do it for us.
+
+00:08:27.520 --> 00:08:31.640
+But it's useful to have an idea of what the vector field does roughly.
+
+00:08:31.820 --> 00:08:34.700
+Whether it's getting larger and larger in what direction is pointing,
+
+00:08:34.700 --> 00:08:36.520
+what are the general features.
+
+00:08:39.160 --> 00:08:41.400
+So just to do a couple more.
+
+00:08:45.720 --> 00:08:48.760
+Actually, you'll see very quickly that the examples I take in lecture
+
+00:08:48.760 --> 00:08:50.880
+are pretty much always the same ones.
+
+00:08:51.180 --> 00:08:55.780
+So you know, we'll be playing a lot with these particular vector fields,
+
+00:08:57.100 --> 00:08:58.180
+just because they're good examples.
+
+00:09:00.080 --> 00:09:03.200
+So let's say I give you x i plus y j.
+
+00:09:03.880 --> 00:09:07.080
+So that one has an interesting geometric signification, the significance.
+
+00:09:08.280 --> 00:09:16.480
+If I take a point x y, you know, so there I want to take the vector x y.
+
+00:09:18.000 --> 00:09:18.920
+How do I do that?
+
+00:09:19.580 --> 00:09:23.040
+Well, it's the same as the vector from the origin to this point.
+
+00:09:23.720 --> 00:09:28.580
+So I take this vector and I copy it so that it starts at my given point.
+
+00:09:29.820 --> 00:09:30.900
+So it looks like that.
+
+00:09:32.060 --> 00:09:33.400
+And you know, same thing at every point.
+
+00:09:41.480 --> 00:09:47.240
+So it's a vector field that's pointing radially away from the origin.
+
+00:09:49.440 --> 00:09:53.040
+And it's magnitude increases with distance from the origin.
+
+00:09:58.480 --> 00:10:01.880
+So you don't have to draw, you know, as many as me.
+
+00:10:04.300 --> 00:10:07.800
+But so the idea is this vector field everywhere points away from the origin.
+
+00:10:07.980 --> 00:10:10.640
+And its magnitude is equal to the distance from the origin.
+
+00:10:13.740 --> 00:10:16.220
+So you know, if this were, for example, velocity fields,
+
+00:10:16.660 --> 00:10:20.360
+well, that would tell you, you'd see visually what's happening to your fluid.
+
+00:10:20.660 --> 00:10:24.860
+Like here, maybe you have a source at the origin that's pureing fluid out,
+
+00:10:24.940 --> 00:10:27.480
+and it's flowing all the way away from that.
+
+00:10:31.320 --> 00:10:33.560
+Okay, let's do just a last one.
+
+00:10:36.760 --> 00:10:43.540
+Let's say I give you minus y, x.
+
+00:10:45.140 --> 00:10:46.420
+What does that look like?
+
+00:10:49.080 --> 00:10:50.240
+That's an interesting one.
+
+00:10:50.380 --> 00:10:57.620
+Actually, it's a nice one.
+
+00:10:58.080 --> 00:10:58.400
+So let's see.
+
+00:10:58.500 --> 00:11:00.680
+So let's say that I have a point x, y here.
+
+00:11:00.680 --> 00:11:06.020
+Okay, so this vector here is x, y.
+
+00:11:06.640 --> 00:11:09.700
+But the vector I want is negative y, x.
+
+00:11:10.300 --> 00:11:13.480
+So what does that look like compared to?
+
+00:11:13.600 --> 00:11:17.140
+Yeah, it's perpendicular to the position to this vector.
+
+00:11:17.460 --> 00:11:22.140
+Okay, if I rotate this vector, so let me maybe draw a picture on the side.
+
+00:11:22.140 --> 00:11:31.580
+If I take the vector x, y, then the vector with components negative y and x
+
+00:11:32.140 --> 00:11:35.360
+is going to be like this.
+
+00:11:36.820 --> 00:11:41.140
+It's the vector that I get by rotating by 90 degrees counterclockwise.
+
+00:11:49.440 --> 00:11:51.940
+And of course, I don't want to put that vector at the origin.
+
+00:11:52.120 --> 00:11:53.960
+I want to put it at the point x, y.
+
+00:11:54.240 --> 00:11:57.940
+So in fact, what I will draw is something like this.
+
+00:11:59.360 --> 00:12:01.800
+Okay, and similarly here, it would be like that.
+
+00:12:01.800 --> 00:12:02.540
+Like that.
+
+00:12:09.600 --> 00:12:14.580
+And if I'm closer to the origin, then it looks a bit the same, but it's shorter.
+
+00:12:18.820 --> 00:12:20.620
+Okay, and at the origin, it's zero.
+
+00:12:21.280 --> 00:12:24.140
+And when I'm further away, it becomes even larger.
+
+00:12:25.060 --> 00:12:28.220
+So see, this vector field, if it was the motion of a fluid,
+
+00:12:28.220 --> 00:12:33.680
+it would correspond to a fluid that's just going around the origin in circles,
+
+00:12:34.600 --> 00:12:36.760
+rotating at uniform speed.
+
+00:12:38.700 --> 00:12:49.740
+Okay, so this is actually the velocity field for uniform rotation.
+
+00:12:53.940 --> 00:13:01.920
+And if you figure out how long does it take for a particular fluid to go all the way around,
+
+00:13:02.720 --> 00:13:09.060
+well, that will be actually 2 pi because the length of the circle is 2 pi times the radius.
+
+00:13:10.020 --> 00:13:13.220
+So that's actually at unit angular velocity.
+
+00:13:16.200 --> 00:13:18.380
+One radian per second, or per unit time.
+
+00:13:21.500 --> 00:13:25.700
+Okay, so that's why this guy comes up quite a lot in real life.
+
+00:13:29.020 --> 00:13:31.860
+Okay, and you know, you can imagine lots of variations on these.
+
+00:13:32.900 --> 00:13:36.620
+Of course, you can also imagine vector fields given by much more complicated formulas,
+
+00:13:36.620 --> 00:13:38.480
+and then you'll have a hard time drawing them.
+
+00:13:38.820 --> 00:13:41.620
+So maybe you'll use a computer, or maybe you'll just give up,
+
+00:13:42.300 --> 00:13:46.760
+and just do whatever calculation you have to do without trying to visualize the vector field.
+
+00:13:47.560 --> 00:13:54.240
+But if you have a nice simple one, then it's worth doing it because sometimes it will give you insight about what we're going to compute next.
+
+00:13:57.180 --> 00:13:59.320
+Okay, any questions first about these pictures?
+
+00:14:03.140 --> 00:14:03.800
+No?
+
+00:14:07.140 --> 00:14:08.660
+Okay, oh, yes.
+
+00:14:12.040 --> 00:14:12.700
+Sorry?
+
+00:14:16.000 --> 00:14:24.680
+Why, and you're asking if it should be Y, and so Y, or negative X, I think would be the other way around.
+
+00:14:25.600 --> 00:14:32.800
+See, for example, if I'm at this point, then Y is positive and X is zero.
+
+00:14:32.980 --> 00:14:39.240
+So if I take Y negative X, I guess a positive first component, and zero for the second one.
+
+00:14:39.880 --> 00:14:44.320
+So Y, negative X, would be a rotation at unit speed in the opposite direction.
+
+00:14:45.200 --> 00:14:45.260
+Okay?
+
+00:14:46.480 --> 00:14:48.400
+So, yeah, and there's a lot of tweaks you can do to it.
+
+00:14:48.480 --> 00:14:51.440
+So if you flip the sides, you get rotation in V over direction.
+
+00:14:54.760 --> 00:14:55.360
+Yes?
+
+00:14:58.560 --> 00:14:59.680
+How do I know?
+
+00:15:01.360 --> 00:15:03.680
+How do I know that it's a unit angular velocity?
+
+00:15:04.580 --> 00:15:13.380
+Well, that's because if my angular velocity is one, then that means that the speed, the actual speed, is equal to the distance from the origin.
+
+00:15:14.640 --> 00:15:22.300
+Right? Because the length, I mean, the arc length on a circle of a certain radius is equal to the radius times the angle.
+
+00:15:23.440 --> 00:15:29.320
+So if the angle varies at rate one, then I travel at speed equal to the radius, and that's what I do here.
+
+00:15:29.620 --> 00:15:33.060
+The length of this vector is equal to the distance from the origin.
+
+00:15:34.440 --> 00:15:42.500
+I mean, it's not obvious on the picture, but really the vector that I put here is the same as this vector rotated, so it has the same length.
+
+00:15:42.500 --> 00:15:45.960
+So that's why the angular velocity is one.
+
+00:15:46.580 --> 00:15:50.580
+It doesn't really matter much anyway, but...
+
+00:15:54.320 --> 00:15:54.800
+Okay.
+
+00:15:56.300 --> 00:15:58.800
+So now, what are we going to do with vector fields?
+
+00:15:59.060 --> 00:16:07.540
+Well, we're going to do a lot of things, but let's, you know, let's start somewhere.
+
+00:16:08.740 --> 00:16:13.180
+So one thing you might want to do with a vector field is...
+
+00:16:13.180 --> 00:16:17.180
+So I'm going to think for now of the situation where we have a force.
+
+00:16:17.980 --> 00:16:18.100
+Okay?
+
+00:16:21.040 --> 00:16:37.520
+So if you have a force exerted on a particle, and that particle moves on some trajectory, then probably you've seen in physics that the work done by the force corresponds to the force dot product with the distance.
+
+00:16:37.540 --> 00:16:40.740
+The displacement vector, how much you have moved your particle.
+
+00:16:42.160 --> 00:16:47.680
+And of course, if you do just, you know, straight line trajectory, or if the force is constant, that works well.
+
+00:16:48.300 --> 00:16:55.180
+But if you're moving on a complicated trajectory and the force keeps changing, then actually you want to integrate that over time.
+
+00:16:57.160 --> 00:16:57.640
+So...
+
+00:17:00.160 --> 00:17:08.060
+Okay, so we're going to, the first thing we'll do is learn how to compute the work done by a vector field.
+
+00:17:09.140 --> 00:17:12.740
+And mathematically, that's called a line integral.
+
+00:17:16.500 --> 00:17:17.120
+Okay?
+
+00:17:20.160 --> 00:17:25.780
+So physically, remember, the work done by a force is the force times the distance.
+
+00:17:27.420 --> 00:17:34.280
+And more precisely, it's actually the dot product between the force as a vector.
+
+00:17:35.780 --> 00:17:41.020
+And the displacement vector for a small motion.
+
+00:17:41.020 --> 00:17:50.840
+So, say that, you know, your point is moving from here to here, you have the displacement delta R that's just the change in the position vector.
+
+00:17:51.100 --> 00:17:53.580
+If it's the vector from the old position to the new position.
+
+00:17:54.500 --> 00:18:00.500
+And then you have your force that's being exerted, and you do the dot product between them.
+
+00:18:00.720 --> 00:18:04.680
+And that will give you the work of the force during this motion.
+
+00:18:06.020 --> 00:18:14.200
+And the physical significance of this, well, the work tells you basically how much energy you have to provide to actually perform this motion.
+
+00:18:15.280 --> 00:18:17.520
+Okay? Just in case you haven't seen this in 801 yet.
+
+00:18:17.740 --> 00:18:21.160
+I'm hoping all of you have heard about work somewhere.
+
+00:18:21.860 --> 00:18:25.340
+But in case it's completely mysterious, that's the amount of energy you have to provide.
+
+00:18:26.040 --> 00:18:28.800
+Sorry, actually, no, that's the amount of energy provided by the force.
+
+00:18:28.800 --> 00:18:36.400
+So if the force goes along the motion, it actually pushes the particle, it provides energy to it to do that motion.
+
+00:18:37.020 --> 00:18:43.480
+And conversely, if you're trying to go against the force, then you have to provide energy to the particle to be able to do that.
+
+00:18:45.380 --> 00:18:54.840
+So in particular, the work, you know, if this is the only force that's taking place, then the work will be the variation in kinetic energy of the particle along the motion.
+
+00:18:56.700 --> 00:19:00.000
+So now that's a good description for a small motion.
+
+00:19:00.160 --> 00:19:05.040
+But let's say that my particle is not just doing that, but you know, it's doing something complicated.
+
+00:19:06.240 --> 00:19:11.780
+And my force keeps changing. So somehow maybe, you know, I have a different force at every point.
+
+00:19:14.460 --> 00:19:18.060
+So then I want to find the total work done along the motion.
+
+00:19:18.060 --> 00:19:23.700
+Well, what I have to do is I have to cut my trajectory into these little pieces.
+
+00:19:24.620 --> 00:19:29.640
+You know, and for each of them, I have a vector along the trajectory.
+
+00:19:30.120 --> 00:19:32.880
+I have the force. I do the dot product, and I sum them together.
+
+00:19:35.580 --> 00:19:45.940
+And of course, the actual answer, well, to get the actual answer, I should actually cut into smaller and smaller pieces and sum all of the small contributions to work.
+
+00:19:45.940 --> 00:19:47.860
+So in fact, it's going to be an integral.
+
+00:19:52.920 --> 00:20:04.100
+Okay. So along some trajectory, let's call C the trajectory for curve.
+
+00:20:04.500 --> 00:20:05.660
+You know, it's some curve.
+
+00:20:06.660 --> 00:20:33.900
+And here, the work adds up to an integral, which, well, we've write this using the notation integral along C of f dot dL.
+
+00:20:33.900 --> 00:20:36.100
+Okay. So we have to decode this notation.
+
+00:20:40.180 --> 00:21:02.900
+So one way to decode this is to say it's a limit as we cut into smaller and smaller pieces of the sum of each piece of the trajectory of the force at the given point dot product with that.
+
+00:21:03.900 --> 00:21:05.280
+And that's a small vector along the trajectory.
+
+00:21:13.040 --> 00:21:15.240
+And, well, that's not how we need to compute it.
+
+00:21:15.420 --> 00:21:16.940
+You know, to compute it, we do things differently.
+
+00:21:17.160 --> 00:21:19.240
+So how can we actually compute it?
+
+00:21:22.580 --> 00:21:31.420
+Well, what we can do is say that actually we are cutting things into small time intervals.
+
+00:21:31.420 --> 00:21:37.140
+So the way that we split our trajectory is we just take, you know, a picture every, say, millisecond.
+
+00:21:37.860 --> 00:21:40.060
+So every millisecond we have a new position.
+
+00:21:41.320 --> 00:21:52.560
+And the motion, you know, the amount by which you have moved during each small time interval is basically the velocity vector times the amount of time.
+
+00:21:54.980 --> 00:22:04.660
+So, in fact, let me just provide this as you know, you do the dot product between the force and how much you have moved.
+
+00:22:08.760 --> 00:22:17.420
+Well, if I just provide it this way, nothing's happened, but what this thing is actually is the velocity vector.
+
+00:22:26.760 --> 00:22:41.660
+So what I'm trying to say is that I can actually compute my integral by integrating f dot product with the Rdt over time.
+
+00:22:42.300 --> 00:22:53.440
+From time, you know, whatever the initial time to whatever the final time is, I integrate f dot product velocity dt.
+
+00:22:55.680 --> 00:23:02.120
+And of course, I mean, here when I say f, I mean f at the point on the trajectory at time t.
+
+00:23:03.420 --> 00:23:07.460
+Right. This guy depends on x and y, therefore it depends on t.
+
+00:23:10.600 --> 00:23:15.840
+Okay, I see a lot of confused faces. So let's do an example. And then I will ask you.
+
+00:23:16.820 --> 00:23:17.200
+Okay.
+
+00:23:22.200 --> 00:23:24.100
+So now, yes, that would be probably.
+
+00:23:25.480 --> 00:23:29.440
+So here I need to put a limit as delta t tends to zero.
+
+00:23:29.440 --> 00:23:38.920
+So I cut my trajectory into smaller and smaller time intervals. For each time interval, I have a small motion, which is essentially velocity times delta t.
+
+00:23:39.500 --> 00:23:41.780
+And then I dot that with a force. And I sum them.
+
+00:23:45.180 --> 00:23:46.820
+Okay. So let's do an example.
+
+00:23:49.560 --> 00:23:50.700
+Let's say that we do.
+
+00:23:52.660 --> 00:23:57.120
+We want to find the work of this force.
+
+00:23:58.100 --> 00:24:07.000
+So I guess that's the last example that we had. So it's a force field that tries to make everything in the rotate somehow your first points along these circles.
+
+00:24:08.720 --> 00:24:15.860
+And let's say that our trajectory, our particle is moving along the parametric curve.
+
+00:24:17.540 --> 00:24:22.300
+x equals t, y equals t squared. For t going from zero to one.
+
+00:24:23.920 --> 00:24:28.780
+Okay. So what that looks like, what maybe I should draw in your picture.
+
+00:24:28.780 --> 00:24:32.120
+So our vector field.
+
+00:24:39.140 --> 00:24:46.660
+Well, whatever. And our trajectory, if you try to plot this, when you see y is actually x squared.
+
+00:24:47.220 --> 00:24:52.520
+So it's a piece of parabola that goes from the origin to one one.
+
+00:24:54.540 --> 00:24:56.020
+Okay. That's what our curve looks like.
+
+00:24:57.640 --> 00:25:02.300
+Okay. So we're trying to find the work done by our force along this trajectory.
+
+00:25:04.280 --> 00:25:09.260
+I should point out, I mean, you know, if you're asking me, how did you get this? That's actually the wrong question.
+
+00:25:09.560 --> 00:25:14.480
+I didn't, you know, this is all part of the data. I have a force and I have a trajectory.
+
+00:25:14.720 --> 00:25:17.040
+And I want to find what's the work done along the trajectory.
+
+00:25:17.540 --> 00:25:20.240
+These two guys I can choose completely independently of each other.
+
+00:25:24.000 --> 00:25:38.800
+So the integral along c of f dot dr will be, well, it's the integral from time zero to time one of f dot velocity vector dr dt.
+
+00:25:41.560 --> 00:25:48.800
+So that will be the integral from zero to one of, okay, let's try to figure it out.
+
+00:25:49.260 --> 00:25:51.260
+So what is f?
+
+00:25:56.760 --> 00:26:00.560
+f at a point xy is minus y comma x.
+
+00:26:01.480 --> 00:26:06.140
+But if I take the point where I am at time t, then x is t and y is t squared.
+
+00:26:06.140 --> 00:26:14.980
+Okay. So here I plug x equals t, y equals t squared, but will give me negative t squared and t.
+
+00:26:16.060 --> 00:26:20.620
+Okay. So here we'll put negative t squared t dot product.
+
+00:26:21.180 --> 00:26:22.440
+What is the velocity vector?
+
+00:26:23.360 --> 00:26:28.700
+Well, dx dt is just one.
+
+00:26:29.440 --> 00:26:32.900
+The y dt is 2t.
+
+00:26:33.540 --> 00:26:38.060
+So the velocity vector is 1 and 2t dt.
+
+00:26:40.140 --> 00:26:46.520
+Okay. So now we have to continue calculation.
+
+00:26:46.520 --> 00:26:51.420
+We get integral from zero to one of what is this dot product?
+
+00:26:51.720 --> 00:26:54.480
+Well, it's negative t squared plus 2t squared.
+
+00:26:55.260 --> 00:26:56.360
+I get t squared.
+
+00:26:57.520 --> 00:27:02.000
+Well, maybe I'll write it negative t squared plus 2t squared dt.
+
+00:27:02.840 --> 00:27:11.100
+But ends up being integral from zero to one of t squared dt, which you all know how to integrate and get one third.
+
+00:27:12.400 --> 00:27:12.540
+Okay.
+
+00:27:15.360 --> 00:27:18.600
+So that's the work done by the force along this curve.
+
+00:27:19.340 --> 00:27:19.340
+
+
+00:27:23.200 --> 00:27:27.860
+Well, I got it by just taking the dot product between the force and the velocity.
+
+00:27:29.020 --> 00:27:29.100
+Okay.
+
+00:27:30.840 --> 00:27:32.660
+Sorry. That's in case you're wondering.
+
+00:27:33.580 --> 00:27:34.940
+Things go like this.
+
+00:27:43.460 --> 00:27:45.740
+Okay. Any questions on how we did this calculation?
+
+00:27:49.660 --> 00:27:51.220
+No? Yes?
+
+00:27:52.500 --> 00:27:55.080
+I can't just do the first thing.
+
+00:27:58.880 --> 00:28:00.860
+Why can't you just do F dot dR?
+
+00:28:01.080 --> 00:28:02.520
+Well, soon we'll be able to.
+
+00:28:02.620 --> 00:28:06.400
+We don't know yet what dR means or how to use it as a symbol.
+
+00:28:07.020 --> 00:28:11.320
+Okay. Because, you know, we haven't said yet.
+
+00:28:11.480 --> 00:28:16.520
+I mean, see, this is a d vector R that's kind of a strange thing to have.
+
+00:28:17.500 --> 00:28:19.400
+And certainly R is not a usual variable.
+
+00:28:20.820 --> 00:28:23.260
+I mean, we have to be careful about, you know, what other rules?
+
+00:28:23.420 --> 00:28:24.340
+What does the symbol mean?
+
+00:28:25.200 --> 00:28:27.700
+So, I mean, we're going to see that right now.
+
+00:28:28.320 --> 00:28:31.100
+And then we can do it actually in a slightly more efficient way.
+
+00:28:32.680 --> 00:28:35.380
+But you can't just use, I mean R is not a scalar quantity.
+
+00:28:35.680 --> 00:28:36.820
+R is a position vector.
+
+00:28:37.760 --> 00:28:39.900
+Right? So you can't integrate F with respect to R.
+
+00:28:40.360 --> 00:28:41.380
+We don't know how to do that.
+
+00:28:47.160 --> 00:28:47.600
+Okay.
+
+00:28:49.780 --> 00:28:51.680
+So, oh, yes. Sorry.
+
+00:28:51.820 --> 00:28:54.620
+I can't see people up there because of the spotlight, but, yes.
+
+00:28:56.960 --> 00:28:58.220
+If I were to do.
+
+00:28:59.740 --> 00:29:02.480
+Sorry. I still can't hear you, sorry.
+
+00:29:09.100 --> 00:29:14.640
+Okay. So, question is, if I took a different trajectory from the origin to that point one, one, what would happen?
+
+00:29:14.920 --> 00:29:16.560
+Well, the answer is I would get something different.
+
+00:29:18.060 --> 00:29:20.620
+Okay. So, for example, let me try to convince you of that.
+
+00:29:20.620 --> 00:29:23.320
+For example, say that I chose.
+
+00:29:26.080 --> 00:29:30.140
+Say I chose to instead go like this and then around like that.
+
+00:29:31.020 --> 00:29:36.080
+Then, you know, first, I wouldn't do any work because here the force is perpendicular to my motion.
+
+00:29:36.740 --> 00:29:39.760
+And then I would be going against the force all the way around.
+
+00:29:40.100 --> 00:29:41.440
+So, I should get something that's negative.
+
+00:29:42.640 --> 00:29:46.980
+Okay. Even if you don't see that, just, you know, accept that phase value, what I'm going to say now.
+
+00:29:46.980 --> 00:29:53.000
+The value of a line integral in general depends on how we got from point A to point B.
+
+00:29:53.600 --> 00:29:58.320
+And that's why we have to compute it by using the parametric equation for the curve.
+
+00:29:58.820 --> 00:30:01.020
+It really depends on what curve you choose.
+
+00:30:12.820 --> 00:30:14.940
+Okay. Any other questions?
+
+00:30:15.580 --> 00:30:15.880
+Oh, yes.
+
+00:30:21.100 --> 00:30:24.680
+So, yes. What happens when the force inflakes the trajectory?
+
+00:30:25.500 --> 00:30:28.400
+Well, then actually you'd have to solve a differential equation,
+
+00:30:28.400 --> 00:30:32.060
+telling you how the particle moves to find what the trajectory is.
+
+00:30:33.180 --> 00:30:36.700
+So, that's something that would, you know, be a very useful topic.
+
+00:30:37.020 --> 00:30:41.780
+And that's probably more like what you will do in 1803, or maybe you actually know how to do it in this case.
+
+00:30:43.140 --> 00:30:50.040
+So, what we're trying to develop here is a method to figure out if we know what the trajectory is, what the work will be.
+
+00:30:50.640 --> 00:30:52.380
+It doesn't tell us what the trajectory will be.
+
+00:30:53.640 --> 00:30:55.240
+But of course, we could also find that.
+
+00:30:56.600 --> 00:31:01.580
+But here I see I'm not assuming, for example, that the particle is moving just based on that force.
+
+00:31:01.820 --> 00:31:05.960
+Maybe actually I'm here to, you know, hold it in my hand and force it to go where it's going.
+
+00:31:06.500 --> 00:31:09.900
+Or maybe there's some rail that's taking it on that trajectory or whatever.
+
+00:31:11.800 --> 00:31:13.980
+So, I can really do it along any trajectory.
+
+00:31:14.680 --> 00:31:19.820
+And if I wanted to, if I knew that it's the case, then I could try to find the trajectory based on what the force is.
+
+00:31:20.360 --> 00:31:21.660
+But that's not what we are doing here.
+
+00:31:25.580 --> 00:31:26.080
+Okay.
+
+00:31:31.960 --> 00:31:32.960
+So, next.
+
+00:31:35.480 --> 00:31:37.120
+Okay. So, let's try to make sense.
+
+00:31:37.460 --> 00:31:43.280
+You asked, if you want to go, just a few minutes ago, what can we do directly with dr?
+
+00:31:44.000 --> 00:31:47.180
+So, dr c becomes somehow a vector.
+
+00:31:47.400 --> 00:31:54.560
+I mean, when I replace it by dr dt times dt, it becomes something that's a vector that with a dt next to it.
+
+00:31:57.340 --> 00:31:58.800
+So, in fact,
+
+00:32:02.880 --> 00:32:07.040
+well, it's not really new, but let's see, another way to do it.
+
+00:32:11.840 --> 00:32:16.520
+Let's say that our force has components m and n.
+
+00:32:18.200 --> 00:32:26.880
+I claim that we can write symbolically vector dr stands for, it's a vector whose components are dx and dy.
+
+00:32:28.680 --> 00:32:30.480
+So, now that's a strange kind of vector.
+
+00:32:30.740 --> 00:32:32.180
+I mean, it's not a real vector, of course.
+
+00:32:32.180 --> 00:32:35.160
+But as a notation, it's a pretty good notation.
+
+00:32:36.520 --> 00:32:46.280
+Because it tells us that f dot dr is m dx plus n dy.
+
+00:32:47.160 --> 00:32:55.180
+And so, in fact, well, very often, right, instead of f dot dr, n integral, long c,
+
+00:32:55.720 --> 00:33:00.860
+we'll write the line integral, long c, of m dx plus n dy.
+
+00:33:02.840 --> 00:33:09.100
+And so, in this language, of course, what we're integrating now, rather than a vector field, becomes a differential.
+
+00:33:09.780 --> 00:33:12.460
+But you should think of the two as being pretty much the same thing, right?
+
+00:33:12.560 --> 00:33:18.380
+It's like when you compare the gradient of a function, and it's differential, they're different notations, but they have the same content.
+
+00:33:21.020 --> 00:33:26.260
+Okay, so now, that still remains the question, how do we compute this kind of integral?
+
+00:33:27.080 --> 00:33:30.560
+Because it's more subtle than the notation suggests, right?
+
+00:33:30.660 --> 00:33:33.740
+Because m and n both depend on x and y.
+
+00:33:34.740 --> 00:33:41.360
+And if you're just integrated with respect to x, you'd be left with y's in there, and you don't want to be left with y's.
+
+00:33:41.400 --> 00:33:42.420
+You want a number at the end.
+
+00:33:42.420 --> 00:33:47.380
+And so, the catch is along the curve, x and y are actually related to each other.
+
+00:33:50.080 --> 00:33:57.980
+So, whenever we write this, we have two variables x and y, but in fact, along the curve c, we have only one parameter.
+
+00:33:58.860 --> 00:34:02.340
+Could be x, could be y, could be time, whatever you want.
+
+00:34:02.500 --> 00:34:09.040
+But we have to actually express everything in terms of that one parameter, and then we get a usual single variable integral.
+
+00:34:10.260 --> 00:34:16.160
+Okay, so how do we evaluate things in this language?
+
+00:34:16.160 --> 00:34:20.920
+Well, we do it by substituting a parameter into everything.
+
+00:34:47.500 --> 00:35:03.100
+Okay, so the method to evaluate is to express x and y in terms of a single variable.
+
+00:35:03.100 --> 00:35:15.240
+And then substitute that variable.
+
+00:35:17.720 --> 00:35:24.540
+Okay, so let's, for example, redo the one we had up there just using these new notations.
+
+00:35:24.780 --> 00:35:27.500
+You'll see it's the same calculation that with different notations.
+
+00:35:27.500 --> 00:35:42.940
+So, in that example that we had, our vector field f was negative y, x.
+
+00:35:43.500 --> 00:35:48.720
+So, what we're integrating is negative y dx plus x dy.
+
+00:35:53.140 --> 00:35:56.900
+Okay, and see if we have just this, we don't know how to integrate that.
+
+00:35:57.900 --> 00:36:02.980
+I mean, well, you could try to come up with like negative x, y or something like that, but that actually doesn't make sense.
+
+00:36:03.140 --> 00:36:03.700
+It doesn't work.
+
+00:36:06.980 --> 00:36:19.340
+So, what we'll do is we'll actually have to express everything in terms of a same variable, because it's a single integral.
+
+00:36:19.480 --> 00:36:20.460
+We should have only one variable.
+
+00:36:22.040 --> 00:36:26.440
+And what that variable will be, well, if we just do it the same way, that would just be t.
+
+00:36:28.120 --> 00:36:31.640
+So, how do we express everything in terms of t?
+
+00:36:34.500 --> 00:36:36.040
+Well, we use the parametric equation.
+
+00:36:36.720 --> 00:36:41.100
+We know that x is t and y is t squared.
+
+00:36:43.380 --> 00:36:46.380
+Okay, so we know what to do with these two guys.
+
+00:36:46.680 --> 00:36:47.880
+What about dx and dy?
+
+00:36:48.340 --> 00:36:49.820
+Well, it's easy, we just differentiate.
+
+00:36:50.820 --> 00:36:52.280
+dx becomes dt.
+
+00:36:53.960 --> 00:36:56.460
+dy becomes 2t dt.
+
+00:37:00.100 --> 00:37:06.340
+Okay, I'm just saying in a different language, what I said of other with dx dt equals 1, dy dt equals 2t.
+
+00:37:06.520 --> 00:37:09.880
+It's the same thing, but written slightly differently.
+
+00:37:10.880 --> 00:37:15.640
+So, now, so I'm going to do it again.
+
+00:37:16.060 --> 00:37:18.860
+I'm going to switch from one board to the next one.
+
+00:37:19.720 --> 00:37:34.860
+My integral becomes the integral over c of negative y is minus t squared dt plus x is t times dy is 2t dt.
+
+00:37:36.140 --> 00:37:49.500
+Okay, and now that I have only t left, it's fine to say, oh, I have a usual single variable integral of a variable t that goes from 0 to 1.
+
+00:37:50.140 --> 00:38:01.300
+So now I can say, yes, this is the integral from 0 to 1 of that stuff, where I can simplify a bit, becomes just t squared dt, and I can compute it.
+
+00:38:03.800 --> 00:38:08.860
+I have negative t squared, and then I have plus 2t squared, so I end up with positive t squared.
+
+00:38:10.520 --> 00:38:11.820
+Okay, it's the same as up there.
+
+00:38:16.560 --> 00:38:17.620
+Okay, any questions?
+
+00:38:19.900 --> 00:38:20.320
+Yes?
+
+00:38:20.320 --> 00:38:27.040
+When you derive the equation, when you derive the equation, when you derive the equation, where is the equation?
+
+00:38:27.940 --> 00:38:30.200
+When you do dy, so what is dy?
+
+00:38:30.540 --> 00:38:35.820
+dy is the derivative of y, it's the differential of y, y is t squared, so I get 2t dt.
+
+00:38:37.300 --> 00:38:42.160
+So, I plug dt for dx, I plug 2t dt for dy, and so on.
+
+00:38:45.680 --> 00:38:46.880
+Okay, and that's the general method.
+
+00:38:48.680 --> 00:38:55.620
+So, if you are given a curve, then you first have to figure out how do you express x and y in terms of the same thing?
+
+00:38:56.960 --> 00:39:00.120
+And you get to choose in general what parameter we use.
+
+00:39:00.580 --> 00:39:03.080
+You choose to parameterize your curve in whatever way you want.
+
+00:39:04.080 --> 00:39:33.060
+So, the note that I want to make is that this line integral depends on the trajectory, c, but not on the value of y,
+
+00:39:33.060 --> 00:39:33.880
+but on the parameterization.
+
+00:39:40.340 --> 00:39:42.760
+Okay, so you can choose whichever variable you want.
+
+00:39:43.060 --> 00:39:59.060
+So, for example, what you could do is, you know, when you know that you have a trajectory, you could also choose to parameterize it as x equals, say, I don't know, x equals sine theta,
+
+00:39:59.060 --> 00:40:12.240
+and y equals sine squared theta, because y is x squared, where theta goes from 0 to pi over 2, and then you could get dx and dy in terms of d theta,
+
+00:40:13.460 --> 00:40:17.480
+and you'd be able to do it with a lot of trig, and you would get the same answer.
+
+00:40:18.840 --> 00:40:20.660
+So, that would be a harder way to get the same thing.
+
+00:40:21.440 --> 00:40:29.440
+Okay, so what you should do in practice is use, you know, the most reasonable way to parameterize your curve.
+
+00:40:29.960 --> 00:40:35.760
+If you know that here you have a piece of parabola y equals x squared, there's no way you will put sine and sine squared, you know.
+
+00:40:36.560 --> 00:40:39.840
+You could set, I mean, x equals t y equals t squared is very reasonable.
+
+00:40:40.440 --> 00:40:43.820
+You can even take a small shortcut and say that your variable will be just x.
+
+00:40:44.480 --> 00:40:55.100
+So that means x, you just keep it, you know, as it is, and then when you have y, you set y equals x squared, dy equals 2x dx, and then you have an integral of your x.
+
+00:40:55.840 --> 00:40:56.440
+That works.
+
+00:40:59.480 --> 00:41:03.340
+Okay, so this one is not practical,
+
+00:41:09.740 --> 00:41:11.140
+but you know, you get to choose.
+
+00:41:43.300 --> 00:41:46.780
+Okay, so now let me tell you a bit more about the geometry.
+
+00:41:51.080 --> 00:41:59.580
+So, we've said, you know, here's how we compute it in general, and that's the general method for computing a line integral for work.
+
+00:41:59.580 --> 00:42:08.000
+You can always do this, try to find a parameter, the simplest one, express everything in terms of that variable, and then you have an integral to compute.
+
+00:42:08.820 --> 00:42:14.020
+But sometimes you can actually save a lot of work by just thinking geometrically about what this all does.
+
+00:42:15.720 --> 00:42:21.620
+Okay, so let me tell you about the geometric approach.
+
+00:42:28.080 --> 00:42:33.100
+So, one thing I want to remind you of first is what is this vector dr?
+
+00:42:33.740 --> 00:42:36.720
+Well, what is vector delta r?
+
+00:42:38.240 --> 00:42:45.400
+You know, if I take a very small piece of a trajectory, then my vector delta r will be tangent to the trajectory.
+
+00:42:47.160 --> 00:42:54.800
+So, it will be going in the same direction as the unit tangent vector t, and what is its length?
+
+00:42:55.760 --> 00:43:01.980
+Well, its length is the arc length along the trajectory, which is what we called delta s.
+
+00:43:02.560 --> 00:43:04.740
+Remember s was distance along the trajectory.
+
+00:43:07.480 --> 00:43:17.540
+So, we can write vector dr, so we say it's dx comma dy, but that's also t times ds.
+
+00:43:21.660 --> 00:43:29.140
+It's a vector whose direction is tangent to the curve, and whose length element is actually the arc length element.
+
+00:43:30.560 --> 00:43:39.740
+I mean, if you don't like this notation, think about divide everything by dt.
+
+00:43:40.980 --> 00:43:44.280
+Then what we are saying is dr dt, that's a velocity vector.
+
+00:43:45.180 --> 00:43:49.680
+Well, it coordinates the velocity vector is dx dt dy dt.
+
+00:43:50.880 --> 00:43:58.140
+But more geometrically, the direction of a velocity vector is tangent to the trajectory, and its magnitude is,
+
+00:43:58.270 --> 00:44:01.390
+speed ds dt.
+
+00:44:05.270 --> 00:44:08.090
+So, that's really the same thing.
+
+00:44:11.630 --> 00:44:28.170
+So, if I say this, that means that my line integral, after dr, well, I say that I can write it as integral of mdx plus mdy,
+
+00:44:28.170 --> 00:44:32.110
+that's what I will do if I want to actually compute it by computing the integral.
+
+00:44:33.170 --> 00:44:39.470
+But if instead I want to think about it geometrically, I could rewrite it as f dot t ds.
+
+00:44:43.030 --> 00:44:47.050
+So now you can think of this, f dot t is a scalar quantity.
+
+00:44:47.270 --> 00:44:54.650
+It's the tangent component of my force, so I take my force and I project it to the tangent direction to the trajectory.
+
+00:44:54.650 --> 00:44:57.890
+And then I integrate that along the curve.
+
+00:44:59.730 --> 00:45:00.890
+It's still the same thing.
+
+00:45:04.050 --> 00:45:06.090
+And sometimes it's easier to do it this way.
+
+00:45:06.910 --> 00:45:08.130
+So here's an example.
+
+00:45:11.710 --> 00:45:19.950
+Let's say, so you know, this is bound to be easier only when the field and the curve are relatively simple and have a geometric relation to each other.
+
+00:45:19.950 --> 00:45:28.890
+If I give you an evil formula with x cubed plus y to the fifth or whatever, there's very little chance that you will be able to simplify it that way.
+
+00:45:29.590 --> 00:45:39.610
+But let's say that I'm doing, say, my trajectory is just a circle of radius a centred at the origin.
+
+00:45:41.710 --> 00:45:43.530
+Let's say I'm doing that counterclockwise.
+
+00:45:49.890 --> 00:45:55.770
+And let's say that my vector field is x i plus y g.
+
+00:45:57.390 --> 00:45:58.730
+So what does that look like?
+
+00:46:00.070 --> 00:46:05.790
+Well, so my trajectory is just this circle.
+
+00:46:06.730 --> 00:46:13.450
+My vector field, remember x i plus y g, that's the one that's pointing, radially, from the origin.
+
+00:46:16.090 --> 00:46:20.430
+So hopefully if you have good physics intuition here, you already know what the work is going to be.
+
+00:46:21.070 --> 00:46:26.050
+It's going to be zero because the force is perpendicular to the motion.
+
+00:46:30.210 --> 00:46:39.050
+Well, now we can say it directly by saying, well, if we take any point of the circle, sorry.
+
+00:46:40.890 --> 00:46:50.410
+So if you have any point of the circle, then the tangent vector to the circle will be tangent, well, it's tangent to the circle.
+
+00:46:50.410 --> 00:46:59.770
+So that means it's perpendicular to the radial direction, while the force is pointing in the radial direction.
+
+00:47:00.510 --> 00:47:02.390
+So you have a right angle between them.
+
+00:47:08.230 --> 00:47:10.930
+So f is perpendicular to t.
+
+00:47:12.450 --> 00:47:15.250
+So f dot t is zero.
+
+00:47:15.930 --> 00:47:20.490
+And the line integral of f dot t ds is just zero.
+
+00:47:22.030 --> 00:47:27.710
+See, that's much easier than writing, well, this is integral of x d x plus y d y.
+
+00:47:27.710 --> 00:47:33.230
+What do we do? Well, we probably set x equals a cosine theta, y equals a sine theta.
+
+00:47:33.370 --> 00:47:36.250
+We get a bunch of trig things. Oh, it cancels out to zero.
+
+00:47:36.550 --> 00:47:42.190
+It's not much harder, but we saved time by not even thinking about how to parameterize things.
+
+00:47:44.510 --> 00:47:47.050
+Let's just do a last one. That was the first one.
+
+00:47:49.690 --> 00:47:52.410
+Let's say now that I take the same curve, see.
+
+00:47:55.310 --> 00:47:57.670
+But now my vector field is the one that rotates.
+
+00:48:00.290 --> 00:48:02.510
+Negative yi plus xj.
+
+00:48:02.510 --> 00:48:18.610
+Okay, so that means along my circle, the tangent vector goes like this.
+
+00:48:20.010 --> 00:48:25.950
+And my vector field is also going around.
+
+00:48:25.950 --> 00:48:31.610
+So in fact, at this point, the vector field will also be going in the same direction.
+
+00:48:35.610 --> 00:48:42.730
+So now f is actually parallel to the tangent direction.
+
+00:48:43.750 --> 00:48:51.210
+So that means that the dot product f dot t, remember, that's the component of f in this direction.
+
+00:48:51.970 --> 00:48:53.990
+That will be the same as the length of f.
+
+00:48:56.170 --> 00:49:00.850
+But what's the length of f on this circle if this radius is a?
+
+00:49:02.050 --> 00:49:05.210
+It's just going to be a. That's what we said earlier about this vector field.
+
+00:49:06.470 --> 00:49:09.490
+So at every point, this dot product is a.
+
+00:49:09.890 --> 00:49:12.550
+Now we know how to integrate that quite quickly.
+
+00:49:24.910 --> 00:49:28.590
+Because that becomes the integral of a ds, but a is a constant.
+
+00:49:29.390 --> 00:49:30.730
+So we can take it out.
+
+00:49:31.370 --> 00:49:34.250
+And now what do we get when we integrate ds along c?
+
+00:49:35.430 --> 00:49:37.590
+Well, we should get the total length of a curve.
+
+00:49:37.810 --> 00:49:47.470
+If we sum all the little pieces of our length, but we know that the length of the circle of radius a is 2 pi a.
+
+00:49:47.950 --> 00:49:49.590
+So we get 2 pi a squared.
+
+00:49:51.370 --> 00:50:01.470
+If we were to compute that by hand, what would we do with set?
+
+00:50:02.030 --> 00:50:06.430
+So we would be computing integral of minus y dx plus x dy.
+
+00:50:07.210 --> 00:50:16.750
+We'd probably set since we're on a circle, x equals a cos theta, y equals a sine theta for theta between 0 and 2 pi.
+
+00:50:18.090 --> 00:50:21.370
+So then we would get dx and dy out of this.
+
+00:50:23.890 --> 00:50:27.350
+So y is a sine theta.
+
+00:50:28.410 --> 00:50:30.990
+dx is negative a sine theta d theta.
+
+00:50:31.470 --> 00:50:35.170
+If you differentiate a cosine plus a cos theta.
+
+00:50:37.150 --> 00:50:38.290
+A cos theta d theta.
+
+00:50:39.890 --> 00:50:49.270
+Well, you'll just end up with integral from 0 to 2 pi of a squared times sine square theta plus cosine square theta.
+
+00:50:50.610 --> 00:50:52.750
+The theta, that becomes just 1.
+
+00:50:53.210 --> 00:50:54.290
+And you get the same answer.
+
+00:50:54.790 --> 00:50:58.170
+It took about the same amount of time because I did this one rushing very quickly.
+
+00:50:58.910 --> 00:51:04.350
+But normally it takes about, you know, at least twice the amount of time to do it with a calculation.
+
+00:51:04.350 --> 00:51:07.510
+So that tells you sometimes it's worth thinking geometrically.
+

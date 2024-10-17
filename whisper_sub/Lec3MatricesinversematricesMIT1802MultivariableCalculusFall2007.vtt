@@ -1,0 +1,1553 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.240
+The following content is provided under a Creative
+
+00:00:02.240 --> 00:00:03.080
+Commons license.
+
+00:00:03.680 --> 00:00:05.920
+Your support will help MIT OpenCourseWare
+
+00:00:05.920 --> 00:00:09.300
+continue to offer high quality educational resources for free.
+
+00:00:09.880 --> 00:00:12.480
+To make a donation or to view additional materials
+
+00:00:12.480 --> 00:00:16.400
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.400 --> 00:00:18.240
+at ocw.mit.edu.
+
+00:00:22.340 --> 00:00:24.600
+So OK, so remember last time.
+
+00:00:30.600 --> 00:00:35.260
+We learned about the cross product of vectors in space.
+
+00:00:39.120 --> 00:00:42.340
+So remember the definition of cross product
+
+00:00:44.280 --> 00:00:46.540
+is in terms of this determinant.
+
+00:00:47.960 --> 00:00:53.580
+I had j hat k hat and then the components of a, a1, a2, a3,
+
+00:00:53.900 --> 00:00:55.680
+and then the components of b.
+
+00:00:58.640 --> 00:01:01.580
+And this is not an actual determinant,
+
+00:01:01.880 --> 00:01:04.900
+because these are not numbers, but it's a symbolic notation
+
+00:01:05.520 --> 00:01:07.500
+to remember what the actual formula is.
+
+00:01:07.620 --> 00:01:11.520
+The actual formula is obtained by expanding the determinant.
+
+00:01:12.260 --> 00:01:19.120
+So we have actually this smaller determinant, a2, a3, b2, b3,
+
+00:01:20.160 --> 00:01:25.660
+times i hat, minus the determinant of a1,
+
+00:01:25.660 --> 00:01:33.880
+a3, b1, b3, times j hat, plus determinant of a1, a2, b1,
+
+00:01:34.040 --> 00:01:36.180
+b2, times k hat.
+
+00:01:39.580 --> 00:01:43.440
+And we also saw a more geometric definition of a cross product.
+
+00:01:46.500 --> 00:01:54.140
+So we've learned that the length of a cross product
+
+00:01:54.940 --> 00:02:03.620
+is equal to the area of the parallelogram with sides a and b.
+
+00:02:16.900 --> 00:02:21.320
+We've also learned that the direction of a cross product,
+
+00:02:25.560 --> 00:02:29.360
+is given by taking the direction that's perpendicular
+
+00:02:30.240 --> 00:02:31.860
+to a and b.
+
+00:02:34.000 --> 00:02:40.260
+So in fact, if I draw a and b in a plane,
+
+00:02:41.200 --> 00:02:44.700
+the determinant plane together, then the cross product
+
+00:02:44.700 --> 00:02:48.280
+should go in the direction that's perpendicular to that plane.
+
+00:02:51.440 --> 00:02:53.480
+Now, there's two different possible directions
+
+00:02:54.340 --> 00:02:55.800
+that are perpendicular to a plane.
+
+00:02:55.800 --> 00:02:58.800
+And to decide which one it is, we use the right hand rule,
+
+00:03:03.680 --> 00:03:07.820
+which says if you extend your right hand in the direction of vector a,
+
+00:03:08.280 --> 00:03:11.400
+then curve your fingers in the direction of b, then your thumb
+
+00:03:11.400 --> 00:03:13.380
+will go in the direction of the cross product.
+
+00:03:17.660 --> 00:03:20.440
+So one thing I didn't quite get to say last time
+
+00:03:20.440 --> 00:03:24.560
+is that there are some funny manipulation rules.
+
+00:03:25.580 --> 00:03:28.580
+What are we allowed to do or not do with cross products?
+
+00:03:29.480 --> 00:03:32.600
+So let me tell you right away the most surprising one,
+
+00:03:32.620 --> 00:03:36.580
+maybe if you've never seen it before, it's that a cross b
+
+00:03:36.580 --> 00:03:39.660
+and b cross a are not the same thing.
+
+00:03:42.260 --> 00:03:43.480
+Why are we not the same thing?
+
+00:03:44.720 --> 00:03:48.260
+Well, one way to see it is to think geometrically.
+
+00:03:48.900 --> 00:03:50.980
+Sure, the parallelogram still has the same error,
+
+00:03:51.320 --> 00:03:54.380
+and it's still in the same plane, so it's still perpendicular
+
+00:03:54.380 --> 00:03:55.340
+to the same plane.
+
+00:03:55.920 --> 00:04:00.500
+But what happens is if you try to apply the right hand rule
+
+00:04:00.500 --> 00:04:03.980
+but exchanging the rules of a and b, then you will either enjoy
+
+00:04:03.980 --> 00:04:06.800
+yourself or you will end up pointing in the opposite direction.
+
+00:04:07.840 --> 00:04:14.240
+So in fact, b cross a and a cross b are opposite to each other.
+
+00:04:15.240 --> 00:04:16.540
+And you can check that in the formula,
+
+00:04:17.100 --> 00:04:20.800
+because, for example, the i component is a2b3-a3b2,
+
+00:04:21.920 --> 00:04:25.700
+if you swap the rules of a and b, you will also have to change the signs.
+
+00:04:28.160 --> 00:04:29.860
+So that's a slightly surprising thing,
+
+00:04:30.340 --> 00:04:32.520
+but you'll see one easily adjusts to it.
+
+00:04:32.520 --> 00:04:37.300
+It just means resist the temptation to write a, b, equals b, a.
+
+00:04:37.420 --> 00:04:39.140
+Whenever you do that, put a minus sign.
+
+00:04:41.920 --> 00:04:42.820
+Now, in particular,
+
+00:04:46.860 --> 00:04:48.780
+well, what happens if I do a cross a?
+
+00:04:51.020 --> 00:04:52.060
+Well, I will get zero.
+
+00:04:52.820 --> 00:04:55.280
+And there's many ways to see that when it's to use a formula.
+
+00:04:56.220 --> 00:05:00.640
+Also, you can say just that the parallelogram from a and a
+
+00:05:00.640 --> 00:05:03.280
+is completely flat and it has a real zero.
+
+00:05:03.720 --> 00:05:05.960
+So that's the zero vector.
+
+00:05:16.760 --> 00:05:21.340
+So hopefully you got practice with cross products and computing them in recitation yesterday.
+
+00:05:22.760 --> 00:05:27.220
+Let me just point out one important application of cross products
+
+00:05:27.220 --> 00:05:28.740
+that maybe you haven't seen yet.
+
+00:05:32.540 --> 00:05:35.960
+So let's say that I'm given three points in space
+
+00:05:36.380 --> 00:05:39.340
+and I want to find the equation of the plane that contains them.
+
+00:05:39.440 --> 00:05:43.800
+So say I have p1, p2, p3, three points in space.
+
+00:05:45.040 --> 00:05:47.600
+Well, the determinant plane, I mean at least if they're not aligned.
+
+00:05:48.460 --> 00:05:52.300
+And we would like to find the equation of the plane that the determinant.
+
+00:05:52.540 --> 00:05:56.040
+So that means, let's say that we have a point p in space
+
+00:05:56.860 --> 00:05:59.660
+with coordinates x, y, z.
+
+00:06:01.720 --> 00:06:04.240
+Well, the equation of the plane.
+
+00:06:12.100 --> 00:06:14.820
+Let's say the plane containing p1, p2, and p3.
+
+00:06:16.440 --> 00:06:24.280
+So that means we need to find a condition on the coordinate x, y, z.
+
+00:06:26.040 --> 00:06:26.040
+
+
+00:06:26.340 --> 00:06:31.860
+Telling us whether p is in the plane or not.
+
+00:06:40.740 --> 00:06:42.600
+So we have several ways of doing that.
+
+00:06:44.040 --> 00:06:46.320
+For example, one thing we could do,
+
+00:06:46.580 --> 00:06:49.380
+let me just backtrack to the determinants that we saw last time.
+
+00:06:50.380 --> 00:06:57.380
+So one way to think about it is to consider this vector as p1, p2,
+
+00:06:58.240 --> 00:07:00.860
+p1, p3, and p1, p.
+
+00:07:02.760 --> 00:07:05.760
+So the question of whether they're all in the same plane
+
+00:07:05.760 --> 00:07:11.080
+is the same as asking ourselves whether the parallel epiped that they form
+
+00:07:11.080 --> 00:07:13.780
+is actually completely flattened.
+
+00:07:14.120 --> 00:07:17.940
+If I try to form a parallel epiped with these three sides,
+
+00:07:17.940 --> 00:07:21.300
+well, if p is not in the plane, then it will have some volume.
+
+00:07:22.060 --> 00:07:25.120
+But if p is in the plane, that means that it's actually completely squished.
+
+00:07:27.760 --> 00:07:33.080
+So one possible answer, one way to think of the equation of the plane
+
+00:07:33.080 --> 00:07:37.000
+should be that the determinant of these vectors should be zero.
+
+00:07:38.320 --> 00:07:45.980
+The determinant of p1, p2, p1, p3, and actually let me do it in a different order.
+
+00:07:46.120 --> 00:07:46.760
+It doesn't really matter.
+
+00:07:52.620 --> 00:07:59.300
+So one possible way to express the condition that p is in the plane
+
+00:07:59.300 --> 00:08:02.220
+is to say that the determinant of these three vectors has to be zero.
+
+00:08:03.380 --> 00:08:06.640
+And if I'm given coordinates for these points, I mean, I'm not giving you numbers,
+
+00:08:06.860 --> 00:08:11.040
+but if I gave you numbers, then you would be able to plug these numbers in.
+
+00:08:11.560 --> 00:08:13.940
+So you could compute these two vectors explicitly.
+
+00:08:14.460 --> 00:08:15.640
+You would have numbers here.
+
+00:08:16.040 --> 00:08:18.900
+But here, of course, this would depend on x, y, and z.
+
+00:08:19.520 --> 00:08:23.860
+So when you compute the determinant, you get a formula that involves x, y, and z,
+
+00:08:24.160 --> 00:08:28.540
+and you will find that this condition on x, y, z, that's the equation of the plane.
+
+00:08:29.880 --> 00:08:32.400
+So we're going to see more about that pretty soon.
+
+00:08:33.540 --> 00:08:36.120
+Now let me tell you about a slightly faster way of doing it.
+
+00:08:37.500 --> 00:08:38.780
+Actually, it's not much faster.
+
+00:08:38.920 --> 00:08:42.480
+It's pretty much the same calculation, but it's maybe more enlightening.
+
+00:08:45.640 --> 00:08:48.340
+I'll show you a nice color picture that I prepared for this.
+
+00:08:51.700 --> 00:08:51.800
+Okay.
+
+00:08:55.340 --> 00:08:56.220
+So, right.
+
+00:08:57.620 --> 00:09:02.100
+So one thing that's on this picture that I have on the down there is the normal vector to the plane.
+
+00:09:02.520 --> 00:09:03.160
+So why is that?
+
+00:09:04.740 --> 00:09:08.480
+Well, let's say that we know how to find a vector that's perpendicular to our plane.
+
+00:09:09.600 --> 00:09:12.140
+Then what does it mean for the point p to be in the plane?
+
+00:09:12.140 --> 00:09:19.500
+Well, it means that the direction, say, from p1 to p, has to be perpendicular to this vector n.
+
+00:09:22.340 --> 00:09:22.420
+Okay.
+
+00:09:22.960 --> 00:09:25.700
+So here's another solution.
+
+00:09:30.760 --> 00:09:33.420
+So p is in the plane.
+
+00:09:37.400 --> 00:09:50.800
+Only one, well, exactly when the vector p1p is perpendicular to n, where n is some vector that's perpendicular to the plane.
+
+00:09:51.520 --> 00:09:53.340
+So that's called a normal vector.
+
+00:09:55.660 --> 00:10:00.080
+Not that the others are abnormal, but okay.
+
+00:10:04.360 --> 00:10:06.720
+So how do we rephrase this condition?
+
+00:10:08.040 --> 00:10:13.220
+Well, we've learned how to detect whether two vectors are perpendicular to each other using dot product.
+
+00:10:14.460 --> 00:10:14.660
+Okay.
+
+00:10:15.740 --> 00:10:17.180
+That's the first lecture.
+
+00:10:18.560 --> 00:10:22.760
+So these two vectors are perpendicular exactly when their dot product is zero.
+
+00:10:24.140 --> 00:10:24.280
+Okay.
+
+00:10:25.520 --> 00:10:43.500
+And so now, concretely, well, if we have a point p1 given to us and say we have been able to compute the vector n, then when we actually compute what happens, here we will have the coordinates x, y, z of a point p, and we'll get some condition on x, y, z.
+
+00:10:43.740 --> 00:10:45.240
+That will be the equation of the plane again.
+
+00:10:45.240 --> 00:10:48.580
+Okay. Now, why are these things the same?
+
+00:10:49.760 --> 00:10:53.720
+Well, if I can tell you that, I should tell you how can we find a normal vector?
+
+00:10:54.720 --> 00:11:02.640
+But maybe you are already starting to see what the method should be, because we know how to find vectors perpendicular to two given vectors.
+
+00:11:04.080 --> 00:11:04.420
+All right.
+
+00:11:04.560 --> 00:11:08.760
+So we know two vectors in that plane, for example, p1p2 and p1p3.
+
+00:11:09.320 --> 00:11:12.300
+Actually, I could have used, you know, another permutation of a point.
+
+00:11:12.460 --> 00:11:13.620
+But let's use these.
+
+00:11:14.520 --> 00:11:21.240
+So if I want to find a vector that's perpendicular to both p1p2 and p1p3 at the same time, all I have to do is take the cross product.
+
+00:11:25.000 --> 00:11:30.200
+So how do we find this vector that's perpendicular to the plane?
+
+00:11:31.640 --> 00:11:41.780
+Well, the answer is we can just take the cross product, p1p2, cross p1p3.
+
+00:11:45.380 --> 00:11:52.980
+I should say, well, you know, say that actually you took the point in a different order, you did p1p3 cross p1p2, you would get, of course, the opposite vector.
+
+00:11:52.980 --> 00:11:57.780
+But it's fine. Any plane has actually infinitely many normal vectors.
+
+00:11:58.020 --> 00:12:01.220
+You can just, you know, multiply the normal vector by any constant.
+
+00:12:01.820 --> 00:12:02.960
+You will still get a normal vector.
+
+00:12:04.000 --> 00:12:04.840
+That's absolutely fine.
+
+00:12:07.900 --> 00:12:16.920
+So that's going to be one of the main uses of that product, C, when we know two vectors in a plane, it lets us find the normal vector to the plane.
+
+00:12:17.640 --> 00:12:20.400
+And that is what we need to find the equation.
+
+00:12:22.000 --> 00:12:25.180
+Now, why is that the same as the answer over there?
+
+00:12:28.280 --> 00:12:37.660
+Well, the condition that we have is that p1p.n should be zero.
+
+00:12:38.460 --> 00:12:46.240
+And we say n is actually p1p2 cross p1p3.
+
+00:12:47.500 --> 00:12:49.760
+So this is what we want to be zero.
+
+00:12:50.820 --> 00:12:59.680
+Now, if you remember stuff from a long time ago, I mean, that was Friday, then we've introduced this thing and called it the triple product.
+
+00:13:05.200 --> 00:13:09.020
+And what we've seen is that the triple product is the same thing as the determinant.
+
+00:13:09.760 --> 00:13:19.080
+So in fact, these two ways of thinking, one saying that the box formed by these three vectors should be flat and have volume zero.
+
+00:13:19.840 --> 00:13:32.180
+And the other one saying that we can find a normal vector and then express the condition that a vector is in the plane if it's perpendicular to the normal vector, they're actually giving us the same formula in the end.
+
+00:13:40.660 --> 00:13:45.100
+Okay. Any quick questions before we move on?
+
+00:13:46.460 --> 00:13:46.720
+Yes.
+
+00:13:52.820 --> 00:14:01.980
+So these two quantities, p1p.cross product of the determinant of the three vectors, they're always equal to each other.
+
+00:14:02.720 --> 00:14:10.360
+Okay. They're always the same. And now, if the point is not in the plane, then the numerical value will be non-zero. If p isn't the plane, it will be zero.
+
+00:14:16.080 --> 00:14:20.940
+Okay. Let's move on and talk a bit about matrices.
+
+00:14:32.380 --> 00:14:39.060
+So, probably some of you have seen about matrices a little bit in high school, but certainly not all of you.
+
+00:14:40.240 --> 00:14:47.480
+And so anyway, let me just introduce you to a little bit about matrices just enough for what we'll need later in this class.
+
+00:14:48.100 --> 00:14:53.520
+I should say if you want to know everything about the secret life of matrices, when you should take 1806 someday.
+
+00:14:56.020 --> 00:14:59.960
+So, okay. So what's going to be our motivation for matrices?
+
+00:15:00.800 --> 00:15:11.540
+Well, in life, a lot of things are related by linear formulas. And even if they are not, maybe sometimes you can approximate them by linear formulas.
+
+00:15:12.540 --> 00:15:24.080
+So, often we have linear relations between variables.
+
+00:15:29.300 --> 00:15:37.160
+And for example, well, if we do a change of coordinate systems.
+
+00:15:46.460 --> 00:15:52.000
+So, for example, say that we're in space.
+
+00:15:52.720 --> 00:16:02.400
+Well, and we have a point. So, it's coordinates might be, let me call them x1, x2, x3 in my initial coordinate system.
+
+00:16:02.400 --> 00:16:10.160
+But then maybe I need to actually switch to different coordinates to better solve my problem, because it's more adapted to other things I will do in my problem.
+
+00:16:10.800 --> 00:16:19.160
+And so I have other coordinate axes. And then in these new coordinates, well, it will have actually different coordinates.
+
+00:16:19.300 --> 00:16:28.400
+Let me call them say u1, u2, u3. And then the relation between the old and the new coordinates is going to be by linear formulas.
+
+00:16:30.120 --> 00:16:38.440
+I mean, especially if I choose the same origin. Otherwise, there might be constant terms, which I will not insist on.
+
+00:16:40.580 --> 00:16:42.720
+So, let me just give an example.
+
+00:16:49.180 --> 00:16:59.660
+For example, maybe, I don't know. Let's say, for example, u1 could be twice x1 plus three times x2 plus three times x3.
+
+00:17:01.580 --> 00:17:13.840
+U2 might be two times x1 plus four times x2 plus five times x3. U3 might be x1 plus x2 plus two times x3.
+
+00:17:14.480 --> 00:17:19.980
+Do not ask me where these numbers come from. I just made them up. That's just an example of what might happen.
+
+00:17:22.300 --> 00:17:25.480
+So put here your favorite numbers if you want.
+
+00:17:27.560 --> 00:17:37.220
+Okay. So, now, in order to express this kind of linear relation, we can use matrices.
+
+00:17:37.480 --> 00:17:48.220
+So a matrix is just a table with numbers in it. And so we can reformulate this in terms of matrix multiplication.
+
+00:17:49.200 --> 00:17:50.560
+Or matrix product.
+
+00:17:53.200 --> 00:18:11.240
+Okay. So, instead of writing this, I will write that the matrix 2, 3, 3, 2, 4, 5, 1, 1, 2, times the vector,
+
+00:18:12.100 --> 00:18:20.040
+x1, x2, x3 is equal to u1, u2, u3.
+
+00:18:21.340 --> 00:18:25.940
+Okay. So, hopefully you see that there's the same information content on both sides.
+
+00:18:26.540 --> 00:18:31.640
+I just need to explain to you what this way of multiplying tables of numbers means.
+
+00:18:34.260 --> 00:18:39.240
+Well, what it means is really that we'll take exactly these quantities.
+
+00:18:42.020 --> 00:18:46.980
+Let me just say that more symbolically. So maybe this matrix we could call a.
+
+00:18:48.740 --> 00:18:53.740
+And this we could call x. And this we could call capital U.
+
+00:18:55.100 --> 00:19:00.000
+Then we'll say a times x equals u, which is a lot shorter than that.
+
+00:19:00.680 --> 00:19:06.820
+Of course, I need to tell you what a x and u are in terms of their entries for you to get reformula.
+
+00:19:07.980 --> 00:19:09.160
+But it's convenient notation.
+
+00:19:12.520 --> 00:19:15.240
+So, what does it mean to do a matrix product?
+
+00:19:16.580 --> 00:19:31.560
+So, the entries in product, so I should say in the matrix product, are obtained by doing the dot product.
+
+00:19:33.280 --> 00:19:36.180
+So, let's say we're doing the product a x.
+
+00:19:36.180 --> 00:19:53.340
+So, we do a dot product between the rows, dot products, between the rows of a and the columns of x.
+
+00:19:58.100 --> 00:20:02.700
+So, maybe I should say here, a is a free by free matrix.
+
+00:20:06.320 --> 00:20:09.260
+That just means there's, you know, free rows and free columns.
+
+00:20:10.180 --> 00:20:19.940
+And x is the column vector, which we can think of as a free by one matrix.
+
+00:20:19.940 --> 00:20:23.020
+It has free rows and only one column.
+
+00:20:26.780 --> 00:20:32.460
+So, now what can we do? Well, I said we're going to do the dot product between a row of a, two, three, three.
+
+00:20:32.760 --> 00:20:35.220
+And the column of x, x, one, x, two, x, three.
+
+00:20:35.860 --> 00:20:41.920
+Well, that dot product will be two times x, one plus three times x, two plus three times x, three.
+
+00:20:42.640 --> 00:20:45.840
+It's exactly what we want to set u, one equal to.
+
+00:20:46.840 --> 00:20:55.220
+Let's do the second one. I take the second row of a, two, four, five, and I do the dot product with x, one, x, two, x, three.
+
+00:20:55.720 --> 00:21:03.280
+I will get two times x, one plus four times x, two plus five times x, three, which is this thing.
+
+00:21:04.460 --> 00:21:09.660
+And same with the third one, one times x, one plus one times x, two plus two times x, three.
+
+00:21:10.900 --> 00:21:13.800
+Okay, so that's matrix multiplication.
+
+00:21:16.740 --> 00:21:22.020
+So, again, let me maybe restate that more generally.
+
+00:21:26.180 --> 00:21:34.900
+So, if I want to find the entries of a product of two matrices, a and b,
+
+00:21:35.840 --> 00:21:42.600
+so I'm saying matrices, but they could be, of course, vectors are now a special case of matrices, just by taking a matrix of width one.
+
+00:21:44.420 --> 00:21:51.240
+Okay, so, if I have my matrix a, and I have my matrix b,
+
+00:21:55.600 --> 00:21:59.840
+and then I will get the product a, b.
+
+00:22:01.180 --> 00:22:04.660
+Well, let's say, for example, that a, you know, this works in any sizes.
+
+00:22:04.880 --> 00:22:10.620
+So, let's say that a is a, sorry, a free by four matrix.
+
+00:22:10.920 --> 00:22:13.100
+So, it has three rows, four columns.
+
+00:22:13.980 --> 00:22:17.040
+And here I'm not going to give you the values because I'm not going to compute everything.
+
+00:22:17.240 --> 00:22:19.280
+It would take, you know, for rest of the lecture.
+
+00:22:19.980 --> 00:22:23.420
+So, and let's say that b is maybe size four by two.
+
+00:22:23.420 --> 00:22:28.520
+So, it has two columns and four rows.
+
+00:22:28.800 --> 00:22:33.120
+And let's say, for example, that we have the second column is 0, 3, 0, 2.
+
+00:22:34.400 --> 00:22:44.120
+So, a times b, I claim, will have, well, the entries should be the dot products between these rows and these columns.
+
+00:22:44.840 --> 00:22:46.860
+Here we have two columns, here we have three rows.
+
+00:22:47.400 --> 00:22:50.560
+So, we should get, you know, three times two different possibilities.
+
+00:22:51.160 --> 00:22:54.640
+And so, the answer will have size three by two.
+
+00:22:56.580 --> 00:23:00.860
+Okay? And, well, we cannot compute most of them because I didn't give you numbers.
+
+00:23:01.440 --> 00:23:02.580
+But one of them we can compute.
+
+00:23:02.700 --> 00:23:07.460
+We can compute the one that goes here, namely this one, in the second column.
+
+00:23:07.640 --> 00:23:12.480
+So, I select the second column of b, and in the first row, so I take the first row of a,
+
+00:23:12.480 --> 00:23:20.360
+and I find, well, one times zero, zero, two times three, six, plus zero, plus eight, should make 14.
+
+00:23:21.640 --> 00:23:22.920
+So, this entry here is 14.
+
+00:23:24.600 --> 00:23:34.160
+Okay? So, in fact, let me tell you about another way to set it up so that you remember more easily how, you know, what goes where.
+
+00:23:35.760 --> 00:23:41.180
+So, one way that you can set it up is you can put a here.
+
+00:23:42.520 --> 00:23:47.200
+You can put b up here, and then you will get the answer here.
+
+00:23:50.440 --> 00:24:00.580
+And, if you want to find what goes in a given slot here, then you just look to its left, and you look above it, and you do the dot product between these guys.
+
+00:24:01.700 --> 00:24:09.680
+Okay? So, that's, I think, an easy way to remember, you know, first of all, it tells you what the size of the answer will be.
+
+00:24:09.860 --> 00:24:14.980
+The size will be, well, what fits nicely in this box should have the same width as b, and the same height as a.
+
+00:24:15.480 --> 00:24:19.540
+And, second, it tells you which dot product to compute for each position.
+
+00:24:21.460 --> 00:24:25.920
+Okay? So, you just look at what's to the left, and what's above the given position.
+
+00:24:28.040 --> 00:24:32.540
+Now, there's a catch. Can we multiply anything by anything? Well, no.
+
+00:24:33.080 --> 00:24:42.600
+Okay, I mean, I wouldn't ask the question of otherwise, but anyway, see, to be able to do this dot product, we need to have the same number of entries here and here.
+
+00:24:43.040 --> 00:24:48.980
+Otherwise, we can't say take this times, that plus this times, that, and so on, if we run out of space on one of them before the other.
+
+00:24:53.160 --> 00:25:09.920
+So, the condition, and it's kind of important, so let me write it in the head, is that the width of a must equal the height of b.
+
+00:25:17.620 --> 00:25:22.680
+Okay, so it's a bit cluttered, but hopefully you can still see what I think.
+
+00:25:27.520 --> 00:25:31.280
+So, okay. But now we know how to multiply matrices.
+
+00:25:34.560 --> 00:25:50.660
+So, what does it mean to multiply matrices? I mean, of course, we've seen, you know, on this example, that we can use the matrix to tell us how to transform from x's to use.
+
+00:25:52.060 --> 00:26:00.340
+And that's an example of multiplication. But now, let's say that we have two matrices like that, telling us how to transform from something to something else.
+
+00:26:00.340 --> 00:26:02.480
+So, what does it mean to multiply them?
+
+00:26:04.460 --> 00:26:28.900
+So, I claim that, so I claim that the product a, b represents doing first the transformation b, then transformation a.
+
+00:26:33.880 --> 00:26:39.500
+So, that's a slightly counterintuitive thing, because we're used to writing things from left to right.
+
+00:26:40.340 --> 00:26:47.040
+Unfortunately, with matrices the way they're done, you multiply things from right to left.
+
+00:26:47.040 --> 00:26:55.580
+But if you think about it, you know, when you write say you have two functions, f and g, you write f of g of x, 20 minutes you apply first g, then f.
+
+00:26:55.940 --> 00:26:57.260
+So, it works the same way as that.
+
+00:26:59.340 --> 00:27:14.240
+Okay, so, why is this? Well, if I write a, b times x, where x is some vector that I want to transform, it's the same as a times bx.
+
+00:27:14.240 --> 00:27:22.580
+Okay, so this property is called associativity, and it's a good property of well-behaved products, not of cross-product by the way.
+
+00:27:23.920 --> 00:27:32.540
+So, matrix product is associative, that means we can actually think of a product a, b, x, and multiply them in whichever order we want.
+
+00:27:32.640 --> 00:27:34.700
+We can start with bx, or we can start with a, b.
+
+00:27:36.520 --> 00:27:46.200
+So, now, bx means we apply the transformation b to x, and then multiplying by a means we apply the transformation a.
+
+00:27:47.720 --> 00:27:52.720
+So, we first apply b, then we apply a, but the same as applying a, b, all at once.
+
+00:27:55.460 --> 00:28:07.940
+Okay, so, another note of warning is that a, b, and b, a are not the same thing at all.
+
+00:28:08.740 --> 00:28:19.000
+Well, I mean, you probably see that already from this interpretation, it's not the same thing to convert oranges to bananas, then to carrots or vice versa.
+
+00:28:19.000 --> 00:28:38.600
+So, on the other hand, well, I mean, actually even worse, this thing might not even be well-defined, because, you know, if the height of, sorry, the width of a equals the height of b, we can do this product.
+
+00:28:39.360 --> 00:28:46.720
+But we don't necessarily, I mean, it's not clear that the width of b will equal the height of a, which is what we would need for that one.
+
+00:28:47.520 --> 00:28:55.880
+Okay, so, you know, the size condition to be able to do the product might not make sense, actually. Maybe one of them doesn't even make sense.
+
+00:28:56.080 --> 00:28:58.760
+Even if they both make sense, they are usually completely different things.
+
+00:29:01.620 --> 00:29:06.580
+Okay, the next thing I need to tell you is something called the identity matrix.
+
+00:29:11.720 --> 00:29:16.300
+Well, the identity matrix is the matrix that does nothing.
+
+00:29:16.920 --> 00:29:23.340
+Okay, so what does it mean to the nothing? I don't mean the matrix zero. The matrix zero would take x and would always give you back zero.
+
+00:29:23.520 --> 00:29:24.900
+That's not very interesting transformation.
+
+00:29:26.460 --> 00:29:38.520
+What I mean is the guy that takes x and gives you x again. So, it satisfies, you know, property i, so it's called i, and it has a property that i x equals x for all x.
+
+00:29:38.660 --> 00:29:44.260
+So, it's the transformation from something to itself. It's the obvious transformation called the identity transformation.
+
+00:29:45.540 --> 00:29:47.440
+So, how do we write that as a matrix?
+
+00:29:48.980 --> 00:30:00.320
+Well, so actually there's an identity for each size, you know, because, of course, depending on whether x has two entries or ten entries, the matrix i needs to have a different size.
+
+00:30:02.400 --> 00:30:12.800
+So, for example, the identity matrix of size three by three has entries one, one, one on the diagonal and zeroes every well.
+
+00:30:13.940 --> 00:30:23.380
+Okay, let's check. If we multiply this with a vector, well, maybe I should do that on a separate board.
+
+00:30:24.240 --> 00:30:31.280
+But so, start thinking about it. What happens when I multiply this with a vector x?
+
+00:30:58.760 --> 00:31:10.960
+Okay, so let's say I multiply the matrix i with a vector x1, x2, x3.
+
+00:31:12.260 --> 00:31:21.000
+Well, what will be the first entry? It will be the dot product between 1, 0, 0, and x1, x2, x3. If you want this vector is i hat.
+
+00:31:22.040 --> 00:31:31.540
+Okay, so if you do the dot product with i hat, you will get the x component. You will get the first component that will be x1, 1 times x1 plus 0, 0.
+
+00:31:32.500 --> 00:31:38.640
+Similarly, here, if I do the dot product, I get 0 plus x2 plus 0, I get x2, and here I get x3.
+
+00:31:38.640 --> 00:31:45.920
+Okay, it works. Same thing if I put here a matrix, I will get back the same matrix.
+
+00:31:47.660 --> 00:31:57.960
+Now, of course, okay, so in general, the identity matrix in size n by n.
+
+00:31:58.780 --> 00:32:05.200
+So it's an n by n thing with ones on the diagonal and zeroes everywhere else.
+
+00:32:06.740 --> 00:32:11.600
+Okay, you just put one at every diagonal position and zero elsewhere.
+
+00:32:12.000 --> 00:32:15.540
+And then you can see if you multiply that by your vector, you will get the same vector back.
+
+00:32:18.420 --> 00:32:26.460
+Okay. Okay.
+
+00:32:28.280 --> 00:32:32.640
+Okay. Let me give you another example of a matrix.
+
+00:32:38.100 --> 00:32:49.160
+Let's say that in the plane, we look at the transformation that does rotation by 90 degrees.
+
+00:32:51.340 --> 00:32:55.280
+Let's say counterclockwise.
+
+00:33:03.760 --> 00:33:11.760
+So I claim that this is given by the matrix, 0, 1 minus 1, 0.
+
+00:33:11.760 --> 00:33:15.080
+So let's try to see why that is the case.
+
+00:33:21.840 --> 00:33:29.200
+Well, if I do R times i hat, so if I apply that to the first vector, i hat.
+
+00:33:29.340 --> 00:33:33.740
+So that means, okay, i hat will be 1, 0.
+
+00:33:34.580 --> 00:33:42.040
+This product, well, here you will get 0 and then you will get 1, you get j hat.
+
+00:33:46.040 --> 00:33:51.300
+Okay. So this thing sends i hat to j hat.
+
+00:33:52.320 --> 00:33:53.680
+What about j hat?
+
+00:34:02.620 --> 00:34:07.660
+Well, you get negative 1 and then you get 0.
+
+00:34:08.020 --> 00:34:09.880
+So that's minus i hat.
+
+00:34:10.180 --> 00:34:13.000
+So j is sent towards here.
+
+00:34:14.200 --> 00:34:19.140
+And in general, if you apply it to a vector with coordinates x, y, with components x, y,
+
+00:34:19.140 --> 00:34:26.360
+then you will get back minus yx, which is the formula we've seen for rotating a vector by 90 degrees.
+
+00:34:35.440 --> 00:34:37.040
+So it seems to do what we want.
+
+00:34:38.740 --> 00:34:48.180
+By the way, I should point out, so the columns in this matrix represent what happens to each basis vector,
+
+00:34:48.180 --> 00:34:50.860
+to the vectors i and j. See?
+
+00:34:51.560 --> 00:34:56.340
+I mean, this guy here is exactly what we get when we multiply R by i.
+
+00:34:57.020 --> 00:35:00.260
+And when we multiply R by j, we get this guy here.
+
+00:35:05.220 --> 00:35:07.520
+So what's interesting about this matrix?
+
+00:35:07.900 --> 00:35:14.640
+Well, we can do computations with matrices in ways that are easier than writing coordinate change formulas.
+
+00:35:14.640 --> 00:35:20.640
+For example, if you compute R squared, so if you multiply R with itself,
+
+00:35:22.060 --> 00:35:29.480
+well, I let you do it as an exercise, but you will find that you get minus 1, 1, 0, 0.
+
+00:35:29.920 --> 00:35:31.820
+So that's minus the identity matrix.
+
+00:35:33.940 --> 00:35:34.700
+Why is that?
+
+00:35:35.360 --> 00:35:41.820
+Well, if I rotate something by 90 degrees, and then I rotate by 90 degrees again, then I will rotate by your 180 degrees.
+
+00:35:41.820 --> 00:35:45.680
+That means I will actually just go to the opposite point around the origin.
+
+00:35:46.540 --> 00:35:49.800
+So I will take xy to minus x minus y.
+
+00:35:52.660 --> 00:35:56.560
+And if I applied R four times, R to the four would be identity.
+
+00:36:02.020 --> 00:36:05.260
+Okay. Questions? Yes?
+
+00:36:05.260 --> 00:36:12.640
+When you came up for R equals that matrix, is that the definition of R or is that just...
+
+00:36:12.640 --> 00:36:14.380
+Ah, that's a very good question.
+
+00:36:14.580 --> 00:36:16.120
+So how did I come up with this R?
+
+00:36:16.760 --> 00:36:24.180
+Well, secretly, I worked pretty hard to find what are the entries that would tell me how to rotate something by 90 degrees counterclockwise.
+
+00:36:25.000 --> 00:36:32.200
+So remember, I mean, I should have said, what we saw, I think, last time, or the first lecture,
+
+00:36:32.200 --> 00:36:43.060
+is that to rotate a vector by 90 degrees, we should change xy to minus yx.
+
+00:36:45.200 --> 00:36:49.340
+Okay. And so now I'm trying to express this transformation as a matrix.
+
+00:36:50.240 --> 00:36:52.480
+And if you work out, you know, how these guys...
+
+00:36:52.480 --> 00:36:54.240
+So maybe you want to call these guys u and v.
+
+00:36:54.840 --> 00:37:00.120
+And if you write u equals 0x minus 1y, 0x minus 1y.
+
+00:37:00.120 --> 00:37:05.460
+And then v equals 1x plus 0y, 1x plus 0y.
+
+00:37:06.160 --> 00:37:07.440
+Okay. So that's how I would find it.
+
+00:37:08.260 --> 00:37:11.480
+Here, actually, I just gave it to you, you know, ready made.
+
+00:37:11.760 --> 00:37:13.900
+So you didn't really see how I found it.
+
+00:37:18.560 --> 00:37:22.500
+You will see more about rotations on the problem set.
+
+00:37:23.880 --> 00:37:26.120
+There's... So you're going to see more about these things.
+
+00:37:30.520 --> 00:37:34.100
+Okay. So next, I need to tell you how to invert matrices.
+
+00:37:35.380 --> 00:37:38.540
+So what's the point of matrices?
+
+00:37:38.920 --> 00:37:41.620
+It's that it gives us a nice way to think about these changes of variables.
+
+00:37:42.000 --> 00:37:46.360
+And in particular, if we know how to express u in terms of x,
+
+00:37:47.060 --> 00:37:49.780
+maybe we'd like to know how to express x in terms of u.
+
+00:37:50.580 --> 00:37:54.740
+Well, we can do that because we've learned how to solve linear systems like this.
+
+00:37:55.760 --> 00:38:05.620
+Okay. So in principle, we could start working substituting and so on to find formulas for the x1, x2, x3 as functions of u1, u2, u3.
+
+00:38:06.920 --> 00:38:09.980
+And the relation will be again a linear relation.
+
+00:38:10.620 --> 00:38:12.000
+It will again be given by a matrix.
+
+00:38:12.660 --> 00:38:15.680
+Well, what's that matrix? It's the inverse transformation.
+
+00:38:15.680 --> 00:38:18.320
+So it's the inverse of a matrix A.
+
+00:38:20.980 --> 00:38:24.660
+So we're going to learn how to find the inverse of a matrix directly.
+
+00:38:31.860 --> 00:38:32.940
+Okay.
+
+00:38:41.820 --> 00:38:54.640
+So the inverse of a by definition is a matrix M with a property of a matrix.
+
+00:38:56.220 --> 00:39:02.660
+So that means that if I multiply A by M, then I get identity.
+
+00:39:03.320 --> 00:39:06.560
+And if I multiply M by A, I also get identity.
+
+00:39:07.180 --> 00:39:08.760
+If the two properties are equivalent.
+
+00:39:10.080 --> 00:39:14.560
+So that means if I apply first the transformation A, then the transformation M,
+
+00:39:14.760 --> 00:39:17.400
+I actually undo the transformation A and vice versa.
+
+00:39:17.900 --> 00:39:21.300
+These two transformations are the opposite of each other.
+
+00:39:22.080 --> 00:39:23.860
+Well, I should say the inverse of each other.
+
+00:39:25.700 --> 00:39:34.560
+Okay. So for this to make sense, we need A must be a square matrix.
+
+00:39:37.820 --> 00:39:44.300
+Okay. So it must have size n by n can be any size, but it must be the same number of rows as columns.
+
+00:39:46.260 --> 00:39:51.080
+And it's a general fact that, I mean, you will see more in detail in linear algebra.
+
+00:39:52.080 --> 00:39:53.020
+If you take it.
+
+00:39:54.480 --> 00:39:56.520
+So let's just admit that.
+
+00:39:58.020 --> 00:39:58.300
+So.
+
+00:40:03.620 --> 00:40:07.460
+So the matrix M, we will denote by a inverse like this.
+
+00:40:07.460 --> 00:40:12.700
+Okay. And then what is it good for?
+
+00:40:13.040 --> 00:40:18.060
+Well, for example, the solution to a linear system.
+
+00:40:19.000 --> 00:40:21.140
+So what's a linear system in our new language?
+
+00:40:21.640 --> 00:40:26.740
+It's a matrix times some unknown vector x equals some known vector B.
+
+00:40:28.020 --> 00:40:29.560
+Well, how do we solve that?
+
+00:40:31.900 --> 00:40:36.480
+Well, let's just compute x equals A inverse B.
+
+00:40:37.540 --> 00:40:38.140
+Why does that work?
+
+00:40:39.360 --> 00:40:41.040
+How do I get from here to here?
+
+00:40:41.960 --> 00:40:42.860
+Let's be careful.
+
+00:40:46.920 --> 00:40:54.720
+Okay. Well, I'm going to reuse this matrix, but I'm going to erase it nonetheless.
+
+00:40:54.720 --> 00:40:57.080
+And just rewrite it.
+
+00:41:01.720 --> 00:41:03.080
+Let's.
+
+00:41:18.460 --> 00:41:19.260
+So.
+
+00:41:22.240 --> 00:41:24.680
+I'm saying if ax equals B.
+
+00:41:27.060 --> 00:41:29.940
+Then let's multiply both sides by a inverse.
+
+00:41:30.420 --> 00:41:34.140
+A inverse times ax is a inverse B.
+
+00:41:35.520 --> 00:41:38.320
+And then well, a inverse times a is identity.
+
+00:41:39.380 --> 00:41:42.600
+So I get x equals a inverse B.
+
+00:41:43.120 --> 00:41:45.640
+That's how I solved my system of equations.
+
+00:41:46.880 --> 00:41:49.200
+So if you have a calculator that can invert matrices,
+
+00:41:49.220 --> 00:41:51.300
+then you can solve linear systems very quickly.
+
+00:41:53.020 --> 00:41:55.860
+Now, we should still learn how to compute these things.
+
+00:41:56.720 --> 00:41:56.800
+Yes?
+
+00:42:00.360 --> 00:42:05.560
+How do I know that A inverse will be on the left of B and not after it?
+
+00:42:06.440 --> 00:42:08.400
+Well, it's exactly in this derivation.
+
+00:42:08.600 --> 00:42:11.340
+So if you're ever not sure, then just reproduce this calculation.
+
+00:42:12.320 --> 00:42:17.540
+See, I mean, to get from here to here, what I did is I multiplied things on the left by a inverse.
+
+00:42:18.180 --> 00:42:19.680
+And then this guy simplify.
+
+00:42:20.200 --> 00:42:23.980
+If I had put a inverse on the right, I would have ax a inverse,
+
+00:42:24.420 --> 00:42:26.020
+which might not make sense.
+
+00:42:26.480 --> 00:42:28.220
+And even if it makes sense, it doesn't simplify.
+
+00:42:29.560 --> 00:42:29.680
+So.
+
+00:42:30.720 --> 00:42:34.080
+And the basic rule is, you know, you have to multiply it by a inverse on the left,
+
+00:42:34.260 --> 00:42:36.280
+so that it can solve with this a that's on the left.
+
+00:42:40.360 --> 00:42:40.980
+That's correct.
+
+00:42:41.820 --> 00:42:45.740
+So, and, you know, in our usual way of dealing with matrices,
+
+00:42:46.640 --> 00:42:49.420
+where the vectors are column vectors, I mean,
+
+00:42:49.620 --> 00:42:53.480
+it's just something to remember that if you have a square matrix times a column vector,
+
+00:42:53.780 --> 00:42:57.680
+I mean, the product that makes sense is with a matrix on the left, the vector on the right.
+
+00:42:58.320 --> 00:42:59.500
+The other one just doesn't work.
+
+00:42:59.960 --> 00:43:00.660
+It's not sized.
+
+00:43:01.660 --> 00:43:05.300
+You cannot take x times a if a and x.
+
+00:43:05.300 --> 00:43:10.760
+You know, if a is a square matrix and x is a column vector,
+
+00:43:10.760 --> 00:43:12.460
+this product makes sense.
+
+00:43:12.920 --> 00:43:14.220
+The other one doesn't make sense.
+
+00:43:14.600 --> 00:43:15.380
+It's not the right size.
+
+00:43:18.720 --> 00:43:18.960
+Okay.
+
+00:43:21.580 --> 00:43:25.360
+So, what we need to do is to learn how to invert a matrix.
+
+00:43:26.360 --> 00:43:29.100
+And it's useful to know first for your general knowledge and second,
+
+00:43:29.360 --> 00:43:35.280
+because actually it's actually useful later for the rest of the class.
+
+00:43:35.300 --> 00:43:36.720
+Things we'll see in this class.
+
+00:43:37.620 --> 00:43:41.760
+So, in particular, on the exam, you will need to know how to invert a matrix by hand.
+
+00:43:44.320 --> 00:43:48.360
+So, I should say this formula is actually good for small matrices, you know,
+
+00:43:48.660 --> 00:43:49.880
+three by three, four by four.
+
+00:43:50.940 --> 00:43:54.220
+It's not good at all if you have a matrix of size of 1,000 by 1,000.
+
+00:43:54.440 --> 00:43:58.300
+So, in computer software, actually for small matrices, they do this.
+
+00:43:58.500 --> 00:44:00.400
+For larger matrices, they use over algorithms.
+
+00:44:04.380 --> 00:44:05.960
+But let's just see how we do it.
+
+00:44:06.920 --> 00:44:08.040
+So, I'm going to do it.
+
+00:44:08.640 --> 00:44:11.000
+Okay. So, first of all, I will give you a final answer.
+
+00:44:12.840 --> 00:44:15.960
+And of course, for that, I will need to explain what the answer means.
+
+00:44:18.560 --> 00:44:21.760
+So, we'll have to compute something called the adjoint matrix.
+
+00:44:22.280 --> 00:44:23.500
+And I will tell you how to do that.
+
+00:44:24.080 --> 00:44:26.400
+And then we'll divide by the determinant of A.
+
+00:44:34.960 --> 00:44:37.080
+So, how do we get to the adjoint matrix?
+
+00:44:37.840 --> 00:44:41.940
+So, let's go for the steps on a three by three example.
+
+00:44:45.500 --> 00:44:47.800
+The steps are the same, no matter what the size is.
+
+00:44:47.980 --> 00:44:49.660
+But let's do three by three.
+
+00:44:51.920 --> 00:44:54.380
+So, let's say that I'm giving you the matrix A,
+
+00:44:54.600 --> 00:44:58.040
+well, let's say it's the same as earlier, the one that I erased.
+
+00:44:58.920 --> 00:45:04.360
+So, that was the one relating our axis and our use.
+
+00:45:07.220 --> 00:45:13.400
+So, the first thing I want to do is find what's called the minus.
+
+00:45:13.400 --> 00:45:20.260
+So, what's a minor?
+
+00:45:22.120 --> 00:45:23.920
+Well, it's a slightly smaller determinant.
+
+00:45:24.340 --> 00:45:26.340
+We've already seen them without calling them that way.
+
+00:45:27.460 --> 00:45:31.460
+So, for example, the matrix of minors will have again the same size.
+
+00:45:32.520 --> 00:45:33.840
+Let's say we want this entry.
+
+00:45:34.200 --> 00:45:35.880
+Then we just delete this column.
+
+00:45:38.240 --> 00:45:39.940
+And we are left with a 2 by 2 determinant.
+
+00:45:41.400 --> 00:45:46.580
+So, here we'll put the determinant for 512,
+
+00:45:47.260 --> 00:45:50.000
+which is 4 times 2, 8 minus 5, 3.
+
+00:45:51.200 --> 00:45:52.280
+Let's do the next one.
+
+00:45:52.560 --> 00:45:55.240
+So, for this entry, I delete this row and this column.
+
+00:45:55.420 --> 00:45:57.200
+I'm left with 2512.
+
+00:45:57.840 --> 00:46:01.880
+The determinant will be 2 times 2 minus 5 is negative 1.
+
+00:46:04.160 --> 00:46:05.400
+Then minus 2.
+
+00:46:06.320 --> 00:46:07.520
+Then I get to the second row.
+
+00:46:07.520 --> 00:46:08.600
+So, I get to this entry.
+
+00:46:09.280 --> 00:46:13.200
+To find the minor here, I will delete this row and this column.
+
+00:46:13.380 --> 00:46:15.240
+And I'm left with 3, 3, 1, 2.
+
+00:46:15.580 --> 00:46:17.920
+3 times 2 minus 3 is 3.
+
+00:46:20.180 --> 00:46:23.260
+And let me just cheat and give you the others.
+
+00:46:25.720 --> 00:46:27.380
+I think I've shown you that I can do them.
+
+00:46:31.100 --> 00:46:33.080
+So, let's just explain the last one again.
+
+00:46:33.240 --> 00:46:34.280
+The last one, this 2.
+
+00:46:34.900 --> 00:46:39.080
+So, to find the minor here, I delete this column and this row.
+
+00:46:39.300 --> 00:46:40.200
+And I take this determinant.
+
+00:46:40.520 --> 00:46:42.080
+2 times 4 minus 2 times 3.
+
+00:46:43.920 --> 00:46:46.180
+So, it's the same kind of manipulation that we've seen
+
+00:46:46.180 --> 00:46:50.600
+when we've taken determinants and cross-products.
+
+00:46:53.260 --> 00:46:58.360
+Step 2, we go to another matrix that's called cofactors.
+
+00:46:59.220 --> 00:47:02.220
+So, the cofactors are pretty much the same thing as the miners.
+
+00:47:02.220 --> 00:47:04.760
+Except the signs are slightly different.
+
+00:47:06.900 --> 00:47:13.060
+So, what we do is we flip signs according to a checker board.
+
+00:47:15.720 --> 00:47:16.640
+And that one.
+
+00:47:17.200 --> 00:47:22.980
+So, you start with a plus in the upper left corner.
+
+00:47:23.780 --> 00:47:25.840
+And you alternate pluses and minuses.
+
+00:47:26.420 --> 00:47:29.220
+So, the rule is if there's a plus somewhere,
+
+00:47:29.820 --> 00:47:32.280
+then there's a minus next to it and below it.
+
+00:47:33.960 --> 00:47:36.960
+And then below a minus or to the right for minus, there's a plus.
+
+00:47:38.080 --> 00:47:39.900
+So, that's what it looks inside free by free.
+
+00:47:42.740 --> 00:47:44.280
+So, what do I mean by that?
+
+00:47:44.840 --> 00:47:49.100
+Sorry, I don't mean, you know, make this positive, make this negative, and so on.
+
+00:47:49.180 --> 00:47:49.840
+That's not what I mean.
+
+00:47:49.980 --> 00:47:55.640
+What I mean is if there's a plus, that means, leave it alone.
+
+00:47:56.680 --> 00:47:58.000
+We don't do anything to it.
+
+00:47:58.000 --> 00:48:01.280
+If there's a minus, that means we flip the sign.
+
+00:48:05.380 --> 00:48:17.020
+So, here we get, well, free, then one minus two, minus three, one plus one.
+
+00:48:17.800 --> 00:48:19.960
+The output plus is just two, emphasize.
+
+00:48:20.680 --> 00:48:23.500
+Free, minus four, and two.
+
+00:48:25.300 --> 00:48:27.380
+Okay? That step is pretty easy.
+
+00:48:27.520 --> 00:48:30.220
+I mean, the only half step in terms of calculations is this one.
+
+00:48:30.800 --> 00:48:33.460
+Because you have to compute all of these two by two determinants.
+
+00:48:39.720 --> 00:48:44.980
+By the way, I mean, this minus sign here, see, it's actually very related to the way in which,
+
+00:48:45.100 --> 00:48:48.680
+when we do a cross product, we have a minus sign for the second entry.
+
+00:48:50.100 --> 00:48:53.400
+Okay, we are almost done.
+
+00:48:54.160 --> 00:48:56.080
+Third step is to transpose.
+
+00:48:59.720 --> 00:49:00.980
+So, what does it mean to transpose?
+
+00:49:01.180 --> 00:49:06.560
+It means you read the rows of your matrix, and you write that as columns, or vice versa.
+
+00:49:07.220 --> 00:49:07.240
+Okay?
+
+00:49:07.420 --> 00:49:11.400
+So, let me just say we switch rows and columns.
+
+00:49:11.400 --> 00:49:15.640
+So, what do we get?
+
+00:49:16.000 --> 00:49:18.820
+Well, let's just read it horizontally and write it vertically.
+
+00:49:19.340 --> 00:49:23.440
+We read three, one minus two, three, one minus two.
+
+00:49:24.540 --> 00:49:28.540
+Then we read minus three, one, one, minus three, one, one.
+
+00:49:29.300 --> 00:49:33.520
+Then three, minus four, two, three, minus four, two.
+
+00:49:35.520 --> 00:49:37.140
+Okay? That's pretty easy.
+
+00:49:38.460 --> 00:49:39.960
+And we're almost done.
+
+00:49:40.800 --> 00:49:44.940
+The last step, so what we get here is this is the adjoint matrix.
+
+00:49:46.300 --> 00:49:51.960
+So, the fourth and last step is to divide by the determinant of A.
+
+00:49:56.760 --> 00:49:56.980
+Okay?
+
+00:49:57.740 --> 00:50:02.420
+So, here we have to compute the determinant to three, three.
+
+00:50:03.160 --> 00:50:05.280
+So, let's say determinant of A, okay?
+
+00:50:05.400 --> 00:50:07.120
+Not the determinant of this guy.
+
+00:50:08.440 --> 00:50:14.280
+So, two, three, three, two, four, five, one, one, two.
+
+00:50:14.580 --> 00:50:16.640
+Well, I let you check my computation.
+
+00:50:17.020 --> 00:50:19.260
+I found that it's equal to three.
+
+00:50:20.860 --> 00:50:21.180
+Okay?
+
+00:50:21.320 --> 00:50:27.940
+So, the final answer is that A inverse is one third of the matrix we got there.
+
+00:50:28.540 --> 00:50:30.420
+Three, minus three, three.
+
+00:50:31.020 --> 00:50:35.040
+One, one, minus four, minus two, one, two.
+
+00:50:37.500 --> 00:50:37.940
+Okay?
+
+00:50:38.480 --> 00:50:43.060
+And now, so that tells us, remember A told us how to find the use in terms of the axis.
+
+00:50:43.560 --> 00:50:46.480
+This one tells us now how to find the axis in terms of the use.
+
+00:50:46.740 --> 00:50:50.840
+If you multiply U1, U2, U3 by this, you get back X1, X2, X3.
+
+00:50:52.040 --> 00:50:56.740
+It also tells you how to solve the linear system, A times X equals something.
+
+00:50:59.420 --> 00:51:01.700
+Okay, that's the end for today.
+

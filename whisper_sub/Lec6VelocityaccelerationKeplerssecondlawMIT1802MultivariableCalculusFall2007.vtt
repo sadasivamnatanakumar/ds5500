@@ -1,0 +1,1478 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.940
+Your support will help MIT OpenCourseWare
+
+00:00:05.940 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.920 --> 00:00:12.500
+To make a donation or to view additional materials
+
+00:00:12.500 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:21.560 --> 00:00:27.120
+So if you remember last time, we looked at parametric equations.
+
+00:00:37.060 --> 00:00:43.220
+So as a way of describing the motion of a point that moves in the plane or in space,
+
+00:00:43.720 --> 00:00:49.700
+as a function of time or your favorite parameter that will tell you how far the motion has progressed.
+
+00:00:50.280 --> 00:00:56.180
+And I think we did in detail the example of the cycloid, which is the curve traced
+
+00:00:56.180 --> 00:01:07.600
+by a point on a wheel that's rolling on a flat surface.
+
+00:01:10.460 --> 00:01:19.360
+So we have this example where we have this wheel that's rolling on the x-axis.
+
+00:01:20.260 --> 00:01:23.040
+And we have this point on the wheel.
+
+00:01:23.820 --> 00:01:33.980
+And as it moves around, it traces a trajectory that looked more or less like this.
+
+00:01:35.400 --> 00:01:36.420
+OK, so I'm trying a new color.
+
+00:01:36.540 --> 00:01:37.720
+Is this visible from the back?
+
+00:01:38.620 --> 00:01:39.140
+Good.
+
+00:01:40.400 --> 00:01:41.460
+So no more blue.
+
+00:01:44.120 --> 00:01:44.640
+OK.
+
+00:01:47.140 --> 00:01:52.700
+So remember, in general, we are trying to find the position.
+
+00:01:54.840 --> 00:02:10.940
+So x of t, y of t, maybe z of t, if we're in space, of a moving point, a longer trajectory.
+
+00:02:13.280 --> 00:02:17.740
+And one way to think about this is in terms of the position vector.
+
+00:02:25.260 --> 00:02:34.300
+So the position vector is just the vector whose components are the coordinates of the point.
+
+00:02:34.940 --> 00:02:40.020
+OK, so if you prefer, that's the same thing as the vector from the origin.
+
+00:02:40.020 --> 00:02:41.760
+So again, to the moving point.
+
+00:02:44.820 --> 00:02:46.940
+So maybe our point is here, p.
+
+00:02:49.860 --> 00:03:01.060
+So this vector here is vector op.
+
+00:03:01.060 --> 00:03:01.120
+t.
+
+00:03:02.380 --> 00:03:05.780
+And that's also the position vector of t.
+
+00:03:11.940 --> 00:03:31.040
+So just to give you, again, that example, if I take the cycloid for a wheel of radius
+
+00:03:31.040 --> 00:03:44.540
+1, and let's say that we are going at unit speed so that the angle that we used as a parameter
+
+00:03:44.540 --> 00:03:46.760
+less time is the same thing as time.
+
+00:03:47.880 --> 00:03:55.640
+Then the position vector, in this case, we found to be, just to make sure that they have
+
+00:03:55.640 --> 00:04:00.600
+it right, t minus sine t and cosine t.
+
+00:04:01.680 --> 00:04:03.220
+No, 1 minus cosine t.
+
+00:04:06.820 --> 00:04:11.600
+OK, same, that's formula that you should have in your notes from less time, except we had
+
+00:04:11.600 --> 00:04:14.040
+theta instead of t because we were using the angle.
+
+00:04:14.240 --> 00:04:17.820
+But now I'm saying we're moving at unit speed, so time and angle are the same thing.
+
+00:04:19.280 --> 00:04:30.280
+OK, so now what's interesting about this is we can analyze the motion in more detail.
+
+00:04:30.820 --> 00:04:36.020
+So now that we know the position of a point as a function of time, we can try to study
+
+00:04:36.020 --> 00:04:39.580
+how it varies and the particular things like the speed and the acceleration.
+
+00:04:43.400 --> 00:04:44.640
+So let's start with speed.
+
+00:04:46.720 --> 00:04:48.780
+Well, in fact, we can do better than speed.
+
+00:04:49.020 --> 00:04:50.000
+Let's not start with speed.
+
+00:04:51.140 --> 00:04:52.580
+So speed is a number.
+
+00:04:52.760 --> 00:04:55.500
+It tells you how fast you're going along your trajectory.
+
+00:04:55.960 --> 00:05:00.200
+I mean, if you're driving in a car, then it tells you how fast you're going.
+
+00:05:00.780 --> 00:05:04.280
+But unless you have one of these fancy cars with a GPS, it doesn't tell you in which direction
+
+00:05:04.280 --> 00:05:04.700
+you're going.
+
+00:05:05.200 --> 00:05:08.400
+And that's useful information, too, if you're trying to figure out what your trajectory
+
+00:05:08.400 --> 00:05:08.840
+is.
+
+00:05:09.760 --> 00:05:12.420
+So in fact, there's two aspects to it.
+
+00:05:12.420 --> 00:05:15.460
+One is how fast you're going and the other is in what direction you're going.
+
+00:05:15.640 --> 00:05:19.480
+That means actually we should use a vector, maybe, to think about this.
+
+00:05:20.340 --> 00:05:22.100
+And so that's called the velocity vector.
+
+00:05:29.820 --> 00:05:33.220
+And the way we can get it, so it's called, usually, V.
+
+00:05:34.780 --> 00:05:37.660
+So V here stands for velocity, more than four vector.
+
+00:05:39.340 --> 00:05:44.700
+And you just get it by taking the derivative of a position vector with respect to time.
+
+00:05:46.240 --> 00:05:49.780
+OK, now it's our first time writing this kind of thing with a vector.
+
+00:05:50.580 --> 00:05:56.720
+So the basic rule is you can take the derivative of a vector quantity just by taking the derivatives
+
+00:05:56.720 --> 00:05:57.880
+of each component.
+
+00:05:57.880 --> 00:06:06.060
+OK, so that's just the x dt, the y dt.
+
+00:06:07.300 --> 00:06:10.840
+And if you have the component, this is dt.
+
+00:06:22.780 --> 00:06:38.360
+OK, so let's see what it is for the cycloid.
+
+00:06:38.360 --> 00:06:53.600
+So in the example of a cycloid, well, so what do we get when we take the derivative of
+
+00:06:53.600 --> 00:06:54.800
+this formula over there?
+
+00:06:56.040 --> 00:07:03.660
+Well, so the derivative of t is 1 minus cosinty.
+
+00:07:05.020 --> 00:07:07.620
+The derivative of 1 is 0.
+
+00:07:08.100 --> 00:07:11.200
+The derivative of minus cosinty is sint.
+
+00:07:12.400 --> 00:07:12.660
+Very good.
+
+00:07:15.640 --> 00:07:19.760
+That's at least one thing you should remember from single variable calculus.
+
+00:07:20.140 --> 00:07:21.520
+Hopefully you'll remember even more than that.
+
+00:07:24.660 --> 00:07:27.360
+OK, so that's the velocity vector.
+
+00:07:27.620 --> 00:07:31.320
+It tells us at any time how fast we are going in what direction.
+
+00:07:33.340 --> 00:07:40.260
+So for example, observe, remember, last time at the end of class, we were trying to figure out what
+
+00:07:40.260 --> 00:07:42.600
+exactly happens near the bottom point.
+
+00:07:42.780 --> 00:07:45.740
+You know, when we have this motion that seems to stop and go backwards.
+
+00:07:46.800 --> 00:07:48.360
+And we answered that one way.
+
+00:07:48.460 --> 00:07:51.220
+But let's try to understand it in terms of velocity.
+
+00:07:52.060 --> 00:07:53.840
+What if I plug t equals 0 in here?
+
+00:07:54.620 --> 00:07:57.000
+Then 1 minus cosinty is 0.
+
+00:07:57.220 --> 00:07:57.980
+Sinty is 0.
+
+00:07:58.640 --> 00:08:01.100
+The velocity is 0.
+
+00:08:01.540 --> 00:08:06.220
+So at that time, at that particular time, our point is actually not moving.
+
+00:08:08.260 --> 00:08:12.020
+Of course, it's been moving just before and it starts moving just afterwards.
+
+00:08:12.240 --> 00:08:16.020
+It's just, you know, the instant, at that particular instant, the speed is 0.
+
+00:08:20.040 --> 00:08:25.060
+So that's slightly maybe counter-intuitive thing that something is moving.
+
+00:08:25.320 --> 00:08:26.820
+And at that time, it's actually stopped.
+
+00:08:32.480 --> 00:08:33.580
+Now, let's see.
+
+00:08:33.860 --> 00:08:34.540
+So that's a vector.
+
+00:08:35.040 --> 00:08:35.680
+And it's useful.
+
+00:08:36.360 --> 00:08:39.720
+But if you want just the usual speed as a number, then what will you do?
+
+00:08:40.740 --> 00:08:43.480
+Well, you'll just take exactly the magnitude of this vector.
+
+00:08:46.100 --> 00:08:58.640
+So speed, which is the scalar quantity, is going to be just the magnitude of a vector v.
+
+00:09:01.940 --> 00:09:11.760
+So in this case, well, it would be square root of 1 minus cosinty squared plus sin squared
+
+00:09:11.760 --> 00:09:12.080
+t.
+
+00:09:13.260 --> 00:09:23.580
+And if you expand that, well, so you will get, let me take a bit more space, that's going
+
+00:09:23.580 --> 00:09:34.900
+to be square root of 1 minus 2 cosinty plus cosint squared t plus sin squared t seems
+
+00:09:34.900 --> 00:09:39.860
+to simplify a little bit because we have cosint squared plus sin squared, that's 1.
+
+00:09:41.160 --> 00:09:46.200
+So it's going to be square root of 2 minus 2 cosinty.
+
+00:09:48.600 --> 00:09:54.680
+So at this point, if I was going to ask you, when is the speed the smallest of the largest,
+
+00:09:55.160 --> 00:09:56.620
+you could answer based on that.
+
+00:09:57.360 --> 00:10:01.180
+See, a t equals 0, well, that turns out to be 0.
+
+00:10:01.520 --> 00:10:02.400
+The point is not moving.
+
+00:10:02.920 --> 00:10:07.760
+A t equals pi, that ends up being square root of 2 plus 2, which is 4.
+
+00:10:07.760 --> 00:10:12.900
+So that's 2, and that's when you actually add the top of the arch, and that's when
+
+00:10:12.900 --> 00:10:14.020
+the point is moving the fastest.
+
+00:10:15.080 --> 00:10:18.940
+In fact, there, it's moving twice as fast as the wheel, because the wheel is moving to
+
+00:10:18.940 --> 00:10:23.640
+the right at unit speed, and the point is also rotating, so it's moving to the right at
+
+00:10:23.640 --> 00:10:28.760
+unit speed relative to the center, so that the two effects add up and give you a speed
+
+00:10:28.760 --> 00:10:29.060
+of 2.
+
+00:10:32.140 --> 00:10:34.120
+Anyway, that's the formula we can get.
+
+00:10:39.760 --> 00:10:41.440
+Now, what about acceleration?
+
+00:10:49.940 --> 00:10:57.320
+So here, I should warn you that there's a serious discrepancy between the usual, maybe intuitive
+
+00:10:57.320 --> 00:11:01.660
+notion of acceleration, the one that you are aware of when you drive a car, and the
+
+00:11:01.660 --> 00:11:02.440
+one that will be using.
+
+00:11:04.400 --> 00:11:07.700
+So you might think acceleration is just the derivative of speed.
+
+00:11:08.320 --> 00:11:13.800
+If my car goes 55 miles an hour on the highway, then it's going at constant speed, it's
+
+00:11:13.800 --> 00:11:14.320
+not accelerating.
+
+00:11:15.580 --> 00:11:18.880
+But let's say that I'm taking a really tight turn, then I'm going to feel something.
+
+00:11:19.320 --> 00:11:20.900
+There's some force being exerted.
+
+00:11:21.520 --> 00:11:27.140
+And in fact, there is a sideways acceleration at that point, even for the speed is not
+
+00:11:27.140 --> 00:11:27.480
+changing.
+
+00:11:28.320 --> 00:11:33.700
+So, the definition we'll take of acceleration is as a vector, and the acceleration vector
+
+00:11:34.480 --> 00:11:38.220
+is just the derivative of a velocity vector.
+
+00:11:46.600 --> 00:11:55.100
+So, even if speed is constant, that means even if the length of the velocity vector stays
+
+00:11:55.100 --> 00:11:58.100
+the same, the velocity vector can still rotate.
+
+00:11:59.100 --> 00:12:01.100
+And as it rotates, that produces acceleration.
+
+00:12:04.280 --> 00:12:06.980
+And so this is the notion of acceleration that's relevant in physics.
+
+00:12:07.280 --> 00:12:12.000
+For example, when you write f equals ma, that's really what a, that's the a that you have
+
+00:12:12.000 --> 00:12:12.540
+in mind here.
+
+00:12:12.680 --> 00:12:13.060
+It's a vector.
+
+00:12:16.620 --> 00:12:19.500
+Of course, if you're moving in a straight line, then the two notions are the same.
+
+00:12:20.240 --> 00:12:24.420
+Acceleration is also going to be along the line, and it's going to have to do with the
+
+00:12:24.420 --> 00:12:25.180
+derivative of speed.
+
+00:12:25.680 --> 00:12:27.280
+But in general, that's not quite the same.
+
+00:12:29.640 --> 00:12:32.220
+So for example, let's look at the cycloid.
+
+00:12:37.180 --> 00:12:41.580
+If we take the example of the cycloid, well, what's the derivative of 1 minus cosine
+
+00:12:41.580 --> 00:12:41.920
+t?
+
+00:12:43.720 --> 00:12:44.980
+It's sine t.
+
+00:12:48.600 --> 00:12:52.200
+And what's the derivative of sine t?
+
+00:12:53.460 --> 00:12:53.760
+Cosine t.
+
+00:12:55.040 --> 00:12:58.940
+So, the acceleration vector is sine t cosine t.
+
+00:13:04.580 --> 00:13:11.800
+So in particular, let's look at what happens at time t equals 0 when the point is not
+
+00:13:11.800 --> 00:13:12.100
+moving.
+
+00:13:12.100 --> 00:13:18.100
+Well, the acceleration vector there will be 0,1.
+
+00:13:22.680 --> 00:13:33.100
+So what that means is that if I look at my trajectory at this point, well, then the acceleration
+
+00:13:33.100 --> 00:13:35.840
+vector is pointing in that direction.
+
+00:13:36.800 --> 00:13:40.000
+It's the unit vector in the vertical direction.
+
+00:13:40.600 --> 00:13:46.160
+So, my point is not moving at that particular time, but it's accelerating up.
+
+00:13:46.320 --> 00:13:52.260
+So that means actually that as it comes down, first it's slowing down, then it stops here,
+
+00:13:52.360 --> 00:13:54.820
+and then it reverses going back up.
+
+00:13:56.480 --> 00:14:02.480
+OK, so that's another way to understand what we were saying last time that the trajectory
+
+00:14:02.480 --> 00:14:04.780
+at that point has a vertical tangency.
+
+00:14:05.780 --> 00:14:11.340
+Because that's the direction in which the motion is going to occur just before and just after
+
+00:14:12.020 --> 00:14:12.420
+time 0.
+
+00:14:16.300 --> 00:14:17.940
+OK, any questions about that?
+
+00:14:24.320 --> 00:14:24.440
+No.
+
+00:14:28.340 --> 00:14:41.780
+OK, so I should insist maybe on one thing, which is that so we can differentiate vectors
+
+00:14:42.800 --> 00:14:44.100
+just component by component.
+
+00:14:45.740 --> 00:14:51.920
+And we can differentiate vector expressions according to certain rules that we'll see
+
+00:14:51.920 --> 00:15:03.840
+in a moment, one thing that we cannot do, it's not true that the length of the R dt, which
+
+00:15:03.840 --> 00:15:10.260
+is the speed, is equal to the length R dt.
+
+00:15:11.480 --> 00:15:15.520
+This is completely false, and they're really not the same.
+
+00:15:17.260 --> 00:15:23.040
+OK, so if you have to differentiate the length of a vector, then basically you're in trouble.
+
+00:15:24.400 --> 00:15:28.640
+If you really, really want to do it, well, the length of a vector is the square root of the
+
+00:15:28.640 --> 00:15:32.860
+sums of the squares of the components, and from that you can use formula for the derivative
+
+00:15:32.860 --> 00:15:36.780
+of the square root and the chain rule and various other things, and you can get there.
+
+00:15:37.520 --> 00:15:39.500
+But it will not be a very nice expression.
+
+00:15:39.740 --> 00:15:43.000
+There's no simple formula for this kind of thing.
+
+00:15:43.660 --> 00:15:49.280
+Fortunately, we almost never have to compute this kind of thing, because after all it's not
+
+00:15:49.880 --> 00:15:53.260
+very relevant quantity, what's more relevant might be this one.
+
+00:15:53.500 --> 00:15:54.320
+This is actually the speed.
+
+00:15:55.380 --> 00:15:57.640
+This one, I don't know what it means in general.
+
+00:15:59.700 --> 00:15:59.840
+OK?
+
+00:16:10.980 --> 00:16:13.020
+So let's continue our exploration.
+
+00:16:14.380 --> 00:16:18.220
+So the next concept that I want to define is that of arc length.
+
+00:16:21.220 --> 00:16:24.840
+So arc length is just the distance that you have traveled along the curve.
+
+00:16:24.840 --> 00:16:25.660
+OK?
+
+00:16:26.240 --> 00:16:30.400
+So if you're in a curve, it has this mileage counter that tells you how far you've gone,
+
+00:16:30.660 --> 00:16:32.420
+how much fuel you've used if it's a fancy curve.
+
+00:16:33.620 --> 00:16:38.740
+And what it does is it actually integrates the speed over time to give you the arc length
+
+00:16:38.740 --> 00:16:40.220
+along the trajectory of a curve.
+
+00:16:43.660 --> 00:16:47.940
+So the usual notation that we'll have is S for arc length.
+
+00:16:48.520 --> 00:16:54.060
+I'm not quite sure how you get an S out of this, but it's the usual notation.
+
+00:16:55.920 --> 00:16:56.480
+OK?
+
+00:16:57.300 --> 00:17:06.220
+So S is the distance traveled along the trajectory.
+
+00:17:13.480 --> 00:17:17.020
+And for that to make sense, of course, we need to fix a reference point.
+
+00:17:17.180 --> 00:17:21.600
+Maybe on the cycloid, we'd say it's the distance starting from the origin.
+
+00:17:22.180 --> 00:17:25.280
+In general, maybe you'll say you start at time equals 0.
+
+00:17:26.100 --> 00:17:26.880
+But it's a convention.
+
+00:17:27.180 --> 00:17:32.580
+You could decide if you knew in advance you could have actually your car's mileage counter
+
+00:17:32.580 --> 00:17:36.320
+to count backwards from the point where the car will die and stop working.
+
+00:17:37.680 --> 00:17:40.520
+That would be slightly freaky.
+
+00:17:42.860 --> 00:17:48.180
+But you could have certainly a negative arc length that gets closer and closer to 0
+
+00:17:48.180 --> 00:17:50.680
+and gets to 0 at the end of the trajectory or anything you want.
+
+00:17:50.680 --> 00:17:52.420
+I mean, arc length would be positive or negative.
+
+00:17:53.260 --> 00:17:56.700
+Typically, it's negative when you're before the reference point and positive afterwards.
+
+00:17:58.500 --> 00:18:02.100
+So now, how does it relate to the things we've seen there?
+
+00:18:04.680 --> 00:18:14.480
+Well, so in particular, how do you relate arc length and time?
+
+00:18:16.000 --> 00:18:25.080
+Well, so there's a simple relation, which is that the rate of change of arc length
+
+00:18:25.080 --> 00:18:29.400
+there's a time, well, that's going to be the speed at which you're moving.
+
+00:18:30.260 --> 00:18:35.720
+Because the speed, as a scalar quantity, tells you how much distance you're covering
+
+00:18:35.720 --> 00:18:36.460
+per unit time.
+
+00:18:44.740 --> 00:18:51.160
+And in fact, to be completely honest, I should put an absolute value here.
+
+00:18:51.640 --> 00:18:56.000
+Because there's examples of curves, maybe where your motion is going back and forth
+
+00:18:56.000 --> 00:19:00.900
+along the same curve and then you don't want to keep counting arc length all the time.
+
+00:19:01.040 --> 00:19:04.520
+Actually, maybe you want to say that the arc length increases than decreases along the curve.
+
+00:19:05.580 --> 00:19:06.980
+I mean, you get to choose how you count it.
+
+00:19:07.880 --> 00:19:12.160
+But in this case, if you're moving back and forth, it would make more sense to have
+
+00:19:12.160 --> 00:19:15.140
+the arc length first increase, then decrease, increase again and so on.
+
+00:19:35.980 --> 00:19:39.940
+So, if you want to know really what the arc length is, then basically the only way to do
+
+00:19:39.940 --> 00:19:42.560
+it is to integrate speed versus time.
+
+00:19:43.360 --> 00:19:49.460
+So if you wanted to know how long an arc of cycloid is, you have this nice looking curve,
+
+00:19:49.960 --> 00:19:50.820
+how long is it?
+
+00:19:51.440 --> 00:19:57.160
+Well, you'd have to basically integrate this quantity from t equal to 0 to 2 pi.
+
+00:20:27.160 --> 00:20:28.000
+So how to integrate that.
+
+00:20:30.620 --> 00:20:33.780
+So we don't actually have a formula for the length at this point.
+
+00:20:34.320 --> 00:20:40.660
+However, we'll see one later using a cool trick and multivariable calculus.
+
+00:20:49.080 --> 00:20:53.420
+So for now, we'll just leave a formula like that and we don't know how long it is.
+
+00:20:53.420 --> 00:20:56.620
+Well, you can put that into your calculator and get a numerical value.
+
+00:20:57.000 --> 00:20:59.420
+But that's the best I can offer.
+
+00:21:06.980 --> 00:21:19.520
+Now another useful notion is the unit tangent vector to the trajectory.
+
+00:21:21.580 --> 00:21:24.540
+So the usual notation is t hat.
+
+00:21:24.860 --> 00:21:27.600
+It has a hat because it's a unit vector and t because it's tangent.
+
+00:21:30.640 --> 00:21:33.260
+Now how do we get this unit tangent vector?
+
+00:21:33.560 --> 00:21:39.580
+So maybe I should have pointed out before that if you're moving along some trajectory,
+
+00:21:40.180 --> 00:21:45.260
+so you're going in that direction, then when you're at this point, the velocity vector
+
+00:21:46.060 --> 00:21:49.360
+is going to be tangent to the trajectory.
+
+00:21:50.740 --> 00:21:53.600
+It tells you the direction of motion in particular.
+
+00:21:54.500 --> 00:21:59.000
+So if you want a unit vector that goes in the same direction, all you have to do is
+
+00:21:59.000 --> 00:22:01.980
+just rescale it so that its length becomes 1.
+
+00:22:06.280 --> 00:22:10.120
+So it's v divided by magnitude of v.
+
+00:22:29.920 --> 00:22:36.460
+So it seems like now we have a lot of different things that should be related in some way.
+
+00:22:36.620 --> 00:22:38.480
+So let's see what we can say.
+
+00:22:41.180 --> 00:22:48.240
+Well, we can say that dR by dt, so that's the velocity vector.
+
+00:22:51.940 --> 00:22:57.880
+That's the same thing as if I use the chain rule, dR dS times dS dt.
+
+00:23:01.000 --> 00:23:01.060
+Okay?
+
+00:23:05.080 --> 00:23:07.080
+So let's think about these things.
+
+00:23:07.340 --> 00:23:13.780
+So this guy here, we've just seen that's the same as the speed.
+
+00:23:18.460 --> 00:23:24.080
+So this one here should be v divided by its length.
+
+00:23:24.480 --> 00:23:29.760
+So that means this actually should be the unit tangent vector.
+
+00:23:32.040 --> 00:23:33.640
+Okay, so let me rewrite that.
+
+00:23:34.100 --> 00:23:36.520
+It's t dS dt.
+
+00:23:37.860 --> 00:23:44.900
+So maybe if I actually stated directly that way, see, I'm just saying the velocity vector has a length
+
+00:23:44.900 --> 00:23:51.200
+and a direction. The length is the speed. The direction is tangent to the trajectory.
+
+00:24:18.720 --> 00:24:23.080
+So the speed is dS dt and the tangent vector is t hat.
+
+00:24:24.720 --> 00:24:25.880
+And that's how we get this.
+
+00:24:25.880 --> 00:24:26.620
+Okay?
+
+00:24:30.440 --> 00:24:34.580
+So let's try just to see why dR dS should be t.
+
+00:24:35.880 --> 00:24:37.440
+Well, let's think of dR dS.
+
+00:24:37.560 --> 00:24:43.300
+dR dS means, you know, position vector r means you have the origin, which is somewhere out there.
+
+00:24:43.960 --> 00:24:46.360
+And the vector r is here.
+
+00:24:47.600 --> 00:24:55.620
+So dR dS means we move by a small amount delta s along the trajectory by a certain distance delta s.
+
+00:24:55.880 --> 00:24:58.280
+And we look at how the position vector changes.
+
+00:25:00.660 --> 00:25:04.340
+Well, we'll have a small change.
+
+00:25:04.900 --> 00:25:12.920
+Let me call that vector delta r corresponding to the size, corresponding to the length delta s.
+
+00:25:13.880 --> 00:25:14.460
+And now,
+
+00:25:18.760 --> 00:25:28.400
+delta r should be essentially roughly equal to, well, its direction will be tangent to the trajectory.
+
+00:25:28.580 --> 00:25:34.040
+If I take a small enough interval, then the motion will be almost tangent to the trajectory.
+
+00:25:34.800 --> 00:25:40.420
+Times the length of it will be delta s, the distance that I have traveled.
+
+00:25:41.700 --> 00:25:46.000
+Maybe I should, sorry, maybe I should, we explained that on a separate board.
+
+00:25:50.000 --> 00:25:55.360
+Okay, so let's say that we have an amount of time delta t.
+
+00:25:56.920 --> 00:25:58.620
+So let's zoom into that curve.
+
+00:25:59.580 --> 00:26:05.080
+Okay, so we have r at time t.
+
+00:26:06.380 --> 00:26:11.660
+We have r at time t plus delta t.
+
+00:26:13.080 --> 00:26:16.820
+This vector here I will call delta r.
+
+00:26:17.800 --> 00:26:21.440
+The length of this vector is delta s.
+
+00:26:23.620 --> 00:26:29.800
+And the direction is essentially that of a tangent vector.
+
+00:26:34.660 --> 00:26:41.400
+So delta s over delta t, that's the amount, that's the distance traveled divided by the time.
+
+00:26:42.540 --> 00:26:44.420
+That's going to be close to the speed.
+
+00:26:47.180 --> 00:26:53.660
+And delta r is approximately t times delta s.
+
+00:26:57.080 --> 00:27:03.160
+So now if I divide both sides by delta t, I get this.
+
+00:27:03.760 --> 00:27:10.120
+And if I take the limit as delta t tends to zero, then I get the same formula with derivatives
+
+00:27:10.120 --> 00:27:12.440
+and with an equality, it's the same approximation.
+
+00:27:12.920 --> 00:27:16.220
+The approximation becomes better and better if I go to smaller intervals.
+
+00:27:16.220 --> 00:27:18.460
+Okay.
+
+00:27:25.700 --> 00:27:40.080
+Okay, are there any questions about this?
+
+00:27:44.220 --> 00:27:44.420
+Yes?
+
+00:27:44.420 --> 00:27:48.960
+I said the direction, you would see tangent to the curve.
+
+00:27:49.640 --> 00:27:53.860
+You said when you're trying to do that, you would see a tangent.
+
+00:27:54.680 --> 00:27:56.340
+So it's a tangent.
+
+00:27:58.040 --> 00:27:58.940
+Yes, that's correct.
+
+00:27:59.280 --> 00:28:01.000
+So let's be more careful actually.
+
+00:28:01.600 --> 00:28:07.340
+So you're asking about whether delta r is actually strictly tangent to the curve.
+
+00:28:07.600 --> 00:28:11.560
+Is that it seems like if your first time around the other time that I've all incurred,
+
+00:28:11.560 --> 00:28:15.160
+any other time that comes across, it wouldn't be tangent, but tangent.
+
+00:28:15.760 --> 00:28:16.480
+That's correct.
+
+00:28:16.720 --> 00:28:19.120
+Actually, delta r is not strictly tangent to anything.
+
+00:28:19.640 --> 00:28:21.120
+So maybe I should draw another picture.
+
+00:28:22.220 --> 00:28:31.940
+If I'm going from here to here, then delta r is going to be this arc inside the curve,
+
+00:28:32.180 --> 00:28:36.340
+while the tangent vector will be going in this direction.
+
+00:28:38.060 --> 00:28:38.220
+Okay.
+
+00:28:38.220 --> 00:28:40.460
+So they're not strictly parallel to each other.
+
+00:28:40.620 --> 00:28:42.400
+And that's why it's only approximately equal.
+
+00:28:43.020 --> 00:28:48.680
+Similarly, this distance, the length of delta r is not exactly the length along the curve.
+
+00:28:48.820 --> 00:28:49.560
+It's actually a bit shorter.
+
+00:28:50.500 --> 00:28:53.620
+But if you imagine a smaller and smaller portion of the curve,
+
+00:28:54.460 --> 00:28:59.980
+then this effect of the curve being a curve and not a straight line becomes more and more
+
+00:28:59.980 --> 00:29:00.480
+negligible.
+
+00:29:00.900 --> 00:29:04.500
+If you zoom into the curve sufficiently, then it looks more and more like a straight line.
+
+00:29:04.860 --> 00:29:07.200
+And then what I said becomes true in the limit.
+
+00:29:08.220 --> 00:29:08.920
+Okay.
+
+00:29:11.980 --> 00:29:12.840
+Any other questions?
+
+00:29:18.460 --> 00:29:19.020
+Okay.
+
+00:29:25.980 --> 00:29:29.980
+So what happens next?
+
+00:29:33.420 --> 00:29:40.300
+Okay. So let me show you a nice example of why we might want to use vectors
+
+00:29:41.440 --> 00:29:43.100
+to study parametric curves.
+
+00:29:43.280 --> 00:29:45.780
+Because after all a lot of what's here, you can just do in coordinates.
+
+00:29:46.620 --> 00:29:47.720
+And we don't really need vectors.
+
+00:29:48.580 --> 00:29:52.160
+Well, actually, vectors being a language, you know, you never strictly need it,
+
+00:29:52.160 --> 00:29:54.300
+but it's useful to have an ocean of vectors.
+
+00:29:55.100 --> 00:30:08.240
+So I want to tell you a bit about Kepler's second low
+
+00:30:11.620 --> 00:30:12.900
+of celestial mechanics.
+
+00:30:14.100 --> 00:30:18.460
+So that goes back from, that goes back to 16.09.
+
+00:30:18.780 --> 00:30:20.680
+So that's not exactly recent news, okay.
+
+00:30:22.380 --> 00:30:27.140
+But still, I think it's a very interesting example of why you might want to use vector
+
+00:30:27.140 --> 00:30:28.840
+methods to analyze motions.
+
+00:30:31.540 --> 00:30:37.240
+So what happens, what happens back then is Kepler was trying to observe the motion of planets
+
+00:30:37.240 --> 00:30:42.460
+in the sky and trying to come up with general explanations of how they move.
+
+00:30:42.880 --> 00:30:45.440
+Before him, people were saying, well, they kind of move in a circle,
+
+00:30:46.080 --> 00:30:47.800
+but maybe it's more complicated than that.
+
+00:30:47.800 --> 00:30:52.140
+We need to add smaller circular motions on top of each other and so on.
+
+00:30:52.200 --> 00:30:53.640
+They had more and more complicated theories.
+
+00:30:54.300 --> 00:31:00.040
+And then Kepler came with these laws that say basically that planets move in an ellipse
+
+00:31:00.040 --> 00:31:04.980
+around the sun and that they move in a very specific way along that ellipse.
+
+00:31:05.720 --> 00:31:08.580
+So there's actually three laws, but let me just tell you about the second one,
+
+00:31:08.740 --> 00:31:11.140
+that has a very nice vector interpretation.
+
+00:31:13.220 --> 00:31:19.520
+So what Kepler's second law says is that the motion of planets
+
+00:31:23.760 --> 00:31:26.380
+is, first of all, they move in a plane.
+
+00:31:28.900 --> 00:31:31.560
+And second, the
+
+00:31:33.720 --> 00:31:34.340
+area
+
+00:31:38.240 --> 00:31:44.080
+swept out by the line from the sun to the planet is swept at constant time.
+
+00:31:53.160 --> 00:31:55.140
+So it's swept at constant rate.
+
+00:31:57.340 --> 00:31:59.120
+From the sun to the planet.
+
+00:32:01.580 --> 00:32:07.180
+The area is swept out by the line at a constant rate.
+
+00:32:18.700 --> 00:32:21.700
+So that's an interesting law because it tells you
+
+00:32:23.160 --> 00:32:27.240
+once you know what the orbit of a planet looks like,
+
+00:32:27.240 --> 00:32:30.260
+it tells you how fast it's going to move on that orbit.
+
+00:33:09.140 --> 00:33:10.740
+So let me explain again.
+
+00:33:15.720 --> 00:33:18.520
+So this law says, you know, maybe the sun,
+
+00:33:19.880 --> 00:33:22.340
+let's put the sun here at the origin.
+
+00:33:23.640 --> 00:33:26.580
+And let's have a planet.
+
+00:33:28.680 --> 00:33:30.800
+Well, the planet orbits around the sun
+
+00:33:35.800 --> 00:33:36.980
+in some trajectory.
+
+00:33:40.840 --> 00:33:42.520
+So this is supposed to be light blue.
+
+00:33:42.660 --> 00:33:44.020
+Can you see it as different from white?
+
+00:33:45.420 --> 00:33:46.760
+No, okay, mini-veh.
+
+00:33:51.200 --> 00:33:52.340
+Okay, doesn't really matter.
+
+00:33:52.680 --> 00:33:54.180
+So the planet moves on its orbit.
+
+00:33:54.820 --> 00:33:58.980
+And if you wait for a certain time,
+
+00:34:00.400 --> 00:34:02.940
+then you know, a bit later it will be here, then here and so on,
+
+00:34:03.540 --> 00:34:05.340
+then you can look at the amount of area,
+
+00:34:06.500 --> 00:34:09.560
+you know, inside this triangular wedge.
+
+00:34:11.660 --> 00:34:14.240
+And the claim is that the amount of area in here
+
+00:34:14.240 --> 00:34:16.020
+is proportional to the time it lapsed.
+
+00:34:16.660 --> 00:34:19.620
+So in particular, if the planet is closer to the sun,
+
+00:34:19.660 --> 00:34:20.620
+then it has to go faster.
+
+00:34:21.120 --> 00:34:22.580
+And if it's further away from the sun,
+
+00:34:22.580 --> 00:34:25.860
+then it has to go slower so that the area
+
+00:34:25.860 --> 00:34:27.360
+remains proportional to time.
+
+00:34:28.580 --> 00:34:30.840
+So that's a very sophisticated prediction.
+
+00:34:32.000 --> 00:34:34.520
+And I think the way he came to it was really just
+
+00:34:34.520 --> 00:34:38.020
+by using a lot of observations and trying to measure
+
+00:34:38.020 --> 00:34:40.300
+what things, you know, what was true, it wasn't true.
+
+00:34:42.140 --> 00:34:45.360
+But let's try to see how we can understand that
+
+00:34:45.820 --> 00:34:49.940
+in terms of what we know today about mechanics.
+
+00:34:50.880 --> 00:34:54.620
+So in fact, what happens is that Newton,
+
+00:34:55.220 --> 00:35:00.620
+so Newton was quite a bit later, I mean, that was the late 17th century,
+
+00:35:01.620 --> 00:35:04.340
+instead of beginning of the 17th century.
+
+00:35:13.280 --> 00:35:19.260
+So he was able to explain this using his laws for
+
+00:35:21.080 --> 00:35:21.820
+gravitational attraction.
+
+00:35:35.720 --> 00:35:40.140
+And you'll see that if we reformulate Kepler's law in terms of vectors,
+
+00:35:40.740 --> 00:35:43.360
+then, and if we work up it with these vectors,
+
+00:35:43.580 --> 00:35:45.080
+we're going to end up with something that's actually
+
+00:35:46.300 --> 00:35:47.940
+in completely obvious to us now.
+
+00:35:48.060 --> 00:35:49.460
+At the time, it was very far from obvious.
+
+00:35:49.460 --> 00:35:50.880
+But to us now, it's completely obvious.
+
+00:35:52.380 --> 00:35:58.180
+So let's try to see what does Kepler's law say in terms of vectors.
+
+00:36:14.640 --> 00:36:15.140
+Okay.
+
+00:36:15.860 --> 00:36:22.780
+So let's think of what kinds of vectors we might want to have in here.
+
+00:36:27.720 --> 00:36:32.520
+Well, it might be good to think of maybe the position vector.
+
+00:36:35.800 --> 00:36:37.440
+And maybe it's variation.
+
+00:36:37.840 --> 00:36:42.400
+So if we wait as to an amount of time, we'll have a vector delta R,
+
+00:36:42.400 --> 00:36:47.440
+which is the change in position vector of a certain interval of time.
+
+00:36:57.940 --> 00:37:00.060
+So let's start with the first step.
+
+00:37:00.740 --> 00:37:02.600
+What's the most complicated thing in here?
+
+00:37:02.780 --> 00:37:04.840
+It's this area swept out by the line.
+
+00:37:05.940 --> 00:37:08.960
+How do we express that area in terms of vectors?
+
+00:37:09.880 --> 00:37:12.900
+Well, I've almost given the answer by drawing this picture.
+
+00:37:13.900 --> 00:37:16.680
+If I take a sufficiently small amount of time,
+
+00:37:17.120 --> 00:37:22.080
+this graded region looks like a triangle.
+
+00:37:22.440 --> 00:37:24.540
+So we have to find the area of the triangle.
+
+00:37:24.800 --> 00:37:25.900
+Well, we know how to do that now.
+
+00:37:27.720 --> 00:37:37.080
+So the area is approximately equal to one half of the area of a parallelogram
+
+00:37:37.080 --> 00:37:38.600
+that I could form from these vectors.
+
+00:37:39.820 --> 00:37:44.480
+And the area of a parallelogram is given by the magnitude of a cross-product.
+
+00:37:49.400 --> 00:37:56.200
+Okay. So I should say this is the area swept in time delta T.
+
+00:37:56.380 --> 00:37:59.060
+And you should think of delta T as relatively small.
+
+00:37:59.980 --> 00:38:02.700
+I mean, at the scale of a planet, that might still be a few days,
+
+00:38:02.700 --> 00:38:07.520
+but small compared to the overall trajectory.
+
+00:38:09.520 --> 00:38:15.500
+So now, let's remember that the amount they which we moved,
+
+00:38:15.940 --> 00:38:21.280
+delta R, is approximately equal to V times delta T.
+
+00:38:23.420 --> 00:38:28.620
+And just using the definition of a velocity vector.
+
+00:38:34.340 --> 00:38:35.680
+So let's use that.
+
+00:38:36.340 --> 00:38:44.260
+Well, sorry, so it's again approximately equal to R cross V magnitude times delta T.
+
+00:38:44.340 --> 00:38:47.460
+I can take out the delta T, which is a scalar.
+
+00:38:51.540 --> 00:38:55.360
+So now, what does it mean to say that area is swept at a constant rate?
+
+00:38:55.360 --> 00:38:58.380
+It means this thing is proportional to delta T.
+
+00:38:59.780 --> 00:39:10.680
+So that means, so the last says, in fact, that the length of this cross-product R cross V
+
+00:39:11.440 --> 00:39:12.500
+equals constant.
+
+00:39:19.800 --> 00:39:21.700
+R cross V has constant length.
+
+00:39:26.540 --> 00:39:28.160
+Any questions about that?
+
+00:39:31.080 --> 00:39:32.500
+No. Yes.
+
+00:39:34.460 --> 00:39:36.340
+Yes, let me try to explain that again.
+
+00:39:37.280 --> 00:39:43.660
+So what I'm claiming is that the length of the cross-product R cross V
+
+00:39:44.160 --> 00:39:49.140
+measures the rate at which area is swept by the position vector.
+
+00:39:50.040 --> 00:39:54.700
+I should say, with a factor of two, one half of this length is the rate at which area is swept.
+
+00:39:54.700 --> 00:39:55.980
+How do we see that?
+
+00:39:56.620 --> 00:40:03.340
+Well, let's take a small time interval delta T. In time delta T, our planet moves by V delta T.
+
+00:40:05.120 --> 00:40:09.780
+So if it moves by V delta T, it means that this triangle up there has two sides.
+
+00:40:09.940 --> 00:40:17.100
+One is the position vector R, the other one is V delta T. So it's area is given by one half
+
+00:40:17.100 --> 00:40:22.140
+of the magnitude of a cross-product. That's the formula we've seen for the area of the triangle
+
+00:40:22.140 --> 00:40:29.680
+in space. So the area is one half of the cross-product R and V delta T.
+
+00:40:31.320 --> 00:40:36.140
+Magnitude of the cross-product. So to say that the rate at which area is swept is constant
+
+00:40:36.140 --> 00:40:42.120
+means that these two are proportional, area divided by delta T is constant over time.
+
+00:40:42.620 --> 00:40:43.500
+And so this is constant.
+
+00:40:49.580 --> 00:40:51.820
+Now what about the other half of the law?
+
+00:40:55.040 --> 00:40:57.380
+Well, it says that the motion is no plane.
+
+00:41:00.600 --> 00:41:06.660
+And so we have a plane in which the movement takes place
+
+00:41:08.320 --> 00:41:12.600
+and it contains also the sun and it contains the trajectory.
+
+00:41:13.800 --> 00:41:15.580
+So let's think about that plane.
+
+00:41:16.760 --> 00:41:23.480
+Well, I claim that the position vector is in the plane. That's what we are saying.
+
+00:41:25.120 --> 00:41:27.680
+But there's another vector that I know is in the plane.
+
+00:41:28.240 --> 00:41:31.500
+Well, you could say the position vector at another time or at any time.
+
+00:41:32.220 --> 00:41:38.220
+But in fact, what's also true is that the velocity vector is in the plane.
+
+00:41:39.340 --> 00:41:43.660
+If I'm moving in a plane, then position and velocity are in there.
+
+00:41:44.400 --> 00:41:50.280
+So the plane of motion contains R and V.
+
+00:41:55.640 --> 00:42:00.980
+So what's the direction of the cross-product R cross V?
+
+00:42:02.500 --> 00:42:05.180
+Well, it's the direction that's perpendicular to this plane.
+
+00:42:11.220 --> 00:42:16.340
+So it's normal to the plane of motion.
+
+00:42:21.320 --> 00:42:26.780
+And that means now that actually we've put the two statements in there
+
+00:42:27.340 --> 00:42:32.640
+into a single form because we are saying R cross V has constant length and constant direction.
+
+00:42:34.940 --> 00:42:39.100
+In fact, in general, maybe I should say something about this.
+
+00:42:39.840 --> 00:42:45.200
+So if you just look at the position vector and the velocity vector for any motion at any given time,
+
+00:42:45.900 --> 00:42:48.000
+then together we determine some plane.
+
+00:42:48.400 --> 00:42:53.220
+And that's the plane that contains the origin, the point, and the velocity vector.
+
+00:42:54.000 --> 00:42:58.180
+If you want it's the plane in which the motion seems to be going at the given time.
+
+00:42:58.760 --> 00:43:02.800
+Now, of course, if your motion is not in a plane, then that plane will change.
+
+00:43:03.000 --> 00:43:07.700
+It's somehow the instant, you know, the plane in which the motion is taking place at the given time.
+
+00:43:08.680 --> 00:43:11.520
+And to say that the motion actually stays in that plane, however,
+
+00:43:12.040 --> 00:43:14.420
+means that this guy will not change direction.
+
+00:43:18.080 --> 00:43:18.960
+Okay, so...
+
+00:43:40.720 --> 00:43:51.960
+So Kepler's second law is actually equivalent to saying that R cross V equals constant, equals a constant vector.
+
+00:43:54.460 --> 00:43:56.300
+Okay, that's what the law says.
+
+00:43:59.600 --> 00:44:10.240
+So in terms of derivatives, it means d by dt of R cross V is the zero vector.
+
+00:44:16.000 --> 00:44:17.400
+Okay, now...
+
+00:44:17.400 --> 00:44:23.080
+So there's an interesting thing to know, which is that we can use the usual product rule for
+
+00:44:23.080 --> 00:44:27.180
+derivatives with vector expressions, with dot products or cross products.
+
+00:44:27.900 --> 00:44:32.560
+There's only one catch, which is that when we differentiate a cross product,
+
+00:44:33.320 --> 00:44:37.940
+we have to be careful that the guy on the left stays on the left, the guy on the right stays on the right.
+
+00:44:39.920 --> 00:44:45.320
+Okay, so if you know uv prime equals u prime v plus uv prime, then you're safe.
+
+00:44:45.540 --> 00:44:48.180
+If you know it as u prime v plus v prime u, then you're not safe.
+
+00:44:49.660 --> 00:44:51.280
+Okay, so that's the only thing to watch for.
+
+00:44:53.320 --> 00:44:53.760
+So...
+
+00:44:58.060 --> 00:45:06.320
+Product rule is okay for taking the derivative of a dot product,
+
+00:45:07.580 --> 00:45:10.000
+where you don't actually even need to be very careful about
+
+00:45:12.960 --> 00:45:17.440
+or their own things or derivative of a cross product, where you just need to be a little bit more careful.
+
+00:45:19.420 --> 00:45:34.320
+Okay, so now that we know that, we can write this as dr dt cross V plus r cross dv dt.
+
+00:45:37.840 --> 00:45:38.140
+Okay.
+
+00:45:40.220 --> 00:45:42.980
+Well, let's reformulate things slightly.
+
+00:45:42.980 --> 00:45:50.700
+So dr dt already has a name, in fact, that's V. Okay, that's what we call the velocity vector.
+
+00:45:51.400 --> 00:46:01.160
+So this is V cross V plus r cross, what is dv dt? That's the acceleration, a equals zero.
+
+00:46:07.420 --> 00:46:09.820
+Okay, so now what's the next step?
+
+00:46:10.620 --> 00:46:16.440
+Well, we know what V cross V is, because remember a vector of cross itself is always zero.
+
+00:46:19.120 --> 00:46:20.240
+Okay, so...
+
+00:46:25.620 --> 00:46:32.620
+So this is the same as r cross a equals zero, and that's the same as saying that,
+
+00:46:33.460 --> 00:46:38.060
+you know, the cross product of two vectors is zero exactly when the parallelogram that we form
+
+00:46:38.060 --> 00:46:43.520
+has no area. And the way in which that happens is if they're actually parallel to each other.
+
+00:46:45.040 --> 00:46:51.980
+So that means the acceleration is parallel to the position. Okay, so in fact what Kepler's
+
+00:46:54.640 --> 00:47:01.400
+second law says is that the acceleration is parallel to the position vector.
+
+00:47:02.260 --> 00:47:07.380
+And since we know that acceleration is caused by a force, that's equivalent to the fact that
+
+00:47:07.380 --> 00:47:18.160
+the gravitational force is parallel to the position vector. That means, well, you know,
+
+00:47:18.220 --> 00:47:24.680
+if you have a Sun here at the origin. And if you have your planet, well, the gravitational
+
+00:47:24.680 --> 00:47:33.220
+force caused by the Sun should go along this line. And thanks a lot, doesn't even say
+
+00:47:33.220 --> 00:47:37.360
+we're going towards the Sun or away from the Sun. Well, what we know now is that, of course,
+
+00:47:37.420 --> 00:47:42.400
+the attraction is towards the Sun. But Kepler's law would also be true, actually, if things were
+
+00:47:42.400 --> 00:47:48.400
+going away. So in particular, say, electric force also has this property of being towards the
+
+00:47:48.400 --> 00:47:54.140
+central charge. So actually, if you look at motion of charged particles in an electric field,
+
+00:47:54.400 --> 00:47:59.380
+caused by a point charged particle, it also satisfies Kepler's law. Satisfies the same law.
+
+00:48:00.700 --> 00:48:02.540
+Okay, that's the end for today. Thanks.
+

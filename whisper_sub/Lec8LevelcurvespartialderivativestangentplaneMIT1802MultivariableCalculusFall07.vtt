@@ -1,0 +1,1868 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.700 --> 00:00:05.940
+Your support will help MIT OpenCourseWare
+
+00:00:05.940 --> 00:00:08.760
+continue to offer high quality educational resources
+
+00:00:08.760 --> 00:00:09.340
+for free.
+
+00:00:09.920 --> 00:00:12.500
+To make a donation or to view additional materials
+
+00:00:12.500 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:21.980 --> 00:00:25.980
+So far, we've seen things about vectors, equations of planes,
+
+00:00:25.980 --> 00:00:27.420
+moments in space, and so on.
+
+00:00:27.520 --> 00:00:29.620
+Basically, we've done geometry in space.
+
+00:00:30.800 --> 00:00:33.220
+But calculus really is about studying functions.
+
+00:00:33.500 --> 00:00:36.040
+So now we are going to actually move on to studying
+
+00:00:36.040 --> 00:00:37.260
+functions of several variables.
+
+00:00:40.020 --> 00:00:44.700
+So this new unit that what we'll do over the next three weeks
+
+00:00:44.700 --> 00:00:47.320
+also will be about functions of several variables
+
+00:00:47.320 --> 00:00:48.260
+and their derivatives.
+
+00:00:52.960 --> 00:00:55.200
+So first of all, we should try to figure out
+
+00:00:55.200 --> 00:00:57.060
+how we are going to think about functions.
+
+00:00:58.480 --> 00:01:00.620
+So remember, if you have a function of one variable,
+
+00:01:04.200 --> 00:01:08.300
+that means you have the quantity that
+
+00:01:08.300 --> 00:01:11.840
+depends on one parameter, maybe f depends on a variable x.
+
+00:01:12.680 --> 00:01:15.420
+And for example, the function that you all know
+
+00:01:15.960 --> 00:01:17.920
+is f of x equals sine x.
+
+00:01:19.020 --> 00:01:20.780
+And the way we would represent that
+
+00:01:21.480 --> 00:01:23.680
+is using maybe by plotting the graph of a function.
+
+00:01:24.240 --> 00:01:28.480
+So the graph of a function we plot y equals f of x.
+
+00:01:30.720 --> 00:01:35.800
+And the case of a sine function that looks like this.
+
+00:01:39.000 --> 00:01:43.060
+So now, let's say that we have actually
+
+00:01:43.060 --> 00:01:44.100
+a function of two variables.
+
+00:01:53.680 --> 00:01:56.100
+So that means that the value of f depends actually
+
+00:01:56.100 --> 00:01:57.320
+on two different parameters.
+
+00:01:57.560 --> 00:01:59.720
+Say maybe variables are x and y,
+
+00:01:59.960 --> 00:02:01.400
+or they could have any names you want.
+
+00:02:05.500 --> 00:02:09.260
+So given values of the two parameters x and y,
+
+00:02:10.220 --> 00:02:15.940
+the function will give us a number that
+
+00:02:15.940 --> 00:02:18.980
+will call f of x, y that depends on x and y
+
+00:02:18.980 --> 00:02:20.260
+according to some formula.
+
+00:02:21.160 --> 00:02:22.440
+Not very surprising, so far.
+
+00:02:28.160 --> 00:02:38.980
+So for example, I can give you a function f of x, y,
+
+00:02:39.220 --> 00:02:41.600
+equals x squared plus y squared.
+
+00:02:44.540 --> 00:02:47.340
+And of course, as with functions of one variable,
+
+00:02:47.800 --> 00:02:50.080
+we don't need things to be defined everywhere.
+
+00:02:50.600 --> 00:02:52.120
+Sometimes there's a domain of definition.
+
+00:02:53.980 --> 00:02:56.140
+So this one is defined all the time.
+
+00:02:56.740 --> 00:03:01.280
+But if I tell you say f of x, y equals square root of y,
+
+00:03:02.040 --> 00:03:09.800
+well, this is only defined if y is nonnegative.
+
+00:03:10.720 --> 00:03:16.500
+Or if I tell you f of x, y equals one of x plus y,
+
+00:03:17.380 --> 00:03:23.380
+well, that's only defined if x plus y is not zero and so on.
+
+00:03:27.400 --> 00:03:30.720
+Now, so these are mathematical examples given
+
+00:03:30.720 --> 00:03:32.280
+by explicit formulas.
+
+00:03:33.560 --> 00:03:35.500
+And of course, there's physical examples.
+
+00:03:35.700 --> 00:03:37.620
+So examples coming from real life, for example,
+
+00:03:38.240 --> 00:03:42.200
+you can look at the temperature at a certain point
+
+00:03:42.200 --> 00:03:43.060
+on the surface of the earth.
+
+00:03:43.060 --> 00:03:45.820
+So you use maybe a longitude latitude that's x and y.
+
+00:03:46.360 --> 00:03:49.300
+And then you have f of x, y equals the temperature
+
+00:03:49.300 --> 00:03:49.940
+at that point.
+
+00:04:11.700 --> 00:04:15.340
+And in fact, because temperature depends also, maybe,
+
+00:04:15.440 --> 00:04:18.320
+on how high a qr depends on elevation.
+
+00:04:18.840 --> 00:04:20.740
+So it's actually a function of maybe x, y, z.
+
+00:04:21.720 --> 00:04:23.080
+And it also depends on time.
+
+00:04:23.400 --> 00:04:26.500
+So in fact, maybe it's a function of t, time, x, y, z
+
+00:04:26.500 --> 00:04:27.300
+coordinate in space.
+
+00:04:28.060 --> 00:04:29.740
+So you see that real world functions
+
+00:04:29.740 --> 00:04:31.120
+can depend on a lot of variables.
+
+00:04:32.120 --> 00:04:34.720
+So our goal will be to understand how to deal with it.
+
+00:04:57.180 --> 00:04:57.620
+OK.
+
+00:04:59.220 --> 00:05:02.920
+So now you'll see very soon that actually it's already
+
+00:05:02.920 --> 00:05:05.120
+tricky enough to picture a function of two variables.
+
+00:05:05.500 --> 00:05:07.540
+So we're going to focus on the case of functions of two
+
+00:05:07.540 --> 00:05:07.920
+variables.
+
+00:05:08.540 --> 00:05:10.800
+And then we'll see that if we have more than two variables,
+
+00:05:11.080 --> 00:05:12.680
+then it's harder to plot the function.
+
+00:05:12.800 --> 00:05:15.140
+We cannot draw what the graph looks like anymore.
+
+00:05:15.680 --> 00:05:17.260
+But the tools are the same.
+
+00:05:17.260 --> 00:05:20.440
+The nothing of the powerful derivatives, gradient vector,
+
+00:05:20.780 --> 00:05:21.100
+and so on.
+
+00:05:21.180 --> 00:05:24.240
+All the tools that we will develop work exactly the same way
+
+00:05:24.240 --> 00:05:26.220
+no matter how many variables you have.
+
+00:05:28.660 --> 00:05:38.900
+So I'll say for simplicity, we'll focus mostly on two,
+
+00:05:39.860 --> 00:05:42.460
+or sometimes three, variables.
+
+00:05:44.340 --> 00:05:47.660
+But it works the same in any number of variables.
+
+00:05:50.540 --> 00:05:51.060
+OK.
+
+00:05:51.260 --> 00:05:54.200
+So the first question is, how do we visualize a function
+
+00:05:54.200 --> 00:05:54.820
+of two variables?
+
+00:06:05.160 --> 00:06:10.420
+So the first thing we can do is try to hold the graph of f.
+
+00:06:10.420 --> 00:06:15.400
+So maybe I should say f, which is a function of two variables.
+
+00:06:20.440 --> 00:06:25.820
+So the first answer will be we can try to look at it's graph.
+
+00:06:26.560 --> 00:06:29.020
+And the idea is the same as with one variable.
+
+00:06:29.660 --> 00:06:31.360
+Namely, we look at all the possible values
+
+00:06:31.360 --> 00:06:32.900
+of the parameters x and y.
+
+00:06:33.060 --> 00:06:37.080
+And for each of them, we plot a point whose height
+
+00:06:37.680 --> 00:06:40.340
+is the value of a function at these parameters.
+
+00:06:41.480 --> 00:06:46.720
+So we'll plot, let's say, z equals f of x, y.
+
+00:06:47.180 --> 00:06:50.800
+And now that will become actually a surface in space.
+
+00:06:52.140 --> 00:06:56.400
+So for each value of x and y, here
+
+00:06:56.400 --> 00:06:59.840
+we have x, y in the x, y plane, then
+
+00:06:59.840 --> 00:07:05.040
+we'll plot the point in space at position x, y,
+
+00:07:05.040 --> 00:07:07.260
+and z equals f of x, y.
+
+00:07:09.360 --> 00:07:11.280
+And if we take all of these points together,
+
+00:07:11.980 --> 00:07:16.020
+they will give us some surface that sits in space.
+
+00:07:19.020 --> 00:07:19.580
+Yes?
+
+00:07:20.840 --> 00:07:23.540
+How do we visualize f of two variables?
+
+00:07:23.840 --> 00:07:25.180
+Oh, a function of two variables.
+
+00:07:26.800 --> 00:07:27.560
+Short-hand.
+
+00:07:28.920 --> 00:07:31.500
+Well, let's say how to visualize a function of two variables
+
+00:07:31.500 --> 00:07:32.000
+if you want.
+
+00:07:33.020 --> 00:07:33.580
+OK?
+
+00:07:38.060 --> 00:07:39.940
+So how do we do that concretely?
+
+00:07:40.120 --> 00:07:41.540
+Say that I give you a formula for f.
+
+00:07:41.740 --> 00:07:43.540
+How do we try to represent it?
+
+00:07:48.660 --> 00:07:50.280
+So let's do our first example.
+
+00:07:50.940 --> 00:07:53.860
+Let's say that I give you a function of x, y
+
+00:07:55.100 --> 00:07:56.260
+equals negative y.
+
+00:08:01.500 --> 00:08:03.780
+So it looks a little bit silly because it doesn't depend
+
+00:08:03.780 --> 00:08:05.280
+on x, but that's not a problem.
+
+00:08:05.420 --> 00:08:07.320
+It's still a valid function of x and y.
+
+00:08:11.040 --> 00:08:13.500
+Just happens to be constant with respect to x.
+
+00:08:14.040 --> 00:08:18.820
+So to draw the graph, we look at the surface in space
+
+00:08:19.460 --> 00:08:21.660
+defined by z equals minus y.
+
+00:08:21.840 --> 00:08:23.000
+What kind of surface is that?
+
+00:08:24.440 --> 00:08:25.660
+It's a plane, OK?
+
+00:08:26.220 --> 00:08:33.020
+And if we want to draw it, z equals minus y,
+
+00:08:33.540 --> 00:08:36.380
+we'll look, well, that's the y-axis, that's the x-axis,
+
+00:08:36.580 --> 00:08:37.260
+that's the z-axis.
+
+00:08:37.920 --> 00:08:39.920
+If I look at what happens in the y-z plane
+
+00:08:39.920 --> 00:08:42.920
+in the plane of a blackboard, it will just look like a line
+
+00:08:42.920 --> 00:08:44.620
+that goes downward with slope 1.
+
+00:08:45.300 --> 00:08:46.640
+So it will do this.
+
+00:08:49.080 --> 00:08:51.120
+And what happens if I change x?
+
+00:08:51.380 --> 00:08:53.120
+Well, if I change x, nothing happens
+
+00:08:53.120 --> 00:08:56.140
+because x doesn't appear in this equation.
+
+00:08:56.800 --> 00:08:59.120
+So in fact, if instead of setting x equal to 0,
+
+00:08:59.700 --> 00:09:00.720
+I set x equal to 1.
+
+00:09:00.720 --> 00:09:03.880
+I'm in front of a blackboard or minus 1 at the back.
+
+00:09:04.360 --> 00:09:06.640
+Well, it still looks exactly the same.
+
+00:09:07.360 --> 00:09:14.240
+So I have this plane that actually contains the x-axis
+
+00:09:15.460 --> 00:09:18.140
+and slopes downwards with slope 1.
+
+00:09:19.280 --> 00:09:20.420
+It's kind of hard to draw.
+
+00:09:22.020 --> 00:09:24.780
+Now you see immediately what the big problem with graphs
+
+00:09:24.780 --> 00:09:27.220
+will be, but these pictures are hard to read.
+
+00:09:29.680 --> 00:09:31.580
+But so that's our first one.
+
+00:09:33.980 --> 00:09:35.360
+Any questions over?
+
+00:09:38.240 --> 00:09:42.960
+OK, so let's say that we have a slightly more complicated
+
+00:09:42.960 --> 00:09:43.440
+function.
+
+00:09:43.620 --> 00:09:44.840
+How do we see it?
+
+00:09:45.440 --> 00:09:46.180
+So let's do another example.
+
+00:09:49.380 --> 00:09:54.620
+Let's say I give you f of xy equals 1 minus x squared minus
+
+00:09:54.620 --> 00:09:55.280
+y squared.
+
+00:09:57.620 --> 00:10:04.560
+So we should try to picture what the surface z equals 1 minus
+
+00:10:04.560 --> 00:10:05.960
+x squared minus y squared looks like.
+
+00:10:08.380 --> 00:10:09.920
+So how do we do that?
+
+00:10:10.120 --> 00:10:13.500
+Well, maybe you're actually very fast.
+
+00:10:13.640 --> 00:10:15.700
+And you've already figured out what it looks like.
+
+00:10:15.800 --> 00:10:19.600
+But if not, then we need to work piece by piece.
+
+00:10:21.840 --> 00:10:25.260
+So maybe it will help if we understand first the value
+
+00:10:25.860 --> 00:10:28.000
+of what it does in the plane of a blackboard.
+
+00:10:31.280 --> 00:10:34.440
+So if we look at it in the yz plane,
+
+00:10:36.140 --> 00:10:38.660
+that means we set x equal to 0.
+
+00:10:41.440 --> 00:10:45.680
+And then z becomes 1 minus y squared.
+
+00:10:46.300 --> 00:10:46.760
+What is that?
+
+00:10:47.820 --> 00:10:51.200
+It's a parabola pointing downward and starting at 1.
+
+00:10:51.800 --> 00:10:52.120
+OK?
+
+00:10:54.000 --> 00:10:57.940
+So we should throw maybe this downward parabola.
+
+00:11:00.020 --> 00:11:06.580
+Starts at 1 and it cuts the y axis at 1.
+
+00:11:07.540 --> 00:11:09.260
+When y is 1, that gives us 0.
+
+00:11:10.860 --> 00:11:11.460
+What do we see?
+
+00:11:11.660 --> 00:11:14.960
+Let's, you know, so we might have an idea of what it might
+
+00:11:14.960 --> 00:11:16.060
+look like or maybe not.
+
+00:11:16.740 --> 00:11:17.660
+Let's get more slices.
+
+00:11:18.540 --> 00:11:22.320
+Let's see what it does in the xz plane.
+
+00:11:23.120 --> 00:11:26.040
+This other vertical plane that's coming towards us.
+
+00:11:31.840 --> 00:11:35.520
+So in the xz plane, it means we set y equal to 0.
+
+00:11:36.400 --> 00:11:38.920
+And we get z equals 1 minus x squared.
+
+00:11:39.260 --> 00:11:41.620
+It's again a parabola coming downward.
+
+00:11:43.100 --> 00:11:43.220
+OK?
+
+00:11:43.400 --> 00:11:45.720
+So I'm going to try to throw a parabola
+
+00:11:46.600 --> 00:11:50.200
+that goes downward, but now to the front and to the back.
+
+00:11:52.440 --> 00:11:54.980
+So we are starting to have a slightly better idea.
+
+00:11:55.160 --> 00:11:57.260
+But we still don't know whether a cross section of this thing
+
+00:11:57.260 --> 00:12:01.020
+might be, you know, round square something else.
+
+00:12:01.280 --> 00:12:06.860
+So if we want more confirmation, we might want to also figure
+
+00:12:06.860 --> 00:12:12.180
+out maybe where does this surface intersect the xy plane?
+
+00:12:18.880 --> 00:12:22.920
+So we hit the xy plane when z equals 0.
+
+00:12:24.280 --> 00:12:29.340
+That means 1 minus x squared minus y squared should be 0.
+
+00:12:30.160 --> 00:12:32.820
+That becomes x squared plus y squared equals 1.
+
+00:12:33.320 --> 00:12:37.020
+That is a circle of radius 1.
+
+00:12:38.260 --> 00:12:39.180
+That's the unit circle.
+
+00:12:42.080 --> 00:12:49.880
+So that means that here we actually have the unit circle.
+
+00:12:50.480 --> 00:12:53.960
+And now you should imagine that you have this thing
+
+00:12:53.960 --> 00:12:56.920
+that when you slice it by a vertical plane looks like a downward
+
+00:12:56.920 --> 00:12:59.800
+parabola, and it's actually a surface of revolution.
+
+00:13:00.420 --> 00:13:02.020
+You can rotate it around the z axis.
+
+00:13:03.360 --> 00:13:05.840
+Now if you stare long enough at that equation,
+
+00:13:06.360 --> 00:13:09.100
+you'll actually see that yes, actually a posteriori,
+
+00:13:09.540 --> 00:13:11.680
+we know that it had to be like that.
+
+00:13:12.960 --> 00:13:15.340
+But see, so these are useful ways of trying
+
+00:13:15.340 --> 00:13:16.980
+to guess what the graph looks like.
+
+00:13:18.060 --> 00:13:20.000
+Of course, the other way is to just ask your computer
+
+00:13:20.000 --> 00:13:20.600
+to do it.
+
+00:13:21.180 --> 00:13:23.540
+And then, you know, you'll get that kind of formula.
+
+00:13:29.800 --> 00:13:31.260
+Well, I can leave it on if you want.
+
+00:13:35.880 --> 00:13:37.540
+No, because I plotted a different function
+
+00:13:37.540 --> 00:13:38.480
+that I will show you later.
+
+00:13:41.360 --> 00:13:42.360
+So it goes this way.
+
+00:13:42.920 --> 00:13:44.320
+I mean, if you want 1 minus, I mean,
+
+00:13:44.400 --> 00:13:45.220
+it's really going downward.
+
+00:13:45.920 --> 00:13:47.660
+Yes, I agree that the sheet is upside down.
+
+00:13:47.920 --> 00:13:49.320
+But that's because I plotted something else.
+
+00:13:55.620 --> 00:13:57.900
+So in fact, well, let me, yeah,
+
+00:13:58.080 --> 00:14:01.480
+so what I plotted in my computer was actually x squared plus y
+
+00:14:01.480 --> 00:14:02.900
+squared that looks like that.
+
+00:14:03.620 --> 00:14:05.740
+See, it's the same with a parabola going upward.
+
+00:14:07.800 --> 00:14:09.360
+If you want to see more examples,
+
+00:14:10.160 --> 00:14:12.760
+it has various examples to throw.
+
+00:14:13.720 --> 00:14:19.300
+Well, here's the graph of a function y squared minus x squared.
+
+00:14:20.160 --> 00:14:21.520
+See, so that one is kind of interesting.
+
+00:14:21.680 --> 00:14:22.540
+It looks like a saddle.
+
+00:14:23.440 --> 00:14:26.320
+If you look at it in the yz plane,
+
+00:14:27.000 --> 00:14:29.780
+then it's a parabola going up z equals y squared.
+
+00:14:31.620 --> 00:14:35.500
+And that's what we see to the left and to the right.
+
+00:14:35.860 --> 00:14:37.880
+But if you put it in the xz plane,
+
+00:14:38.220 --> 00:14:41.700
+then it's a parabola going downwards z equals minus x squared.
+
+00:14:44.280 --> 00:14:46.960
+So we have a parabola going downwards in one direction,
+
+00:14:47.180 --> 00:14:49.760
+upward in the other one, and together they form this surface.
+
+00:14:52.500 --> 00:14:54.300
+And of course, you can plot, you know,
+
+00:14:54.520 --> 00:14:56.340
+much more complicated functions.
+
+00:14:56.960 --> 00:15:00.420
+So this one, I, well, if you can read very small things,
+
+00:15:00.420 --> 00:15:02.120
+and you can see the formula, but it doesn't matter,
+
+00:15:02.260 --> 00:15:03.080
+just to show you that.
+
+00:15:04.180 --> 00:15:05.760
+You know, you can put the formula into a computer,
+
+00:15:05.780 --> 00:15:06.960
+and it will show you a picture.
+
+00:15:12.280 --> 00:15:12.620
+Okay.
+
+00:15:14.780 --> 00:15:18.640
+So that's pretty good, but I mean, you can see that
+
+00:15:18.640 --> 00:15:20.220
+it can get a bit cluttered,
+
+00:15:20.280 --> 00:15:22.360
+because maybe there's features that are hidden behind
+
+00:15:22.360 --> 00:15:23.740
+or maybe we have trouble seeing,
+
+00:15:23.900 --> 00:15:25.540
+if we don't have a computer, you know,
+
+00:15:25.540 --> 00:15:29.340
+that looks very readable, but this is kind of hard to visualize
+
+00:15:29.340 --> 00:15:29.820
+sometimes.
+
+00:15:30.780 --> 00:15:34.100
+So there's another way to plot functions of two variables.
+
+00:15:36.280 --> 00:15:38.400
+And that's called the contour plot.
+
+00:15:46.420 --> 00:15:49.780
+So the contour plot is a very elegant solution
+
+00:15:49.780 --> 00:15:53.640
+to the problem that it's difficult to draw space pictures
+
+00:15:54.100 --> 00:15:56.440
+on a sheet of paper or on a blackboard.
+
+00:15:57.220 --> 00:15:59.780
+So instead, let's try to represent a function of two variables
+
+00:16:00.400 --> 00:16:01.380
+by just a map.
+
+00:16:02.960 --> 00:16:05.380
+You know, the same way that when you walk around,
+
+00:16:05.580 --> 00:16:08.640
+you have actually geographical maps that fit on a piece of paper
+
+00:16:08.640 --> 00:16:10.860
+that tell you about what the real world looks like.
+
+00:16:13.200 --> 00:16:15.780
+So what the contour plot looks like
+
+00:16:18.880 --> 00:16:20.140
+is something like this.
+
+00:16:20.380 --> 00:16:22.200
+So it's an x, y, plus.
+
+00:16:23.040 --> 00:16:24.360
+And on it, you have a bunch of curves.
+
+00:16:25.180 --> 00:16:31.240
+And what the curves represent are the elevations on the graph.
+
+00:16:31.880 --> 00:16:34.920
+So for example, this curve might correspond to all the points
+
+00:16:34.920 --> 00:16:36.660
+where f of x, y equals 1.
+
+00:16:37.380 --> 00:16:40.000
+And that curve might be all the points
+
+00:16:40.600 --> 00:16:45.800
+where f equals 2 and f equals 3 and so on.
+
+00:16:47.100 --> 00:16:50.300
+So when you see this kind of plot, you're supposed to think
+
+00:16:50.300 --> 00:16:54.940
+that the graph of a function is somewhere sits in space
+
+00:16:54.940 --> 00:16:55.660
+above that.
+
+00:16:56.120 --> 00:16:59.360
+It's like a map telling you how high things are.
+
+00:17:01.700 --> 00:17:03.680
+And what you would want to do with a function
+
+00:17:03.680 --> 00:17:05.900
+really is be able to tell quickly what's the value
+
+00:17:05.900 --> 00:17:06.600
+at a given point.
+
+00:17:06.840 --> 00:17:08.540
+Well, let's say that I want to look at that point.
+
+00:17:09.100 --> 00:17:11.060
+I know that f is somewhere between 1 and 2.
+
+00:17:12.120 --> 00:17:15.080
+Actually, it's much faster to read than the graph.
+
+00:17:15.400 --> 00:17:17.340
+On the graph, I might have to look carefully
+
+00:17:17.340 --> 00:17:18.700
+and then measure things and so on.
+
+00:17:18.700 --> 00:17:20.780
+Here, I can just read the value of f
+
+00:17:21.460 --> 00:17:23.700
+by comparing with the nearby lines.
+
+00:17:26.260 --> 00:17:30.520
+OK, so let me try to make that more precise.
+
+00:17:30.920 --> 00:17:46.860
+So this shows all the points where f of x, y equals some fixed values,
+
+00:17:47.420 --> 00:17:48.560
+some fixed constants.
+
+00:17:52.700 --> 00:17:56.700
+And these constants typically are chosen at regular intervals.
+
+00:18:04.840 --> 00:18:07.520
+For example, here I chose 1, 2, 3,
+
+00:18:07.680 --> 00:18:09.980
+and they could continue with 0, minus 1 and so on.
+
+00:18:12.560 --> 00:18:20.280
+So one way to think about it, how does this relate to the graph?
+
+00:18:21.200 --> 00:18:25.440
+Well, that's the same thing as cutting,
+
+00:18:27.100 --> 00:18:34.900
+I may say, the slice of the graph by horizontal planes.
+
+00:18:40.020 --> 00:18:42.600
+So horizontal planes have equations
+
+00:18:42.600 --> 00:18:47.360
+of a form z equals some constant, z equals 0, z equals 1, z equals 2,
+
+00:18:47.460 --> 00:18:47.860
+and so on.
+
+00:18:49.220 --> 00:18:52.720
+So maybe the graph of my function will be
+
+00:18:52.720 --> 00:18:54.340
+some sort of blob out there.
+
+00:18:54.860 --> 00:18:59.400
+And if I slice it by the plane z equals 1,
+
+00:18:59.980 --> 00:19:04.540
+then I will get the level curve, which
+
+00:19:09.980 --> 00:19:12.820
+the points where f of x, y equals 1.
+
+00:19:14.200 --> 00:19:20.520
+And so that's called a level curve of f.
+
+00:19:24.080 --> 00:19:29.260
+And so we repeat the process with it is equals 2,
+
+00:19:29.920 --> 00:19:35.940
+and we get another level curve and so on.
+
+00:19:36.620 --> 00:19:40.060
+And then we squish them all on the map,
+
+00:19:40.220 --> 00:19:41.580
+and that's how we get the control plot.
+
+00:19:44.740 --> 00:19:49.100
+So each of these lines, imagine that this is like some mountain
+
+00:19:49.100 --> 00:19:50.460
+or something that you're hiking on.
+
+00:19:50.940 --> 00:19:53.100
+Each of these lines tells you how you could move
+
+00:19:53.900 --> 00:19:55.220
+to stay at a constant height.
+
+00:19:55.420 --> 00:19:57.540
+If you want to get to the other side of a mountain,
+
+00:19:57.720 --> 00:19:59.300
+but without ever going up or down,
+
+00:19:59.480 --> 00:20:00.920
+you just walk along that path.
+
+00:20:01.460 --> 00:20:03.480
+And it will get you there without effort.
+
+00:20:07.620 --> 00:20:10.280
+So in fact, if you have been talking about hiking
+
+00:20:10.280 --> 00:20:15.160
+on mountains, well, that's exactly what a topographical map
+
+00:20:16.020 --> 00:20:16.360
+is about.
+
+00:20:17.160 --> 00:20:18.320
+So I need to zoom a bit.
+
+00:20:20.940 --> 00:20:25.240
+So a topographic map, this one is from the US Geological Survey,
+
+00:20:27.700 --> 00:20:30.900
+shows you basically all the level curves
+
+00:20:30.900 --> 00:20:36.240
+of an altitude function on a piece of land.
+
+00:20:37.160 --> 00:20:40.240
+So you know that if you walk along these curves,
+
+00:20:40.580 --> 00:20:41.620
+you will stay at the same height.
+
+00:20:41.840 --> 00:20:43.520
+And you know that if you walk towards,
+
+00:20:44.260 --> 00:20:47.580
+oh, this don't have numbers, let me find a place with numbers.
+
+00:20:49.060 --> 00:20:52.640
+Here, there's a 500 in the middle.
+
+00:20:54.100 --> 00:20:57.320
+So you know that if you walk on the line that says 500,
+
+00:20:57.320 --> 00:21:00.080
+you stay always at 500 meters in elevation.
+
+00:21:00.760 --> 00:21:03.780
+If you walk towards the mountain that I think is below it,
+
+00:21:03.800 --> 00:21:06.380
+then you will go up and so on.
+
+00:21:06.500 --> 00:21:09.740
+So you can see, for example, here, there's a peak.
+
+00:21:10.620 --> 00:21:13.080
+And while here, there's a valley with actually the river in it.
+
+00:21:13.380 --> 00:21:15.380
+And the altitude goes down and then back up again
+
+00:21:15.380 --> 00:21:16.060
+on the other side.
+
+00:21:17.740 --> 00:21:20.460
+So that's an example of a contour plot of a function.
+
+00:21:20.620 --> 00:21:22.320
+Of course, we don't have a formula for that function,
+
+00:21:23.180 --> 00:21:24.500
+but we have a contour plot.
+
+00:21:24.960 --> 00:21:26.820
+And that's what we need actually to understand
+
+00:21:26.820 --> 00:21:27.820
+what's going on there.
+
+00:21:30.400 --> 00:21:31.420
+Okay, any questions?
+
+00:21:35.640 --> 00:21:35.900
+Nope.
+
+00:21:36.920 --> 00:21:38.940
+Okay, so another example of contour plots.
+
+00:21:39.840 --> 00:21:42.720
+Well, you've probably seen various versions of these,
+
+00:21:42.880 --> 00:21:43.680
+you know, temperature maps.
+
+00:21:46.320 --> 00:21:48.680
+So that's supposed to be how warm it is right now.
+
+00:21:51.460 --> 00:21:53.240
+So, you know, this one is color coded.
+
+00:21:53.340 --> 00:21:56.120
+Instead of having curves, it has all of these colors,
+
+00:21:56.380 --> 00:21:57.740
+but the effect is the same.
+
+00:21:57.740 --> 00:22:00.920
+If you look at the separations between consecutive colors,
+
+00:22:01.480 --> 00:22:03.640
+these are the level curves of a function
+
+00:22:03.640 --> 00:22:05.400
+that tells you the temperature at a given point.
+
+00:22:07.800 --> 00:22:11.100
+Okay, so these are examples of contour plots in real life.
+
+00:22:18.520 --> 00:22:19.920
+Okay, no questions?
+
+00:22:23.560 --> 00:22:24.040
+Nope.
+
+00:22:25.000 --> 00:22:26.360
+Okay, so basically one of the goals
+
+00:22:27.740 --> 00:22:29.980
+that one should try to achieve at this point
+
+00:22:29.980 --> 00:22:33.940
+is becoming familiar with the contour plot,
+
+00:22:34.820 --> 00:22:36.160
+sorry, the contour plot, the graph,
+
+00:22:36.500 --> 00:22:38.900
+and how to view and deal with functions.
+
+00:22:42.180 --> 00:22:42.260
+Oh.
+
+00:22:44.780 --> 00:22:45.100
+Oh, oh.
+
+00:22:46.080 --> 00:22:46.640
+Oh.
+
+00:22:47.420 --> 00:22:47.780
+Oh.
+
+00:22:47.980 --> 00:22:48.460
+Oh.
+
+00:22:48.720 --> 00:22:48.860
+Oh.
+
+00:22:49.520 --> 00:22:50.160
+Oh.
+
+00:22:50.280 --> 00:22:50.720
+Oh.
+
+00:22:51.640 --> 00:22:52.280
+Okay.
+
+00:22:53.800 --> 00:22:54.440
+So.
+
+00:22:59.340 --> 00:23:00.320
+Let's do an example.
+
+00:23:01.680 --> 00:23:03.040
+Well, let's do a couple of examples.
+
+00:23:04.180 --> 00:23:07.980
+So let's start with f of x, y equals minus y.
+
+00:23:08.200 --> 00:23:10.900
+I'm going to take the same two examples as there to start with.
+
+00:23:11.240 --> 00:23:12.680
+So that we, you know, we see a relationship
+
+00:23:13.520 --> 00:23:15.560
+between the graph and the contour plot.
+
+00:23:18.920 --> 00:23:20.360
+So let's try to plot it.
+
+00:23:23.400 --> 00:23:27.020
+So where's the level curve f equals zero for this one?
+
+00:23:30.300 --> 00:23:33.980
+Well, f is zero when y is zero.
+
+00:23:34.700 --> 00:23:36.520
+So that's the x axis.
+
+00:23:37.820 --> 00:23:39.680
+Okay, so that's the level zero.
+
+00:23:41.940 --> 00:23:43.380
+Where's the level one?
+
+00:23:43.780 --> 00:23:46.700
+Well, f is one when negative y is one.
+
+00:23:47.700 --> 00:23:50.220
+That means when y is negative one.
+
+00:23:50.860 --> 00:23:52.500
+So I'm going to minus one.
+
+00:23:53.320 --> 00:23:56.480
+And that will be where my level one is.
+
+00:23:57.600 --> 00:24:00.640
+And so on, f is two when y is negative two.
+
+00:24:01.220 --> 00:24:03.620
+f is negative one when y is one.
+
+00:24:04.880 --> 00:24:05.380
+And so on.
+
+00:24:06.840 --> 00:24:07.040
+Okay.
+
+00:24:07.760 --> 00:24:09.000
+Is that convincing?
+
+00:24:09.620 --> 00:24:10.700
+Do you see how we got that?
+
+00:24:13.160 --> 00:24:14.200
+Okay, let me do it again.
+
+00:24:15.100 --> 00:24:16.340
+I don't see anybody nodding.
+
+00:24:16.540 --> 00:24:17.520
+So that's kind of bad news.
+
+00:24:18.340 --> 00:24:21.800
+So if I want to know where's the level curve say one,
+
+00:24:22.700 --> 00:24:25.180
+I try to set f equal to one.
+
+00:24:25.660 --> 00:24:26.500
+Let's do this one.
+
+00:24:28.200 --> 00:24:36.720
+f equals one means that negative y is one means that y is minus one.
+
+00:24:37.480 --> 00:24:41.220
+And y equals minus one is this horizontal line on this chart.
+
+00:24:42.660 --> 00:24:42.820
+Okay.
+
+00:24:43.800 --> 00:24:44.820
+And same with the others.
+
+00:24:45.520 --> 00:24:49.420
+So you can see on this map that the value of a function doesn't depend on x.
+
+00:24:49.420 --> 00:24:51.560
+If you move parallel to the x axis, nothing happens.
+
+00:24:51.860 --> 00:24:55.900
+If you move in the y direction, it decreases at a constant rate.
+
+00:24:56.440 --> 00:24:58.480
+That's why the contours are evenly spaced.
+
+00:24:59.620 --> 00:25:01.520
+See how spaced apart there are.
+
+00:25:01.600 --> 00:25:03.440
+Tell us you actually how steep things are.
+
+00:25:06.040 --> 00:25:08.060
+So that goes from exactly to that picture.
+
+00:25:08.620 --> 00:25:11.980
+Except that here we draw x coming to the front and y to the right.
+
+00:25:12.120 --> 00:25:14.820
+So you have to rotate the map by 90 degrees to get to that.
+
+00:25:14.820 --> 00:25:20.380
+It's an unfortunate consequence of the usual way of plotting things in space.
+
+00:25:24.040 --> 00:25:32.200
+Okay. So these horizontal lines here correspond actually to horizontal lines.
+
+00:25:34.940 --> 00:25:35.820
+Here.
+
+00:25:43.160 --> 00:25:43.720
+Okay.
+
+00:25:44.880 --> 00:25:45.880
+Second example.
+
+00:25:46.320 --> 00:25:51.160
+Let's do one minus x squared minus y squared.
+
+00:25:54.480 --> 00:25:59.920
+Or maybe I'll provide it as one minus x squared plus y squared.
+
+00:26:00.040 --> 00:26:00.860
+It's really the same thing.
+
+00:26:05.660 --> 00:26:07.380
+So x, y.
+
+00:26:08.020 --> 00:26:10.860
+Let's see. Where is this function equal to zero?
+
+00:26:12.300 --> 00:26:15.740
+Well, we said f is zero on the unit circle.
+
+00:26:21.080 --> 00:26:21.400
+Okay.
+
+00:26:21.400 --> 00:26:23.760
+So the zero level.
+
+00:26:24.980 --> 00:26:26.660
+Well, let's say that this is my unit.
+
+00:26:33.020 --> 00:26:34.680
+That's where it's zero.
+
+00:26:36.300 --> 00:26:37.780
+What about f equals one?
+
+00:26:41.340 --> 00:26:46.500
+Well, that's one x squared plus y squared equals zero.
+
+00:26:47.760 --> 00:26:49.440
+Well, that's only going to be here.
+
+00:26:49.440 --> 00:26:52.840
+So, you know, that's just a single point.
+
+00:26:54.660 --> 00:26:56.940
+What about f equals minus one?
+
+00:26:59.480 --> 00:27:04.460
+That's one x squared plus y squared equals two.
+
+00:27:04.840 --> 00:27:09.960
+That's a circle of radius square root of two, which is about 1.4.
+
+00:27:10.320 --> 00:27:11.320
+So it's somewhere here.
+
+00:27:14.740 --> 00:27:18.320
+Then minus, so let's say, negative one, minus two.
+
+00:27:18.680 --> 00:27:20.740
+Similarly, will be x squared plus y squared equals three.
+
+00:27:21.000 --> 00:27:22.560
+Square root of three is about 1.7.
+
+00:27:24.680 --> 00:27:29.000
+And then minus three will be of radius two and so on.
+
+00:27:29.780 --> 00:27:33.580
+So what I want to show here is that, so that's minus three.
+
+00:27:34.000 --> 00:27:35.600
+That's minus two.
+
+00:27:36.240 --> 00:27:40.100
+What I want to show here is that they're getting closer and closer about.
+
+00:27:40.100 --> 00:27:44.140
+So first, it's concentric circles that tells us that we have a shape,
+
+00:27:44.620 --> 00:27:47.640
+that's a solid of the graph is going to be a surface of revolution.
+
+00:27:48.940 --> 00:27:50.400
+Things don't change if I rotate.
+
+00:27:51.760 --> 00:27:57.340
+And second, the level lines, the level curves are getting closer and closer to each other.
+
+00:27:57.440 --> 00:28:01.680
+That means it's getting steeper and steeper because I have to travel a shorter distance
+
+00:28:01.680 --> 00:28:04.400
+if I want my altitude to change by one.
+
+00:28:05.940 --> 00:28:10.540
+So this top here is kind of flat and then it gets steeper and steeper.
+
+00:28:10.980 --> 00:28:13.020
+And that's what we observed on that picture there.
+
+00:28:19.040 --> 00:28:24.120
+So just to show you a few more, what did I put my...
+
+00:28:26.480 --> 00:28:31.540
+So for x squared plus y squared, the contour plot looks like this.
+
+00:28:31.540 --> 00:28:32.660
+Maybe actually I'll make it.
+
+00:28:37.380 --> 00:28:40.120
+So it looks exactly the same as this one.
+
+00:28:40.860 --> 00:28:45.240
+But the difference is if you can see the numbers which are not there so you can see them.
+
+00:28:45.900 --> 00:28:49.640
+Then you would know that instead of decreasing as we move out,
+
+00:28:49.740 --> 00:28:51.480
+this one is increasing as we go out.
+
+00:28:52.360 --> 00:28:55.920
+So that's where we use actually the labels on the level curves that tell us
+
+00:28:56.540 --> 00:28:57.900
+whether things are going up or down.
+
+00:28:59.500 --> 00:29:01.880
+But the contour plot looks exactly the same.
+
+00:29:03.760 --> 00:29:10.480
+For the next one I had I think was y squared minus x squared.
+
+00:29:13.700 --> 00:29:16.240
+So the contour plot, well let me actually zoom out.
+
+00:29:17.900 --> 00:29:19.760
+So the contour plot looks like that.
+
+00:29:20.100 --> 00:29:24.640
+So the level curve corresponding to zero is actually two diagonal lines.
+
+00:29:25.500 --> 00:29:30.280
+And if you look on the plot, say that you started the saddle point in the middle
+
+00:29:30.280 --> 00:29:32.000
+and you try to stay at the same level.
+
+00:29:32.700 --> 00:29:34.060
+So it looks like a mountain pass.
+
+00:29:34.640 --> 00:29:40.560
+Well there's actually four directions from that point that you can go staying at the same height.
+
+00:29:41.060 --> 00:29:44.300
+And actually on the map they look exactly like these two cross-sing lines.
+
+00:29:46.260 --> 00:29:51.240
+So these are things that go on the side of the two mountains that are to the left and right
+
+00:29:51.240 --> 00:29:54.300
+and stay at the same height as the mountain pass.
+
+00:29:55.300 --> 00:30:00.280
+On the other hand if you go along the y direction to the left or to the right,
+
+00:30:01.180 --> 00:30:04.800
+then you go towards positive values.
+
+00:30:05.540 --> 00:30:08.900
+And if you go along the x axis, then you get towards negative values.
+
+00:30:12.600 --> 00:30:13.180
+Okay.
+
+00:30:15.740 --> 00:30:19.760
+The equation for the function was y squared minus x squared.
+
+00:30:23.880 --> 00:30:27.440
+So you can try to plot them by hand and confirm that it does look like that.
+
+00:30:27.820 --> 00:30:29.360
+But I trust my computer.
+
+00:30:31.740 --> 00:30:33.580
+And finally this one.
+
+00:30:38.240 --> 00:30:40.600
+Well, so the control plot looks a bit complicated.
+
+00:30:41.240 --> 00:30:43.000
+But you can see two things.
+
+00:30:43.260 --> 00:30:46.040
+In the middle you can see these two regions with these concentric circles,
+
+00:30:46.040 --> 00:30:50.360
+to leave a not really circles, but you know these closed curves that are concentric
+
+00:30:50.360 --> 00:30:53.340
+and they correspond to the two mountains.
+
+00:30:54.620 --> 00:30:57.720
+And then at some point in the middle we have a mountain pass.
+
+00:30:57.900 --> 00:31:00.740
+And there we see the two crossing lines again,
+
+00:31:00.740 --> 00:31:04.200
+like on the plot of y squared minus x squared.
+
+00:31:05.500 --> 00:31:11.000
+And so at this saddle point here, if we go north or south,
+
+00:31:11.060 --> 00:31:14.620
+then we'll go down on either side to the valley.
+
+00:31:15.040 --> 00:31:18.140
+And if we go east or west, then we'll go towards the mountains.
+
+00:31:18.480 --> 00:31:18.920
+We'll go up.
+
+00:31:21.560 --> 00:31:24.320
+Okay. Does that make sense a little bit?
+
+00:31:26.280 --> 00:31:29.240
+Okay. So, no, reading plots is not easy,
+
+00:31:29.500 --> 00:31:32.540
+but hopefully we'll get used to it very soon.
+
+00:31:43.820 --> 00:31:48.200
+Okay. So actually let's say one.
+
+00:31:48.940 --> 00:31:52.140
+Okay. So I want to point out one thing.
+
+00:31:52.140 --> 00:31:56.300
+The control plot tells us actually what happens when we move,
+
+00:31:56.720 --> 00:31:58.040
+when we change x and y.
+
+00:32:00.780 --> 00:32:05.060
+So if I change value of x and y,
+
+00:32:05.140 --> 00:32:08.020
+that means I'm moving east, west, or north, south on the map.
+
+00:32:08.500 --> 00:32:11.600
+And then I can ask myself, does the value of a function increase
+
+00:32:11.600 --> 00:32:13.600
+or decrease in each of these situations?
+
+00:32:14.740 --> 00:32:18.680
+Well, that's the kind of thing that the control plot can tell me very quickly.
+
+00:32:22.140 --> 00:32:24.140
+So,
+
+00:32:50.550 --> 00:32:50.950
+okay.
+
+00:32:54.650 --> 00:32:54.710
+So,
+
+00:32:54.790 --> 00:32:57.350
+okay. So say, for example, that I have a piece of control plot
+
+00:32:58.510 --> 00:33:00.010
+that looks like that.
+
+00:33:00.010 --> 00:33:02.530
+Maybe this is f equals 1,
+
+00:33:03.810 --> 00:33:07.550
+and this is f equals 2, and here this is f equals 0.
+
+00:33:08.990 --> 00:33:15.950
+And let's say that I start at a point, say, at this point.
+
+00:33:17.450 --> 00:33:19.830
+Okay. So here I have x 0, y 0.
+
+00:33:20.350 --> 00:33:24.250
+And the question I might ask myself is if I change x or y,
+
+00:33:24.350 --> 00:33:25.130
+how does f change?
+
+00:33:26.110 --> 00:33:33.190
+Well, the control plot tells me that if x increases,
+
+00:33:34.010 --> 00:33:40.730
+and I keep y constant, then what happens to f and x, y.
+
+00:33:42.190 --> 00:33:44.650
+Well, it will increase because if I move to the right,
+
+00:33:45.170 --> 00:33:47.630
+then I go from 1 to a value bigger than 1.
+
+00:33:47.850 --> 00:33:52.330
+I don't know exactly how much, but I know that somewhere between 1 and 2.
+
+00:33:52.330 --> 00:33:53.050
+It's more than 1.
+
+00:33:54.550 --> 00:33:58.390
+If x decreases, then f decreases.
+
+00:34:00.330 --> 00:34:05.710
+And similarly, I can tell that if y increases, then f,
+
+00:34:08.310 --> 00:34:12.550
+well, looks like if I increase y, then f will also increase.
+
+00:34:13.210 --> 00:34:18.130
+And if y decreases, then f decreases.
+
+00:34:19.450 --> 00:34:22.530
+And that's the kind of qualitative analysis
+
+00:34:22.530 --> 00:34:24.610
+that we can do easily from the control plot.
+
+00:34:25.350 --> 00:34:27.610
+But maybe we'd like to actually be more precise than that,
+
+00:34:27.730 --> 00:34:31.070
+and tell how fast f changes if I change x or y.
+
+00:34:32.450 --> 00:34:32.550
+Okay.
+
+00:34:32.990 --> 00:34:36.870
+So to find a rate of change, that's exactly where we use derivatives.
+
+00:34:45.230 --> 00:34:47.410
+So we're going to have to deal with,
+
+00:34:48.190 --> 00:34:49.150
+partial derivatives.
+
+00:34:49.910 --> 00:34:52.690
+So I will explain to you soon why partial.
+
+00:35:00.990 --> 00:35:05.230
+So let me just remind you first, if you have a function of one variable,
+
+00:35:12.050 --> 00:35:16.430
+then, so let's say f of x, then you have a derivative,
+
+00:35:16.730 --> 00:35:20.110
+f prime of x is also called the fdx.
+
+00:35:21.250 --> 00:35:29.330
+And it's defined as a limit when delta x goes to 0 of the change in f.
+
+00:35:32.730 --> 00:35:34.110
+Sorry, it's not going to fit.
+
+00:35:34.490 --> 00:35:35.470
+I need to go to the next line.
+
+00:35:38.510 --> 00:35:45.710
+It's going to be the limit as delta x goes to 0 of the rate of change.
+
+00:35:46.710 --> 00:35:50.030
+So the change in f between x and x plus delta x,
+
+00:35:50.630 --> 00:35:52.750
+divided by delta x.
+
+00:35:53.430 --> 00:35:56.450
+Sometimes you find delta f for the change in f,
+
+00:35:56.450 --> 00:35:58.010
+divided by delta x.
+
+00:35:58.770 --> 00:36:04.590
+When you take the limit of this rate of increase as delta x goes to 0.
+
+00:36:05.070 --> 00:36:06.770
+Now, of course, if you have a formula for f,
+
+00:36:06.990 --> 00:36:08.550
+then you know, at least you would know,
+
+00:36:10.190 --> 00:36:14.690
+I suspect most of you know how to actually take the derivative of a function,
+
+00:36:15.250 --> 00:36:16.130
+you know, from its formula.
+
+00:36:18.630 --> 00:36:19.090
+So,
+
+00:36:25.330 --> 00:36:26.890
+now, how do we do that?
+
+00:36:27.750 --> 00:36:28.290
+Oh, sorry.
+
+00:36:28.510 --> 00:36:31.010
+And I have to tell you also what this means on the graph.
+
+00:36:31.570 --> 00:36:33.390
+So if I plot the graph of a function,
+
+00:36:34.410 --> 00:36:38.690
+then I have my point x, and here I have half of x.
+
+00:36:39.150 --> 00:36:40.490
+How do I see the derivative?
+
+00:36:41.210 --> 00:36:46.330
+Well, I look at the tangent line to the graph.
+
+00:36:47.330 --> 00:36:52.250
+And the slope of a tangent line is f prime of x.
+
+00:36:54.430 --> 00:36:54.430
+
+
+00:36:56.110 --> 00:36:59.850
+And, trove in advertising, not every function has a derivative.
+
+00:37:00.770 --> 00:37:04.530
+You have functions that are not, you know, regular enough to actually have a derivative.
+
+00:37:05.370 --> 00:37:10.630
+So, in this class, we are not going to actually worry too much about differentiability.
+
+00:37:10.890 --> 00:37:14.570
+But it's good at least to be aware that you can't always take a derivative.
+
+00:37:20.550 --> 00:37:23.290
+So, yes, and what else do I want to remind you of?
+
+00:37:23.970 --> 00:37:26.510
+Well, we also have an approximation formula,
+
+00:37:34.030 --> 00:37:35.970
+which says that, you know,
+
+00:37:36.690 --> 00:37:41.430
+if we have the value of f at some point x zero,
+
+00:37:41.430 --> 00:37:43.750
+and then we want to find the value at a nearby point,
+
+00:37:46.350 --> 00:37:54.450
+x close to x zero, then our best guess is that it's f of x zero plus the derivative,
+
+00:37:54.830 --> 00:37:59.330
+f prime at x zero times delta x, or if you want x minus x zero.
+
+00:38:01.870 --> 00:38:03.950
+Is this kind of familiar to you?
+
+00:38:06.010 --> 00:38:09.530
+Yeah, I mean, maybe with different notations, maybe you called that delta x or something.
+
+00:38:09.530 --> 00:38:12.730
+Maybe you called that x zero plus h, or something.
+
+00:38:12.970 --> 00:38:17.310
+But it's the usual approximation formula using the derivative.
+
+00:38:18.330 --> 00:38:22.190
+If you put more terms, then you get the dreaded Taylor approximation.
+
+00:38:22.530 --> 00:38:23.790
+But I know that you guys don't like.
+
+00:38:26.230 --> 00:38:37.910
+Okay, so the question is, how do we do the same for a function of two variables,
+
+00:38:37.910 --> 00:38:39.170
+f of x y?
+
+00:38:43.530 --> 00:38:48.550
+So, the difficulty there is we can change x, or we can change y, or we can change both.
+
+00:38:49.710 --> 00:38:55.210
+And presumably, the manner in which f changes will be different depending on whether we change x or y.
+
+00:38:55.850 --> 00:38:59.670
+So, that's why we have several different notherons of the derivative.
+
+00:39:26.670 --> 00:39:30.150
+So, we have a notation.
+
+00:39:35.010 --> 00:39:37.190
+So, this is a curly D.
+
+00:39:37.690 --> 00:39:40.670
+And it is not a straight D, and it is not a delta.
+
+00:39:41.110 --> 00:39:43.930
+It's a D that kind of curls backwards like that.
+
+00:39:44.590 --> 00:39:46.910
+And the way you read this symbol is partial.
+
+00:39:48.050 --> 00:39:51.270
+So, it's the special notation for partial derivatives.
+
+00:39:52.390 --> 00:39:57.850
+And essentially what it means is we are going to do a derivative where we care about only one variable at a time.
+
+00:39:57.850 --> 00:40:00.590
+That's why it's partial. It's missing the other variables.
+
+00:40:02.070 --> 00:40:06.770
+Okay, so a function of several variables doesn't have a usual derivative.
+
+00:40:06.830 --> 00:40:09.910
+It has only partial derivatives for each variable.
+
+00:40:11.490 --> 00:40:23.990
+So, the partial derivative, the partial f, partial x at x, 0, y, 0 is defined to be the limit
+
+00:40:23.990 --> 00:40:41.970
+when I take a small change in x delta x of the change in f divided by delta x.
+
+00:40:43.070 --> 00:40:46.230
+Okay, so here I'm actually not changing y at all.
+
+00:40:46.690 --> 00:40:50.550
+I'm just changing x and looking at the rate of change with respect to x.
+
+00:40:51.490 --> 00:40:54.230
+And I have the same with respect to y.
+
+00:40:54.950 --> 00:40:57.270
+Partial f partial y is the limit.
+
+00:40:57.750 --> 00:41:07.070
+So, I should say at a point x, 0, y, 0 is the limit as delta y tends to 0 of.
+
+00:41:07.630 --> 00:41:10.290
+So, this time I keep x the same, but I change y.
+
+00:41:10.290 --> 00:41:21.710
+Okay, so that's the definition of a partial derivative.
+
+00:41:22.670 --> 00:41:26.770
+And we say that a function is differentiable if these things exist.
+
+00:41:28.570 --> 00:41:36.130
+Okay, so most of the functions we'll see are differentiable and we'll actually learn how to compute their partial derivatives without having to do this.
+
+00:41:36.130 --> 00:41:39.950
+Of course, we'll just use the usual methods for computing derivatives.
+
+00:41:41.190 --> 00:41:46.630
+So, in fact, I claim you already know how to take partial derivatives.
+
+00:41:48.110 --> 00:41:50.210
+So, let's see what it means geometrically.
+
+00:41:59.750 --> 00:42:06.150
+So, geometrically, my function can be represented by its curve.
+
+00:42:10.310 --> 00:42:14.050
+And, you know, I fix some point x, 0, y, 0.
+
+00:42:14.450 --> 00:42:27.650
+And then I'm going to ask myself what happens if I change the value of, well, if I change the value of x, keeping y constant.
+
+00:42:28.310 --> 00:42:33.290
+So, if I keep y constant and change x, it means I'm moving forward or backward parallel to the x-axis.
+
+00:42:33.970 --> 00:42:43.010
+So, that determines for me a vertical plane parallel to the x-axis plane when I fix y equals constant.
+
+00:42:46.990 --> 00:42:59.070
+And now, if I slice the graph by that, I will get some curve that goes, you know, it's a slice of the graph of f.
+
+00:43:01.310 --> 00:43:06.150
+And now, what I want to find is how f depends on x if I keep y constant.
+
+00:43:06.410 --> 00:43:09.050
+That means it's the rate of change if I move along this curve.
+
+00:43:09.770 --> 00:43:25.590
+So, in fact, if I look at the slope of this thing, so if I draw the tangent line to this slice, then the slope will be partial f of our partial x.
+
+00:43:27.370 --> 00:43:31.010
+I think I have a better picture of that somewhere.
+
+00:43:32.130 --> 00:43:33.030
+Yes, here it is.
+
+00:43:38.430 --> 00:43:40.990
+Okay, that's the same picture, just with different colors.
+
+00:43:42.170 --> 00:43:49.490
+So, I take the graph, I slice it by a vertical plane, I get a curve, and now I take the slope of that curve, and that gives me the partial derivative.
+
+00:43:54.370 --> 00:44:04.490
+And finish. Let me just tell you how, sorry, I should say, partial f, partial y is the same thing that's slicing now by a plane that goes in the y-z directions.
+
+00:44:05.150 --> 00:44:16.130
+So, I fix x equals constant, that means I slice by a plane that's parallel to the blackboard, I get a curve, and I look at the slope of that curve.
+
+00:44:18.150 --> 00:44:23.050
+Okay, so it's just a matter of forgetting one variable, setting it constant and looking at the other one only.
+
+00:44:24.210 --> 00:44:26.510
+So, how to compute these things?
+
+00:44:29.010 --> 00:44:35.410
+Well, we actually, to find, oh, there's a piece of notation I haven't told you yet.
+
+00:44:35.990 --> 00:44:46.710
+So, another notation you will see, I think this is what one uses a lot in physics, and this is what one uses a lot in applied math, which is the same thing as physics, but with different notations.
+
+00:44:47.850 --> 00:44:54.510
+Okay, so, there's two different notations, partial f, partial x, or f, subscript x, and they're the same thing.
+
+00:44:55.510 --> 00:45:12.370
+Well, we just treat y as a constant, and x as variable, and vice versa if we want to find partial with respect to y.
+
+00:45:12.370 --> 00:45:15.470
+So, let me just finish with one quick example.
+
+00:45:17.610 --> 00:45:27.150
+Let's see if I give you f of x, y equals x cubed y plus y squared, then partial at partial x.
+
+00:45:28.290 --> 00:45:32.450
+Well, let's take the derivative. So, here it's x cubed times a constant.
+
+00:45:33.170 --> 00:45:41.170
+Derivative of x cubed is three times x squared times the constant plus what's the derivative of y squared?
+
+00:45:41.970 --> 00:45:49.330
+Zero, because it's a constant. If you do instead partial f, partial y, then this is actually a constant times y.
+
+00:45:49.510 --> 00:45:56.010
+The derivative of y is one, so that's just x cubed, and the derivative of y squared is two y.
+
+00:45:57.250 --> 00:46:01.370
+Okay, so it's fairly easy. You just have to keep remembering which one is a variable, which one is not.
+
+00:46:03.610 --> 00:46:11.090
+Okay, so, more about this next time, and we'll also learn about maxima and minima in several variables.
+

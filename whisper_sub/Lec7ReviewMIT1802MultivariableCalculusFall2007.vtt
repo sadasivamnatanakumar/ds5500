@@ -1,0 +1,1475 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.720 --> 00:00:05.940
+Your support will help MIT OpenCourseWare
+
+00:00:05.940 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.880 --> 00:00:12.500
+To make a donation or to view additional materials
+
+00:00:12.500 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:22.240 --> 00:00:27.940
+OK, let me just tell you first about the list of topics.
+
+00:00:27.940 --> 00:00:30.460
+So basically, the list of topics is simple.
+
+00:00:30.640 --> 00:00:31.320
+It's everything.
+
+00:00:37.020 --> 00:00:40.920
+So I mean, everything we've seen in class so far
+
+00:00:41.620 --> 00:00:43.600
+is on the exam.
+
+00:00:45.220 --> 00:00:49.800
+But let me just remind you of the main topics that we've seen.
+
+00:00:51.200 --> 00:00:55.920
+So first of all, we learned about vectors, how to use them.
+
+00:00:57.200 --> 00:00:59.000
+And dot product.
+
+00:01:02.700 --> 00:01:05.220
+So at this point, you should probably
+
+00:01:05.220 --> 00:01:08.560
+know that the dot product of two vectors
+
+00:01:11.240 --> 00:01:14.640
+is obtained by summing products of components.
+
+00:01:15.140 --> 00:01:19.400
+And geometrically, it's the length of A times the length of B
+
+00:01:20.320 --> 00:01:23.440
+times the cosine of the angle between them.
+
+00:01:30.660 --> 00:01:37.580
+And in particular, we can use dot product to measure angles
+
+00:01:40.100 --> 00:01:44.140
+by solving for cosine theta in this equality.
+
+00:01:45.200 --> 00:01:51.300
+And most importantly, to detect whether two vectors are
+
+00:01:51.300 --> 00:01:52.400
+perpendicular to each other.
+
+00:01:54.000 --> 00:01:55.780
+Two vectors are perpendicular when
+
+00:01:55.780 --> 00:01:56.880
+their dot product is 0.
+
+00:01:59.740 --> 00:02:01.440
+Any questions about that?
+
+00:02:06.680 --> 00:02:10.860
+Is everyone reasonably happy with dot product by now?
+
+00:02:14.640 --> 00:02:16.540
+I see a stand silence.
+
+00:02:17.180 --> 00:02:18.780
+Nobody happy with dot product so far?
+
+00:02:19.980 --> 00:02:20.580
+OK.
+
+00:02:25.820 --> 00:02:26.260
+OK.
+
+00:02:28.060 --> 00:02:31.460
+So if you want to look at, on practice 1A,
+
+00:02:32.820 --> 00:02:36.680
+a good example of a typical problem with dot product
+
+00:02:36.680 --> 00:02:37.900
+would be problem 1.
+
+00:02:40.640 --> 00:02:41.620
+And let's see.
+
+00:02:41.760 --> 00:02:43.180
+We are going to go over the practice exam
+
+00:02:43.180 --> 00:02:44.960
+when I'm done writing this list of topics.
+
+00:02:45.600 --> 00:02:47.860
+I think probably we actually will skip this problem,
+
+00:02:47.860 --> 00:02:50.100
+because I think most of you know how to do it.
+
+00:02:50.880 --> 00:02:54.280
+And if not, then you should run for help from me or from you,
+
+00:02:54.760 --> 00:02:58.040
+a resident instructor to figure out how to do it.
+
+00:03:01.580 --> 00:03:04.620
+So the second topic that we saw was cross product.
+
+00:03:09.880 --> 00:03:11.700
+So when you have two vectors in space,
+
+00:03:19.660 --> 00:03:22.160
+you can just form a cross product by computing
+
+00:03:22.860 --> 00:03:23.660
+this determinant.
+
+00:03:25.380 --> 00:03:28.860
+So implicitly, we should also know about determinants.
+
+00:03:33.300 --> 00:03:35.560
+By that I mean two by two and three by three.
+
+00:03:35.760 --> 00:03:38.180
+Don't hover reading on larger ones,
+
+00:03:38.680 --> 00:03:40.540
+even if you're interested.
+
+00:03:41.040 --> 00:03:42.020
+There won't be on the test.
+
+00:03:44.220 --> 00:03:46.280
+And applications of cross product
+
+00:03:47.860 --> 00:03:47.900
+are not on the test.
+
+00:03:51.760 --> 00:03:54.400
+So for example, finding the area
+
+00:03:55.680 --> 00:03:58.660
+of a triangle or a parallelogram in space.
+
+00:04:00.340 --> 00:04:02.280
+So if you have a triangle in space
+
+00:04:03.040 --> 00:04:04.980
+with sides A and B,
+
+00:04:07.440 --> 00:04:11.340
+then its area is one half of the length of a cross B.
+
+00:04:11.580 --> 00:04:13.060
+Because the length of a cross B
+
+00:04:14.380 --> 00:04:16.980
+is length A, length B, sine theta,
+
+00:04:17.360 --> 00:04:19.840
+which is the same as the area of a parallelogram
+
+00:04:19.840 --> 00:04:20.860
+formed by these two vectors.
+
+00:04:24.960 --> 00:04:28.600
+And the other application of cross product
+
+00:04:28.600 --> 00:04:31.620
+is to find a vector that's perpendicular to two given vectors.
+
+00:04:31.980 --> 00:04:35.820
+So in particular, to find the vector that's normal to a plane
+
+00:04:35.820 --> 00:04:38.520
+and then find the equation of a plane.
+
+00:04:41.000 --> 00:04:45.520
+So another application is finding the normal vector
+
+00:04:48.700 --> 00:04:50.040
+to a plane
+
+00:04:57.880 --> 00:05:05.080
+and using that finding the equation of a plane.
+
+00:05:05.080 --> 00:05:10.920
+So basically, remember to find the equation of a plane,
+
+00:05:12.940 --> 00:05:15.680
+A x plus B y plus C z equals D,
+
+00:05:16.400 --> 00:05:19.840
+what you need is the normal vector to the plane.
+
+00:05:26.800 --> 00:05:28.920
+And the components of the normal vector
+
+00:05:28.920 --> 00:05:31.180
+are exactly the coefficients that go into this.
+
+00:05:31.980 --> 00:05:36.140
+And we've seen an argument for why that happens to be the case.
+
+00:05:37.640 --> 00:05:40.160
+So to find a normal vector to a plane,
+
+00:05:41.840 --> 00:05:44.300
+typically what we'll do is we'll take two vectors
+
+00:05:44.300 --> 00:05:47.060
+that lie in the plane and we'll take the cross product
+
+00:05:47.060 --> 00:05:51.460
+and the cross product will automatically be perpendicular to both of them.
+
+00:05:55.700 --> 00:05:59.220
+So we are going to see an example of that
+
+00:05:59.220 --> 00:06:03.900
+when we look at problem 5 on practice 1A.
+
+00:06:04.380 --> 00:06:05.500
+I think we'll try to do that one.
+
+00:06:11.560 --> 00:06:16.860
+So another application, well, let me just mention it as a topic
+
+00:06:16.860 --> 00:06:17.980
+that goes along with this one.
+
+00:06:20.280 --> 00:06:23.000
+So we've seen also about equations of lines
+
+00:06:26.980 --> 00:06:34.140
+and how to find where a line intersects a plane.
+
+00:06:42.040 --> 00:06:44.640
+So just to refresh your memories,
+
+00:06:45.820 --> 00:06:49.360
+the equation of a line, well, we'll be looking at parametric equations
+
+00:06:49.360 --> 00:06:51.480
+to know the paradigm equation of a line,
+
+00:06:51.480 --> 00:06:53.340
+we need to know a point on the line,
+
+00:06:53.900 --> 00:06:58.040
+and we need to know a vector that's parallel to the line.
+
+00:07:00.780 --> 00:07:05.120
+And if we know a point on the line and a vector along the line,
+
+00:07:05.820 --> 00:07:08.580
+then we can express the parametric equations
+
+00:07:08.580 --> 00:07:13.840
+for the motion of a point that's moving on the line,
+
+00:07:14.820 --> 00:07:18.400
+moving, actually starting at this point, at time 0,
+
+00:07:26.360 --> 00:07:26.960
+and moving with velocity V.
+
+00:07:37.460 --> 00:07:40.740
+So to put things in symbolic form,
+
+00:07:41.440 --> 00:07:44.380
+you'll get a position of that point by starting with a position
+
+00:07:45.020 --> 00:07:49.980
+at time 0 and adding t times the vector V.
+
+00:07:50.700 --> 00:07:53.080
+So that gives you x, y, and z in terms of t.
+
+00:07:56.140 --> 00:07:58.280
+And that's how we represent lines.
+
+00:08:00.820 --> 00:08:04.200
+Okay, so we'll look at problem 5 in a bit,
+
+00:08:04.440 --> 00:08:08.660
+but any general questions about these topics?
+
+00:08:14.680 --> 00:08:15.040
+No.
+
+00:08:16.680 --> 00:08:18.100
+Oh, do you have a question?
+
+00:08:20.440 --> 00:08:21.720
+Do we have to know Taylor's series?
+
+00:08:22.480 --> 00:08:23.180
+That's a good question.
+
+00:08:23.800 --> 00:08:24.580
+No, not on the exam.
+
+00:08:25.300 --> 00:08:25.460
+Okay.
+
+00:08:32.760 --> 00:08:37.280
+Okay, so Taylor's series is something you should be aware of,
+
+00:08:37.280 --> 00:08:40.300
+generally speaking, it will be useful for you in real life,
+
+00:08:40.400 --> 00:08:42.820
+at least if you do, you know, probably not when, you know,
+
+00:08:42.900 --> 00:08:43.900
+not when you go to the supermarket,
+
+00:08:44.120 --> 00:08:47.300
+but if you solve engineering problems, you will need Taylor's series.
+
+00:08:48.080 --> 00:08:50.420
+Okay, so it would be good not to forget them entirely,
+
+00:08:50.880 --> 00:08:55.360
+but on the 18 or two exams, they probably won't be there.
+
+00:08:57.600 --> 00:08:57.960
+Okay.
+
+00:09:01.340 --> 00:09:03.340
+Let me continue with more topics.
+
+00:09:03.340 --> 00:09:06.300
+And then we can see if you can think of other topics that
+
+00:09:06.300 --> 00:09:08.360
+should or should not be on the exam.
+
+00:09:10.940 --> 00:09:18.940
+So third topic would be matrices linear systems,
+
+00:09:23.880 --> 00:09:24.820
+inverting matrices.
+
+00:09:33.420 --> 00:09:36.920
+So I know that most of you have calculators that can invert matrices,
+
+00:09:37.240 --> 00:09:40.220
+but still you're expected at this point to know how to do it by hand.
+
+00:09:41.020 --> 00:09:45.500
+If you've looked at the practice tests, both of them have a problem that asks you to invert a matrix,
+
+00:09:45.500 --> 00:09:46.800
+or at least do part of that.
+
+00:09:47.560 --> 00:09:52.540
+And so it's very likely that tomorrow there will be a problem like that as well.
+
+00:09:54.720 --> 00:09:57.720
+Okay, in general, when a kind of problem is on both practice tests,
+
+00:09:57.840 --> 00:10:00.960
+it's a good indication that it might be there also on the actual exam.
+
+00:10:03.800 --> 00:10:06.920
+Unfortunately, not with the same matrix, so you can't learn the answer by heart.
+
+00:10:09.340 --> 00:10:14.860
+Okay, so another thing that we've learnt
+
+00:10:18.140 --> 00:10:21.440
+about matrices, so I should say this is going to be problem-free
+
+00:10:24.540 --> 00:10:30.440
+on the test and we're on the practice test, on the actual test too, I think, actually.
+
+00:10:34.420 --> 00:10:36.720
+And anyway, so we'll come back to it later.
+
+00:10:37.340 --> 00:10:39.240
+But so a couple of things that you should remember,
+
+00:10:39.240 --> 00:10:44.680
+so if you have a system of the form AX equals B, then there's two cases.
+
+00:10:45.600 --> 00:10:51.640
+If a determinant of A is not zero, then that means you can compute the inverse matrix,
+
+00:10:52.260 --> 00:10:56.000
+and you can just solve by taking A inverse times B.
+
+00:10:57.540 --> 00:11:02.540
+And the other case is when the determinant of A is zero,
+
+00:11:03.280 --> 00:11:10.880
+and then there's either no solution or there's infinitely many solutions.
+
+00:11:17.340 --> 00:11:21.200
+And if, so in particular, if you know that there's a solution, for example,
+
+00:11:21.580 --> 00:11:24.700
+if B is zero, there's always an obvious solution, AX equals zero,
+
+00:11:25.560 --> 00:11:27.800
+then you will actually have infinitely many.
+
+00:11:28.580 --> 00:11:32.960
+In general, we don't really know how to tell whether it's no solution or infinitely many.
+
+00:11:42.000 --> 00:11:44.000
+Okay, questions about that?
+
+00:11:47.480 --> 00:11:47.780
+Yes?
+
+00:11:47.780 --> 00:11:49.940
+What do we have to look at?
+
+00:11:51.680 --> 00:11:55.520
+Where do we have to know how to rotate vectors and so on?
+
+00:11:57.600 --> 00:12:03.640
+Not in general, but you might still want to remember how to rotate a vector in the plane by 90 degrees,
+
+00:12:03.980 --> 00:12:07.320
+because that's been useful when we've done problems about parametric equations,
+
+00:12:07.960 --> 00:12:09.260
+which is what I'm coming to next.
+
+00:12:10.960 --> 00:12:14.880
+But so what we've seen about rotation matrices, that was a homework part B problem,
+
+00:12:15.540 --> 00:12:19.960
+you're not supposed to remember by heart everything that was in part B of a homework.
+
+00:12:21.540 --> 00:12:24.240
+Okay, it's a good idea to have some vague knowledge,
+
+00:12:24.240 --> 00:12:28.700
+because it's useful culture, I would say, useful background for later on your lives.
+
+00:12:28.960 --> 00:12:34.440
+But no, I won't ask you by heart to know what is the formula for rotation matrix.
+
+00:12:38.760 --> 00:12:44.560
+Okay, and then we come to last but not least,
+
+00:12:44.780 --> 00:12:49.800
+the problem of finding parametric equations.
+
+00:12:59.660 --> 00:13:04.840
+And in particular, possibly by decomposing the position vector into a sum of simpler vectors.
+
+00:13:05.920 --> 00:13:13.320
+So you've seen quite an evil example of that on the last problem set with this picture of that.
+
+00:13:13.700 --> 00:13:17.600
+Maybe by now you've had some nightmares about.
+
+00:13:19.240 --> 00:13:25.680
+Okay, so anyway, the one on the exam will certainly be easier than that.
+
+00:13:26.200 --> 00:13:30.780
+Okay, but as you've seen, whatever.
+
+00:13:36.380 --> 00:13:41.420
+I mean, you should know basically how to analyze a motion that's being described to you
+
+00:13:41.420 --> 00:13:47.320
+and express it in terms of vectors and then figure out what the parametric equation will be.
+
+00:13:48.340 --> 00:13:52.620
+Now, again, it won't be as complicated on the exam as the one on the problem set.
+
+00:13:54.360 --> 00:13:56.420
+But there's a couple of those on the practice exams,
+
+00:13:56.780 --> 00:14:00.020
+and that gives you an idea of what's realistically expected of you.
+
+00:14:04.400 --> 00:14:08.460
+And now, once we have parametric equations for motion,
+
+00:14:08.460 --> 00:14:13.880
+so that means when we know how to find the position vector as a function of a parameter,
+
+00:14:13.880 --> 00:14:19.980
+maybe of time, then we've seen also about velocity and acceleration,
+
+00:14:23.640 --> 00:14:29.320
+which are the vectors obtained by taking the first and second derivatives of the position vector.
+
+00:14:31.700 --> 00:14:43.040
+And so one topic that I will add in there as well is somehow how to prove things about motions
+
+00:14:43.040 --> 00:14:46.380
+by differentiating vectors identities.
+
+00:14:50.600 --> 00:14:59.840
+So, one example of that, for example, is when we try to look at Kepler's law in class last time,
+
+00:15:00.600 --> 00:15:03.020
+we looked at Kepler's second law of planetary motion,
+
+00:15:03.780 --> 00:15:09.600
+and we reduced it to a calculation about the derivative of the cross-product R cross V.
+
+00:15:10.220 --> 00:15:14.200
+So now, on the exam, you don't need to know the details of Kepler's law,
+
+00:15:14.340 --> 00:15:18.140
+but you need to be able to manipulate vector quantities a bit in the way that we did.
+
+00:15:21.440 --> 00:15:28.340
+And so, on practice exam 1A, you have actually an RG of problems on this topic,
+
+00:15:28.340 --> 00:15:33.060
+because you have problems 2, 4, and 6, all about parametric motions.
+
+00:15:35.940 --> 00:15:40.140
+Probably 2 more over will not be free-distinct problems about parametric motions.
+
+00:15:42.580 --> 00:15:44.140
+But maybe a couple of them.
+
+00:15:47.340 --> 00:15:49.840
+Okay, so I think that's basically the list of topics.
+
+00:15:51.000 --> 00:15:57.440
+Anybody spot something that I've forgotten to put on the exam or questions about something that should or should not be there?
+
+00:15:58.700 --> 00:15:59.240
+Okay, you go first.
+
+00:16:08.880 --> 00:16:12.220
+How about parametrizing weird trigonometric functions?
+
+00:16:12.640 --> 00:16:14.100
+I'm not sure what you mean by that.
+
+00:16:18.660 --> 00:16:26.780
+Well, so parametric curves will be, you know, you need to know how to parametrize motions,
+
+00:16:26.800 --> 00:16:28.960
+and that involves a little bit of trigonometrics.
+
+00:16:29.560 --> 00:16:33.880
+You know, when we've seen these problems about rotating wheels, say the cycloid, for example, and so on,
+
+00:16:33.920 --> 00:16:36.160
+there's a bit of cosine and sine and so on.
+
+00:16:37.400 --> 00:16:38.780
+I think not much more than that.
+
+00:16:38.920 --> 00:16:41.240
+You won't need obscure trigonometric identities.
+
+00:16:43.980 --> 00:16:44.680
+Okay, you're next.
+
+00:16:48.020 --> 00:16:50.420
+Any proofs on the exam are just like problems.
+
+00:16:50.700 --> 00:16:54.440
+Well, a problem can ask you to show things.
+
+00:16:55.340 --> 00:16:57.460
+It's not going to be a complicated proof.
+
+00:16:57.460 --> 00:16:59.420
+Okay, if there's proofs, they're going to be fairly easy.
+
+00:16:59.920 --> 00:17:05.580
+If you look at practice 1A, the last problem does have a little bit of proof.
+
+00:17:05.920 --> 00:17:08.820
+You know, 6B says show that blah, blah, blah.
+
+00:17:09.120 --> 00:17:12.460
+But as you will see, it's not a difficult kind of proof.
+
+00:17:12.920 --> 00:17:16.100
+Okay, so I'm about the same.
+
+00:17:17.280 --> 00:17:17.400
+Yes?
+
+00:17:25.020 --> 00:17:28.920
+Are there equations of 3D shapes that we should know at this point?
+
+00:17:29.620 --> 00:17:33.060
+So, well, we should know definitely a lot about equations of planes and lines.
+
+00:17:34.040 --> 00:17:42.040
+And you should probably know that a sphere center that the origin is the set of points where, you know, distance to the center is equal to the radius of a sphere.
+
+00:17:42.040 --> 00:17:44.140
+We don't need more at this point.
+
+00:17:44.640 --> 00:17:49.520
+Okay, as the semester goes on, we'll start seeing cones and things like that.
+
+00:17:49.620 --> 00:17:57.380
+But at this point, planes, lines, and, you know, maybe you need to know about circles and spheres, but nothing beyond that.
+
+00:18:00.180 --> 00:18:01.080
+More questions?
+
+00:18:03.180 --> 00:18:03.480
+Yes?
+
+00:18:08.540 --> 00:18:14.680
+So, if there's a formula that you have proved in the homework, then yes, you can assume it on the test.
+
+00:18:15.100 --> 00:18:25.840
+Maybe you want to write on your test that, you know, this is a formula you've seen in homework, just so that we know that you remember it from homework and not from, you know, looking over your neighbor's shoulder or whatever.
+
+00:18:27.680 --> 00:18:30.840
+But yes, it's okay to use things that you know generally speaking.
+
+00:18:31.340 --> 00:18:36.580
+That being said, you know, for example, there's a, probably there will be a linear system to solve.
+
+00:18:36.960 --> 00:18:41.100
+It will say on the exam you're supposed to solve that using matrices, not by elimination.
+
+00:18:42.020 --> 00:18:50.800
+Okay, so there's things like that, you know, if the exam, if the problem says, you know, solve by using vector methods or things like that, then try to use, you know, at least a vector somewhere.
+
+00:18:52.720 --> 00:18:55.460
+But in general, you're allowed to use things that you know.
+
+00:18:58.160 --> 00:18:58.600
+Yes?
+
+00:19:04.960 --> 00:19:08.300
+Will we need to go from parametric equations to x, y equations?
+
+00:19:13.220 --> 00:19:15.660
+Well, let's say only if it's very easy, okay?
+
+00:19:15.660 --> 00:19:21.860
+If I give you parametric curve, sine T, comma, sine T, then you should be able to observe that it's on the line y equals x.
+
+00:19:23.720 --> 00:19:24.700
+Not beyond that.
+
+00:19:27.040 --> 00:19:27.120
+Okay.
+
+00:19:28.540 --> 00:19:28.920
+Yes?
+
+00:19:31.660 --> 00:19:33.200
+Do we have to use, sorry?
+
+00:19:35.980 --> 00:19:42.500
+Yes. I don't know if you will have to use it, but certainly you should know about a little bit about the unit tension vector.
+
+00:19:42.500 --> 00:19:52.100
+So just remember, the main thing to know is that the unit tension vector is velocity divided by speed.
+
+00:19:56.900 --> 00:19:59.380
+I mean, there's not much more to it when you think about it.
+
+00:20:04.500 --> 00:20:04.940
+Yes?
+
+00:20:09.560 --> 00:20:15.020
+Ah, Kepler's law. Well, you're allowed to use it if it helps you if you find a way to squeeze it in.
+
+00:20:15.840 --> 00:20:22.000
+You don't have to know Kepler's law in detail. You just have to know how to reproduce the general steps.
+
+00:20:22.280 --> 00:20:30.140
+So if I tell you across this constant, you might be expected to know what to do with that.
+
+00:20:30.140 --> 00:20:35.680
+But I would say, you don't need to know Kepler's law.
+
+00:20:35.820 --> 00:20:42.280
+You need to know the kind of stuff that we saw when we derived it, such as how to take the derivative of a dot product or a cross product.
+
+00:20:42.860 --> 00:20:43.700
+That's basically the answer.
+
+00:20:52.340 --> 00:20:55.880
+Okay. I don't see any questions anymore. So you're raising your hand.
+
+00:21:02.000 --> 00:21:02.400
+Yes?
+
+00:21:03.200 --> 00:21:06.740
+How to calculate the distance between two lines and distance between two planes?
+
+00:21:07.080 --> 00:21:10.440
+Well, you've seen, probably recently, that it's quite painful to do in general.
+
+00:21:11.260 --> 00:21:13.800
+And no, I don't think that will be on the exam by itself.
+
+00:21:14.940 --> 00:21:17.860
+You need to know how to compute the distance between two points.
+
+00:21:18.080 --> 00:21:19.200
+That certainly you need to know.
+
+00:21:19.760 --> 00:21:23.940
+And also, maybe, you know, how to find the component of a vector in a certain direction.
+
+00:21:26.480 --> 00:21:29.620
+Okay. And that's about it, I would say.
+
+00:21:29.740 --> 00:21:31.740
+I mean, you know, the more you know about things, the better.
+
+00:21:31.940 --> 00:21:38.060
+But, you know, things that come up on top of these are the problem sets.
+
+00:21:38.060 --> 00:21:42.440
+So, you know, the problem sets are interesting things, but they're usually not needed on the exams.
+
+00:21:47.440 --> 00:21:53.400
+Okay. If you have more questions than you're not raising your hand, high enough for me to see it.
+
+00:21:54.940 --> 00:21:59.780
+Okay. So, let's try to go a bit over this practice exam 1a.
+
+00:22:00.240 --> 00:22:04.760
+Hopefully, everybody has it. If you don't have it, hopefully your neighbor has it.
+
+00:22:05.380 --> 00:22:08.620
+If you don't have it, your neighbor doesn't have it, then please raise your hand.
+
+00:22:09.200 --> 00:22:09.920
+I have a couple of.
+
+00:22:44.800 --> 00:22:46.940
+Okay. Okay.
+
+00:22:47.380 --> 00:22:53.460
+So, oh, see, more people need it over there.
+
+00:22:53.620 --> 00:23:01.080
+Well, okay. I mean, if your neighbor has it, then just follow and then for now.
+
+00:23:01.080 --> 00:23:03.640
+But, okay, I think there's a few people behind you over there.
+
+00:23:04.700 --> 00:23:08.280
+Okay. I'll stop handing them out now. If you really need one, it's on the website.
+
+00:23:09.160 --> 00:23:11.300
+Or it will be here at the end of class.
+
+00:23:13.100 --> 00:23:16.060
+Okay. So, let's see.
+
+00:23:22.960 --> 00:23:26.840
+Well. So, I think we are going to just skip problems 1 and 2,
+
+00:23:26.840 --> 00:23:30.680
+because they are pretty straightforward and I hope that you know how to do them.
+
+00:23:32.900 --> 00:23:34.140
+If, I mean, I don't know.
+
+00:23:35.720 --> 00:23:38.880
+Okay. Let's see. How many of you have no problem with problem 1?
+
+00:23:40.860 --> 00:23:43.840
+Okay. Oh. How many of you have trouble with problem 1?
+
+00:23:45.480 --> 00:23:48.120
+Okay. How many of you haven't raised your hands?
+
+00:23:50.880 --> 00:23:53.880
+Okay. How many of you have trouble with problem 2?
+
+00:23:56.000 --> 00:24:00.340
+Okay. So, I think, well, if you have questions about those, maybe you should just come see me at the end,
+
+00:24:00.720 --> 00:24:02.660
+because that's probably more efficient that way.
+
+00:24:03.620 --> 00:24:06.000
+So, I'm going to start right away with problem 3, actually.
+
+00:24:12.000 --> 00:24:15.560
+Okay. So, problem 3 says we have a matrix given to us.
+
+00:24:19.580 --> 00:24:24.720
+1, 3, 2, 2, 0, minus 1, 1, 1, 0.
+
+00:24:25.460 --> 00:24:31.080
+And it tells us the determinant of A is 2 and A inverse equals something,
+
+00:24:31.600 --> 00:24:35.040
+but we are missing two values, A and B, and we are supposed to find them.
+
+00:24:36.180 --> 00:24:42.920
+Okay. So, that means we need to do the steps of the algorithm to find the inverse of A.
+
+00:24:42.920 --> 00:25:00.940
+Okay. So, we are told that the A inverse is 1 half of 1 minus 1,
+
+00:25:01.660 --> 00:25:07.980
+minus 2, 5, 2, 2, minus 6, and here there's two unknown values.
+
+00:25:09.200 --> 00:25:16.980
+So, remember to invert a matrix, first we compute the minus, then we flip some signs to get the cofactors,
+
+00:25:17.760 --> 00:25:20.400
+then we transpose, and finally we divide by the determinant.
+
+00:25:21.840 --> 00:25:26.720
+Okay. So, let's try to be smart about this. Do we need to compute all 9 minus?
+
+00:25:27.620 --> 00:25:32.700
+No. We only need to compute two of them, right? So, which minus do we need to compute?
+
+00:25:34.840 --> 00:25:42.000
+Here and here, or here and here. Yeah, that looks better because remember we're going to transpose things,
+
+00:25:42.480 --> 00:25:48.280
+so these two guys will end up here. Okay. So, I claim we should compute these two minors.
+
+00:25:49.660 --> 00:25:54.440
+And we'll see if that's good enough. You know, if you start doing others and you find that they don't end up in the right place,
+
+00:25:54.440 --> 00:25:59.360
+then just do more. But you don't need to spend your time computing all 9 of them.
+
+00:25:59.360 --> 00:26:05.460
+You know, if you're wide about not doing it right, then of course you can maybe compute one or two more to double check your answers.
+
+00:26:07.140 --> 00:26:14.240
+But let's just do those that we think are needed. So, the matrix of minus,
+
+00:26:15.880 --> 00:26:23.580
+so the one that goes in the middle position is obtained by deleting this row and that column.
+
+00:26:23.580 --> 00:26:32.720
+And we're left with a determinant of 3 to 1 0. 3 times 0 minus 1 times 2 should be minus 2.
+
+00:26:37.660 --> 00:26:43.460
+Then the one for the lower left corner, we delete the last row and the first column.
+
+00:26:43.640 --> 00:26:52.580
+We're left with 3 to 0 minus 1. 3 times minus 1 is negative 3 minus 0. We're still left with negative 3.
+
+00:26:56.420 --> 00:27:02.320
+Okay. Is that step clear for everyone? Good.
+
+00:27:03.800 --> 00:27:09.600
+Then we need to go to co-factors. That means we need to change signs. Okay.
+
+00:27:09.600 --> 00:27:23.160
+So the rule is, we change signs in basically these four places.
+
+00:27:23.620 --> 00:27:29.800
+So that means we'll be left with positive 2 and negative 3.
+
+00:27:32.100 --> 00:27:34.000
+Then we take the transpose.
+
+00:27:39.940 --> 00:27:47.060
+That means, well, these two, so the first column will copy into the first row.
+
+00:27:47.700 --> 00:27:52.400
+So this guy we still don't know, but here we'll have 2 and here we'll have minus 3.
+
+00:27:54.100 --> 00:28:01.640
+And finally, we have to divide by the determinant of a.
+
+00:28:03.280 --> 00:28:08.260
+And here, well, we are actually told that determinant of a is 2.
+
+00:28:08.420 --> 00:28:12.440
+So we'll divide by 2. But there's already a 1 half here. So actually it's done for us.
+
+00:28:13.100 --> 00:28:21.940
+Okay. So the values that we'll put up there are going to be 2 and negative 3.
+
+00:28:31.320 --> 00:28:34.360
+Now, let's see how we use that to solve a linear system.
+
+00:28:37.000 --> 00:28:41.580
+So if we have to solve a linear system, a x equals b.
+
+00:28:45.340 --> 00:28:50.080
+So then, well, the matrix is invertible.
+
+00:28:50.320 --> 00:28:55.600
+The determinant is not 0. So we can certainly write x equals a inverse b.
+
+00:28:56.780 --> 00:29:02.000
+So we have to multiply, oh, does that 1 half? 1, 2, negative 3,
+
+00:29:02.000 --> 00:29:12.180
+minus 1, minus 2, 5, 2, 2, minus 6 times b is 1, negative 2, 1.
+
+00:29:14.460 --> 00:29:19.620
+Well, so remember to do a matrix multiplication, you take the rows in here, the columns in here,
+
+00:29:19.620 --> 00:29:21.160
+and you do dot products. Okay.
+
+00:29:21.200 --> 00:29:26.840
+So the first entry will be 1 times 1 plus 2 times minus 2 plus minus 3 times 1.
+
+00:29:26.840 --> 00:29:30.620
+1 minus 4 minus 3 should be negative 6.
+
+00:29:32.740 --> 00:29:35.380
+Except I still have, of course, a 1 half in front.
+
+00:29:38.840 --> 00:29:43.820
+Then minus 1 plus 4 plus 5 should be 8.
+
+00:29:45.220 --> 00:29:50.440
+2 minus 4 minus 6 should be negative 8.
+
+00:29:50.440 --> 00:29:54.500
+So that will simplify to minus 3 for minus 4.
+
+00:29:57.280 --> 00:29:58.980
+Any questions about that?
+
+00:30:04.280 --> 00:30:09.680
+Okay. So now we come to part c, which is the harder part of this problem.
+
+00:30:10.880 --> 00:30:18.400
+So it says, let's take this matrix a, and let's replace the 2 in the upper right corner by some other number c.
+
+00:30:18.400 --> 00:30:27.420
+So that means we look at 1, 3, c to 0 minus 1, 1, 1, 0.
+
+00:30:29.1000 --> 00:30:32.460
+And, well, let's call that m.
+
+00:30:34.080 --> 00:30:39.220
+And first asks you to find a value of c for which this matrix is not invertible.
+
+00:30:40.560 --> 00:30:40.740
+Okay.
+
+00:30:40.740 --> 00:30:44.480
+So m is not invertible.
+
+00:30:48.240 --> 00:30:52.900
+Exactly when the determinant of m is 0.
+
+00:30:53.320 --> 00:30:54.440
+So let's compute the determinant.
+
+00:31:02.540 --> 00:31:14.460
+Well, we should do 1 times that smaller determinant, which is 0 minus negative 1 is 1 times 1.
+
+00:31:15.240 --> 00:31:21.800
+Minus 3 times that determinant, which is 0 plus 1 is 1.
+
+00:31:21.800 --> 00:31:29.220
+And then we have plus c times the lower left determinant, which is 2 times 1 minus 0 is 2.
+
+00:31:30.740 --> 00:31:35.780
+Okay. So that gives us 1 minus 2 plus 2c.
+
+00:31:36.140 --> 00:31:43.800
+So I want minus 3 is negative 2 plus 2c that's 0 1 c equals 1.
+
+00:31:44.580 --> 00:31:48.600
+Okay. So for c equals 1, this matrix is not invertible.
+
+00:31:49.100 --> 00:31:50.780
+For other values, it is invertible.
+
+00:31:54.060 --> 00:31:58.120
+Okay. So it goes on to say, well, let's look at this value of c.
+
+00:31:58.560 --> 00:32:00.720
+And let's look at the system m x equals 0.
+
+00:32:02.260 --> 00:32:05.940
+Okay. So I'm going to put that value 1 in there.
+
+00:32:08.640 --> 00:32:09.160
+Okay.
+
+00:32:11.820 --> 00:32:23.280
+Okay. So now if we look at m x equals 0, well, this has either no solution or infinitely many solutions.
+
+00:32:23.840 --> 00:32:25.240
+But here there's an obvious solution.
+
+00:32:26.180 --> 00:32:28.640
+Namely, x equals 0 is a solution.
+
+00:32:29.240 --> 00:32:32.380
+Okay. Maybe let me rewrite it more geometrically.
+
+00:32:34.300 --> 00:32:49.260
+That's x plus 3y plus z equals 0 to x minus z equals 0 and x plus y equals 0.
+
+00:32:50.300 --> 00:32:53.240
+Okay. So you see we have an obvious solution, 0, 0, 0.
+
+00:32:53.560 --> 00:32:56.280
+But we have more solutions. How do we find more solutions?
+
+00:32:57.040 --> 00:33:02.120
+Well, x, y, z is a solution if it's in all three of these planes.
+
+00:33:03.860 --> 00:33:05.460
+That's a way to think about it.
+
+00:33:06.280 --> 00:33:15.300
+So probably we're actually in this situation where in fact we have three planes
+
+00:33:19.940 --> 00:33:24.120
+that are all passing for the origin and all parallel to a same line.
+
+00:33:24.120 --> 00:33:25.920
+And so that would be the line of solutions.
+
+00:33:27.440 --> 00:33:31.780
+So to find it, actually we can think of this as follows.
+
+00:33:32.200 --> 00:33:39.160
+So the first observation is that actually in this situation we don't need all three equations.
+
+00:33:39.540 --> 00:33:45.460
+Okay. The fact that the system has infinitely many solutions means that actually one of the equations is redundant.
+
+00:33:46.440 --> 00:33:53.420
+So if you look at it for long enough, you see for example, if you multiply three times this equation
+
+00:33:53.420 --> 00:33:56.560
+and you subtract that one, then you will get the first equation.
+
+00:33:58.080 --> 00:34:04.300
+Three times x plus y minus 2x minus z will be x plus 3y plus z.
+
+00:34:05.320 --> 00:34:07.600
+Now we don't actually need to see that to solve the problem.
+
+00:34:07.740 --> 00:34:11.640
+I'm just showing you that's what happens when you have a matrix with determinant 0.
+
+00:34:11.800 --> 00:34:15.880
+One of the equations somehow is, you know, a duplicate of the others.
+
+00:34:16.900 --> 00:34:19.240
+We don't actually need to figure out how exactly.
+
+00:34:21.140 --> 00:34:28.140
+But so what that means is really we want to solve, let's say start with two of the equations.
+
+00:34:29.000 --> 00:34:47.200
+So to find the solution, we can observe that the first equation says actually that x, y, z dot product with one three one equals zero.
+
+00:34:47.200 --> 00:34:56.700
+And the second equation says x, y, z dot product with two zero negative one is zero.
+
+00:34:57.060 --> 00:35:05.520
+And the third equation, if we really want to keep it, says we should be also having this.
+
+00:35:07.980 --> 00:35:15.000
+Now these equations, now if we're done like this, they're just saying we want an x, y, z that's perpendicular to these vectors.
+
+00:35:15.000 --> 00:35:20.120
+So let's forget this one. And let's just look at these two.
+
+00:35:20.560 --> 00:35:26.780
+They're saying we want a vector that's perpendicular to these two given vectors.
+
+00:35:27.140 --> 00:35:29.920
+How do we find that? We do the cross product.
+
+00:35:33.800 --> 00:35:49.480
+So to find x, y, z perpendicular to one three one and two zero one two zero negative one, we take the cross product.
+
+00:35:54.200 --> 00:35:58.200
+And that will give us something. Well, let me just give you the answer.
+
+00:35:58.320 --> 00:36:02.240
+I'm sure you know how to do cross products by now. I don't have the answer here.
+
+00:36:02.360 --> 00:36:03.380
+So I guess I have to do it.
+
+00:36:05.780 --> 00:36:20.580
+Okay. One three one two zero negative one that should be negative three minus one minus two probably positive three.
+
+00:36:22.380 --> 00:36:29.720
+And then negative six. Okay, so that's a solution. And any multiple of that is a solution.
+
+00:36:29.720 --> 00:36:34.080
+So if you like, you know, neatly simplified answers, you could say negative one one negative two.
+
+00:36:34.720 --> 00:36:37.940
+If you like larger numbers, you can multiply that by a million. That's also a solution.
+
+00:36:45.660 --> 00:36:50.760
+Okay. Any questions about that? Yes.
+
+00:36:55.400 --> 00:37:01.020
+That's correct. If you pick, you know, if you pick these two guys instead, you will get the same solution.
+
+00:37:01.160 --> 00:37:08.460
+Well, up to a multiple could be that if you do the cross product of these two guys, you actually get something that's, you know, a multipolar.
+
+00:37:09.420 --> 00:37:18.200
+Actually, I think if you do the cross product of the first and third one, you will get actually minus one one minus two, you know, the smaller one.
+
+00:37:19.160 --> 00:37:26.280
+But it doesn't matter. I mean, it's really in the same direction. This is all because a plane has actually normal vectors of all sizes.
+
+00:37:31.000 --> 00:37:40.160
+Yes. I don't think so because see. Okay, so an important thing to remember about cross product is we compute the minus, but then we put a minus sign on the second component.
+
+00:37:40.160 --> 00:37:48.300
+Okay, so the coefficient of J in here, the second component, you do one times minus one minus two times one. That's negative free indeed.
+
+00:37:48.980 --> 00:37:53.980
+But then you actually change that to a positive free. Yes.
+
+00:38:02.480 --> 00:38:16.160
+So, do we have to do we have to.
+
+00:38:16.160 --> 00:38:17.700
+So, I think that's a good thing.
+
+00:38:20.980 --> 00:38:27.820
+Oh, by so solving by elimination. Well, if it says that you have to use vector methods, then you should use vector methods.
+
+00:38:28.340 --> 00:38:34.300
+Okay. If it says you should use vectors and matrices, then you're expected to do it that way. Yes.
+
+00:38:40.060 --> 00:38:47.340
+So, it depends what the problem is asking. Okay, question is, is it enough to find the components of a vector or do we have to find the equation of a line?
+
+00:38:47.920 --> 00:38:54.020
+Here it says find one solution using vector operations. So, we have found one solution.
+
+00:38:54.020 --> 00:39:02.940
+If you wanted to find the line, then it would be all the things that are proportional to this. So, it would be maybe minus free, free, free, minus 60.
+
+00:39:03.900 --> 00:39:05.440
+All the multiples of that vector.
+
+00:39:10.720 --> 00:39:19.040
+We do because zero zero zero is an obvious solution. Yeah. Okay. Yes. So, maybe I should. Okay, I'll write that on the board. You had another question.
+
+00:39:19.800 --> 00:39:26.040
+So, the reason you took the bus by this is because you're not going to be able to find the answer.
+
+00:39:28.400 --> 00:39:34.520
+Not quite. Okay, so let me explain first how we get all the solutions and how, why I did that cross product.
+
+00:39:34.520 --> 00:39:37.520
+I see that's a topic.
+
+00:40:04.920 --> 00:40:21.120
+Okay, so, first of all, why did I take that cross product again? So, I took that cross product because I looked at my free equations and I observed that my free equations can be reformulated in terms of these dot products.
+
+00:40:21.960 --> 00:40:28.320
+Okay, saying that x, y, z is actually perpendicular to this guy and this guy's are the normal vectors to the planes.
+
+00:40:29.200 --> 00:40:33.120
+Remember to be in all free planes, it needs to be perpendicular to the normal vectors.
+
+00:40:35.420 --> 00:40:47.540
+So, that's how we got here. And now, if we want something that's perpendicular to a bunch of given vectors, well, to be perpendicular to two vectors, an easy way to find one is to take that cross product.
+
+00:40:47.540 --> 00:40:51.760
+And if you take any two of them, you will get something that's the same up to scaling.
+
+00:40:52.580 --> 00:41:07.900
+So, now, what it means geometrically is that, well, we have our free planes and they're all parallel. They all actually contain the same line.
+
+00:41:07.900 --> 00:41:16.960
+And we know that's actually really the case because they all pass for the origin. If you pass for the origin because the constant terms are just zero.
+
+00:41:19.400 --> 00:41:28.400
+So, what happens is that the normal vectors to these planes, in fact, all perpendicular to that line.
+
+00:41:29.080 --> 00:41:42.160
+Okay, the normal vectors are actually all, say, this line is vertical, the normal vectors are all going to be horizontal.
+
+00:41:45.280 --> 00:41:46.380
+Well, it's kind of hard to do.
+
+00:41:48.360 --> 00:41:53.880
+And so, by taking the cross product between two of the normal vectors, we found this direction.
+
+00:41:54.560 --> 00:41:57.240
+So, now, to find actually all the solutions.
+
+00:41:59.700 --> 00:42:13.480
+So, what we know so far is that we have this direction, minus free, free, minus six, that is going to be parallel to the length of intersections.
+
+00:42:13.480 --> 00:42:19.780
+So, let me draw it here, for example, in a free, free, minus six.
+
+00:42:22.240 --> 00:42:33.540
+And so, now, we have one particular solution, zero, zero, zero.
+
+00:42:33.540 --> 00:42:38.640
+Actually, we have found another one too, which is minus free, free, minus six.
+
+00:42:39.660 --> 00:42:58.160
+But anyway, so now, the line of solutions has parametric equation, x equals minus free T, y equals free T, z equals negative 60.
+
+00:42:59.060 --> 00:43:02.020
+Or, you know, anything proportional to that.
+
+00:43:03.980 --> 00:43:07.260
+Okay, so that's how we would find all the solutions if we wanted them.
+
+00:43:14.240 --> 00:43:15.320
+All right.
+
+00:43:17.860 --> 00:43:22.940
+It's almost time, so I think I need to jump ahead to other problems.
+
+00:43:22.940 --> 00:43:29.000
+So, let's see, problem four, I think problem four you can probably find for yourselves.
+
+00:43:29.340 --> 00:43:32.860
+It's a reasonably straightforward parametric equation's problem.
+
+00:43:33.580 --> 00:43:39.320
+You just have to find, you know, the coordinates of that point P, and for that, it's very simple trick.
+
+00:43:40.460 --> 00:43:44.660
+Problem five, find the area of a space triangle, sounds like a cross product.
+
+00:43:45.240 --> 00:43:48.220
+Find the equation of a plane, also sounds like a cross product.
+
+00:43:48.220 --> 00:43:55.120
+Okay, and find the intersection of this plane with a line, means we find first the parity equation of a line,
+
+00:43:55.260 --> 00:43:58.760
+and then we plug that into the equation of a plane to get where they intersect.
+
+00:43:59.980 --> 00:44:01.120
+Okay, does that sound reasonable?
+
+00:44:02.140 --> 00:44:03.960
+Okay, who's this parade about problem five?
+
+00:44:06.280 --> 00:44:07.840
+Okay, let me repeat problem five.
+
+00:44:12.800 --> 00:44:22.420
+So, first part, we have to find the area of a triangle, and the way to do that is to just do one half of the length of a cross product between,
+
+00:44:22.820 --> 00:44:31.780
+you know, so if we have three points, P zero, P one, P two, then maybe we can form vectors, P zero, P one, and P zero, P two.
+
+00:44:36.540 --> 00:44:42.280
+And if we take the cross product and take the length of that and divide by two, that will give us the area of a triangle.
+
+00:44:43.220 --> 00:44:58.160
+Okay, so here turns out that this guy is one one two, if I look at the solutions, so you will end up with square root of six over two.
+
+00:45:04.140 --> 00:45:06.960
+The second one is that thing you have for the equation of a plane.
+
+00:45:11.320 --> 00:45:12.900
+Well, containing these three points.
+
+00:45:13.680 --> 00:45:22.240
+Well, first of all, we know that the normal vector to the plane is going to be given by this cross product again.
+
+00:45:22.240 --> 00:45:39.960
+Okay, so that means that the equation of a plane will be of a form x plus y plus two z equals something.
+
+00:45:40.600 --> 00:45:45.460
+Okay, just the coefficients here come from the normal vector.
+
+00:45:47.260 --> 00:45:51.800
+And to find what goes on the right hand side, we just plug in any of the points.
+
+00:45:52.020 --> 00:46:04.420
+So if we plug in P zero, which is two, P zero is two, one, zero, then two plus one seems like it's free.
+
+00:46:04.420 --> 00:46:09.120
+And if you want to double check your answer, you can take P one and P two and check that you also get free.
+
+00:46:09.860 --> 00:46:11.280
+It's a good way to check your answer.
+
+00:46:16.220 --> 00:46:31.380
+And then the third part, so we have a line parallel to the vector V equals one, one, one, for over point s, which is minus one zero zero.
+
+00:46:31.380 --> 00:46:34.040
+That means you can find its parametric equation.
+
+00:46:34.720 --> 00:46:39.220
+Okay, so x will be, starts at minus one, increases at rate one.
+
+00:46:40.060 --> 00:46:42.160
+Why starts at zero, increases at rate one.
+
+00:46:42.880 --> 00:46:45.020
+Z starts at zero, increases at rate one.
+
+00:46:45.720 --> 00:46:47.780
+You plug these into the plane equation.
+
+00:46:47.960 --> 00:46:49.660
+And that will tell you where they intersect.
+
+00:46:51.440 --> 00:46:52.380
+Is that clear?
+
+00:46:53.320 --> 00:46:53.460
+Okay.
+
+00:46:54.780 --> 00:46:55.240
+Okay.
+
+00:46:55.240 --> 00:47:00.580
+And now in the last one minute, on that side I have one minute.
+
+00:47:02.580 --> 00:47:04.320
+Let me just say very quickly.
+
+00:47:07.020 --> 00:47:10.000
+Do you want to hear about problem six anyway very quickly?
+
+00:47:10.780 --> 00:47:10.780
+
+
+00:47:11.000 --> 00:47:11.100
+Okay.
+
+00:47:15.940 --> 00:47:17.380
+So problem six.
+
+00:47:19.160 --> 00:47:21.300
+So it's one of these like vector calculations.
+
+00:47:22.100 --> 00:47:28.980
+So it says we have a position vector r and it asks you how do we find the derivative of r dot r?
+
+00:47:30.280 --> 00:47:33.800
+Well, remember we have the product rule for taking the derivative.
+
+00:47:34.420 --> 00:47:34.420
+
+
+00:47:34.680 --> 00:47:38.440
+Uv prime is U prime V plus Uv prime also applies for dot product.
+
+00:47:39.040 --> 00:47:45.580
+So that's dr dt dot r plus r dot dr dt.
+
+00:47:46.480 --> 00:47:48.040
+And these are both the same thing.
+
+00:47:49.080 --> 00:47:54.160
+So you get two r dot dr dt, but dr dt is V.
+
+00:47:54.640 --> 00:47:55.620
+That's the velocity vector.
+
+00:47:56.840 --> 00:47:58.660
+Okay. Hopefully you've seen things like that.
+
+00:47:59.720 --> 00:48:04.780
+Now it says show that if r has constant length, then r on V are perpendicular.
+
+00:48:04.780 --> 00:48:12.660
+So all you need to write basically is we assume r length r is constant.
+
+00:48:15.140 --> 00:48:17.140
+That's what it says. r has constant length.
+
+00:48:17.940 --> 00:48:19.780
+Well, how do we get to say something?
+
+00:48:19.920 --> 00:48:21.160
+We probably want to reduce to that.
+
+00:48:22.140 --> 00:48:26.860
+Well, if r is constant in length, then r dot r is also constant.
+
+00:48:31.800 --> 00:48:38.880
+And so that means d by dt of r dot r is zero.
+
+00:48:39.380 --> 00:48:40.640
+That's what it means to be constant.
+
+00:48:41.540 --> 00:48:45.640
+And so that means r dot V is zero.
+
+00:48:46.160 --> 00:48:49.180
+That means r is perpendicular to the.
+
+00:48:50.260 --> 00:48:53.600
+Okay. That's a proof.
+
+00:48:53.600 --> 00:48:55.940
+It's not very, it's not a scary proof.
+
+00:48:57.440 --> 00:49:01.540
+And then the last question of the exam says,
+
+00:49:04.240 --> 00:49:07.140
+let's continue to assume that r has constant length.
+
+00:49:08.160 --> 00:49:10.300
+And let's try to find r dot a.
+
+00:49:11.160 --> 00:49:14.560
+So if there's acceleration, then probably we should bring it in somewhere.
+
+00:49:14.760 --> 00:49:16.240
+Maybe by taking a derivative of something.
+
+00:49:17.120 --> 00:49:17.320
+Okay.
+
+00:49:18.320 --> 00:49:21.420
+So if we know that r dot V equals zero,
+
+00:49:21.980 --> 00:49:23.720
+let's take the derivative of that.
+
+00:49:24.000 --> 00:49:24.760
+That's still zero.
+
+00:49:27.540 --> 00:49:39.340
+But now using the product rule, well, dR dt is V dot V plus r dot dV dt is going to be zero.
+
+00:49:39.340 --> 00:49:42.640
+So that means that you're asked about r dot a,
+
+00:49:43.260 --> 00:49:45.920
+well, that's equal to minus V dot V.
+
+00:49:47.540 --> 00:49:48.760
+Okay. And that's it.
+

@@ -1,0 +1,1673 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.100
+Commons license.
+
+00:00:03.680 --> 00:00:05.940
+Your support will help MIT OpenCourseWare
+
+00:00:05.940 --> 00:00:09.340
+continue to offer high quality educational resources for free.
+
+00:00:09.920 --> 00:00:12.500
+To make a donation or to view additional materials
+
+00:00:12.500 --> 00:00:16.440
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.440 --> 00:00:19.240
+at ocw.mit.edu.
+
+00:00:21.460 --> 00:00:26.180
+OK, so remember last time on Tuesday,
+
+00:00:26.180 --> 00:00:28.900
+we learned about the chain rule.
+
+00:00:32.140 --> 00:00:35.940
+And so for example, we saw that if we have a function
+
+00:00:38.160 --> 00:00:43.960
+that depends on free variables x, y, z,
+
+00:00:44.680 --> 00:00:49.160
+but x, y, z themselves depends on some variable t,
+
+00:00:53.460 --> 00:00:59.840
+then you can find a formula for dw dt by biting down w sub x
+
+00:00:59.840 --> 00:01:09.100
+dx dt plus w sub y dy dt plus w sub z dz dt.
+
+00:01:09.600 --> 00:01:14.080
+And the meaning of that formula is that, well, the change
+
+00:01:14.080 --> 00:01:17.460
+in w is caused by changes in x, y, and z.
+
+00:01:17.940 --> 00:01:21.660
+x, y, and z change at rates dx dt dy dt dz dt.
+
+00:01:22.600 --> 00:01:25.740
+And this causes the function to change accordingly,
+
+00:01:26.900 --> 00:01:29.480
+using the terms of the partial derivatives,
+
+00:01:30.020 --> 00:01:34.180
+tell you how sensitive w is to change in each variable.
+
+00:01:36.680 --> 00:01:40.000
+So we are going to just rewrite this in a new notation.
+
+00:01:44.080 --> 00:01:47.180
+So I'm going to rewrite this in a more concise form
+
+00:01:47.180 --> 00:01:56.180
+as gradient of w dot product with velocity vector dr dt,
+
+00:01:57.200 --> 00:02:05.000
+where the gradient of w is a vector formed by putting together
+
+00:02:06.120 --> 00:02:07.220
+all of the partial derivatives.
+
+00:02:08.700 --> 00:02:11.780
+So it's the vector whose components are the parcels.
+
+00:02:12.540 --> 00:02:15.660
+And of course, it's a vector that depends on x, y, and z.
+
+00:02:15.960 --> 00:02:19.020
+This guy's depends on x, y, z.
+
+00:02:19.260 --> 00:02:21.880
+So it's actually one vector for each point x, y, z.
+
+00:02:22.400 --> 00:02:37.600
+You can talk about the gradient of w at some point x, y, z.
+
+00:02:38.940 --> 00:02:41.960
+So at each point it gives you a vector that actually
+
+00:02:41.960 --> 00:02:44.120
+is what we will call later a vector field.
+
+00:02:46.060 --> 00:02:48.640
+But we'll get back to that later.
+
+00:02:50.260 --> 00:03:01.640
+And dr dt is just the velocity vector dx dt dy dt dz dt.
+
+00:03:08.740 --> 00:03:14.060
+So the new definition for today is the definition
+
+00:03:14.880 --> 00:03:15.740
+of the gradient vector.
+
+00:03:16.580 --> 00:03:18.920
+And our goal will be to understand a bit better
+
+00:03:19.440 --> 00:03:21.660
+what does this vector mean, what does it measure,
+
+00:03:21.920 --> 00:03:22.900
+and what can we do with it.
+
+00:03:24.200 --> 00:03:26.580
+But you see that in terms of information content,
+
+00:03:26.860 --> 00:03:28.780
+it's really the same information that's already
+
+00:03:28.780 --> 00:03:31.560
+in the partial derivatives or in the differential.
+
+00:03:41.560 --> 00:03:43.600
+So yes, and I should say, of course,
+
+00:03:43.700 --> 00:03:47.400
+you can also use the gradient in other things,
+
+00:03:47.540 --> 00:03:49.420
+like approximation formulas and so on.
+
+00:03:49.760 --> 00:03:51.300
+So far it's just notation.
+
+00:03:51.560 --> 00:03:52.680
+It's a way to rewrite things.
+
+00:03:53.980 --> 00:03:56.520
+So here's the first cool property of the gradient.
+
+00:04:00.520 --> 00:04:03.000
+So I claim that the gradient vector
+
+00:04:03.720 --> 00:04:06.800
+is perpendicular to the level surface,
+
+00:04:10.980 --> 00:04:15.580
+corresponding to setting the function w equal to a constant.
+
+00:04:19.300 --> 00:04:24.900
+So if I draw a contour plot of my function,
+
+00:04:25.560 --> 00:04:27.560
+so I'm going to actually forget about z
+
+00:04:27.560 --> 00:04:29.980
+because I want to draw a two variable contour plot.
+
+00:04:29.980 --> 00:04:32.580
+So say I have a function of two variables x and y,
+
+00:04:33.640 --> 00:04:35.400
+then maybe it has some contour plot.
+
+00:04:36.940 --> 00:04:39.980
+And I'm saying if I take the gradient of a function
+
+00:04:39.980 --> 00:04:42.800
+at this point, x, y, so I will have a vector.
+
+00:04:43.740 --> 00:04:46.380
+Well, if I draw a vector on top of a contour plot,
+
+00:04:46.940 --> 00:04:49.040
+it's going to end up being perpendicular
+
+00:04:50.040 --> 00:04:52.240
+to the level curve at this point.
+
+00:04:53.760 --> 00:04:55.880
+Same thing if I have a function of three variables,
+
+00:04:56.680 --> 00:04:58.620
+then I can try to draw its contour plot.
+
+00:04:58.620 --> 00:05:00.860
+Of course, I can't really do it because the contour plot
+
+00:05:00.860 --> 00:05:03.800
+would be living in space with x, y, and z.
+
+00:05:04.900 --> 00:05:06.740
+But it would be a bunch of level surfaces.
+
+00:05:07.760 --> 00:05:11.240
+And the gradient vector would be a vector in space,
+
+00:05:11.240 --> 00:05:13.560
+but vector is perpendicular to the level surfaces.
+
+00:05:14.900 --> 00:05:18.820
+So let's try to see that on a couple of examples.
+
+00:05:23.540 --> 00:05:24.980
+So let's do a first example.
+
+00:05:25.620 --> 00:05:26.400
+Let's do things.
+
+00:05:28.060 --> 00:05:29.200
+What's the easiest case?
+
+00:05:32.160 --> 00:05:34.500
+Let's take a linear function of x, y, and z.
+
+00:05:35.700 --> 00:05:40.220
+So I will take w equals a1 times x plus a2 times y
+
+00:05:40.220 --> 00:05:41.380
+plus a3 times z.
+
+00:05:43.960 --> 00:05:46.600
+Well, so what's the gradient of this function?
+
+00:05:49.420 --> 00:05:52.040
+Well, the first component will be a1.
+
+00:05:52.040 --> 00:05:53.540
+That's partial w, partial x.
+
+00:05:57.920 --> 00:06:01.860
+Then a2, that's partial w, partial y, and a3,
+
+00:06:02.880 --> 00:06:04.160
+partial w, partial z.
+
+00:06:07.280 --> 00:06:09.420
+Now, what are the level surfaces?
+
+00:06:14.460 --> 00:06:18.100
+Well, if I set w equal to some constant c,
+
+00:06:18.620 --> 00:06:22.940
+that means I look at the points where a1x plus a2y
+
+00:06:23.620 --> 00:06:26.200
+plus a3z equals c.
+
+00:06:26.740 --> 00:06:27.860
+What kind of surface is that?
+
+00:06:28.980 --> 00:06:29.460
+That's a plane.
+
+00:06:30.220 --> 00:06:32.580
+And we know how to find a normal vector to this plane,
+
+00:06:33.160 --> 00:06:34.460
+just by looking at the coefficients.
+
+00:06:44.420 --> 00:06:46.340
+So it's a plane with normal vector.
+
+00:06:47.440 --> 00:06:48.820
+Exactly this gradient.
+
+00:06:50.300 --> 00:06:54.300
+And in fact, in a way, this is the only case you need to check
+
+00:06:54.300 --> 00:06:55.820
+because of linear approximation.
+
+00:06:56.140 --> 00:06:58.440
+If you replace a function by its linear approximation,
+
+00:06:59.300 --> 00:07:02.740
+that means you will replace the level surfaces
+
+00:07:02.740 --> 00:07:03.820
+by their tangent planes.
+
+00:07:04.620 --> 00:07:07.380
+And then you will actually end up in this situation.
+
+00:07:07.900 --> 00:07:09.180
+But maybe that's not very convincing.
+
+00:07:09.440 --> 00:07:11.620
+So let's do another example.
+
+00:07:20.220 --> 00:07:22.020
+So let's do a second example.
+
+00:07:24.880 --> 00:07:27.840
+Let's say we look at the function x2 plus y2.
+
+00:07:28.360 --> 00:07:30.100
+So now it's a function of just two variables,
+
+00:07:30.480 --> 00:07:32.860
+because that way I will be able to actually draw a picture
+
+00:07:32.860 --> 00:07:33.260
+for you.
+
+00:07:36.480 --> 00:07:39.720
+So what are the level sets of this function?
+
+00:07:40.580 --> 00:07:43.200
+Well, they're going to be circles, right?
+
+00:07:44.140 --> 00:07:51.620
+W equals c is a circle x squared plus y squared
+
+00:07:51.620 --> 00:07:52.300
+equals c.
+
+00:07:53.800 --> 00:07:59.140
+So I should say the level curve is a circle.
+
+00:08:01.780 --> 00:08:05.860
+So the contour plot looks something like that.
+
+00:08:12.120 --> 00:08:13.840
+Now what's the gradient vector?
+
+00:08:15.500 --> 00:08:17.200
+Well, the gradient of this function.
+
+00:08:17.720 --> 00:08:21.440
+So partial w, partial x is 2x.
+
+00:08:23.100 --> 00:08:25.340
+And partial w, partial y is 2y.
+
+00:08:26.360 --> 00:08:29.320
+So let's say I take a point x, y.
+
+00:08:29.780 --> 00:08:32.420
+And I try to draw my gradient vector.
+
+00:08:32.420 --> 00:08:34.180
+So here at x, y.
+
+00:08:35.940 --> 00:08:38.800
+So I have to draw the vector 2x, 2y.
+
+00:08:38.920 --> 00:08:39.660
+What does it look like?
+
+00:08:40.860 --> 00:08:42.480
+Well, it's going in that direction.
+
+00:08:42.720 --> 00:08:48.580
+It's parallel to the position vector for this point.
+
+00:08:49.020 --> 00:08:51.120
+And it's actually twice the position vector.
+
+00:08:51.300 --> 00:08:53.960
+So I guess it goes more or less like this.
+
+00:08:55.300 --> 00:09:01.080
+What's interesting to us is it is perpendicular to this circle.
+
+00:09:02.620 --> 00:09:04.260
+So it's a general feature.
+
+00:09:04.660 --> 00:09:07.680
+Actually, let me show you my examples.
+
+00:09:09.800 --> 00:09:11.180
+Oops, not the one I want.
+
+00:09:13.320 --> 00:09:15.360
+So I don't know if you can see it.
+
+00:09:16.280 --> 00:09:18.200
+So well, hopefully you can.
+
+00:09:18.920 --> 00:09:20.980
+So here I have a contour plot of a function.
+
+00:09:21.600 --> 00:09:24.500
+And I have a blue vector that's the gradient vector
+
+00:09:24.500 --> 00:09:26.560
+at the pink point on the plot.
+
+00:09:27.440 --> 00:09:31.200
+So you can see I can move the pink point.
+
+00:09:32.040 --> 00:09:34.400
+And the gradient vector, of course, changes
+
+00:09:34.400 --> 00:09:36.960
+because the gradient depends on x and y.
+
+00:09:37.600 --> 00:09:40.120
+But what doesn't change is that it's always perpendicular
+
+00:09:41.000 --> 00:09:42.400
+to the level curves.
+
+00:09:43.600 --> 00:09:48.000
+Anywhere where I am, my gradient stays perpendicular
+
+00:09:49.480 --> 00:09:51.240
+to the level curves.
+
+00:09:53.700 --> 00:09:54.660
+Is that convincing?
+
+00:09:54.880 --> 00:09:55.440
+Is that visible?
+
+00:09:56.220 --> 00:09:57.620
+Even for people who can't see blue.
+
+00:09:59.140 --> 00:09:59.140
+
+
+00:10:08.040 --> 00:10:08.460
+OK.
+
+00:10:08.840 --> 00:10:10.180
+So we have a lot of evidence.
+
+00:10:10.520 --> 00:10:14.220
+But let's try to prove the theorem,
+
+00:10:14.580 --> 00:10:17.340
+because it will be interesting.
+
+00:10:22.180 --> 00:10:24.180
+So first of all, sorry, any questions
+
+00:10:24.180 --> 00:10:26.480
+about the statement, the examples?
+
+00:10:27.120 --> 00:10:27.220
+Yes.
+
+00:10:30.840 --> 00:10:34.080
+Ah, very good question.
+
+00:10:34.460 --> 00:10:37.020
+Does the gradient vector, why is the gradient vector
+
+00:10:37.020 --> 00:10:39.220
+perpendicular in one direction rather than v over?
+
+00:10:39.820 --> 00:10:43.100
+So we'll see the answer to that in a few minutes.
+
+00:10:43.660 --> 00:10:44.920
+But let me just tell you immediately
+
+00:10:45.740 --> 00:10:48.140
+to decide which side it's pointing to.
+
+00:10:48.200 --> 00:10:51.020
+It's always pointing towards higher values of a function.
+
+00:10:52.020 --> 00:10:54.440
+And we'll see that maybe in about half an hour.
+
+00:10:55.800 --> 00:11:09.860
+So let me say, points towards higher values of w.
+
+00:11:13.860 --> 00:11:14.660
+Any other questions?
+
+00:11:21.560 --> 00:11:23.980
+I don't see any questions.
+
+00:11:24.400 --> 00:11:25.700
+So OK.
+
+00:11:25.860 --> 00:11:28.540
+So let's try to prove this theorem, at least this part
+
+00:11:28.540 --> 00:11:29.020
+of a theorem.
+
+00:11:29.280 --> 00:11:30.920
+We are not going to prove that just yet.
+
+00:11:31.160 --> 00:11:32.740
+That will come in a while.
+
+00:11:39.360 --> 00:11:44.640
+So well, maybe we want to understand first what happens
+
+00:11:44.640 --> 00:11:47.120
+if we move inside the level curve.
+
+00:11:47.660 --> 00:11:51.240
+So let's imagine that we are taking a moving point that
+
+00:11:51.240 --> 00:11:53.920
+stays on the level curve or on the level surface.
+
+00:11:55.160 --> 00:11:59.200
+And then we know what happens is that the function stays
+
+00:11:59.200 --> 00:11:59.660
+constant.
+
+00:12:01.780 --> 00:12:04.580
+But we can also know how quickly the function changes
+
+00:12:04.580 --> 00:12:06.040
+using the chain rule up there.
+
+00:12:06.840 --> 00:12:09.880
+So maybe the chain rule will actually be the key to
+
+00:12:09.880 --> 00:12:13.940
+understanding how the gradient vector and a motion on
+
+00:12:13.940 --> 00:12:15.460
+the level surface relate.
+
+00:12:17.520 --> 00:12:23.960
+So let's take a curve r equals r of t.
+
+00:12:25.900 --> 00:12:35.100
+That stays inside, well, maybe I should say, on the
+
+00:12:35.160 --> 00:12:42.520
+level surface, w equals c.
+
+00:12:45.460 --> 00:12:47.640
+So let's think about what that means.
+
+00:12:48.820 --> 00:12:53.160
+So just to get you used to this idea, I'm going to draw a
+
+00:12:53.160 --> 00:12:55.740
+level surface of a function of three variables.
+
+00:12:56.280 --> 00:13:00.580
+So it's some surface given by the equation w of x, y, z
+
+00:13:00.580 --> 00:13:02.460
+equals some constant c.
+
+00:13:04.300 --> 00:13:09.940
+And so now I'm going to have a point on that and it's
+
+00:13:09.940 --> 00:13:11.400
+going to move on that surface.
+
+00:13:11.740 --> 00:13:16.640
+So I will have some parametric curve that lives on this
+
+00:13:16.640 --> 00:13:17.120
+surface.
+
+00:13:18.740 --> 00:13:25.520
+So the question is what's going to happen at any given
+
+00:13:25.520 --> 00:13:25.880
+time?
+
+00:13:26.800 --> 00:13:30.500
+Well, the first observation is that the velocity vector.
+
+00:13:30.500 --> 00:13:34.160
+What can I say about the velocity vector of this motion?
+
+00:13:35.040 --> 00:13:37.680
+It's going to be tangent to the level surface.
+
+00:13:38.660 --> 00:13:43.720
+If I move on the surface, then at any point my velocity is
+
+00:13:43.720 --> 00:13:44.720
+tangent to the curve.
+
+00:13:45.100 --> 00:13:47.840
+But if it's tangent to the curve, then it's also tangent
+
+00:13:47.840 --> 00:13:48.640
+to the surface.
+
+00:13:49.960 --> 00:13:51.720
+Because the curve is inside the surface.
+
+00:13:54.060 --> 00:13:56.000
+So let's get a bit cluttered.
+
+00:13:56.140 --> 00:13:57.420
+Maybe it should draw a bigger picture.
+
+00:13:58.140 --> 00:13:59.140
+Let me do that right away here.
+
+00:14:02.920 --> 00:14:06.780
+So I have my level surface, w equals c.
+
+00:14:07.500 --> 00:14:09.840
+I have a curve on that.
+
+00:14:15.460 --> 00:14:20.120
+And at some point, I'm going to have a certain velocity.
+
+00:14:20.840 --> 00:14:35.140
+So the claim is that the velocity v equals dr dt is
+
+00:14:35.140 --> 00:14:45.720
+tangent to the level w equals c.
+
+00:14:47.880 --> 00:14:50.180
+Because it's tangent to the curve and the curve is inside
+
+00:14:50.180 --> 00:14:50.500
+the level.
+
+00:14:51.900 --> 00:14:53.360
+Now what else can we say?
+
+00:14:53.720 --> 00:14:59.500
+Well, we have the chain rule to tell us how the value of w
+
+00:14:59.500 --> 00:14:59.900
+changes.
+
+00:15:02.360 --> 00:15:10.240
+So by the chain rule, we have dw dt.
+
+00:15:11.400 --> 00:15:15.000
+So the rate of change of the value of w as I move along
+
+00:15:15.000 --> 00:15:20.580
+this curve is given by the dot product between the
+
+00:15:20.580 --> 00:15:23.800
+gradients and the velocity vector.
+
+00:15:34.180 --> 00:15:38.160
+So what may be I can rewrite it as double w, sorry,
+
+00:15:39.080 --> 00:15:42.000
+del w dot v.
+
+00:15:44.580 --> 00:15:50.400
+And what happens to the value of w as t changes?
+
+00:15:51.300 --> 00:15:55.860
+Well, it stays constant because we are moving on a curve
+
+00:15:55.860 --> 00:15:57.080
+that may be complicated.
+
+00:15:57.440 --> 00:16:01.400
+But it stays always on the level w equals c.
+
+00:16:03.160 --> 00:16:11.220
+So it's 0 because w of t equals c, which is a constant.
+
+00:16:14.400 --> 00:16:15.320
+Is that convincing?
+
+00:16:16.780 --> 00:16:16.860
+Yeah.
+
+00:16:17.740 --> 00:16:21.500
+OK, so now if we have a dot product that's 0, that tells us
+
+00:16:21.500 --> 00:16:22.960
+that these two guys are perpendicular.
+
+00:16:29.180 --> 00:16:37.200
+So the gradient vector is perpendicular to v.
+
+00:16:39.920 --> 00:16:41.920
+OK, that's a good start.
+
+00:16:42.760 --> 00:16:45.200
+We know that the gradient is perpendicular to this vector
+
+00:16:45.200 --> 00:16:48.220
+tangent to the level surface.
+
+00:16:48.920 --> 00:16:52.320
+What about other vectors, tangent to the level surface?
+
+00:16:53.760 --> 00:16:58.260
+Well, in fact, I could use any curve drawn on the level w
+
+00:16:58.260 --> 00:16:58.880
+equals c.
+
+00:17:00.280 --> 00:17:03.100
+So I could move really any way I wanted on that surface.
+
+00:17:04.140 --> 00:17:08.060
+In particular, I claim that I could have chosen my velocity
+
+00:17:08.060 --> 00:17:11.340
+vector to be any vector tangent to the surface.
+
+00:17:14.980 --> 00:17:16.280
+So let's write this.
+
+00:17:17.180 --> 00:17:24.080
+So this is true for any curve, well,
+
+00:17:24.140 --> 00:17:31.780
+I can say for any motion on the level surface w equals c.
+
+00:17:32.780 --> 00:17:46.540
+So that means v can be any vector tangent to the surface,
+
+00:17:48.340 --> 00:17:53.800
+tangent to the level c.
+
+00:17:53.800 --> 00:17:56.340
+For example, let me draw one more picture.
+
+00:18:03.120 --> 00:18:05.400
+OK, so I have my level surface.
+
+00:18:06.140 --> 00:18:07.540
+So I'm drawing more and more levels.
+
+00:18:07.920 --> 00:18:09.220
+And the level quickly looks the same.
+
+00:18:10.040 --> 00:18:11.100
+And I have a point.
+
+00:18:11.720 --> 00:18:14.440
+And at this point, I have the tangent plane
+
+00:18:15.120 --> 00:18:16.280
+to the level surface.
+
+00:18:17.100 --> 00:18:19.840
+OK, so this is tangent plane.
+
+00:18:24.220 --> 00:18:25.460
+To the level.
+
+00:18:26.760 --> 00:18:31.060
+Then if I choose any vector in that tangent plane,
+
+00:18:31.980 --> 00:18:35.320
+let's say I choose, and no, for when that goes in that direction,
+
+00:18:36.600 --> 00:18:41.020
+then I can actually find a curve that goes in that direction
+
+00:18:41.020 --> 00:18:42.780
+and stays on the level.
+
+00:18:43.240 --> 00:18:45.700
+So here, that would be a curve that somehow goes from the right
+
+00:18:45.700 --> 00:18:46.720
+to the left.
+
+00:18:46.980 --> 00:18:50.720
+And of course, it has to end up going up or something like that.
+
+00:18:54.480 --> 00:19:09.360
+So given any vector tangent, let's call that vector v,
+
+00:19:09.640 --> 00:19:17.560
+tangent to the level, we get that the gradient is perpendicular to v.
+
+00:19:18.640 --> 00:19:22.460
+So the gradient is perpendicular to this vector tangent to this curve,
+
+00:19:22.460 --> 00:19:27.700
+but also to any vector I can draw that tangent to my surface.
+
+00:19:28.760 --> 00:19:29.460
+So what does that mean?
+
+00:19:29.620 --> 00:19:32.440
+Well, that means the gradient is actually perpendicular
+
+00:19:33.340 --> 00:19:35.560
+to the tangent plane or to the surface at this point.
+
+00:19:37.460 --> 00:19:42.820
+So the gradient is perpendicular.
+
+00:20:01.720 --> 00:20:05.500
+And well, here, I've illustrated things with a free dimensional example,
+
+00:20:05.600 --> 00:20:07.700
+but really it works the same if you have only two variables.
+
+00:20:07.960 --> 00:20:10.660
+When you have a level curve, it has a tangent plane line,
+
+00:20:10.840 --> 00:20:12.900
+and the gradient is perpendicular to that line.
+
+00:20:15.700 --> 00:20:16.820
+OK, any questions?
+
+00:20:22.900 --> 00:20:23.380
+No.
+
+00:20:27.140 --> 00:20:27.620
+OK.
+
+00:20:35.140 --> 00:20:36.240
+So let's see.
+
+00:20:36.340 --> 00:20:39.540
+That's actually pretty neat because there's a nice application of this,
+
+00:20:40.120 --> 00:20:44.760
+which is to try to figure out now we know actually how to find the tangent plane
+
+00:20:44.760 --> 00:20:46.420
+to anything, pretty much.
+
+00:21:12.160 --> 00:21:12.620
+OK.
+
+00:21:16.240 --> 00:21:17.280
+So let's see.
+
+00:21:18.440 --> 00:21:22.440
+So let's say that, for example, I want to find the tangent plane to the point
+
+00:21:22.440 --> 00:21:28.360
+that I want to find.
+
+00:21:29.200 --> 00:21:45.160
+The tangent plane to the surface with equation, let's say x square plus y squared minus z squared
+
+00:21:45.160 --> 00:21:50.800
+equals four at the point 2, 1, 1.
+
+00:21:50.960 --> 00:21:51.620
+Let me find that.
+
+00:21:52.420 --> 00:21:53.140
+I don't know.
+
+00:22:01.160 --> 00:22:02.440
+So how do we do that?
+
+00:22:03.080 --> 00:22:10.380
+Well, one way that we already know, if we solve this for z, so we can write z equals
+
+00:22:10.380 --> 00:22:16.920
+equals function of x and y, then we know tangent plane approximation for the graph of a function
+
+00:22:16.920 --> 00:22:18.900
+z equals some function of x and y.
+
+00:22:19.820 --> 00:22:22.220
+But that doesn't look like it's the best way to do it.
+
+00:22:22.960 --> 00:22:27.880
+The best way to do it now that we have a gradient vector is actually to directly say,
+
+00:22:28.080 --> 00:22:32.500
+oh, we know the normal vector to this plane, the normal vector will just be the gradient.
+
+00:22:34.780 --> 00:22:36.700
+Oh, I think I have a cool picture to show.
+
+00:22:36.700 --> 00:22:41.040
+So that's what it looks like.
+
+00:22:42.540 --> 00:22:48.160
+So here you have the surface x squared plus y squared minus z squared equals four.
+
+00:22:48.740 --> 00:22:53.320
+That's called hyperboloid because it looks like what you get when you spin a hyperbolo
+
+00:22:53.320 --> 00:22:54.420
+around the axis.
+
+00:22:55.980 --> 00:22:59.460
+And here's its tangent plane at the given point.
+
+00:23:00.240 --> 00:23:02.820
+So it doesn't look very tangent because it crosses the surface.
+
+00:23:02.820 --> 00:23:09.200
+But if you think about it, you'll see that it's really the plane that approximating the
+
+00:23:09.200 --> 00:23:13.820
+surface in the best way that you can at this given point.
+
+00:23:14.360 --> 00:23:15.320
+It is really the tangent plane.
+
+00:23:22.540 --> 00:23:24.240
+So how do we find this plane?
+
+00:23:25.880 --> 00:23:31.940
+Well, you can plot it on a computer, but that's not exactly how you would look for it in
+
+00:23:32.140 --> 00:23:32.520
+first place.
+
+00:23:33.280 --> 00:23:36.680
+So the way to do it is that we compute the gradient.
+
+00:23:38.020 --> 00:23:39.360
+So the gradient of what?
+
+00:23:40.820 --> 00:23:43.300
+Well, the gradient of this function.
+
+00:23:45.420 --> 00:23:50.200
+So I should say this is the level set.
+
+00:23:50.200 --> 00:24:00.880
+That's w equals four, where w is x squared plus y squared minus z squared.
+
+00:24:02.220 --> 00:24:07.400
+And so we know that the gradient of this.
+
+00:24:10.680 --> 00:24:12.120
+Well, what is it?
+
+00:24:15.120 --> 00:24:19.720
+2x, then 2y, and then negative 2z.
+
+00:24:21.380 --> 00:24:29.400
+So at this given point, I guess we add x equals 2, so that's four, and then y and z are
+
+00:24:29.400 --> 00:24:31.100
+1, so 2, negative 2.
+
+00:24:34.180 --> 00:24:43.160
+And that's going to be the normal vector to the surface or to the tangent plane.
+
+00:24:44.500 --> 00:24:46.300
+That's one way to define the tangent plane.
+
+00:24:47.040 --> 00:24:49.240
+It has the same normal vector as the surface.
+
+00:24:49.940 --> 00:24:52.420
+That's one way to define the normal vector to the surface, if you prefer.
+
+00:24:53.260 --> 00:24:57.800
+Being perpendicular to the surface means that you're perpendicular to its tangent plane.
+
+00:25:01.760 --> 00:25:01.880
+OK?
+
+00:25:02.280 --> 00:25:17.480
+So the equation is, well, 4x plus 2y minus 2z equals something, where something is, well,
+
+00:25:17.600 --> 00:25:18.340
+we should just plug in.
+
+00:25:18.610 --> 00:25:21.270
+And now it will get 8 plus 2 minus 2.
+
+00:25:22.090 --> 00:25:23.270
+Looks like we'll get 8.
+
+00:25:25.710 --> 00:25:30.710
+And of course, we could simplify by dividing everything by 2, but it's not very important here.
+
+00:25:32.430 --> 00:25:37.150
+So now if you have a surface given by an evil equation and a point on the surface,
+
+00:25:37.570 --> 00:25:41.670
+well, you know how to find the tangent plane to the surface at that point.
+
+00:25:44.110 --> 00:25:44.930
+Any questions?
+
+00:25:48.990 --> 00:25:49.430
+No.
+
+00:25:52.290 --> 00:25:57.810
+OK, let me give just another reason why, you know, another way that we could have seen this.
+
+00:26:02.690 --> 00:26:07.410
+So I claim in fact we could have done this without the gradient, or using the gradient in
+
+00:26:07.410 --> 00:26:08.510
+somehow a disguised way.
+
+00:26:09.430 --> 00:26:10.730
+So here's another way.
+
+00:26:16.170 --> 00:26:19.490
+So the other way to do it would be to start with a differential.
+
+00:26:21.450 --> 00:26:21.550
+OK?
+
+00:26:22.270 --> 00:26:27.250
+DW, well, it's pretty much the same content, but let me write it as a differential.
+
+00:26:27.650 --> 00:26:34.830
+DW is 2x dx minus 2y plus 2y dy minus 2z dz.
+
+00:26:34.830 --> 00:26:46.790
+So at the given point at 211, this is 4dx plus 2y minus 2 dz.
+
+00:26:49.190 --> 00:27:02.710
+Now, if we want to change this into an approximation formula, we know that the change in W is approximately
+
+00:27:02.710 --> 00:27:09.650
+maybe equal to 4dx plus 2d y minus 2d z.
+
+00:27:12.110 --> 00:27:12.270
+OK?
+
+00:27:14.230 --> 00:27:16.830
+So when do we stay on the level surface?
+
+00:27:17.110 --> 00:27:19.610
+Well, we stay on the level surface when W doesn't change.
+
+00:27:20.030 --> 00:27:21.350
+So when this becomes 0.
+
+00:27:23.110 --> 00:27:23.390
+OK?
+
+00:27:24.170 --> 00:27:26.510
+Now, what does this approximation sign mean?
+
+00:27:26.690 --> 00:27:31.270
+Well, it means that for small changes in x, y, z, this guy will be close to that guy.
+
+00:27:31.270 --> 00:27:33.130
+It also means something else.
+
+00:27:33.310 --> 00:27:44.130
+Remember, this approximation formulas, they are linear approximation, the mean, that we replace the function actually by some closest linear formula that will be nearby.
+
+00:27:44.950 --> 00:27:55.870
+And so in particular, if we set this equal to 0 instead of approximately 0, it means we'll actually be moving on the tangent plane to the level set.
+
+00:27:55.870 --> 00:28:03.970
+If you want setting equalities in approximations, means that we replace the function by its tangent approximation.
+
+00:28:03.970 --> 00:28:10.970
+So
+
+00:28:36.550 --> 00:28:37.610
+OK?
+
+00:28:38.290 --> 00:28:48.190
+So the level corresponds to delta W equals 0.
+
+00:28:48.930 --> 00:29:03.430
+And its tangent plane corresponds to 4dx plus 2d y minus 2d z.
+
+00:29:04.430 --> 00:29:05.510
+So that means that the x equals 0.
+
+00:29:05.850 --> 00:29:07.490
+That's what I'm trying to say, basically.
+
+00:29:08.730 --> 00:29:11.870
+And what's delta x? Well, that means it's the change in x.
+
+00:29:12.330 --> 00:29:13.730
+So what's the change in x here?
+
+00:29:14.250 --> 00:29:18.770
+That means when we started with x equals 2, and we moved to some other value x.
+
+00:29:19.810 --> 00:29:22.670
+So that's actually x minus 2.
+
+00:29:24.870 --> 00:29:27.350
+That's how much x has changed compared to 2.
+
+00:29:28.550 --> 00:29:36.090
+And 2 times y minus 1 minus 2 times z minus 1 equals 0.
+
+00:29:36.850 --> 00:29:38.630
+That's the equation of the tangent plane.
+
+00:29:41.530 --> 00:29:44.650
+It's the same equation as the one over there.
+
+00:29:45.310 --> 00:29:47.490
+These are just two different methods to get it.
+
+00:29:48.510 --> 00:29:53.170
+OK? So this one explains to you what's going on in terms of approximation formulas.
+
+00:29:53.690 --> 00:29:59.470
+This one goes right away to the answer by using the gradient vector.
+
+00:30:01.350 --> 00:30:04.050
+So in a way, with this one, you don't have to think nearly as much.
+
+00:30:06.150 --> 00:30:07.630
+But you can use either one.
+
+00:30:11.310 --> 00:30:12.090
+OK, questions?
+
+00:30:16.270 --> 00:30:17.570
+No? OK.
+
+00:30:18.130 --> 00:30:25.090
+So let's move on to a new topic, which is another application of a gradient vector.
+
+00:30:29.070 --> 00:30:32.310
+And that is directional derivatives.
+
+00:30:44.130 --> 00:30:51.490
+OK, so let's say that we have a function of two variables, x and y.
+
+00:30:52.530 --> 00:31:00.810
+Well, we know how to compute partial w, partial x, or partial w, or partial y,
+
+00:31:01.610 --> 00:31:07.890
+which measure how w changes if I move in the direction of the x-axis, or in the direction of the y-axis.
+
+00:31:10.150 --> 00:31:13.130
+So what about moving in other directions?
+
+00:31:13.410 --> 00:31:16.010
+Well, of course, we've seen approximation formulas and so on.
+
+00:31:16.010 --> 00:31:20.330
+But we can still ask, is there a derivative in every direction?
+
+00:31:21.310 --> 00:31:23.310
+And that's basically, yes, that's the directional derivative.
+
+00:31:25.490 --> 00:31:37.810
+OK, so these are derivatives in the direction of i hat or j hat,
+
+00:31:37.990 --> 00:31:40.530
+the vectors that go along the x or the y-axis.
+
+00:31:46.390 --> 00:31:55.790
+So what if we move in another direction, the same direction of some unit vector?
+
+00:31:58.550 --> 00:31:59.850
+Let's call it u.
+
+00:32:06.470 --> 00:32:13.810
+OK, so if I give you a unit vector, you can ask yourself, if I move in the direction, how quickly will my function change?
+
+00:32:24.630 --> 00:32:28.490
+So let's look at the straight line trajectory.
+
+00:32:28.910 --> 00:32:36.250
+What this should mean is I started some value x, y, and then I have my vector u,
+
+00:32:37.090 --> 00:32:40.850
+and I'm going to move in a straight line in the direction of u.
+
+00:32:42.190 --> 00:32:43.890
+And I have the graph of my function.
+
+00:32:50.550 --> 00:32:57.910
+And I'm asking myself, how quickly does the value change when I move on the graph in that direction?
+
+00:33:01.030 --> 00:33:05.650
+OK, so let's look at the straight line trajectory.
+
+00:33:16.670 --> 00:33:22.270
+So we have a position vector, r, that will depend on some parameter, which I will call s.
+
+00:33:23.430 --> 00:33:25.050
+Let's see why I assume.
+
+00:33:25.910 --> 00:33:30.210
+In such a way that the derivative is this given unit vector u hat.
+
+00:33:31.010 --> 00:33:33.790
+So why do I use s for my parameter r of nt?
+
+00:33:34.570 --> 00:33:35.370
+Well, it's a convention.
+
+00:33:36.330 --> 00:33:40.150
+I'm moving at unit speed along this line.
+
+00:33:40.890 --> 00:33:49.530
+So that means that actually I'm parametrizing things by the distance that I've traveled along this line.
+
+00:33:50.670 --> 00:33:54.390
+So here it's called s in the sense of r length.
+
+00:33:55.510 --> 00:33:58.310
+Actually it's not again r, because it's a straight line.
+
+00:33:59.330 --> 00:34:04.630
+So it's the distance along the line.
+
+00:34:07.090 --> 00:34:18.570
+OK, so because we are parametrizing by distance, we're just using s as a convention just to distinguish it with this equation from over situations.
+
+00:34:21.850 --> 00:34:27.150
+And so now the question will be what is dwds?
+
+00:34:29.330 --> 00:34:32.150
+What's the rate of change of w when I move like that?
+
+00:34:34.410 --> 00:34:38.510
+Well, of course we know the answer because that's a special case of a chain rule.
+
+00:34:40.010 --> 00:34:41.830
+So that's how we will actually compute it.
+
+00:34:44.150 --> 00:34:58.010
+But in terms of what it means, it really means we are asking ourselves, we start at the point and we change the variables in a certain direction, which is not necessarily the x of a y direction, but really any direction.
+
+00:34:58.890 --> 00:35:01.150
+And then what's the derivative in that direction?
+
+00:35:03.090 --> 00:35:05.350
+OK, does that make sense as a concept?
+
+00:35:07.430 --> 00:35:10.450
+I see some faces that are not completely convinced.
+
+00:35:10.790 --> 00:35:12.810
+So maybe I should show more pictures.
+
+00:35:13.930 --> 00:35:16.630
+Well, let me first write down a bit more.
+
+00:35:19.610 --> 00:35:20.790
+And for you something.
+
+00:35:40.190 --> 00:35:44.310
+So I just want to give you the actual definition.
+
+00:35:45.270 --> 00:35:48.050
+So first of all, in case you wonder what this is all about.
+
+00:35:50.050 --> 00:35:55.030
+So let's say that the components of our unit vector are two numbers a and b.
+
+00:35:55.870 --> 00:36:09.390
+OK, then it means that we'll move along the line x of s equals some initial value, the point where we are actually looking at the directional derivative plus s times a.
+
+00:36:09.390 --> 00:36:11.950
+Let me say plus a times s.
+
+00:36:13.450 --> 00:36:18.650
+And y of s equals y zero plus b times s.
+
+00:36:18.950 --> 00:36:21.130
+And then we plug that into w.
+
+00:36:30.310 --> 00:36:31.830
+And then we take the derivative.
+
+00:36:36.790 --> 00:36:39.250
+So we have a notation for that.
+
+00:36:41.830 --> 00:36:53.130
+Which is going to be dwds with a subscript in the direction of u to indicate in which direction we're actually going to move.
+
+00:36:57.050 --> 00:37:00.110
+And that's called that's the directional derivative.
+
+00:37:09.270 --> 00:37:13.910
+In the direction of u.
+
+00:37:17.610 --> 00:37:20.970
+OK, so let's see what it means geometrically.
+
+00:37:28.590 --> 00:37:33.690
+So remember we've seen things about partial derivatives.
+
+00:37:34.390 --> 00:37:43.430
+And we've seen that the partial derivatives are the slopes of slices of the graph by vertical planes that are parallel to the x or the y directions.
+
+00:37:44.250 --> 00:37:56.730
+OK, so if I have a point, you know, at any point, I can slice the graph of my function by two planes, one that's going along the x one along the y direction.
+
+00:37:57.230 --> 00:38:01.850
+And then I can look at the slices of the graph.
+
+00:38:02.190 --> 00:38:03.290
+Let me see if I can use that thing.
+
+00:38:04.090 --> 00:38:06.650
+So we can look at the slices of the graph, they're drawn here.
+
+00:38:07.270 --> 00:38:11.790
+And then we look at the tangent lines to the slices.
+
+00:38:12.070 --> 00:38:12.870
+And we look at the slope.
+
+00:38:13.050 --> 00:38:14.130
+And that gives us the partial derivatives.
+
+00:38:14.530 --> 00:38:15.310
+In case you want that side.
+
+00:38:15.990 --> 00:38:17.270
+We want to see also the pointer of them.
+
+00:38:18.710 --> 00:38:26.530
+OK, so now similarly, the directional derivative means actually will be slicing.
+
+00:38:30.270 --> 00:38:33.410
+We'll be slicing our graph by a vertical plane.
+
+00:38:34.170 --> 00:38:35.050
+It's not very colorful.
+
+00:38:35.990 --> 00:38:36.770
+It's something more colorful.
+
+00:38:40.430 --> 00:38:45.550
+We'll be slicing things by a plane that is now in the direction of this vector u.
+
+00:38:46.090 --> 00:38:50.690
+And we'll be looking at the slope of the slice of the graph.
+
+00:38:51.650 --> 00:38:53.750
+So what that looks like here.
+
+00:38:56.630 --> 00:39:02.230
+So that's the same applet by the way that you've used on your problem set, in case you're wondering.
+
+00:39:05.150 --> 00:39:09.650
+So now I'm picking a point on the contour plot.
+
+00:39:10.550 --> 00:39:12.650
+And at that point, I slice the graph.
+
+00:39:13.610 --> 00:39:17.050
+So here I'm starting by slicing in the direction of the x axis.
+
+00:39:17.050 --> 00:39:23.670
+So in fact, what I'm measuring here by the slope of this slice is the partial in the x direction.
+
+00:39:23.790 --> 00:39:29.790
+It's really partial f partial x, which is also the directional derivative in the direction of x of i.
+
+00:39:30.410 --> 00:39:38.050
+And now if I rotate the slice, then I have all of these planes.
+
+00:39:38.370 --> 00:39:42.130
+So you see at the bottom left, I have the direction in which I'm going.
+
+00:39:42.130 --> 00:39:46.350
+Because this rotating line, that tells you in which direction I'm going to be moving.
+
+00:39:46.850 --> 00:39:48.750
+And for each direction, I have a plane.
+
+00:39:49.150 --> 00:39:55.150
+And when I slice by that plane, I will get, so I have this direction here going, maybe to the southwest.
+
+00:39:55.850 --> 00:39:59.830
+So that gives me a slice of my graph by a vertical plane.
+
+00:40:00.430 --> 00:40:02.270
+And the slice has a certain slope.
+
+00:40:02.650 --> 00:40:06.810
+And the slope is going to be the directional derivative in that direction.
+
+00:40:09.750 --> 00:40:12.590
+I think that's as graphic as I can get.
+
+00:40:17.790 --> 00:40:19.510
+Any questions about that?
+
+00:40:21.470 --> 00:40:22.030
+No.
+
+00:40:23.570 --> 00:40:25.310
+Okay, so let's see how we compute that guy.
+
+00:40:25.310 --> 00:40:25.310
+
+
+00:40:37.830 --> 00:40:41.490
+So let me just write again, just in case you want to.
+
+00:40:41.490 --> 00:41:04.470
+If you didn't hear me, it's the slope of the slice of the graph by a vertical plane that contains the given direction nu, that's parallel to the direction nu.
+
+00:41:06.450 --> 00:41:08.610
+So how do we compute it?
+
+00:41:08.810 --> 00:41:10.650
+Well, we can use the chain rule.
+
+00:41:11.470 --> 00:41:23.190
+The chain rule implies that the W by ds is actually the gradient of W.
+
+00:41:27.270 --> 00:41:36.630
+So the velocity vector, dr ds, but remember, we say that we are going to be moving at unit speed in the direction of U.
+
+00:41:37.470 --> 00:41:40.730
+So in fact, that's just gradient W.
+
+00:41:49.150 --> 00:42:00.650
+So the formula between remember is really, dW by ds in the direction of U is gradient W, dot product with U.
+
+00:42:02.190 --> 00:42:17.830
+And maybe I should also say in words, this is the component of the gradient in the direction of U.
+
+00:42:19.170 --> 00:42:20.470
+And maybe that makes more sense.
+
+00:42:21.470 --> 00:42:32.710
+So for example, the directional derivative in the direction of i hat is the component along the x-axis, that's the same as indeed, the partial derivative in the x-direction.
+
+00:42:32.950 --> 00:42:33.730
+Things make sense.
+
+00:42:39.670 --> 00:42:46.690
+The W ds without the amount of i hat is, sorry, I may do it.
+
+00:42:48.410 --> 00:42:56.150
+Then W dot i hat, which is W sub x, the reaction find partial W, no, partial x.
+
+00:42:59.150 --> 00:42:59.630
+Okay.
+
+00:43:06.250 --> 00:43:09.410
+Now, so that's basically what we need to know to compute this guys.
+
+00:43:10.490 --> 00:43:15.590
+So now let's go back to the gradient and see what this tells us about the gradient.
+
+00:43:41.690 --> 00:43:43.030
+I see you guys are having fun.
+
+00:43:45.190 --> 00:43:45.510
+Okay.
+
+00:43:48.530 --> 00:43:52.930
+Okay, let's do a little bit of geometry here.
+
+00:43:54.470 --> 00:43:55.190
+Which would come you down.
+
+00:43:57.570 --> 00:44:21.170
+So we say dwd s in the direction of U is gradient W dot U, that's the same as the length of gradient W times the length of U, well, that happens to be 1 because we are taking a unit vector times the cosine of the angle between the gradient.
+
+00:44:24.430 --> 00:44:28.170
+And the given unit vector U.
+
+00:44:30.790 --> 00:44:32.830
+So have this angle, theta.
+
+00:44:34.570 --> 00:44:38.930
+Okay, that's another way of saying we are taking the component of the gradient in the direction of U.
+
+00:44:39.890 --> 00:44:42.630
+But now, what does that tell us?
+
+00:44:42.630 --> 00:44:49.090
+Well, let's try to figure out in which directions W changes the fastest.
+
+00:44:49.890 --> 00:44:57.670
+In which direction it increases the most or decreases the most or doesn't actually change.
+
+00:45:00.010 --> 00:45:03.830
+So this is, when is this going to be the largest?
+
+00:45:04.390 --> 00:45:10.530
+If I fix a point, if I set a point, then the gradient vector at that point is given to me.
+
+00:45:11.530 --> 00:45:17.150
+But question is in which direction does it change the most quickly? Well, what I can change is the direction.
+
+00:45:17.890 --> 00:45:20.630
+And this will be the largest when the cosine is 1.
+
+00:45:22.370 --> 00:45:26.910
+So this is the largest when cosine of the angle is 1.
+
+00:45:27.810 --> 00:45:30.250
+That means the angle is 0.
+
+00:45:32.310 --> 00:45:37.530
+That means U is actually in the direction of the gradient.
+
+00:45:39.930 --> 00:45:42.470
+Okay, so that's a new way to think about the direction of the gradient.
+
+00:45:42.730 --> 00:45:47.290
+The gradient is the direction in which the function increases the most quickly at that point.
+
+00:45:56.610 --> 00:46:13.670
+So the direction of the gradient W is the direction of fastest increase of W at the given point.
+
+00:46:14.670 --> 00:46:23.570
+And what is the magnitude of W? Well, it's actually the directional derivative in that direction.
+
+00:46:31.970 --> 00:46:40.910
+Okay, so if I go in that direction which gives me the fastest increase, then the corresponding slope will be the length of the gradient.
+
+00:46:46.430 --> 00:46:48.670
+And what's the direction of fastest decrease?
+
+00:46:51.030 --> 00:46:52.850
+It's going in the opposite direction, right?
+
+00:46:52.930 --> 00:46:57.990
+I mean, if you're going to maintain, and you know that you're facing the mountain, that's the direction of fastest increase.
+
+00:46:58.210 --> 00:47:00.570
+The direction of fastest decrease is behind you straight down.
+
+00:47:01.510 --> 00:47:10.890
+Okay, so the minimal value of DWVS is the maximum.
+
+00:47:10.890 --> 00:47:14.870
+It also increases, achieves one cosine of theta is minus one.
+
+00:47:15.070 --> 00:47:17.750
+That means theta equals 180 degrees.
+
+00:47:18.490 --> 00:47:25.570
+That means U is in the direction of minus the gradient.
+
+00:47:27.230 --> 00:47:28.730
+Okay, points opposite to the gradient.
+
+00:47:31.110 --> 00:47:40.790
+And finally, when do we have dwds equals 0?
+
+00:47:45.390 --> 00:47:48.850
+So in which direction does the function not change?
+
+00:47:50.130 --> 00:47:51.370
+Well, we have two answers to that.
+
+00:47:52.110 --> 00:47:53.690
+One is to just use that formula.
+
+00:47:54.330 --> 00:47:57.430
+So that's when cosine theta equals 0.
+
+00:47:57.430 --> 00:47:59.730
+So that means theta equals 90 degrees.
+
+00:48:00.310 --> 00:48:04.690
+That means that u is perpendicular to the gradient.
+
+00:48:06.290 --> 00:48:09.750
+The other way to think about it, a direction in which the value
+
+00:48:09.750 --> 00:48:12.990
+doesn't change, is a direction that's tangent to the
+
+00:48:12.990 --> 00:48:13.530
+level surface.
+
+00:48:13.970 --> 00:48:16.330
+If we are not changing, it means we are moving along the
+
+00:48:16.330 --> 00:48:16.590
+level.
+
+00:48:18.490 --> 00:48:19.830
+And that's the same thing.
+
+00:48:29.890 --> 00:48:34.130
+So let me just show that on the picture here.
+
+00:48:35.690 --> 00:48:39.570
+So if I actually show you the gradient, you can't really see it
+
+00:48:39.570 --> 00:48:39.790
+here.
+
+00:48:40.050 --> 00:48:40.670
+You need to move a bit.
+
+00:48:41.550 --> 00:48:45.030
+So the gradient here is pointing straight up at the point that
+
+00:48:45.030 --> 00:48:45.410
+I've chosen.
+
+00:48:46.230 --> 00:48:49.330
+Now, if I choose a slice that's perpendicular,
+
+00:48:49.330 --> 00:48:53.910
+you know, in a direction that's perpendicular to the gradient, so that's
+
+00:48:53.910 --> 00:48:56.970
+actually tangent to the level curve, then you see that my
+
+00:48:56.970 --> 00:48:57.650
+slice is flat.
+
+00:48:57.990 --> 00:48:59.150
+I don't actually have any slope.
+
+00:48:59.910 --> 00:49:03.210
+The direction of the derivative in a direction that's perpendicular to
+
+00:49:03.210 --> 00:49:04.830
+the gradient is basically 0.
+
+00:49:06.230 --> 00:49:10.130
+Now, if I rotate, then the slope slowly increases, increases, increases.
+
+00:49:10.610 --> 00:49:13.850
+And it becomes the largest when I'm going in the direction of the gradient.
+
+00:49:14.390 --> 00:49:16.530
+So here I have actually a pretty big slope.
+
+00:49:17.110 --> 00:49:20.250
+And now, if I keep rotating, then the slope will decrease again.
+
+00:49:21.170 --> 00:49:22.510
+Then it becomes 0 when I'm perpendicular.
+
+00:49:23.550 --> 00:49:24.850
+And then it becomes negative.
+
+00:49:25.150 --> 00:49:28.050
+It's the most negative when I'm pointing away from the gradient.
+
+00:49:28.770 --> 00:49:31.590
+And then it becomes 0 again when I'm back perpendicular.
+
+00:49:34.030 --> 00:49:39.470
+So for example, if I give you a contour plot, and I ask you to draw the
+
+00:49:39.470 --> 00:49:44.530
+direction of the gradient vector, well, at this point, for example, you
+
+00:49:44.530 --> 00:49:48.890
+look at the picture, the gradient vector would be going perpendicular to the
+
+00:49:48.890 --> 00:49:49.110
+level.
+
+00:49:50.010 --> 00:49:53.590
+And it would be going towards higher values of the function.
+
+00:49:54.190 --> 00:49:56.590
+And I don't know if you can see the labels, but the thing in the middle is
+
+00:49:56.590 --> 00:49:56.950
+a minimum.
+
+00:49:57.570 --> 00:50:00.390
+So it would actually be pointing in this kind of direction.
+
+00:50:04.150 --> 00:50:04.550
+Okay?
+
+00:50:06.310 --> 00:50:07.570
+So that's it for today.
+

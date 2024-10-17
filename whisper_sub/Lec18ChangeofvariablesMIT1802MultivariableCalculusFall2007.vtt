@@ -1,0 +1,1634 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.280
+The following content is provided under a Creative
+
+00:00:02.280 --> 00:00:03.060
+Commons license.
+
+00:00:03.680 --> 00:00:05.920
+Your support will help MIT OpenCourseWare
+
+00:00:05.920 --> 00:00:09.300
+continue to offer high quality educational resources for free.
+
+00:00:09.880 --> 00:00:12.480
+To make a donation or to view additional materials
+
+00:00:12.480 --> 00:00:16.420
+from hundreds of MIT courses, visit MIT OpenCourseWare
+
+00:00:16.420 --> 00:00:19.200
+at ocw.mit.edu.
+
+00:00:21.720 --> 00:00:22.320
+OK.
+
+00:00:22.920 --> 00:00:27.580
+So far we've learned how to do double integrals
+
+00:00:27.580 --> 00:00:31.560
+in terms of x, y coordinates, also how to switch to polar
+
+00:00:31.560 --> 00:00:32.120
+coordinates.
+
+00:00:33.280 --> 00:00:37.060
+But more generally, there's a lot of different changes
+
+00:00:37.060 --> 00:00:38.820
+of variables that you might want to do.
+
+00:00:41.640 --> 00:00:45.140
+So today we're going to see how to change variables.
+
+00:00:48.120 --> 00:00:52.520
+If you want how to do substitutions in double integrals.
+
+00:01:02.080 --> 00:01:02.640
+OK.
+
+00:01:02.780 --> 00:01:04.800
+So let me start with a simple example.
+
+00:01:10.040 --> 00:01:20.260
+Let's say that we want to find the area of an ellipse with
+
+00:01:20.260 --> 00:01:23.480
+x, so may x is a and b.
+
+00:01:24.420 --> 00:01:24.480
+OK.
+
+00:01:24.620 --> 00:01:30.140
+So that means an ellipse is just like a squished circle.
+
+00:01:32.600 --> 00:01:37.060
+And so there's a and there's b.
+
+00:01:37.660 --> 00:01:44.820
+And the equation of that ellipse is x over a squared plus y
+
+00:01:44.820 --> 00:01:47.440
+over b squared equals 1.
+
+00:01:47.640 --> 00:01:48.500
+Well, that's the curve.
+
+00:01:49.020 --> 00:01:52.060
+And the inside region is where this is less than 1.
+
+00:01:53.400 --> 00:01:57.380
+So it's just like a circle, but where you have rescaled x
+
+00:01:57.380 --> 00:01:58.340
+and y differently.
+
+00:01:59.720 --> 00:02:01.300
+So let's say we want to find the area of that.
+
+00:02:01.420 --> 00:02:02.780
+I mean, maybe you know what the area is,
+
+00:02:03.160 --> 00:02:04.560
+but let's do it as double integral.
+
+00:02:12.960 --> 00:02:16.200
+So if you find that the area is too easy,
+
+00:02:16.200 --> 00:02:19.320
+you can integrate any function over the ellipse if you prefer.
+
+00:02:20.380 --> 00:02:22.900
+But let's do it just with a real.
+
+00:02:23.360 --> 00:02:26.280
+So we know that we want to integrate just the area element,
+
+00:02:26.620 --> 00:02:30.220
+let's say the x dy, over the region inside the ellipse.
+
+00:02:30.420 --> 00:02:35.840
+That's x over a squared plus y over b squared less than 1.
+
+00:02:37.060 --> 00:02:39.680
+Now we can try to set this up in terms of x and y
+
+00:02:39.680 --> 00:02:43.760
+coordinates, you know, set up the bounds by solving first
+
+00:02:43.760 --> 00:02:46.700
+for x as a function of y if we do it this order.
+
+00:02:48.740 --> 00:02:50.340
+And well, do the usual stuff.
+
+00:02:50.740 --> 00:02:52.440
+That doesn't look very pleasant, and it's
+
+00:02:52.440 --> 00:02:53.720
+certainly not the best way to do it.
+
+00:02:55.140 --> 00:02:57.400
+If this were a circle, we would switch to polar coordinates.
+
+00:02:57.800 --> 00:02:58.940
+Well, we can't quite do that yet.
+
+00:02:59.640 --> 00:03:01.400
+But you know, an ellipse is just a squished circle.
+
+00:03:01.600 --> 00:03:05.700
+So maybe we want to actually first rescale x and y by a and b
+
+00:03:06.080 --> 00:03:07.580
+to reduce to the case of a circle.
+
+00:03:08.500 --> 00:03:18.680
+So to do that, what we'd like to do is set x over a to be u,
+
+00:03:19.280 --> 00:03:22.360
+and y over b, b, v.
+
+00:03:22.640 --> 00:03:24.400
+So we have two new variables, u and v.
+
+00:03:25.120 --> 00:03:28.380
+And we'll try to redo our integral in terms of u and v.
+
+00:03:30.040 --> 00:03:31.880
+So how do we do the substitution?
+
+00:03:34.060 --> 00:03:37.720
+So in terms of u and v, the condition, the region that we're
+
+00:03:37.720 --> 00:03:41.800
+integrating on will become u squared plus v squared less than 1,
+
+00:03:42.460 --> 00:03:45.100
+which is arguably nice solving the ellipse.
+
+00:03:45.540 --> 00:03:46.960
+That's what's why we're doing it.
+
+00:03:47.880 --> 00:03:49.880
+But we need to know what to do with dx and dy.
+
+00:03:51.140 --> 00:03:54.060
+Well, here the answer is pretty easy, because we just
+
+00:03:54.060 --> 00:03:55.860
+change x and y separately.
+
+00:03:56.060 --> 00:03:57.760
+We do two independent substitutions.
+
+00:03:58.600 --> 00:04:10.280
+OK, so if we set u equals x over a, that means du is 1 over a dx.
+
+00:04:11.880 --> 00:04:16.220
+And here, dv is 1 over b dy.
+
+00:04:20.060 --> 00:04:22.240
+So it's very tempting to write.
+
+00:04:22.360 --> 00:04:23.420
+And here we actually we can write.
+
+00:04:23.420 --> 00:04:29.700
+In this particular case, that du dv is 1 over a, b dx dy.
+
+00:04:35.260 --> 00:04:36.740
+So let me rewind that.
+
+00:04:42.260 --> 00:04:47.480
+So I get du dv equals 1 over a, b dx dy.
+
+00:04:47.480 --> 00:04:54.460
+Or equivalently, dx dy is a, b times du dv.
+
+00:04:57.560 --> 00:05:04.320
+So in my double integral, I'm going to write a, b, du dv.
+
+00:05:10.700 --> 00:05:19.300
+OK, so now my double integral becomes, well, the double integral
+
+00:05:19.300 --> 00:05:21.000
+of a constant in terms of u and v.
+
+00:05:21.060 --> 00:05:22.280
+So I can take the constant out.
+
+00:05:22.520 --> 00:05:28.440
+I will get a, b times double integral of u squared plus v squared
+
+00:05:28.440 --> 00:05:30.500
+less than 1 of du dv.
+
+00:05:31.340 --> 00:05:33.620
+And that is an integral that we know how to do.
+
+00:05:35.000 --> 00:05:37.600
+Well, because it's the area, it's just the area of a unit circle.
+
+00:05:38.140 --> 00:05:46.160
+So we can just say, oh, this is a, b times the area of the unit
+
+00:05:49.800 --> 00:05:51.340
+disk, which we know to be pi.
+
+00:05:53.520 --> 00:05:55.640
+If somehow you had some function to integrate,
+
+00:05:55.920 --> 00:05:57.660
+then you could have switched to polar coordinates,
+
+00:05:58.080 --> 00:06:01.760
+setting u equals R cos theta, v equals R sine theta,
+
+00:06:01.880 --> 00:06:03.800
+and then doing it in polar coordinates.
+
+00:06:07.060 --> 00:06:09.360
+So here the substitution worked pretty easily.
+
+00:06:11.080 --> 00:06:13.100
+The question is, if we do a change of variables,
+
+00:06:13.100 --> 00:06:16.700
+where the relation between x and y and u and v is more
+
+00:06:16.700 --> 00:06:18.640
+complicated, what can we do?
+
+00:06:19.600 --> 00:06:20.480
+Can we still do this?
+
+00:06:20.580 --> 00:06:21.380
+Or do we have to be more careful?
+
+00:06:21.720 --> 00:06:22.900
+And actually, we have to be more careful.
+
+00:06:23.580 --> 00:06:24.920
+So that's what we're going to see next.
+
+00:06:24.920 --> 00:06:27.120
+Any question about this first?
+
+00:06:33.080 --> 00:06:33.660
+OK.
+
+00:06:35.380 --> 00:06:39.800
+OK, so see, the general problem when we try to do this
+
+00:06:39.800 --> 00:06:41.980
+is to figure out what is the scale factor,
+
+00:06:42.180 --> 00:06:44.720
+what's the relation between dx dy and du dv.
+
+00:06:44.720 --> 00:06:54.140
+So we need to find the scaling factor.
+
+00:06:58.760 --> 00:07:05.280
+So we need to find the x, dy, x, z, du, dv.
+
+00:07:08.700 --> 00:07:12.080
+So let's do another example that's still pretty easy,
+
+00:07:12.080 --> 00:07:15.420
+but a little bit less easy.
+
+00:07:17.700 --> 00:07:21.140
+So let's say that for some reason, we want to set,
+
+00:07:21.520 --> 00:07:24.180
+we want to do the change of variables, u equals
+
+00:07:24.180 --> 00:07:27.900
+3x minus 2y, and v equals x plus y.
+
+00:07:29.080 --> 00:07:30.360
+Why would we want to do that?
+
+00:07:30.780 --> 00:07:33.360
+Well, that might be to simplify the integrant,
+
+00:07:33.640 --> 00:07:36.420
+because we're integrating a function that happens to be
+
+00:07:36.420 --> 00:07:39.320
+actually involving these guys, rather than x and y.
+
+00:07:40.020 --> 00:07:42.040
+Or it might be to simplify the bounds,
+
+00:07:42.600 --> 00:07:44.560
+because maybe we're integrating over a region,
+
+00:07:44.960 --> 00:07:48.300
+whose equation in x, y coordinates is very hard to write down,
+
+00:07:48.700 --> 00:07:51.180
+but it becomes much easier in terms of u and v.
+
+00:07:51.520 --> 00:07:54.260
+And then the bounds will be much easier to set up with u and v.
+
+00:07:56.960 --> 00:08:01.100
+Anyway, so whatever reason might be,
+
+00:08:01.220 --> 00:08:08.480
+but typically it would be to simplify the integrant of the bounds
+
+00:08:09.320 --> 00:08:09.320
+
+
+00:08:13.400 --> 00:08:16.520
+Well, how do we convert the x, dy to the u, dv?
+
+00:08:18.300 --> 00:08:23.560
+So we want to understand what's the relation between,
+
+00:08:25.980 --> 00:08:29.440
+let's call dA, the area element in x, y coordinates.
+
+00:08:29.720 --> 00:08:32.880
+So dA is dx, dy, maybe dy, dx, depending on the order.
+
+00:08:34.200 --> 00:08:36.420
+And the area element in u, v coordinates,
+
+00:08:36.920 --> 00:08:41.400
+let me call that dA prime just to make it look different.
+
+00:08:42.380 --> 00:08:44.800
+So that would just be du, dv, or dv, du,
+
+00:08:45.020 --> 00:08:47.380
+depending on which order I will want to set it up in.
+
+00:08:56.920 --> 00:09:00.340
+So to find this relation, it's probably best to draw a picture
+
+00:09:00.940 --> 00:09:02.580
+to see what happens.
+
+00:09:04.680 --> 00:09:08.220
+Let's consider a small piece of the x, y plane
+
+00:09:10.720 --> 00:09:15.360
+with a real delta A corresponding to just a box with sides,
+
+00:09:16.220 --> 00:09:19.460
+delta y, and delta x.
+
+00:09:22.580 --> 00:09:26.200
+And let's try to figure out what it will look like in terms of u and v.
+
+00:09:26.900 --> 00:09:28.800
+And then we'll say, well, when we integrate,
+
+00:09:29.080 --> 00:09:32.040
+we're really summing the value of a function of a lot of small boxes
+
+00:09:32.040 --> 00:09:33.020
+times their area.
+
+00:09:33.460 --> 00:09:38.120
+But the problem is that the area of a box in here is not the same
+
+00:09:38.120 --> 00:09:41.140
+as the area of a box in u, v coordinates.
+
+00:09:42.080 --> 00:09:43.240
+There maybe it will look like.
+
+00:09:46.500 --> 00:09:50.320
+Actually, if you see that these are linear changes of variables,
+
+00:09:51.040 --> 00:09:53.300
+you know that a rectangle will become a parallelogram
+
+00:09:53.960 --> 00:09:54.820
+after the change of variables.
+
+00:09:55.640 --> 00:09:58.620
+So the area of a parallelogram delta A prime,
+
+00:09:59.620 --> 00:10:02.820
+well, we have to figure out how they're related.
+
+00:10:03.980 --> 00:10:08.920
+So that we can decide what conversion factor,
+
+00:10:08.920 --> 00:10:12.380
+what's the exchange rate between these two currencies for our area.
+
+00:10:15.980 --> 00:10:17.680
+Any questions at this point?
+
+00:10:19.680 --> 00:10:20.520
+No, still with me?
+
+00:10:21.920 --> 00:10:22.260
+Mostly?
+
+00:10:23.220 --> 00:10:24.500
+I see a lot of tired faces.
+
+00:10:26.220 --> 00:10:26.900
+Yes.
+
+00:10:28.900 --> 00:10:29.300
+Yeah.
+
+00:10:33.160 --> 00:10:35.280
+Why is delta A prime a parallelogram?
+
+00:10:35.420 --> 00:10:36.260
+That's a very good question.
+
+00:10:36.920 --> 00:10:41.200
+Well, see, here, if I look at this side of the rectangle,
+
+00:10:41.760 --> 00:10:42.740
+say there's vertical side,
+
+00:10:43.600 --> 00:10:46.680
+it means I'm going to increase y keeping x the same.
+
+00:10:47.340 --> 00:10:49.800
+If I look at the formulas for u and v,
+
+00:10:50.220 --> 00:10:52.000
+they're linear formulas in terms of x and y.
+
+00:10:52.140 --> 00:10:57.140
+So if I just increase y, see that u is going to decrease at a rate of 2,
+
+00:10:57.140 --> 00:11:00.260
+this is going to increase at a rate of 1 at constant rates.
+
+00:11:00.440 --> 00:11:03.220
+And it doesn't matter whether I was looking at this side or at that side.
+
+00:11:03.940 --> 00:11:06.400
+So basically, straight lines become straight lines.
+
+00:11:06.600 --> 00:11:08.060
+And if they're parallel, they stay parallel.
+
+00:11:08.780 --> 00:11:12.440
+So if you just look at what the transformation from x, y to u, v does,
+
+00:11:12.800 --> 00:11:13.820
+it does this kind of thing.
+
+00:11:14.060 --> 00:11:17.180
+Actually, this transformation here, you can express by your matrix.
+
+00:11:17.820 --> 00:11:20.440
+And remember, we've seen what matrices do to pictures,
+
+00:11:20.520 --> 00:11:23.800
+which just take straight lines to straight lines.
+
+00:11:24.040 --> 00:11:25.700
+They keep the notion of being parallel,
+
+00:11:25.700 --> 00:11:27.780
+but of course, they mess up length, angles and all that.
+
+00:11:31.440 --> 00:11:35.320
+OK, so let's see.
+
+00:11:35.840 --> 00:11:39.160
+So let's try to figure out what is the array of this guy.
+
+00:11:40.360 --> 00:11:47.320
+Well, in fact, what I've been saying about this transformation being linear
+
+00:11:47.320 --> 00:11:51.280
+and transforming all of the vertical lines in the same way,
+
+00:11:51.420 --> 00:11:52.760
+all the horizontal lines in the same way,
+
+00:11:53.260 --> 00:11:55.720
+tells me also I should have a constant scaling factor.
+
+00:11:56.660 --> 00:12:02.080
+Because how much I've scaled my rectangle doesn't depend on where my rectangle is.
+
+00:12:02.200 --> 00:12:03.640
+If I move my rectangle to somewhere else,
+
+00:12:04.140 --> 00:12:05.900
+I have a rectangle of the same size, same shape.
+
+00:12:06.280 --> 00:12:09.360
+It will become a parallelogram of the same size, same shape somewhere else.
+
+00:12:10.400 --> 00:12:13.260
+So in fact, I can just take the simplest rectangle I can think of
+
+00:12:13.260 --> 00:12:15.040
+and see how its array changes.
+
+00:12:15.920 --> 00:12:18.380
+And if you don't believe me, then try with any of our rectangle,
+
+00:12:18.440 --> 00:12:20.140
+you will see it works exactly the same way.
+
+00:12:22.760 --> 00:12:33.080
+So I claim that the area scaling factor here, in this case,
+
+00:12:33.840 --> 00:12:39.540
+doesn't depend on the choice of the rectangle.
+
+00:12:45.620 --> 00:12:53.600
+So I should say that because we're actually doing a linear change of variables.
+
+00:13:04.340 --> 00:13:08.680
+So somehow the exchange rate between uv and xy is going to be the same everywhere.
+
+00:13:10.360 --> 00:13:13.920
+So let's try to see what happens to the simplest rectangle I can think of,
+
+00:13:14.020 --> 00:13:15.180
+namely just the unit square.
+
+00:13:18.700 --> 00:13:20.920
+And if you don't trust me, then,
+
+00:13:20.960 --> 00:13:24.720
+you know, while I'm doing this one, do it with a different rectangle,
+
+00:13:24.940 --> 00:13:27.820
+do the same calculation and see that you will get the same conversion ratio.
+
+00:13:29.540 --> 00:13:32.140
+So let's say that I take the unit square.
+
+00:13:39.080 --> 00:13:42.620
+So some of it has size that goes from 0 to 1,
+
+00:13:42.900 --> 00:13:44.080
+both in x and y directions.
+
+00:13:47.540 --> 00:13:51.180
+And let's try to figure out what it looks like on the other side.
+
+00:13:51.400 --> 00:13:54.020
+So here, the area is 1.
+
+00:13:55.940 --> 00:13:58.140
+Let's try to draw it in terms of u and v coordinates.
+
+00:14:01.000 --> 00:14:04.300
+So here we have x equals 0, y equals 0.
+
+00:14:04.960 --> 00:14:08.600
+Well, that tells us u and v are going to be 0.
+
+00:14:12.640 --> 00:14:14.520
+Next, let's look at this corner.
+
+00:14:15.160 --> 00:14:17.540
+Well, in xy coordinates, this is 1, 0.
+
+00:14:18.260 --> 00:14:23.680
+If you plug x equals 1, y equals 0, you get u equals 3, v equals 1.
+
+00:14:23.680 --> 00:14:28.840
+So that goes somewhere here.
+
+00:14:32.380 --> 00:14:41.240
+And so this edge of a square will become this line here.
+
+00:14:43.580 --> 00:14:45.840
+Next, let's look at that point.
+
+00:14:46.060 --> 00:14:47.940
+So that point here was 0, 1.
+
+00:14:48.820 --> 00:14:55.340
+If I plug x equals 0, y equals 1, I will get negative 2 and 1.
+
+00:15:01.660 --> 00:15:05.560
+So this edge goes here.
+
+00:15:07.700 --> 00:15:15.300
+Then if you put x equals 1, y equals 1, you'll get u equals 1, v equals 2.
+
+00:15:15.820 --> 00:15:18.560
+So I want 1, 2.
+
+00:15:21.980 --> 00:15:27.200
+And these edges will go to these edges here.
+
+00:15:27.720 --> 00:15:29.860
+And you see it does look like a parallelogram.
+
+00:15:34.800 --> 00:15:37.620
+So now what's the area of this parallelogram?
+
+00:15:40.920 --> 00:15:44.420
+Well, we can get that by taking the determinant of these two vectors.
+
+00:15:46.620 --> 00:15:48.960
+So one of them is 3, 1.
+
+00:15:49.560 --> 00:15:53.220
+And the other one is minus 2, 1.
+
+00:15:54.100 --> 00:15:56.280
+That will be 3 plus 2.
+
+00:15:56.700 --> 00:15:57.220
+That's 5.
+
+00:15:59.080 --> 00:16:03.500
+This parallelogram is apparently 5 times the size of this square.
+
+00:16:04.020 --> 00:16:07.700
+Here, it looks like it's less because I've somehow changed my scale.
+
+00:16:07.700 --> 00:16:10.080
+I mean, my unit length is smaller here than here.
+
+00:16:10.340 --> 00:16:13.660
+So that it should be a lot bigger than that.
+
+00:16:15.860 --> 00:16:21.560
+And if you do the same calculations, not with 0 and 1, but with x and x plus delta x and so on,
+
+00:16:21.660 --> 00:16:24.300
+you will still find that the area has been multiplied by 5.
+
+00:16:27.520 --> 00:16:35.220
+So that tells us, actually, for any other rectangle,
+
+00:16:39.480 --> 00:16:43.080
+area is also multiplied by 5.
+
+00:16:46.120 --> 00:16:53.140
+So that tells us that dA prime, the area element in UV coordinate,
+
+00:16:53.560 --> 00:16:58.860
+is worth 5 times more than the area element in xy coordinates.
+
+00:17:10.120 --> 00:17:14.940
+So that means the uDV is worth 5 times the xdy.
+
+00:17:16.780 --> 00:17:17.840
+What's so funny?
+
+00:17:23.320 --> 00:17:24.120
+What?
+
+00:17:26.300 --> 00:17:27.100
+What?
+
+00:17:28.780 --> 00:17:28.840
+What?
+
+00:17:29.680 --> 00:17:30.080
+Oh.
+
+00:17:35.120 --> 00:17:36.180
+Okay, rectangle.
+
+00:17:39.660 --> 00:17:40.460
+Is it okay now?
+
+00:17:42.100 --> 00:17:45.280
+Did I misspelling over what?
+
+00:17:45.620 --> 00:17:45.620
+
+
+00:17:47.340 --> 00:17:49.220
+It's really hard to see when you're that close up.
+
+00:17:49.400 --> 00:17:50.400
+It's much easier for my distance.
+
+00:17:55.800 --> 00:17:56.440
+Okay.
+
+00:18:00.960 --> 00:18:04.860
+So, yeah, so we've said our transformation multiplies areas by 5.
+
+00:18:06.720 --> 00:18:09.080
+And so dUdV is 5 times the xdy.
+
+00:18:09.400 --> 00:18:12.980
+So if I'm integrating some function, the xdy,
+
+00:18:14.180 --> 00:18:16.420
+then when I switch to UV coordinates,
+
+00:18:16.420 --> 00:18:20.580
+I will have to replace that by 1.5 dUdV.
+
+00:18:23.800 --> 00:18:23.820
+Okay.
+
+00:18:24.400 --> 00:18:26.820
+And of course, I would also, you know,
+
+00:18:26.940 --> 00:18:28.980
+here my function would probably involve x and y.
+
+00:18:29.240 --> 00:18:31.880
+I will replace them by u and v's.
+
+00:18:32.480 --> 00:18:36.360
+And the bounds, well, the shape of my region in the xy coordinates
+
+00:18:36.360 --> 00:18:39.340
+I will have to switch to some shape in the UV coordinates.
+
+00:18:40.060 --> 00:18:43.660
+And that's also something that might be easy or might be tricky
+
+00:18:43.660 --> 00:18:45.800
+depending on what region we're looking at.
+
+00:18:47.000 --> 00:18:50.360
+So, usually we'll do changes of variables to actually simplify the region.
+
+00:18:51.320 --> 00:18:52.980
+You know, so that it becomes easier to set up the bounds.
+
+00:19:02.480 --> 00:19:05.540
+So, anyway, so this is kind of an illustration of a general case.
+
+00:19:05.760 --> 00:19:06.340
+And why is that?
+
+00:19:06.340 --> 00:19:10.120
+Well, here it looks very easy, you know, we're just using linear formulas.
+
+00:19:10.780 --> 00:19:14.960
+And somehow the relation between the xdy and dUdV is the same everywhere.
+
+00:19:15.540 --> 00:19:18.940
+If you take actually more complicated changes of variables, that's not true.
+
+00:19:19.260 --> 00:19:23.580
+Because usually you will expect that, you know,
+
+00:19:23.680 --> 00:19:26.880
+there's some places where the risk-caling is maybe enlarging things.
+
+00:19:26.920 --> 00:19:28.800
+And some of our places where things are shrunk.
+
+00:19:29.600 --> 00:19:32.540
+So certainly the x-change rate between dUdV and dXdy
+
+00:19:33.040 --> 00:19:34.560
+will fluctuate from point to point.
+
+00:19:34.840 --> 00:19:37.000
+You know, it's same as if you're trying to change dollars to euros.
+
+00:19:37.440 --> 00:19:38.500
+It depends on where you do it.
+
+00:19:38.600 --> 00:19:40.100
+You will get a better rate or a worse one.
+
+00:19:44.840 --> 00:19:48.860
+So, you know, we have to, of course, we'll get a formula where actually the scaling factor
+
+00:19:48.860 --> 00:19:51.260
+will depend on x and y or on u and v.
+
+00:19:53.020 --> 00:19:56.700
+But if you fix a point, then we have linear approximation.
+
+00:19:57.120 --> 00:20:02.120
+And linear approximation tells us, oh, we can do as if our function is just a linear function of x and y.
+
+00:20:02.120 --> 00:20:04.560
+So then we can do it the same way we did here.
+
+00:20:06.080 --> 00:20:08.600
+Okay, so let's try to think about that.
+
+00:20:18.900 --> 00:20:22.180
+So, in the general case, well, that means, you know,
+
+00:20:22.240 --> 00:20:24.880
+we'll replace x and y by new coordinates, u and v.
+
+00:20:25.480 --> 00:20:27.780
+And u and v will be some functions of x and y.
+
+00:20:31.120 --> 00:20:34.260
+So, well, we'll have an approximation formula,
+
+00:20:34.560 --> 00:20:38.960
+which tells us that the change in u, if I change x on y a little bit,
+
+00:20:39.840 --> 00:20:44.620
+will be roughly u sub x times change in x plus u sub y times change in y.
+
+00:20:45.580 --> 00:20:55.080
+And the change in v will be, hopefully, v sub x delta x plus v sub y delta y.
+
+00:20:56.960 --> 00:21:04.080
+Or the other way to say it, if you want in matrix form, is delta u delta v is,
+
+00:21:05.120 --> 00:21:17.080
+so approximately equal to u sub x, u sub y, v sub x, v sub y times delta x and delta y.
+
+00:21:21.500 --> 00:21:27.800
+Okay, so if we look at that, what it tells us, in fact,
+
+00:21:28.180 --> 00:21:37.260
+is that if we take a small rectangle in x, y coordinates, so that means,
+
+00:21:38.900 --> 00:21:43.480
+you know, we have a certain point x, y, and then we have a certain width.
+
+00:21:44.140 --> 00:21:45.980
+Oh, this is going to be too small either.
+
+00:21:52.980 --> 00:21:58.260
+Well, so I have my width delta x, I have my height delta y.
+
+00:21:58.980 --> 00:22:04.840
+This is going to correspond to a small u v parallelogram.
+
+00:22:15.580 --> 00:22:18.840
+And, you know, what the shape and the size of that parallelogram are,
+
+00:22:19.800 --> 00:22:23.300
+depend on the partial derivatives of u and v, so in particular,
+
+00:22:23.400 --> 00:22:25.180
+they depend on at which point we are.
+
+00:22:26.320 --> 00:22:28.580
+But still, at a given point, it's a bit like that.
+
+00:22:30.780 --> 00:22:41.320
+And so, if we do the same argument as before, what we'll see is that the scaling factor
+
+00:22:41.320 --> 00:22:43.820
+is actually the determinant of this transformation.
+
+00:22:45.300 --> 00:22:51.180
+So, that's one thing that maybe we did not emphasize enough when we did matrices
+
+00:22:51.180 --> 00:22:55.780
+at the beginning of the semester, but when you have a linear transformation between variables,
+
+00:22:56.600 --> 00:23:00.660
+the determinant of that transformation represents how it scales areas.
+
+00:23:03.020 --> 00:23:06.980
+So, one way to think about it is just, you know, to try and see what happens.
+
+00:23:08.300 --> 00:23:14.880
+You know, take this side, this side, in x, y coordinates corresponds to delta x and 0.
+
+00:23:15.820 --> 00:23:20.240
+And now, if you take the image of that, you know, if you see what happens to delta u and delta v,
+
+00:23:20.860 --> 00:23:26.260
+that will be basically u sub x delta x and v sub x delta x.
+
+00:23:26.340 --> 00:23:31.340
+There's no delta y. For the other side, so maybe I should do it actually.
+
+00:23:34.620 --> 00:23:39.480
+So, you know, if we move in the x, y coordinates by delta x and 0,
+
+00:23:41.540 --> 00:23:54.360
+then delta u and delta v will be u sub x, be approximately u sub x delta x and v sub x delta x.
+
+00:24:00.220 --> 00:24:05.080
+And in the other hand, if you move in the other direction along the other side of your rectangle,
+
+00:24:05.080 --> 00:24:11.920
+0 and delta y, then the change in u and the change in v will correspond to,
+
+00:24:12.600 --> 00:24:18.820
+well, how does u change? That's u sub y delta y and v changes by this sub y delta y.
+
+00:24:19.500 --> 00:24:22.680
+And so now, if you take the determinant of these two vectors, okay?
+
+00:24:22.680 --> 00:24:26.160
+So, these are the sides of your parallelogram up here.
+
+00:24:27.120 --> 00:24:30.560
+And if you take this side to get the area of the parallelogram,
+
+00:24:30.660 --> 00:24:31.740
+you will need to take the determinant.
+
+00:24:32.560 --> 00:24:37.620
+And the determinant will be, the determinant of this matrix times delta x times delta y.
+
+00:24:44.360 --> 00:24:51.160
+So, the area in u v coordinates will be the determinant of the matrix times delta x delta y.
+
+00:24:53.720 --> 00:25:02.800
+And so, what I'm trying to say is that when you have a general change of variables,
+
+00:25:03.860 --> 00:25:09.260
+the u dv versus dx dy is given by the determinant of these matrix of partial derivatives.
+
+00:25:10.680 --> 00:25:12.740
+It doesn't matter in which order you've added.
+
+00:25:12.920 --> 00:25:17.360
+I mean, you can put, you know, in rows or in columns, if you transpose a matrix,
+
+00:25:17.360 --> 00:25:20.200
+but it doesn't change for the determinant. It's just, you know,
+
+00:25:20.300 --> 00:25:24.140
+any sensible matrix that you can write will have the correct determinant.
+
+00:26:01.420 --> 00:26:05.960
+Okay, so, what we need to know is the following thing.
+
+00:26:07.760 --> 00:26:12.320
+So, we define something called the Jacobian of a change of variables.
+
+00:26:13.660 --> 00:26:24.700
+And use a letter j, or maybe a more useful notation is partial of u v over partial of xy.
+
+00:26:24.820 --> 00:26:28.760
+That's a very strange notation. I mean, that doesn't mean that we're actually taking the partial derivative of anything.
+
+00:26:29.820 --> 00:26:36.740
+Okay, it's just a notation to remind us that this has to do with a ratio between the u dv and dx dy.
+
+00:26:36.740 --> 00:26:43.600
+And it's made using, it's obtained using the partial derivatives of u and v with respect to x and y.
+
+00:26:44.920 --> 00:26:55.020
+So, it's the determinant of a matrix use of x, use of y, this of x, this of y.
+
+00:26:56.160 --> 00:26:57.680
+Now, the matrix that I had up there.
+
+00:26:57.680 --> 00:27:13.380
+Okay, and what we need to know is that the u dv is equal to the absolute value of j dx dy.
+
+00:27:14.000 --> 00:27:24.340
+Or if you prefer to see it in the easier to remember version, it's absolute value of d of u v over partial xy dx dy.
+
+00:27:24.340 --> 00:27:31.780
+Okay, so this is just what you need to remember.
+
+00:27:32.180 --> 00:27:43.320
+And it says that the RR in u v coordinates is worth, well, the ratio to the RR in the x-ray coordinates is given by this Jacobian determinant.
+
+00:27:44.520 --> 00:27:47.880
+Except one small thing. It's given by actually the absolute value of this guy.
+
+00:27:48.620 --> 00:27:52.000
+Okay, so what's going on here?
+
+00:27:52.000 --> 00:27:58.860
+What's going on here is when we are saying the determinant of the transformation tells us how the RR is multiplied.
+
+00:27:59.380 --> 00:28:03.700
+There's a small catch. Remember, the determinants are equal to RRs up to sine.
+
+00:28:04.100 --> 00:28:09.460
+Sometimes the determinant is negative because of reversing the orientation of things.
+
+00:28:09.780 --> 00:28:12.100
+But the RR is still the same. RR is always positive.
+
+00:28:13.480 --> 00:28:18.000
+So, the RR elements are actually related by the absolute value of this guy.
+
+00:28:18.460 --> 00:28:24.140
+So, if you find you know minus 10 as your answer, then d u d v is still 10 times dx dy.
+
+00:28:29.540 --> 00:28:34.880
+So, yeah, I mean, I didn't put it all together because then you would have two sets of vertical bars.
+
+00:28:35.220 --> 00:28:39.340
+This is a vertical bar for absolute value. This is a vertical bar for determinant. They are not the same.
+
+00:28:42.120 --> 00:28:43.320
+That's the one thing to remember.
+
+00:28:45.300 --> 00:28:47.160
+Okay, any questions about this?
+
+00:29:02.640 --> 00:29:07.920
+So, actually, let's do a first example of that.
+
+00:29:08.800 --> 00:29:10.600
+Let's check what we had for polar coordinates.
+
+00:29:13.800 --> 00:29:18.580
+Last time, I told you, well, if we have the dx dy, we would switch it to RR d theta.
+
+00:29:19.580 --> 00:29:26.320
+And we had some argument for that by looking at the area of a small piece of, you know, a small circular sector.
+
+00:29:28.540 --> 00:29:31.840
+But, you know, let's check again using this new method.
+
+00:29:33.780 --> 00:29:40.900
+So, in polar coordinates, I'm setting x equals R cosine theta, y equals R sine theta.
+
+00:29:43.320 --> 00:29:47.380
+So, the Jacobian for this change of variables.
+
+00:29:48.780 --> 00:29:56.320
+So, let's say I'm trying to find the partial derivatives of x, y with respect to R theta.
+
+00:29:57.280 --> 00:30:01.980
+Well, what is, okay, let me actually write them here again just for you.
+
+00:30:07.600 --> 00:30:09.380
+And so, what does that become?
+
+00:30:09.960 --> 00:30:14.500
+Partial x over partial R is just cosine theta.
+
+00:30:16.480 --> 00:30:19.900
+Partial x over partial theta is negative R sine theta.
+
+00:30:24.580 --> 00:30:26.980
+Sorry, I guess I'm going to run out of space here.
+
+00:30:27.140 --> 00:30:29.140
+So, let me do it underneath.
+
+00:30:30.940 --> 00:30:33.040
+So, we say x sub R is cosine theta.
+
+00:30:34.040 --> 00:30:36.180
+X sub theta is negative R sine theta.
+
+00:30:37.340 --> 00:30:39.280
+Y sub R is sine.
+
+00:30:41.060 --> 00:30:43.300
+Y sub theta is R cosine.
+
+00:30:45.420 --> 00:30:47.320
+And now, if we compute this determinant,
+
+00:30:52.360 --> 00:30:58.840
+we'll get R cosine square theta plus R sine square theta.
+
+00:30:59.340 --> 00:31:00.760
+And that simplifies to R.
+
+00:31:03.120 --> 00:31:09.040
+So, the x dy is, well, absolute value of R, DRD theta.
+
+00:31:09.840 --> 00:31:11.960
+But remember that R is always positive.
+
+00:31:12.600 --> 00:31:14.420
+So, it's R DRD theta.
+
+00:31:17.760 --> 00:31:18.600
+Okay.
+
+00:31:19.820 --> 00:31:25.680
+So, that's another way to justify how we did double integrals in polar coordinates.
+
+00:31:28.280 --> 00:31:31.240
+Okay, any questions on that?
+
+00:31:32.780 --> 00:31:32.780
+
+
+00:31:33.960 --> 00:31:34.160
+Well.
+
+00:31:36.960 --> 00:31:38.060
+Yeah, okay.
+
+00:31:40.440 --> 00:31:43.900
+Are we switching from polar to xy to xy to polar?
+
+00:31:45.020 --> 00:31:46.960
+Flip from what it is on the top.
+
+00:31:47.400 --> 00:31:50.660
+Yeah, so this one seems to be switching.
+
+00:31:52.080 --> 00:31:53.560
+Well, it depends what you do.
+
+00:31:54.480 --> 00:31:54.960
+Okay.
+
+00:31:56.280 --> 00:31:58.300
+Actually, here's an important thing that I didn't quite say.
+
+00:32:00.180 --> 00:32:03.500
+So, I said, you know, we're going to switch from xy to uv.
+
+00:32:03.500 --> 00:32:06.180
+We can also switch from uv to xy.
+
+00:32:07.680 --> 00:32:11.460
+And, you know, this conversion ratio, the Jacobian, works both ways.
+
+00:32:11.880 --> 00:32:15.700
+Once you have found, you know, the ratio between du, du, du, dx, dy,
+
+00:32:16.600 --> 00:32:19.420
+then it works one way or it works the other way.
+
+00:32:20.200 --> 00:32:22.340
+I mean, here, of course, we get the answer in terms of R.
+
+00:32:22.660 --> 00:32:26.800
+So, this would let us, you know, switch from xy to R theta.
+
+00:32:28.000 --> 00:32:31.360
+But we could also switch from R theta to xy,
+
+00:32:31.360 --> 00:32:35.400
+just with, with right, drd theta equals one over R dx dy.
+
+00:32:36.120 --> 00:32:39.160
+And then we'd have, of course, to replace R by its formula
+
+00:32:39.160 --> 00:32:40.060
+and xy coordinates.
+
+00:32:40.880 --> 00:32:41.720
+Usually, we don't do that.
+
+00:32:41.900 --> 00:32:44.440
+Usually, we actually start with xy and switch to polar, but.
+
+00:32:47.300 --> 00:32:51.580
+So, in general, you know, when you have this formula relating du, du, du,
+
+00:32:51.580 --> 00:32:54.080
+with dx dy, you can use it both ways.
+
+00:32:54.300 --> 00:32:58.420
+I have to switch from du, du, du, du, dx, du, or the other way around.
+
+00:32:59.520 --> 00:33:03.540
+And the thing that I'm not telling you, but now I should probably tell you,
+
+00:33:04.120 --> 00:33:09.360
+is, you know, I could define two Jacobians, because if I solve for xy in terms of uv,
+
+00:33:10.180 --> 00:33:15.060
+instead of uv in terms of xy, then I can compute two different Jacobians.
+
+00:33:15.240 --> 00:33:20.620
+I can compute partial uv over partial xy, or I can compute partial xy over partial uv,
+
+00:33:20.880 --> 00:33:22.460
+if I have a formula's both ways.
+
+00:33:23.720 --> 00:33:26.300
+Well, the good news is these guys are the inverse of each other.
+
+00:33:26.980 --> 00:33:30.440
+So, you know, the two formulas that you might get are consistent.
+
+00:33:58.380 --> 00:34:01.440
+Okay, so, useful remark.
+
+00:34:08.060 --> 00:34:13.860
+You know, so say that you can compute both.
+
+00:34:19.900 --> 00:34:24.060
+These guys, well, then actually their product will just be one.
+
+00:34:24.640 --> 00:34:26.120
+So, you know, very inverse of each other.
+
+00:34:26.380 --> 00:34:29.120
+So, it doesn't matter which one you compute.
+
+00:34:29.280 --> 00:34:31.940
+You can compute whichever one is the easiest to compute,
+
+00:34:32.180 --> 00:34:34.120
+no matter which one of the two you need.
+
+00:34:46.220 --> 00:34:49.800
+And one way to see that is that, in fact, you know,
+
+00:34:49.800 --> 00:34:53.620
+we're looking at the determinants of these matrices that tell us the relation of the variables.
+
+00:34:54.700 --> 00:34:58.400
+So, if one of them tells you how delta u delta v relates to delta x delta y,
+
+00:34:58.700 --> 00:35:00.240
+the other one does the opposite thing.
+
+00:35:00.380 --> 00:35:01.840
+It means they're the inverse matrices.
+
+00:35:02.920 --> 00:35:06.200
+And the determinant of the inverse matrix is the inverse of the determinant.
+
+00:35:08.760 --> 00:35:12.020
+So, they're really interchangeable.
+
+00:35:12.160 --> 00:35:14.580
+I mean, you can just, you know, compute whichever one is easiest.
+
+00:35:14.580 --> 00:35:17.880
+So, here if you wanted, you know,
+
+00:35:18.680 --> 00:35:23.080
+the Rd theta in terms of dx dy is easier to do this and then move the R over there,
+
+00:35:23.640 --> 00:35:27.840
+then to first solve for R and theta as functions of x and y,
+
+00:35:28.220 --> 00:35:29.600
+and then do the entire thing again.
+
+00:35:30.520 --> 00:35:31.740
+But you can do it if you want.
+
+00:35:32.200 --> 00:35:32.820
+I mean, it works.
+
+00:35:41.400 --> 00:35:42.880
+Oh, yeah, the other useful remark.
+
+00:35:43.400 --> 00:35:46.380
+So, I mentioned it, but let me emphasize again.
+
+00:35:47.040 --> 00:35:49.860
+So, now the ratio between du dv and dx dy,
+
+00:35:50.400 --> 00:35:52.060
+it's not a constant anymore.
+
+00:35:52.260 --> 00:35:55.880
+Over there, it used to be five, but now it's become C r or anything.
+
+00:35:56.040 --> 00:35:58.240
+I mean, in general, it would be a function that depends on the variables.
+
+00:35:59.040 --> 00:36:03.300
+So, it's not true that you can just say, oh, I'll put a constant times du dv.
+
+00:36:04.100 --> 00:36:04.500
+Yes?
+
+00:36:05.880 --> 00:36:10.260
+If you change the position coordinates to the position,
+
+00:36:11.060 --> 00:36:13.720
+or if you get the color of the two, it would be a rough solution.
+
+00:36:14.340 --> 00:36:15.820
+It would still work the same.
+
+00:36:16.460 --> 00:36:20.240
+You know, you could imagine drawing a picture where R and theta are the Cartesian coordinates
+
+00:36:20.240 --> 00:36:21.980
+and your picture would be completely messed up.
+
+00:36:22.540 --> 00:36:25.240
+It would be a very strange thing to do to try to draw, you know.
+
+00:36:26.000 --> 00:36:27.860
+I'm going to do it, but don't take notes on that.
+
+00:36:28.720 --> 00:36:30.240
+You know, you could try to draw a picture like that,
+
+00:36:30.760 --> 00:36:33.300
+and then, you know, a circle would start looking like, you know,
+
+00:36:33.300 --> 00:36:36.260
+a disk would look like that, and it would be very counter-intuitive.
+
+00:36:36.500 --> 00:36:39.020
+But you could do it, and that would be equivalent to what we did
+
+00:36:39.460 --> 00:36:40.880
+with the previous change of variables.
+
+00:36:42.380 --> 00:36:45.360
+So, you know, in this case, certainly you would never draw a picture like that.
+
+00:36:46.720 --> 00:36:47.740
+But you could do it.
+
+00:36:54.580 --> 00:36:54.980
+Okay.
+
+00:36:58.980 --> 00:37:02.420
+Okay, so now let's do a complete example to see how things fit together.
+
+00:37:02.420 --> 00:37:04.020
+You know, how we do everything.
+
+00:37:07.040 --> 00:37:08.540
+So let's say that we want to compute.
+
+00:37:10.120 --> 00:37:12.500
+So I have to warn you, it's going to be a very silly example.
+
+00:37:12.640 --> 00:37:16.400
+It's an example where it's much easier to compute things without the change of variables.
+
+00:37:18.100 --> 00:37:24.960
+But you know, it's good practice in the sense that we're going to make it so complicated
+
+00:37:24.960 --> 00:37:27.480
+that if we can do this one, then we can do them all.
+
+00:37:29.480 --> 00:37:34.280
+So let's say that we want to compute this, and of course it's very easy to compute it directly.
+
+00:37:35.100 --> 00:37:42.680
+But let's say that for some evil reason, we want to do that by changing variables
+
+00:37:42.680 --> 00:37:47.160
+to u equals x, and v equals xy.
+
+00:37:49.120 --> 00:37:52.200
+Okay, that's a very strange idea, but let's do it anyway.
+
+00:37:55.620 --> 00:37:58.540
+Normally, you know, you would only do this kind of substitution.
+
+00:37:59.220 --> 00:38:01.480
+If either it simplifies a lot of the function you're integrating,
+
+00:38:02.000 --> 00:38:04.480
+or it simplifies a lot of the region on which you're integrating.
+
+00:38:05.740 --> 00:38:06.940
+And here, neither happens.
+
+00:38:09.600 --> 00:38:15.700
+But anyway, so the first thing we have to do here is figure out what we're going to be integrating.
+
+00:38:15.700 --> 00:38:22.280
+Okay, so to do that, first we should figure out what the x, d, y will become in terms of u and v.
+
+00:38:22.900 --> 00:38:25.100
+So that's what we've just seen using the Jacobian.
+
+00:38:25.840 --> 00:38:28.260
+Okay, so the first thing to do is find the area element.
+
+00:38:31.460 --> 00:38:33.060
+And for that, we use the Jacobian.
+
+00:38:33.300 --> 00:38:39.700
+So, well, let's see, the one that we can do easily is partial of u and v with respect to x and y.
+
+00:38:40.060 --> 00:38:42.480
+I mean, the other one is not very hard because here you can solve easily,
+
+00:38:42.480 --> 00:38:48.180
+but the one that's given to you is partial of u and v with respect to x and y.
+
+00:38:49.720 --> 00:38:58.540
+So partial u, partial x is 1, partial u, partial y is 0, partial v, partial x is y,
+
+00:38:59.040 --> 00:39:01.620
+and partial v, partial y is x.
+
+00:39:02.880 --> 00:39:04.100
+Okay, so it's just x.
+
+00:39:07.600 --> 00:39:17.320
+So that means that du dv is x, dx, dy.
+
+00:39:18.300 --> 00:39:23.280
+Well, it would be absolute value of x, but x is positive in our region.
+
+00:39:23.280 --> 00:39:25.320
+So at least we don't have to worry about that.
+
+00:39:36.820 --> 00:39:46.900
+Okay, so now that we have that, we can try to look at the integrand in terms of u and v.
+
+00:39:48.500 --> 00:39:55.000
+Okay, so we were integrating x squared y dx dy.
+
+00:39:56.780 --> 00:39:59.060
+So let's switch it.
+
+00:40:00.100 --> 00:40:08.300
+Well, let's first switch the dx dy that becomes one of our x du dv.
+
+00:40:10.040 --> 00:40:13.260
+So that's actually x, y, du, dv.
+
+00:40:14.520 --> 00:40:16.940
+And what is x, y in terms of u and v?
+
+00:40:17.760 --> 00:40:19.380
+Well, here at least we have a little bit of luck.
+
+00:40:20.160 --> 00:40:23.700
+x, y is just v. So that's v, du, dv.
+
+00:40:26.340 --> 00:40:34.360
+So in fact, what will be computing is a double integral over some mysterious region of v du dv.
+
+00:40:39.000 --> 00:40:46.800
+Okay, now last but not least, we'll have to find what other bounds for u and v in the new integral.
+
+00:40:46.800 --> 00:40:50.200
+So that we know how to evaluate this.
+
+00:41:13.060 --> 00:41:17.760
+In fact, well, we could do it the u, dv or dv, we don't know yet.
+
+00:41:20.020 --> 00:41:22.240
+Oh, amazing. It went all the way down this time.
+
+00:41:31.900 --> 00:41:39.200
+Okay, so it could be dv du if that's easier.
+
+00:41:43.100 --> 00:41:44.920
+So let's try to find the bounds.
+
+00:41:46.960 --> 00:41:49.080
+That's, in this case, that's the hardest part.
+
+00:41:51.660 --> 00:42:00.100
+Okay, so let me draw a picture in x, y coordinates and try to understand things using that.
+
+00:42:01.980 --> 00:42:09.720
+Okay, so x and y go from 0 to 1, the region that we want to integrate over was just this square.
+
+00:42:11.360 --> 00:42:15.520
+Let's try to figure out how u and v vary in there.
+
+00:42:16.340 --> 00:42:21.960
+So let's say that we are going to do, let's say we're going to do it du dv.
+
+00:42:21.960 --> 00:42:32.840
+Okay, so what we want to understand is how u and v vary in here.
+
+00:42:33.400 --> 00:42:34.180
+What's going to happen?
+
+00:42:35.960 --> 00:42:41.100
+So the way we can think about it is we try to figure out how we are slicing our region.
+
+00:42:41.100 --> 00:42:51.600
+Okay, so here we are integrating first over u, that means we start by keeping u constant, no, by keeping v constant as u changes.
+
+00:42:54.700 --> 00:43:00.880
+Okay, so u changes as v is constant.
+
+00:43:02.720 --> 00:43:07.760
+What does it mean that I'm keeping v constant? Well, what is v? V is x, y.
+
+00:43:08.620 --> 00:43:11.640
+So that means I keep x, y equals constant.
+
+00:43:13.300 --> 00:43:17.320
+What does the curve x, y equals constant look like? Well, it's just a hyperbola.
+
+00:43:18.340 --> 00:43:20.240
+Okay, y equals constant of our x.
+
+00:43:22.360 --> 00:43:33.100
+So if I look at the various values of v that I can take for each value of v,
+
+00:43:33.100 --> 00:43:36.980
+if I fix a value of v, I will be moving on one of these red curves.
+
+00:43:38.700 --> 00:43:41.820
+Okay, and u, well u is the same thing as x.
+
+00:43:42.560 --> 00:43:48.300
+So that means u will increase, you know, here maybe it will be point one and it will increase to all the way to one here.
+
+00:43:50.480 --> 00:43:54.580
+Okay, so we are just traveling on each of these slices.
+
+00:43:58.500 --> 00:44:05.020
+Now, so the question we must answer here is for a given value of v, what are the bounds for u?
+
+00:44:05.640 --> 00:44:14.460
+So I'm traveling on my curve v equals constant and trying to figure out when do I enter my region, when do I leave it?
+
+00:44:14.680 --> 00:44:19.840
+Well, I enter it when I go through this side. So the question is what's the value of u here?
+
+00:44:24.460 --> 00:44:28.340
+Well, we don't know that very easily until we look at this formulas.
+
+00:44:30.200 --> 00:44:33.920
+So u equals x, okay, but we don't know what x is at that point.
+
+00:44:35.380 --> 00:44:40.340
+Well, u equals x and v equals xy. What do we know here?
+
+00:44:41.740 --> 00:44:48.980
+Well, we don't know x but we know y, certainly. Okay, so let's forget about trying to find u
+
+00:44:48.980 --> 00:44:59.220
+and let's say for now we know y equals 1. Well, if we set y equals 1, that tells us that u and v are both equal to x.
+
+00:44:59.900 --> 00:45:06.920
+So in terms of u and v, the equation of this in u v coordinates is u equals v.
+
+00:45:10.820 --> 00:45:17.540
+Okay, the other way to do it is say that you know you want y equals 1, you want to know what is y in terms of u and v.
+
+00:45:17.720 --> 00:45:25.540
+Well, it's easy. Y is v over u. So let me actually add an extra step in case that's.
+
+00:45:25.540 --> 00:45:34.780
+So we know that y is v over u equals 1. So that means u equals v is my equation.
+
+00:45:36.420 --> 00:45:46.640
+Okay, so when I'm here, when I'm entering my region, the value of u at this point is just v, u equals v.
+
+00:45:49.960 --> 00:45:58.000
+That's the hard part. Now we need to figure out, you know, so we start at u equals v, u increases, increases, increases.
+
+00:45:58.680 --> 00:46:05.820
+Where does it exit? It exits when we are here. What's the value of u here? 1. That one is easier. Right? This side here.
+
+00:46:05.820 --> 00:46:14.280
+So this side here is x equals 1. That means u equals 1. So we stop at u equals 1.
+
+00:46:17.000 --> 00:46:30.840
+Now we've done the inner integral. What about the outer? So we have to figure out what is the first and what is the last value of v that we want to consider.
+
+00:46:31.980 --> 00:46:40.160
+Well, if you look at all these hyperbolas, x, y equals constant, what's the smallest value of x, y that we'll ever want to look at in here? 0.
+
+00:46:40.700 --> 00:46:46.260
+Okay, let me actually, where's my yellow chalk? Is it? No.
+
+00:46:46.260 --> 00:47:02.940
+So this one here, that's actually v equals 0. So we'll start at v equals 0. And what's the last hyper, whether we want to look at?
+
+00:47:03.060 --> 00:47:11.880
+Well, it's the one that's right there in the corner. This one here, and that's v equals 1. So v goes from 0 to 1.
+
+00:47:14.120 --> 00:47:21.820
+Okay, and now we can compute this. I mean, it's not particularly easier than that one, but it's not harder either.
+
+00:47:24.340 --> 00:47:32.440
+How else could we have gotten these bounds? Because that was quite evil. So I would like to recommend that you give it a try this way, you know, in case it works well.
+
+00:47:32.440 --> 00:47:41.780
+Just try to picture what are the slices in terms of human v and how you travel on them, where you enter, where you leave, staying in the x, y picture.
+
+00:47:42.600 --> 00:47:49.300
+If that somehow doesn't work well, another way is to draw a picture in the uv pic coordinates.
+
+00:47:57.220 --> 00:48:08.780
+So switch to a uv picture. So what do I mean by that? Well, we had here a picture in x, y coordinates, where we had our sides.
+
+00:48:10.360 --> 00:48:21.740
+And we're going to try to draw what it looks like in terms of human v. So here we say this is x equals 1, that becomes u equals 1. So we'll draw u equals 1.
+
+00:48:24.360 --> 00:48:34.100
+This side we say is y equals 1, that becomes u equals v. That's what we've done over there. So u equals v.
+
+00:48:37.300 --> 00:48:50.360
+Now we have the two other sides to deal with. Well, let's look at this one first. So that was x equals 0. What happens when x equals 0? Well, both u and v are 0. So this side actually gets squished in the change of variables.
+
+00:48:51.460 --> 00:48:59.580
+It's a bit strange, but it's a bit the same thing as when you switch to polar coordinates at the origin, r is 0, but theta can be anything.
+
+00:49:00.340 --> 00:49:13.220
+Sometimes it's not always one point is one point. So anyway, this is the origin. And then the last side, y equals 0, and x varies, just becomes v equals 0.
+
+00:49:13.220 --> 00:49:27.600
+So somehow, in the change of variables, this square becomes this triangle. And now if we want to integrate du, dv, it means we're going to slice by v equals constant.
+
+00:49:29.460 --> 00:49:39.320
+So we're going to integrate other slices like this. And you see for each value of v, we go from u equals v to u equals 1. And v goes from 0 to 1.
+
+00:49:40.760 --> 00:49:53.080
+So you get the same bounce just by drawing a different picture. So it's up to you to decide whether you prefer to think on this picture or draw that one instead. It depends on which problems you're doing.
+
